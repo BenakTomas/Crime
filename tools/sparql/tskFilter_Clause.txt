@@ -1,0 +1,4 @@
+?tsk a crime:Tsk .
+?tsk crime:id ?tskId .
+FILTER ( ?tskId = ?parTskId_ValuePlaceholder ) .
+?trestnyCin crime:tsk ?tsk .

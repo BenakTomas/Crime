@@ -1,0 +1,475 @@
+19#02#10#aš
+02#08#10#bechyně
+01#01#10#benešov
+04#02#10#benešov nad ploučnicí
+01#07#12#benátky nad jizerou
+01#02#10#beroun
+19#03#10#bečov nad teplou
+06#01#11#blansko
+06#18#11#blansko
+02#07#11#blatná
+03#06#10#blovice
+03#11#10#blovice
+19#03#11#bochov
+07#03#17#bohumín
+15#11#11#bojkovice
+03#10#11#bor u tachova
+02#01#14#boršov nad vltavou
+06#01#12#boskovice
+06#18#12#boskovice
+05#05#10#broumov
+07#01#10#bruntál
+07#02#11#brušperk
+15#11#12#buchlovice
+06#12#11#bučovice
+06#18#17#bučovice
+16#14#10#bystřice nad pernštejnem
+15#08#10#bystřice pod hostýnem
+06#06#10#bzenec
+04#09#10#bílina
+07#04#10#bílovec
+01#07#11#bělá pod bezdězem
+06#04#10#břeclav
+01#11#10#březnice
+04#03#10#březno
+04#10#10#chlumec
+05#02#12#chlumec nad cidlinou
+17#11#11#choceň
+19#09#13#chodov
+16#16#13#chotěboř
+17#03#12#chrast
+18#05#13#chrastava
+17#03#13#chrudim
+03#07#10#chrást
+17#06#15#chvaletice
+02#08#12#chýnov
+18#01#10#cvikov
+02#03#10#dačice
+01#07#14#dobrovice
+05#07#10#dobruška
+03#06#11#dobřany
+03#11#11#dobřany
+01#11#12#dobříš
+18#01#12#doksy
+03#01#11#domažlice
+04#09#11#dubí
+06#06#12#dubňany
+04#09#12#duchcov
+05#10#11#dvůr králové nad labem
+07#03#20#dětmarovice
+19#02#11#františkovy lázně
+07#04#11#frenštát pod radhoštěm
+15#05#11#fryšták
+07#02#14#frýdek místek
+18#05#11#frýdlant
+07#02#15#frýdlant nad ostravicí
+07#04#12#fulnek
+16#16#10#golčův jeníkov
+19#09#11#habartov
+14#09#10#hanušovice
+18#11#18#harrachov
+16#16#12#havlíčkův brod
+18#05#12#hejnice
+17#03#10#heřmanův městec
+17#03#11#hlinsko
+02#01#13#hluboká nad vltavou
+07#06#12#hlučín
+07#02#16#hnojník
+18#05#26#hodkovice nad mohelkou
+06#06#13#hodonín
+15#08#11#holešov
+17#06#12#holice v čechách
+05#02#16#holohlavy
+03#01#12#holýšov
+03#04#11#horažďovice
+07#01#12#horní benešov
+15#15#10#horní bečva
+15#15#11#horní lideč
+02#02#13#horní planá
+01#06#18#horní počaply
+19#09#12#horní slavkov
+07#03#14#horní suchá
+02#06#18#horní vltavice
+03#01#13#horšovský týn
+05#10#12#hostinné
+01#16#21#hostivice
+01#12#11#hořesedly
+05#04#10#hořice
+01#02#11#hořovice
+07#06#13#hradec nad moravicí
+01#14#22#hradištko
+14#08#11#hranice
+05#05#13#hronov
+16#10#11#hrotovice
+06#13#10#hrušovany nad jevišovkou
+03#08#10#hrádek
+18#05#20#hrádek nad nisou
+15#08#12#hulín
+16#17#12#humpolec
+06#04#12#hustopeče
+04#02#15#hřensko
+06#03#12#ivančice
+18#04#10#jablonec nad nisou
+18#01#21#jablonné v podještědí
+07#02#17#jablunkov
+15#15#12#jablůnka
+05#05#14#jaroměř
+16#10#12#jaroměřice nad rokytnou
+14#11#11#javorník
+16#10#13#jemnice
+01#12#12#jesenice
+01#14#14#jesenice
+14#11#10#jeseník
+06#13#12#jevišovice
+17#09#13#jevíčko
+16#07#11#jihlava
+18#11#10#jilemnice
+02#03#12#jindřichův hradec
+04#03#12#jirkov
+02#08#20#jistebnice
+05#04#11#jičín
+19#03#12#jáchymov
+01#14#13#jílové u prahy
+04#03#13#kadaň
+01#14#19#kamenice
+16#17#13#kamenice nad lipou
+02#02#15#kaplice
+19#03#13#karlovy vary
+01#02#13#karlštejn
+15#15#13#karolinka
+03#07#11#kaznějov
+03#11#12#kaznějov
+03#04#13#kašperské hory
+03#01#14#kdyně
+01#03#14#kladno
+03#04#14#klatovy
+04#03#14#klášterec nad ohří
+14#08#12#kojetín
+03#04#15#kolinec
+01#04#11#kolín
+14#12#11#konice
+03#10#15#konstantinovy lázně
+05#04#12#kopidlno
+07#04#13#kopřivnice
+01#06#10#kostelec nad labem
+05#07#11#kostelec nad orlicí
+01#04#12#kostelec nad černými lesy
+01#04#13#kouřim
+04#07#12#koštice
+03#07#12#kralovice
+03#11#13#kralovice
+01#06#11#kralupy nad vltavou
+19#09#14#kraslice
+07#06#14#kravaře
+07#01#13#krnov
+15#08#13#kroměříž
+04#09#15#krupka
+04#07#11#kryry
+17#11#13#králíky
+01#02#14#králův dvůr
+07#02#19#krásná
+04#02#14#krásná lípa
+04#10#20#krásné březno
+01#05#12#kutná hora
+06#03#13#kuřim
+06#06#14#kyjov
+19#09#15#kynšperk nad ohří
+19#03#15#kyselka
+02#02#16#křemže
+01#08#10#křinec
+17#11#14#lanškroun
+16#16#14#ledeč nad sázavou
+17#11#18#letohrad
+06#01#16#letovice
+06#18#16#letovice
+04#06#12#libochovice
+04#10#11#libouchec
+01#16#14#libčice
+01#06#16#liběchov
+02#02#17#lipno
+14#08#13#lipník
+17#09#14#litomyšl
+04#06#11#litoměřice
+14#05#13#litovel
+04#08#12#litvínov
+04#08#17#litvínov hamr
+02#01#16#lišov
+19#09#16#loket nad ohří
+18#11#11#lomnice nad popelkou
+04#07#13#louny
+04#06#13#lovosice
+15#05#13#luhačovice
+14#05#14#lutín
+01#06#12#lužec nad vltavou
+01#08#11#lysá nad labem
+17#06#10#lázně bohdaneč
+19#02#14#lázně kynžvart
+03#07#13#manětín
+19#02#15#mariánské lázně
+04#08#18#meziboří
+06#04#15#mikulov
+02#05#12#milevsko
+01#08#13#milovice
+01#11#15#milín
+18#01#15#mimoň
+01#07#17#mladá boleslav
+02#08#15#mladá vožice
+01#07#18#mnichovo hradiště
+01#16#18#mníšek pod brdy
+14#09#13#mohelnice
+17#09#16#moravská třebová
+16#10#14#moravské budějovice
+14#05#12#moravský beroun
+06#13#15#moravský krumlov
+04#08#14#most
+04#08#19#most zahradní
+01#06#13#mělník
+01#08#12#městec králové
+07#01#14#město albrechtice
+03#07#14#město touškov
+03#11#14#město touškov
+01#06#14#mšeno
+15#05#14#napajedla
+05#02#14#nechanice
+19#03#16#nejdek
+03#06#13#nepomuk
+03#11#15#nepomuk
+01#06#15#neratovice
+02#06#12#netolice
+04#10#12#neštěmice
+02#03#15#nová bystřice
+05#04#14#nová paka
+19#03#17#nová role
+16#14#15#nové město na moravě
+05#05#16#nové město nad metují
+18#05#21#nové město pod smrkem
+01#12#15#nové strašecí
+18#01#16#nový bor
+05#02#15#nový bydžov
+07#04#14#nový jičín
+07#02#13#nošovice
+01#08#14#nymburk
+05#05#15#náchod
+16#10#15#náměšť nad oslavou
+03#04#16#nýrsko
+03#07#15#nýřany
+03#11#16#nýřany
+14#12#13#němčice nad hanou
+04#08#15#obrnice
+01#15#15#odolena voda
+07#04#15#odry
+16#10#16#okříšky
+07#06#16#opava
+05#07#12#opočno
+07#03#18#orlová
+19#03#18#ostrov
+15#05#15#otrokovice
+16#17#16#pacov
+07#02#18#palkovice
+05#10#19#pec pod sněžkou
+16#17#17#pelhřimov
+19#03#19#pernink
+07#03#19#petřvald
+01#04#18#pečky
+03#10#12#planá
+19#02#17#plesná
+14#12#14#plumlov
+03#04#17#plánice
+03#01#15#poběžovice
+04#07#17#podbořany
+01#08#16#poděbrady
+06#03#16#pohořelice
+05#05#17#police nad metují
+17#09#17#polička
+16#07#13#polná
+04#07#18#postoloprty
+16#17#18#počátky
+02#06#13#prachatice
+04#09#17#prosetice
+06#13#16#prosiměřice
+02#05#16#protivín
+02#05#15#písek
+17#06#16#přelouč
+03#06#14#přeštice
+03#11#17#přeštice
+16#16#15#přibyslav
+07#04#16#příbor
+01#11#19#příbram
+03#08#11#radnice
+02#07#18#radomyšl
+04#03#15#radonice
+06#03#22#rajhrad
+01#12#16#rakovník
+03#08#12#rokycany
+18#11#12#rokytnice nad jizerou
+05#07#13#rokytnice v orlických horách
+06#03#15#rosice
+19#09#17#rotava
+04#06#14#roudnice nad labem
+06#12#14#rousínov
+01#12#13#roztoky
+01#11#20#rožmitál pod třemšínem
+15#15#15#rožnov pod radhoštěm
+04#02#16#rumburk
+05#07#14#rychnov nad kněžnou
+18#04#12#rychnov u jablonce nad nisou
+07#01#16#rýmařov
+01#08#17#sadská
+01#11#21#sedlčany
+18#11#14#semily
+04#10#18#severní terasa
+02#08#16#sezimovo ústí
+17#03#17#skuteč
+01#03#17#slaný
+15#05#16#slavičín
+06#12#15#slavkov u brna
+06#18#18#slavkov u brna
+02#03#17#slavonice
+07#07#18#slezská ostrava
+18#04#13#smržovka
+05#04#15#sobotka
+02#08#17#soběslav
+19#09#18#sokolov
+03#06#16#starý plzenec
+01#03#19#stochov
+03#06#17#stod
+03#11#18#stod
+02#07#14#strakonice
+18#01#17#stráž pod ralskem
+06#06#15#strážnice
+02#03#21#studená
+07#04#17#studénka
+04#10#14#střekov
+03#10#13#stříbro
+02#03#22#suchdol nad lužnicí
+02#01#12#suché vrbné
+03#04#18#sušice
+17#09#18#svitavy
+05#10#15#svoboda nad úpou
+16#16#16#světlá nad sázavou
+01#01#14#sázava
+03#10#14#tachov
+18#04#14#tanvald
+16#07#15#telč
+04#09#18#teplice
+05#05#18#teplice nad metují
+19#03#20#teplá
+04#06#16#terezín
+06#03#17#tišnov
+19#03#21#toužim
+02#01#19#trhové sviny
+04#10#15#trmice
+04#09#20#trnovany
+05#10#16#trutnov
+18#11#16#turnov
+02#08#18#tábor
+02#01#20#týn nad vltavou
+01#04#16#týnec nad labem
+01#01#17#týnec nad sázavou
+05#07#16#týniště nad orlicí
+07#03#10#těrlicko
+05#02#17#třebechovice pod orebem
+02#03#23#třeboň
+16#10#17#třebíč
+17#03#18#třemošnice
+03#07#16#třemošná
+03#11#19#třemošná
+16#07#16#třešť
+07#02#21#třinec
+15#11#16#uherské hradiště
+15#11#17#uherský brod
+15#11#18#uherský ostroh
+01#05#15#uhlířské janovice
+01#03#21#unhošť
+14#05#19#uničov
+15#05#17#valašské klobouky
+15#15#16#valašské meziříčí
+05#07#17#vamberk
+04#02#18#varnsdorf
+04#03#19#vejprty
+14#05#20#velká bystřice
+16#14#17#velká bíteš
+07#07#23#velká polom
+04#10#21#velké březno
+07#06#18#velké heraltice
+14#09#16#velké losiny
+16#14#19#velké meziříčí
+06#04#17#velké pavlovice
+04#02#19#velký šenov
+01#03#22#velvary
+02#08#19#veselí nad lužnicí
+06#06#17#veselí nad moravou
+02#06#15#vimperk
+15#05#18#vizovice
+01#01#18#vlašim
+02#07#16#vodňany
+01#06#17#vojkovice
+02#06#17#volary
+02#07#17#volyně
+01#01#19#votice
+06#13#19#vranov nad dyjí
+07#07#22#vratimov
+07#01#17#vrbno pod pradědem
+05#10#18#vrchlabí
+01#05#16#vrdy
+15#15#17#vsetín
+17#11#16#vysoké mýto
+06#12#16#vyškov
+06#18#19#vyškov
+02#02#19#vyšší brod
+07#06#19#vítkov
+02#02#18#větřní
+04#10#16#všebořice
+03#08#13#zbiroh
+01#05#17#zbraslavice
+01#02#16#zdice
+14#11#12#zlaté hory
+02#01#21#zliv
+15#05#12#zlín
+06#13#20#znojmo
+01#05#11#zruč nad sázavou
+02#05#17#zvíkovské podhradí
+14#09#17#zábřeh
+03#07#17#úněšov
+03#11#20#úněšov
+05#10#17#úpice
+17#11#15#ústí nad orlicí
+01#15#17#úvaly
+04#06#18#úštěk
+01#01#11#čechtice
+01#15#11#čelákovice
+06#01#13#černá hora
+05#05#11#červený kostelec
+01#01#12#čerčany
+04#02#12#česká kamenice
+18#01#11#česká lípa
+05#05#12#česká skalice
+17#11#10#česká třebová
+02#01#10#české budějovice
+01#04#10#český brod
+18#05#10#český dub
+02#02#11#český krumlov
+07#03#11#český těšín
+01#14#12#čestlice
+02#05#13#čimelice
+02#01#11#čtyři dvory
+01#05#10#čáslav
+01#16#20#řevnice
+01#14#16#říčany
+02#01#18#ševětín
+06#03#10#šlapanice
+04#02#17#šluknov
+05#10#20#špindlerův mlýn
+14#05#18#šternberk
+04#06#15#štětí
+14#09#14#šumperk
+03#04#19#švihov
+05#10#21#žacléř
+17#11#17#žamberk
+18#01#20#žandov
+04#07#19#žatec
+03#04#20#železná ruda
+18#04#16#železný brod
+06#03#20#židlochovice
+19#03#22#žlutice
+16#14#20#žďár nad sázavou

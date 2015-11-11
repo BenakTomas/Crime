@@ -1,0 +1,51 @@
+# Standardní prefixy
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix interval: <http://reference.data.gov.uk/def/intervals/> .
+@prefix sdmx:    <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+
+# Vlastní prefixy
+@prefix crimestatistics-code-slash: <http://linked.opendata.cz/ontology/crimestatistics/code/> .
+@prefix crimestatistics-code-codelist-slash: <http://linked.opendata.cz/ontology/crimestatistics/code/stat/> .
+@prefix crimestatistics-code-codelist-hash: <http://linked.opendata.cz/ontology/crimestatistics/code/stat#> .
+@prefix crimestatistics-code-codelist-class: <http://linked.opendata.cz/ontology/crimestatistics/code/stat/class#> .
+@prefix crimestatistics-code-codelist-property: <http://linked.opendata.cz/ontology/crimestatistics/code/stat/property#> .
+
+# Manuální nalinkování některých "problematických" států
+crimestatistics-code-codelist-hash:502 owl:sameAs dbpedia:American_Samoa .
+crimestatistics-code-codelist-hash:507 owl:sameAs dbpedia:Antarctica .
+crimestatistics-code-codelist-hash:519 owl:sameAs dbpedia:Bouvet_Island .
+crimestatistics-code-codelist-hash:534 owl:sameAs dbpedia:Falkland_Islands .
+crimestatistics-code-codelist-hash:537 owl:sameAs dbpedia:Guianas .	# Odkaz přímo na Francouzskou Guyanu neexistuje.
+crimestatistics-code-codelist-hash:543 owl:sameAs dbpedia:Guadeloupe .
+crimestatistics-code-codelist-hash:548 owl:sameAs dbpedia:Heard_Island_and_McDonald_Islands .
+crimestatistics-code-codelist-hash:550 owl:sameAs dbpedia:South_Georgia_and_the_South_Sandwich_Islands .
+crimestatistics-code-codelist-hash:310 owl:sameAs dbpedia:Socialist_Federal_Republic_of_Yugoslavia .
+crimestatistics-code-codelist-hash:580 owl:sameAs dbpedia:Netherlands_Antilles .
+crimestatistics-code-codelist-hash:592 owl:sameAs dbpedia:Reunion .
+crimestatistics-code-codelist-hash:730 owl:sameAs dbpedia:Sovereign_Military_Order_of_Malta .
+crimestatistics-code-codelist-hash:595 owl:sameAs dbpedia:Saint_Pierre_and_Miquelon .
+crimestatistics-code-codelist-hash:727 owl:sameAs dbpedia:Western_Sahara .
+crimestatistics-code-codelist-hash:656 owl:sameAs dbpedia:Democratic_Republic_of_the_Congo .
+crimestatistics-code-codelist-hash:655 owl:sameAs dbpedia:Republic_of_the_Congo .
+crimestatistics-code-codelist-hash:532 owl:sameAs dbpedia:European_Union .
+crimestatistics-code-codelist-hash:531 owl:sameAs dbpedia:European_Free_Trade_Association .
+crimestatistics-code-codelist-hash:568 owl:sameAs dbpedia:United_States_Minor_Outlying_Islands .
+crimestatistics-code-codelist-hash:844 owl:sameAs dbpedia:British_Overseas_Territories .
+crimestatistics-code-codelist-hash:845 owl:sameAs dbpedia:British_Overseas_Territories .
+crimestatistics-code-codelist-hash:521 owl:sameAs dbpedia:British_Indian_Ocean_Territory .
+crimestatistics-code-codelist-hash:538 owl:sameAs dbpedia:French_Southern_and_Antarctic_Lands .
+crimestatistics-code-codelist-hash:704 owl:sameAs dbpedia:Central_European_Free_Trade_Agreement .

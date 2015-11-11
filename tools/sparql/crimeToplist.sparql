@@ -1,0 +1,46 @@
+prefix crime: <http://linked.opendata.cz/ontology/crime#>
+prefix dct: <http://purl.org/dc/terms/>
+
+select
+  ?tskNotation ?crimeName ?crimeNumber
+where
+{
+  {
+    select ?tsk (count(?trestnyCin) as ?crimeNumber)
+    {
+      {
+        ?utvar a crime:Utvar ;
+          crime:id ?utvarId .
+        FILTER(?utvarId = ?parIdUtvaru_ValuePlaceholder) .
+        
+        ?trestnyCin a crime:TrestnyCin ;
+          crime:utvarSpachaniNeboZjisteni ?utvar ;
+          crime:validFrom ?validFrom ;
+          crime:validTo ?validTo .
+        
+        FILTER( ?validFrom <= ?parValidIn_ValuePlaceholder && ?parValidIn_ValuePlaceholder <= ?validTo ) .
+      }
+      
+      OPTIONAL { ?trestnyCin crime:datumACasSpachani ?datumSpachani . } .
+      OPTIONAL { ?trestnyCin crime:datumACasSpachani_Od ?datumSpachani_Od . } .
+
+      BIND(COALESCE(?datumSpachani, ?datumSpachani_Od) as ?datumSpachani_Point) .
+        
+      BIND(YEAR(?datumSpachani_Point) as ?datumSpachaniYear) .
+      BIND(MONTH(?datumSpachani_Point) as ?datumSpachaniMonth) .
+      
+      FILTER(
+        (2008 < ?datumSpachaniYear || (2008 = ?datumSpachaniYear && 1 <= ?datumSpachaniMonth))
+        &&
+        (?datumSpachaniYear < 2014 || (?datumSpachaniYear = 2014 && ?datumSpachaniMonth <= 10))) .
+        
+      ?trestnyCin crime:tsk ?tsk . 
+    }
+    group by ?tsk
+  }
+  
+  ?tsk skos:prefLabel ?crimeName ;
+    skos:notation ?tskNotation .
+}
+  
+order by desc(?crimeNumber)

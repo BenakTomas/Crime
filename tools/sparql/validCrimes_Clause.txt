@@ -1,0 +1,16 @@
+{ 
+  ?trestnyCin a crime:TrestnyCin .
+  ?trestnyCin dct:isVersionOf ?trestnyCin_master .
+  ?trestnyCin crime:validFrom ?validFrom .
+  ?trestnyCin crime:validTo ?validTo
+  
+  FILTER ( ( ?validFrom <= ?parHistoryDate_ValuePlaceholder ) && ( ?parHistoryDate_ValuePlaceholder <= ?validTo ) )
+}
+
+OPTIONAL
+{ ?trestnyCin crime:datumACasSpachani ?datumSpachani}
+OPTIONAL
+{ ?trestnyCin crime:datumACasSpachani_Od ?datumSpachani_Od}
+
+BIND(coalesce(?datumSpachani, ?datumSpachani_Od) AS ?datumSpachani_Point)
+FILTER ( ( ?parStartDate_ValuePlaceholder <= ?datumSpachani_Point ) && ( ?datumSpachani_Point <= ?parEndDate_ValuePlaceholder ) )

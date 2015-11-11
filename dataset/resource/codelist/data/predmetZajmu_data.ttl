@@ -1,0 +1,2755 @@
+# Standardní prefixy
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix interval: <http://reference.data.gov.uk/def/intervals/> .
+@prefix sdmx:    <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+# Vlastní prefixy
+@prefix crimestatistics-code-slash: <http://linked.opendata.cz/ontology/crimestatistics/code/> .
+@prefix crimestatistics-code-codelist-slash: <http://linked.opendata.cz/ontology/crimestatistics/code/predmetZajmu/> .
+@prefix crimestatistics-code-codelist-class: <http://linked.opendata.cz/ontology/crimestatistics/code/predmetZajmu/class#> .
+@prefix crimestatistics-code-codelist-property: <http://linked.opendata.cz/ontology/crimestatistics/code/predmetZajmu/property#> .
+
+@prefix crimestatistics-code-codelist-hash: <http://linked.opendata.cz/ontology/crimestatistics/code/predmetZajmu#> .
+
+crimestatistics-code-codelist-hash:011 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "občanské průkazy"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "011" ;
+
+	rdfs:label "občanské průkazy"@cs ;
+	.
+crimestatistics-code-codelist-hash:012 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "cestovní pasy"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "012" ;
+
+	rdfs:label "cestovní pasy"@cs ;
+	.
+crimestatistics-code-codelist-hash:013 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "osobní průkazy a pasy zahraniční"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "013" ;
+
+	rdfs:label "osobní průkazy a pasy zahraniční"@cs ;
+	.
+crimestatistics-code-codelist-hash:014 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "formuláře (OP, pasy, různé jiné osobní průkazy)"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "014" ;
+
+	rdfs:label "formuláře (OP, pasy, různé jiné osobní průkazy)"@cs ;
+	.
+crimestatistics-code-codelist-hash:015 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "vývozní a dovozní papíry vč.formulářů nevyplněných "@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "015" ;
+
+	rdfs:label "vývozní a dovozní papíry vč.formulářů nevyplněných "@cs ;
+	.
+crimestatistics-code-codelist-hash:016 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "řidičské průkazy"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "016" ;
+
+	rdfs:label "řidičské průkazy"@cs ;
+	.
+crimestatistics-code-codelist-hash:017 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "školní vysvědčení včetně vysokoškolských diplomů"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "017" ;
+
+	rdfs:label "školní vysvědčení včetně vysokoškolských diplomů"@cs ;
+	.
+crimestatistics-code-codelist-hash:018 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "razítka"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "018" ;
+
+	rdfs:label "razítka"@cs ;
+	.
+crimestatistics-code-codelist-hash:019 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "ostatní - osobní doklady a předtisky"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "019" ;
+
+	rdfs:label "ostatní - osobní doklady a předtisky"@cs ;
+	.
+crimestatistics-code-codelist-hash:020 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "platební karty"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "020" ;
+
+	rdfs:label "platební karty"@cs ;
+	.
+crimestatistics-code-codelist-hash:021 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "peníze"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "021" ;
+
+	rdfs:label "peníze"@cs ;
+	.
+crimestatistics-code-codelist-hash:022 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "vkladní knížky"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "022" ;
+
+	rdfs:label "vkladní knížky"@cs ;
+	.
+crimestatistics-code-codelist-hash:023 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "šekové knížky, jednotlivé šeky vč.cestovních"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "023" ;
+
+	rdfs:label "šekové knížky, jednotlivé šeky vč.cestovních"@cs ;
+	.
+crimestatistics-code-codelist-hash:024 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "valuty a devizy - bankovky"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "024" ;
+
+	rdfs:label "valuty a devizy - bankovky"@cs ;
+	.
+crimestatistics-code-codelist-hash:025 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "valuty a devizy - mince"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "025" ;
+
+	rdfs:label "valuty a devizy - mince"@cs ;
+	.
+crimestatistics-code-codelist-hash:026 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "vkladové listy"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "026" ;
+
+	rdfs:label "vkladové listy"@cs ;
+	.
+crimestatistics-code-codelist-hash:027 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "poštovní známky a jiné ceniny (např. kolky)"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "027" ;
+
+	rdfs:label "poštovní známky a jiné ceniny (např. kolky)"@cs ;
+	.
+crimestatistics-code-codelist-hash:028 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "poukázky na pohonné hmoty"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "028" ;
+
+	rdfs:label "poukázky na pohonné hmoty"@cs ;
+	.
+crimestatistics-code-codelist-hash:029 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "ostatní - platidla"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "029" ;
+
+	rdfs:label "ostatní - platidla"@cs ;
+	.
+crimestatistics-code-codelist-hash:030 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "open card, permanentky, ISIC karty apod."@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "030" ;
+
+	rdfs:label "open card, permanentky, ISIC karty apod."@cs ;
+	.
+crimestatistics-code-codelist-hash:031 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "zlato nezpracované, slitky, zlomky"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "031" ;
+
+	rdfs:label "zlato nezpracované, slitky, zlomky"@cs ;
+	.
+crimestatistics-code-codelist-hash:032 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "zlato zpracované a klenoty, šperky"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "032" ;
+
+	rdfs:label "zlato zpracované a klenoty, šperky"@cs ;
+	.
+crimestatistics-code-codelist-hash:033 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "ušlechtilé drahé kovy ostatní a výrobky z nich klenoty, drahokamy"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "033" ;
+
+	rdfs:label "ušlechtilé drahé kovy ostatní a výrobky z nich klenoty, drahokamy"@cs ;
+	.
+crimestatistics-code-codelist-hash:034 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "mince zlaté"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "034" ;
+
+	rdfs:label "mince zlaté"@cs ;
+	.
+crimestatistics-code-codelist-hash:035 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "mince ostatní jednotlivé (numismaticky cenné)"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "035" ;
+
+	rdfs:label "mince ostatní jednotlivé (numismaticky cenné)"@cs ;
+	.
+crimestatistics-code-codelist-hash:036 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "vzácné nerosty (přírodní, syntetické kameny)"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "036" ;
+
+	rdfs:label "vzácné nerosty (přírodní, syntetické kameny)"@cs ;
+	.
+crimestatistics-code-codelist-hash:037 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "hodinky kapesní, náramkové aj., stolní, nástěnné  (s vyj. starožit. ad. 051)"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "037" ;
+
+	rdfs:label "hodinky kapesní, náramkové aj., stolní, nástěnné  (s vyj. starožit. ad. 051)"@cs ;
+	.
+crimestatistics-code-codelist-hash:039 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "ostatní - cennosti"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "039" ;
+
+	rdfs:label "ostatní - cennosti"@cs ;
+	.
+crimestatistics-code-codelist-hash:041 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "sbírky poštovních známek, nálepek apod."@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "041" ;
+
+	rdfs:label "sbírky poštovních známek, nálepek apod."@cs ;
+	.
+crimestatistics-code-codelist-hash:042 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "sbírky numismatické"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "042" ;
+
+	rdfs:label "sbírky numismatické"@cs ;
+	.
+crimestatistics-code-codelist-hash:043 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "cenné knihy, včetně hist. rukopisů"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "043" ;
+
+	rdfs:label "cenné knihy, včetně hist. rukopisů"@cs ;
+	.
+crimestatistics-code-codelist-hash:044 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "speciální literatura (odborná) mimo běžné literatury a knih (kód 171)"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "044" ;
+
+	rdfs:label "speciální literatura (odborná) mimo běžné literatury a knih (kód 171)"@cs ;
+	.
+crimestatistics-code-codelist-hash:049 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "ostatní - poštovní známky, sbírky všeho druhu, cenné knihy, spec. literatura"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "049" ;
+
+	rdfs:label "ostatní - poštovní známky, sbírky všeho druhu, cenné knihy, spec. literatura"@cs ;
+	.
+crimestatistics-code-codelist-hash:051 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "starožitnosti, (nábytek apod.)"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "051" ;
+
+	rdfs:label "starožitnosti, (nábytek apod.)"@cs ;
+	.
+crimestatistics-code-codelist-hash:052 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "historické zbraně"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "052" ;
+
+	rdfs:label "historické zbraně"@cs ;
+	.
+crimestatistics-code-codelist-hash:053 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "umělecká díla uvnitř (obrazy, sochy, rytiny, plastiky)"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "053" ;
+
+	rdfs:label "umělecká díla uvnitř (obrazy, sochy, rytiny, plastiky)"@cs ;
+	.
+crimestatistics-code-codelist-hash:054 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "gobelíny, koberce (s uměleckou a historickou hodnotou)"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "054" ;
+
+	rdfs:label "gobelíny, koberce (s uměleckou a historickou hodnotou)"@cs ;
+	.
+crimestatistics-code-codelist-hash:055 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "bohoslužebné náčiní a roucha"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "055" ;
+
+	rdfs:label "bohoslužebné náčiní a roucha"@cs ;
+	.
+crimestatistics-code-codelist-hash:056 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "umělecká díla na volném prostranství (obrazy, sochy, rytiny, plastiky)"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "056" ;
+
+	rdfs:label "umělecká díla na volném prostranství (obrazy, sochy, rytiny, plastiky)"@cs ;
+	.
+crimestatistics-code-codelist-hash:057 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "náhrobky a pomníky"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "057" ;
+
+	rdfs:label "náhrobky a pomníky"@cs ;
+	.
+crimestatistics-code-codelist-hash:058 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "mosazné a bronzové příslušenství hrobů včetně uren"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "058" ;
+
+	rdfs:label "mosazné a bronzové příslušenství hrobů včetně uren"@cs ;
+	.
+crimestatistics-code-codelist-hash:059 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "ostatní - starožitnosti, umělecké předměty"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "059" ;
+
+	rdfs:label "ostatní - starožitnosti, umělecké předměty"@cs ;
+	.
+crimestatistics-code-codelist-hash:061 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "fotografické přístroje"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "061" ;
+
+	rdfs:label "fotografické přístroje"@cs ;
+	.
+crimestatistics-code-codelist-hash:062 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "snímací a promítací kinopřístroje"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "062" ;
+
+	rdfs:label "snímací a promítací kinopřístroje"@cs ;
+	.
+crimestatistics-code-codelist-hash:063 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "stat. projektory, zvětšovací přístroje, leštičky, sušičky"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "063" ;
+
+	rdfs:label "stat. projektory, zvětšovací přístroje, leštičky, sušičky"@cs ;
+	.
+crimestatistics-code-codelist-hash:064 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "objektivy"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "064" ;
+
+	rdfs:label "objektivy"@cs ;
+	.
+crimestatistics-code-codelist-hash:065 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "dalekohledy"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "065" ;
+
+	rdfs:label "dalekohledy"@cs ;
+	.
+crimestatistics-code-codelist-hash:066 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "foto-kino materiál (filmy, papíry, vývojka apod.)"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "066" ;
+
+	rdfs:label "foto-kino materiál (filmy, papíry, vývojka apod.)"@cs ;
+	.
+crimestatistics-code-codelist-hash:067 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "expozimetry apod."@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "067" ;
+
+	rdfs:label "expozimetry apod."@cs ;
+	.
+crimestatistics-code-codelist-hash:068 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "brýle (dioptrické, sluneční)"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "068" ;
+
+	rdfs:label "brýle (dioptrické, sluneční)"@cs ;
+	.
+crimestatistics-code-codelist-hash:069 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "ostatní (nivelační přístroje)"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "069" ;
+
+	rdfs:label "ostatní (nivelační přístroje)"@cs ;
+	.
+crimestatistics-code-codelist-hash:070 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "mobilní telefony"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "070" ;
+
+	rdfs:label "mobilní telefony"@cs ;
+	.
+crimestatistics-code-codelist-hash:071 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "rozhlasové přijímače včetně autorádií"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "071" ;
+
+	rdfs:label "rozhlasové přijímače včetně autorádií"@cs ;
+	.
+crimestatistics-code-codelist-hash:072 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "televizní přijímače"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "072" ;
+
+	rdfs:label "televizní přijímače"@cs ;
+	.
+crimestatistics-code-codelist-hash:073 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "gramofony a magnetofony"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "073" ;
+
+	rdfs:label "gramofony a magnetofony"@cs ;
+	.
+crimestatistics-code-codelist-hash:074 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "zesilovače, reproduktory, mikrof., sluchátka"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "074" ;
+
+	rdfs:label "zesilovače, reproduktory, mikrof., sluchátka"@cs ;
+	.
+crimestatistics-code-codelist-hash:075 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "rádiové a televizní součástky"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "075" ;
+
+	rdfs:label "rádiové a televizní součástky"@cs ;
+	.
+crimestatistics-code-codelist-hash:076 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "telefon. a radiokom. přístroje, telefaxy"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "076" ;
+
+	rdfs:label "telefon. a radiokom. přístroje, telefaxy"@cs ;
+	.
+crimestatistics-code-codelist-hash:077 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "videotechnika"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "077" ;
+
+	rdfs:label "videotechnika"@cs ;
+	.
+crimestatistics-code-codelist-hash:078 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "satelitní antény"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "078" ;
+
+	rdfs:label "satelitní antény"@cs ;
+	.
+crimestatistics-code-codelist-hash:079 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "ostatní - zvukotechnika"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "079" ;
+
+	rdfs:label "ostatní - zvukotechnika"@cs ;
+	.
+crimestatistics-code-codelist-hash:081 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "elektrické spotřebiče lehké (žehličky, mixéry, vysoušeče vlasů, vysavače aj.)"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "081" ;
+
+	rdfs:label "elektrické spotřebiče lehké (žehličky, mixéry, vysoušeče vlasů, vysavače aj.)"@cs ;
+	.
+crimestatistics-code-codelist-hash:082 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "elektrické spotřebiče těžké (pračky, odstředivky, chladničky, mrazničky)"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "082" ;
+
+	rdfs:label "elektrické spotřebiče těžké (pračky, odstředivky, chladničky, mrazničky)"@cs ;
+	.
+crimestatistics-code-codelist-hash:083 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "topná zařízení (kamna, sporáky, vařiče neelektrické)"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "083" ;
+
+	rdfs:label "topná zařízení (kamna, sporáky, vařiče neelektrické)"@cs ;
+	.
+crimestatistics-code-codelist-hash:084 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "šicí a pletací stroje"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "084" ;
+
+	rdfs:label "šicí a pletací stroje"@cs ;
+	.
+crimestatistics-code-codelist-hash:085 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "svítidla, žárovky, výbojky, zářivky"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "085" ;
+
+	rdfs:label "svítidla, žárovky, výbojky, zářivky"@cs ;
+	.
+crimestatistics-code-codelist-hash:086 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "kosmetické přístroje (včetně holících strojků)"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "086" ;
+
+	rdfs:label "kosmetické přístroje (včetně holících strojků)"@cs ;
+	.
+crimestatistics-code-codelist-hash:087 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "propojovací kabely, nabíječky, dálkové ovladače, apod."@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "087" ;
+
+	rdfs:label "propojovací kabely, nabíječky, dálkové ovladače, apod."@cs ;
+	.
+crimestatistics-code-codelist-hash:088 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "kuchyňské přístroje včetně nádobí a příborů"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "088" ;
+
+	rdfs:label "kuchyňské přístroje včetně nádobí a příborů"@cs ;
+	.
+crimestatistics-code-codelist-hash:089 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "ostatní - přístroje do domácnosti a příslušenství"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "089" ;
+
+	rdfs:label "ostatní - přístroje do domácnosti a příslušenství"@cs ;
+	.
+crimestatistics-code-codelist-hash:091 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "psací stroje"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "091" ;
+
+	rdfs:label "psací stroje"@cs ;
+	.
+crimestatistics-code-codelist-hash:092 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "rozmnožovací a reprod. stroje a přístroje"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "092" ;
+
+	rdfs:label "rozmnožovací a reprod. stroje a přístroje"@cs ;
+	.
+crimestatistics-code-codelist-hash:093 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "kalkulační počítače, fakturovací stroje"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "093" ;
+
+	rdfs:label "kalkulační počítače, fakturovací stroje"@cs ;
+	.
+crimestatistics-code-codelist-hash:094 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "příslušenství ke kancelářským strojům"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "094" ;
+
+	rdfs:label "příslušenství ke kancelářským strojům"@cs ;
+	.
+crimestatistics-code-codelist-hash:095 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "zařízení na zpracování informací a příslušenství k nim mimo výpočetní techniku"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "095" ;
+
+	rdfs:label "zařízení na zpracování informací a příslušenství k nim mimo výpočetní techniku"@cs ;
+	.
+crimestatistics-code-codelist-hash:096 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "kancelářské potřeby"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "096" ;
+
+	rdfs:label "kancelářské potřeby"@cs ;
+	.
+crimestatistics-code-codelist-hash:097 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "razítka, pečetidla"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "097" ;
+
+	rdfs:label "razítka, pečetidla"@cs ;
+	.
+crimestatistics-code-codelist-hash:099 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "ostatní - kancelářské stroje a potřeby"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "099" ;
+
+	rdfs:label "ostatní - kancelářské stroje a potřeby"@cs ;
+	.
+crimestatistics-code-codelist-hash:101 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "strojové výrobní prostředky v průmyslu a příslušenství"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "101" ;
+
+	rdfs:label "strojové výrobní prostředky v průmyslu a příslušenství"@cs ;
+	.
+crimestatistics-code-codelist-hash:102 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "zemědělské stroje a příslušenství"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "102" ;
+
+	rdfs:label "zemědělské stroje a příslušenství"@cs ;
+	.
+crimestatistics-code-codelist-hash:103 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "invalidní vozíky, zdravotnické přístroje, lékařské nástroje a pomůcky"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "103" ;
+
+	rdfs:label "invalidní vozíky, zdravotnické přístroje, lékařské nástroje a pomůcky"@cs ;
+	.
+crimestatistics-code-codelist-hash:104 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "měřící přístroje, nářadí a pomůcky"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "104" ;
+
+	rdfs:label "měřící přístroje, nářadí a pomůcky"@cs ;
+	.
+crimestatistics-code-codelist-hash:105 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "nástroje a nářadí (včetně brousicích prostředků)"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "105" ;
+
+	rdfs:label "nástroje a nářadí (včetně brousicích prostředků)"@cs ;
+	.
+crimestatistics-code-codelist-hash:106 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "motory a pohonné agregáty ostatní"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "106" ;
+
+	rdfs:label "motory a pohonné agregáty ostatní"@cs ;
+	.
+crimestatistics-code-codelist-hash:107 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "strojní součásti obecného použití (hřídele,ložiska aj.)  "@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "107" ;
+
+	rdfs:label "strojní součásti obecného použití (hřídele,ložiska aj.)  "@cs ;
+	.
+crimestatistics-code-codelist-hash:109 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "ostatní - stroje, přístroje a nástroje"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "109" ;
+
+	rdfs:label "ostatní - stroje, přístroje a nástroje"@cs ;
+	.
+crimestatistics-code-codelist-hash:111 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "krátké zbraně"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "111" ;
+
+	rdfs:label "krátké zbraně"@cs ;
+	.
+crimestatistics-code-codelist-hash:112 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "dlouhé zbraně (kulové i brokové)"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "112" ;
+
+	rdfs:label "dlouhé zbraně (kulové i brokové)"@cs ;
+	.
+crimestatistics-code-codelist-hash:113 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "střelivo"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "113" ;
+
+	rdfs:label "střelivo"@cs ;
+	.
+crimestatistics-code-codelist-hash:114 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "výbušniny a pyrotech. výrobky"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "114" ;
+
+	rdfs:label "výbušniny a pyrotech. výrobky"@cs ;
+	.
+crimestatistics-code-codelist-hash:115 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "zbraně krátké startovací"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "115" ;
+
+	rdfs:label "zbraně krátké startovací"@cs ;
+	.
+crimestatistics-code-codelist-hash:116 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "jateční pistole apod."@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "116" ;
+
+	rdfs:label "jateční pistole apod."@cs ;
+	.
+crimestatistics-code-codelist-hash:119 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "ostatní - zbraně (mimo historických)"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "119" ;
+
+	rdfs:label "ostatní - zbraně (mimo historických)"@cs ;
+	.
+crimestatistics-code-codelist-hash:120 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "automobil převážející finanční hotovost"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "120" ;
+
+	rdfs:label "automobil převážející finanční hotovost"@cs ;
+	.
+crimestatistics-code-codelist-hash:121 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "osobní automobily"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "121" ;
+
+	rdfs:label "osobní automobily"@cs ;
+	.
+crimestatistics-code-codelist-hash:122 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "nákladní automobily a autobusy"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "122" ;
+
+	rdfs:label "nákladní automobily a autobusy"@cs ;
+	.
+crimestatistics-code-codelist-hash:123 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "traktory"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "123" ;
+
+	rdfs:label "traktory"@cs ;
+	.
+crimestatistics-code-codelist-hash:124 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "součástky a náhradní díly k dvoustopým mot. vozidlům"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "124" ;
+
+	rdfs:label "součástky a náhradní díly k dvoustopým mot. vozidlům"@cs ;
+	.
+crimestatistics-code-codelist-hash:125 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "tažné a stavební stroje spec. vozidla účelová"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "125" ;
+
+	rdfs:label "tažné a stavební stroje spec. vozidla účelová"@cs ;
+	.
+crimestatistics-code-codelist-hash:126 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "pneumatiky"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "126" ;
+
+	rdfs:label "pneumatiky"@cs ;
+	.
+crimestatistics-code-codelist-hash:127 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "přívěsy a závěsy za vozidla"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "127" ;
+
+	rdfs:label "přívěsy a závěsy za vozidla"@cs ;
+	.
+crimestatistics-code-codelist-hash:128 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "karavany"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "128" ;
+
+	rdfs:label "karavany"@cs ;
+	.
+crimestatistics-code-codelist-hash:129 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "ostatní - motorová vozidla dvoustopá"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "129" ;
+
+	rdfs:label "ostatní - motorová vozidla dvoustopá"@cs ;
+	.
+crimestatistics-code-codelist-hash:130 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "kolejová vozidla (lokomotivy, vagóny, metro, tramvaje)"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "130" ;
+
+	rdfs:label "kolejová vozidla (lokomotivy, vagóny, metro, tramvaje)"@cs ;
+	.
+crimestatistics-code-codelist-hash:131 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "motocykly, skútry"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "131" ;
+
+	rdfs:label "motocykly, skútry"@cs ;
+	.
+crimestatistics-code-codelist-hash:132 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "mopedy"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "132" ;
+
+	rdfs:label "mopedy"@cs ;
+	.
+crimestatistics-code-codelist-hash:133 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "tříkolky, čtyřkolky a motocykly s přívěs. vozíkem"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "133" ;
+
+	rdfs:label "tříkolky, čtyřkolky a motocykly s přívěs. vozíkem"@cs ;
+	.
+crimestatistics-code-codelist-hash:134 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "součástky a náhradní díly, podsestavy k jednostopým mot.vozidlům"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "134" ;
+
+	rdfs:label "součástky a náhradní díly, podsestavy k jednostopým mot.vozidlům"@cs ;
+	.
+crimestatistics-code-codelist-hash:135 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "pneumatiky"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "135" ;
+
+	rdfs:label "pneumatiky"@cs ;
+	.
+crimestatistics-code-codelist-hash:139 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "ostatní - motorová vozidla jednostopá"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "139" ;
+
+	rdfs:label "ostatní - motorová vozidla jednostopá"@cs ;
+	.
+crimestatistics-code-codelist-hash:140 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "jízdní kola a jejich příslušenství"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "140" ;
+
+	rdfs:label "jízdní kola a jejich příslušenství"@cs ;
+	.
+crimestatistics-code-codelist-hash:141 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "ochranné přilby"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "141" ;
+
+	rdfs:label "ochranné přilby"@cs ;
+	.
+crimestatistics-code-codelist-hash:145 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "klíče od domu, bytu"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "145" ;
+
+	rdfs:label "klíče od domu, bytu"@cs ;
+	.
+crimestatistics-code-codelist-hash:146 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "klíče od motorových vozidel"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "146" ;
+
+	rdfs:label "klíče od motorových vozidel"@cs ;
+	.
+crimestatistics-code-codelist-hash:148 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "lodě"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "148" ;
+
+	rdfs:label "lodě"@cs ;
+	.
+crimestatistics-code-codelist-hash:151 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "tkaniny (metráž) včetně tkanin ze syntetických vláken"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "151" ;
+
+	rdfs:label "tkaniny (metráž) včetně tkanin ze syntetických vláken"@cs ;
+	.
+crimestatistics-code-codelist-hash:152 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "svrchní oblečení (včetně oděvů a pleteného zboží)"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "152" ;
+
+	rdfs:label "svrchní oblečení (včetně oděvů a pleteného zboží)"@cs ;
+	.
+crimestatistics-code-codelist-hash:153 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "spodní oblečení a prádlo"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "153" ;
+
+	rdfs:label "spodní oblečení a prádlo"@cs ;
+	.
+crimestatistics-code-codelist-hash:154 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "oděvní doplňky textilní (kravaty, klobouky apod.)"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "154" ;
+
+	rdfs:label "oděvní doplňky textilní (kravaty, klobouky apod.)"@cs ;
+	.
+crimestatistics-code-codelist-hash:155 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "lůžkoviny"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "155" ;
+
+	rdfs:label "lůžkoviny"@cs ;
+	.
+crimestatistics-code-codelist-hash:156 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "deštníky v zahradních restauracích, zahradní deštníky, stříšky, markýzy"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "156" ;
+
+	rdfs:label "deštníky v zahradních restauracích, zahradní deštníky, stříšky, markýzy"@cs ;
+	.
+crimestatistics-code-codelist-hash:159 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "ostatní (včetně výrobků provaznických) - textil a textilní výrobky"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "159" ;
+
+	rdfs:label "ostatní (včetně výrobků provaznických) - textil a textilní výrobky"@cs ;
+	.
+crimestatistics-code-codelist-hash:161 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "kožené kabáty a kožené oděvní součástky ostatní"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "161" ;
+
+	rdfs:label "kožené kabáty a kožené oděvní součástky ostatní"@cs ;
+	.
+crimestatistics-code-codelist-hash:162 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "kufry, aktovky, kabelky, peněženky, pásky"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "162" ;
+
+	rdfs:label "kufry, aktovky, kabelky, peněženky, pásky"@cs ;
+	.
+crimestatistics-code-codelist-hash:163 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "obuv a obuvnický materiál z kůže, plast. hmot, pryže, textilu apod."@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "163" ;
+
+	rdfs:label "obuv a obuvnický materiál z kůže, plast. hmot, pryže, textilu apod."@cs ;
+	.
+crimestatistics-code-codelist-hash:164 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "techn. sedlářské a galanterní výrobky z usní a jiných hmot (řemeny, rukavice, aktovky aj.)"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "164" ;
+
+	rdfs:label "techn. sedlářské a galanterní výrobky z usní a jiných hmot (řemeny, rukavice, aktovky aj.)"@cs ;
+	.
+crimestatistics-code-codelist-hash:165 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "kožešnické výrobky"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "165" ;
+
+	rdfs:label "kožešnické výrobky"@cs ;
+	.
+crimestatistics-code-codelist-hash:166 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "koželužské výrobky (usně, odpady)"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "166" ;
+
+	rdfs:label "koželužské výrobky (usně, odpady)"@cs ;
+	.
+crimestatistics-code-codelist-hash:167 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "surové kožky a kožešiny (s vyjímkou předmětů s kódem 553)"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "167" ;
+
+	rdfs:label "surové kožky a kožešiny (s vyjímkou předmětů s kódem 553)"@cs ;
+	.
+crimestatistics-code-codelist-hash:169 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "ostatní - kožedělné výrobky a galanterie"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "169" ;
+
+	rdfs:label "ostatní - kožedělné výrobky a galanterie"@cs ;
+	.
+crimestatistics-code-codelist-hash:171 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "polygrafické výrobky (knihy, publikace, časopisy, reprodukce, noty aj. )"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "171" ;
+
+	rdfs:label "polygrafické výrobky (knihy, publikace, časopisy, reprodukce, noty aj. )"@cs ;
+	.
+crimestatistics-code-codelist-hash:172 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "hudební nástroje"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "172" ;
+
+	rdfs:label "hudební nástroje"@cs ;
+	.
+crimestatistics-code-codelist-hash:173 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "sportovní potřeby (včetně potřeb pro vodní sporty)"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "173" ;
+
+	rdfs:label "sportovní potřeby (včetně potřeb pro vodní sporty)"@cs ;
+	.
+crimestatistics-code-codelist-hash:174 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "gram.desky,nahrané mag.pásky"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "174" ;
+
+	rdfs:label "gram.desky,nahrané mag.pásky"@cs ;
+	.
+crimestatistics-code-codelist-hash:175 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "videokazety, DVD a CD"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "175" ;
+
+	rdfs:label "videokazety, DVD a CD"@cs ;
+	.
+crimestatistics-code-codelist-hash:179 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "ostatní (kopie filmů, hračky, společen.hry, propagační a ozdobný mater. apod.)"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "179" ;
+
+	rdfs:label "ostatní (kopie filmů, hračky, společen.hry, propagační a ozdobný mater. apod.)"@cs ;
+	.
+crimestatistics-code-codelist-hash:181 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "potraviny"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "181" ;
+
+	rdfs:label "potraviny"@cs ;
+	.
+crimestatistics-code-codelist-hash:182 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "mléko a mléčné výrobky (vč. másla)"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "182" ;
+
+	rdfs:label "mléko a mléčné výrobky (vč. másla)"@cs ;
+	.
+crimestatistics-code-codelist-hash:183 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "jateční a výsekové maso, masné výrobky, sádlo, slanina a ost. masné výrobky"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "183" ;
+
+	rdfs:label "jateční a výsekové maso, masné výrobky, sádlo, slanina a ost. masné výrobky"@cs ;
+	.
+crimestatistics-code-codelist-hash:184 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "masné konzervy a hotová jídla v konzervách"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "184" ;
+
+	rdfs:label "masné konzervy a hotová jídla v konzervách"@cs ;
+	.
+crimestatistics-code-codelist-hash:185 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "cukrovinářské výrobky, včetně kakaa a čokolády"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "185" ;
+
+	rdfs:label "cukrovinářské výrobky, včetně kakaa a čokolády"@cs ;
+	.
+crimestatistics-code-codelist-hash:186 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "lihoviny,líh rafinovaný (čistý), vína, medoviny "@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "186" ;
+
+	rdfs:label "lihoviny,líh rafinovaný (čistý), vína, medoviny "@cs ;
+	.
+crimestatistics-code-codelist-hash:187 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "pivo"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "187" ;
+
+	rdfs:label "pivo"@cs ;
+	.
+crimestatistics-code-codelist-hash:189 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "ostatní - potraviny a lihoviny"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "189" ;
+
+	rdfs:label "ostatní - potraviny a lihoviny"@cs ;
+	.
+crimestatistics-code-codelist-hash:191 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "tabákové výrobky"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "191" ;
+
+	rdfs:label "tabákové výrobky"@cs ;
+	.
+crimestatistics-code-codelist-hash:192 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "tabák"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "192" ;
+
+	rdfs:label "tabák"@cs ;
+	.
+crimestatistics-code-codelist-hash:193 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "kuřácké potřeby (dýmky, špičky, cigaretové papírky)"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "193" ;
+
+	rdfs:label "kuřácké potřeby (dýmky, špičky, cigaretové papírky)"@cs ;
+	.
+crimestatistics-code-codelist-hash:199 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "ostatní - tabákové výrobky"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "199" ;
+
+	rdfs:label "ostatní - tabákové výrobky"@cs ;
+	.
+crimestatistics-code-codelist-hash:200 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "malé domácí zvířectvo (kočky, psi, apod.)"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "200" ;
+
+	rdfs:label "malé domácí zvířectvo (kočky, psi, apod.)"@cs ;
+	.
+crimestatistics-code-codelist-hash:201 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "velké domácí zvířectvo (hov.dobytek, koně, prasata aj.)"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "201" ;
+
+	rdfs:label "velké domácí zvířectvo (hov.dobytek, koně, prasata aj.)"@cs ;
+	.
+crimestatistics-code-codelist-hash:202 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "drůbež, králíci, holubi"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "202" ;
+
+	rdfs:label "drůbež, králíci, holubi"@cs ;
+	.
+crimestatistics-code-codelist-hash:203 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "kozy a ovce"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "203" ;
+
+	rdfs:label "kozy a ovce"@cs ;
+	.
+crimestatistics-code-codelist-hash:204 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "zvířectvo polní a lesní a jejich vývojová stadia (kromě dravců, sov a zvěře spárkaté)"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "204" ;
+
+	rdfs:label "zvířectvo polní a lesní a jejich vývojová stadia (kromě dravců, sov a zvěře spárkaté)"@cs ;
+	.
+crimestatistics-code-codelist-hash:205 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "ryby a rybí násady"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "205" ;
+
+	rdfs:label "ryby a rybí násady"@cs ;
+	.
+crimestatistics-code-codelist-hash:206 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "exotické zvířectvo (cizokrajné) a jejich vývojová stadia"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "206" ;
+
+	rdfs:label "exotické zvířectvo (cizokrajné) a jejich vývojová stadia"@cs ;
+	.
+crimestatistics-code-codelist-hash:207 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "zvířata kožešinová chovná (nutrie, norci, lišky)"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "207" ;
+
+	rdfs:label "zvířata kožešinová chovná (nutrie, norci, lišky)"@cs ;
+	.
+crimestatistics-code-codelist-hash:208 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "zvěr spárkatá (tuzemská)"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "208" ;
+
+	rdfs:label "zvěr spárkatá (tuzemská)"@cs ;
+	.
+crimestatistics-code-codelist-hash:210 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "dravci a sovy (tuzemské druhy) a jejich vývojová stadia"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "210" ;
+
+	rdfs:label "dravci a sovy (tuzemské druhy) a jejich vývojová stadia"@cs ;
+	.
+crimestatistics-code-codelist-hash:209 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "ostatní - zvířectvo včetně včelstva"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "209" ;
+
+	rdfs:label "ostatní - zvířectvo včetně včelstva"@cs ;
+	.
+crimestatistics-code-codelist-hash:211 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "léky běžné tuzemské"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "211" ;
+
+	rdfs:label "léky běžné tuzemské"@cs ;
+	.
+crimestatistics-code-codelist-hash:212 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "léky běžné zahraniční"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "212" ;
+
+	rdfs:label "léky běžné zahraniční"@cs ;
+	.
+crimestatistics-code-codelist-hash:213 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "léky návykové (barbituráty,rohypnol, kodein, diazepam apod.)"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "213" ;
+
+	rdfs:label "léky návykové (barbituráty,rohypnol, kodein, diazepam apod.)"@cs ;
+	.
+crimestatistics-code-codelist-hash:214 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "farmaceuticky zpracované omamné prostředky"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "214" ;
+
+	rdfs:label "farmaceuticky zpracované omamné prostředky"@cs ;
+	.
+crimestatistics-code-codelist-hash:215 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "drogy a omamné prostředky dovážené pro farm. zpracování"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "215" ;
+
+	rdfs:label "drogy a omamné prostředky dovážené pro farm. zpracování"@cs ;
+	.
+crimestatistics-code-codelist-hash:216 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "jedy"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "216" ;
+
+	rdfs:label "jedy"@cs ;
+	.
+crimestatistics-code-codelist-hash:217 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "drogy a omamné prostř. dovezené, vyvezené nebo vyrobené bez povolení"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "217" ;
+
+	rdfs:label "drogy a omamné prostř. dovezené, vyvezené nebo vyrobené bez povolení"@cs ;
+	.
+crimestatistics-code-codelist-hash:218 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "antibiotika a hormonální biostimulátory určená do krmiv a krmných směsí pro hospodářská zvířata"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "218" ;
+
+	rdfs:label "antibiotika a hormonální biostimulátory určená do krmiv a krmných směsí pro hospodářská zvířata"@cs ;
+	.
+crimestatistics-code-codelist-hash:219 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "ostatní - farmaceutické a omamné prostředky"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "219" ;
+
+	rdfs:label "ostatní - farmaceutické a omamné prostředky"@cs ;
+	.
+crimestatistics-code-codelist-hash:221 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "zásilky poštovní  peněžní"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "221" ;
+
+	rdfs:label "zásilky poštovní  peněžní"@cs ;
+	.
+crimestatistics-code-codelist-hash:222 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "zásilky poštovní  listovní"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "222" ;
+
+	rdfs:label "zásilky poštovní  listovní"@cs ;
+	.
+crimestatistics-code-codelist-hash:223 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "zásilky poštovní  balíkové"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "223" ;
+
+	rdfs:label "zásilky poštovní  balíkové"@cs ;
+	.
+crimestatistics-code-codelist-hash:224 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "zásilky vlakové, silniční, letecké a lodní - vozové"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "224" ;
+
+	rdfs:label "zásilky vlakové, silniční, letecké a lodní - vozové"@cs ;
+	.
+crimestatistics-code-codelist-hash:225 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "zásilky vlakové, silniční, letecké a lodní-  kusové"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "225" ;
+
+	rdfs:label "zásilky vlakové, silniční, letecké a lodní-  kusové"@cs ;
+	.
+crimestatistics-code-codelist-hash:226 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "zásilky vlakové, silniční, letecké a lodní-  v přepravních skříních (kontejnery)"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "226" ;
+
+	rdfs:label "zásilky vlakové, silniční, letecké a lodní-  v přepravních skříních (kontejnery)"@cs ;
+	.
+crimestatistics-code-codelist-hash:227 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "přepravované věci ve vlaku nebo v autobusu (cestovní zavazadla)"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "227" ;
+
+	rdfs:label "přepravované věci ve vlaku nebo v autobusu (cestovní zavazadla)"@cs ;
+	.
+crimestatistics-code-codelist-hash:228 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "přepravované věci v letadle, lodi (cestovní zavazadla)"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "228" ;
+
+	rdfs:label "přepravované věci v letadle, lodi (cestovní zavazadla)"@cs ;
+	.
+crimestatistics-code-codelist-hash:229 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "ostatní - zásilky a přepravované věci"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "229" ;
+
+	rdfs:label "ostatní - zásilky a přepravované věci"@cs ;
+	.
+crimestatistics-code-codelist-hash:230 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "cihlářské pálené výrobky(cihly, tašky, trubky, apod.), betonové výrobky, nepálené"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "230" ;
+
+	rdfs:label "cihlářské pálené výrobky(cihly, tašky, trubky, apod.), betonové výrobky, nepálené"@cs ;
+	.
+crimestatistics-code-codelist-hash:231 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "cementy, vápno, sádry ostatní maltová pojidla"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "231" ;
+
+	rdfs:label "cementy, vápno, sádry ostatní maltová pojidla"@cs ;
+	.
+crimestatistics-code-codelist-hash:232 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "štěrkopísky, kámen, kamenic.výrobky"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "232" ;
+
+	rdfs:label "štěrkopísky, kámen, kamenic.výrobky"@cs ;
+	.
+crimestatistics-code-codelist-hash:233 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "kabely, vodiče, elektroinst. materiál"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "233" ;
+
+	rdfs:label "kabely, vodiče, elektroinst. materiál"@cs ;
+	.
+crimestatistics-code-codelist-hash:234 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "instalační materiál ostatní"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "234" ;
+
+	rdfs:label "instalační materiál ostatní"@cs ;
+	.
+crimestatistics-code-codelist-hash:235 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "pilařské výrobky (prkna, hranoly, fošny) včetně dřevotřískových apod. desek"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "235" ;
+
+	rdfs:label "pilařské výrobky (prkna, hranoly, fošny) včetně dřevotřískových apod. desek"@cs ;
+	.
+crimestatistics-code-codelist-hash:236 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "stavební truhlářské výrobky (okna, zárubně, dveře,  parkety aj.)"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "236" ;
+
+	rdfs:label "stavební truhlářské výrobky (okna, zárubně, dveře,  parkety aj.)"@cs ;
+	.
+crimestatistics-code-codelist-hash:237 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "nábytek (včetně kovového)"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "237" ;
+
+	rdfs:label "nábytek (včetně kovového)"@cs ;
+	.
+crimestatistics-code-codelist-hash:238 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "podlahové krytiny a izolační materiál (lepenky asfaltové aj.)"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "238" ;
+
+	rdfs:label "podlahové krytiny a izolační materiál (lepenky asfaltové aj.)"@cs ;
+	.
+crimestatistics-code-codelist-hash:239 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "ostatní - stavební a instalační materiály a dřevařské výrobky"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "239" ;
+
+	rdfs:label "ostatní - stavební a instalační materiály a dřevařské výrobky"@cs ;
+	.
+crimestatistics-code-codelist-hash:241 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "obalové, osvětlovací a užitkové sklo (láhve, skl. nádobí, vázy apod.)"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "241" ;
+
+	rdfs:label "obalové, osvětlovací a užitkové sklo (láhve, skl. nádobí, vázy apod.)"@cs ;
+	.
+crimestatistics-code-codelist-hash:242 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "technické, optické a laboratorní sklo"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "242" ;
+
+	rdfs:label "technické, optické a laboratorní sklo"@cs ;
+	.
+crimestatistics-code-codelist-hash:243 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "užitková keramika, porcelán, hrnčířské výrobky včetně keramických výrobků jako umyvadla aj."@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "243" ;
+
+	rdfs:label "užitková keramika, porcelán, hrnčířské výrobky včetně keramických výrobků jako umyvadla aj."@cs ;
+	.
+crimestatistics-code-codelist-hash:244 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "výkladní skříně - sklo"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "244" ;
+
+	rdfs:label "výkladní skříně - sklo"@cs ;
+	.
+crimestatistics-code-codelist-hash:245 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "bižuterie"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "245" ;
+
+	rdfs:label "bižuterie"@cs ;
+	.
+crimestatistics-code-codelist-hash:249 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "ostatní - sklo, porcelán, keramika"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "249" ;
+
+	rdfs:label "ostatní - sklo, porcelán, keramika"@cs ;
+	.
+crimestatistics-code-codelist-hash:251 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "paliva tuhá, kapalná a plynná (mimo dřeva)"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "251" ;
+
+	rdfs:label "paliva tuhá, kapalná a plynná (mimo dřeva)"@cs ;
+	.
+crimestatistics-code-codelist-hash:252 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "pohonné hmoty"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "252" ;
+
+	rdfs:label "pohonné hmoty"@cs ;
+	.
+crimestatistics-code-codelist-hash:253 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "mazací tuky, oleje, vazelíny"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "253" ;
+
+	rdfs:label "mazací tuky, oleje, vazelíny"@cs ;
+	.
+crimestatistics-code-codelist-hash:254 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "energie tepelná, elektrická aj."@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "254" ;
+
+	rdfs:label "energie tepelná, elektrická aj."@cs ;
+	.
+crimestatistics-code-codelist-hash:259 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "ostatní - paliva, maziva, energie"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "259" ;
+
+	rdfs:label "ostatní - paliva, maziva, energie"@cs ;
+	.
+crimestatistics-code-codelist-hash:261 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "železný, litinový, ocelový odpad - šrot"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "261" ;
+
+	rdfs:label "železný, litinový, ocelový odpad - šrot"@cs ;
+	.
+crimestatistics-code-codelist-hash:262 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "plechy"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "262" ;
+
+	rdfs:label "plechy"@cs ;
+	.
+crimestatistics-code-codelist-hash:263 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "trubky"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "263" ;
+
+	rdfs:label "trubky"@cs ;
+	.
+crimestatistics-code-codelist-hash:264 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "barevné kovy, výrobky a odpad z nich"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "264" ;
+
+	rdfs:label "barevné kovy, výrobky a odpad z nich"@cs ;
+	.
+crimestatistics-code-codelist-hash:265 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "železné, litinové a ocelové výrobky"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "265" ;
+
+	rdfs:label "železné, litinové a ocelové výrobky"@cs ;
+	.
+crimestatistics-code-codelist-hash:266 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "reklamní tabule - poutače"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "266" ;
+
+	rdfs:label "reklamní tabule - poutače"@cs ;
+	.
+crimestatistics-code-codelist-hash:269 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "ostatní - hutní materiál"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "269" ;
+
+	rdfs:label "ostatní - hutní materiál"@cs ;
+	.
+crimestatistics-code-codelist-hash:271 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "nátěrové hmoty, latexy, klihy, lepidla, barviva, glazury, mat. pro povrchovou úpravu"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "271" ;
+
+	rdfs:label "nátěrové hmoty, latexy, klihy, lepidla, barviva, glazury, mat. pro povrchovou úpravu"@cs ;
+	.
+crimestatistics-code-codelist-hash:272 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "umělá hnojiva a přípravky na ochranu rostlin"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "272" ;
+
+	rdfs:label "umělá hnojiva a přípravky na ochranu rostlin"@cs ;
+	.
+crimestatistics-code-codelist-hash:273 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "mydlářské, saponátové a kosmetické výrobky"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "273" ;
+
+	rdfs:label "mydlářské, saponátové a kosmetické výrobky"@cs ;
+	.
+crimestatistics-code-codelist-hash:274 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "chemicky prchavé látky zneužívané jako návykové látky"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "274" ;
+
+	rdfs:label "chemicky prchavé látky zneužívané jako návykové látky"@cs ;
+	.
+crimestatistics-code-codelist-hash:279 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "ostatní - chemické výrobky"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "279" ;
+
+	rdfs:label "ostatní - chemické výrobky"@cs ;
+	.
+crimestatistics-code-codelist-hash:281 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "obilí a luštěniny"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "281" ;
+
+	rdfs:label "obilí a luštěniny"@cs ;
+	.
+crimestatistics-code-codelist-hash:282 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "okopaniny"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "282" ;
+
+	rdfs:label "okopaniny"@cs ;
+	.
+crimestatistics-code-codelist-hash:283 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "osivo a sadba"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "283" ;
+
+	rdfs:label "osivo a sadba"@cs ;
+	.
+crimestatistics-code-codelist-hash:284 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "ovoce a zelenina"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "284" ;
+
+	rdfs:label "ovoce a zelenina"@cs ;
+	.
+crimestatistics-code-codelist-hash:285 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "výrobky těžby dřeva jen na pile (surové dřevo, výřezy, palivové dřevo)"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "285" ;
+
+	rdfs:label "výrobky těžby dřeva jen na pile (surové dřevo, výřezy, palivové dřevo)"@cs ;
+	.
+crimestatistics-code-codelist-hash:286 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "dřevní hmota (lesní porosty)"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "286" ;
+
+	rdfs:label "dřevní hmota (lesní porosty)"@cs ;
+	.
+crimestatistics-code-codelist-hash:287 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "dřevní hmota (ostatní porosty)"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "287" ;
+
+	rdfs:label "dřevní hmota (ostatní porosty)"@cs ;
+	.
+crimestatistics-code-codelist-hash:288 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "květiny a okrasné rostliny"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "288" ;
+
+	rdfs:label "květiny a okrasné rostliny"@cs ;
+	.
+crimestatistics-code-codelist-hash:289 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "ostatní - zemědělské výrobky a výrobky těžby dřeva"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "289" ;
+
+	rdfs:label "ostatní - zemědělské výrobky a výrobky těžby dřeva"@cs ;
+	.
+crimestatistics-code-codelist-hash:291 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "výrobky z plastů"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "291" ;
+
+	rdfs:label "výrobky z plastů"@cs ;
+	.
+crimestatistics-code-codelist-hash:292 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "hračky"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "292" ;
+
+	rdfs:label "hračky"@cs ;
+	.
+crimestatistics-code-codelist-hash:293 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "dětské kočárky, dětské autosedačky, příruční vozíky"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "293" ;
+
+	rdfs:label "dětské kočárky, dětské autosedačky, příruční vozíky"@cs ;
+	.
+crimestatistics-code-codelist-hash:294 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "papírenské výrobky"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "294" ;
+
+	rdfs:label "papírenské výrobky"@cs ;
+	.
+crimestatistics-code-codelist-hash:295 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "papírový odpad a sběr"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "295" ;
+
+	rdfs:label "papírový odpad a sběr"@cs ;
+	.
+crimestatistics-code-codelist-hash:296 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "ostatní sběrné suroviny nekovové"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "296" ;
+
+	rdfs:label "ostatní sběrné suroviny nekovové"@cs ;
+	.
+crimestatistics-code-codelist-hash:297 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "mobilní WC"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "297" ;
+
+	rdfs:label "mobilní WC"@cs ;
+	.
+crimestatistics-code-codelist-hash:298 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "popelnice, odpadní nádoby"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "298" ;
+
+	rdfs:label "popelnice, odpadní nádoby"@cs ;
+	.
+crimestatistics-code-codelist-hash:301 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "domy činžovní"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "301" ;
+
+	rdfs:label "domy činžovní"@cs ;
+	.
+crimestatistics-code-codelist-hash:302 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "domy rodinné"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "302" ;
+
+	rdfs:label "domy rodinné"@cs ;
+	.
+crimestatistics-code-codelist-hash:303 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "byty"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "303" ;
+
+	rdfs:label "byty"@cs ;
+	.
+crimestatistics-code-codelist-hash:304 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "chaty"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "304" ;
+
+	rdfs:label "chaty"@cs ;
+	.
+crimestatistics-code-codelist-hash:305 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "garáže"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "305" ;
+
+	rdfs:label "garáže"@cs ;
+	.
+crimestatistics-code-codelist-hash:306 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "ostatní nemovitosti"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "306" ;
+
+	rdfs:label "ostatní nemovitosti"@cs ;
+	.
+crimestatistics-code-codelist-hash:307 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "zastávky hromadné dopravy"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "307" ;
+
+	rdfs:label "zastávky hromadné dopravy"@cs ;
+	.
+crimestatistics-code-codelist-hash:308 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "staveniště"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "308" ;
+
+	rdfs:label "staveniště"@cs ;
+	.
+crimestatistics-code-codelist-hash:309 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "stavební buňky a maringotky"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "309" ;
+
+	rdfs:label "stavební buňky a maringotky"@cs ;
+	.
+crimestatistics-code-codelist-hash:310 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "hrací automaty"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "310" ;
+
+	rdfs:label "hrací automaty"@cs ;
+	.
+crimestatistics-code-codelist-hash:311 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "prodejní automaty"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "311" ;
+
+	rdfs:label "prodejní automaty"@cs ;
+	.
+crimestatistics-code-codelist-hash:312 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "bankomaty"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "312" ;
+
+	rdfs:label "bankomaty"@cs ;
+	.
+crimestatistics-code-codelist-hash:313 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "telefonní automaty"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "313" ;
+
+	rdfs:label "telefonní automaty"@cs ;
+	.
+crimestatistics-code-codelist-hash:315 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "hasící přístroje"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "315" ;
+
+	rdfs:label "hasící přístroje"@cs ;
+	.
+crimestatistics-code-codelist-hash:316 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "hadice a hydranty"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "316" ;
+
+	rdfs:label "hadice a hydranty"@cs ;
+	.
+crimestatistics-code-codelist-hash:320 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "zneužití zcizeného občanského průkazu"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "320" ;
+
+	rdfs:label "zneužití zcizeného občanského průkazu"@cs ;
+	.
+crimestatistics-code-codelist-hash:321 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "zneužití zcizeného jiného dokladu (pas, rodný list, řidičský průkaz apod.)"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "321" ;
+
+	rdfs:label "zneužití zcizeného jiného dokladu (pas, rodný list, řidičský průkaz apod.)"@cs ;
+	.
+crimestatistics-code-codelist-hash:322 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "pozměňování občanského průkazu k páchání TČ"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "322" ;
+
+	rdfs:label "pozměňování občanského průkazu k páchání TČ"@cs ;
+	.
+crimestatistics-code-codelist-hash:323 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "pozměňování jiného dokladu k páchání TČ"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "323" ;
+
+	rdfs:label "pozměňování jiného dokladu k páchání TČ"@cs ;
+	.
+crimestatistics-code-codelist-hash:330 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "přechovává pornografii zobrazující děti"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "330" ;
+
+	rdfs:label "přechovává pornografii zobrazující děti"@cs ;
+	.
+crimestatistics-code-codelist-hash:331 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "vyrábí pornografický materiál – fotografuje, filmuje (pracuje s modely z řad dětí do 18 let)"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "331" ;
+
+	rdfs:label "vyrábí pornografický materiál – fotografuje, filmuje (pracuje s modely z řad dětí do 18 let)"@cs ;
+	.
+crimestatistics-code-codelist-hash:332 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "vyrábí a šíří  Internetem pornografický materiál – fotografuje, filmuje (pracuje s modely z řad dětí do 18 let)"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "332" ;
+
+	rdfs:label "vyrábí a šíří  Internetem pornografický materiál – fotografuje, filmuje (pracuje s modely z řad dětí do 18 let)"@cs ;
+	.
+crimestatistics-code-codelist-hash:333 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "vyrábí a šíří  poštou nebo jinak pornografický materiál – fotografuje, filmuje (pracuje s modely z řad dětí do 18 let)"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "333" ;
+
+	rdfs:label "vyrábí a šíří  poštou nebo jinak pornografický materiál – fotografuje, filmuje (pracuje s modely z řad dětí do 18 let)"@cs ;
+	.
+crimestatistics-code-codelist-hash:334 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "vyrábí  CD, DVD, videokazety s pornografickým  materiálem  např. stahováním z Internetu, kopírováním videokazet a fotografií (pornografie zobrazující děti do 18 let) "@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "334" ;
+
+	rdfs:label "vyrábí  CD, DVD, videokazety s pornografickým  materiálem  např. stahováním z Internetu, kopírováním videokazet a fotografií (pornografie zobrazující děti do 18 let) "@cs ;
+	.
+crimestatistics-code-codelist-hash:335 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "vyrábí a šíří  Internetem CD, DVD, videokazety s pornografickým  materiálem  např. stahováním z Internetu, kopírováním videokazet a fotografií (pornografie zobrazující děti do 18 let)"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "335" ;
+
+	rdfs:label "vyrábí a šíří  Internetem CD, DVD, videokazety s pornografickým  materiálem  např. stahováním z Internetu, kopírováním videokazet a fotografií (pornografie zobrazující děti do 18 let)"@cs ;
+	.
+crimestatistics-code-codelist-hash:336 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "nevyrábí, ale nabízí a šíří  prostřednictvím Internetu CD, DVD, videokazety s pornografickým materiálem (pornografie zobrazující děti do 18 let)"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "336" ;
+
+	rdfs:label "nevyrábí, ale nabízí a šíří  prostřednictvím Internetu CD, DVD, videokazety s pornografickým materiálem (pornografie zobrazující děti do 18 let)"@cs ;
+	.
+crimestatistics-code-codelist-hash:337 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "nevyrábí, ale nabízí a šíří poštou nebo jinak CD, DVD, videokazety s pornografickým materiálem (pornografie zobrazující děti do 18 let)"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "337" ;
+
+	rdfs:label "nevyrábí, ale nabízí a šíří poštou nebo jinak CD, DVD, videokazety s pornografickým materiálem (pornografie zobrazující děti do 18 let)"@cs ;
+	.
+crimestatistics-code-codelist-hash:338 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "organizuje fotografování a filmování pornografie, zajišťuje modely z řad dětí do 18 let "@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "338" ;
+
+	rdfs:label "organizuje fotografování a filmování pornografie, zajišťuje modely z řad dětí do 18 let "@cs ;
+	.
+crimestatistics-code-codelist-hash:339 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "materiálně a finančně zajišťuje výrobu pornografického materiálů (pornografie zobrazující děti do 18 let)"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "339" ;
+
+	rdfs:label "materiálně a finančně zajišťuje výrobu pornografického materiálů (pornografie zobrazující děti do 18 let)"@cs ;
+	.
+crimestatistics-code-codelist-hash:341 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "útoky na server(y) např. zahlcení, útok na data serveru, změna funkce, viry apod."@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "341" ;
+
+	rdfs:label "útoky na server(y) např. zahlcení, útok na data serveru, změna funkce, viry apod."@cs ;
+	.
+crimestatistics-code-codelist-hash:342 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "útoky na webové stránky (pozměňování, přesměrování apod.)"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "342" ;
+
+	rdfs:label "útoky na webové stránky (pozměňování, přesměrování apod.)"@cs ;
+	.
+crimestatistics-code-codelist-hash:343 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "útoky na virtuální obchody (např. zneužití platební karty prostřednictvím"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "343" ;
+
+	rdfs:label "útoky na virtuální obchody (např. zneužití platební karty prostřednictvím"@cs ;
+	.
+crimestatistics-code-codelist-hash:344 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "útoky na platební karty (zjišťování čísel, pinů apod.)"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "344" ;
+
+	rdfs:label "útoky na platební karty (zjišťování čísel, pinů apod.)"@cs ;
+	.
+crimestatistics-code-codelist-hash:345 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "útoky na osobní údaje (zjišťování, eventuálně šíření apod.)"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "345" ;
+
+	rdfs:label "útoky na osobní údaje (zjišťování, eventuálně šíření apod.)"@cs ;
+	.
+crimestatistics-code-codelist-hash:346 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "INTERNET - neoprávněné šíření (vyvěšování) v souvislosti s kódy 521-528 (autorský zákon)"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "346" ;
+
+	rdfs:label "INTERNET - neoprávněné šíření (vyvěšování) v souvislosti s kódy 521-528 (autorský zákon)"@cs ;
+	.
+crimestatistics-code-codelist-hash:347 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "vyvěšování nebo zasílání souboru, v jehož obsahu lze spatřovat skutkovou podstatu TČ dle § trestního zákona v položce 19 FTČ"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "347" ;
+
+	rdfs:label "vyvěšování nebo zasílání souboru, v jehož obsahu lze spatřovat skutkovou podstatu TČ dle § trestního zákona v položce 19 FTČ"@cs ;
+	.
+crimestatistics-code-codelist-hash:360 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "metamfetamin (pervitin)"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "360" ;
+
+	rdfs:label "metamfetamin (pervitin)"@cs ;
+	.
+crimestatistics-code-codelist-hash:361 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "braun"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "361" ;
+
+	rdfs:label "braun"@cs ;
+	.
+crimestatistics-code-codelist-hash:362 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "amfetamin"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "362" ;
+
+	rdfs:label "amfetamin"@cs ;
+	.
+crimestatistics-code-codelist-hash:363 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "methadon"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "363" ;
+
+	rdfs:label "methadon"@cs ;
+	.
+crimestatistics-code-codelist-hash:364 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "GHB"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "364" ;
+
+	rdfs:label "GHB"@cs ;
+	.
+crimestatistics-code-codelist-hash:365 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "LSD"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "365" ;
+
+	rdfs:label "LSD"@cs ;
+	.
+crimestatistics-code-codelist-hash:366 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "extáze (MDMA, MDA, PMA, DOB, MDE, MDEA, MBDA atd.)"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "366" ;
+
+	rdfs:label "extáze (MDMA, MDA, PMA, DOB, MDE, MDEA, MBDA atd.)"@cs ;
+	.
+crimestatistics-code-codelist-hash:369 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "syntetické drogy - ostatní"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "369" ;
+
+	rdfs:label "syntetické drogy - ostatní"@cs ;
+	.
+crimestatistics-code-codelist-hash:370 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "opium"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "370" ;
+
+	rdfs:label "opium"@cs ;
+	.
+crimestatistics-code-codelist-hash:371 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "morfin"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "371" ;
+
+	rdfs:label "morfin"@cs ;
+	.
+crimestatistics-code-codelist-hash:372 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "kokainová pasta"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "372" ;
+
+	rdfs:label "kokainová pasta"@cs ;
+	.
+crimestatistics-code-codelist-hash:373 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "kokain"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "373" ;
+
+	rdfs:label "kokain"@cs ;
+	.
+crimestatistics-code-codelist-hash:374 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "heroin"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "374" ;
+
+	rdfs:label "heroin"@cs ;
+	.
+crimestatistics-code-codelist-hash:379 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "polosyntetické drogy - ostatní"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "379" ;
+
+	rdfs:label "polosyntetické drogy - ostatní"@cs ;
+	.
+crimestatistics-code-codelist-hash:380 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "rostliny konopí"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "380" ;
+
+	rdfs:label "rostliny konopí"@cs ;
+	.
+crimestatistics-code-codelist-hash:381 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "maková sláma"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "381" ;
+
+	rdfs:label "maková sláma"@cs ;
+	.
+crimestatistics-code-codelist-hash:382 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "konopí (marihuana)"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "382" ;
+
+	rdfs:label "konopí (marihuana)"@cs ;
+	.
+crimestatistics-code-codelist-hash:383 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "pryskyřice z konopí (hašiš)"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "383" ;
+
+	rdfs:label "pryskyřice z konopí (hašiš)"@cs ;
+	.
+crimestatistics-code-codelist-hash:384 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "hašišový olej"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "384" ;
+
+	rdfs:label "hašišový olej"@cs ;
+	.
+crimestatistics-code-codelist-hash:389 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "přírodní drogy - ostatní"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "389" ;
+
+	rdfs:label "přírodní drogy - ostatní"@cs ;
+	.
+crimestatistics-code-codelist-hash:390 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "efedrin"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "390" ;
+
+	rdfs:label "efedrin"@cs ;
+	.
+crimestatistics-code-codelist-hash:391 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "pseudoefedrin"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "391" ;
+
+	rdfs:label "pseudoefedrin"@cs ;
+	.
+crimestatistics-code-codelist-hash:392 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "kyselina lysergová"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "392" ;
+
+	rdfs:label "kyselina lysergová"@cs ;
+	.
+crimestatistics-code-codelist-hash:393 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "PMK"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "393" ;
+
+	rdfs:label "PMK"@cs ;
+	.
+crimestatistics-code-codelist-hash:394 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "BMK"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "394" ;
+
+	rdfs:label "BMK"@cs ;
+	.
+crimestatistics-code-codelist-hash:399 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "ostatní prekursory"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "399" ;
+
+	rdfs:label "ostatní prekursory"@cs ;
+	.
+crimestatistics-code-codelist-hash:400 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "počítače sálové (řídící v rámci sítě)"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "400" ;
+
+	rdfs:label "počítače sálové (řídící v rámci sítě)"@cs ;
+	.
+crimestatistics-code-codelist-hash:401 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "počítače (PC a obdobné) samostatné"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "401" ;
+
+	rdfs:label "počítače (PC a obdobné) samostatné"@cs ;
+	.
+crimestatistics-code-codelist-hash:402 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "počítače (PC a obdobné) zapojené v síti"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "402" ;
+
+	rdfs:label "počítače (PC a obdobné) zapojené v síti"@cs ;
+	.
+crimestatistics-code-codelist-hash:403 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "počítače pro řízení procesorů (zařízení)"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "403" ;
+
+	rdfs:label "počítače pro řízení procesorů (zařízení)"@cs ;
+	.
+crimestatistics-code-codelist-hash:404 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "počítače přenosné (notebook, laptop apod.)"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "404" ;
+
+	rdfs:label "počítače přenosné (notebook, laptop apod.)"@cs ;
+	.
+crimestatistics-code-codelist-hash:405 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "počítače ostatní"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "405" ;
+
+	rdfs:label "počítače ostatní"@cs ;
+	.
+crimestatistics-code-codelist-hash:406 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "play stationy a jiné herní konzole"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "406" ;
+
+	rdfs:label "play stationy a jiné herní konzole"@cs ;
+	.
+crimestatistics-code-codelist-hash:407 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "i-phony, tablety a jiné (chytré) mobilní telefony"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "407" ;
+
+	rdfs:label "i-phony, tablety a jiné (chytré) mobilní telefony"@cs ;
+	.
+crimestatistics-code-codelist-hash:408 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "elektronické čtečky knih"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "408" ;
+
+	rdfs:label "elektronické čtečky knih"@cs ;
+	.
+crimestatistics-code-codelist-hash:409 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "elektronické diáře"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "409" ;
+
+	rdfs:label "elektronické diáře"@cs ;
+	.
+crimestatistics-code-codelist-hash:410 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "základní jednotky stolních počítačů s HD včetně zabud. mechanik pro diskety"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "410" ;
+
+	rdfs:label "základní jednotky stolních počítačů s HD včetně zabud. mechanik pro diskety"@cs ;
+	.
+crimestatistics-code-codelist-hash:411 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "připojitelné pevné disky (externí)"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "411" ;
+
+	rdfs:label "připojitelné pevné disky (externí)"@cs ;
+	.
+crimestatistics-code-codelist-hash:412 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "připojitelné mechaniky pro diskety"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "412" ;
+
+	rdfs:label "připojitelné mechaniky pro diskety"@cs ;
+	.
+crimestatistics-code-codelist-hash:413 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "připojitelné mechaniky pro CD-ROM nebo DVD"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "413" ;
+
+	rdfs:label "připojitelné mechaniky pro CD-ROM nebo DVD"@cs ;
+	.
+crimestatistics-code-codelist-hash:414 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "připojitelné mechaniky pro magnetopáskové kazety"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "414" ;
+
+	rdfs:label "připojitelné mechaniky pro magnetopáskové kazety"@cs ;
+	.
+crimestatistics-code-codelist-hash:415 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "připojitelné mechaniky pro kotoučové mag.pásky"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "415" ;
+
+	rdfs:label "připojitelné mechaniky pro kotoučové mag.pásky"@cs ;
+	.
+crimestatistics-code-codelist-hash:416 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "připojitelné mechaniky pro disky (výměnné)"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "416" ;
+
+	rdfs:label "připojitelné mechaniky pro disky (výměnné)"@cs ;
+	.
+crimestatistics-code-codelist-hash:417 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "servery"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "417" ;
+
+	rdfs:label "servery"@cs ;
+	.
+crimestatistics-code-codelist-hash:418 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "disková pole"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "418" ;
+
+	rdfs:label "disková pole"@cs ;
+	.
+crimestatistics-code-codelist-hash:419 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "ostatní mechaniky pro paměťová media"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "419" ;
+
+	rdfs:label "ostatní mechaniky pro paměťová media"@cs ;
+	.
+crimestatistics-code-codelist-hash:420 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "zobrazovací zařízení (terminál, monitor)"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "420" ;
+
+	rdfs:label "zobrazovací zařízení (terminál, monitor)"@cs ;
+	.
+crimestatistics-code-codelist-hash:421 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "klávesnice, myš apod."@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "421" ;
+
+	rdfs:label "klávesnice, myš apod."@cs ;
+	.
+crimestatistics-code-codelist-hash:422 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "tiskárny"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "422" ;
+
+	rdfs:label "tiskárny"@cs ;
+	.
+crimestatistics-code-codelist-hash:423 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "kreslící zařízení (plotter)"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "423" ;
+
+	rdfs:label "kreslící zařízení (plotter)"@cs ;
+	.
+crimestatistics-code-codelist-hash:424 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "zařízení pro snímání obrazu (scanner)"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "424" ;
+
+	rdfs:label "zařízení pro snímání obrazu (scanner)"@cs ;
+	.
+crimestatistics-code-codelist-hash:425 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "zařízení pro čtení plastikových paměťových karet"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "425" ;
+
+	rdfs:label "zařízení pro čtení plastikových paměťových karet"@cs ;
+	.
+crimestatistics-code-codelist-hash:426 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "zařízení pro vypalování CD-ROM"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "426" ;
+
+	rdfs:label "zařízení pro vypalování CD-ROM"@cs ;
+	.
+crimestatistics-code-codelist-hash:429 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "hardwarové komunikační prostředky"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "429" ;
+
+	rdfs:label "hardwarové komunikační prostředky"@cs ;
+	.
+crimestatistics-code-codelist-hash:430 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "modem, fax-modem, síťové karty"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "430" ;
+
+	rdfs:label "modem, fax-modem, síťové karty"@cs ;
+	.
+crimestatistics-code-codelist-hash:431 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "náplně do tiskáren všeho druhu"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "431" ;
+
+	rdfs:label "náplně do tiskáren všeho druhu"@cs ;
+	.
+crimestatistics-code-codelist-hash:435 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "UPS-nepřerušitelné zdroje el.energie"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "435" ;
+
+	rdfs:label "UPS-nepřerušitelné zdroje el.energie"@cs ;
+	.
+crimestatistics-code-codelist-hash:440 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "diskety (3,5'', 5,25'')"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "440" ;
+
+	rdfs:label "diskety (3,5'', 5,25'')"@cs ;
+	.
+crimestatistics-code-codelist-hash:441 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "CD-ROM disky nebo DVD"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "441" ;
+
+	rdfs:label "CD-ROM disky nebo DVD"@cs ;
+	.
+crimestatistics-code-codelist-hash:442 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "magneto-optické, optické disky"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "442" ;
+
+	rdfs:label "magneto-optické, optické disky"@cs ;
+	.
+crimestatistics-code-codelist-hash:443 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "magnetické pásky v kazetách (streamerové kazety)"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "443" ;
+
+	rdfs:label "magnetické pásky v kazetách (streamerové kazety)"@cs ;
+	.
+crimestatistics-code-codelist-hash:444 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "magnetické pásky kotoučové (12,7 mm šíře)"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "444" ;
+
+	rdfs:label "magnetické pásky kotoučové (12,7 mm šíře)"@cs ;
+	.
+crimestatistics-code-codelist-hash:445 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "paměťové karty (PCMCIA)"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "445" ;
+
+	rdfs:label "paměťové karty (PCMCIA)"@cs ;
+	.
+crimestatistics-code-codelist-hash:446 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "paměťové karty ostatní"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "446" ;
+
+	rdfs:label "paměťové karty ostatní"@cs ;
+	.
+crimestatistics-code-codelist-hash:447 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "výměnné disky pro sálové počítače"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "447" ;
+
+	rdfs:label "výměnné disky pro sálové počítače"@cs ;
+	.
+crimestatistics-code-codelist-hash:448 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "jiná media paměťová"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "448" ;
+
+	rdfs:label "jiná media paměťová"@cs ;
+	.
+crimestatistics-code-codelist-hash:449 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "flash disky"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "449" ;
+
+	rdfs:label "flash disky"@cs ;
+	.
+crimestatistics-code-codelist-hash:450 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "paměťové medium s programy (bez dat)"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "450" ;
+
+	rdfs:label "paměťové medium s programy (bez dat)"@cs ;
+	.
+crimestatistics-code-codelist-hash:451 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "paměťové medium s programy a daty"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "451" ;
+
+	rdfs:label "paměťové medium s programy a daty"@cs ;
+	.
+crimestatistics-code-codelist-hash:452 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "paměťové medium s daty (bez programů)"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "452" ;
+
+	rdfs:label "paměťové medium s daty (bez programů)"@cs ;
+	.
+crimestatistics-code-codelist-hash:453 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "paměťové medium s databázi"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "453" ;
+
+	rdfs:label "paměťové medium s databázi"@cs ;
+	.
+crimestatistics-code-codelist-hash:454 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "softwarový balík (media s programem, dokumentace, příručka, licenční smlouva a další)"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "454" ;
+
+	rdfs:label "softwarový balík (media s programem, dokumentace, příručka, licenční smlouva a další)"@cs ;
+	.
+crimestatistics-code-codelist-hash:455 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "paměťové medium-multimédium (CD-ROM/DVD-obraz, zvuk, data programy)"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "455" ;
+
+	rdfs:label "paměťové medium-multimédium (CD-ROM/DVD-obraz, zvuk, data programy)"@cs ;
+	.
+crimestatistics-code-codelist-hash:456 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "kazety pro herní konzole (Play Station)"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "456" ;
+
+	rdfs:label "kazety pro herní konzole (Play Station)"@cs ;
+	.
+crimestatistics-code-codelist-hash:460 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "získání (kopírování) informace (údaje, soubory)"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "460" ;
+
+	rdfs:label "získání (kopírování) informace (údaje, soubory)"@cs ;
+	.
+crimestatistics-code-codelist-hash:461 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "dočasné pozměnění původní informace"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "461" ;
+
+	rdfs:label "dočasné pozměnění původní informace"@cs ;
+	.
+crimestatistics-code-codelist-hash:462 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "trvale změněná původní informace"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "462" ;
+
+	rdfs:label "trvale změněná původní informace"@cs ;
+	.
+crimestatistics-code-codelist-hash:463 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "dočasné vložení nové informace"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "463" ;
+
+	rdfs:label "dočasné vložení nové informace"@cs ;
+	.
+crimestatistics-code-codelist-hash:464 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "trvalé vložení nové informace"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "464" ;
+
+	rdfs:label "trvalé vložení nové informace"@cs ;
+	.
+crimestatistics-code-codelist-hash:470 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "zařízení GPS nebo obdobné zařízení pro určení polohy"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "470" ;
+
+	rdfs:label "zařízení GPS nebo obdobné zařízení pro určení polohy"@cs ;
+	.
+crimestatistics-code-codelist-hash:471 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "antiradary"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "471" ;
+
+	rdfs:label "antiradary"@cs ;
+	.
+crimestatistics-code-codelist-hash:472 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "fotovoltaické panely (články) včetně nabíjecí elektroniky"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "472" ;
+
+	rdfs:label "fotovoltaické panely (články) včetně nabíjecí elektroniky"@cs ;
+	.
+crimestatistics-code-codelist-hash:473 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "elektronické cigarety"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "473" ;
+
+	rdfs:label "elektronické cigarety"@cs ;
+	.
+crimestatistics-code-codelist-hash:480 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "akcie"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "480" ;
+
+	rdfs:label "akcie"@cs ;
+	.
+crimestatistics-code-codelist-hash:481 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "dluhopisy"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "481" ;
+
+	rdfs:label "dluhopisy"@cs ;
+	.
+crimestatistics-code-codelist-hash:482 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "směnky"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "482" ;
+
+	rdfs:label "směnky"@cs ;
+	.
+crimestatistics-code-codelist-hash:483 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "podílové listy"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "483" ;
+
+	rdfs:label "podílové listy"@cs ;
+	.
+crimestatistics-code-codelist-hash:484 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "zatímní listy"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "484" ;
+
+	rdfs:label "zatímní listy"@cs ;
+	.
+crimestatistics-code-codelist-hash:485 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "investiční kupóny"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "485" ;
+
+	rdfs:label "investiční kupóny"@cs ;
+	.
+crimestatistics-code-codelist-hash:486 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "kupóny (§ 12 ZoCP)"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "486" ;
+
+	rdfs:label "kupóny (§ 12 ZoCP)"@cs ;
+	.
+crimestatistics-code-codelist-hash:487 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "náložné listy"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "487" ;
+
+	rdfs:label "náložné listy"@cs ;
+	.
+crimestatistics-code-codelist-hash:488 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "skladištní listy"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "488" ;
+
+	rdfs:label "skladištní listy"@cs ;
+	.
+crimestatistics-code-codelist-hash:489 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "dokumentární akreditiv"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "489" ;
+
+	rdfs:label "dokumentární akreditiv"@cs ;
+	.
+crimestatistics-code-codelist-hash:490 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "dokumentární inkaso"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "490" ;
+
+	rdfs:label "dokumentární inkaso"@cs ;
+	.
+crimestatistics-code-codelist-hash:491 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "hladké platby"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "491" ;
+
+	rdfs:label "hladké platby"@cs ;
+	.
+crimestatistics-code-codelist-hash:492 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "úvěr"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "492" ;
+
+	rdfs:label "úvěr"@cs ;
+	.
+crimestatistics-code-codelist-hash:493 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "pohledávky"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "493" ;
+
+	rdfs:label "pohledávky"@cs ;
+	.
+crimestatistics-code-codelist-hash:501 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "textil"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "501" ;
+
+	rdfs:label "textil"@cs ;
+	.
+crimestatistics-code-codelist-hash:502 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "obuv"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "502" ;
+
+	rdfs:label "obuv"@cs ;
+	.
+crimestatistics-code-codelist-hash:503 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "elektronika"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "503" ;
+
+	rdfs:label "elektronika"@cs ;
+	.
+crimestatistics-code-codelist-hash:504 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "potraviny"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "504" ;
+
+	rdfs:label "potraviny"@cs ;
+	.
+crimestatistics-code-codelist-hash:505 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "lihoviny"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "505" ;
+
+	rdfs:label "lihoviny"@cs ;
+	.
+crimestatistics-code-codelist-hash:509 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "ostatní k § 150 - Porušování práv k ochranné známce, obchodnímu jménu a chráněnému označení původu"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "509" ;
+
+	rdfs:label "ostatní k § 150 - Porušování práv k ochranné známce, obchodnímu jménu a chráněnému označení původu"@cs ;
+	.
+crimestatistics-code-codelist-hash:521 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "audio"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "521" ;
+
+	rdfs:label "audio"@cs ;
+	.
+crimestatistics-code-codelist-hash:522 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "video"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "522" ;
+
+	rdfs:label "video"@cs ;
+	.
+crimestatistics-code-codelist-hash:523 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "veřejné produkce"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "523" ;
+
+	rdfs:label "veřejné produkce"@cs ;
+	.
+crimestatistics-code-codelist-hash:524 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "výtvarná a umělecká díla"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "524" ;
+
+	rdfs:label "výtvarná a umělecká díla"@cs ;
+	.
+crimestatistics-code-codelist-hash:525 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "filmová díla"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "525" ;
+
+	rdfs:label "filmová díla"@cs ;
+	.
+crimestatistics-code-codelist-hash:526 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "literární díla"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "526" ;
+
+	rdfs:label "literární díla"@cs ;
+	.
+crimestatistics-code-codelist-hash:527 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "programy počítačů"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "527" ;
+
+	rdfs:label "programy počítačů"@cs ;
+	.
+crimestatistics-code-codelist-hash:528 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "práva výkonných umělců"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "528" ;
+
+	rdfs:label "práva výkonných umělců"@cs ;
+	.
+crimestatistics-code-codelist-hash:535 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "ostatní k § 152 - Porušování autorského práva"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "535" ;
+
+	rdfs:label "ostatní k § 152 - Porušování autorského práva"@cs ;
+	.
+crimestatistics-code-codelist-hash:541 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "ovzduší"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "541" ;
+
+	rdfs:label "ovzduší"@cs ;
+	.
+crimestatistics-code-codelist-hash:542 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "voda"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "542" ;
+
+	rdfs:label "voda"@cs ;
+	.
+crimestatistics-code-codelist-hash:543 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "půda"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "543" ;
+
+	rdfs:label "půda"@cs ;
+	.
+crimestatistics-code-codelist-hash:544 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "flóra"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "544" ;
+
+	rdfs:label "flóra"@cs ;
+	.
+crimestatistics-code-codelist-hash:545 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "fauna"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "545" ;
+
+	rdfs:label "fauna"@cs ;
+	.
+crimestatistics-code-codelist-hash:546 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "ekosystémy"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "546" ;
+
+	rdfs:label "ekosystémy"@cs ;
+	.
+crimestatistics-code-codelist-hash:547 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "energie"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "547" ;
+
+	rdfs:label "energie"@cs ;
+	.
+crimestatistics-code-codelist-hash:549 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "ostatní k §§ 181a, 181b - Ohrožení životního prostředí"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "549" ;
+
+	rdfs:label "ostatní k §§ 181a, 181b - Ohrožení životního prostředí"@cs ;
+	.
+crimestatistics-code-codelist-hash:551 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "jeseteří kaviár"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "551" ;
+
+	rdfs:label "jeseteří kaviár"@cs ;
+	.
+crimestatistics-code-codelist-hash:552 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "asijská medicína obsahující části těl ohrožených živočichů"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "552" ;
+
+	rdfs:label "asijská medicína obsahující části těl ohrožených živočichů"@cs ;
+	.
+crimestatistics-code-codelist-hash:553 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "lovecké trofeje (čerstvé i preperované), preparovaní živočichové a jejich části (vycpaniny celých zvířat, nevyčiněné a vyčiněné kůže, lebky s toulci, rohovina,korály apod.)"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "553" ;
+
+	rdfs:label "lovecké trofeje (čerstvé i preperované), preparovaní živočichové a jejich části (vycpaniny celých zvířat, nevyčiněné a vyčiněné kůže, lebky s toulci, rohovina,korály apod.)"@cs ;
+	.
+crimestatistics-code-codelist-hash:554 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "shozy paroží"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "554" ;
+
+	rdfs:label "shozy paroží"@cs ;
+	.
+crimestatistics-code-codelist-hash:555 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "ohrožené (chráněné) rostliny - tuzemské"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "555" ;
+
+	rdfs:label "ohrožené (chráněné) rostliny - tuzemské"@cs ;
+	.
+crimestatistics-code-codelist-hash:556 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "ohrožené (chráněné) rostliny - exotické - dovozy"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "556" ;
+
+	rdfs:label "ohrožené (chráněné) rostliny - exotické - dovozy"@cs ;
+	.
+crimestatistics-code-codelist-hash:557 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "ohrožené (chráněné) rostliny - exotické - pěstované v kultuře v ČR"@cs ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu ;
+	skos:notation "557" ;
+
+	rdfs:label "ohrožené (chráněné) rostliny - exotické - pěstované v kultuře v ČR"@cs ;
+	.

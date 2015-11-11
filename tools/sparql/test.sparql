@@ -1,0 +1,40 @@
+PREFIX s: <http://schema.org/>
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX crime: <http://linked.opendata.cz/ontology/crime#>
+PREFIX ruian: <http://ruian.linked.opendata.cz/ontology/>
+PREFIX foaf:    <http://xmlns.com/foaf/0.1/>
+prefix void: <http://rdfs.org/ns/void#>
+
+select
+  str(?nazevObce)
+FROM <http://www.ms.mff.cuni.cz/~benat7am/void.ttl>
+where
+{
+  ?crimeDataset a void:Dataset ;
+    dct:subject <http://dbpedia.org/resource/Crime> .
+    
+  SERVICE <http://localhost:8890/sparql> {
+    GRAPH ?crimeDataset {
+    ?utvar a crime:Utvar ;
+      crime:id ?utvarId;
+      crime:validFrom ?validFrom ;
+      crime:validTo ?validTo .
+    FILTER(?utvarId = "180413"^^xsd:string && "2008-06-14T21:08:46.588Z"^^xsd:dateTime && "2008-06-14T21:08:46.588Z"^^xsd:dateTime <= ?validTo) .
+  
+    ?utvar  crime:pokrytaObec ?obec .}
+  }
+  
+  ?ruianDs a void:Dataset ;
+    dct:subject <http://dbpedia.org/resource/Ruian> ;
+    void:sparqlEndpoint ?ruianSparqlEndpoint .
+    
+  SERVICE ?ruianSparqlEndpoint {
+    GRAPH ?ruianDs {
+      ?obec a ruian:Obec ;
+        s:name ?nazevObce .
+    }
+  }
+}                                     

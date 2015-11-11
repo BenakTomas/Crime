@@ -1,0 +1,1430 @@
+# Standardní prefixy
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix interval: <http://reference.data.gov.uk/def/intervals/> .
+@prefix sdmx:    <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+# Vlastní prefixy
+@prefix crime: <http://linked.opendata.cz/ontology/crime#> .
+@prefix code: <http://linked.opendata.cz/resource/domain/crime/code/> .
+
+@prefix crimestatistics-code-codelist-hash: <http://linked.opendata.cz/resource/domain/crime/code/tsk/2009/40-2009#> .
+
+crimestatistics-code-codelist-hash:102 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "vraždy - sexuální"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "102" ;
+
+	rdfs:label "vraždy - sexuální"@cs ;
+	.
+crimestatistics-code-codelist-hash:103 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "vraždy - motivované osobními vztahy"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "103" ;
+
+	rdfs:label "vraždy - motivované osobními vztahy"@cs ;
+	.
+crimestatistics-code-codelist-hash:104 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "vraždy - na objednávku"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "104" ;
+
+	rdfs:label "vraždy - na objednávku"@cs ;
+	.
+crimestatistics-code-codelist-hash:105 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "vraždy - novorozence matkou"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "105" ;
+
+	rdfs:label "vraždy - novorozence matkou"@cs ;
+	.
+crimestatistics-code-codelist-hash:106 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "vraždy - ostatní"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "106" ;
+
+	rdfs:label "vraždy - ostatní"@cs ;
+	.
+crimestatistics-code-codelist-hash:111 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "usmrcení lidského plodu - pomoc a svádění ženy"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "111" ;
+
+	rdfs:label "usmrcení lidského plodu - pomoc a svádění ženy"@cs ;
+	.
+crimestatistics-code-codelist-hash:112 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "usmrcení lidského plodu - se souhlasem ženy"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "112" ;
+
+	rdfs:label "usmrcení lidského plodu - se souhlasem ženy"@cs ;
+	.
+crimestatistics-code-codelist-hash:113 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "usmrcení lidského plodu - bez souhlasu ženy"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "113" ;
+
+	rdfs:label "usmrcení lidského plodu - bez souhlasu ženy"@cs ;
+	.
+crimestatistics-code-codelist-hash:115 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "zabití"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "115" ;
+
+	rdfs:label "zabití"@cs ;
+	.
+crimestatistics-code-codelist-hash:116 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "usmrcení z nedbalosti"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "116" ;
+
+	rdfs:label "usmrcení z nedbalosti"@cs ;
+	.
+crimestatistics-code-codelist-hash:121 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "opuštění dítěte"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "121" ;
+
+	rdfs:label "opuštění dítěte"@cs ;
+	.
+crimestatistics-code-codelist-hash:122 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "únos"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "122" ;
+
+	rdfs:label "únos"@cs ;
+	.
+crimestatistics-code-codelist-hash:131 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "loupež"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "131" ;
+
+	rdfs:label "loupež"@cs ;
+	.
+crimestatistics-code-codelist-hash:132 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "loupeže na finančních institucích"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "132" ;
+
+	rdfs:label "loupeže na finančních institucích"@cs ;
+	.
+crimestatistics-code-codelist-hash:141 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "násilí proti úřední osobě a orgánu veřejné moci - mimo příslušníka policie a obecní policie"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "141" ;
+
+	rdfs:label "násilí proti úřední osobě a orgánu veřejné moci - mimo příslušníka policie a obecní policie"@cs ;
+	.
+crimestatistics-code-codelist-hash:142 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "násilí proti úřední osobě a orgánu veřejné moci - na příslušníkovi Policie ČR"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "142" ;
+
+	rdfs:label "násilí proti úřední osobě a orgánu veřejné moci - na příslušníkovi Policie ČR"@cs ;
+	.
+crimestatistics-code-codelist-hash:143 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "násilí proti úřední osobě a orgánu veřejné moci - na příslušníkovi obecní policie"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "143" ;
+
+	rdfs:label "násilí proti úřední osobě a orgánu veřejné moci - na příslušníkovi obecní policie"@cs ;
+	.
+crimestatistics-code-codelist-hash:151 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "úmyslné ublížení na zdraví"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "151" ;
+
+	rdfs:label "úmyslné ublížení na zdraví"@cs ;
+	.
+crimestatistics-code-codelist-hash:161 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "rvačky"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "161" ;
+
+	rdfs:label "rvačky"@cs ;
+	.
+crimestatistics-code-codelist-hash:171 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "násilí a vyhrožování proti skupině obyvatel a jednotlivci"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "171" ;
+
+	rdfs:label "násilí a vyhrožování proti skupině obyvatel a jednotlivci"@cs ;
+	.
+crimestatistics-code-codelist-hash:172 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "braní rukojmí"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "172" ;
+
+	rdfs:label "braní rukojmí"@cs ;
+	.
+crimestatistics-code-codelist-hash:173 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "nebezpečné vyhrožování"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "173" ;
+
+	rdfs:label "nebezpečné vyhrožování"@cs ;
+	.
+crimestatistics-code-codelist-hash:174 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "nebezpečné pronásledování"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "174" ;
+
+	rdfs:label "nebezpečné pronásledování"@cs ;
+	.
+crimestatistics-code-codelist-hash:181 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "vydírání"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "181" ;
+
+	rdfs:label "vydírání"@cs ;
+	.
+crimestatistics-code-codelist-hash:182 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "omezování a zbavení osobní svobody"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "182" ;
+
+	rdfs:label "omezování a zbavení osobní svobody"@cs ;
+	.
+crimestatistics-code-codelist-hash:183 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "porušování domovní svobody"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "183" ;
+
+	rdfs:label "porušování domovní svobody"@cs ;
+	.
+crimestatistics-code-codelist-hash:184 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "neoprávněný zásah do práva k domu, bytu nebo nebytovému prostoru"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "184" ;
+
+	rdfs:label "neoprávněný zásah do práva k domu, bytu nebo nebytovému prostoru"@cs ;
+	.
+crimestatistics-code-codelist-hash:185 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "týrání svěřené osoby"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "185" ;
+
+	rdfs:label "týrání svěřené osoby"@cs ;
+	.
+crimestatistics-code-codelist-hash:186 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "týrání osoby žijící ve společném obydlí"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "186" ;
+
+	rdfs:label "týrání osoby žijící ve společném obydlí"@cs ;
+	.
+crimestatistics-code-codelist-hash:187 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "omezování svobody vyznání"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "187" ;
+
+	rdfs:label "omezování svobody vyznání"@cs ;
+	.
+crimestatistics-code-codelist-hash:188 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "útisk"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "188" ;
+
+	rdfs:label "útisk"@cs ;
+	.
+crimestatistics-code-codelist-hash:189 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "porušování svobody sdružování a shromažďování"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "189" ;
+
+	rdfs:label "porušování svobody sdružování a shromažďování"@cs ;
+	.
+crimestatistics-code-codelist-hash:190 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "ostatní násilné trestné činy"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "190" ;
+
+	rdfs:label "ostatní násilné trestné činy"@cs ;
+	.
+crimestatistics-code-codelist-hash:201 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "znásilnění"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "201" ;
+
+	rdfs:label "znásilnění"@cs ;
+	.
+crimestatistics-code-codelist-hash:202 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "sexuální nátlak"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "202" ;
+
+	rdfs:label "sexuální nátlak"@cs ;
+	.
+crimestatistics-code-codelist-hash:211 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "pohlavní zneužívání v závislosti"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "211" ;
+
+	rdfs:label "pohlavní zneužívání v závislosti"@cs ;
+	.
+crimestatistics-code-codelist-hash:212 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "pohlavní zneužívání ostatní"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "212" ;
+
+	rdfs:label "pohlavní zneužívání ostatní"@cs ;
+	.
+crimestatistics-code-codelist-hash:213 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "komerční forma sexuálního zneužívání v závislosti"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "213" ;
+
+	rdfs:label "komerční forma sexuálního zneužívání v závislosti"@cs ;
+	.
+crimestatistics-code-codelist-hash:214 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "komerční forma sexuálního zneužívání ostatní"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "214" ;
+
+	rdfs:label "komerční forma sexuálního zneužívání ostatní"@cs ;
+	.
+crimestatistics-code-codelist-hash:231 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "ostatní pohlavní úchylky"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "231" ;
+
+	rdfs:label "ostatní pohlavní úchylky"@cs ;
+	.
+crimestatistics-code-codelist-hash:241 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "ohrožování mravnosti"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "241" ;
+
+	rdfs:label "ohrožování mravnosti"@cs ;
+	.
+crimestatistics-code-codelist-hash:251 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "ohrožování pohlavní nemocí"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "251" ;
+
+	rdfs:label "ohrožování pohlavní nemocí"@cs ;
+	.
+crimestatistics-code-codelist-hash:252 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "úmyslné ublížení na zdraví nakažlivou lidskou nemocí"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "252" ;
+
+	rdfs:label "úmyslné ublížení na zdraví nakažlivou lidskou nemocí"@cs ;
+	.
+crimestatistics-code-codelist-hash:253 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "ublížení nakažlivou lidskou nemocí z nedbalosti"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "253" ;
+
+	rdfs:label "ublížení nakažlivou lidskou nemocí z nedbalosti"@cs ;
+	.
+crimestatistics-code-codelist-hash:271 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "kuplířství"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "271" ;
+
+	rdfs:label "kuplířství"@cs ;
+	.
+crimestatistics-code-codelist-hash:280 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "soulož mezi příbuznými"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "280" ;
+
+	rdfs:label "soulož mezi příbuznými"@cs ;
+	.
+crimestatistics-code-codelist-hash:281 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "obchodování s lidmi"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "281" ;
+
+	rdfs:label "obchodování s lidmi"@cs ;
+	.
+crimestatistics-code-codelist-hash:290 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "ostatní mravnostní trestné činy"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "290" ;
+
+	rdfs:label "ostatní mravnostní trestné činy"@cs ;
+	.
+crimestatistics-code-codelist-hash:311 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "krádeže vloupáním do obchodů"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "311" ;
+
+	rdfs:label "krádeže vloupáním do obchodů"@cs ;
+	.
+crimestatistics-code-codelist-hash:312 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "krádeže vloupáním do výkladních skříní"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "312" ;
+
+	rdfs:label "krádeže vloupáním do výkladních skříní"@cs ;
+	.
+crimestatistics-code-codelist-hash:321 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "krádeže vloupáním do restaurací a hostinců"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "321" ;
+
+	rdfs:label "krádeže vloupáním do restaurací a hostinců"@cs ;
+	.
+crimestatistics-code-codelist-hash:322 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "krádeže vloupáním do ubytovacích objektů"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "322" ;
+
+	rdfs:label "krádeže vloupáním do ubytovacích objektů"@cs ;
+	.
+crimestatistics-code-codelist-hash:323 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "krádeže vloupáním do kiosků"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "323" ;
+
+	rdfs:label "krádeže vloupáním do kiosků"@cs ;
+	.
+crimestatistics-code-codelist-hash:324 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "krádeže vloupáním do jídelen, závodních kuchyní a stravovacích zařízení"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "324" ;
+
+	rdfs:label "krádeže vloupáním do jídelen, závodních kuchyní a stravovacích zařízení"@cs ;
+	.
+crimestatistics-code-codelist-hash:331 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "krádeže vloupáním do objektů, kde se nacházejí starožitnosti a umělecké předměty - mimo obchodů"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "331" ;
+
+	rdfs:label "krádeže vloupáním do objektů, kde se nacházejí starožitnosti a umělecké předměty - mimo obchodů"@cs ;
+	.
+crimestatistics-code-codelist-hash:332 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "krádeže vloupáním do kulturních objektů, mimo uvedené v 331"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "332" ;
+
+	rdfs:label "krádeže vloupáním do kulturních objektů, mimo uvedené v 331"@cs ;
+	.
+crimestatistics-code-codelist-hash:341 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "krádeže vloupáním do pokladen a pancéřových skříní"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "341" ;
+
+	rdfs:label "krádeže vloupáním do pokladen a pancéřových skříní"@cs ;
+	.
+crimestatistics-code-codelist-hash:350 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "krádeže vloupáním do výpočetních středisek nebo počítačových pracovišť"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "350" ;
+
+	rdfs:label "krádeže vloupáním do výpočetních středisek nebo počítačových pracovišť"@cs ;
+	.
+crimestatistics-code-codelist-hash:351 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "krádeže vloupáním do škol"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "351" ;
+
+	rdfs:label "krádeže vloupáním do škol"@cs ;
+	.
+crimestatistics-code-codelist-hash:371 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "krádeže vloupáním do bytů"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "371" ;
+
+	rdfs:label "krádeže vloupáním do bytů"@cs ;
+	.
+crimestatistics-code-codelist-hash:372 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "krádeže vloupáním do víkendových chat soukromých osob"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "372" ;
+
+	rdfs:label "krádeže vloupáním do víkendových chat soukromých osob"@cs ;
+	.
+crimestatistics-code-codelist-hash:373 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "krádeže vloupáním do rodinných domků"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "373" ;
+
+	rdfs:label "krádeže vloupáním do rodinných domků"@cs ;
+	.
+crimestatistics-code-codelist-hash:390 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "krádeže vloupáním do ostatních objektů"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "390" ;
+
+	rdfs:label "krádeže vloupáním do ostatních objektů"@cs ;
+	.
+crimestatistics-code-codelist-hash:411 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "krádeže prosté - kapesní"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "411" ;
+
+	rdfs:label "krádeže prosté - kapesní"@cs ;
+	.
+crimestatistics-code-codelist-hash:412 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "krádeže prosté - při pohlavním styku"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "412" ;
+
+	rdfs:label "krádeže prosté - při pohlavním styku"@cs ;
+	.
+crimestatistics-code-codelist-hash:413 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "krádeže prosté - jiné na osobách"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "413" ;
+
+	rdfs:label "krádeže prosté - jiné na osobách"@cs ;
+	.
+crimestatistics-code-codelist-hash:421 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "krádeže prosté - mezi zaměstnanci na pracovišti"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "421" ;
+
+	rdfs:label "krádeže prosté - mezi zaměstnanci na pracovišti"@cs ;
+	.
+crimestatistics-code-codelist-hash:431 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "krádeže prosté - motorových vozidel dvoustopých"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "431" ;
+
+	rdfs:label "krádeže prosté - motorových vozidel dvoustopých"@cs ;
+	.
+crimestatistics-code-codelist-hash:432 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "krádeže prosté - motorových vozidel jednostopých"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "432" ;
+
+	rdfs:label "krádeže prosté - motorových vozidel jednostopých"@cs ;
+	.
+crimestatistics-code-codelist-hash:433 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "krádeže prosté - věcí z aut - včetně vloupání do kabiny a zav. prostoru"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "433" ;
+
+	rdfs:label "krádeže prosté - věcí z aut - včetně vloupání do kabiny a zav. prostoru"@cs ;
+	.
+crimestatistics-code-codelist-hash:434 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "krádeže prosté - součástek motorových vozidel"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "434" ;
+
+	rdfs:label "krádeže prosté - součástek motorových vozidel"@cs ;
+	.
+crimestatistics-code-codelist-hash:435 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "krádeže prosté - jízdních kol"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "435" ;
+
+	rdfs:label "krádeže prosté - jízdních kol"@cs ;
+	.
+crimestatistics-code-codelist-hash:441 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "krádeže prosté - domácího zvířectva"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "441" ;
+
+	rdfs:label "krádeže prosté - domácího zvířectva"@cs ;
+	.
+crimestatistics-code-codelist-hash:451 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "krádeže prosté - v bytech a rodinných domech"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "451" ;
+
+	rdfs:label "krádeže prosté - v bytech a rodinných domech"@cs ;
+	.
+crimestatistics-code-codelist-hash:461 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "krádeže prosté - věcí v prostorách nádraží - mimo zásilek"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "461" ;
+
+	rdfs:label "krádeže prosté - věcí v prostorách nádraží - mimo zásilek"@cs ;
+	.
+crimestatistics-code-codelist-hash:462 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "krádeže prosté - věcí během jízdy v dopravním prostředku - mimo zásilek"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "462" ;
+
+	rdfs:label "krádeže prosté - věcí během jízdy v dopravním prostředku - mimo zásilek"@cs ;
+	.
+crimestatistics-code-codelist-hash:471 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "krádeže prosté v objektech, včetně exterieru i na volném prostranství se starožitnostmi a uměleckými předměty"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "471" ;
+
+	rdfs:label "krádeže prosté v objektech, včetně exterieru i na volném prostranství se starožitnostmi a uměleckými předměty"@cs ;
+	.
+crimestatistics-code-codelist-hash:480 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "krádeže prosté v jiných objektech"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "480" ;
+
+	rdfs:label "krádeže prosté v jiných objektech"@cs ;
+	.
+crimestatistics-code-codelist-hash:490 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "krádeže prosté ostatní"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "490" ;
+
+	rdfs:label "krádeže prosté ostatní"@cs ;
+	.
+crimestatistics-code-codelist-hash:511 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "podvod"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "511" ;
+
+	rdfs:label "podvod"@cs ;
+	.
+crimestatistics-code-codelist-hash:521 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "zpronevěra"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "521" ;
+
+	rdfs:label "zpronevěra"@cs ;
+	.
+crimestatistics-code-codelist-hash:530 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "neoprávněné užívání cizí věci"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "530" ;
+
+	rdfs:label "neoprávněné užívání cizí věci"@cs ;
+	.
+crimestatistics-code-codelist-hash:588 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "zatajení věci"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "588" ;
+
+	rdfs:label "zatajení věci"@cs ;
+	.
+crimestatistics-code-codelist-hash:589 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "poškozování cizí věci"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "589" ;
+
+	rdfs:label "poškozování cizí věci"@cs ;
+	.
+crimestatistics-code-codelist-hash:590 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "pytláctví a ostatní majetkové trestné činy"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "590" ;
+
+	rdfs:label "pytláctví a ostatní majetkové trestné činy"@cs ;
+	.
+crimestatistics-code-codelist-hash:611 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "výtržnictví"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "611" ;
+
+	rdfs:label "výtržnictví"@cs ;
+	.
+crimestatistics-code-codelist-hash:612 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "výtržnictví na sportovních a veřejných akcích"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "612" ;
+
+	rdfs:label "výtržnictví na sportovních a veřejných akcích"@cs ;
+	.
+crimestatistics-code-codelist-hash:613 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "sprejerství"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "613" ;
+
+	rdfs:label "sprejerství"@cs ;
+	.
+crimestatistics-code-codelist-hash:614 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "výtržnictví - útoky na záchranáře"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "614" ;
+
+	rdfs:label "výtržnictví - útoky na záchranáře"@cs ;
+	.
+crimestatistics-code-codelist-hash:630 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "z r u š e n o"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "630" ;
+
+	rdfs:label "z r u š e n o"@cs ;
+	.
+crimestatistics-code-codelist-hash:631 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "ohrožování výchovy mládeže"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "631" ;
+
+	rdfs:label "ohrožování výchovy mládeže"@cs ;
+	.
+crimestatistics-code-codelist-hash:632 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "podávání alkoholických nápojů mládeži"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "632" ;
+
+	rdfs:label "podávání alkoholických nápojů mládeži"@cs ;
+	.
+crimestatistics-code-codelist-hash:633 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "obchodování s dětmi"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "633" ;
+
+	rdfs:label "obchodování s dětmi"@cs ;
+	.
+crimestatistics-code-codelist-hash:634 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "nedovolené překročení státní hranice"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "634" ;
+
+	rdfs:label "nedovolené překročení státní hranice"@cs ;
+	.
+crimestatistics-code-codelist-hash:635 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "nedovolená výroba a držení psychotropních látek a jedů pro jiného"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "635" ;
+
+	rdfs:label "nedovolená výroba a držení psychotropních látek a jedů pro jiného"@cs ;
+	.
+crimestatistics-code-codelist-hash:636 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "šíření toxikomanie"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "636" ;
+
+	rdfs:label "šíření toxikomanie"@cs ;
+	.
+crimestatistics-code-codelist-hash:637 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "zneužívání pravomoci úřední osoby"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "637" ;
+
+	rdfs:label "zneužívání pravomoci úřední osoby"@cs ;
+	.
+crimestatistics-code-codelist-hash:639 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "neoprávněné nakládání s osobními údaji"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "639" ;
+
+	rdfs:label "neoprávněné nakládání s osobními údaji"@cs ;
+	.
+crimestatistics-code-codelist-hash:640 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "maření úkolů úřední osoby z nedbalosti"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "640" ;
+
+	rdfs:label "maření úkolů úřední osoby z nedbalosti"@cs ;
+	.
+crimestatistics-code-codelist-hash:641 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "nedovolená výroba a držení psychotropních látek a jedů pro sebe"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "641" ;
+
+	rdfs:label "nedovolená výroba a držení psychotropních látek a jedů pro sebe"@cs ;
+	.
+crimestatistics-code-codelist-hash:642 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "nedovolená výroba a držení psychotropních látek a jedů - předmět k nedovolené výrobě"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "642" ;
+
+	rdfs:label "nedovolená výroba a držení psychotropních látek a jedů - předmět k nedovolené výrobě"@cs ;
+	.
+crimestatistics-code-codelist-hash:643 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "nedovolené pěstování rostlin obsahující omamnou látku"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "643" ;
+
+	rdfs:label "nedovolené pěstování rostlin obsahující omamnou látku"@cs ;
+	.
+crimestatistics-code-codelist-hash:644 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "výroba a nakládání s látkami s hormonálním účinkem"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "644" ;
+
+	rdfs:label "výroba a nakládání s látkami s hormonálním účinkem"@cs ;
+	.
+crimestatistics-code-codelist-hash:651 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "požáry"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "651" ;
+
+	rdfs:label "požáry"@cs ;
+	.
+crimestatistics-code-codelist-hash:652 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "výbuchy"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "652" ;
+
+	rdfs:label "výbuchy"@cs ;
+	.
+crimestatistics-code-codelist-hash:662 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "nedovolené ozbrojování"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "662" ;
+
+	rdfs:label "nedovolené ozbrojování"@cs ;
+	.
+crimestatistics-code-codelist-hash:663 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "maření výkonu úředního rozhodnutí"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "663" ;
+
+	rdfs:label "maření výkonu úředního rozhodnutí"@cs ;
+	.
+crimestatistics-code-codelist-hash:664 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "překupnictví a přechovávači - podílnictví"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "664" ;
+
+	rdfs:label "překupnictví a přechovávači - podílnictví"@cs ;
+	.
+crimestatistics-code-codelist-hash:690 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "ostatní kriminální trestné činy"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "690" ;
+
+	rdfs:label "ostatní kriminální trestné činy"@cs ;
+	.
+crimestatistics-code-codelist-hash:721 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "nadržování"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "721" ;
+
+	rdfs:label "nadržování"@cs ;
+	.
+crimestatistics-code-codelist-hash:730 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "veškeré nehody (silniční, letecké, vodní, železniční a kombinované) - úmyslné"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "730" ;
+
+	rdfs:label "veškeré nehody (silniční, letecké, vodní, železniční a kombinované) - úmyslné"@cs ;
+	.
+crimestatistics-code-codelist-hash:731 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "dopravní nehody silniční z nedbalosti"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "731" ;
+
+	rdfs:label "dopravní nehody silniční z nedbalosti"@cs ;
+	.
+crimestatistics-code-codelist-hash:732 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "dopravní nehody letecké z nedbalosti"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "732" ;
+
+	rdfs:label "dopravní nehody letecké z nedbalosti"@cs ;
+	.
+crimestatistics-code-codelist-hash:733 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "dopravní nehody vodní z nedbalosti"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "733" ;
+
+	rdfs:label "dopravní nehody vodní z nedbalosti"@cs ;
+	.
+crimestatistics-code-codelist-hash:741 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "železniční nehody z nedbalosti"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "741" ;
+
+	rdfs:label "železniční nehody z nedbalosti"@cs ;
+	.
+crimestatistics-code-codelist-hash:742 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "nehody kombinované, železniční - silniční z nedbalosti"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "742" ;
+
+	rdfs:label "nehody kombinované, železniční - silniční z nedbalosti"@cs ;
+	.
+crimestatistics-code-codelist-hash:750 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "ublížení na zdraví z nedbalosti - pracovní úrazy"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "750" ;
+
+	rdfs:label "ublížení na zdraví z nedbalosti - pracovní úrazy"@cs ;
+	.
+crimestatistics-code-codelist-hash:751 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "ublížení na zdraví z nedbalosti - ostatní"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "751" ;
+
+	rdfs:label "ublížení na zdraví z nedbalosti - ostatní"@cs ;
+	.
+crimestatistics-code-codelist-hash:762 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "poškozování věřitele"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "762" ;
+
+	rdfs:label "poškozování věřitele"@cs ;
+	.
+crimestatistics-code-codelist-hash:763 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "zvýhodňování věřitele"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "763" ;
+
+	rdfs:label "zvýhodňování věřitele"@cs ;
+	.
+crimestatistics-code-codelist-hash:771 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "ohrožení pod vlivem návykové látky, opilství"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "771" ;
+
+	rdfs:label "ohrožení pod vlivem návykové látky, opilství"@cs ;
+	.
+crimestatistics-code-codelist-hash:772 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "zanedbání povinné výživy"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "772" ;
+
+	rdfs:label "zanedbání povinné výživy"@cs ;
+	.
+crimestatistics-code-codelist-hash:781 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "získání kontroly nad vzdušným dopravním prostředkem plavidlem a pevnou plošinou"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "781" ;
+
+	rdfs:label "získání kontroly nad vzdušným dopravním prostředkem plavidlem a pevnou plošinou"@cs ;
+	.
+crimestatistics-code-codelist-hash:782 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "sdělení nepravdivé informace, která může ohrozit bezpečnost nebo provoz vzdušného dopravního prostředku za letu a civilního plavidla"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "782" ;
+
+	rdfs:label "sdělení nepravdivé informace, která může ohrozit bezpečnost nebo provoz vzdušného dopravního prostředku za letu a civilního plavidla"@cs ;
+	.
+crimestatistics-code-codelist-hash:783 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "zavlečení vzdušného dopravního prostředku do ciziny"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "783" ;
+
+	rdfs:label "zavlečení vzdušného dopravního prostředku do ciziny"@cs ;
+	.
+crimestatistics-code-codelist-hash:784 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "týraní zvířat"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "784" ;
+
+	rdfs:label "týraní zvířat"@cs ;
+	.
+crimestatistics-code-codelist-hash:785 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "šíření poplašné zprávy"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "785" ;
+
+	rdfs:label "šíření poplašné zprávy"@cs ;
+	.
+crimestatistics-code-codelist-hash:786 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "účast na organizované zločinecké skupině"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "786" ;
+
+	rdfs:label "účast na organizované zločinecké skupině"@cs ;
+	.
+crimestatistics-code-codelist-hash:787 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "hanobení národa, rasy, etnické nebo jiné skupiny"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "787" ;
+
+	rdfs:label "hanobení národa, rasy, etnické nebo jiné skupiny"@cs ;
+	.
+crimestatistics-code-codelist-hash:788 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "podněcování k národnostní a rasové nenávisti"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "788" ;
+
+	rdfs:label "podněcování k národnostní a rasové nenávisti"@cs ;
+	.
+crimestatistics-code-codelist-hash:789 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "podpora a propagace hnutí směřujícího k potlačení práv a svobod občanů"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "789" ;
+
+	rdfs:label "podpora a propagace hnutí směřujícího k potlačení práv a svobod občanů"@cs ;
+	.
+crimestatistics-code-codelist-hash:790 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "ostatní trestná činnost"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "790" ;
+
+	rdfs:label "ostatní trestná činnost"@cs ;
+	.
+crimestatistics-code-codelist-hash:801 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "trestné činy proti předpisům o nekalé soutěži"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "801" ;
+
+	rdfs:label "trestné činy proti předpisům o nekalé soutěži"@cs ;
+	.
+crimestatistics-code-codelist-hash:803 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "neoprávněné podnikaní"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "803" ;
+
+	rdfs:label "neoprávněné podnikaní"@cs ;
+	.
+crimestatistics-code-codelist-hash:806 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "poškozování spotřebitele"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "806" ;
+
+	rdfs:label "poškozování spotřebitele"@cs ;
+	.
+crimestatistics-code-codelist-hash:807 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "porušování předpisů o oběhu zboží ve styku s cizinou (pašování)"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "807" ;
+
+	rdfs:label "porušování předpisů o oběhu zboží ve styku s cizinou (pašování)"@cs ;
+	.
+crimestatistics-code-codelist-hash:808 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "zkreslování údajů o stavu hospodaření a jmění"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "808" ;
+
+	rdfs:label "zkreslování údajů o stavu hospodaření a jmění"@cs ;
+	.
+crimestatistics-code-codelist-hash:809 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "z r u š e n"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "809" ;
+
+	rdfs:label "z r u š e n"@cs ;
+	.
+crimestatistics-code-codelist-hash:810 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "porušení povinnosti v insolvenčním řízení"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "810" ;
+
+	rdfs:label "porušení povinnosti v insolvenčním řízení"@cs ;
+	.
+crimestatistics-code-codelist-hash:811 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "porušování povinnosti při správě cizího majetku"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "811" ;
+
+	rdfs:label "porušování povinnosti při správě cizího majetku"@cs ;
+	.
+crimestatistics-code-codelist-hash:812 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "krádež"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "812" ;
+
+	rdfs:label "krádež"@cs ;
+	.
+crimestatistics-code-codelist-hash:813 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "neoprávněné užívání cizí věci mimo motorová vozidla"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "813" ;
+
+	rdfs:label "neoprávněné užívání cizí věci mimo motorová vozidla"@cs ;
+	.
+crimestatistics-code-codelist-hash:814 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "poškozování cizí věci"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "814" ;
+
+	rdfs:label "poškozování cizí věci"@cs ;
+	.
+crimestatistics-code-codelist-hash:815 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "podvody proti sociálnímu zabezpečení a nemocenskému pojištěni"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "815" ;
+
+	rdfs:label "podvody proti sociálnímu zabezpečení a nemocenskému pojištěni"@cs ;
+	.
+crimestatistics-code-codelist-hash:816 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "padělání a pozměňování peněz"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "816" ;
+
+	rdfs:label "padělání a pozměňování peněz"@cs ;
+	.
+crimestatistics-code-codelist-hash:817 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "padělání a pozměňování známek, kolků a nálepek"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "817" ;
+
+	rdfs:label "padělání a pozměňování známek, kolků a nálepek"@cs ;
+	.
+crimestatistics-code-codelist-hash:819 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "krácení daně"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "819" ;
+
+	rdfs:label "krácení daně"@cs ;
+	.
+crimestatistics-code-codelist-hash:820 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "zneužívaní pravomoci úřední osoby"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "820" ;
+
+	rdfs:label "zneužívaní pravomoci úřední osoby"@cs ;
+	.
+crimestatistics-code-codelist-hash:821 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "úplatkářství - přijímání úplatku"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "821" ;
+
+	rdfs:label "úplatkářství - přijímání úplatku"@cs ;
+	.
+crimestatistics-code-codelist-hash:822 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "poškozování věřitele"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "822" ;
+
+	rdfs:label "poškozování věřitele"@cs ;
+	.
+crimestatistics-code-codelist-hash:823 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "padělání a pozměňování veřejné listiny"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "823" ;
+
+	rdfs:label "padělání a pozměňování veřejné listiny"@cs ;
+	.
+crimestatistics-code-codelist-hash:824 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "nedovolená výroba a držení státní pečeti a úředního razítka"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "824" ;
+
+	rdfs:label "nedovolená výroba a držení státní pečeti a úředního razítka"@cs ;
+	.
+crimestatistics-code-codelist-hash:825 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "ohrožování zdraví závadnými potravinami a jinými potřebami"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "825" ;
+
+	rdfs:label "ohrožování zdraví závadnými potravinami a jinými potřebami"@cs ;
+	.
+crimestatistics-code-codelist-hash:826 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "vystavení nepravdivého potvrzení"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "826" ;
+
+	rdfs:label "vystavení nepravdivého potvrzení"@cs ;
+	.
+crimestatistics-code-codelist-hash:827 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "neoprávněné užívání motorového vozidla"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "827" ;
+
+	rdfs:label "neoprávněné užívání motorového vozidla"@cs ;
+	.
+crimestatistics-code-codelist-hash:828 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "porušování tajemství dopravovaných zpráv"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "828" ;
+
+	rdfs:label "porušování tajemství dopravovaných zpráv"@cs ;
+	.
+crimestatistics-code-codelist-hash:829 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "zpronevěra"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "829" ;
+
+	rdfs:label "zpronevěra"@cs ;
+	.
+crimestatistics-code-codelist-hash:830 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "podvod"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "830" ;
+
+	rdfs:label "podvod"@cs ;
+	.
+crimestatistics-code-codelist-hash:831 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "pletichy při veřejné soutěži a dražbě"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "831" ;
+
+	rdfs:label "pletichy při veřejné soutěži a dražbě"@cs ;
+	.
+crimestatistics-code-codelist-hash:832 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "porušování předpisů o nakládání s kontrolovaným zbožím a technologiemi"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "832" ;
+
+	rdfs:label "porušování předpisů o nakládání s kontrolovaným zbožím a technologiemi"@cs ;
+	.
+crimestatistics-code-codelist-hash:833 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "zneužívání informací v obchodním styku"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "833" ;
+
+	rdfs:label "zneužívání informací v obchodním styku"@cs ;
+	.
+crimestatistics-code-codelist-hash:834 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "neoprávněné provozování loterie a podobné sázkové hry"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "834" ;
+
+	rdfs:label "neoprávněné provozování loterie a podobné sázkové hry"@cs ;
+	.
+crimestatistics-code-codelist-hash:835 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "porušování předpisů o nálepkách k označení zboží"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "835" ;
+
+	rdfs:label "porušování předpisů o nálepkách k označení zboží"@cs ;
+	.
+crimestatistics-code-codelist-hash:836 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "neoprávněné nakládání s osobními údaji"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "836" ;
+
+	rdfs:label "neoprávněné nakládání s osobními údaji"@cs ;
+	.
+crimestatistics-code-codelist-hash:837 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "ostatní trestné činy proti měně"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "837" ;
+
+	rdfs:label "ostatní trestné činy proti měně"@cs ;
+	.
+crimestatistics-code-codelist-hash:838 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "neoprávněné držení platebního prostředku"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "838" ;
+
+	rdfs:label "neoprávněné držení platebního prostředku"@cs ;
+	.
+crimestatistics-code-codelist-hash:839 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "porušování předpisů o zahraničním obchodu s vojenským materiálem"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "839" ;
+
+	rdfs:label "porušování předpisů o zahraničním obchodu s vojenským materiálem"@cs ;
+	.
+crimestatistics-code-codelist-hash:840 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "krádeže železničních zásilek"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "840" ;
+
+	rdfs:label "krádeže železničních zásilek"@cs ;
+	.
+crimestatistics-code-codelist-hash:841 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "krádeže poštovních zásilek"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "841" ;
+
+	rdfs:label "krádeže poštovních zásilek"@cs ;
+	.
+crimestatistics-code-codelist-hash:842 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "krádeže silničních zásilek"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "842" ;
+
+	rdfs:label "krádeže silničních zásilek"@cs ;
+	.
+crimestatistics-code-codelist-hash:843 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "krádeže leteckých zásilek"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "843" ;
+
+	rdfs:label "krádeže leteckých zásilek"@cs ;
+	.
+crimestatistics-code-codelist-hash:844 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "krádeže lodních zásilek"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "844" ;
+
+	rdfs:label "krádeže lodních zásilek"@cs ;
+	.
+crimestatistics-code-codelist-hash:845 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "maření úkolu úřední osoby z nedbalosti"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "845" ;
+
+	rdfs:label "maření úkolu úřední osoby z nedbalosti"@cs ;
+	.
+crimestatistics-code-codelist-hash:846 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "úplatkářství - podplácení"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "846" ;
+
+	rdfs:label "úplatkářství - podplácení"@cs ;
+	.
+crimestatistics-code-codelist-hash:847 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "úplatkářství - nepřímé úplatkářství"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "847" ;
+
+	rdfs:label "úplatkářství - nepřímé úplatkářství"@cs ;
+	.
+crimestatistics-code-codelist-hash:848 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "zvýhodňování věřitele"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "848" ;
+
+	rdfs:label "zvýhodňování věřitele"@cs ;
+	.
+crimestatistics-code-codelist-hash:849 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "pletichy v insolvenčním řízení"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "849" ;
+
+	rdfs:label "pletichy v insolvenčním řízení"@cs ;
+	.
+crimestatistics-code-codelist-hash:850 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "ohrožení nebo poškození životního prostředí - úmyslné"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "850" ;
+
+	rdfs:label "ohrožení nebo poškození životního prostředí - úmyslné"@cs ;
+	.
+crimestatistics-code-codelist-hash:851 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "ohrožení nebo poškození životního prostředí - nedbalostní"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "851" ;
+
+	rdfs:label "ohrožení nebo poškození životního prostředí - nedbalostní"@cs ;
+	.
+crimestatistics-code-codelist-hash:852 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "způsobení úpadku"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "852" ;
+
+	rdfs:label "způsobení úpadku"@cs ;
+	.
+crimestatistics-code-codelist-hash:853 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "neoprávněné vydání cenného papíru"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "853" ;
+
+	rdfs:label "neoprávněné vydání cenného papíru"@cs ;
+	.
+crimestatistics-code-codelist-hash:854 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "manipulace s kurzem investičních nástrojů"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "854" ;
+
+	rdfs:label "manipulace s kurzem investičních nástrojů"@cs ;
+	.
+crimestatistics-code-codelist-hash:855 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "nedovolená výroba a držení radioaktivního a jaderného materiálu"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "855" ;
+
+	rdfs:label "nedovolená výroba a držení radioaktivního a jaderného materiálu"@cs ;
+	.
+crimestatistics-code-codelist-hash:860 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "podílnictví"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "860" ;
+
+	rdfs:label "podílnictví"@cs ;
+	.
+crimestatistics-code-codelist-hash:861 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "porušování práv k ochranné známce, obchodnímu jménu a chráněnému označení původu"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "861" ;
+
+	rdfs:label "porušování práv k ochranné známce, obchodnímu jménu a chráněnému označení původu"@cs ;
+	.
+crimestatistics-code-codelist-hash:862 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "porušování průmyslových práv"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "862" ;
+
+	rdfs:label "porušování průmyslových práv"@cs ;
+	.
+crimestatistics-code-codelist-hash:863 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "porušování autorského práva, práv k databázi, práv souvisejících a padělání díla"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "863" ;
+
+	rdfs:label "porušování autorského práva, práv k databázi, práv souvisejících a padělání díla"@cs ;
+	.
+crimestatistics-code-codelist-hash:864 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "zastření původu věcí, tzv. praní špinavých peněz"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "864" ;
+
+	rdfs:label "zastření původu věcí, tzv. praní špinavých peněz"@cs ;
+	.
+crimestatistics-code-codelist-hash:865 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "poškozování a zneužití záznamu na nosiči informací"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "865" ;
+
+	rdfs:label "poškozování a zneužití záznamu na nosiči informací"@cs ;
+	.
+crimestatistics-code-codelist-hash:866 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "provozování nepoctivých her a sázek"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "866" ;
+
+	rdfs:label "provozování nepoctivých her a sázek"@cs ;
+	.
+crimestatistics-code-codelist-hash:870 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "havárie a provozní poruchy - mimo dopravních nehod silničních, železničních, leteckých a vodních - z nedbalosti"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "870" ;
+
+	rdfs:label "havárie a provozní poruchy - mimo dopravních nehod silničních, železničních, leteckých a vodních - z nedbalosti"@cs ;
+	.
+crimestatistics-code-codelist-hash:871 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "havárie a provozní poruchy - mimo dopravních nehod silničních, železničních, leteckých a vodních - úmyslné"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "871" ;
+
+	rdfs:label "havárie a provozní poruchy - mimo dopravních nehod silničních, železničních, leteckých a vodních - úmyslné"@cs ;
+	.
+crimestatistics-code-codelist-hash:880 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "pojistný podvod"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "880" ;
+
+	rdfs:label "pojistný podvod"@cs ;
+	.
+crimestatistics-code-codelist-hash:881 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "úvěrový podvod"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "881" ;
+
+	rdfs:label "úvěrový podvod"@cs ;
+	.
+crimestatistics-code-codelist-hash:882 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "dotační podvod"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "882" ;
+
+	rdfs:label "dotační podvod"@cs ;
+	.
+crimestatistics-code-codelist-hash:885 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "nesplnění oznamovací povinnosti v daňovém řízení"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "885" ;
+
+	rdfs:label "nesplnění oznamovací povinnosti v daňovém řízení"@cs ;
+	.
+crimestatistics-code-codelist-hash:886 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "neodvedení daně, pojistného na sociální zabezpečení, zdravotní pojištění a příspěvku na státní politiku zaměstnanosti"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "886" ;
+
+	rdfs:label "neodvedení daně, pojistného na sociální zabezpečení, zdravotní pojištění a příspěvku na státní politiku zaměstnanosti"@cs ;
+	.
+crimestatistics-code-codelist-hash:890 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "ostatní hospodářské trestné činy"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "890" ;
+
+	rdfs:label "ostatní hospodářské trestné činy"@cs ;
+	.
+crimestatistics-code-codelist-hash:901 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "vojenské trestné činy"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "901" ;
+
+	rdfs:label "vojenské trestné činy"@cs ;
+	.
+crimestatistics-code-codelist-hash:902 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "trestné činy proti ústavnímu zřízení"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "902" ;
+
+	rdfs:label "trestné činy proti ústavnímu zřízení"@cs ;
+	.
+crimestatistics-code-codelist-hash:903 a skos:Concept, crime:Tsk ;
+	skos:prefLabel "trestné činy válečné a proti míru"@cs ;
+	skos:inScheme code:Tsk, code:Tsk_40-2009 ;
+	skos:notation "903" ;
+
+	rdfs:label "trestné činy válečné a proti míru"@cs ;
+	.

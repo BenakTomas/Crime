@@ -1,0 +1,1677 @@
+# Standardní prefixy
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix interval: <http://reference.data.gov.uk/def/intervals/> .
+@prefix sdmx:    <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+# Vlastní prefixy
+@prefix crimestatistics-code-slash: <http://linked.opendata.cz/ontology/crimestatistics/code/> .
+@prefix crimestatistics-code-codelist-slash: <http://linked.opendata.cz/ontology/crimestatistics/code/predmetZajmu-vec/> .
+@prefix crimestatistics-code-codelist-class: <http://linked.opendata.cz/ontology/crimestatistics/code/predmetZajmu-vec/class#> .
+@prefix crimestatistics-code-codelist-property: <http://linked.opendata.cz/ontology/crimestatistics/code/predmetZajmu-vec/property#> .
+
+@prefix crimestatistics-code-codelist-hash: <http://linked.opendata.cz/ontology/crimestatistics/code/predmetZajmu-vec#> .
+
+# Definice schematu konceptů
+<http://linked.opendata.cz/ontology/crimestatistics/code/predmetZajmu-vec> a skos:ConceptScheme ;
+	skos:prefLabel "Předmět zájmu pachatele (věc) - schéma"@cs ;
+	skos:note "Klasifikuje předmět zájmu pachatele. Tento předmět je fyzickou věcí."@cs ;
+	
+	rdfs:label "Předmět zájmu pachatele (věc)- schéma"@cs ;
+	rdfs:comment "Klasifikuje předmět zájmu pachatele. Tento předmět je fyzickou věcí."@cs ;
+	rdfs:seeAlso <http://linked.opendata.cz/ontology/crimestatistics/code/predmetZajmu-vec/conceptClass> ;
+	.
+
+# Definice zapouzdřující třídy
+<http://linked.opendata.cz/ontology/crimestatistics/code/predmetZajmu-vec/conceptClass> a rdf:Class ;
+	rdfs:label "Předmět zájmu pachatele (věc) - zapouzdřující třída"@cs ;
+	rdfs:comment "Klasifikuje předmět zájmu pachatele. Tento předmět je fyzickou věcí."@cs ;
+	rdfs:subClassOf skos:Concept ;
+	rdfs:seeAlso <http://linked.opendata.cz/ontology/crimestatistics/code/predmetZajmu-vec> ;
+	.
+	
+# Definice schématu
+crimestatistics-code-codelist-hash:osobniDoklady a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		"osobní doklady"@cs,
+		"personal documents"@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-vec ;
+	skos:notation "" ;
+	skos:scopeNote
+		"Osobní doklady jako občanské a řidičské průkazy, cestovní pasy atd."@cs,
+		"Personal documents (ID cards, driving licenses, passports etc.)"@en ;
+	.
+
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+crimestatistics-code-codelist-hash:platidla a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-vec ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+crimestatistics-code-codelist-hash:valutyADevizy a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-vec ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:cennosti a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-vec ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:zlatoZpracovane a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-vec ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:mince a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-vec ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:uslechtileKovy a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-vec ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:sbirky a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-vec ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:umeleckaDilaAPredmety a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-vec ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:predmetySHistorickouHodnotou a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-vec ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:prislusenstviHrobu a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-vec ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:optika a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-vec ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:fotoKino a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-vec ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:zvukotechnika a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-vec ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:telefonyARadiokomunikace a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-vec ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:videotechnika a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-vec ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:prijimace a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-vec ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:elektrickeSpotrebice a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-vec ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:pristrojeDoDomacnostiAPrislusenstvi a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-vec ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:kancelarskeStrojeAPotreby a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-vec ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:strojePristrojeNastroje a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-vec ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:zbraneAVybusniny a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-vec ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:zbrane a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-vec ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:zbraneKratke a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-vec ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:zbraneDlouhe a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-vec ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:zbraneHistoricke a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-vec ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:vybusniny a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-vec ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:dopravniProstredky a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-vec ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:motorovaVozidla a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-vec ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:motorovaVozidlaDvoustopa a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-vec ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:motorovaVozidlaJednostopa a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-vec ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:automobily a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-vec ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:soucastkyANahradniDilyKVozidlum a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-vec ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:privesyZavesyKaravany a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-vec ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:motorky a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-vec ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:pneumatikyVozidel a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-vec ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:jizdniKolaAPrislusenstvi a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-vec ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:klice a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-vec ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:textilATextilniVyrobky a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-vec ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:obleceni a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-vec ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:kozedelneVyrobkyAGalanterie a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-vec ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:vyrobkyKulturniSpotreby a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-vec ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:potravinyALihoviny a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-vec ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+	
+####################################
+crimestatistics-code-codelist-hash:potraviny a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-vec ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:masnePotraviny a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-vec ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:lihoviny a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-vec ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:tabakoveVyrobky a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-vec ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:zvirectvo a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-vec ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:hospodarskeZvirectvo a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-vec ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:farmaceutickeAOmamneProstredky a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-vec ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:leky a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-vec ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:drogy a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-vec ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:zasilkyAPrepravovaneVeci a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-vec ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:zasilky a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-vec ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:zasilkyPostovni a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-vec ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:zasilkyVlakoveSilnicniLeteckeALodni a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-vec ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:prepravovaneVeci a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-vec ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:stavebniAInstalacniMaterialyADrevarskeVyrobky a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-vec ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash:stavebniAInstalacniMaterialyADrevarskeVyrobky skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:stavebniMaterialy a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-vec ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:instalacniMaterialy a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-vec ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:drevarskeVyrobky a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-vec ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:skloPorcelanKeramika a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-vec ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:sklo a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-vec ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:keramikaAPorcelan a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-vec ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:palivaMazivaEnergie a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-vec ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:paliva a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-vec ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:hutniMaterial a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-vec ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+####################################
+crimestatistics-code-codelist-hash:hutniMaterialZeleznyLitinovyAOcelovy a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-vec ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:chemickeVyrobky a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-vec ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:zemedelskeVyrobkyAVyrobkyTezbyDreva a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-vec ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+
+
+####################################
+crimestatistics-code-codelist-hash:zemedelskeVyrobky a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-vec ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:vyrobkyTezbyDreva a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-vec ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:vyrobkyZPlastuHrackarskeAPapirenskeASber a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-vec ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:papirenskeVyrobky a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-vec ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:odpad a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-vec ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:nemovitosti a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-vec ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:obytneNemovitosti a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-vec ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+
+
+####################################
+crimestatistics-code-codelist-hash:domy a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-vec ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:automatyHraciProdejniADalsi a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-vec ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:pozarniTechnika a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-vec ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:drogyAPrekurzory a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-vec ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:drogy a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-vec ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:syntetickeDrogy a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-vec ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:polosyntetickeDrogy a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-vec ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:prirodniDrogy a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-vec ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:prekurzory a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-vec ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:navykoveLeky a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-vec ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:prostredkyVypocetniAKomunikacniTechniky a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-vec ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:pocitace a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-vec ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:servery a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-vec ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+
+####################################
+crimestatistics-code-codelist-hash:prenosneProstredkyVypocetniAKomunikacniTechniky a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-vec ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:castiAPrislusenstviPocitacu a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-vec ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:pripojitelneDiskyAMechaniky a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-vec ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:pametovaMediaVymenna a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-vec ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:pametoveKarty a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-vec ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:magnetickePasky a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-vec ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:obsahPametovehoMedia a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-vec ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:pametoveMediumSProgramy a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-vec ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:pametoveMediumSDaty a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-vec ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:specialniElektronika a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-vec ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:platidlaFinancniInstrumenty a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-vec ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:cennePapiry a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-vec ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+

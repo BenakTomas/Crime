@@ -1,0 +1,8 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <!-- Font size for basic crime info headings. Using DP instead
+    of SP to prevent size scaling based on user preferences. -->
+    <!-- Font size for crime overview headings. Using DP instead
+    of SP to prevent size scaling based on user preferences. -->
+</resources>

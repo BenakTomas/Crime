@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        
+    android:orientation="horizontal"
+    
+    android:baselineAligned="false"
+    android:gravity="center_horizontal">
+
+    <!-- trend -->
+
+    <LinearLayout
+        android:id="@+id/trend_group"
+        android:orientation="vertical"
+        
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        
+        android:layout_marginLeft="@dimen/basic_crime_info_group_margin"
+        android:layout_marginRight="@dimen/basic_crime_info_group_margin"
+        >
+
+        <TextView
+            android:id="@+id/trend_label"
+       		style="@style/crime_trend_caption"
+            />
+
+        <benak.tomas.crimemonitor.client.ui.view.TrendView
+            android:id="@+id/trend"
+            style="@style/basic_crime_info_measure_view"
+            />
+    </LinearLayout>
+    <!-- objasnenost -->
+
+    <LinearLayout
+        android:id="@+id/objasnenost_group"
+        android:orientation="vertical"
+        
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        
+        android:layout_marginLeft="@dimen/basic_crime_info_group_margin"
+        android:layout_marginRight="@dimen/basic_crime_info_group_margin">
+
+        <TextView
+            android:id="@+id/objasnenost_label"
+            style="@style/crime_objasnenost_caption"
+            />
+
+        <benak.tomas.crimemonitor.client.ui.view.ObjasnenostView
+            android:id="@+id/objasnenost"
+            style="@style/basic_crime_info_measure_view"
+            />
+    </LinearLayout>
+    <!-- index -->
+
+    <LinearLayout
+        android:id="@+id/index_group"
+        android:orientation="vertical"
+        
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        
+        android:layout_marginLeft="@dimen/basic_crime_info_group_margin"
+        android:layout_marginRight="@dimen/basic_crime_info_group_margin">
+
+        <TextView
+            android:id="@+id/index_label"
+            style="@style/crime_index_caption"
+             />
+
+        <benak.tomas.crimemonitor.client.ui.view.CrimeIndexCompactView
+            android:id="@+id/index"
+            style="@style/basic_crime_info_measure_view" />
+    </LinearLayout>
+
+</LinearLayout>

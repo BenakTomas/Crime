@@ -1,0 +1,711 @@
+# Standardní prefixy
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix interval: <http://reference.data.gov.uk/def/intervals/> .
+@prefix sdmx:    <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+# Vlastní prefixy
+@prefix crimestatistics-code-slash: <http://linked.opendata.cz/ontology/crimestatistics/code/> .
+@prefix crimestatistics-code-codelist-slash: <http://linked.opendata.cz/ontology/crimestatistics/code/celkovyPocetPachateluTrestnehoCinu/> .
+@prefix crimestatistics-code-codelist-class: <http://linked.opendata.cz/ontology/crimestatistics/code/celkovyPocetPachateluTrestnehoCinu/class#> .
+@prefix crimestatistics-code-codelist-property: <http://linked.opendata.cz/ontology/crimestatistics/code/celkovyPocetPachateluTrestnehoCinu/property#> .
+
+@prefix crimestatistics-code-codelist-hash: <http://linked.opendata.cz/ontology/crimestatistics/code/celkovyPocetPachateluTrestnehoCinu#> .
+
+crimestatistics-code-codelist-hash:1 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "1"@cs ;
+	skos:inScheme crimestatistics-code-slash:celkovyPocetPachateluTrestnehoCinu ;
+	skos:notation "1" ;
+
+	rdfs:label "1"@cs ;
+	.
+crimestatistics-code-codelist-hash:2 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "2"@cs ;
+	skos:inScheme crimestatistics-code-slash:celkovyPocetPachateluTrestnehoCinu ;
+	skos:notation "2" ;
+
+	rdfs:label "2"@cs ;
+	.
+crimestatistics-code-codelist-hash:3 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "3"@cs ;
+	skos:inScheme crimestatistics-code-slash:celkovyPocetPachateluTrestnehoCinu ;
+	skos:notation "3" ;
+
+	rdfs:label "3"@cs ;
+	.
+crimestatistics-code-codelist-hash:4 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "4"@cs ;
+	skos:inScheme crimestatistics-code-slash:celkovyPocetPachateluTrestnehoCinu ;
+	skos:notation "4" ;
+
+	rdfs:label "4"@cs ;
+	.
+crimestatistics-code-codelist-hash:5 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "5"@cs ;
+	skos:inScheme crimestatistics-code-slash:celkovyPocetPachateluTrestnehoCinu ;
+	skos:notation "5" ;
+
+	rdfs:label "5"@cs ;
+	.
+crimestatistics-code-codelist-hash:6 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "6"@cs ;
+	skos:inScheme crimestatistics-code-slash:celkovyPocetPachateluTrestnehoCinu ;
+	skos:notation "6" ;
+
+	rdfs:label "6"@cs ;
+	.
+crimestatistics-code-codelist-hash:7 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "7"@cs ;
+	skos:inScheme crimestatistics-code-slash:celkovyPocetPachateluTrestnehoCinu ;
+	skos:notation "7" ;
+
+	rdfs:label "7"@cs ;
+	.
+crimestatistics-code-codelist-hash:8 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "8"@cs ;
+	skos:inScheme crimestatistics-code-slash:celkovyPocetPachateluTrestnehoCinu ;
+	skos:notation "8" ;
+
+	rdfs:label "8"@cs ;
+	.
+crimestatistics-code-codelist-hash:9 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "9"@cs ;
+	skos:inScheme crimestatistics-code-slash:celkovyPocetPachateluTrestnehoCinu ;
+	skos:notation "9" ;
+
+	rdfs:label "9"@cs ;
+	.
+crimestatistics-code-codelist-hash:10 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "10"@cs ;
+	skos:inScheme crimestatistics-code-slash:celkovyPocetPachateluTrestnehoCinu ;
+	skos:notation "10" ;
+
+	rdfs:label "10"@cs ;
+	.
+crimestatistics-code-codelist-hash:11 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "11"@cs ;
+	skos:inScheme crimestatistics-code-slash:celkovyPocetPachateluTrestnehoCinu ;
+	skos:notation "11" ;
+
+	rdfs:label "11"@cs ;
+	.
+crimestatistics-code-codelist-hash:12 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "12"@cs ;
+	skos:inScheme crimestatistics-code-slash:celkovyPocetPachateluTrestnehoCinu ;
+	skos:notation "12" ;
+
+	rdfs:label "12"@cs ;
+	.
+crimestatistics-code-codelist-hash:13 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "13"@cs ;
+	skos:inScheme crimestatistics-code-slash:celkovyPocetPachateluTrestnehoCinu ;
+	skos:notation "13" ;
+
+	rdfs:label "13"@cs ;
+	.
+crimestatistics-code-codelist-hash:14 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "14"@cs ;
+	skos:inScheme crimestatistics-code-slash:celkovyPocetPachateluTrestnehoCinu ;
+	skos:notation "14" ;
+
+	rdfs:label "14"@cs ;
+	.
+crimestatistics-code-codelist-hash:15 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "15"@cs ;
+	skos:inScheme crimestatistics-code-slash:celkovyPocetPachateluTrestnehoCinu ;
+	skos:notation "15" ;
+
+	rdfs:label "15"@cs ;
+	.
+crimestatistics-code-codelist-hash:16 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "16"@cs ;
+	skos:inScheme crimestatistics-code-slash:celkovyPocetPachateluTrestnehoCinu ;
+	skos:notation "16" ;
+
+	rdfs:label "16"@cs ;
+	.
+crimestatistics-code-codelist-hash:17 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "17"@cs ;
+	skos:inScheme crimestatistics-code-slash:celkovyPocetPachateluTrestnehoCinu ;
+	skos:notation "17" ;
+
+	rdfs:label "17"@cs ;
+	.
+crimestatistics-code-codelist-hash:18 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "18"@cs ;
+	skos:inScheme crimestatistics-code-slash:celkovyPocetPachateluTrestnehoCinu ;
+	skos:notation "18" ;
+
+	rdfs:label "18"@cs ;
+	.
+crimestatistics-code-codelist-hash:19 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "19"@cs ;
+	skos:inScheme crimestatistics-code-slash:celkovyPocetPachateluTrestnehoCinu ;
+	skos:notation "19" ;
+
+	rdfs:label "19"@cs ;
+	.
+crimestatistics-code-codelist-hash:20 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "20"@cs ;
+	skos:inScheme crimestatistics-code-slash:celkovyPocetPachateluTrestnehoCinu ;
+	skos:notation "20" ;
+
+	rdfs:label "20"@cs ;
+	.
+crimestatistics-code-codelist-hash:21 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "21"@cs ;
+	skos:inScheme crimestatistics-code-slash:celkovyPocetPachateluTrestnehoCinu ;
+	skos:notation "21" ;
+
+	rdfs:label "21"@cs ;
+	.
+crimestatistics-code-codelist-hash:22 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "22"@cs ;
+	skos:inScheme crimestatistics-code-slash:celkovyPocetPachateluTrestnehoCinu ;
+	skos:notation "22" ;
+
+	rdfs:label "22"@cs ;
+	.
+crimestatistics-code-codelist-hash:23 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "23"@cs ;
+	skos:inScheme crimestatistics-code-slash:celkovyPocetPachateluTrestnehoCinu ;
+	skos:notation "23" ;
+
+	rdfs:label "23"@cs ;
+	.
+crimestatistics-code-codelist-hash:24 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "24"@cs ;
+	skos:inScheme crimestatistics-code-slash:celkovyPocetPachateluTrestnehoCinu ;
+	skos:notation "24" ;
+
+	rdfs:label "24"@cs ;
+	.
+crimestatistics-code-codelist-hash:25 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "25"@cs ;
+	skos:inScheme crimestatistics-code-slash:celkovyPocetPachateluTrestnehoCinu ;
+	skos:notation "25" ;
+
+	rdfs:label "25"@cs ;
+	.
+crimestatistics-code-codelist-hash:26 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "26"@cs ;
+	skos:inScheme crimestatistics-code-slash:celkovyPocetPachateluTrestnehoCinu ;
+	skos:notation "26" ;
+
+	rdfs:label "26"@cs ;
+	.
+crimestatistics-code-codelist-hash:27 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "27"@cs ;
+	skos:inScheme crimestatistics-code-slash:celkovyPocetPachateluTrestnehoCinu ;
+	skos:notation "27" ;
+
+	rdfs:label "27"@cs ;
+	.
+crimestatistics-code-codelist-hash:28 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "28"@cs ;
+	skos:inScheme crimestatistics-code-slash:celkovyPocetPachateluTrestnehoCinu ;
+	skos:notation "28" ;
+
+	rdfs:label "28"@cs ;
+	.
+crimestatistics-code-codelist-hash:29 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "29"@cs ;
+	skos:inScheme crimestatistics-code-slash:celkovyPocetPachateluTrestnehoCinu ;
+	skos:notation "29" ;
+
+	rdfs:label "29"@cs ;
+	.
+crimestatistics-code-codelist-hash:30 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "30"@cs ;
+	skos:inScheme crimestatistics-code-slash:celkovyPocetPachateluTrestnehoCinu ;
+	skos:notation "30" ;
+
+	rdfs:label "30"@cs ;
+	.
+crimestatistics-code-codelist-hash:31 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "31"@cs ;
+	skos:inScheme crimestatistics-code-slash:celkovyPocetPachateluTrestnehoCinu ;
+	skos:notation "31" ;
+
+	rdfs:label "31"@cs ;
+	.
+crimestatistics-code-codelist-hash:32 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "32"@cs ;
+	skos:inScheme crimestatistics-code-slash:celkovyPocetPachateluTrestnehoCinu ;
+	skos:notation "32" ;
+
+	rdfs:label "32"@cs ;
+	.
+crimestatistics-code-codelist-hash:33 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "33"@cs ;
+	skos:inScheme crimestatistics-code-slash:celkovyPocetPachateluTrestnehoCinu ;
+	skos:notation "33" ;
+
+	rdfs:label "33"@cs ;
+	.
+crimestatistics-code-codelist-hash:34 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "34"@cs ;
+	skos:inScheme crimestatistics-code-slash:celkovyPocetPachateluTrestnehoCinu ;
+	skos:notation "34" ;
+
+	rdfs:label "34"@cs ;
+	.
+crimestatistics-code-codelist-hash:35 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "35"@cs ;
+	skos:inScheme crimestatistics-code-slash:celkovyPocetPachateluTrestnehoCinu ;
+	skos:notation "35" ;
+
+	rdfs:label "35"@cs ;
+	.
+crimestatistics-code-codelist-hash:36 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "36"@cs ;
+	skos:inScheme crimestatistics-code-slash:celkovyPocetPachateluTrestnehoCinu ;
+	skos:notation "36" ;
+
+	rdfs:label "36"@cs ;
+	.
+crimestatistics-code-codelist-hash:37 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "37"@cs ;
+	skos:inScheme crimestatistics-code-slash:celkovyPocetPachateluTrestnehoCinu ;
+	skos:notation "37" ;
+
+	rdfs:label "37"@cs ;
+	.
+crimestatistics-code-codelist-hash:38 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "38"@cs ;
+	skos:inScheme crimestatistics-code-slash:celkovyPocetPachateluTrestnehoCinu ;
+	skos:notation "38" ;
+
+	rdfs:label "38"@cs ;
+	.
+crimestatistics-code-codelist-hash:39 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "39"@cs ;
+	skos:inScheme crimestatistics-code-slash:celkovyPocetPachateluTrestnehoCinu ;
+	skos:notation "39" ;
+
+	rdfs:label "39"@cs ;
+	.
+crimestatistics-code-codelist-hash:40 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "40"@cs ;
+	skos:inScheme crimestatistics-code-slash:celkovyPocetPachateluTrestnehoCinu ;
+	skos:notation "40" ;
+
+	rdfs:label "40"@cs ;
+	.
+crimestatistics-code-codelist-hash:41 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "41"@cs ;
+	skos:inScheme crimestatistics-code-slash:celkovyPocetPachateluTrestnehoCinu ;
+	skos:notation "41" ;
+
+	rdfs:label "41"@cs ;
+	.
+crimestatistics-code-codelist-hash:42 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "42"@cs ;
+	skos:inScheme crimestatistics-code-slash:celkovyPocetPachateluTrestnehoCinu ;
+	skos:notation "42" ;
+
+	rdfs:label "42"@cs ;
+	.
+crimestatistics-code-codelist-hash:43 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "43"@cs ;
+	skos:inScheme crimestatistics-code-slash:celkovyPocetPachateluTrestnehoCinu ;
+	skos:notation "43" ;
+
+	rdfs:label "43"@cs ;
+	.
+crimestatistics-code-codelist-hash:44 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "44"@cs ;
+	skos:inScheme crimestatistics-code-slash:celkovyPocetPachateluTrestnehoCinu ;
+	skos:notation "44" ;
+
+	rdfs:label "44"@cs ;
+	.
+crimestatistics-code-codelist-hash:45 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "45"@cs ;
+	skos:inScheme crimestatistics-code-slash:celkovyPocetPachateluTrestnehoCinu ;
+	skos:notation "45" ;
+
+	rdfs:label "45"@cs ;
+	.
+crimestatistics-code-codelist-hash:46 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "46"@cs ;
+	skos:inScheme crimestatistics-code-slash:celkovyPocetPachateluTrestnehoCinu ;
+	skos:notation "46" ;
+
+	rdfs:label "46"@cs ;
+	.
+crimestatistics-code-codelist-hash:47 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "47"@cs ;
+	skos:inScheme crimestatistics-code-slash:celkovyPocetPachateluTrestnehoCinu ;
+	skos:notation "47" ;
+
+	rdfs:label "47"@cs ;
+	.
+crimestatistics-code-codelist-hash:48 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "48"@cs ;
+	skos:inScheme crimestatistics-code-slash:celkovyPocetPachateluTrestnehoCinu ;
+	skos:notation "48" ;
+
+	rdfs:label "48"@cs ;
+	.
+crimestatistics-code-codelist-hash:49 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "49"@cs ;
+	skos:inScheme crimestatistics-code-slash:celkovyPocetPachateluTrestnehoCinu ;
+	skos:notation "49" ;
+
+	rdfs:label "49"@cs ;
+	.
+crimestatistics-code-codelist-hash:50 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "50"@cs ;
+	skos:inScheme crimestatistics-code-slash:celkovyPocetPachateluTrestnehoCinu ;
+	skos:notation "50" ;
+
+	rdfs:label "50"@cs ;
+	.
+crimestatistics-code-codelist-hash:51 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "51"@cs ;
+	skos:inScheme crimestatistics-code-slash:celkovyPocetPachateluTrestnehoCinu ;
+	skos:notation "51" ;
+
+	rdfs:label "51"@cs ;
+	.
+crimestatistics-code-codelist-hash:52 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "52"@cs ;
+	skos:inScheme crimestatistics-code-slash:celkovyPocetPachateluTrestnehoCinu ;
+	skos:notation "52" ;
+
+	rdfs:label "52"@cs ;
+	.
+crimestatistics-code-codelist-hash:53 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "53"@cs ;
+	skos:inScheme crimestatistics-code-slash:celkovyPocetPachateluTrestnehoCinu ;
+	skos:notation "53" ;
+
+	rdfs:label "53"@cs ;
+	.
+crimestatistics-code-codelist-hash:54 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "54"@cs ;
+	skos:inScheme crimestatistics-code-slash:celkovyPocetPachateluTrestnehoCinu ;
+	skos:notation "54" ;
+
+	rdfs:label "54"@cs ;
+	.
+crimestatistics-code-codelist-hash:55 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "55"@cs ;
+	skos:inScheme crimestatistics-code-slash:celkovyPocetPachateluTrestnehoCinu ;
+	skos:notation "55" ;
+
+	rdfs:label "55"@cs ;
+	.
+crimestatistics-code-codelist-hash:56 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "56"@cs ;
+	skos:inScheme crimestatistics-code-slash:celkovyPocetPachateluTrestnehoCinu ;
+	skos:notation "56" ;
+
+	rdfs:label "56"@cs ;
+	.
+crimestatistics-code-codelist-hash:57 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "57"@cs ;
+	skos:inScheme crimestatistics-code-slash:celkovyPocetPachateluTrestnehoCinu ;
+	skos:notation "57" ;
+
+	rdfs:label "57"@cs ;
+	.
+crimestatistics-code-codelist-hash:58 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "58"@cs ;
+	skos:inScheme crimestatistics-code-slash:celkovyPocetPachateluTrestnehoCinu ;
+	skos:notation "58" ;
+
+	rdfs:label "58"@cs ;
+	.
+crimestatistics-code-codelist-hash:59 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "59"@cs ;
+	skos:inScheme crimestatistics-code-slash:celkovyPocetPachateluTrestnehoCinu ;
+	skos:notation "59" ;
+
+	rdfs:label "59"@cs ;
+	.
+crimestatistics-code-codelist-hash:60 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "60"@cs ;
+	skos:inScheme crimestatistics-code-slash:celkovyPocetPachateluTrestnehoCinu ;
+	skos:notation "60" ;
+
+	rdfs:label "60"@cs ;
+	.
+crimestatistics-code-codelist-hash:61 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "61"@cs ;
+	skos:inScheme crimestatistics-code-slash:celkovyPocetPachateluTrestnehoCinu ;
+	skos:notation "61" ;
+
+	rdfs:label "61"@cs ;
+	.
+crimestatistics-code-codelist-hash:62 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "62"@cs ;
+	skos:inScheme crimestatistics-code-slash:celkovyPocetPachateluTrestnehoCinu ;
+	skos:notation "62" ;
+
+	rdfs:label "62"@cs ;
+	.
+crimestatistics-code-codelist-hash:63 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "63"@cs ;
+	skos:inScheme crimestatistics-code-slash:celkovyPocetPachateluTrestnehoCinu ;
+	skos:notation "63" ;
+
+	rdfs:label "63"@cs ;
+	.
+crimestatistics-code-codelist-hash:64 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "64"@cs ;
+	skos:inScheme crimestatistics-code-slash:celkovyPocetPachateluTrestnehoCinu ;
+	skos:notation "64" ;
+
+	rdfs:label "64"@cs ;
+	.
+crimestatistics-code-codelist-hash:65 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "65"@cs ;
+	skos:inScheme crimestatistics-code-slash:celkovyPocetPachateluTrestnehoCinu ;
+	skos:notation "65" ;
+
+	rdfs:label "65"@cs ;
+	.
+crimestatistics-code-codelist-hash:66 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "66"@cs ;
+	skos:inScheme crimestatistics-code-slash:celkovyPocetPachateluTrestnehoCinu ;
+	skos:notation "66" ;
+
+	rdfs:label "66"@cs ;
+	.
+crimestatistics-code-codelist-hash:67 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "67"@cs ;
+	skos:inScheme crimestatistics-code-slash:celkovyPocetPachateluTrestnehoCinu ;
+	skos:notation "67" ;
+
+	rdfs:label "67"@cs ;
+	.
+crimestatistics-code-codelist-hash:68 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "68"@cs ;
+	skos:inScheme crimestatistics-code-slash:celkovyPocetPachateluTrestnehoCinu ;
+	skos:notation "68" ;
+
+	rdfs:label "68"@cs ;
+	.
+crimestatistics-code-codelist-hash:69 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "69"@cs ;
+	skos:inScheme crimestatistics-code-slash:celkovyPocetPachateluTrestnehoCinu ;
+	skos:notation "69" ;
+
+	rdfs:label "69"@cs ;
+	.
+crimestatistics-code-codelist-hash:70 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "70"@cs ;
+	skos:inScheme crimestatistics-code-slash:celkovyPocetPachateluTrestnehoCinu ;
+	skos:notation "70" ;
+
+	rdfs:label "70"@cs ;
+	.
+crimestatistics-code-codelist-hash:71 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "71"@cs ;
+	skos:inScheme crimestatistics-code-slash:celkovyPocetPachateluTrestnehoCinu ;
+	skos:notation "71" ;
+
+	rdfs:label "71"@cs ;
+	.
+crimestatistics-code-codelist-hash:72 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "72"@cs ;
+	skos:inScheme crimestatistics-code-slash:celkovyPocetPachateluTrestnehoCinu ;
+	skos:notation "72" ;
+
+	rdfs:label "72"@cs ;
+	.
+crimestatistics-code-codelist-hash:73 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "73"@cs ;
+	skos:inScheme crimestatistics-code-slash:celkovyPocetPachateluTrestnehoCinu ;
+	skos:notation "73" ;
+
+	rdfs:label "73"@cs ;
+	.
+crimestatistics-code-codelist-hash:74 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "74"@cs ;
+	skos:inScheme crimestatistics-code-slash:celkovyPocetPachateluTrestnehoCinu ;
+	skos:notation "74" ;
+
+	rdfs:label "74"@cs ;
+	.
+crimestatistics-code-codelist-hash:75 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "75"@cs ;
+	skos:inScheme crimestatistics-code-slash:celkovyPocetPachateluTrestnehoCinu ;
+	skos:notation "75" ;
+
+	rdfs:label "75"@cs ;
+	.
+crimestatistics-code-codelist-hash:76 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "76"@cs ;
+	skos:inScheme crimestatistics-code-slash:celkovyPocetPachateluTrestnehoCinu ;
+	skos:notation "76" ;
+
+	rdfs:label "76"@cs ;
+	.
+crimestatistics-code-codelist-hash:77 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "77"@cs ;
+	skos:inScheme crimestatistics-code-slash:celkovyPocetPachateluTrestnehoCinu ;
+	skos:notation "77" ;
+
+	rdfs:label "77"@cs ;
+	.
+crimestatistics-code-codelist-hash:78 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "78"@cs ;
+	skos:inScheme crimestatistics-code-slash:celkovyPocetPachateluTrestnehoCinu ;
+	skos:notation "78" ;
+
+	rdfs:label "78"@cs ;
+	.
+crimestatistics-code-codelist-hash:79 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "79"@cs ;
+	skos:inScheme crimestatistics-code-slash:celkovyPocetPachateluTrestnehoCinu ;
+	skos:notation "79" ;
+
+	rdfs:label "79"@cs ;
+	.
+crimestatistics-code-codelist-hash:80 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "80"@cs ;
+	skos:inScheme crimestatistics-code-slash:celkovyPocetPachateluTrestnehoCinu ;
+	skos:notation "80" ;
+
+	rdfs:label "80"@cs ;
+	.
+crimestatistics-code-codelist-hash:81 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "81"@cs ;
+	skos:inScheme crimestatistics-code-slash:celkovyPocetPachateluTrestnehoCinu ;
+	skos:notation "81" ;
+
+	rdfs:label "81"@cs ;
+	.
+crimestatistics-code-codelist-hash:82 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "82"@cs ;
+	skos:inScheme crimestatistics-code-slash:celkovyPocetPachateluTrestnehoCinu ;
+	skos:notation "82" ;
+
+	rdfs:label "82"@cs ;
+	.
+crimestatistics-code-codelist-hash:83 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "83"@cs ;
+	skos:inScheme crimestatistics-code-slash:celkovyPocetPachateluTrestnehoCinu ;
+	skos:notation "83" ;
+
+	rdfs:label "83"@cs ;
+	.
+crimestatistics-code-codelist-hash:84 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "84"@cs ;
+	skos:inScheme crimestatistics-code-slash:celkovyPocetPachateluTrestnehoCinu ;
+	skos:notation "84" ;
+
+	rdfs:label "84"@cs ;
+	.
+crimestatistics-code-codelist-hash:85 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "85"@cs ;
+	skos:inScheme crimestatistics-code-slash:celkovyPocetPachateluTrestnehoCinu ;
+	skos:notation "85" ;
+
+	rdfs:label "85"@cs ;
+	.
+crimestatistics-code-codelist-hash:86 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "86"@cs ;
+	skos:inScheme crimestatistics-code-slash:celkovyPocetPachateluTrestnehoCinu ;
+	skos:notation "86" ;
+
+	rdfs:label "86"@cs ;
+	.
+crimestatistics-code-codelist-hash:87 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "87"@cs ;
+	skos:inScheme crimestatistics-code-slash:celkovyPocetPachateluTrestnehoCinu ;
+	skos:notation "87" ;
+
+	rdfs:label "87"@cs ;
+	.
+crimestatistics-code-codelist-hash:88 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "88"@cs ;
+	skos:inScheme crimestatistics-code-slash:celkovyPocetPachateluTrestnehoCinu ;
+	skos:notation "88" ;
+
+	rdfs:label "88"@cs ;
+	.
+crimestatistics-code-codelist-hash:89 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "89"@cs ;
+	skos:inScheme crimestatistics-code-slash:celkovyPocetPachateluTrestnehoCinu ;
+	skos:notation "89" ;
+
+	rdfs:label "89"@cs ;
+	.
+crimestatistics-code-codelist-hash:90 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "90"@cs ;
+	skos:inScheme crimestatistics-code-slash:celkovyPocetPachateluTrestnehoCinu ;
+	skos:notation "90" ;
+
+	rdfs:label "90"@cs ;
+	.
+crimestatistics-code-codelist-hash:91 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "91"@cs ;
+	skos:inScheme crimestatistics-code-slash:celkovyPocetPachateluTrestnehoCinu ;
+	skos:notation "91" ;
+
+	rdfs:label "91"@cs ;
+	.
+crimestatistics-code-codelist-hash:92 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "92"@cs ;
+	skos:inScheme crimestatistics-code-slash:celkovyPocetPachateluTrestnehoCinu ;
+	skos:notation "92" ;
+
+	rdfs:label "92"@cs ;
+	.
+crimestatistics-code-codelist-hash:93 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "93"@cs ;
+	skos:inScheme crimestatistics-code-slash:celkovyPocetPachateluTrestnehoCinu ;
+	skos:notation "93" ;
+
+	rdfs:label "93"@cs ;
+	.
+crimestatistics-code-codelist-hash:94 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "94"@cs ;
+	skos:inScheme crimestatistics-code-slash:celkovyPocetPachateluTrestnehoCinu ;
+	skos:notation "94" ;
+
+	rdfs:label "94"@cs ;
+	.
+crimestatistics-code-codelist-hash:95 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "95"@cs ;
+	skos:inScheme crimestatistics-code-slash:celkovyPocetPachateluTrestnehoCinu ;
+	skos:notation "95" ;
+
+	rdfs:label "95"@cs ;
+	.
+crimestatistics-code-codelist-hash:96 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "96"@cs ;
+	skos:inScheme crimestatistics-code-slash:celkovyPocetPachateluTrestnehoCinu ;
+	skos:notation "96" ;
+
+	rdfs:label "96"@cs ;
+	.
+crimestatistics-code-codelist-hash:97 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "97"@cs ;
+	skos:inScheme crimestatistics-code-slash:celkovyPocetPachateluTrestnehoCinu ;
+	skos:notation "97" ;
+
+	rdfs:label "97"@cs ;
+	.
+crimestatistics-code-codelist-hash:98 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "98 a více"@cs ;
+	skos:inScheme crimestatistics-code-slash:celkovyPocetPachateluTrestnehoCinu ;
+	skos:notation "98" ;
+
+	rdfs:label "98 a více"@cs ;
+	.

@@ -1,0 +1,24 @@
+select
+  ?utvarNazev
+{
+  ?crimeDataset a void:Dataset ;
+    dct:subject <http://dbpedia.org/resource/Crime> ;
+    void:sparqlEndpoint ?crimeSparqlEndpoint .
+    
+  SERVICE ?crimeSparqlEndpoint {
+    GRAPH ?crimeDataset {
+      ?utvar a crime:Utvar ;
+        crime:id ?utvarId .
+      FILTER(?utvarId = ?parIdUtvaru_ValuePlaceholder) .
+  
+      ?utvar dct:hasVersion ?version .
+      
+      ?version
+        crime:validFrom ?validFrom ;
+        crime:validTo ?validTo .
+      FILTER(?validFrom <= ?parHistoryDate_ValuePlaceholder && ?parHistoryDate_ValuePlaceholder < ?validTo) .
+      
+      ?version rdfs:label ?utvarNazev .
+    }
+  }
+}

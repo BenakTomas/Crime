@@ -1,0 +1,228 @@
+# Standardní prefixy
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix interval: <http://reference.data.gov.uk/def/intervals/> .
+@prefix sdmx:    <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+# Vlastní prefixy
+@prefix crimestatistics-code-slash: <http://linked.opendata.cz/ontology/crimestatistics/code/> .
+@prefix crimestatistics-code-codelist-slash: <http://linked.opendata.cz/ontology/crimestatistics/code/vztahObetiKPachateli/> .
+@prefix crimestatistics-code-codelist-class: <http://linked.opendata.cz/ontology/crimestatistics/code/vztahObetiKPachateli/class#> .
+@prefix crimestatistics-code-codelist-property: <http://linked.opendata.cz/ontology/crimestatistics/code/vztahObetiKPachateli/property#> .
+
+@prefix crimestatistics-code-codelist-hash: <http://linked.opendata.cz/ontology/crimestatistics/code/vztahObetiKPachateli#> .
+
+crimestatistics-code-codelist-hash:601 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "vlastní dítě"@cs ;
+	skos:inScheme crimestatistics-code-slash:vztahObetiKPachateli ;
+	skos:notation "601" ;
+
+	rdfs:label "vlastní dítě"@cs ;
+	.
+crimestatistics-code-codelist-hash:602 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "dítě v pěstounské péči"@cs ;
+	skos:inScheme crimestatistics-code-slash:vztahObetiKPachateli ;
+	skos:notation "602" ;
+
+	rdfs:label "dítě v pěstounské péči"@cs ;
+	.
+crimestatistics-code-codelist-hash:603 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "dítě, kde jeden z rodičů je druh-družka, přítel"@cs ;
+	skos:inScheme crimestatistics-code-slash:vztahObetiKPachateli ;
+	skos:notation "603" ;
+
+	rdfs:label "dítě, kde jeden z rodičů je druh-družka, přítel"@cs ;
+	.
+crimestatistics-code-codelist-hash:604 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "dítě v blízkém příbuzenském vztahu"@cs ;
+	skos:inScheme crimestatistics-code-slash:vztahObetiKPachateli ;
+	skos:notation "604" ;
+
+	rdfs:label "dítě v blízkém příbuzenském vztahu"@cs ;
+	.
+crimestatistics-code-codelist-hash:605 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "dítě ve vzdáleném příbuzenském poměru"@cs ;
+	skos:inScheme crimestatistics-code-slash:vztahObetiKPachateli ;
+	skos:notation "605" ;
+
+	rdfs:label "dítě ve vzdáleném příbuzenském poměru"@cs ;
+	.
+crimestatistics-code-codelist-hash:606 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "dítě svěřené k dozoru"@cs ;
+	skos:inScheme crimestatistics-code-slash:vztahObetiKPachateli ;
+	skos:notation "606" ;
+
+	rdfs:label "dítě svěřené k dozoru"@cs ;
+	.
+crimestatistics-code-codelist-hash:607 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "dítě ve vztahu spolužáka, kamaráda"@cs ;
+	skos:inScheme crimestatistics-code-slash:vztahObetiKPachateli ;
+	skos:notation "607" ;
+
+	rdfs:label "dítě ve vztahu spolužáka, kamaráda"@cs ;
+	.
+crimestatistics-code-codelist-hash:608 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "dítě ve vztahu ke známé osobě"@cs ;
+	skos:inScheme crimestatistics-code-slash:vztahObetiKPachateli ;
+	skos:notation "608" ;
+
+	rdfs:label "dítě ve vztahu ke známé osobě"@cs ;
+	.
+crimestatistics-code-codelist-hash:609 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "manželka"@cs ;
+	skos:inScheme crimestatistics-code-slash:vztahObetiKPachateli ;
+	skos:notation "609" ;
+
+	rdfs:label "manželka"@cs ;
+	.
+crimestatistics-code-codelist-hash:610 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "družka, žena ve společné domácnosti"@cs ;
+	skos:inScheme crimestatistics-code-slash:vztahObetiKPachateli ;
+	skos:notation "610" ;
+
+	rdfs:label "družka, žena ve společné domácnosti"@cs ;
+	.
+crimestatistics-code-codelist-hash:611 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "manžel"@cs ;
+	skos:inScheme crimestatistics-code-slash:vztahObetiKPachateli ;
+	skos:notation "611" ;
+
+	rdfs:label "manžel"@cs ;
+	.
+crimestatistics-code-codelist-hash:612 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "druh, muž ve společné domácnosti"@cs ;
+	skos:inScheme crimestatistics-code-slash:vztahObetiKPachateli ;
+	skos:notation "612" ;
+
+	rdfs:label "druh, muž ve společné domácnosti"@cs ;
+	.
+crimestatistics-code-codelist-hash:613 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "dospělá osoba v ostatním příbuzenském vztahu"@cs ;
+	skos:inScheme crimestatistics-code-slash:vztahObetiKPachateli ;
+	skos:notation "613" ;
+
+	rdfs:label "dospělá osoba v ostatním příbuzenském vztahu"@cs ;
+	.
+crimestatistics-code-codelist-hash:614 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "dospělá osoba s jiným vztahem"@cs ;
+	skos:inScheme crimestatistics-code-slash:vztahObetiKPachateli ;
+	skos:notation "614" ;
+
+	rdfs:label "dospělá osoba s jiným vztahem"@cs ;
+	.
+crimestatistics-code-codelist-hash:615 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "matka"@cs ;
+	skos:inScheme crimestatistics-code-slash:vztahObetiKPachateli ;
+	skos:notation "615" ;
+
+	rdfs:label "matka"@cs ;
+	.
+crimestatistics-code-codelist-hash:616 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "otec"@cs ;
+	skos:inScheme crimestatistics-code-slash:vztahObetiKPachateli ;
+	skos:notation "616" ;
+
+	rdfs:label "otec"@cs ;
+	.
+crimestatistics-code-codelist-hash:617 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "spolubydlící"@cs ;
+	skos:inScheme crimestatistics-code-slash:vztahObetiKPachateli ;
+	skos:notation "617" ;
+
+	rdfs:label "spolubydlící"@cs ;
+	.
+crimestatistics-code-codelist-hash:618 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "podnájemník"@cs ;
+	skos:inScheme crimestatistics-code-slash:vztahObetiKPachateli ;
+	skos:notation "618" ;
+
+	rdfs:label "podnájemník"@cs ;
+	.
+crimestatistics-code-codelist-hash:619 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "registrovaný/á partner/ka"@cs ;
+	skos:inScheme crimestatistics-code-slash:vztahObetiKPachateli ;
+	skos:notation "619" ;
+
+	rdfs:label "registrovaný/á partner/ka"@cs ;
+	.
+crimestatistics-code-codelist-hash:620 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "bez vztahu"@cs ;
+	skos:inScheme crimestatistics-code-slash:vztahObetiKPachateli ;
+	skos:notation "620" ;
+
+	rdfs:label "bez vztahu"@cs ;
+	.
+crimestatistics-code-codelist-hash:621 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "bratr"@cs ;
+	skos:inScheme crimestatistics-code-slash:vztahObetiKPachateli ;
+	skos:notation "621" ;
+
+	rdfs:label "bratr"@cs ;
+	.
+crimestatistics-code-codelist-hash:622 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "sestra"@cs ;
+	skos:inScheme crimestatistics-code-slash:vztahObetiKPachateli ;
+	skos:notation "622" ;
+
+	rdfs:label "sestra"@cs ;
+	.
+crimestatistics-code-codelist-hash:623 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "manžel - v rozvodovém řízení"@cs ;
+	skos:inScheme crimestatistics-code-slash:vztahObetiKPachateli ;
+	skos:notation "623" ;
+
+	rdfs:label "manžel - v rozvodovém řízení"@cs ;
+	.
+crimestatistics-code-codelist-hash:624 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "manželka - v rozvodovém řízení"@cs ;
+	skos:inScheme crimestatistics-code-slash:vztahObetiKPachateli ;
+	skos:notation "624" ;
+
+	rdfs:label "manželka - v rozvodovém řízení"@cs ;
+	.
+crimestatistics-code-codelist-hash:625 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "bývalý manžel/partner"@cs ;
+	skos:inScheme crimestatistics-code-slash:vztahObetiKPachateli ;
+	skos:notation "625" ;
+
+	rdfs:label "bývalý manžel/partner"@cs ;
+	.
+crimestatistics-code-codelist-hash:626 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "bývalá manželka/partnerka"@cs ;
+	skos:inScheme crimestatistics-code-slash:vztahObetiKPachateli ;
+	skos:notation "626" ;
+
+	rdfs:label "bývalá manželka/partnerka"@cs ;
+	.
+crimestatistics-code-codelist-hash:627 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "spolupracovník"@cs ;
+	skos:inScheme crimestatistics-code-slash:vztahObetiKPachateli ;
+	skos:notation "627" ;
+
+	rdfs:label "spolupracovník"@cs ;
+	.
+crimestatistics-code-codelist-hash:628 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "bývalý/á přítel/přítelkyně"@cs ;
+	skos:inScheme crimestatistics-code-slash:vztahObetiKPachateli ;
+	skos:notation "628" ;
+
+	rdfs:label "bývalý/á přítel/přítelkyně"@cs ;
+	.
+crimestatistics-code-codelist-hash:629 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "mediálně známá osobnost - celebrita"@cs ;
+	skos:inScheme crimestatistics-code-slash:vztahObetiKPachateli ;
+	skos:notation "629" ;
+
+	rdfs:label "mediálně známá osobnost - celebrita"@cs ;
+	.

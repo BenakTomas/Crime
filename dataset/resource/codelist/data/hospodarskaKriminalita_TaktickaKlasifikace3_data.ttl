@@ -1,0 +1,1537 @@
+# Standardní prefixy
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix interval: <http://reference.data.gov.uk/def/intervals/> .
+@prefix sdmx:    <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+# Vlastní prefixy
+@prefix crimestatistics-code-slash: <http://linked.opendata.cz/ontology/crimestatistics/code/> .
+@prefix crimestatistics-code-codelist-slash: <http://linked.opendata.cz/ontology/crimestatistics/code/hospodarskaKriminalita_TaktickaKlasifikace3/> .
+@prefix crimestatistics-code-codelist-class: <http://linked.opendata.cz/ontology/crimestatistics/code/hospodarskaKriminalita_TaktickaKlasifikace3/class#> .
+@prefix crimestatistics-code-codelist-property: <http://linked.opendata.cz/ontology/crimestatistics/code/hospodarskaKriminalita_TaktickaKlasifikace3/property#> .
+
+@prefix crimestatistics-code-codelist-hash: <http://linked.opendata.cz/ontology/crimestatistics/code/hospodarskaKriminalita_TaktickaKlasifikace3#> .
+
+crimestatistics-code-codelist-hash:11 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "uhelné doly"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "11" ;
+
+	rdfs:label "uhelné doly"@cs ;
+	.
+crimestatistics-code-codelist-hash:12 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "plynárny a rozvod plynu"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "12" ;
+
+	rdfs:label "plynárny a rozvod plynu"@cs ;
+	.
+crimestatistics-code-codelist-hash:13 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "tranzitní PLYNOVOD"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "13" ;
+
+	rdfs:label "tranzitní PLYNOVOD"@cs ;
+	.
+crimestatistics-code-codelist-hash:10 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "ostatní objekty paliv"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "10" ;
+
+	rdfs:label "ostatní objekty paliv"@cs ;
+	.
+crimestatistics-code-codelist-hash:21 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "elektrárny"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "21" ;
+
+	rdfs:label "elektrárny"@cs ;
+	.
+crimestatistics-code-codelist-hash:22 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "rozvod elektřiny"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "22" ;
+
+	rdfs:label "rozvod elektřiny"@cs ;
+	.
+crimestatistics-code-codelist-hash:23 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "teplárny a rozvod tepla"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "23" ;
+
+	rdfs:label "teplárny a rozvod tepla"@cs ;
+	.
+crimestatistics-code-codelist-hash:20 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "ostatní objekty energetiky"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "20" ;
+
+	rdfs:label "ostatní objekty energetiky"@cs ;
+	.
+crimestatistics-code-codelist-hash:31 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "železorudné doly"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "31" ;
+
+	rdfs:label "železorudné doly"@cs ;
+	.
+crimestatistics-code-codelist-hash:32 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "hutní výroba a druhovýroba"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "32" ;
+
+	rdfs:label "hutní výroba a druhovýroba"@cs ;
+	.
+crimestatistics-code-codelist-hash:33 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Kovošrot"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "33" ;
+
+	rdfs:label "Kovošrot"@cs ;
+	.
+crimestatistics-code-codelist-hash:30 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "ostatní objekty hutnictví železa"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "30" ;
+
+	rdfs:label "ostatní objekty hutnictví železa"@cs ;
+	.
+crimestatistics-code-codelist-hash:41 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "rudné doly a uranový průmysl"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "41" ;
+
+	rdfs:label "rudné doly a uranový průmysl"@cs ;
+	.
+crimestatistics-code-codelist-hash:42 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "kovohutě"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "42" ;
+
+	rdfs:label "kovohutě"@cs ;
+	.
+crimestatistics-code-codelist-hash:40 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "ostatní objekty hutnictví neželezných kovů"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "40" ;
+
+	rdfs:label "ostatní objekty hutnictví neželezných kovů"@cs ;
+	.
+crimestatistics-code-codelist-hash:51 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "těžká chemie"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "51" ;
+
+	rdfs:label "těžká chemie"@cs ;
+	.
+crimestatistics-code-codelist-hash:52 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "petrochemie"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "52" ;
+
+	rdfs:label "petrochemie"@cs ;
+	.
+crimestatistics-code-codelist-hash:53 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "pneumatiky"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "53" ;
+
+	rdfs:label "pneumatiky"@cs ;
+	.
+crimestatistics-code-codelist-hash:54 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "umělé hmoty a látky"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "54" ;
+
+	rdfs:label "umělé hmoty a látky"@cs ;
+	.
+crimestatistics-code-codelist-hash:55 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "pohonné hmoty"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "55" ;
+
+	rdfs:label "pohonné hmoty"@cs ;
+	.
+crimestatistics-code-codelist-hash:56 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "tranzitní ROPOVOD"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "56" ;
+
+	rdfs:label "tranzitní ROPOVOD"@cs ;
+	.
+crimestatistics-code-codelist-hash:50 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "ostatní objekty v chem. a gum.-osik. průmyslu"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "50" ;
+
+	rdfs:label "ostatní objekty v chem. a gum.-osik. průmyslu"@cs ;
+	.
+crimestatistics-code-codelist-hash:61 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "montážní organizace těžkého strojírenství"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "61" ;
+
+	rdfs:label "montážní organizace těžkého strojírenství"@cs ;
+	.
+crimestatistics-code-codelist-hash:60 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "ostatní objekty těžkého strojírenství"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "60" ;
+
+	rdfs:label "ostatní objekty těžkého strojírenství"@cs ;
+	.
+crimestatistics-code-codelist-hash:71 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "automobilový průmysl"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "71" ;
+
+	rdfs:label "automobilový průmysl"@cs ;
+	.
+crimestatistics-code-codelist-hash:70 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "ostatní objekty všeobecného stroj."@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "70" ;
+
+	rdfs:label "ostatní objekty všeobecného stroj."@cs ;
+	.
+crimestatistics-code-codelist-hash:81 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "dřevařský průmysl"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "81" ;
+
+	rdfs:label "dřevařský průmysl"@cs ;
+	.
+crimestatistics-code-codelist-hash:82 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "textilní a konfekční průmysl"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "82" ;
+
+	rdfs:label "textilní a konfekční průmysl"@cs ;
+	.
+crimestatistics-code-codelist-hash:83 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "kožedělný a kožešnický průmysl"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "83" ;
+
+	rdfs:label "kožedělný a kožešnický průmysl"@cs ;
+	.
+crimestatistics-code-codelist-hash:84 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "sklářský průmysl"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "84" ;
+
+	rdfs:label "sklářský průmysl"@cs ;
+	.
+crimestatistics-code-codelist-hash:85 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "polygrafický průmysl"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "85" ;
+
+	rdfs:label "polygrafický průmysl"@cs ;
+	.
+crimestatistics-code-codelist-hash:86 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "porcelánky a keramický průmysl"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "86" ;
+
+	rdfs:label "porcelánky a keramický průmysl"@cs ;
+	.
+crimestatistics-code-codelist-hash:87 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "papírny a výrobky celulózy"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "87" ;
+
+	rdfs:label "papírny a výrobky celulózy"@cs ;
+	.
+crimestatistics-code-codelist-hash:80 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "ostatní objekty spotřebního průmyslu"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "80" ;
+
+	rdfs:label "ostatní objekty spotřebního průmyslu"@cs ;
+	.
+crimestatistics-code-codelist-hash:101 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "kovozpracující družstva"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "101" ;
+
+	rdfs:label "kovozpracující družstva"@cs ;
+	.
+crimestatistics-code-codelist-hash:102 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "dřevozpracující družstva"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "102" ;
+
+	rdfs:label "dřevozpracující družstva"@cs ;
+	.
+crimestatistics-code-codelist-hash:103 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "chemická družstva"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "103" ;
+
+	rdfs:label "chemická družstva"@cs ;
+	.
+crimestatistics-code-codelist-hash:104 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "sklářská a keramická družstva"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "104" ;
+
+	rdfs:label "sklářská a keramická družstva"@cs ;
+	.
+crimestatistics-code-codelist-hash:105 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "kožedělná a kožešnická družstva"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "105" ;
+
+	rdfs:label "kožedělná a kožešnická družstva"@cs ;
+	.
+crimestatistics-code-codelist-hash:106 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "stavební družstva"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "106" ;
+
+	rdfs:label "stavební družstva"@cs ;
+	.
+crimestatistics-code-codelist-hash:100 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "neprůmyslová a ostatní družstva"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "100" ;
+
+	rdfs:label "neprůmyslová a ostatní družstva"@cs ;
+	.
+crimestatistics-code-codelist-hash:121 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "výstavba investičních celků"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "121" ;
+
+	rdfs:label "výstavba investičních celků"@cs ;
+	.
+crimestatistics-code-codelist-hash:122 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "bytová a občanská výstavba"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "122" ;
+
+	rdfs:label "bytová a občanská výstavba"@cs ;
+	.
+crimestatistics-code-codelist-hash:123 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "výroba stavebních hmot"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "123" ;
+
+	rdfs:label "výroba stavebních hmot"@cs ;
+	.
+crimestatistics-code-codelist-hash:124 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "okresní stavební podniky"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "124" ;
+
+	rdfs:label "okresní stavební podniky"@cs ;
+	.
+crimestatistics-code-codelist-hash:125 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "družstevní bytová výstavba"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "125" ;
+
+	rdfs:label "družstevní bytová výstavba"@cs ;
+	.
+crimestatistics-code-codelist-hash:126 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Staviva"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "126" ;
+
+	rdfs:label "Staviva"@cs ;
+	.
+crimestatistics-code-codelist-hash:120 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "ostatní objekty stavebnictví"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "120" ;
+
+	rdfs:label "ostatní objekty stavebnictví"@cs ;
+	.
+crimestatistics-code-codelist-hash:141 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Geologie"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "141" ;
+
+	rdfs:label "Geologie"@cs ;
+	.
+crimestatistics-code-codelist-hash:191 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "poštovní úřady"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "191" ;
+
+	rdfs:label "poštovní úřady"@cs ;
+	.
+crimestatistics-code-codelist-hash:192 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "poštovní novinová služba"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "192" ;
+
+	rdfs:label "poštovní novinová služba"@cs ;
+	.
+crimestatistics-code-codelist-hash:193 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "poštovní filatelistická služba"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "193" ;
+
+	rdfs:label "poštovní filatelistická služba"@cs ;
+	.
+crimestatistics-code-codelist-hash:194 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "telekomunikace"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "194" ;
+
+	rdfs:label "telekomunikace"@cs ;
+	.
+crimestatistics-code-codelist-hash:190 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "ostatní objekty spojů"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "190" ;
+
+	rdfs:label "ostatní objekty spojů"@cs ;
+	.
+crimestatistics-code-codelist-hash:201 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "doprava vodní"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "201" ;
+
+	rdfs:label "doprava vodní"@cs ;
+	.
+crimestatistics-code-codelist-hash:202 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "doprava letecká"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "202" ;
+
+	rdfs:label "doprava letecká"@cs ;
+	.
+crimestatistics-code-codelist-hash:211 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "nákladní doprava vnitrostátní"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "211" ;
+
+	rdfs:label "nákladní doprava vnitrostátní"@cs ;
+	.
+crimestatistics-code-codelist-hash:212 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "nákladní doprava mezinárodní"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "212" ;
+
+	rdfs:label "nákladní doprava mezinárodní"@cs ;
+	.
+crimestatistics-code-codelist-hash:213 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "osobní přeprava"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "213" ;
+
+	rdfs:label "osobní přeprava"@cs ;
+	.
+crimestatistics-code-codelist-hash:215 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "městská doprava"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "215" ;
+
+	rdfs:label "městská doprava"@cs ;
+	.
+crimestatistics-code-codelist-hash:210 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "ostatní silniční a městská doprava"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "210" ;
+
+	rdfs:label "ostatní silniční a městská doprava"@cs ;
+	.
+crimestatistics-code-codelist-hash:221 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "METRO"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "221" ;
+
+	rdfs:label "METRO"@cs ;
+	.
+crimestatistics-code-codelist-hash:231 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "silnice"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "231" ;
+
+	rdfs:label "silnice"@cs ;
+	.
+crimestatistics-code-codelist-hash:232 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "dálnice"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "232" ;
+
+	rdfs:label "dálnice"@cs ;
+	.
+crimestatistics-code-codelist-hash:233 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "okresní správa silnic"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "233" ;
+
+	rdfs:label "okresní správa silnic"@cs ;
+	.
+crimestatistics-code-codelist-hash:230 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "ostatní silniční hospodářsví"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "230" ;
+
+	rdfs:label "ostatní silniční hospodářsví"@cs ;
+	.
+crimestatistics-code-codelist-hash:241 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "vlakotvorná stanice"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "241" ;
+
+	rdfs:label "vlakotvorná stanice"@cs ;
+	.
+crimestatistics-code-codelist-hash:242 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "pohraniční stanice"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "242" ;
+
+	rdfs:label "pohraniční stanice"@cs ;
+	.
+crimestatistics-code-codelist-hash:243 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "stanice soustředěné nakládky a vykládky"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "243" ;
+
+	rdfs:label "stanice soustředěné nakládky a vykládky"@cs ;
+	.
+crimestatistics-code-codelist-hash:244 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "překladištní rampy"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "244" ;
+
+	rdfs:label "překladištní rampy"@cs ;
+	.
+crimestatistics-code-codelist-hash:240 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "ostatní železniční doprava"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "240" ;
+
+	rdfs:label "ostatní železniční doprava"@cs ;
+	.
+crimestatistics-code-codelist-hash:251 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "železniční osobní přeprava"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "251" ;
+
+	rdfs:label "železniční osobní přeprava"@cs ;
+	.
+crimestatistics-code-codelist-hash:261 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "dílny pro opravy železničních vozidel"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "261" ;
+
+	rdfs:label "dílny pro opravy železničních vozidel"@cs ;
+	.
+crimestatistics-code-codelist-hash:262 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "lokomotivní depa"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "262" ;
+
+	rdfs:label "lokomotivní depa"@cs ;
+	.
+crimestatistics-code-codelist-hash:263 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "vozová depa"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "263" ;
+
+	rdfs:label "vozová depa"@cs ;
+	.
+crimestatistics-code-codelist-hash:260 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "ostatní železniční stroj. a opr. činnost"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "260" ;
+
+	rdfs:label "ostatní železniční stroj. a opr. činnost"@cs ;
+	.
+crimestatistics-code-codelist-hash:271 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "traťové hospodářství"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "271" ;
+
+	rdfs:label "traťové hospodářství"@cs ;
+	.
+crimestatistics-code-codelist-hash:281 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "železniční průmyslová a stavení výroba"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "281" ;
+
+	rdfs:label "železniční průmyslová a stavení výroba"@cs ;
+	.
+crimestatistics-code-codelist-hash:280 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "ostatní železniční stavitelství"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "280" ;
+
+	rdfs:label "ostatní železniční stavitelství"@cs ;
+	.
+crimestatistics-code-codelist-hash:291 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "jídelní a lůžkové vozy"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "291" ;
+
+	rdfs:label "jídelní a lůžkové vozy"@cs ;
+	.
+crimestatistics-code-codelist-hash:292 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "sdělovací a zabezpečovací technika"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "292" ;
+
+	rdfs:label "sdělovací a zabezpečovací technika"@cs ;
+	.
+crimestatistics-code-codelist-hash:290 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "ostatní železniční objekty"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "290" ;
+
+	rdfs:label "ostatní železniční objekty"@cs ;
+	.
+crimestatistics-code-codelist-hash:321 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "masný průmysl"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "321" ;
+
+	rdfs:label "masný průmysl"@cs ;
+	.
+crimestatistics-code-codelist-hash:322 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "mlékárenský průmysl"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "322" ;
+
+	rdfs:label "mlékárenský průmysl"@cs ;
+	.
+crimestatistics-code-codelist-hash:323 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "mlýnský a pekárenský průmysl"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "323" ;
+
+	rdfs:label "mlýnský a pekárenský průmysl"@cs ;
+	.
+crimestatistics-code-codelist-hash:324 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "cukrovary"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "324" ;
+
+	rdfs:label "cukrovary"@cs ;
+	.
+crimestatistics-code-codelist-hash:325 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "lihovary a konzervárny"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "325" ;
+
+	rdfs:label "lihovary a konzervárny"@cs ;
+	.
+crimestatistics-code-codelist-hash:326 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "pivovary a sladovny"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "326" ;
+
+	rdfs:label "pivovary a sladovny"@cs ;
+	.
+crimestatistics-code-codelist-hash:327 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "mrazírny"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "327" ;
+
+	rdfs:label "mrazírny"@cs ;
+	.
+crimestatistics-code-codelist-hash:328 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "čokoládovny"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "328" ;
+
+	rdfs:label "čokoládovny"@cs ;
+	.
+crimestatistics-code-codelist-hash:329 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "vinařské závody"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "329" ;
+
+	rdfs:label "vinařské závody"@cs ;
+	.
+crimestatistics-code-codelist-hash:330 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "škrobárny"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "330" ;
+
+	rdfs:label "škrobárny"@cs ;
+	.
+crimestatistics-code-codelist-hash:331 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "drůbežářský průmysl"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "331" ;
+
+	rdfs:label "drůbežářský průmysl"@cs ;
+	.
+crimestatistics-code-codelist-hash:332 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "tabákový průmysl"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "332" ;
+
+	rdfs:label "tabákový průmysl"@cs ;
+	.
+crimestatistics-code-codelist-hash:333 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "průmysl mléčné výživy"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "333" ;
+
+	rdfs:label "průmysl mléčné výživy"@cs ;
+	.
+crimestatistics-code-codelist-hash:334 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "tukový průmysl"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "334" ;
+
+	rdfs:label "tukový průmysl"@cs ;
+	.
+crimestatistics-code-codelist-hash:320 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "ostatní objekty potravinářského průmyslu"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "320" ;
+
+	rdfs:label "ostatní objekty potravinářského průmyslu"@cs ;
+	.
+crimestatistics-code-codelist-hash:401 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "státní statky"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "401" ;
+
+	rdfs:label "státní statky"@cs ;
+	.
+crimestatistics-code-codelist-hash:402 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "zemědělská družstva"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "402" ;
+
+	rdfs:label "zemědělská družstva"@cs ;
+	.
+crimestatistics-code-codelist-hash:403 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "společné zemědělské podniky"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "403" ;
+
+	rdfs:label "společné zemědělské podniky"@cs ;
+	.
+crimestatistics-code-codelist-hash:404 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "strojně traktorové stanice"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "404" ;
+
+	rdfs:label "strojně traktorové stanice"@cs ;
+	.
+crimestatistics-code-codelist-hash:405 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "zemědělské zásobovací a nákupní podniky"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "405" ;
+
+	rdfs:label "zemědělské zásobovací a nákupní podniky"@cs ;
+	.
+crimestatistics-code-codelist-hash:406 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "meliorace"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "406" ;
+
+	rdfs:label "meliorace"@cs ;
+	.
+crimestatistics-code-codelist-hash:407 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "meliorační družstva"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "407" ;
+
+	rdfs:label "meliorační družstva"@cs ;
+	.
+crimestatistics-code-codelist-hash:408 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "šlechtitelské a semenářské statky a stanice"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "408" ;
+
+	rdfs:label "šlechtitelské a semenářské statky a stanice"@cs ;
+	.
+crimestatistics-code-codelist-hash:409 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "plemenářské podniky"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "409" ;
+
+	rdfs:label "plemenářské podniky"@cs ;
+	.
+crimestatistics-code-codelist-hash:410 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "zemědělské stavebnictví"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "410" ;
+
+	rdfs:label "zemědělské stavebnictví"@cs ;
+	.
+crimestatistics-code-codelist-hash:411 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "zemědělské správy"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "411" ;
+
+	rdfs:label "zemědělské správy"@cs ;
+	.
+crimestatistics-code-codelist-hash:412 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "rybářství"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "412" ;
+
+	rdfs:label "rybářství"@cs ;
+	.
+crimestatistics-code-codelist-hash:400 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "ostatní v oblasti zemědělství"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "400" ;
+
+	rdfs:label "ostatní v oblasti zemědělství"@cs ;
+	.
+crimestatistics-code-codelist-hash:431 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "veterinární zařízení"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "431" ;
+
+	rdfs:label "veterinární zařízení"@cs ;
+	.
+crimestatistics-code-codelist-hash:432 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "veterinární asanační ústavy"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "432" ;
+
+	rdfs:label "veterinární asanační ústavy"@cs ;
+	.
+crimestatistics-code-codelist-hash:433 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "výroba veterinárních léčiv"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "433" ;
+
+	rdfs:label "výroba veterinárních léčiv"@cs ;
+	.
+crimestatistics-code-codelist-hash:430 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "ostatní objekty veterinární služby"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "430" ;
+
+	rdfs:label "ostatní objekty veterinární služby"@cs ;
+	.
+crimestatistics-code-codelist-hash:461 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "lesy státní"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "461" ;
+
+	rdfs:label "lesy státní"@cs ;
+	.
+crimestatistics-code-codelist-hash:462 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "lesy pod odbornou správou"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "462" ;
+
+	rdfs:label "lesy pod odbornou správou"@cs ;
+	.
+crimestatistics-code-codelist-hash:463 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "lesy soukromé"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "463" ;
+
+	rdfs:label "lesy soukromé"@cs ;
+	.
+crimestatistics-code-codelist-hash:464 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "lesy vojenské"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "464" ;
+
+	rdfs:label "lesy vojenské"@cs ;
+	.
+crimestatistics-code-codelist-hash:460 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "ostatní v oblasti lesního hospodářství"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "460" ;
+
+	rdfs:label "ostatní v oblasti lesního hospodářství"@cs ;
+	.
+crimestatistics-code-codelist-hash:471 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "správy povodí"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "471" ;
+
+	rdfs:label "správy povodí"@cs ;
+	.
+crimestatistics-code-codelist-hash:472 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "soukromé rybníky a vodní toky"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "472" ;
+
+	rdfs:label "soukromé rybníky a vodní toky"@cs ;
+	.
+crimestatistics-code-codelist-hash:470 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "ostatní v oblasti vodního hospodářství"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "470" ;
+
+	rdfs:label "ostatní v oblasti vodního hospodářství"@cs ;
+	.
+crimestatistics-code-codelist-hash:501 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "potraviny"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "501" ;
+
+	rdfs:label "potraviny"@cs ;
+	.
+crimestatistics-code-codelist-hash:502 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "ovoce a zelenina"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "502" ;
+
+	rdfs:label "ovoce a zelenina"@cs ;
+	.
+crimestatistics-code-codelist-hash:503 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "veřejné stravování"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "503" ;
+
+	rdfs:label "veřejné stravování"@cs ;
+	.
+crimestatistics-code-codelist-hash:504 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "textil a oděvy"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "504" ;
+
+	rdfs:label "textil a oděvy"@cs ;
+	.
+crimestatistics-code-codelist-hash:505 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "průmyslové zboží"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "505" ;
+
+	rdfs:label "průmyslové zboží"@cs ;
+	.
+crimestatistics-code-codelist-hash:506 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "nábytek"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "506" ;
+
+	rdfs:label "nábytek"@cs ;
+	.
+crimestatistics-code-codelist-hash:507 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "klenoty"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "507" ;
+
+	rdfs:label "klenoty"@cs ;
+	.
+crimestatistics-code-codelist-hash:508 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "obuv a kožená galanterie"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "508" ;
+
+	rdfs:label "obuv a kožená galanterie"@cs ;
+	.
+crimestatistics-code-codelist-hash:509 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "paliva"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "509" ;
+
+	rdfs:label "paliva"@cs ;
+	.
+crimestatistics-code-codelist-hash:510 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "balírny obchodu"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "510" ;
+
+	rdfs:label "balírny obchodu"@cs ;
+	.
+crimestatistics-code-codelist-hash:511 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "obchodní domy"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "511" ;
+
+	rdfs:label "obchodní domy"@cs ;
+	.
+crimestatistics-code-codelist-hash:512 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "cestovní kanceláře"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "512" ;
+
+	rdfs:label "cestovní kanceláře"@cs ;
+	.
+crimestatistics-code-codelist-hash:513 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "interhotely"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "513" ;
+
+	rdfs:label "interhotely"@cs ;
+	.
+crimestatistics-code-codelist-hash:514 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "herny a herna-bary"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "514" ;
+
+	rdfs:label "herny a herna-bary"@cs ;
+	.
+crimestatistics-code-codelist-hash:500 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "ostatní státní a soukromý obchod"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "500" ;
+
+	rdfs:label "ostatní státní a soukromý obchod"@cs ;
+	.
+crimestatistics-code-codelist-hash:531 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "spotřební družstva"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "531" ;
+
+	rdfs:label "spotřební družstva"@cs ;
+	.
+crimestatistics-code-codelist-hash:532 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "družstevní zásobovací podnik"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "532" ;
+
+	rdfs:label "družstevní zásobovací podnik"@cs ;
+	.
+crimestatistics-code-codelist-hash:533 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "velkonákupna spotřebních družstev"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "533" ;
+
+	rdfs:label "velkonákupna spotřebních družstev"@cs ;
+	.
+crimestatistics-code-codelist-hash:530 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "ostatní družstervní obchod"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "530" ;
+
+	rdfs:label "ostatní družstervní obchod"@cs ;
+	.
+crimestatistics-code-codelist-hash:581 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "místní průmysl"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "581" ;
+
+	rdfs:label "místní průmysl"@cs ;
+	.
+crimestatistics-code-codelist-hash:582 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "komunální služby"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "582" ;
+
+	rdfs:label "komunální služby"@cs ;
+	.
+crimestatistics-code-codelist-hash:583 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "sběrné suroviny"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "583" ;
+
+	rdfs:label "sběrné suroviny"@cs ;
+	.
+crimestatistics-code-codelist-hash:584 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "bytové hospodářství"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "584" ;
+
+	rdfs:label "bytové hospodářství"@cs ;
+	.
+crimestatistics-code-codelist-hash:585 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "drobné provozovny"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "585" ;
+
+	rdfs:label "drobné provozovny"@cs ;
+	.
+crimestatistics-code-codelist-hash:586 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "technické služby"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "586" ;
+
+	rdfs:label "technické služby"@cs ;
+	.
+crimestatistics-code-codelist-hash:587 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "skládky"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "587" ;
+
+	rdfs:label "skládky"@cs ;
+	.
+crimestatistics-code-codelist-hash:580 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "ostatní objekty místního hospodářství"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "580" ;
+
+	rdfs:label "ostatní objekty místního hospodářství"@cs ;
+	.
+crimestatistics-code-codelist-hash:611 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "výrobny léčiv"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "611" ;
+
+	rdfs:label "výrobny léčiv"@cs ;
+	.
+crimestatistics-code-codelist-hash:612 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "zdravotnické zásobování"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "612" ;
+
+	rdfs:label "zdravotnické zásobování"@cs ;
+	.
+crimestatistics-code-codelist-hash:613 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "lékárny"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "613" ;
+
+	rdfs:label "lékárny"@cs ;
+	.
+crimestatistics-code-codelist-hash:614 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "zdravotnická střediska"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "614" ;
+
+	rdfs:label "zdravotnická střediska"@cs ;
+	.
+crimestatistics-code-codelist-hash:615 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "lůžkové zařízení"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "615" ;
+
+	rdfs:label "lůžkové zařízení"@cs ;
+	.
+crimestatistics-code-codelist-hash:616 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "lázeňské ústavy"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "616" ;
+
+	rdfs:label "lázeňské ústavy"@cs ;
+	.
+crimestatistics-code-codelist-hash:617 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "speciální léčebny a sanatoria"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "617" ;
+
+	rdfs:label "speciální léčebny a sanatoria"@cs ;
+	.
+crimestatistics-code-codelist-hash:618 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "transfúzní služba"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "618" ;
+
+	rdfs:label "transfúzní služba"@cs ;
+	.
+crimestatistics-code-codelist-hash:610 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "ostatní objekty zdravotnictví"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "610" ;
+
+	rdfs:label "ostatní objekty zdravotnictví"@cs ;
+	.
+crimestatistics-code-codelist-hash:631 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "důchodové zabezpečení"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "631" ;
+
+	rdfs:label "důchodové zabezpečení"@cs ;
+	.
+crimestatistics-code-codelist-hash:632 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "ostatní sociální zabezpečení"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "632" ;
+
+	rdfs:label "ostatní sociální zabezpečení"@cs ;
+	.
+crimestatistics-code-codelist-hash:633 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "domovy důchodců"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "633" ;
+
+	rdfs:label "domovy důchodců"@cs ;
+	.
+crimestatistics-code-codelist-hash:634 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "dětské domovy"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "634" ;
+
+	rdfs:label "dětské domovy"@cs ;
+	.
+crimestatistics-code-codelist-hash:630 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "ostatní v oblasti sociální péče"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "630" ;
+
+	rdfs:label "ostatní v oblasti sociální péče"@cs ;
+	.
+crimestatistics-code-codelist-hash:651 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "mateřské školky"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "651" ;
+
+	rdfs:label "mateřské školky"@cs ;
+	.
+crimestatistics-code-codelist-hash:652 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "základní školy"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "652" ;
+
+	rdfs:label "základní školy"@cs ;
+	.
+crimestatistics-code-codelist-hash:653 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "střední školy"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "653" ;
+
+	rdfs:label "střední školy"@cs ;
+	.
+crimestatistics-code-codelist-hash:654 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "odborné školy"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "654" ;
+
+	rdfs:label "odborné školy"@cs ;
+	.
+crimestatistics-code-codelist-hash:655 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "vysoké školy"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "655" ;
+
+	rdfs:label "vysoké školy"@cs ;
+	.
+crimestatistics-code-codelist-hash:656 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "školské správy"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "656" ;
+
+	rdfs:label "školské správy"@cs ;
+	.
+crimestatistics-code-codelist-hash:650 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "ostatní objekty a zařízení ve školství"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "650" ;
+
+	rdfs:label "ostatní objekty a zařízení ve školství"@cs ;
+	.
+crimestatistics-code-codelist-hash:671 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "státní památková péče"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "671" ;
+
+	rdfs:label "státní památková péče"@cs ;
+	.
+crimestatistics-code-codelist-hash:672 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "církve"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "672" ;
+
+	rdfs:label "církve"@cs ;
+	.
+crimestatistics-code-codelist-hash:673 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "umělecké agentury"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "673" ;
+
+	rdfs:label "umělecké agentury"@cs ;
+	.
+crimestatistics-code-codelist-hash:674 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "kulturní střediska a domy"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "674" ;
+
+	rdfs:label "kulturní střediska a domy"@cs ;
+	.
+crimestatistics-code-codelist-hash:675 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "divadla"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "675" ;
+
+	rdfs:label "divadla"@cs ;
+	.
+crimestatistics-code-codelist-hash:676 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "kina"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "676" ;
+
+	rdfs:label "kina"@cs ;
+	.
+crimestatistics-code-codelist-hash:677 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "hudební a estrádní soubory"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "677" ;
+
+	rdfs:label "hudební a estrádní soubory"@cs ;
+	.
+crimestatistics-code-codelist-hash:678 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "muzea a galerie"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "678" ;
+
+	rdfs:label "muzea a galerie"@cs ;
+	.
+crimestatistics-code-codelist-hash:679 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "umělecké svazy a organizace"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "679" ;
+
+	rdfs:label "umělecké svazy a organizace"@cs ;
+	.
+crimestatistics-code-codelist-hash:680 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "knižní vydavatelství"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "680" ;
+
+	rdfs:label "knižní vydavatelství"@cs ;
+	.
+crimestatistics-code-codelist-hash:670 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "ostatní kulturní organizace a zařízení"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "670" ;
+
+	rdfs:label "ostatní kulturní organizace a zařízení"@cs ;
+	.
+crimestatistics-code-codelist-hash:707 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "soudnictví, státní zastupitelství, advokacie"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "707" ;
+
+	rdfs:label "soudnictví, státní zastupitelství, advokacie"@cs ;
+	.
+crimestatistics-code-codelist-hash:708 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "policie"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "708" ;
+
+	rdfs:label "policie"@cs ;
+	.
+crimestatistics-code-codelist-hash:709 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "hasiči"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "709" ;
+
+	rdfs:label "hasiči"@cs ;
+	.
+crimestatistics-code-codelist-hash:711 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "obecní, okresní a krajské úřady"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "711" ;
+
+	rdfs:label "obecní, okresní a krajské úřady"@cs ;
+	.
+crimestatistics-code-codelist-hash:712 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "obrana"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "712" ;
+
+	rdfs:label "obrana"@cs ;
+	.
+crimestatistics-code-codelist-hash:713 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "berní úřady"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "713" ;
+
+	rdfs:label "berní úřady"@cs ;
+	.
+crimestatistics-code-codelist-hash:710 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "ostatní orgány a organizace státní správy"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "710" ;
+
+	rdfs:label "ostatní orgány a organizace státní správy"@cs ;
+	.
+crimestatistics-code-codelist-hash:731 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "banky"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "731" ;
+
+	rdfs:label "banky"@cs ;
+	.
+crimestatistics-code-codelist-hash:732 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "spořitelny"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "732" ;
+
+	rdfs:label "spořitelny"@cs ;
+	.
+crimestatistics-code-codelist-hash:733 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "pojišťovny"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "733" ;
+
+	rdfs:label "pojišťovny"@cs ;
+	.
+crimestatistics-code-codelist-hash:734 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "finanční burzy"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "734" ;
+
+	rdfs:label "finanční burzy"@cs ;
+	.
+crimestatistics-code-codelist-hash:735 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "leasingové společnosti"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "735" ;
+
+	rdfs:label "leasingové společnosti"@cs ;
+	.
+crimestatistics-code-codelist-hash:730 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "ostatní objekty v oblasti financí"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "730" ;
+
+	rdfs:label "ostatní objekty v oblasti financí"@cs ;
+	.
+crimestatistics-code-codelist-hash:751 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "společnosti zabývající se dovozem a vývozem"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "751" ;
+
+	rdfs:label "společnosti zabývající se dovozem a vývozem"@cs ;
+	.
+crimestatistics-code-codelist-hash:750 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "ostatní v oblasti zahraničního obchodu"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "750" ;
+
+	rdfs:label "ostatní v oblasti zahraničního obchodu"@cs ;
+	.
+crimestatistics-code-codelist-hash:801 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "odborové svazy a jejich zařízení"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "801" ;
+
+	rdfs:label "odborové svazy a jejich zařízení"@cs ;
+	.
+crimestatistics-code-codelist-hash:802 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "mládežnické organizace a jejich zařízení"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "802" ;
+
+	rdfs:label "mládežnické organizace a jejich zařízení"@cs ;
+	.
+crimestatistics-code-codelist-hash:803 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "tělovýchovné organizace a jejich zařízení"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "803" ;
+
+	rdfs:label "tělovýchovné organizace a jejich zařízení"@cs ;
+	.
+crimestatistics-code-codelist-hash:804 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "automotokluby"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "804" ;
+
+	rdfs:label "automotokluby"@cs ;
+	.
+crimestatistics-code-codelist-hash:805 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "aerokluby"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "805" ;
+
+	rdfs:label "aerokluby"@cs ;
+	.
+crimestatistics-code-codelist-hash:806 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "organizace branných sportů"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "806" ;
+
+	rdfs:label "organizace branných sportů"@cs ;
+	.
+crimestatistics-code-codelist-hash:807 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "červený kříž"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "807" ;
+
+	rdfs:label "červený kříž"@cs ;
+	.
+crimestatistics-code-codelist-hash:808 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "sdružení rodičů a přátel školy"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "808" ;
+
+	rdfs:label "sdružení rodičů a přátel školy"@cs ;
+	.
+crimestatistics-code-codelist-hash:809 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "chovatelské svazy"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "809" ;
+
+	rdfs:label "chovatelské svazy"@cs ;
+	.
+crimestatistics-code-codelist-hash:810 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "ZOO, záchranné stanice pro handicapovaná zvířata"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "810" ;
+
+	rdfs:label "ZOO, záchranné stanice pro handicapovaná zvířata"@cs ;
+	.
+crimestatistics-code-codelist-hash:800 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "ostatní spol. a zájm. organizace"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "800" ;
+
+	rdfs:label "ostatní spol. a zájm. organizace"@cs ;
+	.
+crimestatistics-code-codelist-hash:901 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "akademie věd"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "901" ;
+
+	rdfs:label "akademie věd"@cs ;
+	.
+crimestatistics-code-codelist-hash:902 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "film"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "902" ;
+
+	rdfs:label "film"@cs ;
+	.
+crimestatistics-code-codelist-hash:903 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "rozhlas"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "903" ;
+
+	rdfs:label "rozhlas"@cs ;
+	.
+crimestatistics-code-codelist-hash:904 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "televize"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "904" ;
+
+	rdfs:label "televize"@cs ;
+	.
+crimestatistics-code-codelist-hash:905 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "INTERNET, INTRANET"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "905" ;
+
+	rdfs:label "INTERNET, INTRANET"@cs ;
+	.
+crimestatistics-code-codelist-hash:906 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "elektronická pošta"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "906" ;
+
+	rdfs:label "elektronická pošta"@cs ;
+	.
+crimestatistics-code-codelist-hash:907 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "datová síť"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "907" ;
+
+	rdfs:label "datová síť"@cs ;
+	.
+crimestatistics-code-codelist-hash:900 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "ostatní nevýrobní úseky a objekty"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "900" ;
+
+	rdfs:label "ostatní nevýrobní úseky a objekty"@cs ;
+	.
+crimestatistics-code-codelist-hash:980 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "fyzická osoba"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_TaktickaKlasifikace3 ;
+	skos:notation "980" ;
+
+	rdfs:label "fyzická osoba"@cs ;
+	.

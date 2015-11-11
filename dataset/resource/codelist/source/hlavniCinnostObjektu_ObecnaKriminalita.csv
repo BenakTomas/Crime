@@ -1,0 +1,255 @@
+Kód#Heslo#
+10#doly# 
+11#plynárny# 
+12#elektrárny# 
+13#teplárny# 
+14#energetické závody#nový kód
+##
+#Objekty stavební#
+20#výrobní průmyslové podniky, závody# 
+21#ostatní průmyslové podniky, závody# 
+22#společnosti zahraniční (Knauf, apod.)# 
+23#společnosti tuzemské (a.s., s.r.o.)# 
+30#lomy a pískovny# 
+31#cementárny a vápenky# 
+32#stavební podniky, závody# 
+33#podniky, závody, výrobny stavebních hmot (cihelny, panelárny aj.)# 
+34#ostatní stavební podniky, závody# 
+##
+#Objekty dopravní#
+40#dopravní podniky, závody# 
+41#autoopravny# 
+43#metro# 
+44#mechanizační střediska# 
+45#ostatní dopravní objekty# 
+46#letiště# 
+##
+#Objekty železniční#
+50#železniční stanice# 
+53#překladiště# 
+54#ostatní železniční objekty# 
+##
+##
+#Objekty pošt a spojů#
+60#EUROTEL, apod. organizace (prodejny)# 
+70#poštovní úřady a jejich zařízení# 
+71#TELECOM# 
+72#další obdobné společnosti#nový kód
+##
+#Objekty zemědělské#
+80#zemědělská družstva# 
+81#státní statky# 
+82#šlechtitelské a semenářské statky a stanice# 
+83#plemenářské podniky, závody# 
+84#soukromě hospodařící zemědělci# 
+85#strojně traktorové stanice# 
+86#opravny zemědělských strojů# 
+87#veterinární zařízení# 
+88#veterinární asanační ústavy# 
+90#meliorační podniky družstevní# 
+91#podniky, závody zemědělské stavby těžké meliorace# 
+92#podniky zemědělského stavebnictví# 
+93#ostatní zemědělské objekty# 
+95#podniky rybářského průmyslu# 
+96#objekty mysliveckých sdružení# 
+97#objekty Svazu zahrádkářů a ovocnářů# 
+100#nákupní a výkupní podniky# 
+103#čistící a zemědělské stanice# 
+##
+#Objekty potravinářského průmyslu#
+110#mlékárny a sýrárny# 
+111#jatky# 
+112#mlýny a pekárny# 
+113#podniky, závody tukového průmyslu# 
+114#cukrovary# 
+115#lihovary# 
+116#konzervárny# 
+117#pivovary a sladovny# 
+118#mrazírny# 
+119#podniky, závody tabákového průmyslu# 
+120#čokoládovny a podniky výroby cukrovinek# 
+121#vinařské podniky a závody# 
+122#škrobárny# 
+123#podniky, závody mléčné výživy# 
+124#podniky, závody trvanlivého pečiva# 
+125#ostatní potravinářské podniky a závody# 
+##
+#Objekty lesního hospodářství#
+130#lesní podniky a závody# 
+131#podniky, závody pod odbornou správou# 
+132#podniky a závody vojenských lesů# 
+133#ostatní objekty lesního hospodářství# 
+##
+#Objekty vodního hospodářství#
+140#správa povodí# 
+141#podniky, závody zásobování vodou a kanalizace# 
+142#ostatní objekty vodního hospodářství# 
+##
+#Prodejny#
+170#čerpací stanice PHM# 
+180#prodejny zboží za zahraniční valuty# 
+190#prodejny potravin, lahůdek a polotovarů# 
+191#prodejny cukrovinek včetně cukráren# 
+192#prodejny ovoce a zeleniny# 
+193#prodejny masa a uzenin# 
+194#prodejny drůbeže a ryb# 
+195#prodejny zemědělských přebytků# 
+201#prodejny textilu, prádla a konfekce# 
+202#prodejny galanterie a obuvi# 
+203#prodejny domácích potřeb a železářství# 
+204#prodejny elektro, rádio, televize# 
+205#prodejny foto-kino# 
+206#prodejny hudebních nástrojů# 
+207#prodejny optiky# 
+208#prodejny sklo-porcelán# 
+209#prodejny sportovních potřeb# 
+210#prodejny nábytku# 
+211#prodejny drogerie, parfumerie, barvy-laky# 
+212#prodejny zbraní# 
+213#prodejny uměleckých předmětů a starožitností# 
+214#prodejny hodin-klenotů# 
+215#prodejny kožešin a kožešnictví# 
+216#prodejny knih, papírnictví a kancelářských strojů# 
+217#prodejny smíšeného zboží# 
+218#prodejny pojízdné# 
+219#prodejny tabáku, bižuterie a upomínkových předmětů# 
+220#prodejny použitého zboží# 
+221#prodejny partiového zboží# 
+222#prodejny stavebnin# 
+223#prodejny paliv# 
+224#prodejny ostatní# 
+225#tržnice# 
+226#POFIS# 
+227#obchody s videoprogramy# 
+228#obchody se spojovací technikou (telefony, faxy)# 
+229#obchody s reprotechnikou# 
+230#kiosky (časopisů, tabáku, občerstvení, ovoce-zeleniny, upomínkových předmětů, květin apod.)# 
+239#herny a herna-bary# 
+240#restaurace a jídelny, výletní restaurace# 
+241#bufety a jiné podniky veřejného stravování - mimo závodů# 
+242#kavárny, vinárny, bary# 
+243#obchody s výpočetní technikou# 
+250#obchodní domy, supermarkety# 
+251#veletrhy, obchodní a průmyslové výstavy# 
+252#ostatní obchodní podniky a zařízení (reklama aj.)# 
+253#autopříslušenství včetně prodejen pneu# 
+254#autosalóny (prodejny nových vozidel)# 
+255#autobazary (prodejny ojetých vozidel)# 
+256#autoprodejny (prodejny nových i ojetých vozidel)# 
+257#zastavárny#nový kód
+##
+#Objekty ubytovacích podniků#
+260#hotely, botely, motely# 
+261#autokempinky# 
+262#nájemné byty# 
+263#bytová družstva a společenství vlastníků#nový kód
+270#internáty, ubytovny, svobodárny, studentské koleje, turistické ubytovny# 
+271#ostatní ubytovací objekty - mimo rekreačních# 
+##
+280#společnosti zabývající se dovozem a vývozem# 
+##
+290#výpočetní střediska# 
+##
+#Objekty služeb#
+300#provozovny služeb obyvatelstvu (holičství, městské lázně, apod.)# 
+301#sběrny zakázek a služeb# 
+302#sběrny surovin# 
+303#půjčovny průmyslového zboží včetně aut# 
+304#sázkové kanceláře# 
+305#provozovny s reprotechnikou# 
+306#videopůjčovny# 
+307#cestovní kanceláře tuzemské# 
+308#cestovní kanceláře zahraniční# 
+309#leasingové společnosti# 
+310#podniky bytového hospodářství# 
+311#jiné hospodářské organizace a provozovny obecních, okresních a krajských úřadů# 
+312#realitní kanceláře# 
+313#bezpečnostní agentury# 
+314#advokátní kanceláře# 
+315#soukromé výrobní provozovny a dílny (sklenářství, truhlářství apod.)# 
+##
+#Objekty zdravotnictví#
+320#podniky výroby léčiv# 
+321#lékárny# 
+322#nemocnice# 
+323#léčebné ústavy, lázeňská a zřídelní zařízení# 
+324#zdravotnické ústavy včetně zdravotnických středisek podniků, škol apod.# 
+325#podniky zdravotnického zásobování# 
+326#ostatní zdravotní organizace a zařízení# 
+##
+#Objekty rekreační a sportovní#
+330#rekreační zotavovny všeho druhu# 
+340#sportovní stadiony, hřiště, plavecké stadiony, bazény včetně kluboven# 
+341#ostatní sportovní a rekreační zařízení# 
+##
+#Domovy důchodců a dětské domovy#
+350#domovy důchodců# 
+351#domovy mládeže a dětské domovy# 
+##
+#Objekty školské#
+360#jesle a mateřské školky# 
+361#základní školy, zvláštní školy, školní družiny# 
+362#střední školy všeobecné, pedagogické, průmyslové, ekonomické zdravotnické, obchodní, konzervatoře apod.# 
+363#zemědělské školy, učňovské školy, závodní školy, učňovská střediska# 
+364#vysoké školy (včetně jejich školních statků, školních a lesních závodů)# 
+365#ostatní výchovná a školská zařízení (učební střediska, domy mládeže aj.)# 
+##
+#Objekty kulturní a zábavní#
+370#divadla, kina# 
+371#hrady a zámky# 
+372#kulturní domy, knihovny, závodní kluby a ostatní klubovny# 
+373#muzea a skanzeny# 
+374#obrazárny a umělecké výstavy# 
+375#zoologické a botanické zahrady# 
+376#filmová, televizní a rozhlasová studia# 
+377#ostatní kulturní org. (cirkusy a varieté, svazy, hudební a estrádní soubory aj.)# 
+378#internetové kavárny a obdobné zařízení# 
+380#kostely, kláštery, kaple mimo kód 552# 
+381#hřbitovy a jejich zařízení mimo kód 553# 
+382#parky, zahrady a exteriéry objektů# 
+383#objekty umístěné ve volném terénu (např. boží muka, památníky bitev apod.)# 
+##
+#Objekty státní správy#
+390#objekty obecních, okresních, krajských úřadů# 
+400#ústřední orgány státní správy (parlament, vláda, ministerstva)# 
+401#státní zastupitelství a soudy# 
+402#celnice a OPK# 
+403#ostatní orgány státní správy# 
+##
+#Objekty vojenské, MV a zastupitelských orgánů a úřadů#
+410#vojenské objekty a zařízení (kasárny, letiště, sklady apod.)# 
+411#objekty a zařízení MV# 
+420#objekty zastupitelských orgánů a úřadů cizích států# 
+421#objekty OSN# 
+422#úřady EU a ES# 
+429#ostatní objekty mezinárodních orgánů a institucí# 
+##
+#Objekty finanční#
+430#spořitelny# 
+431#pojišťovny# 
+432#banky# 
+433#směnárny# 
+434#ostatní objekty finanční# 
+435#spořitelní a úvěrová družstva# 
+436#investiční společnosti# 
+437#investiční fondy# 
+438#podílové fondy# 
+##
+#Objekty pol., společenských a zájmových organizací, hnutí a sdružení#
+510#objekty politických stran a hnutí a jejich zařízení# 
+520#objekty společenských a zájmových organizací a jejich zařízení# 
+530#objekty odborových organizací a jejich zařízení# 
+540#objekty mládežnických organizací a jejich zařízení# 
+550#objekty církevních a charitativních sdružení a jejich zařízení# 
+551#objekty židovských obcí a jejich zařízení# 
+552#synagogy# 
+553#židovské hřbitovy a jejich zařízení# 
+580#ostatní objekty pol., spol., a záj. organizací# 
+##
+#Jiné objekty#
+590#výzkumné ústavy# 
+591#tranzitní ROPOVOD# 
+592#tranzitní PLYNOVOD# 
+593#INTERNET (INTRANET)# 
+594#elektronická pošta#
+595#datová síť#

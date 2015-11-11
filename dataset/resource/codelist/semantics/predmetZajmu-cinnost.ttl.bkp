@@ -1,0 +1,366 @@
+# Standardní prefixy
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix interval: <http://reference.data.gov.uk/def/intervals/> .
+@prefix sdmx:    <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+# Vlastní prefixy
+@prefix crimestatistics-code-slash: <http://linked.opendata.cz/ontology/crimestatistics/code/> .
+@prefix crimestatistics-code-codelist-slash: <http://linked.opendata.cz/ontology/crimestatistics/code/predmetZajmu-cinnost/> .
+@prefix crimestatistics-code-codelist-class: <http://linked.opendata.cz/ontology/crimestatistics/code/predmetZajmu-cinnost/class#> .
+@prefix crimestatistics-code-codelist-property: <http://linked.opendata.cz/ontology/crimestatistics/code/predmetZajmu-cinnost/property#> .
+
+@prefix crimestatistics-code-codelist-hash: <http://linked.opendata.cz/ontology/crimestatistics/code/predmetZajmu-cinnost#> .
+
+# Definice schematu konceptů
+<http://linked.opendata.cz/ontology/crimestatistics/code/predmetZajmu-cinnost> a skos:ConceptScheme ;
+	skos:prefLabel "Předmět zájmu pachatele (činnost) - schéma"@cs ;
+	skos:note "Klasifikuje předmět zájmu pachatele. Předmětem se zde rozumí činnost."@cs ;
+	
+	rdfs:label "Předmět zájmu pachatele (činnost) - schéma"@cs ;
+	rdfs:comment "Klasifikuje předmět zájmu pachatele. Předmětem se zde rozumí činnost."@cs ;
+	rdfs:seeAlso <http://linked.opendata.cz/ontology/crimestatistics/code/predmetZajmu-cinnost/conceptClass> ;
+	.
+
+# Definice zapouzdřující třídy
+<http://linked.opendata.cz/ontology/crimestatistics/code/predmetZajmu-cinnost/conceptClass> a rdf:Class ;
+	rdfs:label "Předmět zájmu pachatele (činnost) - zapouzdřující třída"@cs ;
+	rdfs:comment "Klasifikuje předmět zájmu pachatele. Předmětem se zde rozumí činnost."@cs ;
+	rdfs:subClassOf skos:Concept ;
+	rdfs:seeAlso <http://linked.opendata.cz/ontology/crimestatistics/code/predmetZajmu-cinnost> ;
+	.
+
+# Definice členských konceptů
+####################################
+crimestatistics-code-codelist-hash:zneuzitiZcizenehoDokladu a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-cinnost ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:pozmenovaniDokladuKPachaniTrestneCinnosti a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-cinnost ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:cinnostiSouvisejiciSDetskouPornografii a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-cinnost ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+
+
+####################################
+crimestatistics-code-codelist-hash:prechovavaniDetskePornografie a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-cinnost ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:vyrobaDetskePornografie a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-cinnost ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:primaVyrobaDetskePornografie a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-cinnost ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:sireniDetskePornografie a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-cinnost ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:sireniDetskePornografieInternetem a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-cinnost ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:sireniDetskePornografiePostouNeboJinak a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-cinnost ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:vyrobaCDDVDVideokazet a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-cinnost ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:sireniDetskePornografieNaCDDVDVideokazetach a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-cinnost ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:podporaVyrobyDetskePornografie a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-cinnost ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:pocitacoveUtoky a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-cinnost ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:utokyNaCitliveUdaje a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-cinnost ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:neopravneneSireniNeboZasilaniInformaci a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-cinnost ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:manipulaceSDatyVInformacnichSouborech a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-cinnost ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:pozmeneniInformace a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-cinnost ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:vlozeniNoveInformace a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-cinnost ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:trvalaZmenaNeboVlozeniInformace a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-cinnost ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:docasnaZmenaNeboVlozeniInformace a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:predmetZajmu-cinnost ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+

@@ -1,0 +1,515 @@
+# Standardní prefixy
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix interval: <http://reference.data.gov.uk/def/intervals/> .
+@prefix sdmx:    <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+# Vlastní prefixy
+@prefix crimestatistics-code-slash: <http://linked.opendata.cz/ontology/crimestatistics/code/> .
+@prefix crimestatistics-code-codelist-slash: <http://linked.opendata.cz/ontology/crimestatistics/code/hospodarskaKriminalita_NapadenyUsek/> .
+@prefix crimestatistics-code-codelist-class: <http://linked.opendata.cz/ontology/crimestatistics/code/hospodarskaKriminalita_NapadenyUsek/class#> .
+@prefix crimestatistics-code-codelist-property: <http://linked.opendata.cz/ontology/crimestatistics/code/hospodarskaKriminalita_NapadenyUsek/property#> .
+
+@prefix crimestatistics-code-codelist-hash: <http://linked.opendata.cz/ontology/crimestatistics/code/hospodarskaKriminalita_NapadenyUsek#> .
+
+crimestatistics-code-codelist-hash:0 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "nesledované - nepřichází v úvahu"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_NapadenyUsek ;
+	skos:notation "0" ;
+
+	rdfs:label "nesledované - nepřichází v úvahu"@cs ;
+	.
+crimestatistics-code-codelist-hash:1 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "autodoprava a garážování"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_NapadenyUsek ;
+	skos:notation "1" ;
+
+	rdfs:label "autodoprava a garážování"@cs ;
+	.
+crimestatistics-code-codelist-hash:2 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "celní poplatky"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_NapadenyUsek ;
+	skos:notation "2" ;
+
+	rdfs:label "celní poplatky"@cs ;
+	.
+crimestatistics-code-codelist-hash:3 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "cestovní a turistický ruch"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_NapadenyUsek ;
+	skos:notation "3" ;
+
+	rdfs:label "cestovní a turistický ruch"@cs ;
+	.
+crimestatistics-code-codelist-hash:4 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "činnost odborových složek a jejich zařízení"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_NapadenyUsek ;
+	skos:notation "4" ;
+
+	rdfs:label "činnost odborových složek a jejich zařízení"@cs ;
+	.
+crimestatistics-code-codelist-hash:5 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "členské podíly a příspěvky společen. organizací"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_NapadenyUsek ;
+	skos:notation "5" ;
+
+	rdfs:label "členské podíly a příspěvky společen. organizací"@cs ;
+	.
+crimestatistics-code-codelist-hash:6 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "daň z příjmu obyvatelstva"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_NapadenyUsek ;
+	skos:notation "6" ;
+
+	rdfs:label "daň z příjmu obyvatelstva"@cs ;
+	.
+crimestatistics-code-codelist-hash:7 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "daň z přidané hodnoty"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_NapadenyUsek ;
+	skos:notation "7" ;
+
+	rdfs:label "daň z přidané hodnoty"@cs ;
+	.
+crimestatistics-code-codelist-hash:8 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "důchody"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_NapadenyUsek ;
+	skos:notation "8" ;
+
+	rdfs:label "důchody"@cs ;
+	.
+crimestatistics-code-codelist-hash:9 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "fakturace"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_NapadenyUsek ;
+	skos:notation "9" ;
+
+	rdfs:label "fakturace"@cs ;
+	.
+crimestatistics-code-codelist-hash:10 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "financování"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_NapadenyUsek ;
+	skos:notation "10" ;
+
+	rdfs:label "financování"@cs ;
+	.
+crimestatistics-code-codelist-hash:11 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "inkaso poplatků"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_NapadenyUsek ;
+	skos:notation "11" ;
+
+	rdfs:label "inkaso poplatků"@cs ;
+	.
+crimestatistics-code-codelist-hash:12 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "investiční činnost"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_NapadenyUsek ;
+	skos:notation "12" ;
+
+	rdfs:label "investiční činnost"@cs ;
+	.
+crimestatistics-code-codelist-hash:14 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "montážní činnost"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_NapadenyUsek ;
+	skos:notation "14" ;
+
+	rdfs:label "montážní činnost"@cs ;
+	.
+crimestatistics-code-codelist-hash:15 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "MTZ materiálově technické zabezpečení"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_NapadenyUsek ;
+	skos:notation "15" ;
+
+	rdfs:label "MTZ materiálově technické zabezpečení"@cs ;
+	.
+crimestatistics-code-codelist-hash:16 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "nákladní přeprava vlastní"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_NapadenyUsek ;
+	skos:notation "16" ;
+
+	rdfs:label "nákladní přeprava vlastní"@cs ;
+	.
+crimestatistics-code-codelist-hash:17 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "nákladní přeprava prováděná jinou organizací"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_NapadenyUsek ;
+	skos:notation "17" ;
+
+	rdfs:label "nákladní přeprava prováděná jinou organizací"@cs ;
+	.
+crimestatistics-code-codelist-hash:18 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "nákladní přeprava prováděná soukromou osobou"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_NapadenyUsek ;
+	skos:notation "18" ;
+
+	rdfs:label "nákladní přeprava prováděná soukromou osobou"@cs ;
+	.
+crimestatistics-code-codelist-hash:19 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "nákup v maloobchodní síti za hotové"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_NapadenyUsek ;
+	skos:notation "19" ;
+
+	rdfs:label "nákup v maloobchodní síti za hotové"@cs ;
+	.
+crimestatistics-code-codelist-hash:20 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "nemocenské dávky"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_NapadenyUsek ;
+	skos:notation "20" ;
+
+	rdfs:label "nemocenské dávky"@cs ;
+	.
+crimestatistics-code-codelist-hash:21 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "odbyt a prodej mezi podniky"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_NapadenyUsek ;
+	skos:notation "21" ;
+
+	rdfs:label "odbyt a prodej mezi podniky"@cs ;
+	.
+crimestatistics-code-codelist-hash:22 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "oddělení PAM"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_NapadenyUsek ;
+	skos:notation "22" ;
+
+	rdfs:label "oddělení PAM"@cs ;
+	.
+crimestatistics-code-codelist-hash:23 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "odvody do státního rozpočtu"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_NapadenyUsek ;
+	skos:notation "23" ;
+
+	rdfs:label "odvody do státního rozpočtu"@cs ;
+	.
+crimestatistics-code-codelist-hash:24 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "osobní přeprava"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_NapadenyUsek ;
+	skos:notation "24" ;
+
+	rdfs:label "osobní přeprava"@cs ;
+	.
+crimestatistics-code-codelist-hash:25 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "ostatní daně, poplatky a odvody"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_NapadenyUsek ;
+	skos:notation "25" ;
+
+	rdfs:label "ostatní daně, poplatky a odvody"@cs ;
+	.
+crimestatistics-code-codelist-hash:26 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "ostatní sociální dávky a příspěvky"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_NapadenyUsek ;
+	skos:notation "26" ;
+
+	rdfs:label "ostatní sociální dávky a příspěvky"@cs ;
+	.
+crimestatistics-code-codelist-hash:29 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "podnikové spoření"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_NapadenyUsek ;
+	skos:notation "29" ;
+
+	rdfs:label "podnikové spoření"@cs ;
+	.
+crimestatistics-code-codelist-hash:30 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "polytechnická výchova"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_NapadenyUsek ;
+	skos:notation "30" ;
+
+	rdfs:label "polytechnická výchova"@cs ;
+	.
+crimestatistics-code-codelist-hash:31 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "pomocné provozy"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_NapadenyUsek ;
+	skos:notation "31" ;
+
+	rdfs:label "pomocné provozy"@cs ;
+	.
+crimestatistics-code-codelist-hash:32 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "prodej běžný ve stálých prodejnách a provozovnách"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_NapadenyUsek ;
+	skos:notation "32" ;
+
+	rdfs:label "prodej běžný ve stálých prodejnách a provozovnách"@cs ;
+	.
+crimestatistics-code-codelist-hash:33 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "prodej komisní"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_NapadenyUsek ;
+	skos:notation "33" ;
+
+	rdfs:label "prodej komisní"@cs ;
+	.
+crimestatistics-code-codelist-hash:34 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "prodej ambulantní"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_NapadenyUsek ;
+	skos:notation "34" ;
+
+	rdfs:label "prodej ambulantní"@cs ;
+	.
+crimestatistics-code-codelist-hash:35 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "prodej pojízdný"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_NapadenyUsek ;
+	skos:notation "35" ;
+
+	rdfs:label "prodej pojízdný"@cs ;
+	.
+crimestatistics-code-codelist-hash:36 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "prodej stánkový"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_NapadenyUsek ;
+	skos:notation "36" ;
+
+	rdfs:label "prodej stánkový"@cs ;
+	.
+crimestatistics-code-codelist-hash:38 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "propagace a reklama"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_NapadenyUsek ;
+	skos:notation "38" ;
+
+	rdfs:label "propagace a reklama"@cs ;
+	.
+crimestatistics-code-codelist-hash:39 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "přídavky na děti"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_NapadenyUsek ;
+	skos:notation "39" ;
+
+	rdfs:label "přídavky na děti"@cs ;
+	.
+crimestatistics-code-codelist-hash:41 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "rekreační činnost"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_NapadenyUsek ;
+	skos:notation "41" ;
+
+	rdfs:label "rekreační činnost"@cs ;
+	.
+crimestatistics-code-codelist-hash:42 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "reprezentační fondy"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_NapadenyUsek ;
+	skos:notation "42" ;
+
+	rdfs:label "reprezentační fondy"@cs ;
+	.
+crimestatistics-code-codelist-hash:43 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "režie"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_NapadenyUsek ;
+	skos:notation "43" ;
+
+	rdfs:label "režie"@cs ;
+	.
+crimestatistics-code-codelist-hash:45 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "sázkové sběrny"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_NapadenyUsek ;
+	skos:notation "45" ;
+
+	rdfs:label "sázkové sběrny"@cs ;
+	.
+crimestatistics-code-codelist-hash:46 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "sběrová, šrotová činnost"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_NapadenyUsek ;
+	skos:notation "46" ;
+
+	rdfs:label "sběrová, šrotová činnost"@cs ;
+	.
+crimestatistics-code-codelist-hash:47 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "servisní služba"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_NapadenyUsek ;
+	skos:notation "47" ;
+
+	rdfs:label "servisní služba"@cs ;
+	.
+crimestatistics-code-codelist-hash:48 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "skladová činnost - příjem zboží"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_NapadenyUsek ;
+	skos:notation "48" ;
+
+	rdfs:label "skladová činnost - příjem zboží"@cs ;
+	.
+crimestatistics-code-codelist-hash:49 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "skladová činnost - expedice zboží"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_NapadenyUsek ;
+	skos:notation "49" ;
+
+	rdfs:label "skladová činnost - expedice zboží"@cs ;
+	.
+crimestatistics-code-codelist-hash:50 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "skladování výrobků a surovin"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_NapadenyUsek ;
+	skos:notation "50" ;
+
+	rdfs:label "skladování výrobků a surovin"@cs ;
+	.
+crimestatistics-code-codelist-hash:51 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "skladová činnost manipulační"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_NapadenyUsek ;
+	skos:notation "51" ;
+
+	rdfs:label "skladová činnost manipulační"@cs ;
+	.
+crimestatistics-code-codelist-hash:52 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "směnárenská činnost"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_NapadenyUsek ;
+	skos:notation "52" ;
+
+	rdfs:label "směnárenská činnost"@cs ;
+	.
+crimestatistics-code-codelist-hash:53 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "služby obyvatelstvu"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_NapadenyUsek ;
+	skos:notation "53" ;
+
+	rdfs:label "služby obyvatelstvu"@cs ;
+	.
+crimestatistics-code-codelist-hash:55 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "soukromá výroba a služby"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_NapadenyUsek ;
+	skos:notation "55" ;
+
+	rdfs:label "soukromá výroba a služby"@cs ;
+	.
+crimestatistics-code-codelist-hash:56 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "soukromá zemědělská výroba"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_NapadenyUsek ;
+	skos:notation "56" ;
+
+	rdfs:label "soukromá zemědělská výroba"@cs ;
+	.
+crimestatistics-code-codelist-hash:57 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "správní a řídicí činnost"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_NapadenyUsek ;
+	skos:notation "57" ;
+
+	rdfs:label "správní a řídicí činnost"@cs ;
+	.
+crimestatistics-code-codelist-hash:58 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "styk s cizinci a cizinou"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_NapadenyUsek ;
+	skos:notation "58" ;
+
+	rdfs:label "styk s cizinci a cizinou"@cs ;
+	.
+crimestatistics-code-codelist-hash:59 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "ubytovací činnost"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_NapadenyUsek ;
+	skos:notation "59" ;
+
+	rdfs:label "ubytovací činnost"@cs ;
+	.
+crimestatistics-code-codelist-hash:60 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "účetnictví provozní"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_NapadenyUsek ;
+	skos:notation "60" ;
+
+	rdfs:label "účetnictví provozní"@cs ;
+	.
+crimestatistics-code-codelist-hash:61 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "účetnictví materiálové"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_NapadenyUsek ;
+	skos:notation "61" ;
+
+	rdfs:label "účetnictví materiálové"@cs ;
+	.
+crimestatistics-code-codelist-hash:62 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "účetnictví mzdové"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_NapadenyUsek ;
+	skos:notation "62" ;
+
+	rdfs:label "účetnictví mzdové"@cs ;
+	.
+crimestatistics-code-codelist-hash:63 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "učňovská a výcviková činnost"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_NapadenyUsek ;
+	skos:notation "63" ;
+
+	rdfs:label "učňovská a výcviková činnost"@cs ;
+	.
+crimestatistics-code-codelist-hash:64 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "údržba stavební"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_NapadenyUsek ;
+	skos:notation "64" ;
+
+	rdfs:label "údržba stavební"@cs ;
+	.
+crimestatistics-code-codelist-hash:65 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "údržba ostatní"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_NapadenyUsek ;
+	skos:notation "65" ;
+
+	rdfs:label "údržba ostatní"@cs ;
+	.
+crimestatistics-code-codelist-hash:66 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "vedlejší pracovní poměr nebo na základě dohod"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_NapadenyUsek ;
+	skos:notation "66" ;
+
+	rdfs:label "vedlejší pracovní poměr nebo na základě dohod"@cs ;
+	.
+crimestatistics-code-codelist-hash:67 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "výkup a nákup"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_NapadenyUsek ;
+	skos:notation "67" ;
+
+	rdfs:label "výkup a nákup"@cs ;
+	.
+crimestatistics-code-codelist-hash:71 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "zastupitelská a zprostředkovatelská činnost"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_NapadenyUsek ;
+	skos:notation "71" ;
+
+	rdfs:label "zastupitelská a zprostředkovatelská činnost"@cs ;
+	.
+crimestatistics-code-codelist-hash:72 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "závodní stravování"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_NapadenyUsek ;
+	skos:notation "72" ;
+
+	rdfs:label "závodní stravování"@cs ;
+	.
+crimestatistics-code-codelist-hash:73 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "podnikové obalové hospodářství"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_NapadenyUsek ;
+	skos:notation "73" ;
+
+	rdfs:label "podnikové obalové hospodářství"@cs ;
+	.
+crimestatistics-code-codelist-hash:74 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "prodej losů"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_NapadenyUsek ;
+	skos:notation "74" ;
+
+	rdfs:label "prodej losů"@cs ;
+	.
+crimestatistics-code-codelist-hash:75 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "režijní jízdné a přepravné"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_NapadenyUsek ;
+	skos:notation "75" ;
+
+	rdfs:label "režijní jízdné a přepravné"@cs ;
+	.
+crimestatistics-code-codelist-hash:76 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "jiné zvýhodnění zaměstnanců"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_NapadenyUsek ;
+	skos:notation "76" ;
+
+	rdfs:label "jiné zvýhodnění zaměstnanců"@cs ;
+	.
+crimestatistics-code-codelist-hash:77 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "sběrny objednávek na zakázky nebo služby"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_NapadenyUsek ;
+	skos:notation "77" ;
+
+	rdfs:label "sběrny objednávek na zakázky nebo služby"@cs ;
+	.
+crimestatistics-code-codelist-hash:78 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "vzorkovny apod."@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_NapadenyUsek ;
+	skos:notation "78" ;
+
+	rdfs:label "vzorkovny apod."@cs ;
+	.
+crimestatistics-code-codelist-hash:79 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "informatika a výpočetní technika"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_NapadenyUsek ;
+	skos:notation "79" ;
+
+	rdfs:label "informatika a výpočetní technika"@cs ;
+	.

@@ -1,0 +1,55 @@
+# Standardni prefixy
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix interval: <http://reference.data.gov.uk/def/intervals/> .
+@prefix sdmx-dimension: <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-concept: <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-measure: <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-attribute: <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+# Preferevany prefix ontologie pro popis zakonu
+@prefix lex: <http://purl.org/lex#> .
+
+# Vlastni prefixy
+@prefix crimestatistics-dimension: <http://linked.opendata.cz/ontology/crimestatistics/dataset-definitions/dimension#> .
+@prefix crimestatistics-code: <http://linked.opendata.cz/ontology/crimestatistics/code/> .
+                     
+# Datum a čas spáchání trestného činu
+crimestatistics-dimension:poradoveCislo a qb:DimensionProperty, rdf:Property ;
+	rdfs:range xsd:positiveInteger ;
+  rdfs:label "pořadové číslo zdrojového formuláře FTČ"@cs;
+  rdfs:comment "[TODO Stolín]"@cs;
+	.
+
+# Útvar, kde byl zločin spáchán nebo zjištěn
+crimestatistics-dimension:utvarSpachaniNeboZjisteni a qb:DimensionProperty, qb:CodedProperty, rdf:Property ;
+	rdfs:range <http://linked.opendata.cz/ontology/crimestatistics/code/utvar/conceptClass> ;
+	rdfs:label "útvar spáchání nebo zjištění trestného činu"@cs;
+  rdfs:comment "Použito k záznamu odkazu na útvar PČR s územní působností, na jehož území byl trestný čin spáchán nebo zjištěn."@cs;
+	qb:codeList <http://linked.opendata.cz/ontology/crimestatistics/code/utvar> ;
+	.
+
+# Datum a čas spáchání trestného činu
+crimestatistics-dimension:datumACasSpachani a qb:DimensionProperty, rdf:Property ;
+	rdfs:range xsd:dateTime ;
+	.
+
+# Interval páchání trestné činnosti
+crimestatistics-dimension:datumACasSpachaniOd a qb:DimensionProperty, rdf:Property ;
+	rdfs:range xsd:dateTime ;
+	.
+crimestatistics-dimension:datumACasSpachaniDo a qb:DimensionProperty, rdf:Property ;
+	rdfs:range xsd:dateTime ;
+	.
+
+# Stát, kde byl zločin spáchán nebo zjištěn
+crimestatistics-dimension:statSpachaniNeboZjisteni a qb:DimensionProperty, qb:CodedProperty, rdf:Property ;
+	rdfs:range <http://linked.opendata.cz/ontology/crimestatistics/code/stat/conceptClass> ;
+	
+	qb:codeList <http://linked.opendata.cz/ontology/crimestatistics/code/stat> ;
+	.

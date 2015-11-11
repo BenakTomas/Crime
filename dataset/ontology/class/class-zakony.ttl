@@ -1,0 +1,84 @@
+# Standardni prefixy
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix interval: <http://reference.data.gov.uk/def/intervals/> .
+@prefix sdmx-dimension: <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-concept: <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-measure: <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-attribute: <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+# Prefixy ontologie pro popis zakonu
+@prefix lex: <http://purl.org/lex#> .
+@prefix lexcz: <http://purl.org/lex/cz#> .
+
+# Vlastní prefixy
+@prefix crime-class: <http://linked.opendata.cz/ontology/crimestatistics/class#> .
+@prefix crime-prop: <http://linked.opendata.cz/ontology/crimestatistics/property#> .
+
+crime-class:PopisUkonuVTrestnimRizeni a rdf:Class ;
+  rdfs:label "popis úkonu v trestním øízení"@cs;
+  rdfs:comment '''Tato tøída reprezentuje abstraktní popis úkonu v trestním øízení.
+  Konkrétním popisem trestního øízení je popis konkrétního úkonu v trestním
+  øízení (crime-class:UkonVTrestnimRizeni), a také popis typu úkonu v trestním øízení (crime-class:TypUkonuVTrestnimRizeni).
+  V rámci abstraktního popisu úkonu je uveden textovı popis úkonu a také odkazy na ustanovení zákona, na základì kterıch je úkon (a ji konkrétní, nebo celá mnoina úkonù, reprezentovaná typem úkonu)
+  proveden.'''@cs ;
+  rdfs:isDefinedBy "http://www.ms.mff.cuni.cz/~benat7am/crimemonitor/thesis.pdf";
+  .
+
+crime-class:UkonVTrestnimRizeni a rdf:Class ;
+  rdfs:label "úkon v trestním øízení"@cs;
+  rdfs:comment '''Tato tøída popisuje konkrétní úkon v trestním øízení. Uvedeny jsou údaje jako textovı popis úkonu a odkazy na ustanovení zákona, na základì kterıch byl úkon proveden.
+  Pomocí atributu crime-prop:typUkonuVTrestnimRizeni je pøipojena informace o typu úkonu. Úkon v trestním øízení mùe odpovídat více typùm úkonu.
+  Pøíkladem úkonu v trestním øízení je nìjaká instance popisující konkrétní pøípad zastavení trestního stíhání. Typem úkonu je pak obecnı popis zastavení trestního stíhání, jeho je
+  popsanı konkrétní úkon instancí.'''@cs ;
+  
+  rdfs:subClassOf crime-class:PopisUkonuVTrestnimRizeni ;
+  rdfs:isDefinedBy "http://www.ms.mff.cuni.cz/~benat7am/crimemonitor/thesis.pdf";
+  .
+
+crime-class:TypUkonuVTrestnimRizeni a rdf:Class ;
+  rdfs:label "typ úkonu v trestním øízení"@cs;
+  rdfs:comment '''Typem úkonu v trestním øízení se rozumí jistá abstrakce úkonu v trestním øízení. V rámci abstrakce je uveden obecnı textovı popis úkonù daného typu a také odkazy na
+  ustanovení zákona, na základì kterıch jsou úkony daného typu provádìny. Další okolnosti, jako napø. datum provedení úkonu, jsou procesem abstrakce odstranìny.'''@cs ;
+  
+  rdfs:subClassOf crime-class:PopisUkonuVTrestnimRizeni ;
+  rdfs:isDefinedBy "http://www.ms.mff.cuni.cz/~benat7am/crimemonitor/thesis.pdf";
+  .
+
+# TODO
+crime-class:TypUkonu_ZahajeniTrestnihoRizeni a rdf:Class ;
+  rdfs:label "typ úkonu v trestním øízení - zahájení trestního øízení"@cs;
+  
+  rdfs:subClassOf crime-class:TypUkonuVTrestnimRizeni ;
+  rdfs:isDefinedBy "http://www.ms.mff.cuni.cz/~benat7am/crimemonitor/thesis.pdf";
+  .
+
+crime-class:CastPramenePrava a rdfs:Class ;
+  rdfs:subClassOf frbr:Work ;
+  .
+
+crime-class:SekceZakona a rdfs:Class ;
+  rdfs:subClassOf crime-class:CastPramenePrava ;
+  .
+
+crime-class:Paragraf a rdfs:Class ;
+  rdfs:subClassOf
+    crime-class:SekceZakona,
+    lexcz:Paragraf ;
+  .
+
+crime-class:Odstavec a rdfs:Class ;
+  rdfs:subClassOf
+    crime-class:SekceZakona,
+    lexcz:Odstavec ;
+  .
+
+crime-class:Pismeno a rdfs:Class ;
+  rdfs:subClassOf
+    crime-class:SekceZakona,
+    lexcz:Pismeno ;
+  .

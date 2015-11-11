@@ -1,0 +1,9 @@
+UNION { ?okres rdf:type cm:County . ?okres geonames:officialName ?name . FILTER(STR(?name) = "Ústí nad Labem") BIND(crimestatistics-code-codelist-hash:0410 as ?kod) }
+UNION { ?okres rdf:type cm:County . ?okres geonames:officialName ?name . FILTER(STR(?name) = "Ústí nad Orlicí") BIND(crimestatistics-code-codelist-hash:0511 as ?kod) }
+UNION { ?okres rdf:type cm:County . ?okres geonames:officialName ?name . FILTER(STR(?name) = "Vsetín") BIND(crimestatistics-code-codelist-hash:0615 as ?kod) }
+UNION { ?okres rdf:type cm:County . ?okres geonames:officialName ?name . FILTER(STR(?name) = "Vsetín") BIND(crimestatistics-code-codelist-hash:0710 as ?kod) }
+UNION { ?okres rdf:type cm:County . ?okres geonames:officialName ?name . FILTER(STR(?name) = "Vyškov") BIND(crimestatistics-code-codelist-hash:0612 as ?kod) }
+UNION { ?okres rdf:type cm:County . ?okres geonames:officialName ?name . FILTER(STR(?name) = "Žďár nad Sázavou") BIND(crimestatistics-code-codelist-hash:0614 as ?kod) }
+UNION { ?okres rdf:type cm:County . ?okres geonames:officialName ?name . FILTER(STR(?name) = "Žďár nad Sázavou") BIND(crimestatistics-code-codelist-hash:1614 as ?kod) }
+UNION { ?okres rdf:type cm:County . ?okres geonames:officialName ?name . FILTER(STR(?name) = "Zlín") BIND(crimestatistics-code-codelist-hash:0605 as ?kod) }
+UNION { ?okres rdf:type cm:County . ?okres geonames:officialName ?name . FILTER(STR(?name) = "Znojmo") BIND(crimestatistics-code-codelist-hash:0613 as ?kod) }

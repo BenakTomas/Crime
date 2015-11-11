@@ -1,0 +1,1761 @@
+# Namespace of the mapping file
+@prefix map: <file:///C:/d2r/d2rq-0.8.1/mapping.ttl#> .
+                                                                              
+# Other namespaces
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+
+# D2RQ namespace - mapping RDB to RDF
+@prefix d2rq: <http://www.wiwiss.fu-berlin.de/suhl/bizer/D2RQ/0.1#> .
+# JDBC namespace - specify JDBC connection properties for driver used to connect to a database
+@prefix jdbc: <http://d2rq.org/terms/jdbc/> .
+
+# D2R namespace - server configuration
+@prefix d2r: <http://sites.wiwiss.fu-berlin.de/suhl/bizer/d2r-server/config.rdf#> .
+@prefix meta: <http://www4.wiwiss.fu-berlin.de/bizer/d2r-server/metadata#> .
+
+# Preferovany prefix ontologie pro popis zakonu
+@prefix lex: <http://purl.org/lex#> .
+@prefix lexcz: <http://purl.org/lex/cz#> .
+
+# Vlastní prefix
+@prefix crime-class: <http://linked.opendata.cz/ontology/crimestatistics/class#> .
+@prefix crime-prop: <http://linked.opendata.cz/ontology/crimestatistics/property#> .
+
+// TODO remove# Odkazování pevně daných způsobů provedení úkonů v trestním řízení (např. zahájení trestního řízení, zahájení trestního stíhání apod.)
+// TODO remove@prefix crimestatistics-usekyZakona_TrestniRizeni: <http://linked.opendata.cz/resource/domain/crimestatistics/zakony/usekyZakona_TrestniRizeni#> .
+
+# Popis databaze: ona samotna je v namespace tohoto mapping file
+map:crimestatistics a d2rq:Database;
+	d2rq:jdbcDriver "com.mysql.jdbc.Driver";
+	d2rq:jdbcDSN "jdbc:mysql://localhost:3306/$dbNameKU";
+	d2rq:username "tom" ;
+	d2rq:password "tom123" ;
+	.
+
+# Konfigurace D2RQ
+map:configuration a d2rq:Configuration ;
+	# Použít automaticky odvozené a uživatelem poskytnuté RDFS nebo OWL schéma?
+	d2rq:serveVocabulary "false"^^xsd:boolean ;
+	d2rq:useAllOptimizations "false"^^xsd:boolean ;
+	.
+
+# -----------------------------------------------
+# Class map pro všechny datasety
+# -------------------------------------------
+# 1. dataset trestnych cinu
+# -------------------------------------------
+map:TrestnyCin a d2rq:ClassMap;
+    d2rq:dataStorage map:crimestatistics ;
+    d2rq:class crime-class:TrestnyCin ;
+    d2rq:uriPattern "http://linked.opendata.cz/resource/domain/crimestatistics/dataset/trestneCiny/$year/@@ks_zapistc.t01_kr@@/@@ks_zapistc.t01_ok@@/@@ks_zapistc.t01_ut@@/@@ks_zapistc.t01_cvs@@/@@ks_zapistc.t01_rok@@/@@ks_zapistc.t01_pc1@@" ;
+    .
+
+# Zpracujici utvar
+map:TrestnyCin-utvarZpracovaniZaznamu a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:TrestnyCin ;
+	d2rq:property crime-prop:utvarZpracovaniZaznamu ;
+	d2rq:uriPattern "http://linked.opendata.cz/ontology/crimestatistics/code/utvar#@@ks_zapistc.t01_kr@@@@ks_zapistc.t01_ok@@@@ks_zapistc.t01_ut@@" ;
+	d2rq:condition "ks_zapistc.t01_ok not in('30', '40')" ; #TODO: Az se zaradi do utvaru i cizinecka policie, tato podminka se odstrani.
+	d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+	.
+
+# Rok zpracovani zaznamu
+map:TrestnyCin-rokZpracovaniZaznamu a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:TrestnyCin ;
+	d2rq:property crime-prop:rokZpracovaniZaznamu ;
+	d2rq:sqlExpression "date_format(str_to_date(concat(ks_zapistc.t01_rok, '-01-01'), '%y-%m-%d'), '%Y')" ;
+	d2rq:datatype xsd:gYear ;
+	d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+	.
+
+# Rok zpracovani zaznamu
+map:TrestnyCin-cisloJednaci a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:TrestnyCin ;
+	d2rq:property crime-prop:cisloJednaci ;
+	d2rq:column "ks_zapistc.t01_cvs" ;
+	d2rq:valueMaxLength "10" ;
+	d2rq:datatype xsd:string ;
+	d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+	.
+
+ # Poradove cislo trestneho cinu
+map:TrestnyCin-poradoveCislo a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:TrestnyCin ;
+	d2rq:property crime-prop:poradoveCislo ;
+	d2rq:column "ks_zapistc.t01_pc1" ;
+	d2rq:datatype xsd:positiveInteger ;
+	d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+	.
+
+# Utvar spachani nebo zjisteni
+map:TrestnyCin-utvarSpachaniNeboZjisteni a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:TrestnyCin ;
+	d2rq:property crime-prop:utvarSpachaniNeboZjisteni ;
+	d2rq:condition "ks_zapistc.t05_kr <> '30'" ;
+	d2rq:uriPattern "http://linked.opendata.cz/ontology/crimestatistics/code/utvar#@@ks_zapistc.t05_kr@@@@ks_zapistc.t05_ok@@@@ks_zapistc.t05_ut@@" ;
+	d2rq:condition "ks_zapistc.t05_ok not in('30', '40')" ;
+	d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+	.
+
+# Stát spáchání nebo zjištění trestného činu
+map:TrestnyCin-statSpachaniNeboZjisteni a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:TrestnyCin ;
+	d2rq:property crime-prop:statSpachaniNeboZjisteni ;
+	d2rq:condition "ks_zapistc.t05_kr = '30'" ;
+	d2rq:uriSqlExpression "CONCAT('http://linked.opendata.cz/ontology/crimestatistics/code/stat#', SUBSTRING(ks_zapistc.t05_ok FROM 2), ks_zapistc.t05_ut)" ;
+	d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+	.
+
+# Datum a cas spachani trestneho cinu
+map:TrestnyCin-datumACasSpachani a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:TrestnyCin ;
+	d2rq:property crime-prop:datumACasSpachani ;
+	#d2rq:uriSqlExpression "CONCAT('http://reference.data.gov.uk/id/gregorian-instant/', DATE_FORMAT(DATE_ADD(ks_zapistc.t09b_dat, INTERVAL ks_zapistc.t09a_hod HOUR), '%Y-%m-%dT%H:%i:%s'))" ;
+	d2rq:datatype xsd:dateTime ;
+  d2rq:sqlExpression "DATE_FORMAT(DATE_ADD(ks_zapistc.t09b_dat, INTERVAL ks_zapistc.t09a_hod HOUR), '%Y-%m-%dT%H:%i:%s')" ;
+  d2rq:condition "ks_zapistc.t10b_dat is null" ;
+	d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+	.
+	
+# Datum a cas zapoceti pachani trestneho cinu
+map:TrestnyCin-intervalPachani a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:TrestnyCin ;
+	d2rq:property crime-prop:intervalPachani ;
+	d2rq:uriSqlExpression "CONCAT('http://reference.data.gov.uk/id/gregorian-interval/', DATE_FORMAT(DATE_ADD(ks_zapistc.t09b_dat, INTERVAL ks_zapistc.t09a_hod HOUR), '%Y-%m-%dT%H:%i:%s'), '/P', TIMESTAMPDIFF(HOUR, DATE_ADD(ks_zapistc.t09b_dat, INTERVAL ks_zapistc.t09a_hod HOUR), DATE_ADD(ks_zapistc.t10b_dat, INTERVAL ks_zapistc.t10a_hod HOUR)), 'H')" ;
+	d2rq:condition "ks_zapistc.t10b_dat is not null" ;
+	d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+	.
+
+# Objekt napadení
+# 1) jednotlivce: d2rq:condition "ks_zapistc.t08a_obj in ('1', '2')" ;
+# 2) skupinu: d2rq:condition "ks_zapistc.t08a_obj = '3'" ;
+# 3) objekty napadene obecnou kriminalitou: d2rq:condition "ks_zapistc.t08a_obj = '4' and (CONVERT(ks_zapistc.t04_tsk, UNSIGNED INTEGER) in (141, 142) or (311 <= CONVERT(ks_zapistc.t04_tsk, UNSIGNED INTEGER) and CONVERT(ks_zapistc.t04_tsk, UNSIGNED INTEGER) <= 790))" ;
+# 4) objekty napadene hospodarskou kriminalitou: d2rq:condition "ks_zapistc.t08a_obj = '4' and (801 <= CONVERT(ks_zapistc.t04_tsk, UNSIGNED INTEGER) and CONVERT(ks_zapistc.t04_tsk, UNSIGNED INTEGER) <= 890)" ;
+# 5) soukrome napadene objekty: d2rq:condition "ks_zapistc.t08a_obj = '5'" ;
+# 6) verejny zajem: d2rq:condition "ks_zapistc.t08a_obj = '6'" ;
+map:NapadeniOsoby a d2rq:ClassMap;
+  d2rq:dataStorage map:crimestatistics ;
+  d2rq:class crime-class:NapadeniOsoby ;
+  d2rq:uriPattern "http://linked.opendata.cz/resource/domain/crimestatistics/dataset/trestneCiny/$year/@@ks_zapistc.t01_kr@@/@@ks_zapistc.t01_ok@@/@@ks_zapistc.t01_ut@@/@@ks_zapistc.t01_cvs@@/@@ks_zapistc.t01_rok@@/@@ks_zapistc.t01_pc1@@/napadeniOsoby" ;
+  d2rq:condition "ks_zapistc.t08a_obj in ('1', '2')" ;
+  d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+  .
+
+map:TrestnyCin-napadeniOsoby a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:TrestnyCin ;
+	d2rq:property crime-prop:napadeniOsoby ;
+	d2rq:refersToClassMap map:NapadeniOsoby ;
+	d2rq:condition "ks_zapistc.t08a_obj in ('1', '2')" ;
+	d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+	.
+
+map:NapadeniOsoby-pohlaviNapadeneOsoby-muz a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:NapadeniOsoby ;
+	d2rq:property crime-prop:pohlaviNapadeneOsoby ;
+  d2rq:valueMaxLength "1" ;
+  d2rq:condition "ks_zapistc.t08a_obj = '1'" ;
+	d2rq:constantValue <http://purl.org/linked-data/sdmx/2009/code#sex-M> ;
+	d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+	.
+
+map:NapadeniOsoby-pohlaviNapadeneOsoby-zena a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:NapadeniOsoby ;
+  d2rq:valueMaxLength "1" ;
+	d2rq:property crime-prop:pohlaviNapadeneOsoby ;
+  d2rq:condition "ks_zapistc.t08a_obj = '2'" ;
+	d2rq:constantValue <http://purl.org/linked-data/sdmx/2009/code#sex-F> ;
+	d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+	.
+
+map:NapadeniSkupinyOsob a d2rq:ClassMap;
+  d2rq:dataStorage map:crimestatistics ;
+  d2rq:valueMaxLength "1" ;
+  d2rq:class crime-class:NapadeniSkupinyOsob ;
+  d2rq:uriPattern "http://linked.opendata.cz/resource/domain/crimestatistics/dataset/trestneCiny/$year/@@ks_zapistc.t01_kr@@/@@ks_zapistc.t01_ok@@/@@ks_zapistc.t01_ut@@/@@ks_zapistc.t01_cvs@@/@@ks_zapistc.t01_rok@@/@@ks_zapistc.t01_pc1@@/napadeniSkupinyOsob" ;
+  d2rq:condition "ks_zapistc.t08a_obj = '3'" ;
+  d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+  .
+
+map:NapadeniObecnouKriminalitou a d2rq:ClassMap;
+  d2rq:dataStorage map:crimestatistics ;
+  d2rq:valueMaxLength "1" ;
+  d2rq:class crime-class:NapadeniObecnouKriminalitou ;
+  d2rq:uriPattern "http://linked.opendata.cz/resource/domain/crimestatistics/dataset/trestneCiny/$year/@@ks_zapistc.t01_kr@@/@@ks_zapistc.t01_ok@@/@@ks_zapistc.t01_ut@@/@@ks_zapistc.t01_cvs@@/@@ks_zapistc.t01_rok@@/@@ks_zapistc.t01_pc1@@/napadeniObecnouKriminalitou" ;
+  d2rq:condition "ks_zapistc.t08a_obj = '4' and (CONVERT(ks_zapistc.t04_tsk, UNSIGNED INTEGER) in (141, 142) or (311 <= CONVERT(ks_zapistc.t04_tsk, UNSIGNED INTEGER) and CONVERT(ks_zapistc.t04_tsk, UNSIGNED INTEGER) <= 790))";
+  d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+  .
+
+map:NapadeniHospodarskouKriminalitou a d2rq:ClassMap;
+  d2rq:dataStorage map:crimestatistics ;
+  d2rq:valueMaxLength "1" ;
+  d2rq:class crime-class:NapadeniHospodarskouKriminalitou ;
+  d2rq:uriPattern "http://linked.opendata.cz/resource/domain/crimestatistics/dataset/trestneCiny/$year/@@ks_zapistc.t01_kr@@/@@ks_zapistc.t01_ok@@/@@ks_zapistc.t01_ut@@/@@ks_zapistc.t01_cvs@@/@@ks_zapistc.t01_rok@@/@@ks_zapistc.t01_pc1@@/napadeniHospodarskouKriminalitou" ;
+  d2rq:condition "ks_zapistc.t08a_obj = '4' and (801 <= CONVERT(ks_zapistc.t04_tsk, UNSIGNED INTEGER) and CONVERT(ks_zapistc.t04_tsk, UNSIGNED INTEGER) <= 890)";
+  d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+  .
+
+map:NapadeniSoukromehoObjektu a d2rq:ClassMap;
+  d2rq:dataStorage map:crimestatistics ;
+  d2rq:valueMaxLength "1" ;
+  d2rq:class crime-class:NapadeniSoukromehoObjektu ;
+  d2rq:uriPattern "http://linked.opendata.cz/resource/domain/crimestatistics/dataset/trestneCiny/$year/@@ks_zapistc.t01_kr@@/@@ks_zapistc.t01_ok@@/@@ks_zapistc.t01_ut@@/@@ks_zapistc.t01_cvs@@/@@ks_zapistc.t01_rok@@/@@ks_zapistc.t01_pc1@@/napadeniSoukromehoObjektu" ;
+  d2rq:condition "ks_zapistc.t08a_obj = '5'" ;
+  d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+  .
+
+map:NapadeniVerejnehoZajmu a d2rq:ClassMap;
+  d2rq:dataStorage map:crimestatistics ;
+  d2rq:valueMaxLength "1" ;
+  d2rq:class crime-class:NapadeniVerejnehoZajmu ;
+  d2rq:uriPattern "http://linked.opendata.cz/resource/domain/crimestatistics/dataset/trestneCiny/$year/@@ks_zapistc.t01_kr@@/@@ks_zapistc.t01_ok@@/@@ks_zapistc.t01_ut@@/@@ks_zapistc.t01_cvs@@/@@ks_zapistc.t01_rok@@/@@ks_zapistc.t01_pc1@@/napadeniVerejnehoZajmu" ;
+  d2rq:condition "ks_zapistc.t08a_obj = '6'" ;
+  d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+  .
+
+# Stadium trestneho cinu
+map:TrestnyCin-stadiumTrestnehoCinu a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:TrestnyCin ;
+	d2rq:property crime-prop:stadiumTrestnehoCinu ;
+	d2rq:uriPattern "http://linked.opendata.cz/ontology/crimestatistics/code/stadiumTrestnehoCinu#@@ks_zapistc.t02_stad@@" ;
+  d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+	.
+
+# Druh trestného činu
+map:TrestnyCin-druhTrestnehoCinu-trestnyCin a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:TrestnyCin ;
+	d2rq:property crime-prop:druhTrestnehoCinu ;
+	d2rq:condition "ks_zapistc.t03_druh in ('2', '4', '5', '6', '7', '8', '9')" ;
+	d2rq:constantValue <http://linked.opendata.cz/ontology/crimestatistics/code/druhTrestnehoCinu#1> ;
+	d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+	.
+
+map:TrestnyCin-druhTrestnehoCinu-zlocin a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:TrestnyCin ;
+	d2rq:property crime-prop:druhTrestnehoCinu ;
+	d2rq:condition "ks_zapistc.t03_druh in ('B', 'C', 'D', 'E', 'F', 'G', 'H')" ;
+	d2rq:constantValue <http://linked.opendata.cz/ontology/crimestatistics/code/druhTrestnehoCinu#2> ;
+	d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+	.
+
+map:TrestnyCin-druhTrestnehoCinu-precin a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:TrestnyCin ;
+	d2rq:property crime-prop:druhTrestnehoCinu ;
+	d2rq:condition "ks_zapistc.t03_druh in ('R', 'S', 'T', 'U', 'V', 'W')" ;
+	d2rq:constantValue <http://linked.opendata.cz/ontology/crimestatistics/code/druhTrestnehoCinu#3> ;
+	d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+	.
+
+# Druh extremistickeho trestneho cinu
+map:TrestnyCin-druhExtremistickehoTrestnehoCinu a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:TrestnyCin ;
+	d2rq:property crime-prop:druhExtremistickehoTrestnehoCinu ;
+	d2rq:column "ks_zapistc.t03_druh" ;
+	d2rq:condition "ks_zapistc.t03_druh not in ('2', 'B', 'R')" ;
+	d2rq:translateWith map:DruhExtremistickehoTrestnehoCinu_TranslationTable ;
+	d2rq:valueMaxLength "1" ;
+	d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+	.
+
+# TSK - pro trestní zákon 1961/140
+map:TrestnyCin-tsk-stary a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:TrestnyCin ;
+	d2rq:property crime-prop:tsk ;
+	d2rq:condition "ks_zapistc.t22_dat < '2010-01-01'" ;
+	d2rq:uriPattern "http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#@@ks_zapistc.t04_tsk@@" ;
+	d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+	.
+
+# TSK - pro trestní zákon 2009/40
+map:TrestnyCin-tsk-novy a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:TrestnyCin ;
+	d2rq:property crime-prop:tsk ;
+	d2rq:condition "ks_zapistc.t22_dat >= '2010-01-01'" ;
+	d2rq:uriPattern "http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#@@ks_zapistc.t04_tsk@@" ;
+	d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+	.
+	
+# Spachano na ulici
+map:TrestnyCin-spachanoNaUlici a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:TrestnyCin ;
+	d2rq:property crime-prop:spachanoNaUlici ;
+	d2rq:column "ks_zapistc.t06a_uli" ;
+	d2rq:datatype xsd:boolean ;
+	d2rq:translateWith map:BoolTranslationTable ;
+	d2rq:valueMaxLength "1" ;
+	d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+  .
+
+# Spachano na ulici
+map:TrestnyCin-spachanoNaSledovanemMiste a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:TrestnyCin ;
+	d2rq:property crime-prop:spachanoNaSledovanemMiste ;
+	d2rq:column "ks_zapistc.t06b_mes" ;
+	d2rq:datatype xsd:boolean ;
+	d2rq:translateWith map:BoolTranslationTable ;
+	d2rq:valueMaxLength "1" ;
+	d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+  .
+
+# Prekladova tabulka pro bool hodnoty z "0" a "1" na "false", resp. "true"
+map:BoolTranslationTable a d2rq:TranslationTable ;
+	d2rq:translation [ d2rq:databaseValue "0"; d2rq:rdfValue "false"; ] ;
+	d2rq:translation [ d2rq:databaseValue "1"; d2rq:rdfValue "true"; ] ;
+	.
+	
+# Lokalita spachani trestneho cinu
+map:TrestnyCin-lokalitaSpachani a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:TrestnyCin ;
+	d2rq:property crime-prop:lokalitaSpachani ;
+	d2rq:uriPattern "http://linked.opendata.cz/ontology/crimestatistics/code/lokalitaSpachaniTrestnehoCinu#@@ks_zapistc.t06c_kde@@" ;
+	d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+	.
+	
+#  Pouziti zbrane a nasledek
+map:TrestnyCin-pouzitiZbraneANasledek a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:TrestnyCin ;
+	d2rq:property crime-prop:pouzitiZbraneANasledek ;
+	d2rq:uriPattern "http://linked.opendata.cz/ontology/crimestatistics/code/pouzitiZbraneANasledek#@@ks_zapistc.t07a_zb@@" ;
+	d2rq:condition "ks_zapistc.t07a_zb <> '0'" ;
+	d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+	.
+
+# Druh pouzite zbrane
+map:TrestnyCin-druhPouziteZbrane a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:TrestnyCin ;
+	d2rq:property crime-prop:druhPouziteZbrane ;
+	d2rq:uriPattern "http://linked.opendata.cz/ontology/crimestatistics/code/druhZbrane#@@ks_zapistc.t07b_zb@@" ;
+	d2rq:condition "ks_zapistc.t07b_zb <> '0'" ;
+	d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+	.
+
+map:DruhExtremistickehoTrestnehoCinu_TranslationTable a d2rq:TranslationTable ;
+	d2rq:translation [
+		d2rq:databaseValue "4" ; d2rq:rdfValue <http://linked.opendata.cz/ontology/crimestatistics/code/druhExtremistickehoTrestnehoCinu#1> ; ];
+	d2rq:translation [
+		d2rq:databaseValue "5" ; d2rq:rdfValue <http://linked.opendata.cz/ontology/crimestatistics/code/druhExtremistickehoTrestnehoCinu#2> ; ];
+	d2rq:translation [
+		d2rq:databaseValue "6" ; d2rq:rdfValue <http://linked.opendata.cz/ontology/crimestatistics/code/druhExtremistickehoTrestnehoCinu#3> ; ];
+	d2rq:translation [
+		d2rq:databaseValue "7" ; d2rq:rdfValue <http://linked.opendata.cz/ontology/crimestatistics/code/druhExtremistickehoTrestnehoCinu#4> ; ];
+	d2rq:translation [
+		d2rq:databaseValue "8" ; d2rq:rdfValue <http://linked.opendata.cz/ontology/crimestatistics/code/druhExtremistickehoTrestnehoCinu#5> ; ];
+	d2rq:translation [
+		d2rq:databaseValue "9" ; d2rq:rdfValue <http://linked.opendata.cz/ontology/crimestatistics/code/druhExtremistickehoTrestnehoCinu#6> ; ];
+	d2rq:translation [
+		d2rq:databaseValue "C" ; d2rq:rdfValue <http://linked.opendata.cz/ontology/crimestatistics/code/druhExtremistickehoTrestnehoCinu#1> ; ];
+	d2rq:translation [
+		d2rq:databaseValue "D" ; d2rq:rdfValue <http://linked.opendata.cz/ontology/crimestatistics/code/druhExtremistickehoTrestnehoCinu#2> ; ];
+	d2rq:translation [
+		d2rq:databaseValue "E" ; d2rq:rdfValue <http://linked.opendata.cz/ontology/crimestatistics/code/druhExtremistickehoTrestnehoCinu#3> ; ];
+	d2rq:translation [
+		d2rq:databaseValue "F" ; d2rq:rdfValue <http://linked.opendata.cz/ontology/crimestatistics/code/druhExtremistickehoTrestnehoCinu#4> ; ];
+	d2rq:translation [
+		d2rq:databaseValue "G" ; d2rq:rdfValue <http://linked.opendata.cz/ontology/crimestatistics/code/druhExtremistickehoTrestnehoCinu#5> ; ];
+	d2rq:translation [
+		d2rq:databaseValue "H" ; d2rq:rdfValue <http://linked.opendata.cz/ontology/crimestatistics/code/druhExtremistickehoTrestnehoCinu#6> ; ];
+	d2rq:translation [
+		d2rq:databaseValue "S" ; d2rq:rdfValue <http://linked.opendata.cz/ontology/crimestatistics/code/druhExtremistickehoTrestnehoCinu#1> ; ];
+	d2rq:translation [
+		d2rq:databaseValue "T" ; d2rq:rdfValue <http://linked.opendata.cz/ontology/crimestatistics/code/druhExtremistickehoTrestnehoCinu#2> ; ];
+	d2rq:translation [
+		d2rq:databaseValue "U" ; d2rq:rdfValue <http://linked.opendata.cz/ontology/crimestatistics/code/druhExtremistickehoTrestnehoCinu#3> ; ];
+	d2rq:translation [
+		d2rq:databaseValue "V" ; d2rq:rdfValue <http://linked.opendata.cz/ontology/crimestatistics/code/druhExtremistickehoTrestnehoCinu#5> ; ];
+	d2rq:translation [
+		d2rq:databaseValue "W" ; d2rq:rdfValue <http://linked.opendata.cz/ontology/crimestatistics/code/druhExtremistickehoTrestnehoCinu#6> ; ];
+	.
+
+# Pocet domovnich prohlidek
+map:TrestnyCin-pocetDomovnichProhlidek a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:TrestnyCin ;
+	d2rq:property crime-prop:pocetDomovnichProhlidek ;
+	d2rq:sqlExpression "CONVERT(ks_zapistc.t11a_dom, UNSIGNED INTEGER)" ;
+	d2rq:condition "ks_zapistc.t11a_dom is not null and ks_zapistc.t11a_dom <> ''" ;
+	d2rq:datatype xsd:nonNegativeInteger ;
+	d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+	.
+
+# Pocet domovnich prohlidek s kladnym vysledkem
+map:TrestnyCin-pocetDomovnichProhlidekSKladnymVysledkem a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:TrestnyCin ;
+	d2rq:property crime-prop:pocetDomovnichProhlidekSKladnymVysledkem ;
+	d2rq:sqlExpression "CONVERT(ks_zapistc.t11b_dom, UNSIGNED INTEGER)" ;
+	d2rq:condition "ks_zapistc.t11b_dom is not null and ks_zapistc.t11b_dom <> ''" ;
+	d2rq:datatype xsd:nonNegativeInteger ;
+	d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+	.
+
+# Zpusobena skoda
+map:TrestnyCin-zpusobenaSkoda a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:TrestnyCin ;
+	d2rq:property crime-prop:zpusobenaSkoda ;
+	d2rq:sqlExpression "100 * ks_zapistc.t13_skod" ;
+	d2rq:condition "ks_zapistc.t13_skod is not null" ;
+	d2rq:datatype xsd:double ;
+	d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+	.
+
+# Zpusobena skoda - odcizeno, rozkradeno
+map:TrestnyCin-zpusobenaSkodaOdcizenoNeboRozkradeno a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:TrestnyCin ;
+	d2rq:property crime-prop:zpusobenaSkodaOdcizenoNeboRozkradeno ;
+	d2rq:sqlExpression "100 * ks_zapistc.t14_odci" ;
+	d2rq:condition "ks_zapistc.t14_odci is not null" ;
+	d2rq:datatype xsd:double ;
+	d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+	.
+
+# Zajistene hodnoty na miste cinu
+map:TrestnyCin-zajisteneHodnotyNaMisteCinu a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:TrestnyCin ;
+	d2rq:property crime-prop:zajisteneHodnotyNaMisteCinu ;
+	d2rq:sqlExpression "100 * ks_zapistc.t15_zaji" ;
+	d2rq:condition "ks_zapistc.t15_zaji is not null" ;
+	d2rq:datatype xsd:double ;
+	d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+	.
+
+# Pocet dilcich utoku
+map:TrestnyCin-pocetDilcichUtoku a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:TrestnyCin ;
+	d2rq:property crime-prop:pocetDilcichUtoku ;
+	d2rq:sqlExpression "CONVERT(ks_zapistc.t18_stop, UNSIGNED INTEGER)" ;
+	d2rq:datatype xsd:positiveInteger ;
+	d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+	.
+
+# ---------------------- ÚKONY V TRESTNÍM ŘÍZENÍ -------------------------	
+# a) zahájení trestního řízení
+==============
+map:ZahajeniTrestnihoRizeni_TrestnyCin a d2rq:ClassMap;
+  d2rq:dataStorage map:crimestatistics ;
+  d2rq:class crime-class:UkonVTrestnimRizeni ;
+  d2rq:uriPattern "http://linked.opendata.cz/resource/domain/crimestatistics/dataset/trestnyCin/$year/@@ks_zapistc.t01_kr@@/@@ks_zapistc.t01_ok@@/@@ks_zapistc.t01_ut@@/@@ks_zapistc.t01_cvs@@/@@ks_zapistc.t01_rok@@/@@ks_zapistc.t01_pc1@@/ukonVTrestnimRizeni/TypUkonu_ZahajeniTrestnihoRizeni" ;
+  d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+  .
+
+map:TrestnyCin-zahajeniTrestnihoRizeni a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:TrestnyCin ; #TODO patri i k classMap:ZnamyPachate
+	d2rq:property crime-prop:ukonVTrestnimRizeni ;
+	d2rq:refersToClassMap map:ZahajeniTrestnihoRizeni_TrestnyCin ;
+	d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+	.
+  
+map:ZahajeniTrestnihoRizeni-trestnyCin a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:ZahajeniTrestnihoRizeni_TrestnyCin ;
+	d2rq:property crime-prop:trestnyCin ;
+	d2rq:refersToClassMap map:TrestnyCin ;
+	d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+	.
+
+map:ZahajeniTrestnihoRizeni-datum a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:ZahajeniTrestnihoRizeni_TrestnyCin ;
+	d2rq:property crime-prop:datumUkonuVTrestnimRizeni ;
+  d2rq:sqlExpression "DATE_FORMAT(ks_zapistc.t22_dat, '%Y-%m-%d')" ;
+	d2rq:datatype xsd:date ;
+	d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+	.
+
+map:ZahajeniTrestnihoRizeni-provedenoPodle_SekceZakona a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:ZahajeniTrestnihoRizeni_TrestnyCin ;
+	d2rq:property crime-prop:provedenoPodle_SekceZakona ;
+	d2rq:constantValue <http://linked.opendata.cz/resource/legislation/cz/act/1961/141-1961/section/158/3>;
+	d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+	.
+
+map:ZahajeniTrestnihoRizeni-provedenoPodle_Paragraf a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:ZahajeniTrestnihoRizeni_TrestnyCin ;
+	d2rq:property crime-prop:provedenoPodle_Paragraf ;
+	d2rq:constantValue <http://linked.opendata.cz/resource/legislation/cz/act/1961/141-1961/section/158>;
+	d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+	.
+
+map:ZahajeniTrestnihoRizeni-provedenoPodle_Odstavec a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:ZahajeniTrestnihoRizeni_TrestnyCin ;
+	d2rq:property crime-prop:provedenoPodle_Odstavec ;
+	d2rq:constantValue <http://linked.opendata.cz/resource/legislation/cz/act/1961/141-1961/section/158/3>;
+	d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+	.
+
+# Datum zahajeni trestniho rizeni
+map:TrestnyCin-datumZahajeniTrestnihoRizeni a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:TrestnyCin ;
+	d2rq:property crime-prop:datumZahajeniTrestnihoRizeni ;
+	d2rq:sqlExpression "DATE_FORMAT(ks_zapistc.t22_dat, '%Y-%m-%d')" ;
+	d2rq:datatype xsd:date ;
+	d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+	.	
+
+# Usek zakona k zahajeni trestniho rizeni
+map:TrestnyCin-usekZakonaKZahajeniTrestnihoRizeni a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:TrestnyCin ;
+	d2rq:property crime-prop:usekZakonaKZahajeniTrestnihoRizeni ;
+	d2rq:constantValue crimestatistics-usekyZakona_TrestniRizeni:zahajeniTrestnihoRizeni ;
+	d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+	.
+===============	
+# Datum zahajeni trestniho stihani
+map:TrestnyCin-datumZahajeniTrestnihoStihani a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:TrestnyCin ;
+	d2rq:property crime-prop:datumZahajeniTrestnihoStihani ;
+	d2rq:sqlExpression "DATE_FORMAT(ks_zapistc.t22b_dat, '%Y-%m-%d')" ;
+	d2rq:condition "ks_zapistc.t22b_dat is not null and ks_zapistc.t22b_ods in ('1', '2')" ;
+	d2rq:datatype xsd:date ;
+	d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+	.
+
+# Datum sdeleni podezreni ve ZPR
+map:TrestnyCin-datumSdeleniPodezreniVeZPR a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:TrestnyCin ;
+	d2rq:property crime-prop:datumSdeleniPodezreniVeZPR ;
+	d2rq:sqlExpression "DATE_FORMAT(ks_zapistc.t22b_dat, '%Y-%m-%d')" ;
+	d2rq:condition "ks_zapistc.t22b_dat is not null and ks_zapistc.t22b_ods = '4'" ;
+	d2rq:datatype xsd:date ;
+	d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+	.
+
+# Datum odlozeni veci
+map:TrestnyCin-datumOdlozeniVeci a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:TrestnyCin ;
+	d2rq:property crime-prop:datumOdlozeniVeci ;
+	d2rq:sqlExpression "DATE_FORMAT(ks_zapistc.t22b_dat, '%Y-%m-%d')" ;
+	d2rq:condition "ks_zapistc.t22b_dat is not null and ks_zapistc.t22b_ods = '5'" ;
+	d2rq:datatype xsd:date ;
+	d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+	.
+
+# Usek zakona k zahajeni trestniho stihani
+map:TrestnyCin-usekZakonaKZahajeniTrestnihoStihani a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:TrestnyCin ;
+	d2rq:property crime-prop:usekZakonaKZahajeniTrestnihoStihani ;
+	d2rq:column "ks_zapistc.t22b_ods" ;
+	d2rq:valueMaxLength "1" ;
+	d2rq:condition "ks_zapistc.t22b_dat is not null and ks_zapistc.t22b_ods in ('1', '2')" ;
+	d2rq:translateWith map:UsekZakonaTranslationTable ;
+	d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+	.
+
+# Usek zakona ke sdeleni podezreni ve ZPR
+map:TrestnyCin-usekZakonaKeSdeleniPodezreniVeZPR a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:TrestnyCin ;
+	d2rq:property crime-prop:usekZakonaKeSdeleniPodezreniVeZPR ;
+	d2rq:column "ks_zapistc.t22b_ods" ;
+	d2rq:valueMaxLength "1" ;
+	d2rq:condition "ks_zapistc.t22b_dat is not null and ks_zapistc.t22b_ods = '4'" ;
+	d2rq:translateWith map:UsekZakonaTranslationTable ;
+	d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+	.
+
+# Usek zakona k odlozeni veci
+map:TrestnyCin-usekZakonaKOdlozeniVeci a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:TrestnyCin ;
+	d2rq:property crime-prop:usekZakonaKOdlozeniVeci ;
+	d2rq:column "ks_zapistc.t22b_ods" ;
+	d2rq:valueMaxLength "1" ;
+	d2rq:condition "ks_zapistc.t22b_dat is not null and ks_zapistc.t22b_ods = '5'" ;
+	d2rq:translateWith map:UsekZakonaTranslationTable ;
+	d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+	.
+
+# Prekladova tabulka pro ciselne kody useku zakonu
+map:UsekZakonaTranslationTable a d2rq:TranslationTable ;
+	d2rq:translation
+	[
+		d2rq:databaseValue "1";
+		d2rq:rdfValue crimestatistics-usekyZakona_TrestniRizeni:zahajeniTrestnihoStihani1601 ;
+	] ;
+	d2rq:translation
+	[
+		d2rq:databaseValue "2";
+		d2rq:rdfValue crimestatistics-usekyZakona_TrestniRizeni:zahajeniTrestnihoStihani1603 ;
+	] ;
+	d2rq:translation
+	[
+		d2rq:databaseValue "3";
+		d2rq:rdfValue crimestatistics-usekyZakona_TrestniRizeni:zahajeniTrestnihoRizeni ;
+	] ;
+	d2rq:translation
+	[
+		d2rq:databaseValue "4";
+		d2rq:rdfValue crimestatistics-usekyZakona_TrestniRizeni:sdeleniPodezreniVeZPR179b3 ;
+	] ;
+	d2rq:translation
+	[
+		d2rq:databaseValue "5";
+		d2rq:rdfValue crimestatistics-usekyZakona_TrestniRizeni:odlozeniVeci159a ;
+	] ;
+	.
+
+# Datum ukonceni nebo prevzeti veci
+map:TrestnyCin-datumUkonceniNeboPrevzetiVeci a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:TrestnyCin ;
+	d2rq:property crime-prop:datumUkonceniNeboPrevzetiVeci ;
+	d2rq:sqlExpression "DATE_FORMAT(ks_zapistc.t24_dat, '%Y-%m-%d')" ;
+	d2rq:condition "ks_zapistc.t24_dat is not null" ;
+	d2rq:datatype xsd:date ;
+	d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+	.
+
+# Zpusob ukonceni nebo prevzeti veci u trestneho cinu
+map:TrestnyCin-zpusobUkonceniNeboPrevzetiVeci_TrestnyCin a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:TrestnyCin ;
+	d2rq:property crime-prop:zpusobUkonceniNeboPrevzetiVeci_TrestnyCin ;
+	d2rq:uriPattern "http://linked.opendata.cz/ontology/crimestatistics/code/zpusobUkonceniNeboPrevzetiVeci_TrestnyCin#@@ks_zapistc.t24a_zpu@@" ;
+	d2rq:condition "ks_zapistc.t24_dat is not null" ;
+	d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+	.
+
+# Pravni kvalifikace trestneho cinu
+# a)
+#   - obecna sekce zakona
+map:TrestnyCin-pravniKvalifikace-a a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:TrestnyCin ;
+	d2rq:property crime-prop:pravniKvalifikace ;
+	d2rq:uriSqlExpression "CONCAT(
+    'http://linked.opendata.cz/resource/legislation/cz/act/',                                                       # oznaceni ceskeho zakona
+    CASE WHEN ks_zapistc.t22_dat < '2010-01-01' THEN '1961/140-1961' ELSE '2009/40-2009' END,                       # cislo zakona
+     '/section/',                                                                                                   # oznaceni sekce zakona (paragraf, odstavec, pismeno)
+     mid(ks_zapistc.t19_para, 1, 3),                                                                                # cislo paragrafu
+     CASE WHEN mid(ks_zapistc.t19_para, 4, 1) <> '0' THEN mid(ks_zapistc.t19_para, 4, 1) ELSE '' END,               # pismeno za cislem paragrafu
+     CASE WHEN mid(ks_zapistc.t19_para, 5, 1) <> '0' THEN CONCAT('/', mid(ks_zapistc.t19_para, 5, 1)) ELSE '' END,  # cislo odstavce paragrafu
+     CASE WHEN mid(ks_zapistc.t19_para, 6, 1) <> '0' THEN CONCAT('/', mid(ks_zapistc.t19_para, 6, 1)) ELSE '' END   # pismeno odstavce paragrafu
+     )" ;
+	d2rq:limit $limit ;d2rq:limitInverse $limitInverse ;
+	.
+#   - typovane sekce (paragrafy, odstavce, pismena) 
+#     - paragraf
+map:TrestnyCin-pravniKvalifikace-a a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:TrestnyCin ;
+	d2rq:property crime-prop:pravniKvalifikace ;
+	d2rq:uriSqlExpression "CONCAT('http://linked.opendata.cz/resource/legislation/cz/act/', CASE WHEN ks_zapistc.t22_dat < '2010-01-01' THEN '1961/140-1961' ELSE '2009/40-2009' END, '/', mid(ks_zapistc.t19_para, 1, 3), CASE WHEN mid(ks_zapistc.t19_para, 4, 1) <> '0' THEN mid(ks_zapistc.t19_para, 4, 1) ELSE '' END, CASE WHEN mid(ks_zapistc.t19_para, 5, 1) = '0' THEN '' ELSE CONCAT('/', mid(ks_zapistc.t19_para, 5, 1), CASE WHEN mid(ks_zapistc.t19_para, 6, 1) <> '0' THEN CONCAT('/', mid(ks_zapistc.t19_para, 6, 1)) ELSE '' END) END)" ;
+	d2rq:limit $limit ;d2rq:limitInverse $limitInverse ;
+	.
+#   - odstavec
+map:TrestnyCin-pravniKvalifikace-a a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:TrestnyCin ;
+	d2rq:property crime-prop:pravniKvalifikace ;
+	d2rq:uriSqlExpression "CONCAT('http://linked.opendata.cz/resource/legislation/cz/act/', CASE WHEN ks_zapistc.t22_dat < '2010-01-01' THEN '1961/140' ELSE '2009/40' END, '/', mid(ks_zapistc.t19_para, 1, 3), CASE WHEN mid(ks_zapistc.t19_para, 4, 1) <> '0' THEN mid(ks_zapistc.t19_para, 4, 1) ELSE '' END, CASE WHEN mid(ks_zapistc.t19_para, 5, 1) = '0' THEN '' ELSE CONCAT('/', mid(ks_zapistc.t19_para, 5, 1), CASE WHEN mid(ks_zapistc.t19_para, 6, 1) <> '0' THEN CONCAT('/', mid(ks_zapistc.t19_para, 6, 1)) ELSE '' END) END)" ;
+	d2rq:limit $limit ;d2rq:limitInverse $limitInverse ;
+	.
+#   - pismeno
+map:TrestnyCin-pravniKvalifikace-a a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:TrestnyCin ;
+	d2rq:property crime-prop:pravniKvalifikace ;
+	d2rq:uriSqlExpression "CONCAT('http://linked.opendata.cz/resource/legislation/cz/act/', CASE WHEN ks_zapistc.t22_dat < '2010-01-01' THEN '1961/140' ELSE '2009/40' END, '/', mid(ks_zapistc.t19_para, 1, 3), CASE WHEN mid(ks_zapistc.t19_para, 4, 1) <> '0' THEN mid(ks_zapistc.t19_para, 4, 1) ELSE '' END, CASE WHEN mid(ks_zapistc.t19_para, 5, 1) = '0' THEN '' ELSE CONCAT('/', mid(ks_zapistc.t19_para, 5, 1), CASE WHEN mid(ks_zapistc.t19_para, 6, 1) <> '0' THEN CONCAT('/', mid(ks_zapistc.t19_para, 6, 1)) ELSE '' END) END)" ;
+	d2rq:limit $limit ;d2rq:limitInverse $limitInverse ;
+	.
+
+map:TrestnyCin-pravniKvalifikace-b a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:TrestnyCin ;
+	d2rq:property crime-prop:pravniKvalifikace ;
+	d2rq:uriSqlExpression "CONCAT('http://linked.opendata.cz/resource/legislation/cz/act/', CASE WHEN ks_zapistc.t22_dat < '2010-01-01' THEN '1961/140' ELSE '2009/40' END, '/', mid(ks_zapistc.t19_para, 1, 3), CASE WHEN mid(ks_zapistc.t19_para, 4, 1) <> '0' THEN mid(ks_zapistc.t19_para, 4, 1) ELSE '' END, CASE WHEN mid(ks_zapistc.t19_para, 7, 1) = '0' THEN '' ELSE CONCAT('/', mid(ks_zapistc.t19_para, 7, 1), CASE WHEN mid(ks_zapistc.t19_para, 8, 1) <> '0' THEN CONCAT('/', mid(ks_zapistc.t19_para, 8, 1)) ELSE '' END) END)" ;
+	d2rq:limit $limit ;d2rq:limitInverse $limitInverse ;
+	.
+map:TrestnyCin-pravniKvalifikace-c a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:TrestnyCin ;
+	d2rq:property crime-prop:pravniKvalifikace ;
+	d2rq:uriSqlExpression "CONCAT('http://linked.opendata.cz/resource/legislation/cz/act/', CASE WHEN ks_zapistc.t22_dat < '2010-01-01' THEN '1961/140' ELSE '2009/40' END, '/', mid(ks_zapistc.t19_para, 1, 3), CASE WHEN mid(ks_zapistc.t19_para, 4, 1) <> '0' THEN mid(ks_zapistc.t19_para, 4, 1) ELSE '' END, CASE WHEN mid(ks_zapistc.t19_para, 9, 1) = '0' THEN '' ELSE CONCAT('/', mid(ks_zapistc.t19_para, 9, 1), CASE WHEN mid(ks_zapistc.t19_para, 10, 1) <> '0' THEN CONCAT('/', mid(ks_zapistc.t19_para, 10, 1)) ELSE '' END) END)" ;
+	d2rq:limit $limit ;d2rq:limitInverse $limitInverse ;
+	.
+map:TrestnyCin-pravniKvalifikace-d a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:TrestnyCin ;
+	d2rq:property crime-prop:pravniKvalifikace ;
+	d2rq:uriSqlExpression "CONCAT('http://linked.opendata.cz/resource/legislation/cz/act/', CASE WHEN ks_zapistc.t22_dat < '2010-01-01' THEN '1961/140' ELSE '2009/40' END, '/', mid(ks_zapistc.t19_para, 1, 3), CASE WHEN mid(ks_zapistc.t19_para, 4, 1) <> '0' THEN mid(ks_zapistc.t19_para, 4, 1) ELSE '' END, CASE WHEN mid(ks_zapistc.t19_para, 11, 1) = '0' THEN '' ELSE CONCAT('/', mid(ks_zapistc.t19_para, 11, 1), CASE WHEN mid(ks_zapistc.t19_para, 12, 1) <> '0' THEN CONCAT('/', mid(ks_zapistc.t19_para, 12, 1)) ELSE '' END) END)" ;
+	d2rq:limit $limit ;d2rq:limitInverse $limitInverse ;
+	.
+map:TrestnyCin-pravniKvalifikace-e a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:TrestnyCin ;
+	d2rq:property crime-prop:pravniKvalifikace ;
+	d2rq:uriSqlExpression "CONCAT('http://linked.opendata.cz/resource/legislation/cz/act/', CASE WHEN ks_zapistc.t22_dat < '2010-01-01' THEN '1961/140' ELSE '2009/40' END, '/', mid(ks_zapistc.t19_para, 1, 3), CASE WHEN mid(ks_zapistc.t19_para, 4, 1) <> '0' THEN mid(ks_zapistc.t19_para, 4, 1) ELSE '' END, CASE WHEN mid(ks_zapistc.t19_para, 13, 1) = '0' THEN '' ELSE CONCAT('/', mid(ks_zapistc.t19_para, 13, 1), CASE WHEN mid(ks_zapistc.t19_para, 14, 1) <> '0' THEN CONCAT('/', mid(ks_zapistc.t19_para, 14, 1)) ELSE '' END) END)" ;
+	d2rq:limit $limit ;d2rq:limitInverse $limitInverse ;
+	.
+map:TrestnyCin-pravniKvalifikace-f a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:TrestnyCin ;
+	d2rq:property crime-prop:pravniKvalifikace ;
+	d2rq:uriSqlExpression "CONCAT('http://linked.opendata.cz/resource/legislation/cz/act/', CASE WHEN ks_zapistc.t22_dat < '2010-01-01' THEN '1961/140' ELSE '2009/40' END, '/', mid(ks_zapistc.t19_para, 1, 3), CASE WHEN mid(ks_zapistc.t19_para, 4, 1) <> '0' THEN mid(ks_zapistc.t19_para, 4, 1) ELSE '' END, CASE WHEN mid(ks_zapistc.t19_para, 15, 1) = '0' THEN '' ELSE CONCAT('/', mid(ks_zapistc.t19_para, 15, 1), CASE WHEN mid(ks_zapistc.t19_para, 16, 1) <> '0' THEN CONCAT('/', mid(ks_zapistc.t19_para, 16, 1)) ELSE '' END) END)" ;
+	d2rq:limit $limit ;d2rq:limitInverse $limitInverse ;
+	.
+
+# Pravni kvalifikace trestneho cinu - soubeh
+map:TrestnyCin-pravniKvalifikace-soubeh-a a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:TrestnyCin ;
+	d2rq:property crime-prop:pravniKvalifikaceSoubehu ;
+	d2rq:uriSqlExpression "CONCAT('http://linked.opendata.cz/resource/legislation/cz/act/', CASE WHEN ks_zapistc.t22_dat < '2010-01-01' THEN '1961/140' ELSE '2009/40' END, '/', mid(ks_zapistc.t20a_par, 1, 3), CASE WHEN mid(ks_zapistc.t20a_par, 4, 1) <> '0' THEN mid(ks_zapistc.t20a_par, 4, 1) ELSE '' END, CASE WHEN mid(ks_zapistc.t20a_par, 5, 1) = '0' THEN '' ELSE CONCAT('/', mid(ks_zapistc.t20a_par, 5, 1), CASE WHEN mid(ks_zapistc.t20a_par, 6, 1) <> '0' THEN CONCAT('/', mid(ks_zapistc.t20a_par, 6, 1)) ELSE '' END) END)" ;
+	
+	d2rq:limit $limit ;d2rq:limitInverse $limitInverse ;
+	.
+map:TrestnyCin-pravniKvalifikace-soubeh-b a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:TrestnyCin ;
+	d2rq:property crime-prop:pravniKvalifikaceSoubehu ;
+	d2rq:uriSqlExpression "CONCAT('http://linked.opendata.cz/resource/legislation/cz/act/', CASE WHEN ks_zapistc.t22_dat < '2010-01-01' THEN '1961/140' ELSE '2009/40' END, '/', mid(ks_zapistc.t20b_par, 1, 3), CASE WHEN mid(ks_zapistc.t20b_par, 4, 1) <> '0' THEN mid(ks_zapistc.t20b_par, 4, 1) ELSE '' END, CASE WHEN mid(ks_zapistc.t20b_par, 5, 1) = '0' THEN '' ELSE CONCAT('/', mid(ks_zapistc.t20b_par, 5, 1), CASE WHEN mid(ks_zapistc.t20b_par, 6, 1) <> '0' THEN CONCAT('/', mid(ks_zapistc.t20b_par, 6, 1)) ELSE '' END) END)" ;
+	d2rq:limit $limit ;d2rq:limitInverse $limitInverse ;
+	.
+map:TrestnyCin-pravniKvalifikace-soubeh-c a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:TrestnyCin ;
+	d2rq:property crime-prop:pravniKvalifikaceSoubehu ;
+	d2rq:uriSqlExpression "CONCAT('http://linked.opendata.cz/resource/legislation/cz/act/', CASE WHEN ks_zapistc.t22_dat < '2010-01-01' THEN '1961/140' ELSE '2009/40' END, '/', mid(ks_zapistc.t20c_par, 1, 3), CASE WHEN mid(ks_zapistc.t20c_par, 4, 1) <> '0' THEN mid(ks_zapistc.t20c_par, 4, 1) ELSE '' END, CASE WHEN mid(ks_zapistc.t20c_par, 5, 1) = '0' THEN '' ELSE CONCAT('/', mid(ks_zapistc.t20c_par, 5, 1), CASE WHEN mid(ks_zapistc.t20c_par, 6, 1) <> '0' THEN CONCAT('/', mid(ks_zapistc.t20c_par, 6, 1)) ELSE '' END) END)" ;
+	
+	d2rq:limit $limit ;d2rq:limitInverse $limitInverse ;
+	.
+map:TrestnyCin-pravniKvalifikace-soubeh-d a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:TrestnyCin ;
+	d2rq:property crime-prop:pravniKvalifikaceSoubehu ;
+	d2rq:uriSqlExpression "CONCAT('http://linked.opendata.cz/resource/legislation/cz/act/', CASE WHEN ks_zapistc.t22_dat < '2010-01-01' THEN '1961/140' ELSE '2009/40' END, '/', mid(ks_zapistc.t20d_par, 1, 3), CASE WHEN mid(ks_zapistc.t20d_par, 4, 1) <> '0' THEN mid(ks_zapistc.t20d_par, 4, 1) ELSE '' END, CASE WHEN mid(ks_zapistc.t20d_par, 5, 1) = '0' THEN '' ELSE CONCAT('/', mid(ks_zapistc.t20d_par, 5, 1), CASE WHEN mid(ks_zapistc.t20d_par, 6, 1) <> '0' THEN CONCAT('/', mid(ks_zapistc.t20d_par, 6, 1)) ELSE '' END) END)" ;
+	
+	d2rq:limit $limit ;d2rq:limitInverse $limitInverse ;
+	.
+
+# ------------------------------ Předměty zájmu ---------------------------------------
+# Předmět zájmu důležitosti 1
+map:PredmetZajmu-1 a d2rq:ClassMap;
+  d2rq:dataStorage map:crimestatistics ;
+  d2rq:class crime-class:PredmetZajmu ;
+  d2rq:uriPattern "http://linked.opendata.cz/resource/domain/crimestatistics/dataset/trestneCiny/$year/@@ks_zapistc.t01_kr@@/@@ks_zapistc.t01_ok@@/@@ks_zapistc.t01_ut@@/@@ks_zapistc.t01_cvs@@/@@ks_zapistc.t01_rok@@/@@ks_zapistc.t01_pc1@@/predmetZajmu/1" ;
+  d2rq:condition "ks_zapistc.t12_pr1 is not null and ks_zapistc.t12_pr1 <> '' and 11 <= CONVERT(ks_zapistc.t12_pr1, unsigned integer) and CONVERT(ks_zapistc.t12_pr1, unsigned integer) <= 557" ;
+  d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+  .
+
+map:PredmetZajmu-1-predmetZajmu a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:PredmetZajmu-1 ;
+	d2rq:property crime-prop:predmetZajmu ;
+	d2rq:uriPattern "http://linked.opendata.cz/ontology/crimestatistics/code/predmetZajmu#@@ks_zapistc.t12_pr1@@" ;
+	d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+	.
+
+map:PredmetZajmu-1-stupenDulezitosti a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:PredmetZajmu-1 ;
+	d2rq:property crime-prop:stupenDulezitosti ;
+	d2rq:constantValue 1 ;
+	d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+	.
+
+map:TrestnyCin-predmetZajmuPachatele-1 a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:TrestnyCin ;
+	d2rq:property crime-prop:predmetZajmuPachatele ;
+	d2rq:refersToClassMap map:PredmetZajmu-1 ;
+	d2rq:condition "ks_zapistc.t12_pr1 is not null and ks_zapistc.t12_pr1 <> '' and 11 <= CONVERT(ks_zapistc.t12_pr1, unsigned integer) and CONVERT(ks_zapistc.t12_pr1, unsigned integer) <= 557" ;
+	d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+	.
+# Předmět zájmu důležitosti 2
+map:PredmetZajmu-2 a d2rq:ClassMap;
+    d2rq:dataStorage map:crimestatistics ;
+    d2rq:class crime-class:PredmetZajmu ;
+    d2rq:uriPattern "http://linked.opendata.cz/resource/domain/crimestatistics/dataset/trestneCiny/$year/@@ks_zapistc.t01_kr@@/@@ks_zapistc.t01_ok@@/@@ks_zapistc.t01_ut@@/@@ks_zapistc.t01_cvs@@/@@ks_zapistc.t01_rok@@/@@ks_zapistc.t01_pc1@@/predmetZajmu/2" ;
+    d2rq:condition "ks_zapistc.t12_pr2 is not null and ks_zapistc.t12_pr2 <> '' and 11 <= CONVERT(ks_zapistc.t12_pr2, unsigned integer) and CONVERT(ks_zapistc.t12_pr2, unsigned integer) <= 557" ;
+    d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+    .
+
+map:PredmetZajmu-2-predmetZajmu a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:PredmetZajmu-2 ;
+	d2rq:property crime-prop:predmetZajmu ;
+	d2rq:uriPattern "http://linked.opendata.cz/ontology/crimestatistics/code/predmetZajmu#@@ks_zapistc.t12_pr2@@" ;
+	d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+	.
+
+map:PredmetZajmu-2-stupenDulezitosti a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:PredmetZajmu-2 ;
+	d2rq:property crime-prop:stupenDulezitosti ;
+	d2rq:constantValue 2 ;
+	d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+	.
+
+map:TrestnyCin-predmetZajmuPachatele-2 a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:TrestnyCin ;
+	d2rq:property crime-prop:predmetZajmuPachatele ;
+	d2rq:refersToClassMap map:PredmetZajmu-2 ;
+	d2rq:condition "ks_zapistc.t12_pr2 is not null and ks_zapistc.t12_pr2 <> '' and 11 <= CONVERT(ks_zapistc.t12_pr2, unsigned integer) and CONVERT(ks_zapistc.t12_pr2, unsigned integer) <= 557" ;
+	d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+	.
+# Předmět zájmu důležitosti 3
+map:PredmetZajmu-3 a d2rq:ClassMap;
+    d2rq:dataStorage map:crimestatistics ;
+    d2rq:class crime-class:PredmetZajmu ;
+    d2rq:uriPattern "http://linked.opendata.cz/resource/domain/crimestatistics/dataset/trestneCiny/$year/@@ks_zapistc.t01_kr@@/@@ks_zapistc.t01_ok@@/@@ks_zapistc.t01_ut@@/@@ks_zapistc.t01_cvs@@/@@ks_zapistc.t01_rok@@/@@ks_zapistc.t01_pc1@@/predmetZajmu/3" ;
+    d2rq:condition "ks_zapistc.t12_pr3 is not null and ks_zapistc.t12_pr3 <> '' and 11 <= CONVERT(ks_zapistc.t12_pr3, unsigned integer) and CONVERT(ks_zapistc.t12_pr3, unsigned integer) <= 557" ;
+    d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+    .
+
+map:PredmetZajmu-3-predmetZajmu a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:PredmetZajmu-3 ;
+	d2rq:property crime-prop:predmetZajmu ;
+	d2rq:uriPattern "http://linked.opendata.cz/ontology/crimestatistics/code/predmetZajmu#@@ks_zapistc.t12_pr3@@" ;
+	d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+	.
+
+map:PredmetZajmu-3-stupenDulezitosti a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:PredmetZajmu-3 ;
+	d2rq:property crime-prop:stupenDulezitosti ;
+	d2rq:constantValue 3 ;
+	d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+	.
+
+map:TrestnyCin-predmetZajmuPachatele-3 a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:TrestnyCin ;
+	d2rq:property crime-prop:predmetZajmuPachatele ;
+	d2rq:refersToClassMap map:PredmetZajmu-3 ;
+	d2rq:condition "ks_zapistc.t12_pr3 is not null and ks_zapistc.t12_pr3 <> '' and 11 <= CONVERT(ks_zapistc.t12_pr3, unsigned integer) and CONVERT(ks_zapistc.t12_pr3, unsigned integer) <= 557" ;
+	d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+	.
+
+# Předmět zájmu důležitosti 4
+map:PredmetZajmu-4 a d2rq:ClassMap;
+    d2rq:dataStorage map:crimestatistics ;
+    d2rq:class crime-class:PredmetZajmu ;
+    d2rq:uriPattern "http://linked.opendata.cz/resource/domain/crimestatistics/dataset/trestneCiny/$year/@@ks_zapistc.t01_kr@@/@@ks_zapistc.t01_ok@@/@@ks_zapistc.t01_ut@@/@@ks_zapistc.t01_cvs@@/@@ks_zapistc.t01_rok@@/@@ks_zapistc.t01_pc1@@/predmetZajmu/4" ;
+    d2rq:condition "ks_zapistc.t12_pr4 is not null and ks_zapistc.t12_pr4 <> '' and 11 <= CONVERT(ks_zapistc.t12_pr4, unsigned integer) and CONVERT(ks_zapistc.t12_pr4, unsigned integer) <= 557" ;
+    d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+    .
+
+map:PredmetZajmu-4-predmetZajmu a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:PredmetZajmu-4 ;
+	d2rq:property crime-prop:predmetZajmu ;
+	d2rq:uriPattern "http://linked.opendata.cz/ontology/crimestatistics/code/predmetZajmu#@@ks_zapistc.t12_pr4@@" ;
+	d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+	.
+
+map:PredmetZajmu-4-stupenDulezitosti a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:PredmetZajmu-4 ;
+	d2rq:property crime-prop:stupenDulezitosti ;
+	d2rq:constantValue 4 ;
+	d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+	.
+
+map:TrestnyCin-predmetZajmuPachatele-4 a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:TrestnyCin ;
+	d2rq:property crime-prop:predmetZajmuPachatele ;
+	d2rq:refersToClassMap map:PredmetZajmu-4 ;
+	d2rq:condition "ks_zapistc.t12_pr4 is not null and ks_zapistc.t12_pr4 <> '' and 11 <= CONVERT(ks_zapistc.t12_pr4, unsigned integer) and CONVERT(ks_zapistc.t12_pr4, unsigned integer) <= 557" ;
+	d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+	.
+
+# Předmět zájmu důležitosti 5
+map:PredmetZajmu-5 a d2rq:ClassMap;
+    d2rq:dataStorage map:crimestatistics ;
+    d2rq:class crime-class:PredmetZajmu ;
+    d2rq:uriPattern "http://linked.opendata.cz/resource/domain/crimestatistics/dataset/trestneCiny/$year/@@ks_zapistc.t01_kr@@/@@ks_zapistc.t01_ok@@/@@ks_zapistc.t01_ut@@/@@ks_zapistc.t01_cvs@@/@@ks_zapistc.t01_rok@@/@@ks_zapistc.t01_pc1@@/predmetZajmu/5" ;
+    d2rq:condition "ks_zapistc.t12_pr5 is not null and ks_zapistc.t12_pr5 <> '' and 11 <= CONVERT(ks_zapistc.t12_pr5, unsigned integer) and CONVERT(ks_zapistc.t12_pr5, unsigned integer) <= 557" ;
+    d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+    .
+
+map:PredmetZajmu-5-predmetZajmu a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:PredmetZajmu-5 ;
+	d2rq:property crime-prop:predmetZajmu ;
+	d2rq:uriPattern "http://linked.opendata.cz/ontology/crimestatistics/code/predmetZajmu#@@ks_zapistc.t12_pr5@@" ;
+	d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+	.
+
+map:PredmetZajmu-5-stupenDulezitosti a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:PredmetZajmu-5 ;
+	d2rq:property crime-prop:stupenDulezitosti ;
+	d2rq:constantValue 5 ;
+	d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+	.
+
+map:TrestnyCin-predmetZajmuPachatele-5 a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:TrestnyCin ;
+	d2rq:property crime-prop:predmetZajmuPachatele ;
+	d2rq:refersToClassMap map:PredmetZajmu-5 ;
+	d2rq:condition "ks_zapistc.t12_pr5 is not null and ks_zapistc.t12_pr5 <> '' and 11 <= CONVERT(ks_zapistc.t12_pr5, unsigned integer) and CONVERT(ks_zapistc.t12_pr5, unsigned integer) <= 557" ;
+	d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+	.
+
+# Předmět zájmu důležitosti 6
+map:PredmetZajmu-6 a d2rq:ClassMap;
+    d2rq:dataStorage map:crimestatistics ;
+    d2rq:class crime-class:PredmetZajmu ;
+    d2rq:uriPattern "http://linked.opendata.cz/resource/domain/crimestatistics/dataset/trestneCiny/predmetyZajmu/2008/@@ks_zapistc.t01_kr@@/@@ks_zapistc.t01_ok@@/@@ks_zapistc.t01_ut@@/@@ks_zapistc.t01_cvs@@/@@ks_zapistc.t01_rok@@/@@ks_zapistc.t01_pc1@@/6" ;
+    d2rq:condition "ks_zapistc.t12_pr6 is not null and ks_zapistc.t12_pr6 <> '' and 11 <= CONVERT(ks_zapistc.t12_pr6, unsigned integer) and CONVERT(ks_zapistc.t12_pr6, unsigned integer) <= 557" ;
+    d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+    .
+
+map:PredmetZajmu-6-predmetZajmu a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:PredmetZajmu-6 ;
+	d2rq:property crime-prop:predmetZajmu ;
+	d2rq:uriPattern "http://linked.opendata.cz/ontology/crimestatistics/code/predmetZajmu#@@ks_zapistc.t12_pr6@@" ;
+	d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+	.
+
+map:PredmetZajmu-6-stupenDulezitosti a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:PredmetZajmu-6 ;
+	d2rq:property crime-prop:stupenDulezitosti ;
+	d2rq:constantValue 6 ;
+	d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+	.
+
+map:TrestnyCin-predmetZajmuPachatele-6 a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:TrestnyCin ;
+	d2rq:property crime-prop:predmetZajmuPachatele ;
+	d2rq:refersToClassMap map:PredmetZajmu-6 ;
+	d2rq:condition "ks_zapistc.t12_pr6 is not null and ks_zapistc.t12_pr6 <> '' and 11 <= CONVERT(ks_zapistc.t12_pr6, unsigned integer) and CONVERT(ks_zapistc.t12_pr6, unsigned integer) <= 557" ;
+	d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+	.
+
+# Vztah oběti k pachateli důležitosti 1
+map:VztahObetiKPachateli-1 a d2rq:ClassMap;
+    d2rq:dataStorage map:crimestatistics ;
+    d2rq:class crime-class:VztahObetiKPachateli ;
+    d2rq:uriPattern "http://linked.opendata.cz/resource/domain/crimestatistics/dataset/trestneCiny/vztahyObetiKPachateli/2008/@@ks_zapistc.t01_kr@@/@@ks_zapistc.t01_ok@@/@@ks_zapistc.t01_ut@@/@@ks_zapistc.t01_cvs@@/@@ks_zapistc.t01_rok@@/@@ks_zapistc.t01_pc1@@/1" ;
+    d2rq:condition "ks_zapistc.t12_pr1 is not null and ks_zapistc.t12_pr1 <> '' and 601 <= CONVERT(ks_zapistc.t12_pr1, unsigned integer) and CONVERT(ks_zapistc.t12_pr1, unsigned integer) <= 629" ;
+    d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+    .
+
+map:VztahObetiKPachateli-1-vztahObetiKPachateli a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:VztahObetiKPachateli-1 ;
+	d2rq:property crime-prop:vztahObetiKPachateli ;
+	d2rq:uriPattern "http://linked.opendata.cz/ontology/crimestatistics/code/vztahObetiKPachateli#@@ks_zapistc.t12_pr1@@" ;
+	d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+	.
+
+map:VztahObetiKPachateli-1-stupenDulezitosti a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:VztahObetiKPachateli-1 ;
+	d2rq:property crime-prop:stupenDulezitosti ;
+	d2rq:constantValue 1 ;
+	d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+	.
+
+map:TrestnyCin-vztahObetiKPachateli-1 a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:TrestnyCin ;
+	d2rq:property crime-prop:vztahObetiKPachateli ;
+	d2rq:refersToClassMap map:VztahObetiKPachateli-1 ;
+	d2rq:condition "ks_zapistc.t12_pr1 is not null and ks_zapistc.t12_pr1 <> '' and 601 <= CONVERT(ks_zapistc.t12_pr1, unsigned integer) and CONVERT(ks_zapistc.t12_pr1, unsigned integer) <= 629" ;
+	d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+	.
+# Vztah oběti k pachateli důležitosti 2
+map:VztahObetiKPachateli-2 a d2rq:ClassMap;
+    d2rq:dataStorage map:crimestatistics ;
+    d2rq:class crime-class:VztahObetiKPachateli ;
+    d2rq:uriPattern "http://linked.opendata.cz/resource/domain/crimestatistics/dataset/trestneCiny/vztahyObetiKPachateli/2008/@@ks_zapistc.t01_kr@@/@@ks_zapistc.t01_ok@@/@@ks_zapistc.t01_ut@@/@@ks_zapistc.t01_cvs@@/@@ks_zapistc.t01_rok@@/@@ks_zapistc.t01_pc1@@/2" ;
+    d2rq:condition "ks_zapistc.t12_pr2 is not null and ks_zapistc.t12_pr2 <> '' and 601 <= CONVERT(ks_zapistc.t12_pr2, unsigned integer) and CONVERT(ks_zapistc.t12_pr2, unsigned integer) <= 629" ;
+    d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+    .
+
+map:VztahObetiKPachateli-2-vztahObetiKPachateli a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:VztahObetiKPachateli-2 ;
+	d2rq:property crime-prop:vztahObetiKPachateli ;
+	d2rq:uriPattern "http://linked.opendata.cz/ontology/crimestatistics/code/vztahObetiKPachateli#@@ks_zapistc.t12_pr2@@" ;
+	d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+	.
+
+map:VztahObetiKPachateli-2-stupenDulezitosti a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:VztahObetiKPachateli-2 ;
+	d2rq:property crime-prop:stupenDulezitosti ;
+	d2rq:constantValue 2 ;
+	d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+	.
+
+map:TrestnyCin-vztahObetiKPachateli-2 a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:TrestnyCin ;
+	d2rq:property crime-prop:vztahObetiKPachateli ;
+	d2rq:refersToClassMap map:VztahObetiKPachateli-2 ;
+	d2rq:condition "ks_zapistc.t12_pr2 is not null and ks_zapistc.t12_pr2 <> '' and 601 <= CONVERT(ks_zapistc.t12_pr2, unsigned integer) and CONVERT(ks_zapistc.t12_pr2, unsigned integer) <= 629" ;
+	d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+	.
+# Vztah oběti k pachateli důležitosti 3
+map:VztahObetiKPachateli-3 a d2rq:ClassMap;
+    d2rq:dataStorage map:crimestatistics ;
+    d2rq:class crime-class:VztahObetiKPachateli ;
+    d2rq:uriPattern "http://linked.opendata.cz/resource/domain/crimestatistics/dataset/trestneCiny/vztahyObetiKPachateli/2008/@@ks_zapistc.t01_kr@@/@@ks_zapistc.t01_ok@@/@@ks_zapistc.t01_ut@@/@@ks_zapistc.t01_cvs@@/@@ks_zapistc.t01_rok@@/@@ks_zapistc.t01_pc1@@/3" ;
+    d2rq:condition "ks_zapistc.t12_pr3 is not null and ks_zapistc.t12_pr3 <> '' and 601 <= CONVERT(ks_zapistc.t12_pr3, unsigned integer) and CONVERT(ks_zapistc.t12_pr3, unsigned integer) <= 629" ;
+    d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+    .
+
+map:VztahObetiKPachateli-3-vztahObetiKPachateli a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:VztahObetiKPachateli-3 ;
+	d2rq:property crime-prop:vztahObetiKPachateli ;
+	d2rq:uriPattern "http://linked.opendata.cz/ontology/crimestatistics/code/vztahObetiKPachateli#@@ks_zapistc.t12_pr3@@" ;
+	d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+	.
+
+map:VztahObetiKPachateli-3-stupenDulezitosti a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:VztahObetiKPachateli-3 ;
+	d2rq:property crime-prop:stupenDulezitosti ;
+	d2rq:constantValue 3 ;
+	d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+	.
+
+map:TrestnyCin-vztahObetiKPachateli-3 a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:TrestnyCin ;
+	d2rq:property crime-prop:vztahObetiKPachateli ;
+	d2rq:refersToClassMap map:VztahObetiKPachateli-3 ;
+	d2rq:condition "ks_zapistc.t12_pr3 is not null and ks_zapistc.t12_pr3 <> '' and 601 <= CONVERT(ks_zapistc.t12_pr3, unsigned integer) and CONVERT(ks_zapistc.t12_pr3, unsigned integer) <= 629" ;
+	d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+	.
+
+# Vztah oběti k pachateli důležitosti 4
+map:VztahObetiKPachateli-4 a d2rq:ClassMap;
+    d2rq:dataStorage map:crimestatistics ;
+    d2rq:class crime-class:VztahObetiKPachateli ;
+    d2rq:uriPattern "http://linked.opendata.cz/resource/domain/crimestatistics/dataset/trestneCiny/vztahyObetiKPachateli/2008/@@ks_zapistc.t01_kr@@/@@ks_zapistc.t01_ok@@/@@ks_zapistc.t01_ut@@/@@ks_zapistc.t01_cvs@@/@@ks_zapistc.t01_rok@@/@@ks_zapistc.t01_pc1@@/4" ;
+    d2rq:condition "ks_zapistc.t12_pr4 is not null and ks_zapistc.t12_pr4 <> '' and 601 <= CONVERT(ks_zapistc.t12_pr4, unsigned integer) and CONVERT(ks_zapistc.t12_pr4, unsigned integer) <= 629" ;
+    d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+    .
+
+map:VztahObetiKPachateli-4-vztahObetiKPachateli a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:VztahObetiKPachateli-4 ;
+	d2rq:property crime-prop:vztahObetiKPachateli ;
+	d2rq:uriPattern "http://linked.opendata.cz/ontology/crimestatistics/code/vztahObetiKPachateli#@@ks_zapistc.t12_pr4@@" ;
+	d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+	.
+
+map:VztahObetiKPachateli-4-stupenDulezitosti a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:VztahObetiKPachateli-4 ;
+	d2rq:property crime-prop:stupenDulezitosti ;
+	d2rq:constantValue 4 ;
+	d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+	.
+
+map:TrestnyCin-vztahObetiKPachateli-4 a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:TrestnyCin ;
+	d2rq:property crime-prop:vztahObetiKPachateli ;
+	d2rq:refersToClassMap map:VztahObetiKPachateli-4 ;
+	d2rq:condition "ks_zapistc.t12_pr4 is not null and ks_zapistc.t12_pr4 <> '' and 601 <= CONVERT(ks_zapistc.t12_pr4, unsigned integer) and CONVERT(ks_zapistc.t12_pr4, unsigned integer) <= 629" ;
+	d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+	.
+
+# Vztah oběti k pachateli důležitosti 5
+map:VztahObetiKPachateli-5 a d2rq:ClassMap;
+    d2rq:dataStorage map:crimestatistics ;
+    d2rq:class crime-class:VztahObetiKPachateli ;
+    d2rq:uriPattern "http://linked.opendata.cz/resource/domain/crimestatistics/dataset/trestneCiny/vztahyObetiKPachateli/2008/@@ks_zapistc.t01_kr@@/@@ks_zapistc.t01_ok@@/@@ks_zapistc.t01_ut@@/@@ks_zapistc.t01_cvs@@/@@ks_zapistc.t01_rok@@/@@ks_zapistc.t01_pc1@@/5" ;
+    d2rq:condition "ks_zapistc.t12_pr5 is not null and ks_zapistc.t12_pr5 <> '' and 601 <= CONVERT(ks_zapistc.t12_pr5, unsigned integer) and CONVERT(ks_zapistc.t12_pr5, unsigned integer) <= 629" ;
+    d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+    .
+
+map:VztahObetiKPachateli-5-vztahObetiKPachateli a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:VztahObetiKPachateli-5 ;
+	d2rq:property crime-prop:vztahObetiKPachateli ;
+	d2rq:uriPattern "http://linked.opendata.cz/ontology/crimestatistics/code/vztahObetiKPachateli#@@ks_zapistc.t12_pr5@@" ;
+	d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+	.
+
+map:VztahObetiKPachateli-5-stupenDulezitosti a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:VztahObetiKPachateli-5 ;
+	d2rq:property crime-prop:stupenDulezitosti ;
+	d2rq:constantValue 5 ;
+	d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+	.
+
+map:TrestnyCin-vztahObetiKPachateli-5 a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:TrestnyCin ;
+	d2rq:property crime-prop:vztahObetiKPachateli ;
+	d2rq:refersToClassMap map:VztahObetiKPachateli-5 ;
+	d2rq:condition "ks_zapistc.t12_pr5 is not null and ks_zapistc.t12_pr5 <> '' and 601 <= CONVERT(ks_zapistc.t12_pr5, unsigned integer) and CONVERT(ks_zapistc.t12_pr5, unsigned integer) <= 629" ;
+	d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+	.
+
+# Vztah oběti k pachateli důležitosti 6
+map:VztahObetiKPachateli-6 a d2rq:ClassMap;
+    d2rq:dataStorage map:crimestatistics ;
+    d2rq:class crime-class:VztahObetiKPachateli ;
+    d2rq:uriPattern "http://linked.opendata.cz/resource/domain/crimestatistics/dataset/trestneCiny/vztahyObetiKPachateli/2008/@@ks_zapistc.t01_kr@@/@@ks_zapistc.t01_ok@@/@@ks_zapistc.t01_ut@@/@@ks_zapistc.t01_cvs@@/@@ks_zapistc.t01_rok@@/@@ks_zapistc.t01_pc1@@/6" ;
+    d2rq:condition "ks_zapistc.t12_pr6 is not null and ks_zapistc.t12_pr6 <> '' and 601 <= CONVERT(ks_zapistc.t12_pr6, unsigned integer) and CONVERT(ks_zapistc.t12_pr6, unsigned integer) <= 629" ;
+    d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+    .
+
+map:VztahObetiKPachateli-6-vztahObetiKPachateli a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:VztahObetiKPachateli-6 ;
+	d2rq:property crime-prop:vztahObetiKPachateli ;
+	d2rq:uriPattern "http://linked.opendata.cz/ontology/crimestatistics/code/vztahObetiKPachateli#@@ks_zapistc.t12_pr6@@" ;
+	d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+	.
+
+map:VztahObetiKPachateli-6-stupenDulezitosti a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:VztahObetiKPachateli-6 ;
+	d2rq:property crime-prop:stupenDulezitosti ;
+	d2rq:constantValue 6 ;
+	d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+	.
+
+map:TrestnyCin-vztahObetiKPachateli-6 a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:TrestnyCin ;
+	d2rq:property crime-prop:vztahObetiKPachateli ;
+	d2rq:refersToClassMap map:VztahObetiKPachateli-6 ;
+	d2rq:condition "ks_zapistc.t12_pr6 is not null and ks_zapistc.t12_pr6 <> '' and 601 <= CONVERT(ks_zapistc.t12_pr6, unsigned integer) and CONVERT(ks_zapistc.t12_pr6, unsigned integer) <= 629" ;
+	d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+	.
+
+# -------------------------------- Objekty napadení extremismem --------------------------------------
+
+# Objekt napadený extremismem důležitosti 1
+map:ObjektNapadenyExtremismem-1 a d2rq:ClassMap;
+    d2rq:dataStorage map:crimestatistics ;
+    d2rq:class crime-class:ObjektNapadenyExtremismem ;
+    d2rq:uriPattern "http://linked.opendata.cz/resource/domain/crimestatistics/dataset/trestneCiny/objektyNapadeneExtremismem/2008/@@ks_zapistc.t01_kr@@/@@ks_zapistc.t01_ok@@/@@ks_zapistc.t01_ut@@/@@ks_zapistc.t01_cvs@@/@@ks_zapistc.t01_rok@@/@@ks_zapistc.t01_pc1@@/1" ;
+    d2rq:condition "ks_zapistc.t12_pr1 is not null and ks_zapistc.t12_pr1 <> '' and 651 <= CONVERT(ks_zapistc.t12_pr1, unsigned integer) and CONVERT(ks_zapistc.t12_pr1, unsigned integer) <= 694" ;
+    d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+    .
+
+map:ObjektNapadenyExtremismem-1-objektNapadenyExtremismem a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:ObjektNapadenyExtremismem-1 ;
+	d2rq:property crime-prop:objektNapadenyExtremismem ;
+	d2rq:uriPattern "http://linked.opendata.cz/ontology/crimestatistics/code/objektNapadenyExtremismem#@@ks_zapistc.t12_pr1@@" ;
+	d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+	.
+
+map:ObjektNapadenyExtremismem-1-stupenDulezitosti a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:ObjektNapadenyExtremismem-1 ;
+	d2rq:property crime-prop:stupenDulezitosti ;
+	d2rq:constantValue 1 ;
+	d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+	.
+
+map:TrestnyCin-objektNapadenyExtremismem-1 a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:TrestnyCin ;
+	d2rq:property crime-prop:objektNapadenyExtremismem ;
+	d2rq:refersToClassMap map:ObjektNapadenyExtremismem-1 ;
+	d2rq:condition "ks_zapistc.t12_pr1 is not null and ks_zapistc.t12_pr1 <> '' and 651 <= CONVERT(ks_zapistc.t12_pr1, unsigned integer) and CONVERT(ks_zapistc.t12_pr1, unsigned integer) <= 694" ;
+	d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+	.
+# Objekt napadený extremismem důležitosti 2
+map:ObjektNapadenyExtremismem-2 a d2rq:ClassMap;
+    d2rq:dataStorage map:crimestatistics ;
+    d2rq:class crime-class:ObjektNapadenyExtremismem ;
+    d2rq:uriPattern "http://linked.opendata.cz/resource/domain/crimestatistics/dataset/trestneCiny/objektyNapadeneExtremismem/2008/@@ks_zapistc.t01_kr@@/@@ks_zapistc.t01_ok@@/@@ks_zapistc.t01_ut@@/@@ks_zapistc.t01_cvs@@/@@ks_zapistc.t01_rok@@/@@ks_zapistc.t01_pc1@@/2" ;
+    d2rq:condition "ks_zapistc.t12_pr2 is not null and ks_zapistc.t12_pr2 <> '' and 651 <= CONVERT(ks_zapistc.t12_pr2, unsigned integer) and CONVERT(ks_zapistc.t12_pr2, unsigned integer) <= 694" ;
+    d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+    .
+
+map:ObjektNapadenyExtremismem-2-objektNapadenyExtremismem a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:ObjektNapadenyExtremismem-2 ;
+	d2rq:property crime-prop:objektNapadenyExtremismem ;
+	d2rq:uriPattern "http://linked.opendata.cz/ontology/crimestatistics/code/objektNapadenyExtremismem#@@ks_zapistc.t12_pr2@@" ;
+	d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+	.
+
+map:ObjektNapadenyExtremismem-2-stupenDulezitosti a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:ObjektNapadenyExtremismem-2 ;
+	d2rq:property crime-prop:stupenDulezitosti ;
+	d2rq:constantValue 2 ;
+	d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+	.
+
+map:TrestnyCin-objektNapadenyExtremismem-2 a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:TrestnyCin ;
+	d2rq:property crime-prop:objektNapadenyExtremismem ;
+	d2rq:refersToClassMap map:ObjektNapadenyExtremismem-2 ;
+	d2rq:condition "ks_zapistc.t12_pr2 is not null and ks_zapistc.t12_pr2 <> '' and 651 <= CONVERT(ks_zapistc.t12_pr2, unsigned integer) and CONVERT(ks_zapistc.t12_pr2, unsigned integer) <= 694" ;
+	d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+	.
+# Objekt napadený extremismem důležitosti 3
+map:ObjektNapadenyExtremismem-3 a d2rq:ClassMap;
+    d2rq:dataStorage map:crimestatistics ;
+    d2rq:class crime-class:ObjektNapadenyExtremismem ;
+    d2rq:uriPattern "http://linked.opendata.cz/resource/domain/crimestatistics/dataset/trestneCiny/objektyNapadeneExtremismem/2008/@@ks_zapistc.t01_kr@@/@@ks_zapistc.t01_ok@@/@@ks_zapistc.t01_ut@@/@@ks_zapistc.t01_cvs@@/@@ks_zapistc.t01_rok@@/@@ks_zapistc.t01_pc1@@/3" ;
+    d2rq:condition "ks_zapistc.t12_pr3 is not null and ks_zapistc.t12_pr3 <> '' and 651 <= CONVERT(ks_zapistc.t12_pr3, unsigned integer) and CONVERT(ks_zapistc.t12_pr3, unsigned integer) <= 694" ;
+    d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+    .
+
+map:ObjektNapadenyExtremismem-3-objektNapadenyExtremismem a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:ObjektNapadenyExtremismem-3 ;
+	d2rq:property crime-prop:objektNapadenyExtremismem ;
+	d2rq:uriPattern "http://linked.opendata.cz/ontology/crimestatistics/code/objektNapadenyExtremismem#@@ks_zapistc.t12_pr3@@" ;
+	d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+	.
+
+map:ObjektNapadenyExtremismem-3-stupenDulezitosti a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:ObjektNapadenyExtremismem-3 ;
+	d2rq:property crime-prop:stupenDulezitosti ;
+	d2rq:constantValue 3 ;
+	d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+	.
+
+map:TrestnyCin-objektNapadenyExtremismem-3 a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:TrestnyCin ;
+	d2rq:property crime-prop:objektNapadenyExtremismem ;
+	d2rq:refersToClassMap map:ObjektNapadenyExtremismem-3 ;
+	d2rq:condition "ks_zapistc.t12_pr3 is not null and ks_zapistc.t12_pr3 <> '' and 651 <= CONVERT(ks_zapistc.t12_pr3, unsigned integer) and CONVERT(ks_zapistc.t12_pr3, unsigned integer) <= 694" ;
+	d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+	.
+
+# Objekt napadený extremismem důležitosti 4
+map:ObjektNapadenyExtremismem-4 a d2rq:ClassMap;
+    d2rq:dataStorage map:crimestatistics ;
+    d2rq:class crime-class:ObjektNapadenyExtremismem ;
+    d2rq:uriPattern "http://linked.opendata.cz/resource/domain/crimestatistics/dataset/trestneCiny/objektyNapadeneExtremismem/2008/@@ks_zapistc.t01_kr@@/@@ks_zapistc.t01_ok@@/@@ks_zapistc.t01_ut@@/@@ks_zapistc.t01_cvs@@/@@ks_zapistc.t01_rok@@/@@ks_zapistc.t01_pc1@@/4" ;
+    d2rq:condition "ks_zapistc.t12_pr4 is not null and ks_zapistc.t12_pr4 <> '' and 651 <= CONVERT(ks_zapistc.t12_pr4, unsigned integer) and CONVERT(ks_zapistc.t12_pr4, unsigned integer) <= 694" ;
+    d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+    .
+
+map:ObjektNapadenyExtremismem-4-objektNapadenyExtremismem a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:ObjektNapadenyExtremismem-4 ;
+	d2rq:property crime-prop:objektNapadenyExtremismem ;
+	d2rq:uriPattern "http://linked.opendata.cz/ontology/crimestatistics/code/objektNapadenyExtremismem#@@ks_zapistc.t12_pr4@@" ;
+	d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+	.
+
+map:ObjektNapadenyExtremismem-4-stupenDulezitosti a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:ObjektNapadenyExtremismem-4 ;
+	d2rq:property crime-prop:stupenDulezitosti ;
+	d2rq:constantValue 4 ;
+	d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+	.
+
+map:TrestnyCin-objektNapadenyExtremismem-4 a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:TrestnyCin ;
+	d2rq:property crime-prop:objektNapadenyExtremismem ;
+	d2rq:refersToClassMap map:ObjektNapadenyExtremismem-4 ;
+	d2rq:condition "ks_zapistc.t12_pr4 is not null and ks_zapistc.t12_pr4 <> '' and 651 <= CONVERT(ks_zapistc.t12_pr4, unsigned integer) and CONVERT(ks_zapistc.t12_pr4, unsigned integer) <= 694" ;
+	d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+	.
+
+# Objekt napadený extremismem důležitosti 5
+map:ObjektNapadenyExtremismem-5 a d2rq:ClassMap;
+    d2rq:dataStorage map:crimestatistics ;
+    d2rq:class crime-class:ObjektNapadenyExtremismem ;
+    d2rq:uriPattern "http://linked.opendata.cz/resource/domain/crimestatistics/dataset/trestneCiny/objektyNapadeneExtremismem/2008/@@ks_zapistc.t01_kr@@/@@ks_zapistc.t01_ok@@/@@ks_zapistc.t01_ut@@/@@ks_zapistc.t01_cvs@@/@@ks_zapistc.t01_rok@@/@@ks_zapistc.t01_pc1@@/5" ;
+    d2rq:condition "ks_zapistc.t12_pr5 is not null and ks_zapistc.t12_pr5 <> '' and 651 <= CONVERT(ks_zapistc.t12_pr5, unsigned integer) and CONVERT(ks_zapistc.t12_pr5, unsigned integer) <= 694" ;
+    d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+    .
+
+map:ObjektNapadenyExtremismem-5-objektNapadenyExtremismem a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:ObjektNapadenyExtremismem-5 ;
+	d2rq:property crime-prop:objektNapadenyExtremismem ;
+	d2rq:uriPattern "http://linked.opendata.cz/ontology/crimestatistics/code/objektNapadenyExtremismem#@@ks_zapistc.t12_pr5@@" ;
+	d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+	.
+
+map:ObjektNapadenyExtremismem-5-stupenDulezitosti a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:ObjektNapadenyExtremismem-5 ;
+	d2rq:property crime-prop:stupenDulezitosti ;
+	d2rq:constantValue 5 ;
+	d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+	.
+
+map:TrestnyCin-objektNapadenyExtremismem-5 a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:TrestnyCin ;
+	d2rq:property crime-prop:objektNapadenyExtremismem ;
+	d2rq:refersToClassMap map:ObjektNapadenyExtremismem-5 ;
+	d2rq:condition "ks_zapistc.t12_pr5 is not null and ks_zapistc.t12_pr5 <> '' and 651 <= CONVERT(ks_zapistc.t12_pr5, unsigned integer) and CONVERT(ks_zapistc.t12_pr5, unsigned integer) <= 694" ;
+	d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+	.
+
+# Objekt napadený extremismem důležitosti 6
+map:ObjektNapadenyExtremismem-6 a d2rq:ClassMap;
+    d2rq:dataStorage map:crimestatistics ;
+    d2rq:class crime-class:ObjektNapadenyExtremismem ;
+    d2rq:uriPattern "http://linked.opendata.cz/resource/domain/crimestatistics/dataset/trestneCiny/objektyNapadeneExtremismem/2008/@@ks_zapistc.t01_kr@@/@@ks_zapistc.t01_ok@@/@@ks_zapistc.t01_ut@@/@@ks_zapistc.t01_cvs@@/@@ks_zapistc.t01_rok@@/@@ks_zapistc.t01_pc1@@/6" ;
+    d2rq:condition "ks_zapistc.t12_pr6 is not null and ks_zapistc.t12_pr6 <> '' and 651 <= CONVERT(ks_zapistc.t12_pr6, unsigned integer) and CONVERT(ks_zapistc.t12_pr6, unsigned integer) <= 694" ;
+    d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+    .
+
+map:ObjektNapadenyExtremismem-6-objektNapadenyExtremismem a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:ObjektNapadenyExtremismem-6 ;
+	d2rq:property crime-prop:objektNapadenyExtremismem ;
+	d2rq:uriPattern "http://linked.opendata.cz/ontology/crimestatistics/code/objektNapadenyExtremismem#@@ks_zapistc.t12_pr6@@" ;
+	d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+	.
+
+map:ObjektNapadenyExtremismem-6-stupenDulezitosti a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:ObjektNapadenyExtremismem-6 ;
+	d2rq:property crime-prop:stupenDulezitosti ;
+	d2rq:constantValue 6 ;
+	d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+	.
+
+map:TrestnyCin-objektNapadenyExtremismem-6 a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:TrestnyCin ;
+	d2rq:property crime-prop:objektNapadenyExtremismem ;
+	d2rq:refersToClassMap map:ObjektNapadenyExtremismem-6 ;
+	d2rq:condition "ks_zapistc.t12_pr6 is not null and ks_zapistc.t12_pr6 <> '' and 651 <= CONVERT(ks_zapistc.t12_pr6, unsigned integer) and CONVERT(ks_zapistc.t12_pr6, unsigned integer) <= 694" ;
+	d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+	.
+
+# -------------------------------------------    
+# 2. dataset znamych pachatelu
+# -------------------------------------------
+map:ZnamyPachatel a d2rq:ClassMap;
+    d2rq:dataStorage map:crimestatistics ;
+    d2rq:class crime-class:ZnamyPachatel ;
+    d2rq:uriPattern "http://linked.opendata.cz/resource/domain/crimestatistics/dataset/znamiPachatele/$year/@@ks_zapispa.p01_kr@@/@@ks_zapispa.p01_ok@@/@@ks_zapispa.p01_ut@@/@@ks_zapispa.p01_cvs@@/@@ks_zapispa.p01_rok@@/@@ks_zapispa.p01_pc1@@/@@ks_zapispa.p01_pc2@@" ;
+    d2rq:join "ks_zapistc.id_tc = ks_zapisp28.ptr_tc" ;
+    d2rq:join "ks_zapispa.id_pa = ks_zapisp28.ptr_pa" ;
+    .
+
+# -----------------------------------------------
+# Property bridges pro dataset znamych pachatelu
+# -----------------------------------------------
+
+# Odkaz na spáchané trestné činy
+map:ZnamyPachatel-trestnyCin a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:ZnamyPachatel ;
+	d2rq:property crime-prop:trestnyCin ;
+	d2rq:refersToClassMap map:TrestnyCin ;
+	d2rq:join "ks_zapisp28.ptr_pa = ks_zapispa.id_pa" ;
+	d2rq:join "ks_zapistc.id_tc = ks_zapisp28.ptr_tc" ;
+    d2rq:limit $limit ; d2rq:limitInverse $limitInverse ;
+    .
+
+# Zpracujici utvar
+map:ZnamyPachatel-utvarZpracovaniZaznamu a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:ZnamyPachatel;
+	d2rq:property crime-prop:utvarZpracovaniZaznamu ;
+	d2rq:uriPattern "http://linked.opendata.cz/ontology/crimestatistics/code/utvar#@@ks_zapispa.p01_kr@@@@ks_zapispa.p01_ok@@@@ks_zapispa.p01_ut@@" ;
+	d2rq:condition "ks_zapispa.p01_ok not in('30', '40')" ;
+	d2rq:limit $limit ;
+	d2rq:limitInverse $limitInverse ;
+	.
+
+# Rok zpracovani zaznamu
+map:ZnamyPachatel-rokZpracovaniZaznamu a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:ZnamyPachatel;
+	d2rq:property crime-prop:rokZpracovaniZaznamu ;
+	d2rq:sqlExpression "date_format(str_to_date(concat(ks_zapispa.p01_rok, '-01-01'), '%y-%m-%d'), '%Y')" ;
+	d2rq:datatype xsd:gYear ;
+	d2rq:limit $limit ;
+	d2rq:limitInverse $limitInverse ;
+	.
+
+# Statni prislusnost pachatele
+map:ZnamyPachatel-statniPrislusnostPachatele a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:ZnamyPachatel;
+	d2rq:property crime-prop:statniPrislusnostPachatele ;
+	d2rq:uriPattern "http://linked.opendata.cz/ontology/crimestatistics/code/stat#@@ks_zapispa.p03_sta@@" ;
+	d2rq:limit $limit ;
+	d2rq:limitInverse $limitInverse ;
+	.
+
+# Takticka klasifikace pachatele-cizince
+map:ZnamyPachatel-taktickaKlasifikacePachateleCizince a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:ZnamyPachatel;
+	d2rq:property crime-prop:taktickaKlasifikacePachateleCizince ;
+	d2rq:uriPattern "http://linked.opendata.cz/ontology/crimestatistics/code/taktickaKlasifikacePachateleCizince#@@ks_zapispa.p04narod@@" ;
+	d2rq:condition "ks_zapispa.p04narod <> '0'" ;
+	d2rq:limit $limit ;
+	d2rq:limitInverse $limitInverse ;
+	.
+
+# Rodinny stav pachatele
+map:ZnamyPachatel-rodinnyStavPachatele a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:ZnamyPachatel;
+	d2rq:property crime-prop:rodinnyStavPachatele ;
+	d2rq:uriPattern "http://linked.opendata.cz/ontology/crimestatistics/code/rodinnyStav#@@ks_zapispa.p05_stav@@" ;
+	d2rq:limit $limit ;
+	d2rq:limitInverse $limitInverse ;
+	.
+
+# Vzdelani pachatele
+map:ZnamyPachatel-vzdelaniPachatele a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:ZnamyPachatel;
+	d2rq:property crime-prop:vzdelaniPachatele ;
+	d2rq:uriPattern "http://linked.opendata.cz/ontology/crimestatistics/code/vzdelani#@@ks_zapispa.p06vzdel@@" ;
+	.
+
+# Vychovne prostredi pachatele
+map:ZnamyPachatel-vychovneProstrediPachatele a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:ZnamyPachatel;
+	d2rq:property crime-prop:vychovneProstrediPachatele ;
+	d2rq:uriPattern "http://linked.opendata.cz/ontology/crimestatistics/code/vychovneProstredi#@@ks_zapispa.p07prost@@" ;
+	.
+
+# Zamestnani pachatele
+map:ZnamyPachatel-zamestnaniPachatele a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:ZnamyPachatel;
+	d2rq:property crime-prop:zamestnaniPachatele ;
+	d2rq:uriPattern "http://linked.opendata.cz/ontology/crimestatistics/code/zamestnani#@@ks_zapispa.p08a_zam@@" ;
+	d2rq:limit $limit ;
+	d2rq:limitInverse $limitInverse ;
+	.
+
+# Zamestnani pachatele - funkcni zarazeni	
+map:ZnamyPachatel-zamestnaniPachateleFunkcniZarazeni a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:ZnamyPachatel;
+	d2rq:property crime-prop:zamestnaniPachateleFunkcniZarazeni ;
+	d2rq:uriPattern "http://linked.opendata.cz/ontology/crimestatistics/code/zamestnaniFunkcniZarazeni#@@ks_zapispa.p08b_zam@@" ;
+	d2rq:limit $limit ;
+	d2rq:limitInverse $limitInverse ;
+	.
+	
+# Stav ztotozneni pachatele
+map:ZnamyPachatel-stavZtotozneniPachatele a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:ZnamyPachatel;
+	d2rq:property crime-prop:stavZtotozneniPachatele ;
+	d2rq:uriPattern "http://linked.opendata.cz/ontology/crimestatistics/code/stavZtotozneni#@@ks_zapispa.p09_stav@@" ;
+	d2rq:limit $limit ;
+	d2rq:limitInverse $limitInverse ;
+	.
+	
+# Misto narozeni pachatele
+map:ZnamyPachatel-mistoNarozeniPachatele a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:ZnamyPachatel;
+	d2rq:property crime-prop:mistoNarozeniPachatele ;
+	d2rq:column "ks_zapispa.p15_mist" ;
+	d2rq:valueMaxLength "21" ;
+	d2rq:datatype xsd:string ;
+	d2rq:limit $limit ;
+	d2rq:limitInverse $limitInverse ;
+	.
+	
+# Datum zahajeni trestniho stihani
+map:ZnamyPachatel-datumZahajeniTrestnihoStihani a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:ZnamyPachatel;
+	d2rq:property crime-prop:datumZahajeniTrestnihoStihani ;
+	d2rq:sqlExpression "DATE_FORMAT(ks_zapispa.p20_dat, '%Y-%m-%d')" ;
+	d2rq:condition "ks_zapispa.p20_kod = '1'" ;
+	d2rq:datatype xsd:date ;
+	d2rq:limit $limit ;
+	d2rq:limitInverse $limitInverse ;
+	.
+	
+# Datum sdeleni podezreni ve ZPR
+map:ZnamyPachatel-datumSdeleniPodezreniVeZPR a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:ZnamyPachatel;
+	d2rq:property crime-prop:datumSdeleniPodezreniVeZPR ;
+	d2rq:sqlExpression "DATE_FORMAT(ks_zapispa.p20_dat, '%Y-%m-%d')" ;
+	d2rq:condition "ks_zapispa.p20_kod <> '1'" ;
+	d2rq:datatype xsd:date ;
+	d2rq:limit $limit ;
+	d2rq:limitInverse $limitInverse ;
+	.
+
+# 3 zakona k zahajeni trestniho stihani
+map:ZnamyPachatel-usekZakonaKZahajeniTrestnihoStihani a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:ZnamyPachatel;
+	d2rq:property crime-prop:usekZakonaKZahajeniTrestnihoStihani ;
+	d2rq:condition "ks_zapispa.p20_kod = '1'" ;
+	d2rq:constantValue crimestatistics-usekyZakona_TrestniRizeni:zahajeniTrestnihoStihani1601 ;
+	d2rq:limit $limit ;
+	d2rq:limitInverse $limitInverse ;
+	.
+
+# Usek zakona ke sdeleni podezreni ve ZPR
+map:ZnamyPachatel-usekZakonaKeSdeleniPodezreniVeZPR a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:ZnamyPachatel;
+	d2rq:property crime-prop:usekZakonaKeSdeleniPodezreniVeZPR ;
+	d2rq:condition "ks_zapispa.p20_kod = '2'" ;
+	d2rq:constantValue crimestatistics-usekyZakona_TrestniRizeni:sdeleniPodezreniVeZPR179b3 ;
+	d2rq:limit $limit ;
+	d2rq:limitInverse $limitInverse ;
+	.
+
+# Datum rozsireni trestniho stihani
+map:ZnamyPachatel-datumRozsireniTrestnihoStihani a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:ZnamyPachatel;
+	d2rq:property crime-prop:datumRozsireniTrestnihoStihani ;
+	d2rq:sqlExpression "DATE_FORMAT(ks_zapispa.p20b_dat, '%Y-%m-%d')" ;
+	d2rq:condition "ks_zapispa.p20b_dat is not null" ;
+	d2rq:datatype xsd:date ;
+	d2rq:limit $limit ;
+	d2rq:limitInverse $limitInverse ;
+	.
+
+# Usek zakona k rozsireni trestniho stihani
+map:ZnamyPachatel-usekZakonaKRozsireniTrestnihoStihani a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:ZnamyPachatel;
+	d2rq:property crime-prop:usekZakonaKRozsireniTrestnihoStihani ;
+	d2rq:condition "ks_zapispa.p20b_dat is not null" ;
+	d2rq:constantValue crimestatistics-usekyZakona_TrestniRizeni:rozsireniTrestnihoStihani ;
+	d2rq:limit $limit ;
+	d2rq:limitInverse $limitInverse ;
+	.
+
+# Pocet dilcich utoku
+map:ZnamyPachatel-pocetDilcichUtoku a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:ZnamyPachatel ;
+	d2rq:property crime-prop:pocetDilcichUtoku ;
+	d2rq:sqlExpression "CONVERT(ks_zapispa.p24a_exp, UNSIGNED INTEGER)" ;
+	d2rq:datatype xsd:positiveInteger ;
+	d2rq:limit $limit ;
+	d2rq:limitInverse $limitInverse ;
+	.
+
+# Zpusob ukonceni veci - pachatel
+map:ZnamyPachatel-zpusobUkonceniNeboPrevzetiVeci_ZnamyPachatel a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:ZnamyPachatel;
+	d2rq:property crime-prop:zpusobUkonceniNeboPrevzetiVeci_ZnamyPachatel ;
+	d2rq:uriPattern "http://linked.opendata.cz/ontology/crimestatistics/code/zpusobUkonceniNeboPrevzetiVeci_ZnamyPachatel#@@ks_zapispa.p25c_zpu@@" ;
+	d2rq:condition "ks_zapispa.p25a_kod is not null" ;
+	d2rq:limit $limit ;
+	d2rq:limitInverse $limitInverse ;
+	.
+
+# Datum ukonceni nebo prevzeti veci
+map:ZnamyPachatel-datumUkonceniNeboPrevzetiVeci a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:ZnamyPachatel ;
+	d2rq:property crime-prop:datumUkonceniNeboPrevzetiVeci ;
+	d2rq:sqlExpression "DATE_FORMAT(ks_zapispa.p25b_dat, '%Y-%m-%d')" ;
+	d2rq:condition "ks_zapispa.p25a_kod is not null" ;
+	d2rq:datatype xsd:date ;
+	d2rq:limit $limit ;
+	d2rq:limitInverse $limitInverse ;
+	.
+
+# Pocet trestu za umyslnou trestnou cinnost
+map:ZnamyPachatel-pocetTrestuPachatele_umyslnaTrestnaCinnost a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:ZnamyPachatel ;
+	d2rq:property crime-prop:pocetTrestuPachatele_umyslnaTrestnaCinnost ;
+	d2rq:uriPattern "http://linked.opendata.cz/ontology/crimestatistics/code/pocetTrestuPachatele_umyslnaTrestnaCinnost#@@ks_zapispa.p12a_ptr@@" ;
+	d2rq:condition "ks_zapispa.p12a_ptr <> '8'" ;
+	d2rq:limit $limit ;
+	d2rq:limitInverse $limitInverse ;
+	.
+
+# Pocet podminecnych odsouzeni za umyslnou trestnou cinnost
+map:ZnamyPachatel-pocetPodminenychOdsouzeniPachatele_umyslnaTrestnaCinnost a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:ZnamyPachatel ;
+	d2rq:property crime-prop:pocetPodminenychOdsouzeniPachatele_umyslnaTrestnaCinnost ;
+	d2rq:uriPattern "http://linked.opendata.cz/ontology/crimestatistics/code/pocetTrestuPachatele_umyslnaTrestnaCinnost#@@ks_zapispa.p12b_ptr@@" ;
+	d2rq:condition "ks_zapispa.p12b_ptr <> '8'" ;
+	d2rq:limit $limit ;
+	d2rq:limitInverse $limitInverse ;
+	.
+	
+# Pocet trestu za umyslnou trestnou cinnost
+map:ZnamyPachatel-pocetTrestuPachatele_nedbalostniTrestnaCinnost a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:ZnamyPachatel ;
+	d2rq:property crime-prop:pocetTrestuPachatele_nedbalostniTrestnaCinnost ;
+	d2rq:uriPattern "http://linked.opendata.cz/ontology/crimestatistics/code/pocetTrestuPachatele_nedbalostniTrestnaCinnost#@@ks_zapispa.p12c_ptr@@" ;
+	d2rq:condition "ks_zapispa.p12c_ptr <> '8'" ;
+	d2rq:limit $limit ;
+	d2rq:limitInverse $limitInverse ;
+	.
+
+# Mladistvy pachatel - spachano na uteku - ano
+map:ZnamyPachatel-mladistvyPachatel_spachanoNaUteku-ano a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:ZnamyPachatel;
+	d2rq:property crime-prop:mladistvyPachatel_spachanoNaUteku ;
+	d2rq:condition "ks_zapispa.p19_mlad is not null and ks_zapispa.p19_mlad <> '' and mid(ks_zapispa.p19_mlad, 12, 1) in ('1', '2', '4', '5', '6', 'A', 'B', 'C', 'D')" ;
+	d2rq:constantValue "true"^^xsd:boolean ;
+	d2rq:limit $limit ;
+	d2rq:limitInverse $limitInverse ;
+	.
+
+# Mladistvy pachatel - spachano na uteku - ne
+map:ZnamyPachatel-mladistvyPachatel_spachanoNaUteku-ne a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:ZnamyPachatel;
+	d2rq:property crime-prop:mladistvyPachatel_spachanoNaUteku ;
+	d2rq:condition "ks_zapispa.p19_mlad is not null and ks_zapispa.p19_mlad <> '' and mid(ks_zapispa.p19_mlad, 12, 1) not in ('0', '7')" ;
+	d2rq:constantValue "false"^^xsd:boolean ;
+	d2rq:limit $limit ;
+	d2rq:limitInverse $limitInverse ;
+	.
+
+# Mladistvy pachatel - vychovna instituce - explicitne vyjadreno
+map:ZnamyPachatel-mladistvyPachatel_vychovnaInstituce-explicitni a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:ZnamyPachatel;
+	d2rq:property crime-prop:mladistvyPachatel_vychovnaInstituce ;
+	d2rq:condition "ks_zapispa.p19_mlad is not null and ks_zapispa.p19_mlad <> '' and mid(ks_zapispa.p19_mlad, 4, 1) in ('2', '5', 'A', 'B', 'C', 'D')" ;
+	d2rq:uriSqlExpression "CONCAT('http://linked.opendata.cz/ontology/crimestatistics/code/vychovnaInstituce#', mid(ks_zapispa.p19_mlad, 4, 1))" ;
+	d2rq:limit $limit ;
+	d2rq:limitInverse $limitInverse ;
+	.
+
+# Mladistvy pachatel - vychovna instituce - implicitne vyjadreno: udaj o vychovne instituce se odvodi od instituce, odkud mladistvy pachatel utekl
+map:ZnamyPachatel-mladistvyPachatel_vychovnaInstituce-implicitni a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:ZnamyPachatel;
+	d2rq:property crime-prop:mladistvyPachatel_vychovnaInstituce ;
+	d2rq:condition "ks_zapispa.p19_mlad is not null and ks_zapispa.p19_mlad <> '' and mid(ks_zapispa.p19_mlad, 4, 1) in ('0', '1', '7', '9') and mid(ks_zapispa.p19_mlad, 12, 1) not in ('0', '7')" ;
+	d2rq:uriSqlExpression "CONCAT('http://linked.opendata.cz/ontology/crimestatistics/code/vychovnaInstituce#', mid(ks_zapispa.p19_mlad, 12, 1))" ;
+	d2rq:limit $limit ;
+	d2rq:limitInverse $limitInverse ;
+	.
+
+# Mladistvy pachatel - vychovna instituce, odkud pachatel utekl
+map:ZnamyPachatel-mladistvyPachatel_vychovnaInstituceOdkudUtekl a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:ZnamyPachatel;
+	d2rq:property crime-prop:mladistvyPachatel_vychovnaInstituceOdkudUtekl ;
+	d2rq:condition "ks_zapispa.p19_mlad is not null and ks_zapispa.p19_mlad <> '' and mid(ks_zapispa.p19_mlad, 12, 1) not in ('0', '7')" ;
+	d2rq:uriSqlExpression "CONCAT('http://linked.opendata.cz/ontology/crimestatistics/code/vychovnaInstituce#', mid(ks_zapispa.p19_mlad, 12, 1))" ;
+	d2rq:limit $limit ;
+	d2rq:limitInverse $limitInverse ;
+	.
+
+# Mladistvy pachatel - pocet vysetrovani
+map:ZnamyPachatel-mladistvyPachatel_PocetVysetrovani a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:ZnamyPachatel ;
+	d2rq:property crime-prop:mladistvyPachatel_PocetVysetrovani ;
+	d2rq:uriSqlExpression "CONCAT('http://linked.opendata.cz/ontology/crimestatistics/code/mladistvyPachatel_PocetVysetrovani#', mid(ks_zapispa.p19_mlad, 1, 1))" ;
+	d2rq:limit $limit ;
+	d2rq:limitInverse $limitInverse ;
+	.
+	
+# Mladistvy pachatel - pravidelna dochazka do skoly - ano
+map:ZnamyPachatel-mladistvyPachatel_pravidelnaDochazkaDoSkoly-ano a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:ZnamyPachatel;
+	d2rq:property crime-prop:mladistvyPachatel_pravidelnaDochazkaDoSkoly ;
+	d2rq:condition "ks_zapispa.p19_mlad is not null and ks_zapispa.p19_mlad <> '' and mid(ks_zapispa.p19_mlad, 3, 1) = '1'" ;
+	d2rq:constantValue "true"^^xsd:boolean ;
+	d2rq:limit $limit ;
+	d2rq:limitInverse $limitInverse ;
+	.
+
+# Mladistvy pachatel - pravidelna dochazka do skoly - ne
+map:ZnamyPachatel-mladistvyPachatel_pravidelnaDochazkaDoSkoly-ne a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:ZnamyPachatel;
+	d2rq:property crime-prop:mladistvyPachatel_pravidelnaDochazkaDoSkoly ;
+	d2rq:condition "ks_zapispa.p19_mlad is not null and ks_zapispa.p19_mlad <> '' and mid(ks_zapispa.p19_mlad, 3, 1) = '2'" ;
+	d2rq:constantValue "false"^^xsd:boolean ;
+	d2rq:limit $limit ;
+	d2rq:limitInverse $limitInverse ;
+	.
+
+# Mladistvy pachatel - zamestnanost rodicu
+map:ZnamyPachatel-mladistvyPachatel_zamestnanostRodicu a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:ZnamyPachatel;
+	d2rq:property crime-prop:mladistvyPachatel_zamestnanostRodicu ;
+	d2rq:uriSqlExpression "CONCAT('http://linked.opendata.cz/ontology/crimestatistics/code/mladistvyPachatel_zamestnanostRodicu#', mid(ks_zapispa.p19_mlad, 6, 1))" ;
+	d2rq:condition "ks_zapispa.p19_mlad is not null and ks_zapispa.p19_mlad <> '' and mid(ks_zapispa.p19_mlad, 6, 1) <> '3'" ;
+	d2rq:limit $limit ;
+	d2rq:limitInverse $limitInverse ;
+	.
+
+# Mladistvy pachatel - rodice trestani - ano
+map:ZnamyPachatel-mladistvyPachatel_trestanostRodicu-ano a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:ZnamyPachatel;
+	d2rq:property crime-prop:mladistvyPachatel_trestanostRodicu ;
+	d2rq:condition "ks_zapispa.p19_mlad is not null and ks_zapispa.p19_mlad <> '' and mid(ks_zapispa.p19_mlad, 9, 1) = '1'" ;
+	d2rq:constantValue "true"^^xsd:boolean ;
+	d2rq:limit $limit ;
+	d2rq:limitInverse $limitInverse ;
+	.
+
+# Mladistvy pachatel - rodice trestani - ne
+map:ZnamyPachatel-mladistvyPachatel_trestanostRodicu-ne a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:ZnamyPachatel;
+	d2rq:property crime-prop:mladistvyPachatel_trestanostRodicu ;
+	d2rq:condition "ks_zapispa.p19_mlad is not null and ks_zapispa.p19_mlad <> '' and mid(ks_zapispa.p19_mlad, 9, 1) = '2'" ;
+	d2rq:constantValue "false"^^xsd:boolean ;
+	d2rq:limit $limit ;
+	d2rq:limitInverse $limitInverse ;
+	.
+
+# Mladistvy pachatel - zavislosti rodicu
+map:ZnamyPachatel-mladistvyPachatel_zavislostRodicu a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:ZnamyPachatel;
+	d2rq:property crime-prop:mladistvyPachatel_zavislostRodicu ;
+	d2rq:condition "ks_zapispa.p19_mlad is not null and ks_zapispa.p19_mlad <> '' and mid(ks_zapispa.p19_mlad, 10, 1) <> '3'" ;
+	d2rq:uriSqlExpression "CONCAT('http://linked.opendata.cz/ontology/crimestatistics/code/mladistvyPachatel_zavislostRodicu#', mid(ks_zapispa.p19_mlad, 10, 1))" ;
+	d2rq:limit $limit ;
+	d2rq:limitInverse $limitInverse ;
+	.
+
+# Mladistvy pachatel - sourozenci trestani - ano
+map:ZnamyPachatel-mladistvyPachatel_trestanostSourozencu-ano a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:ZnamyPachatel;
+	d2rq:property crime-prop:mladistvyPachatel_trestanostSourozencu ;
+	d2rq:condition "ks_zapispa.p19_mlad is not null and ks_zapispa.p19_mlad <> '' and mid(ks_zapispa.p19_mlad, 11, 1) = '1'" ;
+	d2rq:constantValue "true"^^xsd:boolean ;
+	d2rq:limit $limit ;
+	d2rq:limitInverse $limitInverse ;
+	.
+
+# Mladistvy pachatel - sourozenci trestani - ne
+map:ZnamyPachatel-mladistvyPachatel_trestanostSourozencu-ne a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:ZnamyPachatel;
+	d2rq:property crime-prop:mladistvyPachatel_trestanostSourozencu ;
+	d2rq:condition "ks_zapispa.p19_mlad is not null and ks_zapispa.p19_mlad <> '' and mid(ks_zapispa.p19_mlad, 11, 1) = '2'" ;
+	d2rq:constantValue "false"^^xsd:boolean ;
+	d2rq:limit $limit ;
+	d2rq:limitInverse $limitInverse ;
+	.
+
+# Mladistvy pachatel - sverenectvi pachatele v dobe spachani trestneho cinu
+map:ZnamyPachatel-mladistvyPachatel_sverenectvi a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:ZnamyPachatel;
+	d2rq:property crime-prop:mladistvyPachatel_sverenectvi ;
+	d2rq:condition "ks_zapispa.p19_mlad is not null and ks_zapispa.p19_mlad <> '' and mid(ks_zapispa.p19_mlad, 14, 1) <> '0'" ;
+	d2rq:uriSqlExpression "CONCAT('http://linked.opendata.cz/ontology/crimestatistics/code/mladistvyPachatel_sverenectvi#', mid(ks_zapispa.p19_mlad, 14, 1))" ;
+	d2rq:limit $limit ;
+	d2rq:limitInverse $limitInverse ;
+	.
+
+# Mladistvy pachatel - spolupachatele
+map:ZnamyPachatel-mladistvyPachatel_spolupachatelstvi a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:ZnamyPachatel;
+	d2rq:property crime-prop:mladistvyPachatel_spolupachatelstvi ;
+	d2rq:condition "ks_zapispa.p19_mlad is not null and ks_zapispa.p19_mlad <> '' and mid(ks_zapispa.p19_mlad, 15, 1) <> '0'" ;
+	d2rq:uriSqlExpression "CONCAT('http://linked.opendata.cz/ontology/crimestatistics/code/mladistvyPachatel_spolupachatelstvi#', mid(ks_zapispa.p19_mlad, 15, 1))" ;
+	d2rq:limit $limit ;
+	d2rq:limitInverse $limitInverse ;
+	.
+
+
+
+
+
+
+# --------------------------------- Prokázání trestného činu známému pachateli --------------------------------------------
+# Definice class map
+map:ProkazaniTrestnehoCinu a d2rq:ClassMap;
+    d2rq:dataStorage map:crimestatistics ;
+    d2rq:class crime-class:ProkazaniTrestnehoCinu ;
+    d2rq:uriPattern "http://linked.opendata.cz/resource/domain/crimestatistics/dataset/prokazaniTrestnehoCinu/$year/@@ks_zapistc.t01_kr@@/@@ks_zapistc.t01_ok@@/@@ks_zapistc.t01_ut@@/@@ks_zapistc.t01_cvs@@/@@ks_zapistc.t01_rok@@/@@ks_zapistc.t01_pc1@@/@@ks_zapispa.p01_kr@@/@@ks_zapispa.p01_ok@@/@@ks_zapispa.p01_ut@@/@@ks_zapispa.p01_cvs@@/@@ks_zapispa.p01_rok@@/@@ks_zapispa.p01_pc1@@/@@ks_zapispa.p01_pc2@@" ;
+    d2rq:join "ks_zapistc.id_tc = ks_zapisp28.ptr_tc" ;
+    d2rq:join "ks_zapispa.id_pa = ks_zapisp28.ptr_pa" ;
+    .
+
+# Odkazovany trestny cin
+map:ProkazaniTrestnehoCinu-trestnyCin a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:ProkazaniTrestnehoCinu ;
+	d2rq:property <http://linked.opendata.cz/ontology/crimestatistics/property#trestnyCin> ;
+	d2rq:uriPattern "http://linked.opendata.cz/resource/domain/crimestatistics/dataset/trestneCiny/$year/@@ks_zapistc.t01_kr@@/@@ks_zapistc.t01_ok@@/@@ks_zapistc.t01_ut@@/@@ks_zapistc.t01_cvs@@/@@ks_zapistc.t01_rok@@/@@ks_zapistc.t01_pc1@@" ;
+	d2rq:limit $limit ;
+	d2rq:limitInverse $limitInverse ;
+	.
+
+# Odkazovany znamy pachatel
+map:ProkazaniTrestnehoCinu-znamyPachatel a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:ProkazaniTrestnehoCinu ;
+	d2rq:property <http://linked.opendata.cz/ontology/crimestatistics/property#znamyPachatel> ;
+	d2rq:uriPattern "http://linked.opendata.cz/resource/domain/crimestatistics/dataset/znamiPachatele/$year/@@ks_zapispa.p01_kr@@/@@ks_zapispa.p01_ok@@/@@ks_zapispa.p01_ut@@/@@ks_zapispa.p01_cvs@@/@@ks_zapispa.p01_rok@@/@@ks_zapispa.p01_pc1@@/@@ks_zapispa.p01_pc2@@" ;
+	d2rq:limit $limit ;
+	d2rq:limitInverse $limitInverse ;
+	.
+
+# Celkovy pocet pachatelu trestneho cinu
+map:ProkazaniTrestnehoCinu-celkovyPocetPachateluTrestnehoCinu a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:ProkazaniTrestnehoCinu ;
+	d2rq:property crime-prop:celkovyPocetPachateluTrestnehoCinu ;
+	d2rq:uriSqlExpression "CONCAT('http://linked.opendata.cz/ontology/crimestatistics/code/celkovyPocetPachateluTrestnehoCinu#', CONVERT(ks_zapisp28.r03_poc, UNSIGNED INTEGER))" ;
+	d2rq:limit $limit ;
+	d2rq:limitInverse $limitInverse ;
+	.
+
+# Ucastenstvi pachatele
+map:ProkazaniTrestnehoCinu-ucastenstviPachatele a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:ProkazaniTrestnehoCinu;
+	d2rq:property crime-prop:ucastenstviPachatele ;
+	d2rq:uriPattern "http://linked.opendata.cz/ontology/crimestatistics/code/ucastenstviPachatele#@@ks_zapisp28.r03_ucas@@" ;
+	d2rq:limit $limit ;
+	d2rq:limitInverse $limitInverse ;
+	.
+
+# Pachatelem uzite omamne latky
+map:ProkazaniTrestnehoCinu-pachatelemUziteOmamneLatky a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:ProkazaniTrestnehoCinu;
+	d2rq:property crime-prop:pachatelemUziteOmamneLatky ;
+	d2rq:uriPattern "http://linked.opendata.cz/ontology/crimestatistics/code/uziteOmamneLatky#@@ks_zapisp28.r06_alk@@" ;
+	d2rq:limit $limit ;
+	d2rq:limitInverse $limitInverse ;
+	.
+
+# Spolecenstvi pachatelu
+map:ProkazaniTrestnehoCinu-spolecenstviPachatelu a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:ProkazaniTrestnehoCinu;
+	d2rq:property crime-prop:spolecenstviPachatelu ;
+	d2rq:uriPattern "http://linked.opendata.cz/ontology/crimestatistics/code/spolecenstviPachatelu#@@ks_zapisp28.r07_spo@@" ;
+	d2rq:limit $limit ;
+	d2rq:limitInverse $limitInverse ;
+	.
+
+# Pouziti zbrane a nasledek
+map:ProkazaniTrestnehoCinu-pouzitiZbraneANasledek a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:ProkazaniTrestnehoCinu;
+	d2rq:property crime-prop:pouzitiZbraneANasledek ;
+	d2rq:uriPattern "http://linked.opendata.cz/ontology/crimestatistics/code/pouzitiZbraneANasledek#@@ks_zapisp28.r08_zb1@@" ;
+	d2rq:condition "ks_zapisp28.r08_zb1 <> '0'" ;
+	d2rq:limit $limit ;
+	d2rq:limitInverse $limitInverse ;
+	.
+
+# Druh pouzite zbrane
+map:ProkazaniTrestnehoCinu-druhPouziteZbrane a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:ProkazaniTrestnehoCinu;
+	d2rq:property crime-prop:druhPouziteZbrane ;
+	d2rq:uriPattern "http://linked.opendata.cz/ontology/crimestatistics/code/druhZbrane#@@ks_zapisp28.r08_zb2@@" ;
+	d2rq:condition "ks_zapisp28.r08_zb2 <> '0'" ;
+	d2rq:limit $limit ;
+	d2rq:limitInverse $limitInverse ;
+	.

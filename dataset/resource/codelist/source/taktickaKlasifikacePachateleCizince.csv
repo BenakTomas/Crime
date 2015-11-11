@@ -1,0 +1,22 @@
+Kód#Heslo#Poznámka
+E#Cizinec pobývající na území ČR bez víza, mimo občanů EU.#Pod kód E a U zadejte ty pachatele, kteří se nedají zařadit do ostatních kódů sledovaných cizineckou policií.
+U#Cizinec, občan EU pobývající na území ČR bez zvláštního pobytového povolení.#Pod kód E a U zadejte ty pachatele, kteří se nedají zařadit do ostatních kódů sledovaných cizineckou policií.
+2#Cizinec s přechodným pobytem pobývající na území ČR na vízum: letištní, průjezdní,  k pobytu do 90 dnů.# 
+5#Cizinec s přechodným pobytem pobývající na území ČR na vízum k pobytu nad 90 dnů.# 
+A#Cizinec s přechodným pobytem pobývající na území ČR na vízum k pobytu nad 90 dnů za účelem strpění pobytu podle zákona č. 326/1999 Sb.# 
+B#Cizinec s přechodným pobytem pobývající na území ČR na vízum udělené podle zákona č. 221/2003 Sb., o dočasné ochraně.# 
+3#Cizinec s trvalým pobytem na území ČR na základě povolení k pobytu.# 
+C#Cizinec pobývající na území ČR na základě zákona č. 325/1999 Sb., o azylu, na vstupní vízum. # 
+D#Cizinec pobývající na území ČR na základě zákona č. 325/1999 Sb., o azylu, na vízum za účelem řízení o azylu.# 
+F#Cizinec pobývající na území ČR na výjezdní příkaz.# 
+4#Cizinec pobývající na území ČR na základě zákona č. 325/1999 Sb., o azylu, s přiznaným azylem.# 
+K#Cizinec pobývající na území ČR na základě zákona č. 310/1999 Sb., o pobytu ozbrojených sil jiných států na území České republiky.# 
+L#Cizinec pobývající na území ČR na základě vyhlášky MZV č. 157/1964 Sb., o Vídeňské úmluvě o diplomatických stycích, a vyhlášky MZV č. 32/1969 Sb., o Vídeňské úmluvě o konzulárních stycích bez víza, stanoví-li tak mezinárodní smlouva o zrušení vízové povinnosti nebo stanoví-li tak vláda svým nařízením nebo na diplomatické vízum nebo na zvláštní vízum.# 
+6#Cizinec neoprávněně se zdržující na území ČR#tj. bez platného cestovního dokladu nebo po uplynutí doby pobytu při bezvízovém styku nebo - po uplynutí doby platnosti víza nebo po uplynutí doby pobytu vyznačené ve vízu nebo po kladné odezvě v ENO, neprokáže-li se cizinec vízem uděleným zastupitelským úřadem ČR v zahraničí
+ ## 
+H#Cizinec s přechodným pobytem pobývající na území ČR na povolení k dlouhodobému pobytu.# 
+I#Cizinec s přechodným a trvalým pobytem pobývající na území ČR na základě zvláštního pobytového povolení# 
+J#Cizinec pobývající na území ČR na vízum za účelem strpění pobytu podle zákona č. 325/1999 Sb.# 
+8#Cizinec nepobývá na území ČR.# 
+9#Nic z uvedeného.# 
+0#Občan ČR.# 

@@ -1,0 +1,1 @@
+SQL> SPARQL CLEAR GRAPH <http://linked.opendata.cz/resource/domain/crimestatistics/dataset>; delete from db.dba.load_list ; ld_dir('/data/benak', '*.ttl', 'http://linked.opendata.cz/resource/domain/crimestatistics/dataset') ; ld_dir('/data/benak', '*.n3', 'http://linked.opendata.cz/resource/domain/crimestatistics/dataset'); rdf_loader_run() ;

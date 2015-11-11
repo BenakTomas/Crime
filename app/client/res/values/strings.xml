@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Crime Monitor</string>
+    <string name="launcher_label">Crime monitor</string>
+    <string name="crime_summary_activity_label">Crime summary</string>
+    <string name="title_activity_display_crime_detail">Crime detail</string>
+    <string name="display_crime_detail_set_interval">Set time interval</string>
+    <string name="nazvy_obci_label">MUNICIPALITIES COVERED</string>
+    <string name="crime_summary_index_label">INDEX</string>
+    <string name="crime_summary_trend_label">TREND</string>
+    <string name="crime_summary_objasnenost_label">SOLVED RATIO</string>
+    <string name="crime_summary_enable_gps_and_wifi_prompt_string">Enable either GPS or any other location
+service to find current location. Click OK to go to location services settings to let you do so.</string>
+    <string name="crime_action_reload_label">Reload</string>
+    <string name="crime_action_select_interval_label">Select interval</string>
+    <string name="crime_action_utvar_detail_label">Dpt. detail</string>
+    <string name="crime_action_list_label">complete crime toplist</string>
+    <string name="crime_action_summary_label">crimes summary</string>
+    <string name="select_date_interval_startDate_title">Start year and month. Will display 12 months starting with given year and month.</string>
+    <string name="crime_summary_toplist_other_item_label">other</string>
+    <string name="crime_toplist_toplist_button_label">Display all crimes</string>
+    <string name="crime_summary_crime_overview_label">OVERVIEW</string>
+    <string name="crime_summary_toplist_label">TOPLIST</string>
+    <string name="title_activity_crimes_list">Crimes list</string>
+    <string name="crime_list_no_data_found_text">No data found for the complete toplist.</string>
+    <string name="title_activity_utvar_detail">Department detail</string>
+    <string name="crime_utvar_detail_action_bar_custom_subtitle">dpt. detail</string>
+    <string name="crime_month_histogram_label">MONTHLY OVERVIEW</string>
+    <string name="no_department_loaded"><![CDATA[<no department loaded>]]></string>
+    <string name="crime_list_data_loading_error">Data loading error occurred.</string>
+    <string name="kod_utvaru_loading_error_text">Error occurred when loading department code for the location %1$f, %2$f. Cause: %3$s.</string>
+    <string name="data_loading_error_timeout">timeout exceeded</string>
+    <string name="data_loading_error_other">other</string>
+    <string name="kod_utvaru_loading_cancelled_text">Department loading had been cancelled for the location %1$f, %2$f.</string>
+    
+    <string name="crime_data_loading_error_text">Error occurred when loading crime statistics for the department %1$s and the interval of %2$s - %3$s. Cause: %4$s.</string>
+    <string name="crime_data_loading_error_view_text">Error occurred when loading crime statistics. Cause: %1$s.</string>
+
+    <string name="data_loading_alert_dialog_error_title">Data loading error</string>
+    <string name="crime_data_loading_cancelled">Crime data loading cancelled.</string>
+    <string name="crime_data_loading_cancel_pending">Cancelling data loading&#8230;</string>
+    <string name="crime_index_nan_text">could not be calculated</string>
+</resources>

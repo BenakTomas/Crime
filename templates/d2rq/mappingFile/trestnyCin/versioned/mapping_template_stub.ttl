@@ -1,0 +1,62 @@
+# Namespace of the mapping file
+@prefix map: <file:///C:/d2r/d2rq-0.8.1/mapping.ttl#> .
+                                                                              
+# Other namespaces
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+# D2RQ namespace - mapping RDB to RDF
+@prefix d2rq: <http://www.wiwiss.fu-berlin.de/suhl/bizer/D2RQ/0.1#> .
+# JDBC namespace - specify JDBC connection properties for driver used to connect to a database
+@prefix jdbc: <http://d2rq.org/terms/jdbc/> .
+
+# D2R namespace - server configuration
+@prefix d2r: <http://sites.wiwiss.fu-berlin.de/suhl/bizer/d2r-server/config.rdf#> .
+@prefix meta: <http://www4.wiwiss.fu-berlin.de/bizer/d2r-server/metadata#> .
+
+# Preferovany prefix ontologie pro popis zakonu
+@prefix lex: <http://purl.org/lex#> .
+@prefix lexcz: <http://purl.org/lex/cz#> .
+
+# Vlastní prefix
+@prefix crime: <http://linked.opendata.cz/ontology/crime#> .
+
+# Popis databaze: ona samotna je v namespace tohoto mapping file
+map:crimestatistics a d2rq:Database;
+	d2rq:jdbcDriver "com.mysql.jdbc.Driver";
+	d2rq:jdbcDSN "jdbc:mysql://localhost:3306/2012KU";
+	d2rq:username "tom" ;
+	d2rq:password "tom123" ;
+	.
+
+# Konfigurace D2RQ
+map:configuration a d2rq:Configuration ;
+	# Použít automaticky odvozené a uživatelem poskytnuté RDFS nebo OWL schéma?
+	d2rq:serveVocabulary "false"^^xsd:boolean ;
+	d2rq:useAllOptimizations "false"^^xsd:boolean ;
+	.
+
+map:TrestnyCin a d2rq:ClassMap;
+  d2rq:dataStorage map:crimestatistics ;
+  d2rq:class crime:TrestnyCin ;
+  d2rq:uriPattern "http://linked.opendata.cz/resource/domain/crime/dataset/trestnyCin/@@ks_zapistc.t01_kr@@/@@ks_zapistc.t01_ok@@/@@ks_zapistc.t01_ut@@/@@ks_zapistc.t01_cvs@@/@@ks_zapistc.t01_rok@@/@@ks_zapistc.t01_pc1@@" ;
+  d2rq:condition "ks_zapistc.t01_kr = '18'" ;
+  .
+
+# Zpracujici utvar
+map:TrestnyCin-utvarZpracovaniZaznamu a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:TrestnyCin ;
+	d2rq:property crime:utvarZpracovaniZaznamu ;
+	d2rq:uriPattern "http://linked.opendata.cz/resource/domain/crime/dataset/utvar/@@ks_zapistc.t01_kr@@@@ks_zapistc.t01_ok@@@@ks_zapistc.t01_ut@@" ;
+	d2rq:condition "ks_zapistc.t01_ok not in('30', '40')" ; #TODO: Az se zaradi do utvaru i cizinecka policie, tato podminka se odstrani.
+	.
+
+map:TrestnyCin-utvarSpachaniNeboZjisteni a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:TrestnyCin ;
+	d2rq:property crime:utvarSpachaniNeboZjisteni ;
+	d2rq:uriPattern "http://linked.opendata.cz/resource/domain/crime/dataset/utvar/@@ks_zapistc.t05_kr@@@@ks_zapistc.t05_ok@@@@ks_zapistc.t05_ut@@" ;
+	d2rq:condition "ks_zapistc.t05_ok not in('30', '40')" ; #TODO: Az se zaradi do utvaru i cizinecka policie, tato podminka se odstrani.
+	.

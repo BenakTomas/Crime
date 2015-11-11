@@ -1,0 +1,165 @@
+# Standardní prefixy
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix interval: <http://reference.data.gov.uk/def/intervals/> .
+@prefix sdmx:    <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+# Vlastní prefixy
+@prefix crimestatistics-code-slash: <http://linked.opendata.cz/ontology/crimestatistics/code/> .
+@prefix crimestatistics-code-codelist-slash: <http://linked.opendata.cz/ontology/crimestatistics/code/taktickaKlasifikacePachateleCizince/> .
+@prefix crimestatistics-code-codelist-class: <http://linked.opendata.cz/ontology/crimestatistics/code/taktickaKlasifikacePachateleCizince/class#> .
+@prefix crimestatistics-code-codelist-property: <http://linked.opendata.cz/ontology/crimestatistics/code/taktickaKlasifikacePachateleCizince/property#> .
+
+@prefix crimestatistics-code-codelist-hash: <http://linked.opendata.cz/ontology/crimestatistics/code/taktickaKlasifikacePachateleCizince#> .
+
+crimestatistics-code-codelist-hash:E a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Cizinec pobývající na území ČR bez víza, mimo občanů EU."@cs ;
+	skos:inScheme crimestatistics-code-slash:taktickaKlasifikacePachateleCizince ;
+	skos:notation "E" ;
+
+	rdfs:label "Cizinec pobývající na území ČR bez víza, mimo občanů EU."@cs ;
+	.
+crimestatistics-code-codelist-hash:U a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Cizinec, občan EU pobývající na území ČR bez zvláštního pobytového povolení."@cs ;
+	skos:inScheme crimestatistics-code-slash:taktickaKlasifikacePachateleCizince ;
+	skos:notation "U" ;
+
+	rdfs:label "Cizinec, občan EU pobývající na území ČR bez zvláštního pobytového povolení."@cs ;
+	.
+crimestatistics-code-codelist-hash:2 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Cizinec s přechodným pobytem pobývající na území ČR na vízum: letištní, průjezdní,  k pobytu do 90 dnů."@cs ;
+	skos:inScheme crimestatistics-code-slash:taktickaKlasifikacePachateleCizince ;
+	skos:notation "2" ;
+
+	rdfs:label "Cizinec s přechodným pobytem pobývající na území ČR na vízum: letištní, průjezdní,  k pobytu do 90 dnů."@cs ;
+	.
+crimestatistics-code-codelist-hash:5 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Cizinec s přechodným pobytem pobývající na území ČR na vízum k pobytu nad 90 dnů."@cs ;
+	skos:inScheme crimestatistics-code-slash:taktickaKlasifikacePachateleCizince ;
+	skos:notation "5" ;
+
+	rdfs:label "Cizinec s přechodným pobytem pobývající na území ČR na vízum k pobytu nad 90 dnů."@cs ;
+	.
+crimestatistics-code-codelist-hash:A a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Cizinec s přechodným pobytem pobývající na území ČR na vízum k pobytu nad 90 dnů za účelem strpění pobytu podle zákona č. 326/1999 Sb."@cs ;
+	skos:inScheme crimestatistics-code-slash:taktickaKlasifikacePachateleCizince ;
+	skos:notation "A" ;
+
+	rdfs:label "Cizinec s přechodným pobytem pobývající na území ČR na vízum k pobytu nad 90 dnů za účelem strpění pobytu podle zákona č. 326/1999 Sb."@cs ;
+	.
+crimestatistics-code-codelist-hash:B a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Cizinec s přechodným pobytem pobývající na území ČR na vízum udělené podle zákona č. 221/2003 Sb., o dočasné ochraně."@cs ;
+	skos:inScheme crimestatistics-code-slash:taktickaKlasifikacePachateleCizince ;
+	skos:notation "B" ;
+
+	rdfs:label "Cizinec s přechodným pobytem pobývající na území ČR na vízum udělené podle zákona č. 221/2003 Sb., o dočasné ochraně."@cs ;
+	.
+crimestatistics-code-codelist-hash:3 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Cizinec s trvalým pobytem na území ČR na základě povolení k pobytu."@cs ;
+	skos:inScheme crimestatistics-code-slash:taktickaKlasifikacePachateleCizince ;
+	skos:notation "3" ;
+
+	rdfs:label "Cizinec s trvalým pobytem na území ČR na základě povolení k pobytu."@cs ;
+	.
+crimestatistics-code-codelist-hash:C a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Cizinec pobývající na území ČR na základě zákona č. 325/1999 Sb., o azylu, na vstupní vízum. "@cs ;
+	skos:inScheme crimestatistics-code-slash:taktickaKlasifikacePachateleCizince ;
+	skos:notation "C" ;
+
+	rdfs:label "Cizinec pobývající na území ČR na základě zákona č. 325/1999 Sb., o azylu, na vstupní vízum. "@cs ;
+	.
+crimestatistics-code-codelist-hash:D a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Cizinec pobývající na území ČR na základě zákona č. 325/1999 Sb., o azylu, na vízum za účelem řízení o azylu."@cs ;
+	skos:inScheme crimestatistics-code-slash:taktickaKlasifikacePachateleCizince ;
+	skos:notation "D" ;
+
+	rdfs:label "Cizinec pobývající na území ČR na základě zákona č. 325/1999 Sb., o azylu, na vízum za účelem řízení o azylu."@cs ;
+	.
+crimestatistics-code-codelist-hash:F a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Cizinec pobývající na území ČR na výjezdní příkaz."@cs ;
+	skos:inScheme crimestatistics-code-slash:taktickaKlasifikacePachateleCizince ;
+	skos:notation "F" ;
+
+	rdfs:label "Cizinec pobývající na území ČR na výjezdní příkaz."@cs ;
+	.
+crimestatistics-code-codelist-hash:4 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Cizinec pobývající na území ČR na základě zákona č. 325/1999 Sb., o azylu, s přiznaným azylem."@cs ;
+	skos:inScheme crimestatistics-code-slash:taktickaKlasifikacePachateleCizince ;
+	skos:notation "4" ;
+
+	rdfs:label "Cizinec pobývající na území ČR na základě zákona č. 325/1999 Sb., o azylu, s přiznaným azylem."@cs ;
+	.
+crimestatistics-code-codelist-hash:K a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Cizinec pobývající na území ČR na základě zákona č. 310/1999 Sb., o pobytu ozbrojených sil jiných států na území České republiky."@cs ;
+	skos:inScheme crimestatistics-code-slash:taktickaKlasifikacePachateleCizince ;
+	skos:notation "K" ;
+
+	rdfs:label "Cizinec pobývající na území ČR na základě zákona č. 310/1999 Sb., o pobytu ozbrojených sil jiných států na území České republiky."@cs ;
+	.
+crimestatistics-code-codelist-hash:L a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Cizinec pobývající na území ČR na základě vyhlášky MZV č. 157/1964 Sb., o Vídeňské úmluvě o diplomatických stycích, a vyhlášky MZV č. 32/1969 Sb., o Vídeňské úmluvě o konzulárních stycích bez víza, stanoví-li tak mezinárodní smlouva o zrušení vízové povinnosti nebo stanoví-li tak vláda svým nařízením nebo na diplomatické vízum nebo na zvláštní vízum."@cs ;
+	skos:inScheme crimestatistics-code-slash:taktickaKlasifikacePachateleCizince ;
+	skos:notation "L" ;
+
+	rdfs:label "Cizinec pobývající na území ČR na základě vyhlášky MZV č. 157/1964 Sb., o Vídeňské úmluvě o diplomatických stycích, a vyhlášky MZV č. 32/1969 Sb., o Vídeňské úmluvě o konzulárních stycích bez víza, stanoví-li tak mezinárodní smlouva o zrušení vízové povinnosti nebo stanoví-li tak vláda svým nařízením nebo na diplomatické vízum nebo na zvláštní vízum."@cs ;
+	.
+crimestatistics-code-codelist-hash:6 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Cizinec neoprávněně se zdržující na území ČR"@cs ;
+	skos:inScheme crimestatistics-code-slash:taktickaKlasifikacePachateleCizince ;
+	skos:notation "6" ;
+
+	rdfs:label "Cizinec neoprávněně se zdržující na území ČR"@cs ;
+	.
+crimestatistics-code-codelist-hash:H a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Cizinec s přechodným pobytem pobývající na území ČR na povolení k dlouhodobému pobytu."@cs ;
+	skos:inScheme crimestatistics-code-slash:taktickaKlasifikacePachateleCizince ;
+	skos:notation "H" ;
+
+	rdfs:label "Cizinec s přechodným pobytem pobývající na území ČR na povolení k dlouhodobému pobytu."@cs ;
+	.
+crimestatistics-code-codelist-hash:I a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Cizinec s přechodným a trvalým pobytem pobývající na území ČR na základě zvláštního pobytového povolení"@cs ;
+	skos:inScheme crimestatistics-code-slash:taktickaKlasifikacePachateleCizince ;
+	skos:notation "I" ;
+
+	rdfs:label "Cizinec s přechodným a trvalým pobytem pobývající na území ČR na základě zvláštního pobytového povolení"@cs ;
+	.
+crimestatistics-code-codelist-hash:J a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Cizinec pobývající na území ČR na vízum za účelem strpění pobytu podle zákona č. 325/1999 Sb."@cs ;
+	skos:inScheme crimestatistics-code-slash:taktickaKlasifikacePachateleCizince ;
+	skos:notation "J" ;
+
+	rdfs:label "Cizinec pobývající na území ČR na vízum za účelem strpění pobytu podle zákona č. 325/1999 Sb."@cs ;
+	.
+crimestatistics-code-codelist-hash:8 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Cizinec nepobývá na území ČR."@cs ;
+	skos:inScheme crimestatistics-code-slash:taktickaKlasifikacePachateleCizince ;
+	skos:notation "8" ;
+
+	rdfs:label "Cizinec nepobývá na území ČR."@cs ;
+	.
+crimestatistics-code-codelist-hash:9 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Nic z uvedeného."@cs ;
+	skos:inScheme crimestatistics-code-slash:taktickaKlasifikacePachateleCizince ;
+	skos:notation "9" ;
+
+	rdfs:label "Nic z uvedeného."@cs ;
+	.
+crimestatistics-code-codelist-hash:0 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Občan ČR."@cs ;
+	skos:inScheme crimestatistics-code-slash:taktickaKlasifikacePachateleCizince ;
+	skos:notation "0" ;
+
+	rdfs:label "Občan ČR."@cs ;
+	.

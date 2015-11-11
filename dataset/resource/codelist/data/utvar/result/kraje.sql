@@ -1,0 +1,14 @@
+INSERT INTO kraje(kr, nazev) VALUES('00', 'Krajské øeditelství policie hlavního mìsta Prahy');
+INSERT INTO kraje(kr, nazev) VALUES('01', 'Krajské øeditelství policie Støedoèeského kraje');
+INSERT INTO kraje(kr, nazev) VALUES('02', 'Krajské øeditelství policie Jihoèeského kraje');
+INSERT INTO kraje(kr, nazev) VALUES('03', 'Krajské øeditelství policie Plzeòského kraje');
+INSERT INTO kraje(kr, nazev) VALUES('04', 'Krajské øeditelství policie Ústeckého kraje');
+INSERT INTO kraje(kr, nazev) VALUES('05', 'Krajské øeditelství policie Královehradeckého kraje');
+INSERT INTO kraje(kr, nazev) VALUES('06', 'Krajské øeditelství policie Jihomoravského kraje');
+INSERT INTO kraje(kr, nazev) VALUES('07', 'Krajské øeditelství policie Moravskoslezského kraje');
+INSERT INTO kraje(kr, nazev) VALUES('14', 'Krajské øeditelství policie Olomouckého kraje');
+INSERT INTO kraje(kr, nazev) VALUES('15', 'Krajské øeditelství policie Zlínského kraje');
+INSERT INTO kraje(kr, nazev) VALUES('16', 'Krajské øeditelství policie kraje Vysoèina');
+INSERT INTO kraje(kr, nazev) VALUES('17', 'Krajské øeditelství policie Pardubického kraje');
+INSERT INTO kraje(kr, nazev) VALUES('18', 'Krajské øeditelství policie Libereckého kraje');
+INSERT INTO kraje(kr, nazev) VALUES('19', 'Krajské øeditelství policie Karlovarského kraje');

@@ -1,0 +1,29 @@
+11#samostatně dospělým
+12#samostatně mladistvým
+13#samostatně nezletilým
+14#samostatně právnickou osobou
+20#dvojicí dospělý + právnická osoba
+21#dvojicí dospělých
+22#dvojicí mladistvých
+23#dvojicí nezletilých
+24#dvojicí dospělý + mladistvý
+25#dvojicí dospělý + nezletilý
+26#dvojicí mladistvý + nezletilý
+27#dvojicí mladistvý + právnická osoba
+28#dvojicí nezletilý + právnická osoba
+29#dvojicí právnických osob
+31#skupinou dospělých
+32#skupinou mladistvých
+33#skupinou nezletilých
+34#skupinou dospělých + mladistvých
+35#skupinou dospělých + nezletilých
+36#skupinou mladistvých + nezletilých
+37#skupinou smíšenou fyzických osob
+38#skupinou dospělých a právnických osob
+39#skupinou mladistvých a právnických osob
+40#skupinou nezletilých a právnických osob
+41#skupinou dospělých + mladistvých + právnických osob
+42#skupinou dospělých + nezletilých + právnických osob
+43#skupinou mladistvých + nezletilých + právnických osob
+44#skupinou smíšenou fyzických osob + právnických osob
+45#skupinou právnických osob

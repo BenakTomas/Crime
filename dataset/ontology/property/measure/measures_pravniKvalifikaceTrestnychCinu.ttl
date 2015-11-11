@@ -1,0 +1,39 @@
+# Standardni prefixy
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix interval: <http://reference.data.gov.uk/def/intervals/> .
+@prefix sdmx-dimension: <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-concept: <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-measure: <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-attribute: <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+# Preferovany prefix ontologie pro popis zakonu
+@prefix lex: <http://purl.org/lex#> .
+
+# Vlastní prefixy
+@prefix crimestatistics-class: <http://linked.opendata.cz/ontology/crimestatistics/class#> .
+@prefix crimestatistics-property: <http://linked.opendata.cz/ontology/crimestatistics/property#> .
+@prefix crimestatistics-measure: <http://linked.opendata.cz/ontology/crimestatistics/dataset-definitions/measure#> .
+
+# Právní kvalifikace trestného činu
+crimestatistics-measure:pravniKvalifikace a qb:MeasureProperty, rdf:Property ;
+	rdfs:subPropertyOf crimestatistics-property:kvalifikujiciUsekZakona ;
+	.
+
+# Právní kvalifikace souběžně spáchané trestné činnosti
+crimestatistics-measure:pravniKvalifikaceSoubehu a qb:MeasureProperty, rdf:Property ;
+	rdfs:subPropertyOf crimestatistics-property:kvalifikujiciUsekZakona ;
+	.
+
+crimestatistics-measure:pravniKvalifikace_Paragraf a qb:MeasureProperty, rdf:Property ;
+	.
+
+crimestatistics-measure:pravniKvalifikace_Odstavec a qb:MeasureProperty, rdf:Property ;
+	.
+
+crimestatistics-measure:pravniKvalifikace_Pismeno a qb:MeasureProperty, rdf:Property ;
+	.

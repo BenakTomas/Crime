@@ -1,0 +1,34 @@
+PREFIX crime-measure: <http://linked.opendata.cz/ontology/crimestatistics/dataset-definitions/measure#>
+PREFIX crime-dimension: <http://linked.opendata.cz/ontology/crimestatistics/dataset-definitions/dimension#>
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX crime-property: <http://linked.opendata.cz/ontology/crimestatistics/property#>
+PREFIX zpusobUkonceniPachatel: <http://linked.opendata.cz/ontology/crimestatistics/code/zpusobUkonceniNeboPrevzetiVeci_ZnamyPachatel#>
+PREFIX zpusobUkonceniTrestnyCin: <http://linked.opendata.cz/ontology/crimestatistics/code/zpusobUkonceniNeboPrevzetiVeci_TrestnyCin#>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+
+CONSTRUCT { ?trestnyCin crime-property:objasnenyTrestnyCin "false"^^xsd:boolean . }
+{
+  {
+  select distinct ?trestnyCin
+  {
+    ?trestnyCin a qb:Observation ;
+        qb:dataSet <http://linked.opendata.cz/resource/domain/crimestatistics/dataset/trestneCiny> .
+    
+    FILTER(NOT EXISTS{
+      ?trestnyCin crime-property:pachatel ?pachatel .
+      ?pachatel crime-measure:zpusobUkonceniNeboPrevzetiVeci_ZnamyPachatel ?zpusobUkonceniPachatele .
+      
+      FILTER(?zpusobUkonceniPachatele IN (
+      zpusobUkonceniPachatel:13, zpusobUkonceniPachatel:14, zpusobUkonceniPachatel:21,
+      zpusobUkonceniPachatel:50, zpusobUkonceniPachatel:60, zpusobUkonceniPachatel:61,
+      zpusobUkonceniPachatel:62, zpusobUkonceniPachatel:70, zpusobUkonceniPachatel:71,
+      zpusobUkonceniPachatel:72, zpusobUkonceniPachatel:73, zpusobUkonceniPachatel:80,
+      zpusobUkonceniPachatel:81, zpusobUkonceniPachatel:82)) .}
+      AND NOT EXISTS{
+        FILTER(NOT EXISTS {?trestnyCin crime-property:pachatel ?pachatel .} ) .
+        ?trestnyCin crime-measure:zpusobUkonceniNeboPrevzetiVeci_TrestnyCin ?zpusobUkonceniTrestnyCin . 
+        FILTER(?zpusobUkonceniTrestnyCin IN (zpusobUkonceniTrestnyCin:1)) .} ) .
+  }
+  } 
+}

@@ -1,0 +1,33 @@
+Kód#Heslo#Poznámka#Rozhodnutí SZ
+ # # #
+11#Návrhem na zastavení podle § 172/1c - skutek nebyl stíhané osobě prokázán.#Skutek zůstává v paměti počítače jako neobjasněný, položka 24 FTČ se opraví v části a) kódem 5.#ne
+12#Návrhem na zastavení podle § 172/1a, b - nejde o trestný čin.#Položka 24 FTČ se opraví na způsob ukončení v části a) kódem 2, je vykázán pouze spis.#ne
+13#Návrhem na zastavení podle § 172/1d (mimo amnestii) ve smyslu § 11/1, § 172/1e, f, § 172/2a, b, c; nebo podle § 172/2c ve smyslu § 70 zákona č. 218/2003 Sb.#V paměti zůstává jako objasněný trestný čin.#ANO
+14#Návrhem na zastavení podle § 172/1d amnestie ve smyslu § 11/1a.#V paměti počítače zůstává jako objasněný trestný čin.#ANO
+ # # #
+21#Návrhem na přerušení podle § 173/1a, b, c nebo dočasné předání osoby  ke stíhání do ciziny podle § 414.#V paměti počítače zůstává jako objasněný trestný čin.#ne
+ # # #
+30#Návrhem na postoupení podle § 171/1 - nejde o trestný čin, ale o přestupek nebo kárné provinění.#položka 24 FTČ se opraví na způsob ukončení v části a) kódem 7, je vykázán pouze spis.#ne
+ # # #
+40#Převzetí věci mimo případů uvedených v kódu 41 až 44.#Není-li provedeno převzetí, zůstává v paměti počítače jako neobjasněný trestný čin.#ne
+41#Převzetí věci v důsledku vyloučení pachatele ze společného řízení.#Není-li provedeno převzetí, zůstává v paměti počítače jako neobjasněný trestný čin.#ne
+42#Převzetí věci od jiného útvaru policie ke sloučení v důsledku místní nebo věcné příslušnosti#Není-li provedeno převzetí skutku, zůstává v paměti počítače jako neobjasněný trestný čin.#ne
+43#Odejmuto státním zástupcem podle § 174/2f v rámci policie#Není-li provedeno převzetí, zůstává v paměti počítače jako neobjasněný trestný čin.#ne
+44#Převzetí věci státním zástupcem cestou Inspekce Policie ČR podle § 161/3 nebo § 161/4.# #ne
+45#Převzetí věci SKPV – SZ zrušil ZPŘ a převedl věc do vyšetřování.# #
+46#Předáno mimo orgány policie#zůstává v paměti počítače jako neobjasněný trestný čin.#ne
+ # # #
+50#Návrhem na přerušení za účelem postihu cizince v domovském státě, vydání nebo vyhostění podle § 173/1d, vydání osoby z ČR do cizího státu podle § 391, předání osoby-občana ČR podle § 408 nebo předání trestního řízení do ciziny podle § 448 anebo předání věci policejnímu orgánu GIBS podle § 161/3 a státnímu zástupci podle § 161/4.#V paměti počítače zůstává jako objasněný trestný čin.#
+ # # #
+60#Návrhem na podmíněné zastavení trestního stíhání dle § 307; schválení narovnání dle § 309 tr. řádu.#V paměti počítače zůstává jako objasněný trestný čin.#ANO
+61#Návrhem státnímu zástupci ve zkráceném přípravném řízení na podmíněný odklad návrhu na potrestání podle § 179g/1 tr. řádu nebo vyřízením podle § 179c/2 tr. řádu. V položce 22B FTČ se v odstavci uvede kód 4.#V paměti počítače zůstává jako objasněný trestný čin.#ANO
+62#Státní zástupce odstoupil od trestního stíhání § 70/1 nebo uložil výchovné opatření napomenutí s výstrahou dle § 20/1 zák. č. 218/2003 Sb. Na FZP v položce 25a - ukončeno se uvede kód 4 - mimo orgán policie.#V paměti počítače zůstává jako objasněný trestný čin.#NE
+ # # #
+70#Návrhem na podání obžaloby (NPO) státnímu zástupci dle § 166/3#V paměti počítače zůstává jako objasněný trestný čin.#ANO
+71#Zpracováním zprávy o výsledku zkráceného přípravného řízení ve smyslu § 179c/1.#V paměti počítače zůstává jako objasněný trestný čin.#ANO
+72#Předání spisu se zprávou státnímu zástupci na zahájení řízení podle § 90 odst. 1 zák. č. 218/2003 Sb. proti nezletilému (§ 159a/2 s odkazem na § 11/1d).#V paměti počítače zůstává jako objasněný trestný čin.#ANO
+73#V řízení proti mladistvému návrhem na podání obžaloby (NPO) státnímu zástupci dle § 166/3#V paměti počítače zůstává jako objasněný trestný čin.#ANO
+ # # #
+80#Odloženo dle § 159a/2 s odkazem na § 11/1 b), c), e), i), j) nebo dle § 159a/3 s odkazem na § 172/2a, 2b.#V paměti počítače zůstává jako objasněný trestný čin.#ANO
+81#Odloženo v důsledku amnestie podle § 159a/2 ve smyslu § 11/1 písm. a)#V paměti počítače zůstává jako objasněný trestný čin.#
+82#Odloženo státním zástupcem dle § 159a/4 s odkazem na okolnosti § 172/2c#V paměti počítače zůstává jako objasněný trestný čin.#ANO

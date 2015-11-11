@@ -1,0 +1,53 @@
+# Standardní prefixy
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix interval: <http://reference.data.gov.uk/def/intervals/> .
+@prefix sdmx:    <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+# Vlastní prefixy
+@prefix crimestatistics-class: <http://linked.opendata.cz/ontology/crimestatistics/class#> .
+@prefix crimestatistics-code-slash: <http://linked.opendata.cz/ontology/crimestatistics/code/> .
+@prefix crimestatistics-code-codelist-slash: <http://linked.opendata.cz/ontology/crimestatistics/code/zpusobUkonceniNeboPrevzetiVeci_ZnamyPachatel/> .
+@prefix crimestatistics-code-codelist-class: <http://linked.opendata.cz/ontology/crimestatistics/code/zpusobUkonceniNeboPrevzetiVeci_ZnamyPachatel/class#> .
+@prefix crimestatistics-code-codelist-property: <http://linked.opendata.cz/ontology/crimestatistics/code/zpusobUkonceniNeboPrevzetiVeci_ZnamyPachatel/property#> .
+
+# Definice schematu konceptů
+<http://linked.opendata.cz/ontology/crimestatistics/code/zpusobUkonceniNeboPrevzetiVeci_ZnamyPachatel> a skos:ConceptScheme ;
+	skos:prefLabel
+		"způsob ukončení věci pachatele - schéma"@cs,
+		"end result of a case of an offender - schema"@en ;
+	skos:note
+		"Číselník klasifikuje způsob, jakým byly z pohledu Policie ČR ukončeny úkony ve věci vyšetřování nebo stíhání pachatele."@cs,
+		"The codelist classifies the end result of a case in which an offender was involved."@en ;
+	
+	rdfs:label
+		"způsob ukončení věci pachatele - schéma"@cs,
+		"end result of a case of an offender - schema"@en ;
+	rdfs:comment
+		"Číselník klasifikuje způsob, jakým byly z pohledu Policie ČR ukončeny úkony ve věci vyšetřování nebo stíhání pachatele."@cs,
+		"The codelist classifies the end result of a case in which an offender was involved."@en ;
+	rdfs:seeAlso crimestatistics-class:ZpusobUkonceniNeboPrevzetiVeci_ZnamyPachatel ;
+	.
+
+# Definice zapouzdřující třídy
+crimestatistics-class:ZpusobUkonceniNeboPrevzetiVeci_ZnamyPachatel a rdf:Class ;
+	rdfs:label
+		"způsob ukončení věci pachatele - zapouzdřující třída"@cs,
+		"end result of a case of an offender - encapsulating class"@en ;
+	rdfs:comment
+		"Číselník klasifikuje způsob, jakým byly z pohledu Policie ČR ukončeny úkony ve věci vyšetřování nebo stíhání pachatele."@cs,
+		"The codelist classifies the end result of a case in which an offender was involved."@en ;
+	rdfs:subClassOf skos:Concept, crimestatistics-class:ZpusobUkonceniNeboPrevzetiVeci ;
+	rdfs:seeAlso <http://linked.opendata.cz/ontology/crimestatistics/code/zpusobUkonceniNeboPrevzetiVeci_ZnamyPachatel> ;
+	.

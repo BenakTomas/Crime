@@ -1,0 +1,242 @@
+# Standardní prefixy
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix interval: <http://reference.data.gov.uk/def/intervals/> .
+@prefix sdmx:    <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+# Vlastní prefixy
+@prefix crimestatistics-code-slash: <http://linked.opendata.cz/ontology/crimestatistics/code/> .
+@prefix crimestatistics-code-codelist-slash: <http://linked.opendata.cz/ontology/crimestatistics/code/soukromyObjekt_TaktickaKlasifikace/> .
+@prefix crimestatistics-code-codelist-class: <http://linked.opendata.cz/ontology/crimestatistics/code/soukromyObjekt_TaktickaKlasifikace/class#> .
+@prefix crimestatistics-code-codelist-property: <http://linked.opendata.cz/ontology/crimestatistics/code/soukromyObjekt_TaktickaKlasifikace/property#> .
+
+@prefix crimestatistics-code-codelist-hash: <http://linked.opendata.cz/ontology/crimestatistics/code/soukromyObjekt_TaktickaKlasifikace#> .
+
+crimestatistics-code-codelist-hash:56 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "maringotky"@cs ;
+	skos:inScheme crimestatistics-code-slash:soukromyObjekt_TaktickaKlasifikace ;
+	skos:notation "56" ;
+
+	rdfs:label "maringotky"@cs ;
+	.
+crimestatistics-code-codelist-hash:61 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "byty a rodinné domy"@cs ;
+	skos:inScheme crimestatistics-code-slash:soukromyObjekt_TaktickaKlasifikace ;
+	skos:notation "61" ;
+
+	rdfs:label "byty a rodinné domy"@cs ;
+	.
+crimestatistics-code-codelist-hash:62 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "ateliéry"@cs ;
+	skos:inScheme crimestatistics-code-slash:soukromyObjekt_TaktickaKlasifikace ;
+	skos:notation "62" ;
+
+	rdfs:label "ateliéry"@cs ;
+	.
+crimestatistics-code-codelist-hash:63 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "dílny"@cs ;
+	skos:inScheme crimestatistics-code-slash:soukromyObjekt_TaktickaKlasifikace ;
+	skos:notation "63" ;
+
+	rdfs:label "dílny"@cs ;
+	.
+crimestatistics-code-codelist-hash:64 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "garáže"@cs ;
+	skos:inScheme crimestatistics-code-slash:soukromyObjekt_TaktickaKlasifikace ;
+	skos:notation "64" ;
+
+	rdfs:label "garáže"@cs ;
+	.
+crimestatistics-code-codelist-hash:65 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "víkendové chaty"@cs ;
+	skos:inScheme crimestatistics-code-slash:soukromyObjekt_TaktickaKlasifikace ;
+	skos:notation "65" ;
+
+	rdfs:label "víkendové chaty"@cs ;
+	.
+crimestatistics-code-codelist-hash:66 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "obytné lodě a přívěsy"@cs ;
+	skos:inScheme crimestatistics-code-slash:soukromyObjekt_TaktickaKlasifikace ;
+	skos:notation "66" ;
+
+	rdfs:label "obytné lodě a přívěsy"@cs ;
+	.
+crimestatistics-code-codelist-hash:67 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "motorová vozidla"@cs ;
+	skos:inScheme crimestatistics-code-slash:soukromyObjekt_TaktickaKlasifikace ;
+	skos:notation "67" ;
+
+	rdfs:label "motorová vozidla"@cs ;
+	.
+crimestatistics-code-codelist-hash:68 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "hrobky"@cs ;
+	skos:inScheme crimestatistics-code-slash:soukromyObjekt_TaktickaKlasifikace ;
+	skos:notation "68" ;
+
+	rdfs:label "hrobky"@cs ;
+	.
+crimestatistics-code-codelist-hash:71 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "stodoly a kůlny"@cs ;
+	skos:inScheme crimestatistics-code-slash:soukromyObjekt_TaktickaKlasifikace ;
+	skos:notation "71" ;
+
+	rdfs:label "stodoly a kůlny"@cs ;
+	.
+crimestatistics-code-codelist-hash:74 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "chlévy a stáje"@cs ;
+	skos:inScheme crimestatistics-code-slash:soukromyObjekt_TaktickaKlasifikace ;
+	skos:notation "74" ;
+
+	rdfs:label "chlévy a stáje"@cs ;
+	.
+crimestatistics-code-codelist-hash:75 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "kotce a chlívky"@cs ;
+	skos:inScheme crimestatistics-code-slash:soukromyObjekt_TaktickaKlasifikace ;
+	skos:notation "75" ;
+
+	rdfs:label "kotce a chlívky"@cs ;
+	.
+crimestatistics-code-codelist-hash:76 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "včelíny"@cs ;
+	skos:inScheme crimestatistics-code-slash:soukromyObjekt_TaktickaKlasifikace ;
+	skos:notation "76" ;
+
+	rdfs:label "včelíny"@cs ;
+	.
+crimestatistics-code-codelist-hash:77 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "stohy a seníky"@cs ;
+	skos:inScheme crimestatistics-code-slash:soukromyObjekt_TaktickaKlasifikace ;
+	skos:notation "77" ;
+
+	rdfs:label "stohy a seníky"@cs ;
+	.
+crimestatistics-code-codelist-hash:78 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "produkty na polích"@cs ;
+	skos:inScheme crimestatistics-code-slash:soukromyObjekt_TaktickaKlasifikace ;
+	skos:notation "78" ;
+
+	rdfs:label "produkty na polích"@cs ;
+	.
+crimestatistics-code-codelist-hash:81 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "předsíně"@cs ;
+	skos:inScheme crimestatistics-code-slash:soukromyObjekt_TaktickaKlasifikace ;
+	skos:notation "81" ;
+
+	rdfs:label "předsíně"@cs ;
+	.
+crimestatistics-code-codelist-hash:82 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "spíže"@cs ;
+	skos:inScheme crimestatistics-code-slash:soukromyObjekt_TaktickaKlasifikace ;
+	skos:notation "82" ;
+
+	rdfs:label "spíže"@cs ;
+	.
+crimestatistics-code-codelist-hash:83 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "komory"@cs ;
+	skos:inScheme crimestatistics-code-slash:soukromyObjekt_TaktickaKlasifikace ;
+	skos:notation "83" ;
+
+	rdfs:label "komory"@cs ;
+	.
+crimestatistics-code-codelist-hash:84 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "sklepy"@cs ;
+	skos:inScheme crimestatistics-code-slash:soukromyObjekt_TaktickaKlasifikace ;
+	skos:notation "84" ;
+
+	rdfs:label "sklepy"@cs ;
+	.
+crimestatistics-code-codelist-hash:85 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "půdy a balkóny"@cs ;
+	skos:inScheme crimestatistics-code-slash:soukromyObjekt_TaktickaKlasifikace ;
+	skos:notation "85" ;
+
+	rdfs:label "půdy a balkóny"@cs ;
+	.
+crimestatistics-code-codelist-hash:86 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "prádelny"@cs ;
+	skos:inScheme crimestatistics-code-slash:soukromyObjekt_TaktickaKlasifikace ;
+	skos:notation "86" ;
+
+	rdfs:label "prádelny"@cs ;
+	.
+crimestatistics-code-codelist-hash:87 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "sušárny"@cs ;
+	skos:inScheme crimestatistics-code-slash:soukromyObjekt_TaktickaKlasifikace ;
+	skos:notation "87" ;
+
+	rdfs:label "sušárny"@cs ;
+	.
+crimestatistics-code-codelist-hash:88 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "chodby v činžovních domech a v rodin.vilách"@cs ;
+	skos:inScheme crimestatistics-code-slash:soukromyObjekt_TaktickaKlasifikace ;
+	skos:notation "88" ;
+
+	rdfs:label "chodby v činžovních domech a v rodin.vilách"@cs ;
+	.
+crimestatistics-code-codelist-hash:89 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "zahradní boudy a altány"@cs ;
+	skos:inScheme crimestatistics-code-slash:soukromyObjekt_TaktickaKlasifikace ;
+	skos:notation "89" ;
+
+	rdfs:label "zahradní boudy a altány"@cs ;
+	.
+crimestatistics-code-codelist-hash:90 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "lodě sportovní a turistické"@cs ;
+	skos:inScheme crimestatistics-code-slash:soukromyObjekt_TaktickaKlasifikace ;
+	skos:notation "90" ;
+
+	rdfs:label "lodě sportovní a turistické"@cs ;
+	.
+crimestatistics-code-codelist-hash:91 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "dvory a zahrady"@cs ;
+	skos:inScheme crimestatistics-code-slash:soukromyObjekt_TaktickaKlasifikace ;
+	skos:notation "91" ;
+
+	rdfs:label "dvory a zahrady"@cs ;
+	.
+crimestatistics-code-codelist-hash:92 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "koupaliště, řeky, rybníky"@cs ;
+	skos:inScheme crimestatistics-code-slash:soukromyObjekt_TaktickaKlasifikace ;
+	skos:notation "92" ;
+
+	rdfs:label "koupaliště, řeky, rybníky"@cs ;
+	.
+crimestatistics-code-codelist-hash:93 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "staveniště a novostavby"@cs ;
+	skos:inScheme crimestatistics-code-slash:soukromyObjekt_TaktickaKlasifikace ;
+	skos:notation "93" ;
+
+	rdfs:label "staveniště a novostavby"@cs ;
+	.
+crimestatistics-code-codelist-hash:94 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "osobní věci a zboží z nákupních vozíků a košíků mimo nákupní prostor"@cs ;
+	skos:inScheme crimestatistics-code-slash:soukromyObjekt_TaktickaKlasifikace ;
+	skos:notation "94" ;
+
+	rdfs:label "osobní věci a zboží z nákupních vozíků a košíků mimo nákupní prostor"@cs ;
+	.
+crimestatistics-code-codelist-hash:95 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "jiné objekty"@cs ;
+	skos:inScheme crimestatistics-code-slash:soukromyObjekt_TaktickaKlasifikace ;
+	skos:notation "95" ;
+
+	rdfs:label "jiné objekty"@cs ;
+	.
+crimestatistics-code-codelist-hash:98 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "podvody a zpronevěry"@cs ;
+	skos:inScheme crimestatistics-code-slash:soukromyObjekt_TaktickaKlasifikace ;
+	skos:notation "98" ;
+
+	rdfs:label "podvody a zpronevěry"@cs ;
+	.

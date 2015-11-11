@@ -1,0 +1,74 @@
+# Standardní prefixy
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix interval: <http://reference.data.gov.uk/def/intervals/> .
+@prefix sdmx:    <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+# Vlastní prefixy
+@prefix crimestatistics-code-slash: <http://linked.opendata.cz/ontology/crimestatistics/code/> .
+@prefix crimestatistics-code-codelist-slash: <http://linked.opendata.cz/ontology/crimestatistics/code/pocetTrestuPachatele_nedbalostniTrestnaCinnost/> .
+@prefix crimestatistics-code-codelist-class: <http://linked.opendata.cz/ontology/crimestatistics/code/pocetTrestuPachatele_nedbalostniTrestnaCinnost/class#> .
+@prefix crimestatistics-code-codelist-property: <http://linked.opendata.cz/ontology/crimestatistics/code/pocetTrestuPachatele_nedbalostniTrestnaCinnost/property#> .
+
+@prefix crimestatistics-code-codelist-hash: <http://linked.opendata.cz/ontology/crimestatistics/code/pocetTrestuPachatele_nedbalostniTrestnaCinnost#> .
+
+crimestatistics-code-codelist-hash:0 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "0"@cs ;
+	skos:inScheme crimestatistics-code-slash:pocetTrestuPachatele_nedbalostniTrestnaCinnost ;
+	skos:notation "0" ;
+
+	rdfs:label "0"@cs ;
+	.
+crimestatistics-code-codelist-hash:1 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "1"@cs ;
+	skos:inScheme crimestatistics-code-slash:pocetTrestuPachatele_nedbalostniTrestnaCinnost ;
+	skos:notation "1" ;
+
+	rdfs:label "1"@cs ;
+	.
+crimestatistics-code-codelist-hash:2 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "2"@cs ;
+	skos:inScheme crimestatistics-code-slash:pocetTrestuPachatele_nedbalostniTrestnaCinnost ;
+	skos:notation "2" ;
+
+	rdfs:label "2"@cs ;
+	.
+crimestatistics-code-codelist-hash:3 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "3"@cs ;
+	skos:inScheme crimestatistics-code-slash:pocetTrestuPachatele_nedbalostniTrestnaCinnost ;
+	skos:notation "3" ;
+
+	rdfs:label "3"@cs ;
+	.
+crimestatistics-code-codelist-hash:4 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "4"@cs ;
+	skos:inScheme crimestatistics-code-slash:pocetTrestuPachatele_nedbalostniTrestnaCinnost ;
+	skos:notation "4" ;
+
+	rdfs:label "4"@cs ;
+	.
+crimestatistics-code-codelist-hash:5 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "5 a více"@cs ;
+	skos:inScheme crimestatistics-code-slash:pocetTrestuPachatele_nedbalostniTrestnaCinnost ;
+	skos:notation "5" ;
+
+	rdfs:label "5 a více"@cs ;
+	.
+crimestatistics-code-codelist-hash:8 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "nezjištěno"@cs ;
+	skos:inScheme crimestatistics-code-slash:pocetTrestuPachatele_nedbalostniTrestnaCinnost ;
+	skos:notation "8" ;
+
+	rdfs:label "nezjištěno"@cs ;
+	.

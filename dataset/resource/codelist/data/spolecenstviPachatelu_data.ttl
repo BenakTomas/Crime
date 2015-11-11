@@ -1,0 +1,228 @@
+# Standardní prefixy
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix interval: <http://reference.data.gov.uk/def/intervals/> .
+@prefix sdmx:    <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+# Vlastní prefixy
+@prefix crimestatistics-code-slash: <http://linked.opendata.cz/ontology/crimestatistics/code/> .
+@prefix crimestatistics-code-codelist-slash: <http://linked.opendata.cz/ontology/crimestatistics/code/spolecenstviPachatelu/> .
+@prefix crimestatistics-code-codelist-class: <http://linked.opendata.cz/ontology/crimestatistics/code/spolecenstviPachatelu/class#> .
+@prefix crimestatistics-code-codelist-property: <http://linked.opendata.cz/ontology/crimestatistics/code/spolecenstviPachatelu/property#> .
+
+@prefix crimestatistics-code-codelist-hash: <http://linked.opendata.cz/ontology/crimestatistics/code/spolecenstviPachatelu#> .
+
+crimestatistics-code-codelist-hash:11 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "samostatně dospělým"@cs ;
+	skos:inScheme crimestatistics-code-slash:spolecenstviPachatelu ;
+	skos:notation "11" ;
+
+	rdfs:label "samostatně dospělým"@cs ;
+	.
+crimestatistics-code-codelist-hash:12 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "samostatně mladistvým"@cs ;
+	skos:inScheme crimestatistics-code-slash:spolecenstviPachatelu ;
+	skos:notation "12" ;
+
+	rdfs:label "samostatně mladistvým"@cs ;
+	.
+crimestatistics-code-codelist-hash:13 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "samostatně nezletilým"@cs ;
+	skos:inScheme crimestatistics-code-slash:spolecenstviPachatelu ;
+	skos:notation "13" ;
+
+	rdfs:label "samostatně nezletilým"@cs ;
+	.
+crimestatistics-code-codelist-hash:14 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "samostatně právnickou osobou"@cs ;
+	skos:inScheme crimestatistics-code-slash:spolecenstviPachatelu ;
+	skos:notation "14" ;
+
+	rdfs:label "samostatně právnickou osobou"@cs ;
+	.
+crimestatistics-code-codelist-hash:20 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "dvojicí dospělý + právnická osoba"@cs ;
+	skos:inScheme crimestatistics-code-slash:spolecenstviPachatelu ;
+	skos:notation "20" ;
+
+	rdfs:label "dvojicí dospělý + právnická osoba"@cs ;
+	.
+crimestatistics-code-codelist-hash:21 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "dvojicí dospělých"@cs ;
+	skos:inScheme crimestatistics-code-slash:spolecenstviPachatelu ;
+	skos:notation "21" ;
+
+	rdfs:label "dvojicí dospělých"@cs ;
+	.
+crimestatistics-code-codelist-hash:22 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "dvojicí mladistvých"@cs ;
+	skos:inScheme crimestatistics-code-slash:spolecenstviPachatelu ;
+	skos:notation "22" ;
+
+	rdfs:label "dvojicí mladistvých"@cs ;
+	.
+crimestatistics-code-codelist-hash:23 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "dvojicí nezletilých"@cs ;
+	skos:inScheme crimestatistics-code-slash:spolecenstviPachatelu ;
+	skos:notation "23" ;
+
+	rdfs:label "dvojicí nezletilých"@cs ;
+	.
+crimestatistics-code-codelist-hash:24 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "dvojicí dospělý + mladistvý"@cs ;
+	skos:inScheme crimestatistics-code-slash:spolecenstviPachatelu ;
+	skos:notation "24" ;
+
+	rdfs:label "dvojicí dospělý + mladistvý"@cs ;
+	.
+crimestatistics-code-codelist-hash:25 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "dvojicí dospělý + nezletilý"@cs ;
+	skos:inScheme crimestatistics-code-slash:spolecenstviPachatelu ;
+	skos:notation "25" ;
+
+	rdfs:label "dvojicí dospělý + nezletilý"@cs ;
+	.
+crimestatistics-code-codelist-hash:26 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "dvojicí mladistvý + nezletilý"@cs ;
+	skos:inScheme crimestatistics-code-slash:spolecenstviPachatelu ;
+	skos:notation "26" ;
+
+	rdfs:label "dvojicí mladistvý + nezletilý"@cs ;
+	.
+crimestatistics-code-codelist-hash:27 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "dvojicí mladistvý + právnická osoba"@cs ;
+	skos:inScheme crimestatistics-code-slash:spolecenstviPachatelu ;
+	skos:notation "27" ;
+
+	rdfs:label "dvojicí mladistvý + právnická osoba"@cs ;
+	.
+crimestatistics-code-codelist-hash:28 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "dvojicí nezletilý + právnická osoba"@cs ;
+	skos:inScheme crimestatistics-code-slash:spolecenstviPachatelu ;
+	skos:notation "28" ;
+
+	rdfs:label "dvojicí nezletilý + právnická osoba"@cs ;
+	.
+crimestatistics-code-codelist-hash:29 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "dvojicí právnických osob"@cs ;
+	skos:inScheme crimestatistics-code-slash:spolecenstviPachatelu ;
+	skos:notation "29" ;
+
+	rdfs:label "dvojicí právnických osob"@cs ;
+	.
+crimestatistics-code-codelist-hash:31 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "skupinou dospělých"@cs ;
+	skos:inScheme crimestatistics-code-slash:spolecenstviPachatelu ;
+	skos:notation "31" ;
+
+	rdfs:label "skupinou dospělých"@cs ;
+	.
+crimestatistics-code-codelist-hash:32 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "skupinou mladistvých"@cs ;
+	skos:inScheme crimestatistics-code-slash:spolecenstviPachatelu ;
+	skos:notation "32" ;
+
+	rdfs:label "skupinou mladistvých"@cs ;
+	.
+crimestatistics-code-codelist-hash:33 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "skupinou nezletilých"@cs ;
+	skos:inScheme crimestatistics-code-slash:spolecenstviPachatelu ;
+	skos:notation "33" ;
+
+	rdfs:label "skupinou nezletilých"@cs ;
+	.
+crimestatistics-code-codelist-hash:34 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "skupinou dospělých + mladistvých"@cs ;
+	skos:inScheme crimestatistics-code-slash:spolecenstviPachatelu ;
+	skos:notation "34" ;
+
+	rdfs:label "skupinou dospělých + mladistvých"@cs ;
+	.
+crimestatistics-code-codelist-hash:35 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "skupinou dospělých + nezletilých"@cs ;
+	skos:inScheme crimestatistics-code-slash:spolecenstviPachatelu ;
+	skos:notation "35" ;
+
+	rdfs:label "skupinou dospělých + nezletilých"@cs ;
+	.
+crimestatistics-code-codelist-hash:36 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "skupinou mladistvých + nezletilých"@cs ;
+	skos:inScheme crimestatistics-code-slash:spolecenstviPachatelu ;
+	skos:notation "36" ;
+
+	rdfs:label "skupinou mladistvých + nezletilých"@cs ;
+	.
+crimestatistics-code-codelist-hash:37 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "skupinou smíšenou fyzických osob"@cs ;
+	skos:inScheme crimestatistics-code-slash:spolecenstviPachatelu ;
+	skos:notation "37" ;
+
+	rdfs:label "skupinou smíšenou fyzických osob"@cs ;
+	.
+crimestatistics-code-codelist-hash:38 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "skupinou dospělých a právnických osob"@cs ;
+	skos:inScheme crimestatistics-code-slash:spolecenstviPachatelu ;
+	skos:notation "38" ;
+
+	rdfs:label "skupinou dospělých a právnických osob"@cs ;
+	.
+crimestatistics-code-codelist-hash:39 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "skupinou mladistvých a právnických osob"@cs ;
+	skos:inScheme crimestatistics-code-slash:spolecenstviPachatelu ;
+	skos:notation "39" ;
+
+	rdfs:label "skupinou mladistvých a právnických osob"@cs ;
+	.
+crimestatistics-code-codelist-hash:40 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "skupinou nezletilých a právnických osob"@cs ;
+	skos:inScheme crimestatistics-code-slash:spolecenstviPachatelu ;
+	skos:notation "40" ;
+
+	rdfs:label "skupinou nezletilých a právnických osob"@cs ;
+	.
+crimestatistics-code-codelist-hash:41 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "skupinou dospělých + mladistvých + právnických osob"@cs ;
+	skos:inScheme crimestatistics-code-slash:spolecenstviPachatelu ;
+	skos:notation "41" ;
+
+	rdfs:label "skupinou dospělých + mladistvých + právnických osob"@cs ;
+	.
+crimestatistics-code-codelist-hash:42 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "skupinou dospělých + nezletilých + právnických osob"@cs ;
+	skos:inScheme crimestatistics-code-slash:spolecenstviPachatelu ;
+	skos:notation "42" ;
+
+	rdfs:label "skupinou dospělých + nezletilých + právnických osob"@cs ;
+	.
+crimestatistics-code-codelist-hash:43 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "skupinou mladistvých + nezletilých + právnických osob"@cs ;
+	skos:inScheme crimestatistics-code-slash:spolecenstviPachatelu ;
+	skos:notation "43" ;
+
+	rdfs:label "skupinou mladistvých + nezletilých + právnických osob"@cs ;
+	.
+crimestatistics-code-codelist-hash:44 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "skupinou smíšenou fyzických osob + právnických osob"@cs ;
+	skos:inScheme crimestatistics-code-slash:spolecenstviPachatelu ;
+	skos:notation "44" ;
+
+	rdfs:label "skupinou smíšenou fyzických osob + právnických osob"@cs ;
+	.
+crimestatistics-code-codelist-hash:45 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "skupinou právnických osob"@cs ;
+	skos:inScheme crimestatistics-code-slash:spolecenstviPachatelu ;
+	skos:notation "45" ;
+
+	rdfs:label "skupinou právnických osob"@cs ;
+	.

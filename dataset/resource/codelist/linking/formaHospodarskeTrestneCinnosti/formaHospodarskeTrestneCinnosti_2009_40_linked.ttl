@@ -1,0 +1,407 @@
+# Standardní prefixy
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix interval: <http://reference.data.gov.uk/def/intervals/> .
+@prefix sdmx:    <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+# Vlastní prefixy
+@prefix crimestatistics-code-slash: <http://linked.opendata.cz/ontology/crimestatistics/code/> .
+@prefix crimestatistics-code-codelist-slash: <http://linked.opendata.cz/ontology/crimestatistics/code/hospodarskaKriminalita_Forma/> .
+@prefix crimestatistics-code-codelist-hash: <http://linked.opendata.cz/ontology/crimestatistics/code/hospodarskaKriminalita_Forma/2009/40#> .
+@prefix crimestatistics-code-codelist-class: <http://linked.opendata.cz/ontology/crimestatistics/code/hospodarskaKriminalita_Forma/class#> .
+@prefix crimestatistics-code-codelist-property: <http://linked.opendata.cz/ontology/crimestatistics/code/hospodarskaKriminalita_Forma/property#> .
+
+# Odkazování zákonů
+@prefix crimestatistics-class-zakony: <http://linked.opendata.cz/ontology/crimestatistics/class/zakony#> .
+@prefix crimestatistics-property-zakony: <http://linked.opendata.cz/ontology/crimestatistics/property/zakony#> .
+@prefix SourceOfLawSectionCollection-property: <http://linked.opendata.cz/ontology/crimestatistics/class/zakony/SourceOfLawSectionCollection/property#> .
+@prefix TSKCollection-property: <http://linked.opendata.cz/ontology/crimestatistics/code/class/TSKCollection/property#> .
+
+# Zkratka pro odkazování paragrafů trestního zákona 40/2009 Sb.
+@prefix trestniZakon-paragraf: <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/> .
+
+# Odkazování TSK
+@prefix crimestatistics-code-tsk: <http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#> .
+@prefix crimestatistics-code-property: <http://linked.opendata.cz/ontology/crimestatistics/code/property#> .
+
+# Definice linkování na zákony
+crimestatistics-code-codelist-hash:neopravnenePodnikani
+	# zákon
+	crimestatistics-property-zakony:kvalifikacePodleUsekuZakona trestniZakon-paragraf:251 ;
+	# TSK
+	crimestatistics-code-property:tsk crimestatistics-code-tsk:803 ;
+	.
+
+# POŠKOZOVÁNÍ VĚŘITELE
+crimestatistics-code-codelist-hash:poskozovaniSpotrebitele
+	# zákon
+	crimestatistics-property-zakony:kvalifikacePodleUsekuZakona trestniZakon-paragraf:253 ;
+	# TSK
+	crimestatistics-code-property:tsk crimestatistics-code-tsk:806 ;
+	.
+
+# PAŠOVÁNÍ
+crimestatistics-code-codelist-hash:pasovani
+	# zákon
+	crimestatistics-property-zakony:kvalifikacePodleUsekuZakona trestniZakon-paragraf:261 ;
+	# TSK
+	crimestatistics-code-property:tsk crimestatistics-code-tsk:807 ;
+	.
+
+# porušování předpisů o nakládání s kontrolovaným zbožím a technologiemi
+crimestatistics-code-codelist-hash:411
+	# zákon
+	crimestatistics-property-zakony:kvalifikacePodleUsekuZakona <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/262> .
+crimestatistics-code-codelist-hash:413
+	# zákon
+	crimestatistics-property-zakony:kvalifikacePodleUsekuZakona <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/262> .
+crimestatistics-code-codelist-hash:414
+	# zákon
+	crimestatistics-property-zakony:kvalifikacePodleUsekuZakona <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/264/1> .
+crimestatistics-code-codelist-hash:415
+	# zákon
+	crimestatistics-property-zakony:kvalifikacePodleUsekuZakona <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/264/2> .
+
+crimestatistics-code-codelist-hash:kontrolovaneZbozi_PoruseniPredpisuProNakladani
+	# zákony
+	crimestatistics-property-zakony:kvalifikaceNekterymZUsekuZakonu
+	[
+		SourceOfLawSectionCollection-property:member <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/262> ;
+		SourceOfLawSectionCollection-property:member <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/262> ;
+		SourceOfLawSectionCollection-property:member <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/264> ;
+	] ;
+	# TSK
+	crimestatistics-code-property:tsk crimestatistics-code-tsk:832 ;
+	.
+
+# zkreslování údajů hospodářské a obchodní evidence
+crimestatistics-code-codelist-hash:424
+	# zákon
+	crimestatistics-property-zakony:kvalifikacePodleUsekuZakona <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/254/2> .
+
+crimestatistics-code-codelist-hash:hospodarskeAObchodniEvidence_zkreslovaniUdaju
+	# TSK
+	crimestatistics-code-property:tsk crimestatistics-code-tsk:808 .
+
+# nekalá soutěž
+crimestatistics-code-codelist-hash:nekalaSoutez
+	# TSK
+	crimestatistics-code-property:tsk crimestatistics-code-tsk:801 .
+
+# zneužívání informací v obchodním styku
+crimestatistics-code-codelist-hash:zneuzivaniInformaciVObchodnimStyku
+	# TSK
+	crimestatistics-code-property:tsk crimestatistics-code-tsk:833 .
+
+# výroba a držení padělatelského náčiní
+crimestatistics-code-codelist-hash:vyrobaADrzeniPadelatelskehoNacini
+	# TSK
+	crimestatistics-code-property:tsk crimestatistics-code-tsk:816 .
+
+# poškozování cizích práv
+crimestatistics-code-codelist-hash:poskozovaniCizichPrav
+	#TSK
+	crimestatistics-code-property:tsk crimestatistics-code-tsk:890 ;
+	# zákon
+	crimestatistics-property-zakony:kvalifikacePodleUsekuZakona <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/181> ;
+	.
+
+# porušování tajemství dopravovaných zpráv
+crimestatistics-code-codelist-hash:porusovaniTajemstviDopravovanychZprav
+	# TSK
+	crimestatistics-code-property:tsk crimestatistics-code-tsk:828 ;
+	.
+
+# neoprávněné užívání cizí věci
+crimestatistics-code-codelist-hash:neopravneneUzivaniCiziVeci
+	# TSK
+	crimestatistics-code-property:tsk crimestatistics-code-tsk:813 ;
+	.
+
+
+# porušování povinnosti při správě cizího majetku
+crimestatistics-code-codelist-hash:porusovaniPovinnostiPriSpraveCizihoMajetku
+	# TSK
+	crimestatistics-code-property:tsk crimestatistics-code-tsk:811 ;
+	.
+
+# poškozování cizí věci 
+crimestatistics-code-codelist-hash:poskozovaniCiziVeci
+	# TSK
+	crimestatistics-code-property:tsk crimestatistics-code-tsk:814 ;
+	.
+
+# poškozování věřitele, zvýhodňování věřitele, pletichy při řízení konkursním a vyrovnávacím
+crimestatistics-code-codelist-hash:poskozovaniNeboZvyhodnovaniVeriteleNeboPletichyPriRizenich
+	crimestatistics-code-property:klasifikaceDleNekterehoZTSK
+	[
+		TSKCollection-property:member crimestatistics-code-tsk:822 ;
+		TSKCollection-property:member crimestatistics-code-tsk:848 ;
+		TSKCollection-property:member crimestatistics-code-tsk:849 ;
+	] ;
+	.
+
+# pletichy při veřejné soutěži a veřejné dražbě
+crimestatistics-code-codelist-hash:451
+	crimestatistics-property-zakony:kvalifikacePodleUsekuZakona
+		<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/257> .
+
+crimestatistics-code-codelist-hash:452
+	# zákony
+	crimestatistics-property-zakony:kvalifikaceNekterymZUsekuZakonu
+	[
+		SourceOfLawSectionCollection-property:member <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/256/3> ;
+		SourceOfLawSectionCollection-property:member <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/256/4> ;
+		SourceOfLawSectionCollection-property:member <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/257> ;
+	] ;
+	.
+
+crimestatistics-code-codelist-hash:453
+	# zákony
+	crimestatistics-property-zakony:kvalifikaceNekterymZUsekuZakonu
+	[
+		SourceOfLawSectionCollection-property:member <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/256/1> ;
+		SourceOfLawSectionCollection-property:member <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/256/2> ;
+		SourceOfLawSectionCollection-property:member <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/257> ;
+	] ;
+	.
+
+crimestatistics-code-codelist-hash:461
+	crimestatistics-property-zakony:kvalifikacePodleUsekuZakona
+		<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/258> .
+
+crimestatistics-code-codelist-hash:462
+	# zákony
+	crimestatistics-property-zakony:kvalifikaceNekterymZUsekuZakonu
+	[
+		SourceOfLawSectionCollection-property:member <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/256/3> ;
+		SourceOfLawSectionCollection-property:member <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/256/4> ;
+		SourceOfLawSectionCollection-property:member <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/258> ;
+	] ;
+	.
+
+crimestatistics-code-codelist-hash:463
+	# zákony
+	crimestatistics-property-zakony:kvalifikaceNekterymZUsekuZakonu
+	[
+		SourceOfLawSectionCollection-property:member <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/256/1> ;
+		SourceOfLawSectionCollection-property:member <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/256/2> ;
+	] ;
+	.
+
+crimestatistics-code-codelist-hash:pletichy_VerejnaSoutezNeboVerejnaDrazba
+	# TSK
+	crimestatistics-code-property:tsk crimestatistics-code-tsk:831 ;
+	.
+
+# padělání a pozměňování peněz, padělání a pozměňování známek
+crimestatistics-code-codelist-hash:padelaniAPozmenovaniPenezAZnamek
+	crimestatistics-code-property:klasifikaceDleNekterehoZTSK
+	[
+		TSKCollection-property:member crimestatistics-code-tsk:816 ;
+		TSKCollection-property:member crimestatistics-code-tsk:817 ;
+	] ;
+	.
+
+# porušení zákazu v době nouzového stavu v devizovém hospodářství
+crimestatistics-code-codelist-hash:poruseniZakazuVDobeNouzovehoStavuVDevizovemHospodarstvi
+	# TSK
+	crimestatistics-code-property:tsk crimestatistics-code-tsk:890 ;
+	# zákon
+	crimestatistics-property-zakony:kvalifikacePodleUsekuZakona <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/247> ;
+	.
+
+# neodvedení nebo zkrácení daně a cla
+crimestatistics-code-codelist-hash:neodvedeniAZkraceniDaneACla
+	# TSK
+	crimestatistics-code-property:klasifikaceDleNekterehoZTSK
+	[
+		TSKCollection-property:member crimestatistics-code-tsk:819 ;
+		TSKCollection-property:member crimestatistics-code-tsk:886 ;
+	] ;
+	.
+
+# porušování práv k ochranné známce, obchodnímu jménu a chráněnému označení původu
+crimestatistics-code-codelist-hash:porusovaniPravKOchranneZnamceObchodnimuJmenuAChranenemuOznaceniPuvodu
+	# TSK
+	crimestatistics-code-property:tsk crimestatistics-code-tsk:861 ;
+	.
+	
+	crimestatistics-code-codelist-hash:591
+		crimestatistics-property-zakony:kvalifikacePodleUsekuZakona
+			<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/268/1> .
+	
+	crimestatistics-code-codelist-hash:592
+		crimestatistics-property-zakony:kvalifikacePodleUsekuZakona
+			<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/268/2> .
+	
+	crimestatistics-code-codelist-hash:593
+		crimestatistics-property-zakony:kvalifikacePodleUsekuZakona
+			<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/268/2> .
+
+# porušování průmyslových práv
+crimestatistics-code-codelist-hash:porusovaniPrumyslovychPrav
+	# TSK
+	crimestatistics-code-property:tsk crimestatistics-code-tsk:862 ;
+	.
+
+# porušování autorského práva, práv souvisejících s právem autorským a práv k databázi
+crimestatistics-code-codelist-hash:porusovaniAutorskehoPrava
+	# TSK
+	crimestatistics-code-property:tsk crimestatistics-code-tsk:863 ;
+	# zákon
+	crimestatistics-property-zakony:kvalifikacePodleUsekuZakona
+			<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/270> ;
+	.
+
+# zneužívání pravomoci veřejného činitele, přijímání úplatku, podplácení, nepřímé úplatkářství
+crimestatistics-code-codelist-hash:zneuzivaniPravomociVerejnehoCiniteleAUplatkarstvi
+	# TSK
+	crimestatistics-code-property:klasifikaceDleNekterehoZTSK
+	[
+		TSKCollection-property:member crimestatistics-code-tsk:820 ;
+		TSKCollection-property:member crimestatistics-code-tsk:821 ;
+		TSKCollection-property:member crimestatistics-code-tsk:845 ;
+		TSKCollection-property:member crimestatistics-code-tsk:846 ;
+		TSKCollection-property:member crimestatistics-code-tsk:847 ;
+	] ;
+	.
+
+# padělání a pozměňování veřejné listiny
+crimestatistics-code-codelist-hash:padelaniAPozmenovaniVerejneListiny
+	# TSK
+	crimestatistics-code-property:tsk crimestatistics-code-tsk:823 ;
+	.
+
+# neoprávněné provozování loterie, nepoctivé hry a sázky
+crimestatistics-code-codelist-hash:neopravneneProvozovaniLoterieANepoctiveHryASazky
+	# TSK
+	crimestatistics-code-property:klasifikaceDleNekterehoZTSK
+	[
+		TSKCollection-property:member crimestatistics-code-tsk:834 ;
+		TSKCollection-property:member crimestatistics-code-tsk:866 ;
+	] ;
+	.
+
+# neoprávněné držení platební karty
+crimestatistics-code-codelist-hash:neopravneneDrzeniPlatebniKarty
+	# TSK
+	crimestatistics-code-property:tsk crimestatistics-code-tsk:838 ;
+	.
+	
+	crimestatistics-code-codelist-hash:741
+		# zákon
+		crimestatistics-property-zakony:kvalifikacePodleUsekuZakona
+			<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/234/3> ;
+	.
+
+# ohrožení a poškození životního prostředí
+crimestatistics-code-codelist-hash:757
+	# zákon
+	crimestatistics-property-zakony:kvalifikacePodleUsekuZakona
+		<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/295> .
+
+crimestatistics-code-codelist-hash:ohrozeniAPoskozeniZivotnihoProstredi_poskozeniLesnihoPorostuMimoTezbu
+	# zákony
+	crimestatistics-property-zakony:kvalifikaceNekterymZUsekuZakonu
+	[
+		SourceOfLawSectionCollection-property:member <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/293> ;
+		SourceOfLawSectionCollection-property:member <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/294> ;
+	] ;
+	.
+
+crimestatistics-code-codelist-hash:ohrozeniAPoskozeniZivotnihoProstredi
+	# TSK
+	crimestatistics-code-property:klasifikaceDleNekterehoZTSK
+	[
+		TSKCollection-property:member crimestatistics-code-tsk:850 ;
+		TSKCollection-property:member crimestatistics-code-tsk:851 ;
+	] ;
+	.
+
+# pytláctví
+crimestatistics-code-codelist-hash:pytlactvi
+	# TSK
+	crimestatistics-code-property:tsk crimestatistics-code-tsk:890 ;
+	# zákon
+	crimestatistics-property-zakony:kvalifikacePodleUsekuZakona
+		<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/304>
+	.
+
+# úvěrový podvod
+crimestatistics-code-codelist-hash:uverovyPodvod
+	# TSK
+	crimestatistics-code-property:tsk crimestatistics-code-tsk:881 ;
+	.
+
+crimestatistics-code-codelist-hash:792
+	# zákon
+	crimestatistics-property-zakony:kvalifikacePodleUsekuZakona
+		<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/211/1>
+	.
+	
+crimestatistics-code-codelist-hash:793
+	# zákon
+	crimestatistics-property-zakony:kvalifikacePodleUsekuZakona
+		<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/211/2>
+	.
+
+# pojišťovací podvod
+crimestatistics-code-codelist-hash:pojistovaciPodvod
+	# TSK
+	crimestatistics-code-property:tsk crimestatistics-code-tsk:880 ;
+	.
+
+# neoprávněné nakládání s osobními údaji
+crimestatistics-code-codelist-hash:neopravneneNakladaniSOsobnimiUdajiAPoskozeniAZneuzitiZaznamuNaNosiciInformaci
+	# TSK
+	crimestatistics-code-property:klasifikaceDleNekterehoZTSK
+	[
+		TSKCollection-property:member crimestatistics-code-tsk:836 ;
+		TSKCollection-property:member crimestatistics-code-tsk:865 ;
+	] ;
+	.
+	
+	crimestatistics-code-codelist-hash:721
+		# zákony
+		crimestatistics-property-zakony:kvalifikaceNekterymZUsekuZakonu
+		[
+			SourceOfLawSectionCollection-property:member <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/180> ;
+			SourceOfLawSectionCollection-property:member <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/230/2/a> ;
+		] ;
+		.
+
+# poškození a zneužití záznamu na nosiči informací
+crimestatistics-code-codelist-hash:poskozeniAZneuzitiZaznamuNaNosiciInformaci
+	# TSK
+	crimestatistics-code-property:tsk crimestatistics-code-tsk:865 ;
+	.
+
+crimestatistics-code-codelist-hash:723
+	# zákony
+	crimestatistics-property-zakony:kvalifikaceNekterymZUsekuZakonu
+	[
+		SourceOfLawSectionCollection-property:member <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/230/2/b> ;
+		SourceOfLawSectionCollection-property:member <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/232/1/a> ;
+	] ;
+	.
+	
+crimestatistics-code-codelist-hash:poskozeniAZneuzitiZaznamuNaNosiciInformaci_pocitacovyUtok
+	# zákony
+	crimestatistics-property-zakony:kvalifikaceNekterymZUsekuZakonu
+	[
+		SourceOfLawSectionCollection-property:member <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/230/2/d> ;
+		SourceOfLawSectionCollection-property:member <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/232/1/b> ;
+	] ;
+	.

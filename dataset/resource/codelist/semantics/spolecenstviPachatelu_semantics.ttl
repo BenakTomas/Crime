@@ -1,0 +1,187 @@
+# Standardní prefixy
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix interval: <http://reference.data.gov.uk/def/intervals/> .
+@prefix sdmx:    <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+# Vlastní prefixy
+@prefix crimestatistics-code-slash: <http://linked.opendata.cz/ontology/crimestatistics/code/> .
+@prefix crimestatistics-code-codelist-slash: <http://linked.opendata.cz/ontology/crimestatistics/code/spolecenstviPachatelu/> .
+@prefix crimestatistics-code-codelist-hash: <http://linked.opendata.cz/ontology/crimestatistics/code/spolecenstviPachatelu#> .
+@prefix crimestatistics-code-codelist-class: <http://linked.opendata.cz/ontology/crimestatistics/code/spolecenstviPachatelu/class#> .
+@prefix crimestatistics-code-codelist-property: <http://linked.opendata.cz/ontology/crimestatistics/code/spolecenstviPachatelu/property#> .
+
+# top-level koncepty
+crimestatistics-code-slash:spolecenstviPachatelu
+	skos:hasTopConcept
+		crimestatistics-code-codelist-hash:spachanoSamostatne,
+		crimestatistics-code-codelist-hash:spachanoDvojiciPachatelu,
+		crimestatistics-code-codelist-hash:spachanoVeSkupine,
+		
+		crimestatistics-code-codelist-hash:spachanoDospelymi,
+		crimestatistics-code-codelist-hash:spachanoMladistvymi,
+		crimestatistics-code-codelist-hash:spachanoNezletilymi,
+		crimestatistics-code-codelist-hash:spachanoPravnickymiOsobami,
+		
+		crimestatistics-code-codelist-hash:spachanoDospelymiAMladistvymi,
+		crimestatistics-code-codelist-hash:spachanoDospelymiANezletilymi,
+		crimestatistics-code-codelist-hash:spachaniMladistvymiANezletilymi,
+		crimestatistics-code-codelist-hash:spachanoDospelymiAPravnickymiOsobami,
+		crimestatistics-code-codelist-hash:spachanoMladistvymiAPravnickymiOsobami,
+		crimestatistics-code-codelist-hash:spachanoNezletilymiAPravnickymiOsobami ;
+	.
+
+crimestatistics-code-codelist-hash:spachanoSamostatne a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel "spácháno samostatně"@cs ;
+	skos:notation "crimestatistics.codelist.spolecenstviPachatelu.spachanoSamostatne" ;
+	skos:inScheme crimestatistics-code-slash:spolecenstviPachatelu ;
+	skos:narrower
+		crimestatistics-code-codelist-hash:11,
+		crimestatistics-code-codelist-hash:12,
+		crimestatistics-code-codelist-hash:13,
+		crimestatistics-code-codelist-hash:14 ;
+	.
+
+crimestatistics-code-codelist-hash:spachanoDvojiciPachatelu a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel "spácháno dvojicí pachatelů"@cs ;
+	skos:notation "crimestatistics.codelist.spolecenstviPachatelu.spachanoDvojiciPachatelu" ;
+	skos:inScheme crimestatistics-code-slash:spolecenstviPachatelu ;
+	skos:narrower
+		crimestatistics-code-codelist-hash:20,
+		crimestatistics-code-codelist-hash:21,
+		crimestatistics-code-codelist-hash:22,
+		crimestatistics-code-codelist-hash:23,
+		crimestatistics-code-codelist-hash:24,
+		crimestatistics-code-codelist-hash:25,
+		crimestatistics-code-codelist-hash:26,
+		crimestatistics-code-codelist-hash:27,
+		crimestatistics-code-codelist-hash:28,
+		crimestatistics-code-codelist-hash:29 ;
+	.
+
+crimestatistics-code-codelist-hash:spachanoVeSkupine a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel "spácháno skupinou pachatelů"@cs ;
+	skos:notation "crimestatistics.codelist.spolecenstviPachatelu.spachanoVeSkupine" ;
+	skos:inScheme crimestatistics-code-slash:spolecenstviPachatelu ;
+	skos:narrower
+		crimestatistics-code-codelist-hash:31,
+		crimestatistics-code-codelist-hash:32,
+		crimestatistics-code-codelist-hash:33,
+		crimestatistics-code-codelist-hash:34,
+		crimestatistics-code-codelist-hash:35,
+		crimestatistics-code-codelist-hash:36,
+		crimestatistics-code-codelist-hash:37,
+		crimestatistics-code-codelist-hash:38,
+		crimestatistics-code-codelist-hash:39,
+		crimestatistics-code-codelist-hash:40,
+		crimestatistics-code-codelist-hash:41,
+		crimestatistics-code-codelist-hash:42,
+		crimestatistics-code-codelist-hash:43,
+		crimestatistics-code-codelist-hash:44,
+		crimestatistics-code-codelist-hash:45 ;
+	.
+
+crimestatistics-code-codelist-hash:spachanoDospelymi a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel "spácháno dospělými"@cs ;
+	skos:notation "crimestatistics.codelist.spolecenstviPachatelu.spachanoDospelymi" ;
+	skos:inScheme crimestatistics-code-slash:spolecenstviPachatelu ;
+	skos:narrower
+		crimestatistics-code-codelist-hash:11,
+		crimestatistics-code-codelist-hash:21,
+		crimestatistics-code-codelist-hash:31 ;
+	.
+
+crimestatistics-code-codelist-hash:spachanoMladistvymi a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel "spácháno mladistvými"@cs ;
+	skos:notation "crimestatistics.codelist.spolecenstviPachatelu.spachanoMladistvymi" ;
+	skos:inScheme crimestatistics-code-slash:spolecenstviPachatelu ;
+	skos:narrower
+		crimestatistics-code-codelist-hash:12,
+		crimestatistics-code-codelist-hash:22,
+		crimestatistics-code-codelist-hash:32 ;
+	.
+
+crimestatistics-code-codelist-hash:spachanoNezletilymi a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel "spácháno nezletilými"@cs ;
+	skos:notation "crimestatistics.codelist.spolecenstviPachatelu.spachanoNezletilymi" ;
+	skos:inScheme crimestatistics-code-slash:spolecenstviPachatelu ;
+	skos:narrower
+		crimestatistics-code-codelist-hash:13,
+		crimestatistics-code-codelist-hash:23,
+		crimestatistics-code-codelist-hash:33 ;
+	.
+
+crimestatistics-code-codelist-hash:spachanoPravnickymiOsobami a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel "spácháno právnickými osobami"@cs ;
+	skos:notation "crimestatistics.codelist.spolecenstviPachatelu.spachanoPravnickymiOsobami" ;
+	skos:inScheme crimestatistics-code-slash:spolecenstviPachatelu ;
+	skos:narrower
+		crimestatistics-code-codelist-hash:14,
+		crimestatistics-code-codelist-hash:29,
+		crimestatistics-code-codelist-hash:45 ;
+	.
+
+crimestatistics-code-codelist-hash:spachanoDospelymiAMladistvymi a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel "spácháno dospělými a mladistvými"@cs ;
+	skos:notation "crimestatistics.codelist.spolecenstviPachatelu.spachanoDospelymiAMladistvymi" ;
+	skos:inScheme crimestatistics-code-slash:spolecenstviPachatelu ;
+	skos:narrower
+		crimestatistics-code-codelist-hash:24,
+		crimestatistics-code-codelist-hash:34 ;
+	.
+
+crimestatistics-code-codelist-hash:spachanoDospelymiANezletilymi a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel "spácháno dospělými a nezletilými"@cs ;
+	skos:notation "crimestatistics.codelist.spolecenstviPachatelu.spachanoDospelymiANezletilymi" ;
+	skos:inScheme crimestatistics-code-slash:spolecenstviPachatelu ;
+	skos:narrower
+		crimestatistics-code-codelist-hash:25,
+		crimestatistics-code-codelist-hash:35 ;
+	.
+
+crimestatistics-code-codelist-hash:spachaniMladistvymiANezletilymi a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel "spácháno mladistvými a nezletilými"@cs ;
+	skos:notation "crimestatistics.codelist.spolecenstviPachatelu.spachaniMladistvymiANezletilymi" ;
+	skos:inScheme crimestatistics-code-slash:spolecenstviPachatelu ;
+	skos:narrower
+		crimestatistics-code-codelist-hash:26,
+		crimestatistics-code-codelist-hash:36 ;
+	.
+
+crimestatistics-code-codelist-hash:spachanoDospelymiAPravnickymiOsobami a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel "spácháno dospělými a právnickými osobami"@cs ;
+	skos:notation "crimestatistics.codelist.spolecenstviPachatelu.spachanoDospelymiAPravnickymiOsobami" ;
+	skos:inScheme crimestatistics-code-slash:spolecenstviPachatelu ;
+	skos:narrower
+		crimestatistics-code-codelist-hash:20,
+		crimestatistics-code-codelist-hash:38 ;
+	.
+
+crimestatistics-code-codelist-hash:spachanoMladistvymiAPravnickymiOsobami a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel "spácháno mladistvými a právnickými osobami"@cs ;
+	skos:notation "crimestatistics.codelist.spolecenstviPachatelu.spachanoMladistvymiAPravnickymiOsobami" ;
+	skos:inScheme crimestatistics-code-slash:spolecenstviPachatelu ;
+	skos:narrower
+		crimestatistics-code-codelist-hash:27,
+		crimestatistics-code-codelist-hash:39 ;
+	.
+
+crimestatistics-code-codelist-hash:spachanoNezletilymiAPravnickymiOsobami a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel "spácháno nezletilými a právnickými osobami"@cs ;
+	skos:notation "crimestatistics.codelist.spolecenstviPachatelu.spachanoNezletilymiAPravnickymiOsobami" ;
+	skos:inScheme crimestatistics-code-slash:spolecenstviPachatelu ;
+	skos:narrower
+		crimestatistics-code-codelist-hash:28,
+		crimestatistics-code-codelist-hash:40 ;
+	.

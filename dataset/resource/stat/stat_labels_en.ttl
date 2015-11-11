@@ -1,0 +1,267 @@
+# Standardní prefixy
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix interval: <http://reference.data.gov.uk/def/intervals/> .
+@prefix sdmx:    <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+# Vlastní prefixy
+@prefix crimestatistics-code-slash: <http://linked.opendata.cz/ontology/crimestatistics/code/> .
+@prefix crimestatistics-code-codelist-slash: <http://linked.opendata.cz/ontology/crimestatistics/code/stat/> .
+@prefix crimestatistics-code-codelist-class: <http://linked.opendata.cz/ontology/crimestatistics/code/stat/class#> .
+@prefix crimestatistics-code-codelist-property: <http://linked.opendata.cz/ontology/crimestatistics/code/stat/property#> .
+
+@prefix crimestatistics-code-codelist-hash: <http://linked.opendata.cz/ontology/crimestatistics/code/stat#> .
+
+crimestatistics-code-codelist-hash:601 rdfs:label "Afghanistan"@en ; skos:prefLabel "Afghanistan"@en .
+crimestatistics-code-codelist-hash:501 rdfs:label "Åland Islands"@en ; skos:prefLabel "Åland Islands"@en .
+crimestatistics-code-codelist-hash:110 rdfs:label "Republic of Albania"@en ; skos:prefLabel "Republic of Albania"@en .
+crimestatistics-code-codelist-hash:641 rdfs:label "People Democratic Republic of Algeria"@en ; skos:prefLabel "People Democratic Republic of Algeria"@en .
+crimestatistics-code-codelist-hash:502 rdfs:label "American Samoa"@en ; skos:prefLabel "American Samoa"@en .
+crimestatistics-code-codelist-hash:503 rdfs:label "U.S. Virgin Islands"@en ; skos:prefLabel "U.S. Virgin Islands"@en .
+crimestatistics-code-codelist-hash:504 rdfs:label "Principality of Andorra"@en ; skos:prefLabel "Principality of Andorra"@en .
+crimestatistics-code-codelist-hash:505 rdfs:label "Republic of Angola"@en ; skos:prefLabel "Republic of Angola"@en .
+crimestatistics-code-codelist-hash:506 rdfs:label "Anguilla"@en ; skos:prefLabel "Anguilla"@en .
+crimestatistics-code-codelist-hash:507 rdfs:label "Antarctica"@en ; skos:prefLabel "Antarctica"@en .
+crimestatistics-code-codelist-hash:508 rdfs:label "Antigua and Barbuda"@en ; skos:prefLabel "Antigua and Barbuda"@en .
+crimestatistics-code-codelist-hash:801 rdfs:label "Argentina"@en ; skos:prefLabel "Argentina"@en .
+crimestatistics-code-codelist-hash:190 rdfs:label "Republic of Armenia"@en ; skos:prefLabel "Republic of Armenia"@en .
+crimestatistics-code-codelist-hash:509 rdfs:label "Aruba"@en ; skos:prefLabel "Aruba"@en .
+crimestatistics-code-codelist-hash:471 rdfs:label "Australia"@en ; skos:prefLabel "Australia"@en .
+crimestatistics-code-codelist-hash:191 rdfs:label "Republic of Azerbaijan"@en ; skos:prefLabel "Republic of Azerbaijan"@en .
+crimestatistics-code-codelist-hash:510 rdfs:label "Bahamas"@en ; skos:prefLabel "Bahamas"@en .
+crimestatistics-code-codelist-hash:511 rdfs:label "Bahrain"@en ; skos:prefLabel "Bahrain"@en .
+crimestatistics-code-codelist-hash:512 rdfs:label "People Republic of Bangladesh"@en ; skos:prefLabel "People Republic of Bangladesh"@en .
+crimestatistics-code-codelist-hash:513 rdfs:label "Barbados"@en ; skos:prefLabel "Barbados"@en .
+crimestatistics-code-codelist-hash:411 rdfs:label "Belgium"@en ; skos:prefLabel "Belgium"@en .
+crimestatistics-code-codelist-hash:514 rdfs:label "Belize"@en ; skos:prefLabel "Belize"@en .
+crimestatistics-code-codelist-hash:192 rdfs:label "The Republic of Belarus"@en ; skos:prefLabel "The Republic of Belarus"@en .
+crimestatistics-code-codelist-hash:515 rdfs:label "Republic of Benin"@en ; skos:prefLabel "Republic of Benin"@en .
+crimestatistics-code-codelist-hash:516 rdfs:label "Bermuda"@en ; skos:prefLabel "Bermuda"@en .
+crimestatistics-code-codelist-hash:517 rdfs:label "Kingdom of Bhutan"@en ; skos:prefLabel "Kingdom of Bhutan"@en .
+crimestatistics-code-codelist-hash:802 rdfs:label "Republic of Bolivia"@en ; skos:prefLabel "Republic of Bolivia"@en .
+crimestatistics-code-codelist-hash:311 rdfs:label "Bosnia and Herzegovina"@en ; skos:prefLabel "Bosnia and Herzegovina"@en .
+crimestatistics-code-codelist-hash:518 rdfs:label "Botswana"@en ; skos:prefLabel "Botswana"@en .
+crimestatistics-code-codelist-hash:519 rdfs:label "Bouvet Island"@en ; skos:prefLabel "Bouvet Island"@en .
+crimestatistics-code-codelist-hash:803 rdfs:label "Federative Republic of Brazil"@en ; skos:prefLabel "Federative Republic of Brazil"@en .
+crimestatistics-code-codelist-hash:522 rdfs:label "British Virgin Islands"@en ; skos:prefLabel "British Virgin Islands"@en .
+crimestatistics-code-codelist-hash:523 rdfs:label "Brunei Darussalam"@en ; skos:prefLabel "Brunei Darussalam"@en .
+crimestatistics-code-codelist-hash:120 rdfs:label "The Republic of Bulgaria"@en ; skos:prefLabel "The Republic of Bulgaria"@en .
+crimestatistics-code-codelist-hash:524 rdfs:label "Burkina Faso"@en ; skos:prefLabel "Burkina Faso"@en .
+crimestatistics-code-codelist-hash:643 rdfs:label "Republic of Burundi"@en ; skos:prefLabel "Republic of Burundi"@en .
+crimestatistics-code-codelist-hash:526 rdfs:label "Cook Islands"@en ; skos:prefLabel "Cook Islands"@en .
+crimestatistics-code-codelist-hash:644 rdfs:label "Republic of Chad"@en ; skos:prefLabel "Republic of Chad"@en .
+crimestatistics-code-codelist-hash:312 rdfs:label "Montenegro"@en ; skos:prefLabel "Montenegro"@en .
+crimestatistics-code-codelist-hash:010 rdfs:label "Czech Republic"@en ; skos:prefLabel "Czech Republic"@en .
+crimestatistics-code-codelist-hash:320 rdfs:label "China"@en ; skos:prefLabel "China"@en .
+crimestatistics-code-codelist-hash:412 rdfs:label "Denmark"@en ; skos:prefLabel "Denmark"@en .
+crimestatistics-code-codelist-hash:528 rdfs:label "Dominika"@en ; skos:prefLabel "Dominika"@en .
+crimestatistics-code-codelist-hash:805 rdfs:label "Dominican Republic"@en ; skos:prefLabel "Dominican Republic"@en .
+crimestatistics-code-codelist-hash:529 rdfs:label "Republic of Djibouti"@en ; skos:prefLabel "Republic of Djibouti"@en .
+crimestatistics-code-codelist-hash:673 rdfs:label "Republic of Egypt"@en ; skos:prefLabel "Republic of Egypt"@en .
+crimestatistics-code-codelist-hash:806 rdfs:label "Republic of Ecuador"@en ; skos:prefLabel "Republic of Ecuador"@en .
+crimestatistics-code-codelist-hash:530 rdfs:label "Eritrea"@en ; skos:prefLabel "Eritrea"@en .
+crimestatistics-code-codelist-hash:193 rdfs:label "Republic of Estonia"@en ; skos:prefLabel "Republic of Estonia"@en .
+crimestatistics-code-codelist-hash:646 rdfs:label "Federal Democratic Republic of Ethiopia"@en ; skos:prefLabel "Federal Democratic Republic of Ethiopia"@en .
+crimestatistics-code-codelist-hash:533 rdfs:label "Faroe Islands"@en ; skos:prefLabel "Faroe Islands"@en .
+crimestatistics-code-codelist-hash:534 rdfs:label "Falkland Islands Malvinas"@en ; skos:prefLabel "Falkland Islands Malvinas"@en .
+crimestatistics-code-codelist-hash:535 rdfs:label "Fiji"@en ; skos:prefLabel "Fiji"@en .
+crimestatistics-code-codelist-hash:604 rdfs:label "Republic of the Philippines"@en ; skos:prefLabel "Republic of the Philippines"@en .
+crimestatistics-code-codelist-hash:413 rdfs:label "Republic of Finland"@en ; skos:prefLabel "Republic of Finland"@en .
+crimestatistics-code-codelist-hash:537 rdfs:label "French Guyana"@en ; skos:prefLabel "French Guyana"@en .
+crimestatistics-code-codelist-hash:539 rdfs:label "French Polynesia"@en ; skos:prefLabel "French Polynesia"@en .
+crimestatistics-code-codelist-hash:414 rdfs:label "France"@en ; skos:prefLabel "France"@en .
+crimestatistics-code-codelist-hash:647 rdfs:label "Republic of Gabon"@en ; skos:prefLabel "Republic of Gabon"@en .
+crimestatistics-code-codelist-hash:648 rdfs:label "Republic of The Gambia"@en ; skos:prefLabel "Republic of The Gambia"@en .
+crimestatistics-code-codelist-hash:649 rdfs:label "Republic of Ghana"@en ; skos:prefLabel "Republic of Ghana"@en .
+crimestatistics-code-codelist-hash:841 rdfs:label "Gibraltar"@en ; skos:prefLabel "Gibraltar"@en .
+crimestatistics-code-codelist-hash:541 rdfs:label "Grenada"@en ; skos:prefLabel "Grenada"@en .
+crimestatistics-code-codelist-hash:542 rdfs:label "Greenland"@en ; skos:prefLabel "Greenland"@en .
+crimestatistics-code-codelist-hash:194 rdfs:label "Georgia"@en ; skos:prefLabel "Georgia"@en .
+crimestatistics-code-codelist-hash:543 rdfs:label "Guadeloupe"@en ; skos:prefLabel "Guadeloupe"@en .
+crimestatistics-code-codelist-hash:544 rdfs:label "Guam"@en ; skos:prefLabel "Guam"@en .
+crimestatistics-code-codelist-hash:807 rdfs:label "Republic of Guatemala"@en ; skos:prefLabel "Republic of Guatemala"@en .
+crimestatistics-code-codelist-hash:545 rdfs:label "Guernsey"@en ; skos:prefLabel "Guernsey"@en .
+crimestatistics-code-codelist-hash:546 rdfs:label "Guinea Bissau"@en ; skos:prefLabel "Guinea Bissau"@en .
+crimestatistics-code-codelist-hash:651 rdfs:label "Republic of Guinea"@en ; skos:prefLabel "Republic of Guinea"@en .
+crimestatistics-code-codelist-hash:547 rdfs:label "The Republic of Guyana"@en ; skos:prefLabel "The Republic of Guyana"@en .
+crimestatistics-code-codelist-hash:808 rdfs:label "Republic of Haiti"@en ; skos:prefLabel "Republic of Haiti"@en .
+crimestatistics-code-codelist-hash:548 rdfs:label "Heard Island and McDonald Islands"@en ; skos:prefLabel "Heard Island and McDonald Islands"@en .
+crimestatistics-code-codelist-hash:809 rdfs:label "Republic of Honduras"@en ; skos:prefLabel "Republic of Honduras"@en .
+crimestatistics-code-codelist-hash:549 rdfs:label "Hong Kong"@en ; skos:prefLabel "Hong Kong"@en .
+crimestatistics-code-codelist-hash:811 rdfs:label "The Republic of Chile"@en ; skos:prefLabel "The Republic of Chile"@en .
+crimestatistics-code-codelist-hash:313 rdfs:label "The Republic of Croatia"@en ; skos:prefLabel "The Republic of Croatia"@en .
+crimestatistics-code-codelist-hash:605 rdfs:label "Republic of India"@en ; skos:prefLabel "Republic of India"@en .
+crimestatistics-code-codelist-hash:606 rdfs:label "Republic of Indonesia"@en ; skos:prefLabel "Republic of Indonesia"@en .
+crimestatistics-code-codelist-hash:607 rdfs:label "Iraq"@en ; skos:prefLabel "Iraq"@en .
+crimestatistics-code-codelist-hash:608 rdfs:label "Iran"@en ; skos:prefLabel "Iran"@en .
+crimestatistics-code-codelist-hash:416 rdfs:label "Ireland"@en ; skos:prefLabel "Ireland"@en .
+crimestatistics-code-codelist-hash:417 rdfs:label "The Republic of Iceland"@en ; skos:prefLabel "The Republic of Iceland"@en .
+crimestatistics-code-codelist-hash:418 rdfs:label "Italy"@en ; skos:prefLabel "Italy"@en .
+crimestatistics-code-codelist-hash:609 rdfs:label "State of Israel"@en ; skos:prefLabel "State of Israel"@en .
+crimestatistics-code-codelist-hash:812 rdfs:label "Jamaica"@en ; skos:prefLabel "Jamaica"@en .
+crimestatistics-code-codelist-hash:441 rdfs:label "Japan"@en ; skos:prefLabel "Japan"@en .
+crimestatistics-code-codelist-hash:611 rdfs:label "Republic of Yemen"@en ; skos:prefLabel "Republic of Yemen"@en .
+crimestatistics-code-codelist-hash:551 rdfs:label "Jersey"@en ; skos:prefLabel "Jersey"@en .
+crimestatistics-code-codelist-hash:451 rdfs:label "South Africa"@en ; skos:prefLabel "South Africa"@en .
+crimestatistics-code-codelist-hash:550 rdfs:label "South Georgia and the South Sandwich Islands"@en ; skos:prefLabel "South Georgia and the South Sandwich Islands"@en .
+crimestatistics-code-codelist-hash:614 rdfs:label "Jordan"@en ; skos:prefLabel "Jordan"@en .
+crimestatistics-code-codelist-hash:310 rdfs:label "Yugoslavia"@en ; skos:prefLabel "Yugoslavia"@en .
+crimestatistics-code-codelist-hash:553 rdfs:label "Cayman Islands"@en ; skos:prefLabel "Cayman Islands"@en .
+crimestatistics-code-codelist-hash:615 rdfs:label "Kingdom of Cambodia"@en ; skos:prefLabel "Kingdom of Cambodia"@en .
+crimestatistics-code-codelist-hash:653 rdfs:label "Republic of Cameroon"@en ; skos:prefLabel "Republic of Cameroon"@en .
+crimestatistics-code-codelist-hash:461 rdfs:label "Canada"@en ; skos:prefLabel "Canada"@en .
+crimestatistics-code-codelist-hash:554 rdfs:label "Cape Verde"@en ; skos:prefLabel "Cape Verde"@en .
+crimestatistics-code-codelist-hash:555 rdfs:label "Qatar"@en ; skos:prefLabel "Qatar"@en .
+crimestatistics-code-codelist-hash:195 rdfs:label "Kazakhstan"@en ; skos:prefLabel "Kazakhstan"@en .
+crimestatistics-code-codelist-hash:654 rdfs:label "Republic of Kenya"@en ; skos:prefLabel "Republic of Kenya"@en .
+crimestatistics-code-codelist-hash:556 rdfs:label "Kiribati"@en ; skos:prefLabel "Kiribati"@en .
+crimestatistics-code-codelist-hash:557 rdfs:label "Cocos Islands"@en ; skos:prefLabel "Cocos Islands"@en .
+crimestatistics-code-codelist-hash:813 rdfs:label "Republic of Colombia"@en ; skos:prefLabel "Republic of Colombia"@en .
+crimestatistics-code-codelist-hash:558 rdfs:label "Comoros Islands"@en ; skos:prefLabel "Comoros Islands"@en .
+crimestatistics-code-codelist-hash:330 rdfs:label "North Korea"@en ; skos:prefLabel "North Korea"@en .
+crimestatistics-code-codelist-hash:612 rdfs:label "South Korea"@en ; skos:prefLabel "South Korea"@en .
+crimestatistics-code-codelist-hash:846 rdfs:label "Kosovo"@en ; skos:prefLabel "Kosovo"@en .
+crimestatistics-code-codelist-hash:814 rdfs:label "Republic of Costa Rica"@en ; skos:prefLabel "Republic of Costa Rica"@en .
+crimestatistics-code-codelist-hash:350 rdfs:label "The Republic of Cuba"@en ; skos:prefLabel "The Republic of Cuba"@en .
+crimestatistics-code-codelist-hash:616 rdfs:label "State of Kuwait"@en ; skos:prefLabel "State of Kuwait"@en .
+crimestatistics-code-codelist-hash:617 rdfs:label "The Republic of Cyprus"@en ; skos:prefLabel "The Republic of Cyprus"@en .
+crimestatistics-code-codelist-hash:196 rdfs:label "Kyrgyzstan"@en ; skos:prefLabel "Kyrgyzstan"@en .
+crimestatistics-code-codelist-hash:618 rdfs:label "Laos"@en ; skos:prefLabel "Laos"@en .
+crimestatistics-code-codelist-hash:560 rdfs:label "Kingdom of Lesotho"@en ; skos:prefLabel "Kingdom of Lesotho"@en .
+crimestatistics-code-codelist-hash:619 rdfs:label "Lebanese Republic"@en ; skos:prefLabel "Lebanese Republic"@en .
+crimestatistics-code-codelist-hash:657 rdfs:label "Republic of Liberia"@en ; skos:prefLabel "Republic of Liberia"@en .
+crimestatistics-code-codelist-hash:658 rdfs:label "Libya"@en ; skos:prefLabel "Libya"@en .
+crimestatistics-code-codelist-hash:561 rdfs:label "Liechtenstein"@en ; skos:prefLabel "Liechtenstein"@en .
+crimestatistics-code-codelist-hash:197 rdfs:label "The Republic of Lithuania"@en ; skos:prefLabel "The Republic of Lithuania"@en .
+crimestatistics-code-codelist-hash:198 rdfs:label "Republic of Latvia"@en ; skos:prefLabel "Republic of Latvia"@en .
+crimestatistics-code-codelist-hash:419 rdfs:label "Luxembourg"@en ; skos:prefLabel "Luxembourg"@en .
+crimestatistics-code-codelist-hash:562 rdfs:label "Macao"@en ; skos:prefLabel "Macao"@en .
+crimestatistics-code-codelist-hash:661 rdfs:label "Republic of Madagascar"@en ; skos:prefLabel "Republic of Madagascar"@en .
+crimestatistics-code-codelist-hash:130 rdfs:label "The Republic of Hungary"@en ; skos:prefLabel "The Republic of Hungary"@en .
+crimestatistics-code-codelist-hash:314 rdfs:label "Macedonia"@en ; skos:prefLabel "Macedonia"@en .
+crimestatistics-code-codelist-hash:621 rdfs:label "Malaysia"@en ; skos:prefLabel "Malaysia"@en .
+crimestatistics-code-codelist-hash:659 rdfs:label "Republic of Malawi"@en ; skos:prefLabel "Republic of Malawi"@en .
+crimestatistics-code-codelist-hash:622 rdfs:label "The Republic of Maldives"@en ; skos:prefLabel "The Republic of Maldives"@en .
+crimestatistics-code-codelist-hash:563 rdfs:label "Mali"@en ; skos:prefLabel "Mali"@en .
+crimestatistics-code-codelist-hash:842 rdfs:label "Malta"@en ; skos:prefLabel "Malta"@en .
+crimestatistics-code-codelist-hash:663 rdfs:label "The Kingdom of Morocco"@en ; skos:prefLabel "The Kingdom of Morocco"@en .
+crimestatistics-code-codelist-hash:564 rdfs:label "Marshall Islands"@en ; skos:prefLabel "Marshall Islands"@en .
+crimestatistics-code-codelist-hash:565 rdfs:label "Martinique"@en ; skos:prefLabel "Martinique"@en .
+crimestatistics-code-codelist-hash:566 rdfs:label "The Republic of Mauritius"@en ; skos:prefLabel "The Republic of Mauritius"@en .
+crimestatistics-code-codelist-hash:664 rdfs:label "Mauritania"@en ; skos:prefLabel "Mauritania"@en .
+crimestatistics-code-codelist-hash:567 rdfs:label "Mayotte"@en ; skos:prefLabel "Mayotte"@en .
+crimestatistics-code-codelist-hash:815 rdfs:label "Mexico"@en ; skos:prefLabel "Mexico"@en .
+crimestatistics-code-codelist-hash:570 rdfs:label "Micronesia"@en ; skos:prefLabel "Micronesia"@en .
+crimestatistics-code-codelist-hash:199 rdfs:label "Republic of Moldova"@en ; skos:prefLabel "Republic of Moldova"@en .
+crimestatistics-code-codelist-hash:571 rdfs:label "The Principality of Monaco"@en ; skos:prefLabel "The Principality of Monaco"@en .
+crimestatistics-code-codelist-hash:180 rdfs:label "Mongolia"@en ; skos:prefLabel "Mongolia"@en .
+crimestatistics-code-codelist-hash:572 rdfs:label "Montserrat"@en ; skos:prefLabel "Montserrat"@en .
+crimestatistics-code-codelist-hash:573 rdfs:label "Republic of Mozambique"@en ; skos:prefLabel "Republic of Mozambique"@en .
+crimestatistics-code-codelist-hash:574 rdfs:label "Union of Myanmar"@en ; skos:prefLabel "Union of Myanmar"@en .
+crimestatistics-code-codelist-hash:575 rdfs:label "Republic of Namibia"@en ; skos:prefLabel "Republic of Namibia"@en .
+crimestatistics-code-codelist-hash:576 rdfs:label "Nauru"@en ; skos:prefLabel "Nauru"@en .
+crimestatistics-code-codelist-hash:420 rdfs:label "Germany"@en ; skos:prefLabel "Germany"@en .
+crimestatistics-code-codelist-hash:577 rdfs:label "Kingdom of Nepal"@en ; skos:prefLabel "Kingdom of Nepal"@en .
+crimestatistics-code-codelist-hash:666 rdfs:label "Federal Republic of Nigeria"@en ; skos:prefLabel "Federal Republic of Nigeria"@en .
+crimestatistics-code-codelist-hash:665 rdfs:label "Republic of Niger"@en ; skos:prefLabel "Republic of Niger"@en .
+crimestatistics-code-codelist-hash:816 rdfs:label "Republic of Nicaragua"@en ; skos:prefLabel "Republic of Nicaragua"@en .
+crimestatistics-code-codelist-hash:579 rdfs:label "Niue"@en ; skos:prefLabel "Niue"@en .
+crimestatistics-code-codelist-hash:580 rdfs:label "Netherlands Antilles"@en ; skos:prefLabel "Netherlands Antilles"@en .
+crimestatistics-code-codelist-hash:422 rdfs:label "The Netherlands"@en ; skos:prefLabel "The Netherlands"@en .
+crimestatistics-code-codelist-hash:581 rdfs:label "Norfolk"@en ; skos:prefLabel "Norfolk"@en .
+crimestatistics-code-codelist-hash:423 rdfs:label "Norway"@en ; skos:prefLabel "Norway"@en .
+crimestatistics-code-codelist-hash:582 rdfs:label "New Caledonia"@en ; skos:prefLabel "New Caledonia"@en .
+crimestatistics-code-codelist-hash:472 rdfs:label "New Zealand"@en ; skos:prefLabel "New Zealand"@en .
+crimestatistics-code-codelist-hash:583 rdfs:label "Oman"@en ; skos:prefLabel "Oman"@en .
+crimestatistics-code-codelist-hash:847 rdfs:label "Isle of Man"@en ; skos:prefLabel "Isle of Man"@en .
+crimestatistics-code-codelist-hash:624 rdfs:label "Pakistan"@en ; skos:prefLabel "Pakistan"@en .
+crimestatistics-code-codelist-hash:586 rdfs:label "Palau"@en ; skos:prefLabel "Palau"@en .
+crimestatistics-code-codelist-hash:587 rdfs:label "Palestine"@en ; skos:prefLabel "Palestine"@en .
+crimestatistics-code-codelist-hash:817 rdfs:label "Republic of Panama"@en ; skos:prefLabel "Republic of Panama"@en .
+crimestatistics-code-codelist-hash:589 rdfs:label "Papua New Guinea"@en ; skos:prefLabel "Papua New Guinea"@en .
+crimestatistics-code-codelist-hash:818 rdfs:label "The Republic of Paraguay"@en ; skos:prefLabel "The Republic of Paraguay"@en .
+crimestatistics-code-codelist-hash:819 rdfs:label "Republic of Peru"@en ; skos:prefLabel "Republic of Peru"@en .
+crimestatistics-code-codelist-hash:590 rdfs:label "Pitcairn"@en ; skos:prefLabel "Pitcairn"@en .
+crimestatistics-code-codelist-hash:667 rdfs:label "Ivory Coast"@en ; skos:prefLabel "Ivory Coast"@en .
+crimestatistics-code-codelist-hash:150 rdfs:label "Republic of Poland"@en ; skos:prefLabel "Republic of Poland"@en .
+crimestatistics-code-codelist-hash:591 rdfs:label "Puerto Rico"@en ; skos:prefLabel "Puerto Rico"@en .
+crimestatistics-code-codelist-hash:424 rdfs:label "The Portuguese Republic"@en ; skos:prefLabel "The Portuguese Republic"@en .
+crimestatistics-code-codelist-hash:425 rdfs:label "The Republic of Austria"@en ; skos:prefLabel "The Republic of Austria"@en .
+crimestatistics-code-codelist-hash:592 rdfs:label "Reunion"@en ; skos:prefLabel "Reunion"@en .
+crimestatistics-code-codelist-hash:593 rdfs:label "Equatorial Guinea"@en ; skos:prefLabel "Equatorial Guinea"@en .
+crimestatistics-code-codelist-hash:160 rdfs:label "Romania"@en ; skos:prefLabel "Romania"@en .
+crimestatistics-code-codelist-hash:101 rdfs:label "Russia"@en ; skos:prefLabel "Russia"@en .
+crimestatistics-code-codelist-hash:669 rdfs:label "Republic of Rwanda"@en ; skos:prefLabel "Republic of Rwanda"@en .
+crimestatistics-code-codelist-hash:730 rdfs:label "Malta"@en ; skos:prefLabel "Malta"@en .
+crimestatistics-code-codelist-hash:426 rdfs:label "Greece"@en ; skos:prefLabel "Greece"@en .
+crimestatistics-code-codelist-hash:595 rdfs:label "Saint Pierre and Miguelon"@en ; skos:prefLabel "Saint Pierre and Miguelon"@en .
+crimestatistics-code-codelist-hash:821 rdfs:label "Republic of El Salvador"@en ; skos:prefLabel "Republic of El Salvador"@en .
+crimestatistics-code-codelist-hash:596 rdfs:label "Samoa"@en ; skos:prefLabel "Samoa"@en .
+crimestatistics-code-codelist-hash:597 rdfs:label "San Marino"@en ; skos:prefLabel "San Marino"@en .
+crimestatistics-code-codelist-hash:625 rdfs:label "Saudi Arabia"@en ; skos:prefLabel "Saudi Arabia"@en .
+crimestatistics-code-codelist-hash:671 rdfs:label "Republic of Senegal"@en ; skos:prefLabel "Republic of Senegal"@en .
+crimestatistics-code-codelist-hash:598 rdfs:label "Northern Mariana Islands"@en ; skos:prefLabel "Northern Mariana Islands"@en .
+crimestatistics-code-codelist-hash:599 rdfs:label "Republic of Seychelles"@en ; skos:prefLabel "Republic of Seychelles"@en .
+crimestatistics-code-codelist-hash:672 rdfs:label "Sierra Leone"@en ; skos:prefLabel "Sierra Leone"@en .
+crimestatistics-code-codelist-hash:626 rdfs:label "Republic of Singapore"@en ; skos:prefLabel "Republic of Singapore"@en .
+crimestatistics-code-codelist-hash:050 rdfs:label "Slovak Republic"@en ; skos:prefLabel "Slovak Republic"@en .
+crimestatistics-code-codelist-hash:315 rdfs:label "Republic of Slovenia"@en ; skos:prefLabel "Republic of Slovenia"@en .
+crimestatistics-code-codelist-hash:674 rdfs:label "Somali Democratic Republic"@en ; skos:prefLabel "Somali Democratic Republic"@en .
+crimestatistics-code-codelist-hash:701 rdfs:label "United Arab Emirates"@en ; skos:prefLabel "United Arab Emirates"@en .
+crimestatistics-code-codelist-hash:462 rdfs:label "United States of America USA"@en ; skos:prefLabel "United States of America USA"@en .
+crimestatistics-code-codelist-hash:316 rdfs:label "Serbia"@en ; skos:prefLabel "Serbia"@en .
+crimestatistics-code-codelist-hash:603 rdfs:label "Sri Lanka"@en ; skos:prefLabel "Sri Lanka"@en .
+crimestatistics-code-codelist-hash:675 rdfs:label "Central African Republic"@en ; skos:prefLabel "Central African Republic"@en .
+crimestatistics-code-codelist-hash:676 rdfs:label "Republic of Sudan"@en ; skos:prefLabel "Republic of Sudan"@en .
+crimestatistics-code-codelist-hash:705 rdfs:label "Republic of Suriname"@en ; skos:prefLabel "Republic of Suriname"@en .
+crimestatistics-code-codelist-hash:707 rdfs:label "Svalbard and Jan Mayen"@en ; skos:prefLabel "Svalbard and Jan Mayen"@en .
+crimestatistics-code-codelist-hash:708 rdfs:label "Saint Helena"@en ; skos:prefLabel "Saint Helena"@en .
+crimestatistics-code-codelist-hash:709 rdfs:label "Saint Lucia"@en ; skos:prefLabel "Saint Lucia"@en .
+crimestatistics-code-codelist-hash:710 rdfs:label "Saint Kitts and Nevis"@en ; skos:prefLabel "Saint Kitts and Nevis"@en .
+crimestatistics-code-codelist-hash:711 rdfs:label "Vatican"@en ; skos:prefLabel "Vatican"@en .
+crimestatistics-code-codelist-hash:712 rdfs:label "São Tomé and Príncipe"@en ; skos:prefLabel "São Tomé and Príncipe"@en .
+crimestatistics-code-codelist-hash:706 rdfs:label "Saint Vincent and the Grenadines"@en ; skos:prefLabel "Saint Vincent and the Grenadines"@en .
+crimestatistics-code-codelist-hash:713 rdfs:label "Kingdom of Swaziland"@en ; skos:prefLabel "Kingdom of Swaziland"@en .
+crimestatistics-code-codelist-hash:627 rdfs:label "Syria"@en ; skos:prefLabel "Syria"@en .
+crimestatistics-code-codelist-hash:714 rdfs:label "Solomon Islands"@en ; skos:prefLabel "Solomon Islands"@en .
+crimestatistics-code-codelist-hash:427 rdfs:label "The Kingdom of Spain"@en ; skos:prefLabel "The Kingdom of Spain"@en .
+crimestatistics-code-codelist-hash:428 rdfs:label "The Kingdom of Sweden"@en ; skos:prefLabel "The Kingdom of Sweden"@en .
+crimestatistics-code-codelist-hash:429 rdfs:label "Switzerland"@en ; skos:prefLabel "Switzerland"@en .
+crimestatistics-code-codelist-hash:102 rdfs:label "Tajikistan"@en ; skos:prefLabel "Tajikistan"@en .
+crimestatistics-code-codelist-hash:677 rdfs:label "Tanzania"@en ; skos:prefLabel "Tanzania"@en .
+crimestatistics-code-codelist-hash:628 rdfs:label "The Kingdom of Thailand"@en ; skos:prefLabel "The Kingdom of Thailand"@en .
+crimestatistics-code-codelist-hash:715 rdfs:label "Taiwan"@en ; skos:prefLabel "Taiwan"@en .
+crimestatistics-code-codelist-hash:678 rdfs:label "Togo"@en ; skos:prefLabel "Togo"@en .
+crimestatistics-code-codelist-hash:717 rdfs:label "Tokelau"@en ; skos:prefLabel "Tokelau"@en .
+crimestatistics-code-codelist-hash:718 rdfs:label "Tonga"@en ; skos:prefLabel "Tonga"@en .
+crimestatistics-code-codelist-hash:822 rdfs:label "Trinidad and Tobago"@en ; skos:prefLabel "Trinidad and Tobago"@en .
+crimestatistics-code-codelist-hash:679 rdfs:label "Republic of Tunisia"@en ; skos:prefLabel "Republic of Tunisia"@en .
+crimestatistics-code-codelist-hash:629 rdfs:label "Republic of Turkey"@en ; skos:prefLabel "Republic of Turkey"@en .
+crimestatistics-code-codelist-hash:103 rdfs:label "Turkmenistan"@en ; skos:prefLabel "Turkmenistan"@en .
+crimestatistics-code-codelist-hash:719 rdfs:label "Turks and Caicos"@en ; skos:prefLabel "Turks and Caicos"@en .
+crimestatistics-code-codelist-hash:720 rdfs:label "Tuvalu"@en ; skos:prefLabel "Tuvalu"@en .
+crimestatistics-code-codelist-hash:681 rdfs:label "Republic of Uganda"@en ; skos:prefLabel "Republic of Uganda"@en .
+crimestatistics-code-codelist-hash:104 rdfs:label "Ukraine"@en ; skos:prefLabel "Ukraine"@en .
+crimestatistics-code-codelist-hash:823 rdfs:label "Eastern Republic of Uruguay"@en ; skos:prefLabel "Eastern Republic of Uruguay"@en .
+crimestatistics-code-codelist-hash:105 rdfs:label "Uzbekistan"@en ; skos:prefLabel "Uzbekistan"@en .
+crimestatistics-code-codelist-hash:721 rdfs:label "Christmas Island"@en ; skos:prefLabel "Christmas Island"@en .
+crimestatistics-code-codelist-hash:722 rdfs:label "Republic of Vanuatu"@en ; skos:prefLabel "Republic of Vanuatu"@en .
+crimestatistics-code-codelist-hash:431 rdfs:label "United Kingdom"@en ; skos:prefLabel "United Kingdom"@en .
+crimestatistics-code-codelist-hash:824 rdfs:label "Republic of Venezuela"@en ; skos:prefLabel "Republic of Venezuela"@en .
+crimestatistics-code-codelist-hash:340 rdfs:label "Vietnam"@en ; skos:prefLabel "Vietnam"@en .
+crimestatistics-code-codelist-hash:723 rdfs:label "East Timor"@en ; skos:prefLabel "East Timor"@en .
+crimestatistics-code-codelist-hash:725 rdfs:label "Wallis and Futuna"@en ; skos:prefLabel "Wallis and Futuna"@en .
+crimestatistics-code-codelist-hash:682 rdfs:label "Republic of Zambia"@en ; skos:prefLabel "Republic of Zambia"@en .
+crimestatistics-code-codelist-hash:727 rdfs:label "Western Sahara"@en ; skos:prefLabel "Western Sahara"@en .
+crimestatistics-code-codelist-hash:729 rdfs:label "Republic of Zimbabwe"@en ; skos:prefLabel "Republic of Zimbabwe"@en .

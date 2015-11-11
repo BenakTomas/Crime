@@ -1,0 +1,290 @@
+11#uhelné doly# 
+12#plynárny a rozvod plynu# 
+13#tranzitní PLYNOVOD# 
+10#ostatní objekty paliv# 
+##
+#Energetika#
+21#elektrárny# 
+22#rozvod elektřiny# 
+23#teplárny a rozvod tepla# 
+20#ostatní objekty energetiky# 
+##
+#Hutnictví železa#
+31#železorudné doly# 
+32#hutní výroba a druhovýroba# 
+33#Kovošrot# 
+30#ostatní objekty hutnictví železa# 
+##
+#Hutnictví neželezných kovů#
+41#rudné doly a uranový průmysl# 
+42#kovohutě# 
+40#ostatní objekty hutnictví neželezných kovů# 
+##
+#Chemický a gumárensko-osikový průmysl#
+51#těžká chemie# 
+52#petrochemie# 
+53#pneumatiky# 
+54#umělé hmoty a látky# 
+55#pohonné hmoty# 
+56#tranzitní ROPOVOD# 
+50#ostatní objekty v chem. a gum.-osik. průmyslu# 
+##
+#Těžké strojírenství#
+61#montážní organizace těžkého strojírenství# 
+60#ostatní objekty těžkého strojírenství# 
+##
+#Všeobecné strojírenství#
+71#automobilový průmysl# 
+70#ostatní objekty všeobecného stroj.# 
+##
+#Spotřební průmysl (celkem)#
+81#dřevařský průmysl# 
+82#textilní a konfekční průmysl# 
+83#kožedělný a kožešnický průmysl# 
+84#sklářský průmysl# 
+85#polygrafický průmysl# 
+86#porcelánky a keramický průmysl# 
+87#papírny a výrobky celulózy# 
+80#ostatní objekty spotřebního průmyslu# 
+##
+#Výrobní družstva#
+101#kovozpracující družstva# 
+102#dřevozpracující družstva# 
+103#chemická družstva# 
+104#sklářská a keramická družstva# 
+105#kožedělná a kožešnická družstva# 
+106#stavební družstva# 
+100#neprůmyslová a ostatní družstva# 
+##
+#Stavebnictví (celkem)#
+121#výstavba investičních celků# 
+122#bytová a občanská výstavba# 
+123#výroba stavebních hmot#(kromě podniků MH, výrobních družstev apod. podniků)
+124#okresní stavební podniky# 
+125#družstevní bytová výstavba# 
+126#Staviva# 
+120#ostatní objekty stavebnictví# 
+##
+141#Geologie# 
+##
+#Spoje#
+191#poštovní úřady# 
+192#poštovní novinová služba#(PNS)
+193#poštovní filatelistická služba#(POFIS)
+194#telekomunikace# 
+190#ostatní objekty spojů# 
+##
+#Doprava vodní a letecká#
+201#doprava vodní# 
+202#doprava letecká# 
+##
+#Doprava silniční a městská#
+211#nákladní doprava vnitrostátní# 
+212#nákladní doprava mezinárodní#(TIR)
+213#osobní přeprava# 
+215#městská doprava# 
+210#ostatní silniční a městská doprava# 
+##
+221#METRO# 
+##
+#Silniční hospodářství#
+231#silnice# 
+232#dálnice# 
+233#okresní správa silnic# 
+230#ostatní silniční hospodářsví# 
+##
+#Železniční doprava (celkem), železniční nákladní doprava#
+241#vlakotvorná stanice# 
+242#pohraniční stanice# 
+243#stanice soustředěné nakládky a vykládky# 
+244#překladištní rampy# 
+240#ostatní železniční doprava# 
+##
+251#železniční osobní přeprava# 
+##
+#Železniční strojírenská a opravárenská činnost#
+261#dílny pro opravy železničních vozidel# 
+262#lokomotivní depa# 
+263#vozová depa# 
+260#ostatní železniční stroj. a opr. činnost# 
+##
+271#traťové hospodářství# 
+##
+#Železniční stavebnictví#
+281#železniční průmyslová a stavení výroba# 
+280#ostatní železniční stavitelství# 
+##
+#Ostatní železniční objekty#
+291#jídelní a lůžkové vozy# 
+292#sdělovací a zabezpečovací technika# 
+290#ostatní železniční objekty# 
+##
+#Potravinářský průmysl (celkem)#
+321#masný průmysl# 
+322#mlékárenský průmysl# 
+323#mlýnský a pekárenský průmysl# 
+324#cukrovary# 
+325#lihovary a konzervárny# 
+326#pivovary a sladovny# 
+327#mrazírny# 
+328#čokoládovny# 
+329#vinařské závody# 
+330#škrobárny# 
+331#drůbežářský průmysl# 
+332#tabákový průmysl# 
+333#průmysl mléčné výživy# 
+334#tukový průmysl# 
+320#ostatní objekty potravinářského průmyslu# 
+##
+#Zemědělství (celkem)#
+401#státní statky# 
+402#zemědělská družstva# 
+403#společné zemědělské podniky# 
+404#strojně traktorové stanice#(STS)
+405#zemědělské zásobovací a nákupní podniky# 
+406#meliorace#(státní)
+407#meliorační družstva# 
+408#šlechtitelské a semenářské statky a stanice# 
+409#plemenářské podniky# 
+410#zemědělské stavebnictví# 
+411#zemědělské správy# 
+412#rybářství# 
+400#ostatní v oblasti zemědělství# 
+##
+#Veterinární služby#
+431#veterinární zařízení#(střediska, nemocnice)
+432#veterinární asanační ústavy# 
+433#výroba veterinárních léčiv# 
+430#ostatní objekty veterinární služby# 
+##
+#Lesní hospodářství#
+461#lesy státní# 
+462#lesy pod odbornou správou# 
+463#lesy soukromé# 
+464#lesy vojenské# 
+460#ostatní v oblasti lesního hospodářství# 
+##
+#Vodní hospodářství#
+471#správy povodí# 
+472#soukromé rybníky a vodní toky# 
+470#ostatní v oblasti vodního hospodářství# 
+##
+#Státní a soukromý obchod (celkem)#
+501#potraviny# 
+502#ovoce a zelenina# 
+503#veřejné stravování# 
+504#textil a oděvy# 
+505#průmyslové zboží# 
+506#nábytek# 
+507#klenoty# 
+508#obuv a kožená galanterie# 
+509#paliva# 
+510#balírny obchodu# 
+511#obchodní domy# 
+512#cestovní kanceláře# 
+513#interhotely# 
+514#herny a herna-bary# 
+500#ostatní státní a soukromý obchod# 
+##
+#Družstevní obchod#
+531#spotřební družstva# 
+532#družstevní zásobovací podnik# 
+533#velkonákupna spotřebních družstev# 
+530#ostatní družstervní obchod# 
+##
+#Místní hospodářství#
+581#místní průmysl# 
+582#komunální služby# 
+583#sběrné suroviny# 
+584#bytové hospodářství# 
+585#drobné provozovny# 
+586#technické služby# 
+587#skládky# 
+580#ostatní objekty místního hospodářství# 
+##
+#Zdravotnictví#
+611#výrobny léčiv# 
+612#zdravotnické zásobování# 
+613#lékárny# 
+614#zdravotnická střediska# 
+615#lůžkové zařízení# 
+616#lázeňské ústavy# 
+617#speciální léčebny a sanatoria# 
+618#transfúzní služba# 
+610#ostatní objekty zdravotnictví# 
+##
+#Sociální péče#
+631#důchodové zabezpečení# 
+632#ostatní sociální zabezpečení#(rodinné přídavky apod.)
+633#domovy důchodců# 
+634#dětské domovy# 
+630#ostatní v oblasti sociální péče# 
+##
+#Školství#
+651#mateřské školky# 
+652#základní školy# 
+653#střední školy# 
+654#odborné školy# 
+655#vysoké školy# 
+656#školské správy# 
+650#ostatní objekty a zařízení ve školství# 
+##
+#Kultura#
+671#státní památková péče# 
+672#církve# 
+673#umělecké agentury# 
+674#kulturní střediska a domy# 
+675#divadla# 
+676#kina# 
+677#hudební a estrádní soubory# 
+678#muzea a galerie# 
+679#umělecké svazy a organizace# 
+680#knižní vydavatelství# 
+670#ostatní kulturní organizace a zařízení# 
+##
+#Státní správa#
+707#soudnictví, státní zastupitelství, advokacie# 
+708#policie# 
+709#hasiči# 
+711#obecní, okresní a krajské úřady# 
+712#obrana# 
+713#berní úřady# 
+710#ostatní orgány a organizace státní správy# 
+##
+#Finance#
+731#banky# 
+732#spořitelny# 
+733#pojišťovny# 
+734#finanční burzy# 
+735#leasingové společnosti#(Multiservis, Škofin, Cetelem apod.)
+730#ostatní objekty v oblasti financí# 
+##
+#Zahraniční obchod#
+751#společnosti zabývající se dovozem a vývozem# 
+750#ostatní v oblasti zahraničního obchodu# 
+##
+#Společenské a zájmové organizace (celkem)#
+801#odborové svazy a jejich zařízení# 
+802#mládežnické organizace a jejich zařízení# 
+803#tělovýchovné organizace a jejich zařízení# 
+804#automotokluby# 
+805#aerokluby# 
+806#organizace branných sportů# 
+807#červený kříž# 
+808#sdružení rodičů a přátel školy# 
+809#chovatelské svazy#(drobné zvířectvo, myslivecké svazy, zahrádkáři apod.)
+810#ZOO, záchranné stanice pro handicapovaná zvířata# 
+800#ostatní spol. a zájm. organizace# 
+##
+#Ostatní nevýrobní úseky a objekty#
+901#akademie věd# 
+902#film# 
+903#rozhlas# 
+904#televize# 
+905#INTERNET, INTRANET# 
+906#elektronická pošta# 
+907#datová síť# 
+900#ostatní nevýrobní úseky a objekty# 
+##
+#Fyzické osoby#
+980#fyzická osoba# 

@@ -1,0 +1,522 @@
+# Standardní prefixy
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix interval: <http://reference.data.gov.uk/def/intervals/> .
+@prefix sdmx:    <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+# Vlastní prefixy
+@prefix crimestatistics-code-slash: <http://linked.opendata.cz/ontology/crimestatistics/code/> .
+@prefix crimestatistics-code-codelist-slash: <http://linked.opendata.cz/ontology/crimestatistics/code/zamestnani/> .
+@prefix crimestatistics-code-codelist-class: <http://linked.opendata.cz/ontology/crimestatistics/code/zamestnani/class#> .
+@prefix crimestatistics-code-codelist-property: <http://linked.opendata.cz/ontology/crimestatistics/code/zamestnani/property#> .
+
+@prefix crimestatistics-code-codelist-hash: <http://linked.opendata.cz/ontology/crimestatistics/code/zamestnani#> .
+
+crimestatistics-code-codelist-hash:11 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "manuální pracovníci v zemědělství, lesním a vodním hospodářství - mimo ZD"@cs ;
+	skos:inScheme crimestatistics-code-slash:zamestnani ;
+	skos:notation "11" ;
+
+	rdfs:label "manuální pracovníci v zemědělství, lesním a vodním hospodářství - mimo ZD"@cs ;
+	.
+crimestatistics-code-codelist-hash:12 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "manuální pracovníci ZD"@cs ;
+	skos:inScheme crimestatistics-code-slash:zamestnani ;
+	skos:notation "12" ;
+
+	rdfs:label "manuální pracovníci ZD"@cs ;
+	.
+crimestatistics-code-codelist-hash:13 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "dělníci při těžbě a úpravě paliv, rudných a nerudných surovin - hlubinných i povrchových dolů"@cs ;
+	skos:inScheme crimestatistics-code-slash:zamestnani ;
+	skos:notation "13" ;
+
+	rdfs:label "dělníci při těžbě a úpravě paliv, rudných a nerudných surovin - hlubinných i povrchových dolů"@cs ;
+	.
+crimestatistics-code-codelist-hash:14 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "dělníci hutní"@cs ;
+	skos:inScheme crimestatistics-code-slash:zamestnani ;
+	skos:notation "14" ;
+
+	rdfs:label "dělníci hutní"@cs ;
+	.
+crimestatistics-code-codelist-hash:15 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "dělníci při výrobě elektřiny, vody, koksu, plynu a rozvodu energie"@cs ;
+	skos:inScheme crimestatistics-code-slash:zamestnani ;
+	skos:notation "15" ;
+
+	rdfs:label "dělníci při výrobě elektřiny, vody, koksu, plynu a rozvodu energie"@cs ;
+	.
+crimestatistics-code-codelist-hash:16 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "dělníci výrobní (zpracovatelé - výrobci) včetně opravářů a údržbářů"@cs ;
+	skos:inScheme crimestatistics-code-slash:zamestnani ;
+	skos:notation "16" ;
+
+	rdfs:label "dělníci výrobní (zpracovatelé - výrobci) včetně opravářů a údržbářů"@cs ;
+	.
+crimestatistics-code-codelist-hash:17 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "mechanici a montéři, včetně údržbářů a opravářů"@cs ;
+	skos:inScheme crimestatistics-code-slash:zamestnani ;
+	skos:notation "17" ;
+
+	rdfs:label "mechanici a montéři, včetně údržbářů a opravářů"@cs ;
+	.
+crimestatistics-code-codelist-hash:18 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "dělníci stavební"@cs ;
+	skos:inScheme crimestatistics-code-slash:zamestnani ;
+	skos:notation "18" ;
+
+	rdfs:label "dělníci stavební"@cs ;
+	.
+crimestatistics-code-codelist-hash:20 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "řidiči silničních mot.vozidel a jejich pomocníci"@cs ;
+	skos:inScheme crimestatistics-code-slash:zamestnani ;
+	skos:notation "20" ;
+
+	rdfs:label "řidiči silničních mot.vozidel a jejich pomocníci"@cs ;
+	.
+crimestatistics-code-codelist-hash:21 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "provozní pracovníci dopravy"@cs ;
+	skos:inScheme crimestatistics-code-slash:zamestnani ;
+	skos:notation "21" ;
+
+	rdfs:label "provozní pracovníci dopravy"@cs ;
+	.
+crimestatistics-code-codelist-hash:22 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "provozní pracovníci pošt a telekomunikací"@cs ;
+	skos:inScheme crimestatistics-code-slash:zamestnani ;
+	skos:notation "22" ;
+
+	rdfs:label "provozní pracovníci pošt a telekomunikací"@cs ;
+	.
+crimestatistics-code-codelist-hash:23 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "pracovníci obchodu"@cs ;
+	skos:inScheme crimestatistics-code-slash:zamestnani ;
+	skos:notation "23" ;
+
+	rdfs:label "pracovníci obchodu"@cs ;
+	.
+crimestatistics-code-codelist-hash:24 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "provozní pracovníci komunálního a bytového hospodářství"@cs ;
+	skos:inScheme crimestatistics-code-slash:zamestnani ;
+	skos:notation "24" ;
+
+	rdfs:label "provozní pracovníci komunálního a bytového hospodářství"@cs ;
+	.
+crimestatistics-code-codelist-hash:25 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "pracovníci veřejného stravování, hotelů, ubytovacích služeb"@cs ;
+	skos:inScheme crimestatistics-code-slash:zamestnani ;
+	skos:notation "25" ;
+
+	rdfs:label "pracovníci veřejného stravování, hotelů, ubytovacích služeb"@cs ;
+	.
+crimestatistics-code-codelist-hash:26 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "pracovníci skladového hospodářství"@cs ;
+	skos:inScheme crimestatistics-code-slash:zamestnani ;
+	skos:notation "26" ;
+
+	rdfs:label "pracovníci skladového hospodářství"@cs ;
+	.
+crimestatistics-code-codelist-hash:27 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "pracovníci ochrany nebo ostrahy objektu"@cs ;
+	skos:inScheme crimestatistics-code-slash:zamestnani ;
+	skos:notation "27" ;
+
+	rdfs:label "pracovníci ochrany nebo ostrahy objektu"@cs ;
+	.
+crimestatistics-code-codelist-hash:28 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "pracovníci záchranné služby"@cs ;
+	skos:inScheme crimestatistics-code-slash:zamestnani ;
+	skos:notation "28" ;
+
+	rdfs:label "pracovníci záchranné služby"@cs ;
+	.
+crimestatistics-code-codelist-hash:29 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "ostatní pracovníci nevýrobní činnosti"@cs ;
+	skos:inScheme crimestatistics-code-slash:zamestnani ;
+	skos:notation "29" ;
+
+	rdfs:label "ostatní pracovníci nevýrobní činnosti"@cs ;
+	.
+crimestatistics-code-codelist-hash:31 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "techničtí pracovníci na zemědělském úseku včetně lesnictví, rybářství, vodohospodářství"@cs ;
+	skos:inScheme crimestatistics-code-slash:zamestnani ;
+	skos:notation "31" ;
+
+	rdfs:label "techničtí pracovníci na zemědělském úseku včetně lesnictví, rybářství, vodohospodářství"@cs ;
+	.
+crimestatistics-code-codelist-hash:32 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "bánští a hutní technici"@cs ;
+	skos:inScheme crimestatistics-code-slash:zamestnani ;
+	skos:notation "32" ;
+
+	rdfs:label "bánští a hutní technici"@cs ;
+	.
+crimestatistics-code-codelist-hash:33 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "strojírenčtí technici, elektrotechnici, chemičtí technici"@cs ;
+	skos:inScheme crimestatistics-code-slash:zamestnani ;
+	skos:notation "33" ;
+
+	rdfs:label "strojírenčtí technici, elektrotechnici, chemičtí technici"@cs ;
+	.
+crimestatistics-code-codelist-hash:34 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "stavební technici"@cs ;
+	skos:inScheme crimestatistics-code-slash:zamestnani ;
+	skos:notation "34" ;
+
+	rdfs:label "stavební technici"@cs ;
+	.
+crimestatistics-code-codelist-hash:35 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "technici dopravy, pošt a telekomunikací"@cs ;
+	skos:inScheme crimestatistics-code-slash:zamestnani ;
+	skos:notation "35" ;
+
+	rdfs:label "technici dopravy, pošt a telekomunikací"@cs ;
+	.
+crimestatistics-code-codelist-hash:39 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "ostatní techničtí pracovníci"@cs ;
+	skos:inScheme crimestatistics-code-slash:zamestnani ;
+	skos:notation "39" ;
+
+	rdfs:label "ostatní techničtí pracovníci"@cs ;
+	.
+crimestatistics-code-codelist-hash:40 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "příslušníci policie ČR"@cs ;
+	skos:inScheme crimestatistics-code-slash:zamestnani ;
+	skos:notation "40" ;
+
+	rdfs:label "příslušníci policie ČR"@cs ;
+	.
+crimestatistics-code-codelist-hash:41 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "příslušníci vězeňské služby a justiční stráže"@cs ;
+	skos:inScheme crimestatistics-code-slash:zamestnani ;
+	skos:notation "41" ;
+
+	rdfs:label "příslušníci vězeňské služby a justiční stráže"@cs ;
+	.
+crimestatistics-code-codelist-hash:42 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "příslušníci vojenské policie"@cs ;
+	skos:inScheme crimestatistics-code-slash:zamestnani ;
+	skos:notation "42" ;
+
+	rdfs:label "příslušníci vojenské policie"@cs ;
+	.
+crimestatistics-code-codelist-hash:43 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "příslušníci armády"@cs ;
+	skos:inScheme crimestatistics-code-slash:zamestnani ;
+	skos:notation "43" ;
+
+	rdfs:label "příslušníci armády"@cs ;
+	.
+crimestatistics-code-codelist-hash:44 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "příslušníci městské nebo obecní policie"@cs ;
+	skos:inScheme crimestatistics-code-slash:zamestnani ;
+	skos:notation "44" ;
+
+	rdfs:label "příslušníci městské nebo obecní policie"@cs ;
+	.
+crimestatistics-code-codelist-hash:45 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "zaměstnanci bezpečnostních a detektivních agentur"@cs ;
+	skos:inScheme crimestatistics-code-slash:zamestnani ;
+	skos:notation "45" ;
+
+	rdfs:label "zaměstnanci bezpečnostních a detektivních agentur"@cs ;
+	.
+crimestatistics-code-codelist-hash:46 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "profesionální hasič"@cs ;
+	skos:inScheme crimestatistics-code-slash:zamestnani ;
+	skos:notation "46" ;
+
+	rdfs:label "profesionální hasič"@cs ;
+	.
+crimestatistics-code-codelist-hash:49 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "ostatní pracovníci BO"@cs ;
+	skos:inScheme crimestatistics-code-slash:zamestnani ;
+	skos:notation "49" ;
+
+	rdfs:label "ostatní pracovníci BO"@cs ;
+	.
+crimestatistics-code-codelist-hash:51 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "pedagogičtí pracovníci všech stupňů"@cs ;
+	skos:inScheme crimestatistics-code-slash:zamestnani ;
+	skos:notation "51" ;
+
+	rdfs:label "pedagogičtí pracovníci všech stupňů"@cs ;
+	.
+crimestatistics-code-codelist-hash:52 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "pracovníci tisku,kultury a osvěty"@cs ;
+	skos:inScheme crimestatistics-code-slash:zamestnani ;
+	skos:notation "52" ;
+
+	rdfs:label "pracovníci tisku,kultury a osvěty"@cs ;
+	.
+crimestatistics-code-codelist-hash:53 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "pracovníci umění"@cs ;
+	skos:inScheme crimestatistics-code-slash:zamestnani ;
+	skos:notation "53" ;
+
+	rdfs:label "pracovníci umění"@cs ;
+	.
+crimestatistics-code-codelist-hash:54 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "zdravotničtí pracovníci"@cs ;
+	skos:inScheme crimestatistics-code-slash:zamestnani ;
+	skos:notation "54" ;
+
+	rdfs:label "zdravotničtí pracovníci"@cs ;
+	.
+crimestatistics-code-codelist-hash:55 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "sportovní a tělovýchovní pracovníci"@cs ;
+	skos:inScheme crimestatistics-code-slash:zamestnani ;
+	skos:notation "55" ;
+
+	rdfs:label "sportovní a tělovýchovní pracovníci"@cs ;
+	.
+crimestatistics-code-codelist-hash:56 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "sociální pracovníci"@cs ;
+	skos:inScheme crimestatistics-code-slash:zamestnani ;
+	skos:notation "56" ;
+
+	rdfs:label "sociální pracovníci"@cs ;
+	.
+crimestatistics-code-codelist-hash:57 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "pracovníci církevních a náboženských společností"@cs ;
+	skos:inScheme crimestatistics-code-slash:zamestnani ;
+	skos:notation "57" ;
+
+	rdfs:label "pracovníci církevních a náboženských společností"@cs ;
+	.
+crimestatistics-code-codelist-hash:58 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "tvůrčí pracovníci vědy, výzkumu a vývoje"@cs ;
+	skos:inScheme crimestatistics-code-slash:zamestnani ;
+	skos:notation "58" ;
+
+	rdfs:label "tvůrčí pracovníci vědy, výzkumu a vývoje"@cs ;
+	.
+crimestatistics-code-codelist-hash:59 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "ostatní duševní pracovníci nevýrobní sféry"@cs ;
+	skos:inScheme crimestatistics-code-slash:zamestnani ;
+	skos:notation "59" ;
+
+	rdfs:label "ostatní duševní pracovníci nevýrobní sféry"@cs ;
+	.
+crimestatistics-code-codelist-hash:61 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "děti předškolního věku"@cs ;
+	skos:inScheme crimestatistics-code-slash:zamestnani ;
+	skos:notation "61" ;
+
+	rdfs:label "děti předškolního věku"@cs ;
+	.
+crimestatistics-code-codelist-hash:62 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "žáci ZŠ"@cs ;
+	skos:inScheme crimestatistics-code-slash:zamestnani ;
+	skos:notation "62" ;
+
+	rdfs:label "žáci ZŠ"@cs ;
+	.
+crimestatistics-code-codelist-hash:63 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "žáci zvláštních škol"@cs ;
+	skos:inScheme crimestatistics-code-slash:zamestnani ;
+	skos:notation "63" ;
+
+	rdfs:label "žáci zvláštních škol"@cs ;
+	.
+crimestatistics-code-codelist-hash:64 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "chovanci DD anebo DM"@cs ;
+	skos:inScheme crimestatistics-code-slash:zamestnani ;
+	skos:notation "64" ;
+
+	rdfs:label "chovanci DD anebo DM"@cs ;
+	.
+crimestatistics-code-codelist-hash:65 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "učni a osoby připr. se na dělnická povolání"@cs ;
+	skos:inScheme crimestatistics-code-slash:zamestnani ;
+	skos:notation "65" ;
+
+	rdfs:label "učni a osoby připr. se na dělnická povolání"@cs ;
+	.
+crimestatistics-code-codelist-hash:66 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "učni a osoby připr. se na provozní povolání"@cs ;
+	skos:inScheme crimestatistics-code-slash:zamestnani ;
+	skos:notation "66" ;
+
+	rdfs:label "učni a osoby připr. se na provozní povolání"@cs ;
+	.
+crimestatistics-code-codelist-hash:67 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "studenti středních a odborných škol"@cs ;
+	skos:inScheme crimestatistics-code-slash:zamestnani ;
+	skos:notation "67" ;
+
+	rdfs:label "studenti středních a odborných škol"@cs ;
+	.
+crimestatistics-code-codelist-hash:68 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "vysokoškolští studenti"@cs ;
+	skos:inScheme crimestatistics-code-slash:zamestnani ;
+	skos:notation "68" ;
+
+	rdfs:label "vysokoškolští studenti"@cs ;
+	.
+crimestatistics-code-codelist-hash:71 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "osoby v zákl. vojenské službě"@cs ;
+	skos:inScheme crimestatistics-code-slash:zamestnani ;
+	skos:notation "71" ;
+
+	rdfs:label "osoby v zákl. vojenské službě"@cs ;
+	.
+crimestatistics-code-codelist-hash:72 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "osoby ve výkonu odnětí svobody"@cs ;
+	skos:inScheme crimestatistics-code-slash:zamestnani ;
+	skos:notation "72" ;
+
+	rdfs:label "osoby ve výkonu odnětí svobody"@cs ;
+	.
+crimestatistics-code-codelist-hash:73 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "osoby v civilní službě "@cs ;
+	skos:inScheme crimestatistics-code-slash:zamestnani ;
+	skos:notation "73" ;
+
+	rdfs:label "osoby v civilní službě "@cs ;
+	.
+crimestatistics-code-codelist-hash:74 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "osoby na mateřské dovolené"@cs ;
+	skos:inScheme crimestatistics-code-slash:zamestnani ;
+	skos:notation "74" ;
+
+	rdfs:label "osoby na mateřské dovolené"@cs ;
+	.
+crimestatistics-code-codelist-hash:75 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "důchodci"@cs ;
+	skos:inScheme crimestatistics-code-slash:zamestnani ;
+	skos:notation "75" ;
+
+	rdfs:label "důchodci"@cs ;
+	.
+crimestatistics-code-codelist-hash:77 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "důchodci - Invalidní "@cs ;
+	skos:inScheme crimestatistics-code-slash:zamestnani ;
+	skos:notation "77" ;
+
+	rdfs:label "důchodci - Invalidní "@cs ;
+	.
+crimestatistics-code-codelist-hash:78 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "nezaměstnaný"@cs ;
+	skos:inScheme crimestatistics-code-slash:zamestnani ;
+	skos:notation "78" ;
+
+	rdfs:label "nezaměstnaný"@cs ;
+	.
+crimestatistics-code-codelist-hash:79 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "osoba ve vazbě"@cs ;
+	skos:inScheme crimestatistics-code-slash:zamestnani ;
+	skos:notation "79" ;
+
+	rdfs:label "osoba ve vazbě"@cs ;
+	.
+crimestatistics-code-codelist-hash:80 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "osoby bez pracovního zařazení    "@cs ;
+	skos:inScheme crimestatistics-code-slash:zamestnani ;
+	skos:notation "80" ;
+
+	rdfs:label "osoby bez pracovního zařazení    "@cs ;
+	.
+crimestatistics-code-codelist-hash:85 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "soukromě hospodařící zemědělci"@cs ;
+	skos:inScheme crimestatistics-code-slash:zamestnani ;
+	skos:notation "85" ;
+
+	rdfs:label "soukromě hospodařící zemědělci"@cs ;
+	.
+crimestatistics-code-codelist-hash:86 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "podnikatelé, živnostníci, osoby SVČ, ostatní"@cs ;
+	skos:inScheme crimestatistics-code-slash:zamestnani ;
+	skos:notation "86" ;
+
+	rdfs:label "podnikatelé, živnostníci, osoby SVČ, ostatní"@cs ;
+	.
+crimestatistics-code-codelist-hash:87 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "osoby bez údajů o zaměstnání"@cs ;
+	skos:inScheme crimestatistics-code-slash:zamestnani ;
+	skos:notation "87" ;
+
+	rdfs:label "osoby bez údajů o zaměstnání"@cs ;
+	.
+crimestatistics-code-codelist-hash:90 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "pracovníci státních (ústředních) orgánů a společenských organizací zastupitelských úřadů v cizině"@cs ;
+	skos:inScheme crimestatistics-code-slash:zamestnani ;
+	skos:notation "90" ;
+
+	rdfs:label "pracovníci státních (ústředních) orgánů a společenských organizací zastupitelských úřadů v cizině"@cs ;
+	.
+crimestatistics-code-codelist-hash:91 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "pracovníci soudu, státního notářství, státního zastupitelstva, arbitráže"@cs ;
+	skos:inScheme crimestatistics-code-slash:zamestnani ;
+	skos:notation "91" ;
+
+	rdfs:label "pracovníci soudu, státního notářství, státního zastupitelstva, arbitráže"@cs ;
+	.
+crimestatistics-code-codelist-hash:92 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "vedoucí pracovníci hospodářských organizací"@cs ;
+	skos:inScheme crimestatistics-code-slash:zamestnani ;
+	skos:notation "92" ;
+
+	rdfs:label "vedoucí pracovníci hospodářských organizací"@cs ;
+	.
+crimestatistics-code-codelist-hash:93 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "ekonomičtí pracovníci"@cs ;
+	skos:inScheme crimestatistics-code-slash:zamestnani ;
+	skos:notation "93" ;
+
+	rdfs:label "ekonomičtí pracovníci"@cs ;
+	.
+crimestatistics-code-codelist-hash:94 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "odborní pracovníci organizace a techniky řízení a výpočetní techniky"@cs ;
+	skos:inScheme crimestatistics-code-slash:zamestnani ;
+	skos:notation "94" ;
+
+	rdfs:label "odborní pracovníci organizace a techniky řízení a výpočetní techniky"@cs ;
+	.
+crimestatistics-code-codelist-hash:95 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "odborní pracovníci na úseku obchodní činnosti cestovního ruchu, ubytování, veřejného stravování a dopravy"@cs ;
+	skos:inScheme crimestatistics-code-slash:zamestnani ;
+	skos:notation "95" ;
+
+	rdfs:label "odborní pracovníci na úseku obchodní činnosti cestovního ruchu, ubytování, veřejného stravování a dopravy"@cs ;
+	.
+crimestatistics-code-codelist-hash:96 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "administrativní pracovníci"@cs ;
+	skos:inScheme crimestatistics-code-slash:zamestnani ;
+	skos:notation "96" ;
+
+	rdfs:label "administrativní pracovníci"@cs ;
+	.
+crimestatistics-code-codelist-hash:97 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "pracovníci na úseku veřejné správy, včetně volených funkcionářů samosprávy"@cs ;
+	skos:inScheme crimestatistics-code-slash:zamestnani ;
+	skos:notation "97" ;
+
+	rdfs:label "pracovníci na úseku veřejné správy, včetně volených funkcionářů samosprávy"@cs ;
+	.
+crimestatistics-code-codelist-hash:98 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "pracovníci celní služby"@cs ;
+	skos:inScheme crimestatistics-code-slash:zamestnani ;
+	skos:notation "98" ;
+
+	rdfs:label "pracovníci celní služby"@cs ;
+	.
+crimestatistics-code-codelist-hash:99 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "ostatní pracovníci na úseku řízení a správy"@cs ;
+	skos:inScheme crimestatistics-code-slash:zamestnani ;
+	skos:notation "99" ;
+
+	rdfs:label "ostatní pracovníci na úseku řízení a správy"@cs ;
+	.

@@ -1,0 +1,112 @@
+PREFIX  rdfs:   <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  crime:  <http://linked.opendata.cz/ontology/crime#>
+PREFIX  dct:    <http://purl.org/dc/terms/>
+PREFIX  xsd:    <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos:   <http://www.w3.org/2004/02/skos/core#>
+
+SELECT  (( ?hustotaCinu / ?maxHustotaCinu ) AS ?index) ?objasnenost
+WHERE
+  {
+    {
+      SELECT  (SUM(( xsd:float(?utvarIntervalRatio) * ( xsd:float(?pocetTrestnychCinu) / xsd:float(?pocetObyvatel) ) )) AS ?hustotaCinu) (( xsd:float(SUM(?pocetObjasnenychTrestnychCinu)) / xsd:float(SUM(?pocetTrestnychCinu)) ) AS ?objasnenost)
+      WHERE
+        {
+          {
+            SELECT  ?utvar (COUNT(DISTINCT ?trestnyCin) AS ?pocetTrestnychCinu) (SUM(if(( bound(?objasneno) && ( ?objasneno = 1 ) ), 1, 0)) AS ?pocetObjasnenychTrestnychCinu)
+            WHERE
+              {
+                {
+                  {
+                    ?trestnyCin a crime:TrestnyCin .
+                    ?trestnyCin dct:isVersionOf ?trestnyCin_master .
+                    ?trestnyCin crime:validFrom ?validFrom .
+                    ?trestnyCin crime:validTo ?validTo
+                    
+                    FILTER ( ( ?validFrom <= ?parHistoryDate_ValuePlaceholder ) && ( ?parHistoryDate_ValuePlaceholder <= ?validTo ) )
+                  }
+                    
+                  OPTIONAL
+                    { ?trestnyCin crime:datumACasSpachani ?datumSpachani}
+                  OPTIONAL
+                    { ?trestnyCin crime:datumACasSpachani_Od ?datumSpachani_Od}
+                  BIND(coalesce(?datumSpachani, ?datumSpachani_Od) AS ?datumSpachani_Point)
+                  FILTER ( ( ?parStartDate_ValuePlaceholder <= ?datumSpachani_Point ) && ( ?datumSpachani_Point <= ?parEndDate_ValuePlaceholder ) )
+                }
+                
+                ?utvar a crime:Utvar .
+                ?utvar crime:id ?utvarId
+                FILTER ( ?utvarId = ?parIdUtvaru_ValuePlaceholder )
+                ?trestnyCin crime:utvarSpachaniNeboZjisteni ?utvar .
+                  
+                ?tsk a crime:Tsk .
+                ?tsk crime:id ?tskId .
+                FILTER ( ?tskId = ?parTskId_ValuePlaceholder ) .
+                ?trestnyCin crime:tsk ?tsk .
+                
+                OPTIONAL
+                  { ?trestnyCin crime:objasneno ?objasneno}
+              }
+            GROUP BY ?utvar
+          }
+          { ?utvar crime:validFrom ?validFrom_utvar .
+            ?utvar crime:validTo ?validTo_utvar .
+            ?utvar crime:pocetObyvatel ?pocetObyvatel .
+            ?utvar crime:id ?crimeId .
+            FILTER ( ?pocetObyvatel > 0 )
+          }
+          BIND(if(( ?validFrom_utvar >= ?parStartDate_ValuePlaceholder ), ?validFrom_utvar, ?parStartDate_ValuePlaceholder) AS ?utvar_min)
+          BIND(if(( ?validTo_utvar <= ?parEndDate_ValuePlaceholder ), ?validTo_utvar, ?parEndDate_ValuePlaceholder) AS ?utvar_max)
+          BIND(( ?utvar_max - ?utvar_min ) AS ?utvar_intervalLength)
+          BIND(( ?parEndDate_ValuePlaceholder - ?parStartDate_ValuePlaceholder ) AS ?intervalLength)
+          BIND(( xsd:float(?utvar_intervalLength) / xsd:float(?intervalLength) ) AS ?utvarIntervalRatio)
+        }
+      GROUP BY ?crimeId
+    }
+    { SELECT  (MAX(?sum) AS ?maxHustotaCinu)
+      WHERE
+        { SELECT  (SUM(( xsd:float(?utvarIntervalRatio) * ( xsd:float(?pocetTrestnychCinu) / xsd:float(?pocetObyvatel) ) )) AS ?sum)
+          WHERE
+            {
+              { SELECT  ?utvar (COUNT(DISTINCT ?trestnyCin) AS ?pocetTrestnychCinu)
+                WHERE
+                  {
+                    {
+                      {
+                        ?trestnyCin a crime:TrestnyCin .
+                        ?trestnyCin crime:validFrom ?validFrom .
+                        ?trestnyCin crime:validTo ?validTo
+                        FILTER ( ( ?validFrom <= ?parHistoryDate_ValuePlaceholder ) && ( ?parHistoryDate_ValuePlaceholder <= ?validTo ) )
+                      }
+                      OPTIONAL
+                        { ?trestnyCin crime:datumACasSpachani ?datumSpachani}
+                      OPTIONAL
+                        { ?trestnyCin crime:datumACasSpachani_Od ?datumSpachani_Od}
+                      BIND(coalesce(?datumSpachani, ?datumSpachani_Od) AS ?datumSpachani_Point)
+                      FILTER ( ( ?parStartDate_ValuePlaceholder <= ?datumSpachani_Point ) && ( ?datumSpachani_Point <= ?parEndDate_ValuePlaceholder ) )
+                    }
+                    
+                    ?trestnyCin crime:utvarSpachaniNeboZjisteni ?utvar
+                    
+                    ?tsk a crime:Tsk .
+                    ?tsk crime:id ?tskId .
+                    FILTER ( ?tskId = ?parTskId_ValuePlaceholder ) .
+                    ?trestnyCin crime:tsk ?tsk .
+                  }
+                GROUP BY ?utvar
+              }
+              { ?utvar crime:validFrom ?validFrom_utvar .
+                ?utvar crime:validTo ?validTo_utvar .
+                ?utvar crime:pocetObyvatel ?pocetObyvatel .
+                ?utvar crime:id ?crimeId .
+                FILTER ( ?pocetObyvatel > 0 )
+              }
+              BIND(if(( ?validFrom_utvar >= ?parStartDate_ValuePlaceholder ), ?validFrom_utvar, ?parStartDate_ValuePlaceholder) AS ?utvar_min)
+              BIND(if(( ?validTo_utvar <= ?parEndDate_ValuePlaceholder ), ?validTo_utvar, ?parEndDate_ValuePlaceholder) AS ?utvar_max)
+              BIND(( ?utvar_max - ?utvar_min ) AS ?utvar_intervalLength)
+              BIND(( ?parEndDate_ValuePlaceholder - ?parStartDate_ValuePlaceholder ) AS ?intervalLength)
+              BIND(( xsd:float(?utvar_intervalLength) / xsd:float(?intervalLength) ) AS ?utvarIntervalRatio)
+            }
+          GROUP BY ?crimeId
+        }
+    }
+  }

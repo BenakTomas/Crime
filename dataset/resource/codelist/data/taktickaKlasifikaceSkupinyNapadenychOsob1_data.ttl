@@ -1,0 +1,291 @@
+# Standardní prefixy
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix interval: <http://reference.data.gov.uk/def/intervals/> .
+@prefix sdmx:    <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+# Vlastní prefixy
+@prefix crimestatistics-code-slash: <http://linked.opendata.cz/ontology/crimestatistics/code/> .
+@prefix crimestatistics-code-codelist-slash: <http://linked.opendata.cz/ontology/crimestatistics/code/taktickaKlasifikaceSkupinyNapadenychOsob1/> .
+@prefix crimestatistics-code-codelist-class: <http://linked.opendata.cz/ontology/crimestatistics/code/taktickaKlasifikaceSkupinyNapadenychOsob1/class#> .
+@prefix crimestatistics-code-codelist-property: <http://linked.opendata.cz/ontology/crimestatistics/code/taktickaKlasifikaceSkupinyNapadenychOsob1/property#> .
+
+@prefix crimestatistics-code-codelist-hash: <http://linked.opendata.cz/ontology/crimestatistics/code/taktickaKlasifikaceSkupinyNapadenychOsob1#> .
+
+crimestatistics-code-codelist-hash:1 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "osoby na vycházce, na ulici, hřišti, v parku"@cs ;
+	skos:inScheme crimestatistics-code-slash:taktickaKlasifikaceSkupinyNapadenychOsob1 ;
+	skos:notation "1" ;
+
+	rdfs:label "osoby na vycházce, na ulici, hřišti, v parku"@cs ;
+	.
+crimestatistics-code-codelist-hash:2 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "osoby při nákupu v obchodě, obchodních domech, tržnicích"@cs ;
+	skos:inScheme crimestatistics-code-slash:taktickaKlasifikaceSkupinyNapadenychOsob1 ;
+	skos:notation "2" ;
+
+	rdfs:label "osoby při nákupu v obchodě, obchodních domech, tržnicích"@cs ;
+	.
+crimestatistics-code-codelist-hash:3 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "osoby při veřejných shromážděních, zábavách"@cs ;
+	skos:inScheme crimestatistics-code-slash:taktickaKlasifikaceSkupinyNapadenychOsob1 ;
+	skos:notation "3" ;
+
+	rdfs:label "osoby při veřejných shromážděních, zábavách"@cs ;
+	.
+crimestatistics-code-codelist-hash:4 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "osoby na výletě, zájezdu - mimo cizinců"@cs ;
+	skos:inScheme crimestatistics-code-slash:taktickaKlasifikaceSkupinyNapadenychOsob1 ;
+	skos:notation "4" ;
+
+	rdfs:label "osoby na výletě, zájezdu - mimo cizinců"@cs ;
+	.
+crimestatistics-code-codelist-hash:5 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "cizinci"@cs ;
+	skos:inScheme crimestatistics-code-slash:taktickaKlasifikaceSkupinyNapadenychOsob1 ;
+	skos:notation "5" ;
+
+	rdfs:label "cizinci"@cs ;
+	.
+crimestatistics-code-codelist-hash:6 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "osoby ve škole, internátě, ubytovně apod. zařízení"@cs ;
+	skos:inScheme crimestatistics-code-slash:taktickaKlasifikaceSkupinyNapadenychOsob1 ;
+	skos:notation "6" ;
+
+	rdfs:label "osoby ve škole, internátě, ubytovně apod. zařízení"@cs ;
+	.
+crimestatistics-code-codelist-hash:7 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "osoby na plovárně, koupališti, v lázních"@cs ;
+	skos:inScheme crimestatistics-code-slash:taktickaKlasifikaceSkupinyNapadenychOsob1 ;
+	skos:notation "7" ;
+
+	rdfs:label "osoby na plovárně, koupališti, v lázních"@cs ;
+	.
+crimestatistics-code-codelist-hash:8 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "osoby tělesně nebo duševně postižené"@cs ;
+	skos:inScheme crimestatistics-code-slash:taktickaKlasifikaceSkupinyNapadenychOsob1 ;
+	skos:notation "8" ;
+
+	rdfs:label "osoby tělesně nebo duševně postižené"@cs ;
+	.
+crimestatistics-code-codelist-hash:9 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "osoby podnapilé"@cs ;
+	skos:inScheme crimestatistics-code-slash:taktickaKlasifikaceSkupinyNapadenychOsob1 ;
+	skos:notation "9" ;
+
+	rdfs:label "osoby podnapilé"@cs ;
+	.
+crimestatistics-code-codelist-hash:10 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "osoby zraněné"@cs ;
+	skos:inScheme crimestatistics-code-slash:taktickaKlasifikaceSkupinyNapadenychOsob1 ;
+	skos:notation "10" ;
+
+	rdfs:label "osoby zraněné"@cs ;
+	.
+crimestatistics-code-codelist-hash:11 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "osoby jdoucí do nebo ze zaměstnání, školy apod."@cs ;
+	skos:inScheme crimestatistics-code-slash:taktickaKlasifikaceSkupinyNapadenychOsob1 ;
+	skos:notation "11" ;
+
+	rdfs:label "osoby jdoucí do nebo ze zaměstnání, školy apod."@cs ;
+	.
+crimestatistics-code-codelist-hash:12 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "náhodní chodci"@cs ;
+	skos:inScheme crimestatistics-code-slash:taktickaKlasifikaceSkupinyNapadenychOsob1 ;
+	skos:notation "12" ;
+
+	rdfs:label "náhodní chodci"@cs ;
+	.
+crimestatistics-code-codelist-hash:13 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "hlídka vojenská"@cs ;
+	skos:inScheme crimestatistics-code-slash:taktickaKlasifikaceSkupinyNapadenychOsob1 ;
+	skos:notation "13" ;
+
+	rdfs:label "hlídka vojenská"@cs ;
+	.
+crimestatistics-code-codelist-hash:14 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "hlídka policie"@cs ;
+	skos:inScheme crimestatistics-code-slash:taktickaKlasifikaceSkupinyNapadenychOsob1 ;
+	skos:notation "14" ;
+
+	rdfs:label "hlídka policie"@cs ;
+	.
+crimestatistics-code-codelist-hash:15 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "hlídka civilně bezpečnostní služby"@cs ;
+	skos:inScheme crimestatistics-code-slash:taktickaKlasifikaceSkupinyNapadenychOsob1 ;
+	skos:notation "15" ;
+
+	rdfs:label "hlídka civilně bezpečnostní služby"@cs ;
+	.
+crimestatistics-code-codelist-hash:16 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "vojenská policie"@cs ;
+	skos:inScheme crimestatistics-code-slash:taktickaKlasifikaceSkupinyNapadenychOsob1 ;
+	skos:notation "16" ;
+
+	rdfs:label "vojenská policie"@cs ;
+	.
+crimestatistics-code-codelist-hash:17 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "KSZD"@cs ;
+	skos:inScheme crimestatistics-code-slash:taktickaKlasifikaceSkupinyNapadenychOsob1 ;
+	skos:notation "17" ;
+
+	rdfs:label "KSZD"@cs ;
+	.
+crimestatistics-code-codelist-hash:18 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "jiné KSZD"@cs ;
+	skos:inScheme crimestatistics-code-slash:taktickaKlasifikaceSkupinyNapadenychOsob1 ;
+	skos:notation "18" ;
+
+	rdfs:label "jiné KSZD"@cs ;
+	.
+crimestatistics-code-codelist-hash:20 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "osoby bezpečnostní agentury převážející finanční hotovost"@cs ;
+	skos:inScheme crimestatistics-code-slash:taktickaKlasifikaceSkupinyNapadenychOsob1 ;
+	skos:notation "20" ;
+
+	rdfs:label "osoby bezpečnostní agentury převážející finanční hotovost"@cs ;
+	.
+crimestatistics-code-codelist-hash:21 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "osoby převážející finanční hotovost"@cs ;
+	skos:inScheme crimestatistics-code-slash:taktickaKlasifikaceSkupinyNapadenychOsob1 ;
+	skos:notation "21" ;
+
+	rdfs:label "osoby převážející finanční hotovost"@cs ;
+	.
+crimestatistics-code-codelist-hash:22 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "osoby v zaměstnání nebo při výkonu povolání"@cs ;
+	skos:inScheme crimestatistics-code-slash:taktickaKlasifikaceSkupinyNapadenychOsob1 ;
+	skos:notation "22" ;
+
+	rdfs:label "osoby v zaměstnání nebo při výkonu povolání"@cs ;
+	.
+crimestatistics-code-codelist-hash:23 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "osoby na sportovních utkáních apod."@cs ;
+	skos:inScheme crimestatistics-code-slash:taktickaKlasifikaceSkupinyNapadenychOsob1 ;
+	skos:notation "23" ;
+
+	rdfs:label "osoby na sportovních utkáních apod."@cs ;
+	.
+crimestatistics-code-codelist-hash:24 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "osoby v bytě, rodinném domě, na zahradě, na chatě"@cs ;
+	skos:inScheme crimestatistics-code-slash:taktickaKlasifikaceSkupinyNapadenychOsob1 ;
+	skos:notation "24" ;
+
+	rdfs:label "osoby v bytě, rodinném domě, na zahradě, na chatě"@cs ;
+	.
+crimestatistics-code-codelist-hash:25 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "pacienti v nemocnici, léčebně, apod."@cs ;
+	skos:inScheme crimestatistics-code-slash:taktickaKlasifikaceSkupinyNapadenychOsob1 ;
+	skos:notation "25" ;
+
+	rdfs:label "pacienti v nemocnici, léčebně, apod."@cs ;
+	.
+crimestatistics-code-codelist-hash:26 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "osoby pod jiným vlivem než alkohol"@cs ;
+	skos:inScheme crimestatistics-code-slash:taktickaKlasifikaceSkupinyNapadenychOsob1 ;
+	skos:notation "26" ;
+
+	rdfs:label "osoby pod jiným vlivem než alkohol"@cs ;
+	.
+crimestatistics-code-codelist-hash:27 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "bezdomovci"@cs ;
+	skos:inScheme crimestatistics-code-slash:taktickaKlasifikaceSkupinyNapadenychOsob1 ;
+	skos:notation "27" ;
+
+	rdfs:label "bezdomovci"@cs ;
+	.
+crimestatistics-code-codelist-hash:28 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "záchranáři"@cs ;
+	skos:inScheme crimestatistics-code-slash:taktickaKlasifikaceSkupinyNapadenychOsob1 ;
+	skos:notation "28" ;
+
+	rdfs:label "záchranáři"@cs ;
+	.
+crimestatistics-code-codelist-hash:31 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "osoby týrané"@cs ;
+	skos:inScheme crimestatistics-code-slash:taktickaKlasifikaceSkupinyNapadenychOsob1 ;
+	skos:notation "31" ;
+
+	rdfs:label "osoby týrané"@cs ;
+	.
+crimestatistics-code-codelist-hash:32 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "osoby týrané před dítětem/dětmi"@cs ;
+	skos:inScheme crimestatistics-code-slash:taktickaKlasifikaceSkupinyNapadenychOsob1 ;
+	skos:notation "32" ;
+
+	rdfs:label "osoby týrané před dítětem/dětmi"@cs ;
+	.
+crimestatistics-code-codelist-hash:33 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "osoby týrané - v době vykázání z obydlí"@cs ;
+	skos:inScheme crimestatistics-code-slash:taktickaKlasifikaceSkupinyNapadenychOsob1 ;
+	skos:notation "33" ;
+
+	rdfs:label "osoby týrané - v době vykázání z obydlí"@cs ;
+	.
+crimestatistics-code-codelist-hash:34 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "osoby týrané před dítětem/dětmi - v době vykázání z obydlí"@cs ;
+	skos:inScheme crimestatistics-code-slash:taktickaKlasifikaceSkupinyNapadenychOsob1 ;
+	skos:notation "34" ;
+
+	rdfs:label "osoby týrané před dítětem/dětmi - v době vykázání z obydlí"@cs ;
+	.
+crimestatistics-code-codelist-hash:35 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "osoby týrané - v době po uplynutí vykázání z obydlí"@cs ;
+	skos:inScheme crimestatistics-code-slash:taktickaKlasifikaceSkupinyNapadenychOsob1 ;
+	skos:notation "35" ;
+
+	rdfs:label "osoby týrané - v době po uplynutí vykázání z obydlí"@cs ;
+	.
+crimestatistics-code-codelist-hash:36 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "osoby týrané před dítětem/dětmi - v době po uplynutí vykázání z obydlí"@cs ;
+	skos:inScheme crimestatistics-code-slash:taktickaKlasifikaceSkupinyNapadenychOsob1 ;
+	skos:notation "36" ;
+
+	rdfs:label "osoby týrané před dítětem/dětmi - v době po uplynutí vykázání z obydlí"@cs ;
+	.
+crimestatistics-code-codelist-hash:37 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "osoby v baru"@cs ;
+	skos:inScheme crimestatistics-code-slash:taktickaKlasifikaceSkupinyNapadenychOsob1 ;
+	skos:notation "37" ;
+
+	rdfs:label "osoby v baru"@cs ;
+	.
+crimestatistics-code-codelist-hash:38 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "osoby v herně"@cs ;
+	skos:inScheme crimestatistics-code-slash:taktickaKlasifikaceSkupinyNapadenychOsob1 ;
+	skos:notation "38" ;
+
+	rdfs:label "osoby v herně"@cs ;
+	.
+crimestatistics-code-codelist-hash:39 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "osoby v sázkové kanceláři"@cs ;
+	skos:inScheme crimestatistics-code-slash:taktickaKlasifikaceSkupinyNapadenychOsob1 ;
+	skos:notation "39" ;
+
+	rdfs:label "osoby v sázkové kanceláři"@cs ;
+	.
+crimestatistics-code-codelist-hash:40 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "osoby v bance"@cs ;
+	skos:inScheme crimestatistics-code-slash:taktickaKlasifikaceSkupinyNapadenychOsob1 ;
+	skos:notation "40" ;
+
+	rdfs:label "osoby v bance"@cs ;
+	.
+crimestatistics-code-codelist-hash:19 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "jiná hlediska"@cs ;
+	skos:inScheme crimestatistics-code-slash:taktickaKlasifikaceSkupinyNapadenychOsob1 ;
+	skos:notation "19" ;
+
+	rdfs:label "jiná hlediska"@cs ;
+	.

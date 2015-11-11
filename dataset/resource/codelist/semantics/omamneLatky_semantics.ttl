@@ -1,0 +1,195 @@
+# Standardní prefixy
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix interval: <http://reference.data.gov.uk/def/intervals/> .
+@prefix sdmx:    <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+# Vlastní prefixy
+@prefix crimestatistics-code-slash: <http://linked.opendata.cz/ontology/crimestatistics/code/> .
+@prefix crimestatistics-code-codelist-slash: <http://linked.opendata.cz/ontology/crimestatistics/code/uziteOmamneLatky/> .
+@prefix crimestatistics-code-codelist-hash: <http://linked.opendata.cz/ontology/crimestatistics/code/uziteOmamneLatky#> .
+@prefix crimestatistics-code-codelist-class: <http://linked.opendata.cz/ontology/crimestatistics/code/uziteOmamneLatky/class#> .
+@prefix crimestatistics-code-codelist-property: <http://linked.opendata.cz/ontology/crimestatistics/code/uziteOmamneLatky/property#> .
+
+# top-level koncepty
+crimestatistics-code-slash:uziteOmamneLatky
+	skos:hasTopConcept
+		crimestatistics-code-codelist-hash:alkoholSamotnyNeboKombinaceSDrogou,
+		crimestatistics-code-codelist-hash:syntetickeDrogy,
+		crimestatistics-code-codelist-hash:polosyntetickeDrogy,
+		crimestatistics-code-codelist-hash:prirodniDrogy,
+		crimestatistics-code-codelist-hash:leky,
+		crimestatistics-code-codelist-hash:kombinaceOmamnychLatek,
+		crimestatistics-code-codelist-hash:drogyStimulacni,
+		crimestatistics-code-codelist-hash:drogyTlumive,
+		crimestatistics-code-codelist-hash:halucinogeny,
+		crimestatistics-code-codelist-hash:9,
+		crimestatistics-code-codelist-hash:0 ;
+	.
+
+crimestatistics-code-codelist-hash:syntetickeDrogy a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel "syntetické drogy"@cs ;
+	skos:notation "crimestatistics.codelist.uziteOmamneLatky.syntetickeDrogy" ;
+	skos:inScheme crimestatistics-code-slash:uziteOmamneLatky ;
+	skos:narrower
+		crimestatistics-code-codelist-hash:A,
+		crimestatistics-code-codelist-hash:B,
+		crimestatistics-code-codelist-hash:C,
+		crimestatistics-code-codelist-hash:D,
+		crimestatistics-code-codelist-hash:E,
+		crimestatistics-code-codelist-hash:K,
+		crimestatistics-code-codelist-hash:L,
+		crimestatistics-code-codelist-hash:2 ;
+	.
+
+crimestatistics-code-codelist-hash:polosyntetickeDrogy a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel "polosyntetické drogy"@cs ;
+	skos:notation "crimestatistics.codelist.uziteOmamneLatky.polosyntetickeDrogy" ;
+	skos:inScheme crimestatistics-code-slash:uziteOmamneLatky ;
+	skos:narrower
+		crimestatistics-code-codelist-hash:F,
+		crimestatistics-code-codelist-hash:G,
+		crimestatistics-code-codelist-hash:kokainoveProdukty,
+		crimestatistics-code-codelist-hash:J,
+		crimestatistics-code-codelist-hash:3 ;
+	.
+
+crimestatistics-code-codelist-hash:prirodniDrogy a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel "přírodní drogy"@cs ;
+	skos:notation "crimestatistics.codelist.uziteOmamneLatky.prirodniDrogy" ;
+	skos:inScheme crimestatistics-code-slash:uziteOmamneLatky ;
+	skos:narrower
+		crimestatistics-code-codelist-hash:konopneProdukty,
+		crimestatistics-code-codelist-hash:4 ;
+	.
+
+crimestatistics-code-codelist-hash:leky a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel "léky"@cs ;
+	skos:notation "crimestatistics.codelist.uziteOmamneLatky.leky" ;
+	skos:inScheme crimestatistics-code-slash:uziteOmamneLatky ;
+	skos:narrower
+		crimestatistics-code-codelist-hash:M,
+		crimestatistics-code-codelist-hash:N,
+		crimestatistics-code-codelist-hash:O,
+		crimestatistics-code-codelist-hash:P,
+		crimestatistics-code-codelist-hash:6 ;
+	.
+
+crimestatistics-code-codelist-hash:kombinaceOmamnychLatek a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel "kombinace omamných látek"@cs ;
+	skos:notation "crimestatistics.codelist.uziteOmamneLatky.kombinaceOmamnychLatek" ;
+	skos:inScheme crimestatistics-code-slash:uziteOmamneLatky ;
+	skos:narrower
+		crimestatistics-code-codelist-hash:7,
+		crimestatistics-code-codelist-hash:8 ;
+	.
+
+crimestatistics-code-codelist-hash:drogyStimulacni a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel "drogy stimulační"@cs ;
+	skos:notation "crimestatistics.codelist.uziteOmamneLatky.drogyStimulacni" ;
+	skos:inScheme crimestatistics-code-slash:uziteOmamneLatky ;
+	skos:narrower
+		crimestatistics-code-codelist-hash:A,
+		crimestatistics-code-codelist-hash:C,
+		crimestatistics-code-codelist-hash:kokainoveProdukty,
+		crimestatistics-code-codelist-hash:tanecniDrogy ;
+	.
+
+crimestatistics-code-codelist-hash:drogyTlumive a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel "drogy tlumivé"@cs ;
+	skos:notation "crimestatistics.codelist.uziteOmamneLatky.drogyTlumive" ;
+	skos:inScheme crimestatistics-code-slash:uziteOmamneLatky ;
+	skos:narrower
+		crimestatistics-code-codelist-hash:P,
+		crimestatistics-code-codelist-hash:F,
+		crimestatistics-code-codelist-hash:N,
+		crimestatistics-code-codelist-hash:opioidy,
+		crimestatistics-code-codelist-hash:M ;
+	.
+
+crimestatistics-code-codelist-hash:kokainoveProdukty a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel "kokainové produkty"@cs ;
+	skos:notation "crimestatistics.codelist.uziteOmamneLatky.kokainoveProdukty" ;
+	skos:inScheme crimestatistics-code-slash:uziteOmamneLatky ;
+	skos:narrower
+		crimestatistics-code-codelist-hash:H,
+		crimestatistics-code-codelist-hash:I ;
+	.
+
+crimestatistics-code-codelist-hash:konopneProdukty a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel "konopné produkty"@cs ;
+	skos:notation "crimestatistics.codelist.uziteOmamneLatky.konopneProdukty" ;
+	skos:inScheme crimestatistics-code-slash:uziteOmamneLatky ;
+	skos:narrower
+		crimestatistics-code-codelist-hash:S,
+		crimestatistics-code-codelist-hash:hasis ;
+	.
+
+crimestatistics-code-codelist-hash:hasis a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel "hašiš"@cs ;
+	skos:notation "crimestatistics.codelist.uziteOmamneLatky.hasis" ;
+	skos:inScheme crimestatistics-code-slash:uziteOmamneLatky ;
+	skos:narrower
+		crimestatistics-code-codelist-hash:T,
+		crimestatistics-code-codelist-hash:U ;
+	.
+
+crimestatistics-code-codelist-hash:halucinogeny a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel "halucinogeny"@cs ;
+	skos:notation "crimestatistics.codelist.uziteOmamneLatky.halucinogeny" ;
+	skos:inScheme crimestatistics-code-slash:uziteOmamneLatky ;
+	skos:narrower
+		crimestatistics-code-codelist-hash:K,
+		crimestatistics-code-codelist-hash:konopneProdukty,
+		crimestatistics-code-codelist-hash:tanecniDrogy ;
+	.
+
+crimestatistics-code-codelist-hash:tanecniDrogy a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel "taneční drogy"@cs ;
+	skos:notation "crimestatistics.codelist.uziteOmamneLatky.tanecniDrogy" ;
+	skos:inScheme crimestatistics-code-slash:uziteOmamneLatky ;
+	skos:narrower
+		crimestatistics-code-codelist-hash:L,
+		crimestatistics-code-codelist-hash:E ;
+	.
+
+
+crimestatistics-code-codelist-hash:opioidy a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel "opioidy"@cs ;
+	skos:notation "crimestatistics.codelist.uziteOmamneLatky.opioidy" ;
+	skos:inScheme crimestatistics-code-slash:uziteOmamneLatky ;
+	skos:narrower
+		crimestatistics-code-codelist-hash:opiaty,
+		crimestatistics-code-codelist-hash:J,
+		crimestatistics-code-codelist-hash:D,
+		crimestatistics-code-codelist-hash:B ;
+	.
+
+crimestatistics-code-codelist-hash:opiaty a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel "opiáty"@cs ;
+	skos:notation "crimestatistics.codelist.uziteOmamneLatky.opiaty" ;
+	skos:inScheme crimestatistics-code-slash:uziteOmamneLatky ;
+	skos:narrower
+		crimestatistics-code-codelist-hash:O,
+		crimestatistics-code-codelist-hash:G ;
+	.
+
+crimestatistics-code-codelist-hash:alkoholSamotnyNeboKombinaceSDrogou a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel "alkohol, kombinace alkoholu s jinou drogou"@cs ;
+	skos:notation "crimestatistics.codelist.uziteOmamneLatky.alkoholSamotnyNeboKombinaceSDrogou" ;
+	skos:inScheme crimestatistics-code-slash:uziteOmamneLatky ;
+	skos:narrower
+		crimestatistics-code-codelist-hash:1,
+		crimestatistics-code-codelist-hash:7 ;
+	.

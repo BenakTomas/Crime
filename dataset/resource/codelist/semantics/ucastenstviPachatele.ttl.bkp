@@ -1,0 +1,100 @@
+# Standardní prefixy
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix interval: <http://reference.data.gov.uk/def/intervals/> .
+@prefix sdmx:    <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+# Vlastní prefixy
+@prefix crimestatistics-code-slash: <http://linked.opendata.cz/ontology/crimestatistics/code/> .
+@prefix crimestatistics-code-codelist-slash: <http://linked.opendata.cz/ontology/crimestatistics/code/ucastenstviPachatele/> .
+@prefix crimestatistics-code-codelist-class: <http://linked.opendata.cz/ontology/crimestatistics/code/ucastenstviPachatele/class#> .
+@prefix crimestatistics-code-codelist-property: <http://linked.opendata.cz/ontology/crimestatistics/code/ucastenstviPachatele/property#> .
+
+@prefix crimestatistics-code-codelist-hash: <http://linked.opendata.cz/ontology/crimestatistics/code/ucastenstviPachatele#> .
+
+# Definice schematu konceptů
+<http://linked.opendata.cz/ontology/crimestatistics/code/ucastenstviPachatele> a skos:ConceptScheme ;
+	skos:prefLabel
+		"role (účastenství) pachatele při spáchání trestného činu - schéma"@cs,
+		"role an offender plays in perpetrating a crime - schema"@en ;
+	skos:note
+		"Klasifikace role (účastenství) pachatele při spáchání trestného činu."@cs,
+		"Classifies the role an offender plays in perpetrating a crime."@en ;
+	
+	rdfs:label
+		"role (účastenství) pachatele při spáchání trestného činu - schéma"@cs,
+		"role an offender plays in perpetrating a crime - schema"@en ;
+	rdfs:comment
+		"Klasifikace role (účastenství) pachatele při spáchání trestného činu."@cs,
+		"Classifies the role an offender plays in perpetrating a crime."@en ;
+	rdfs:seeAlso <http://linked.opendata.cz/ontology/crimestatistics/code/ucastenstviPachatele/conceptClass> ;
+	.
+
+# Definice zapouzdřující třídy
+<http://linked.opendata.cz/ontology/crimestatistics/code/ucastenstviPachatele/conceptClass> a rdf:Class ;
+	rdfs:label
+		"role (účastenství) pachatele při spáchání trestného činu - zapouzdřující třída"@cs,
+		"role an offender plays in perpetrating a crime - encapsulating class"@en ;
+	rdfs:comment
+		"Klasifikace role (účastenství) pachatele při spáchání trestného činu."@cs,
+		"Classifies the role an offender plays in perpetrating a crime."@en ;
+	rdfs:subClassOf skos:Concept ;
+	rdfs:seeAlso <http://linked.opendata.cz/ontology/crimestatistics/code/ucastenstviPachatele> ;
+	.
+
+# Definice sémantiky schématu konceptů
+
+# Definice top-level konceptů
+crimestatistics-code-slash:ucastenstviPachatele skos:hasTopConcept
+	crimestatistics-code-codelist-hash:3,
+	crimestatistics-code-codelist-hash:spolupachatel,
+	crimestatistics-code-codelist-hash:organizator,
+	crimestatistics-code-codelist-hash:7,
+	crimestatistics-code-codelist-hash:8,
+	crimestatistics-code-codelist-hash:9 ;
+	.
+
+####################################
+crimestatistics-code-codelist-hash:spolupachatel a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		"spolupachatel"@cs,
+		"accomplice"@en ;
+	skos:inScheme crimestatistics-code-slash:ucastenstviPachatele ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash:spolupachatel skos:narrower
+	crimestatistics-code-codelist-hash:4,
+	crimestatistics-code-codelist-hash:5 ;
+	.
+
+####################################
+crimestatistics-code-codelist-hash:organizator a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		"organizátor"@cs,
+		"orchestrator"@en ;
+	skos:inScheme crimestatistics-code-slash:ucastenstviPachatele ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash:organizator skos:narrower
+	crimestatistics-code-codelist-hash:5,
+	crimestatistics-code-codelist-hash:6 ;
+	.

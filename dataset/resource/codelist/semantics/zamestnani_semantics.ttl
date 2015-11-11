@@ -1,0 +1,280 @@
+# Standardní prefixy
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix interval: <http://reference.data.gov.uk/def/intervals/> .
+@prefix sdmx:    <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+# Vlastní prefixy
+@prefix crimestatistics-code-slash: <http://linked.opendata.cz/ontology/crimestatistics/code/> .
+@prefix crimestatistics-code-codelist-slash: <http://linked.opendata.cz/ontology/crimestatistics/code/zamestnani/> .
+@prefix crimestatistics-code-codelist-hash: <http://linked.opendata.cz/ontology/crimestatistics/code/zamestnani#> .
+@prefix crimestatistics-code-codelist-class: <http://linked.opendata.cz/ontology/crimestatistics/code/zamestnani/class#> .
+@prefix crimestatistics-code-codelist-property: <http://linked.opendata.cz/ontology/crimestatistics/code/zamestnani/property#> .
+
+# top-level koncepty
+crimestatistics-code-slash:zamestnani
+	skos:hasTopConcept
+		crimestatistics-code-codelist-hash:delnici,
+		crimestatistics-code-codelist-hash:provozniAObsluhujiciPracovnici,
+		crimestatistics-code-codelist-hash:technictiPracovnici,
+		crimestatistics-code-codelist-hash:pracovniciHutniABansti,
+		crimestatistics-code-codelist-hash:pracovniciStavebnictvi,
+		crimestatistics-code-codelist-hash:pracovniciDopravyPostATelekomunikaci,
+		crimestatistics-code-codelist-hash:pracovniciObrannychABezpecnostnichOrganu,
+		crimestatistics-code-codelist-hash:dusevniPracovniciNevyrobniSfery,
+		crimestatistics-code-codelist-hash:osobyBezPracovnihoZarazeni,
+		crimestatistics-code-codelist-hash:osobyPodnikajici,
+		crimestatistics-code-codelist-hash:osobyBezUdajuOZamestnani,
+		crimestatistics-code-codelist-hash:pracovniciNaUsekuRizeniASpravy ;
+	.
+
+crimestatistics-code-codelist-hash:delnici a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel "dělníci"@cs ;
+	skos:notation "crimestatistics.codelist.zamestnani.delnici" ;
+	skos:narrower
+		crimestatistics-code-codelist-hash:manualniPracovnici,
+		crimestatistics-code-codelist-hash:delniciHutniABansti,
+		crimestatistics-code-codelist-hash:15,
+		crimestatistics-code-codelist-hash:16,
+		crimestatistics-code-codelist-hash:17,
+		crimestatistics-code-codelist-hash:18 ;
+	.
+
+# TODO: pracovníci v zemědělství - dělníci a technici
+# TODO
+crimestatistics-code-codelist-hash:delniciHutniABansti a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel "dělníci hutní a báňští"@cs ;
+	skos:notation "crimestatistics.codelist.zamestnani.delniciHutniABansti" ;
+	skos:narrower
+		crimestatistics-code-codelist-hash:13,
+		crimestatistics-code-codelist-hash:14 ;
+	.
+
+crimestatistics-code-codelist-hash:manualniPracovnici a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel "manuální pracovníci"@cs ;
+	skos:notation "crimestatistics.codelist.zamestnani.manualniPracovnici" ;
+	skos:narrower
+		crimestatistics-code-codelist-hash:11,
+		crimestatistics-code-codelist-hash:12 ;
+	.
+
+crimestatistics-code-codelist-hash:provozniAObsluhujiciPracovnici a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel "provozní a obsluhující pracovníci"@cs ;
+	skos:notation "crimestatistics.codelist.zamestnani.provozniAObsluhujiciPracovnici" ;
+	skos:narrower
+		crimestatistics-code-codelist-hash:20,
+		crimestatistics-code-codelist-hash:21,
+		crimestatistics-code-codelist-hash:22,
+		crimestatistics-code-codelist-hash:23,
+		crimestatistics-code-codelist-hash:24,
+		crimestatistics-code-codelist-hash:25,
+		crimestatistics-code-codelist-hash:26,
+		crimestatistics-code-codelist-hash:27,
+		crimestatistics-code-codelist-hash:28,
+		crimestatistics-code-codelist-hash:29 ;
+	.
+
+crimestatistics-code-codelist-hash:technictiPracovnici a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel "techničtí pracovníci"@cs ;
+	skos:notation "crimestatistics.codelist.zamestnani.technictiPracovnici" ;
+	skos:narrower
+		crimestatistics-code-codelist-hash:31,
+		crimestatistics-code-codelist-hash:32,
+		crimestatistics-code-codelist-hash:33,
+		crimestatistics-code-codelist-hash:34,
+		crimestatistics-code-codelist-hash:35,
+		crimestatistics-code-codelist-hash:39 ;
+	.
+
+# TODO
+crimestatistics-code-codelist-hash:pracovniciHutniABansti a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel "pracovníci hutní a báňští"@cs ;
+	skos:notation "crimestatistics.codelist.zamestnani.pracovniciHutniABansti" ;
+	skos:narrower
+		crimestatistics-code-codelist-hash:delniciHutniABansti,
+		crimestatistics-code-codelist-hash:32 ;
+		
+	.
+
+# TODO
+crimestatistics-code-codelist-hash:pracovniciStavebnictvi a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel "pracovníci ve stavebnictví"@cs ;
+	skos:notation "crimestatistics.codelist.zamestnani.pracovniciStavebnictvi" ;
+	skos:narrower
+		crimestatistics-code-codelist-hash:18,
+		crimestatistics-code-codelist-hash:34 ;
+	.
+
+# TODO
+crimestatistics-code-codelist-hash:pracovniciDopravyPostATelekomunikaci a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel "pracovníci dopravy, pošt a telekomunikací"@cs ;
+	skos:notation "crimestatistics.codelist.zamestnani.pracovniciDopravyPostATelekomunikaci" ;
+	skos:narrower
+		crimestatistics-code-codelist-hash:22,
+		crimestatistics-code-codelist-hash:35 ;
+	.
+
+crimestatistics-code-codelist-hash:pracovniciObrannychABezpecnostnichOrganu a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel "pracovníci obranných a bezpečnostních orgánů"@cs ;
+	skos:notation "crimestatistics.codelist.zamestnani.pracovniciObrannychABezpecnostnichOrganu" ;
+	skos:narrower
+		crimestatistics-code-codelist-hash:ozbrojeneSlozkyStatu,
+		crimestatistics-code-codelist-hash:45,
+		crimestatistics-code-codelist-hash:46,
+		crimestatistics-code-codelist-hash:49 ;
+	.
+
+crimestatistics-code-codelist-hash:ozbrojeneSlozkyStatu a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel "ozbrojené složky státu"@cs ;
+	skos:notation "crimestatistics.codelist.zamestnani.ozbrojeneSlozkyStatu" ;
+	skos:narrower
+		crimestatistics-code-codelist-hash:policiste,
+		crimestatistics-code-codelist-hash:41,
+		crimestatistics-code-codelist-hash:43 ;
+	.
+
+crimestatistics-code-codelist-hash:policiste a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel "policisté"@cs ;
+	skos:notation "crimestatistics.codelist.zamestnani.policiste" ;
+	skos:narrower
+		crimestatistics-code-codelist-hash:40,
+		crimestatistics-code-codelist-hash:42,
+		crimestatistics-code-codelist-hash:44 ;
+	.
+
+crimestatistics-code-codelist-hash:dusevniPracovniciNevyrobniSfery a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel "duševní pracovníci nevýrobní sféry"@cs ;
+	skos:notation "crimestatistics.codelist.zamestnani.dusevniPracovniciNevyrobniSfery" ;
+	skos:narrower
+		crimestatistics-code-codelist-hash:51,
+		crimestatistics-code-codelist-hash:52,
+		crimestatistics-code-codelist-hash:53,
+		crimestatistics-code-codelist-hash:54,
+		crimestatistics-code-codelist-hash:55,
+		crimestatistics-code-codelist-hash:56,
+		crimestatistics-code-codelist-hash:57,
+		crimestatistics-code-codelist-hash:58,
+		crimestatistics-code-codelist-hash:59 ;
+	.
+
+crimestatistics-code-codelist-hash:osobyBezPracovnihoZarazeni  a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel "osoby bez pracovního zařazení"@cs ;
+	skos:notation "crimestatistics.codelist.zamestnani.osobyBezPracovnihoZarazeni" ;
+	skos:narrower
+		crimestatistics-code-codelist-hash:osobyPripravujiciSeNaBudouciZamestnani,
+		crimestatistics-code-codelist-hash:duchodci,
+		crimestatistics-code-codelist-hash:osobyVeVazbeNeboVykonuTrestuOdnetiSvobody,
+		crimestatistics-code-codelist-hash:osobyVeSluzbe,
+		crimestatistics-code-codelist-hash:61,
+		crimestatistics-code-codelist-hash:64,
+		crimestatistics-code-codelist-hash:74,
+		crimestatistics-code-codelist-hash:78,
+		crimestatistics-code-codelist-hash:80 ;
+	.
+
+crimestatistics-code-codelist-hash:osobyPripravujiciSeNaBudouciZamestnani  a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel "osoby připravující se na budoucí zaměstnání"@cs ;
+	skos:notation "crimestatistics.codelist.zamestnani.osobyPripravujiciSeNaBudouciZamestnani" ;
+	skos:narrower
+		crimestatistics-code-codelist-hash:zaciZakladnihoStupne,
+		crimestatistics-code-codelist-hash:zaciStrednihoStupne,
+		crimestatistics-code-codelist-hash:68 ;
+	.
+
+crimestatistics-code-codelist-hash:zaciZakladnihoStupne a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel "žáci základního stupně školní docházky"@cs ;
+	skos:notation "crimestatistics.codelist.zamestnani.zaciZakladnihoStupne" ;
+	skos:narrower
+		crimestatistics-code-codelist-hash:62,
+		crimestatistics-code-codelist-hash:63 ;
+	.
+
+crimestatistics-code-codelist-hash:zaciStrednihoStupne a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel "žáci středního stupně školní docházky"@cs ;
+	skos:notation "crimestatistics.codelist.zamestnani.zaciStrednihoStupne" ;
+	skos:narrower
+		crimestatistics-code-codelist-hash:ucni,
+		crimestatistics-code-codelist-hash:67 ;
+	.
+
+# TODO: spojit s dělníky a provozními zaměstnanci?
+crimestatistics-code-codelist-hash:ucni a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel "učni"@cs ;
+	skos:notation "crimestatistics.codelist.zamestnani.ucni" ;
+	skos:narrower
+		crimestatistics-code-codelist-hash:65,
+		crimestatistics-code-codelist-hash:66 ;
+	.
+
+crimestatistics-code-codelist-hash:duchodci a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel "důchodci"@cs ;
+	skos:notation "crimestatistics.codelist.zamestnani.duchodci" ;
+	skos:narrower
+		crimestatistics-code-codelist-hash:75,
+		crimestatistics-code-codelist-hash:77 ;
+	.
+
+crimestatistics-code-codelist-hash:osobyVeVazbeNeboVykonuTrestuOdnetiSvobody a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel "osoby ve vazbě nebo výkonu trestu odnětí svobody"@cs ;
+	skos:notation "crimestatistics.codelist.zamestnani.osobyVeVazbeNeboVykonuTrestuOdnetiSvobody" ;
+	skos:narrower
+		crimestatistics-code-codelist-hash:72,
+		crimestatistics-code-codelist-hash:79 ;
+	.
+
+crimestatistics-code-codelist-hash:osobyVeSluzbe a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel "osoby ve službě"@cs ;
+	skos:notation "crimestatistics.codelist.zamestnani.osobyVeSluzbe" ;
+	skos:narrower
+		crimestatistics-code-codelist-hash:71,
+		crimestatistics-code-codelist-hash:73 ;
+	.
+
+crimestatistics-code-codelist-hash:osobyPodnikajici a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel "osoby podnikající"@cs ;
+	skos:notation "crimestatistics.codelist.zamestnani.osobyPodnikajici" ;
+	skos:narrower
+		crimestatistics-code-codelist-hash:85,
+		crimestatistics-code-codelist-hash:86 ;
+	.
+
+crimestatistics-code-codelist-hash:osobyBezUdajuOZamestnani a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel "osoby bez údajů o zaměstnání"@cs ;
+	skos:notation "crimestatistics.codelist.zamestnani.osobyBezUdajuOZamestnani" ;
+	skos:narrower
+		crimestatistics-code-codelist-hash:87 ;
+	.
+
+crimestatistics-code-codelist-hash:pracovniciNaUsekuRizeniASpravy a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel "pracovníci na úseku řízení a správy"@cs ;
+	skos:notation "crimestatistics.codelist.zamestnani.pracovniciNaUsekuRizeniASpravy" ;
+	skos:narrower
+		crimestatistics-code-codelist-hash:statniZamestnanci,
+		crimestatistics-code-codelist-hash:92,
+		crimestatistics-code-codelist-hash:93,
+		crimestatistics-code-codelist-hash:94,
+		crimestatistics-code-codelist-hash:95,
+		crimestatistics-code-codelist-hash:96,
+		crimestatistics-code-codelist-hash:99 ;
+	.
+
+crimestatistics-code-codelist-hash:statniZamestnanci a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel "státní zaměstnanci"@cs ;
+	skos:notation "crimestatistics.codelist.zamestnani.statniZamestnanci" ;
+	skos:narrower
+		crimestatistics-code-codelist-hash:90,
+		crimestatistics-code-codelist-hash:91,
+		crimestatistics-code-codelist-hash:97,
+		crimestatistics-code-codelist-hash:98 ;
+	.

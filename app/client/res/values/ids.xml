@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="crime_action_detail" type="id"/>
+    <item name="crime_data_loading_error_view" type="id" />
+
+</resources>

@@ -1,0 +1,4 @@
+?utvar a crime:Utvar .
+?utvar crime:id ?utvarId
+FILTER ( ?utvarId = ?parIdUtvaru_ValuePlaceholder )
+?trestnyCin crime:utvarSpachaniNeboZjisteni ?utvar .

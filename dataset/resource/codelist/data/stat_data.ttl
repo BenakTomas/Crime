@@ -1,0 +1,1803 @@
+# Standardní prefixy
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix interval: <http://reference.data.gov.uk/def/intervals/> .
+@prefix sdmx:    <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+# Vlastní prefixy
+@prefix crimestatistics-code-slash: <http://linked.opendata.cz/ontology/crimestatistics/code/> .
+@prefix crimestatistics-code-codelist-slash: <http://linked.opendata.cz/ontology/crimestatistics/code/stat/> .
+@prefix crimestatistics-code-codelist-class: <http://linked.opendata.cz/ontology/crimestatistics/code/stat/class#> .
+@prefix crimestatistics-code-codelist-property: <http://linked.opendata.cz/ontology/crimestatistics/code/stat/property#> .
+
+@prefix crimestatistics-code-codelist-hash: <http://linked.opendata.cz/ontology/crimestatistics/code/stat#> .
+
+crimestatistics-code-codelist-hash:601 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Afgánistán"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "601" ;
+
+	rdfs:label "Afgánistán"@cs ;
+	.
+crimestatistics-code-codelist-hash:501 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Alandy"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "501" ;
+
+	rdfs:label "Alandy"@cs ;
+	.
+crimestatistics-code-codelist-hash:110 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Albánská republika"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "110" ;
+
+	rdfs:label "Albánská republika"@cs ;
+	.
+crimestatistics-code-codelist-hash:641 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Alžírská lidová demokratická republika"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "641" ;
+
+	rdfs:label "Alžírská lidová demokratická republika"@cs ;
+	.
+crimestatistics-code-codelist-hash:502 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Americká Samoa"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "502" ;
+
+	rdfs:label "Americká Samoa"@cs ;
+	.
+crimestatistics-code-codelist-hash:503 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Americké Panenské ostrovy"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "503" ;
+
+	rdfs:label "Americké Panenské ostrovy"@cs ;
+	.
+crimestatistics-code-codelist-hash:504 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Andorské knížectví"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "504" ;
+
+	rdfs:label "Andorské knížectví"@cs ;
+	.
+crimestatistics-code-codelist-hash:505 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Angolská republika"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "505" ;
+
+	rdfs:label "Angolská republika"@cs ;
+	.
+crimestatistics-code-codelist-hash:506 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Anguilla"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "506" ;
+
+	rdfs:label "Anguilla"@cs ;
+	.
+crimestatistics-code-codelist-hash:507 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Antarktida"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "507" ;
+
+	rdfs:label "Antarktida"@cs ;
+	.
+crimestatistics-code-codelist-hash:508 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Antigua a Barbuda"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "508" ;
+
+	rdfs:label "Antigua a Barbuda"@cs ;
+	.
+crimestatistics-code-codelist-hash:801 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Argentinská republika"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "801" ;
+
+	rdfs:label "Argentinská republika"@cs ;
+	.
+crimestatistics-code-codelist-hash:190 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Arménská republika"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "190" ;
+
+	rdfs:label "Arménská republika"@cs ;
+	.
+crimestatistics-code-codelist-hash:509 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Aruba"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "509" ;
+
+	rdfs:label "Aruba"@cs ;
+	.
+crimestatistics-code-codelist-hash:471 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Austrálie"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "471" ;
+
+	rdfs:label "Austrálie"@cs ;
+	.
+crimestatistics-code-codelist-hash:191 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Ázerbájdžánská republika"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "191" ;
+
+	rdfs:label "Ázerbájdžánská republika"@cs ;
+	.
+crimestatistics-code-codelist-hash:510 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Bahamy"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "510" ;
+
+	rdfs:label "Bahamy"@cs ;
+	.
+crimestatistics-code-codelist-hash:511 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Bahrajnský stát"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "511" ;
+
+	rdfs:label "Bahrajnský stát"@cs ;
+	.
+crimestatistics-code-codelist-hash:512 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Bangladéšská lidová republika"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "512" ;
+
+	rdfs:label "Bangladéšská lidová republika"@cs ;
+	.
+crimestatistics-code-codelist-hash:513 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Barbados"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "513" ;
+
+	rdfs:label "Barbados"@cs ;
+	.
+crimestatistics-code-codelist-hash:411 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Belgie"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "411" ;
+
+	rdfs:label "Belgie"@cs ;
+	.
+crimestatistics-code-codelist-hash:514 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Belize"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "514" ;
+
+	rdfs:label "Belize"@cs ;
+	.
+crimestatistics-code-codelist-hash:192 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Běloruská republika"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "192" ;
+
+	rdfs:label "Běloruská republika"@cs ;
+	.
+crimestatistics-code-codelist-hash:515 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Beninská republika"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "515" ;
+
+	rdfs:label "Beninská republika"@cs ;
+	.
+crimestatistics-code-codelist-hash:516 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Bermudy"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "516" ;
+
+	rdfs:label "Bermudy"@cs ;
+	.
+crimestatistics-code-codelist-hash:517 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Bhútánské království"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "517" ;
+
+	rdfs:label "Bhútánské království"@cs ;
+	.
+crimestatistics-code-codelist-hash:802 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Bolívijská republika"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "802" ;
+
+	rdfs:label "Bolívijská republika"@cs ;
+	.
+crimestatistics-code-codelist-hash:311 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Bosna a Hercegovina"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "311" ;
+
+	rdfs:label "Bosna a Hercegovina"@cs ;
+	.
+crimestatistics-code-codelist-hash:518 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Bostwanská republika"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "518" ;
+
+	rdfs:label "Bostwanská republika"@cs ;
+	.
+crimestatistics-code-codelist-hash:519 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Bouvetův ostrov"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "519" ;
+
+	rdfs:label "Bouvetův ostrov"@cs ;
+	.
+crimestatistics-code-codelist-hash:803 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Brazilská federativní republika"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "803" ;
+
+	rdfs:label "Brazilská federativní republika"@cs ;
+	.
+crimestatistics-code-codelist-hash:844 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Britská závislá území"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "844" ;
+
+	rdfs:label "Britská závislá území"@cs ;
+	.
+crimestatistics-code-codelist-hash:521 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Britské indickooceánské území"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "521" ;
+
+	rdfs:label "Britské indickooceánské území"@cs ;
+	.
+crimestatistics-code-codelist-hash:522 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Britské Panenské ostrovy"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "522" ;
+
+	rdfs:label "Britské Panenské ostrovy"@cs ;
+	.
+crimestatistics-code-codelist-hash:845 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Britské zámořské území"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "845" ;
+
+	rdfs:label "Britské zámořské území"@cs ;
+	.
+crimestatistics-code-codelist-hash:523 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Brunej Darussalam"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "523" ;
+
+	rdfs:label "Brunej Darussalam"@cs ;
+	.
+crimestatistics-code-codelist-hash:120 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Bulharská republika"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "120" ;
+
+	rdfs:label "Bulharská republika"@cs ;
+	.
+crimestatistics-code-codelist-hash:524 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Burkina Faso"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "524" ;
+
+	rdfs:label "Burkina Faso"@cs ;
+	.
+crimestatistics-code-codelist-hash:643 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Burundská republika"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "643" ;
+
+	rdfs:label "Burundská republika"@cs ;
+	.
+crimestatistics-code-codelist-hash:526 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Cookovy ostrovy"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "526" ;
+
+	rdfs:label "Cookovy ostrovy"@cs ;
+	.
+crimestatistics-code-codelist-hash:644 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Čadská republika"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "644" ;
+
+	rdfs:label "Čadská republika"@cs ;
+	.
+crimestatistics-code-codelist-hash:312 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Černá Hora"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "312" ;
+
+	rdfs:label "Černá Hora"@cs ;
+	.
+crimestatistics-code-codelist-hash:010 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Česká republika"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "010" ;
+
+	rdfs:label "Česká republika"@cs ;
+	.
+crimestatistics-code-codelist-hash:320 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Čínská lidová republika"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "320" ;
+
+	rdfs:label "Čínská lidová republika"@cs ;
+	.
+crimestatistics-code-codelist-hash:412 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Dánsko"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "412" ;
+
+	rdfs:label "Dánsko"@cs ;
+	.
+crimestatistics-code-codelist-hash:528 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Dominika"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "528" ;
+
+	rdfs:label "Dominika"@cs ;
+	.
+crimestatistics-code-codelist-hash:805 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Dominikánská republika"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "805" ;
+
+	rdfs:label "Dominikánská republika"@cs ;
+	.
+crimestatistics-code-codelist-hash:529 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Džibutská republika"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "529" ;
+
+	rdfs:label "Džibutská republika"@cs ;
+	.
+crimestatistics-code-codelist-hash:673 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Egyptská arabská republika"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "673" ;
+
+	rdfs:label "Egyptská arabská republika"@cs ;
+	.
+crimestatistics-code-codelist-hash:806 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Ekvádorská republika"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "806" ;
+
+	rdfs:label "Ekvádorská republika"@cs ;
+	.
+crimestatistics-code-codelist-hash:530 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Eritrea"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "530" ;
+
+	rdfs:label "Eritrea"@cs ;
+	.
+crimestatistics-code-codelist-hash:193 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Estonská republika"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "193" ;
+
+	rdfs:label "Estonská republika"@cs ;
+	.
+crimestatistics-code-codelist-hash:646 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Etiopská federativní demokratická republika"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "646" ;
+
+	rdfs:label "Etiopská federativní demokratická republika"@cs ;
+	.
+crimestatistics-code-codelist-hash:532 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Evropská unie"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "532" ;
+
+	rdfs:label "Evropská unie"@cs ;
+	.
+crimestatistics-code-codelist-hash:531 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Evropské sdružení volného obchodu"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "531" ;
+
+	rdfs:label "Evropské sdružení volného obchodu"@cs ;
+	.
+crimestatistics-code-codelist-hash:533 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Faerské ostrovy"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "533" ;
+
+	rdfs:label "Faerské ostrovy"@cs ;
+	.
+crimestatistics-code-codelist-hash:534 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Falklandy"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "534" ;
+
+	rdfs:label "Falklandy"@cs ;
+	.
+crimestatistics-code-codelist-hash:535 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Fidžijská republika"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "535" ;
+
+	rdfs:label "Fidžijská republika"@cs ;
+	.
+crimestatistics-code-codelist-hash:604 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Filipínská republika"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "604" ;
+
+	rdfs:label "Filipínská republika"@cs ;
+	.
+crimestatistics-code-codelist-hash:413 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Finská republika"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "413" ;
+
+	rdfs:label "Finská republika"@cs ;
+	.
+crimestatistics-code-codelist-hash:537 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Francouzská Guyana"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "537" ;
+
+	rdfs:label "Francouzská Guyana"@cs ;
+	.
+crimestatistics-code-codelist-hash:539 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Francouzská Polynésie"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "539" ;
+
+	rdfs:label "Francouzská Polynésie"@cs ;
+	.
+crimestatistics-code-codelist-hash:414 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Francouzská republika"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "414" ;
+
+	rdfs:label "Francouzská republika"@cs ;
+	.
+crimestatistics-code-codelist-hash:538 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Fransouzská jižní území"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "538" ;
+
+	rdfs:label "Fransouzská jižní území"@cs ;
+	.
+crimestatistics-code-codelist-hash:647 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Gabonská republika"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "647" ;
+
+	rdfs:label "Gabonská republika"@cs ;
+	.
+crimestatistics-code-codelist-hash:648 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Gambijská republika"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "648" ;
+
+	rdfs:label "Gambijská republika"@cs ;
+	.
+crimestatistics-code-codelist-hash:649 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Ghanská republika"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "649" ;
+
+	rdfs:label "Ghanská republika"@cs ;
+	.
+crimestatistics-code-codelist-hash:841 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Gibraltar"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "841" ;
+
+	rdfs:label "Gibraltar"@cs ;
+	.
+crimestatistics-code-codelist-hash:541 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Grenada"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "541" ;
+
+	rdfs:label "Grenada"@cs ;
+	.
+crimestatistics-code-codelist-hash:542 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Grónsko"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "542" ;
+
+	rdfs:label "Grónsko"@cs ;
+	.
+crimestatistics-code-codelist-hash:194 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Gruzie"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "194" ;
+
+	rdfs:label "Gruzie"@cs ;
+	.
+crimestatistics-code-codelist-hash:543 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Guadeloupe"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "543" ;
+
+	rdfs:label "Guadeloupe"@cs ;
+	.
+crimestatistics-code-codelist-hash:544 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Guam"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "544" ;
+
+	rdfs:label "Guam"@cs ;
+	.
+crimestatistics-code-codelist-hash:807 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Guatemalská republika"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "807" ;
+
+	rdfs:label "Guatemalská republika"@cs ;
+	.
+crimestatistics-code-codelist-hash:545 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Guernsey"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "545" ;
+
+	rdfs:label "Guernsey"@cs ;
+	.
+crimestatistics-code-codelist-hash:546 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Guinea - Bissau"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "546" ;
+
+	rdfs:label "Guinea - Bissau"@cs ;
+	.
+crimestatistics-code-codelist-hash:651 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Guinejská republika"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "651" ;
+
+	rdfs:label "Guinejská republika"@cs ;
+	.
+crimestatistics-code-codelist-hash:547 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Guyanská republika"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "547" ;
+
+	rdfs:label "Guyanská republika"@cs ;
+	.
+crimestatistics-code-codelist-hash:808 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Haitská republika"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "808" ;
+
+	rdfs:label "Haitská republika"@cs ;
+	.
+crimestatistics-code-codelist-hash:548 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Heardův ostrov a McDonaldovy ostrovy"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "548" ;
+
+	rdfs:label "Heardův ostrov a McDonaldovy ostrovy"@cs ;
+	.
+crimestatistics-code-codelist-hash:809 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Honduraská republika"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "809" ;
+
+	rdfs:label "Honduraská republika"@cs ;
+	.
+crimestatistics-code-codelist-hash:549 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Hongkong"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "549" ;
+
+	rdfs:label "Hongkong"@cs ;
+	.
+crimestatistics-code-codelist-hash:811 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Chilská republika"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "811" ;
+
+	rdfs:label "Chilská republika"@cs ;
+	.
+crimestatistics-code-codelist-hash:313 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Chorvatská republika"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "313" ;
+
+	rdfs:label "Chorvatská republika"@cs ;
+	.
+crimestatistics-code-codelist-hash:605 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Indická republika"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "605" ;
+
+	rdfs:label "Indická republika"@cs ;
+	.
+crimestatistics-code-codelist-hash:606 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Indonéská republika"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "606" ;
+
+	rdfs:label "Indonéská republika"@cs ;
+	.
+crimestatistics-code-codelist-hash:607 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Irák"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "607" ;
+
+	rdfs:label "Irák"@cs ;
+	.
+crimestatistics-code-codelist-hash:608 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Irán"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "608" ;
+
+	rdfs:label "Irán"@cs ;
+	.
+crimestatistics-code-codelist-hash:416 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Irsko"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "416" ;
+
+	rdfs:label "Irsko"@cs ;
+	.
+crimestatistics-code-codelist-hash:417 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Islandská republika"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "417" ;
+
+	rdfs:label "Islandská republika"@cs ;
+	.
+crimestatistics-code-codelist-hash:418 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Italská republika"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "418" ;
+
+	rdfs:label "Italská republika"@cs ;
+	.
+crimestatistics-code-codelist-hash:609 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Izraelský stát"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "609" ;
+
+	rdfs:label "Izraelský stát"@cs ;
+	.
+crimestatistics-code-codelist-hash:812 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Jamajka"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "812" ;
+
+	rdfs:label "Jamajka"@cs ;
+	.
+crimestatistics-code-codelist-hash:441 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Japonsko"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "441" ;
+
+	rdfs:label "Japonsko"@cs ;
+	.
+crimestatistics-code-codelist-hash:611 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Jemenská republika"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "611" ;
+
+	rdfs:label "Jemenská republika"@cs ;
+	.
+crimestatistics-code-codelist-hash:551 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Jersey"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "551" ;
+
+	rdfs:label "Jersey"@cs ;
+	.
+crimestatistics-code-codelist-hash:451 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Jihoafrická republika"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "451" ;
+
+	rdfs:label "Jihoafrická republika"@cs ;
+	.
+crimestatistics-code-codelist-hash:550 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Jižní Georgie a Jižní Sandwichovy ostrovy"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "550" ;
+
+	rdfs:label "Jižní Georgie a Jižní Sandwichovy ostrovy"@cs ;
+	.
+crimestatistics-code-codelist-hash:614 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Jordánsko"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "614" ;
+
+	rdfs:label "Jordánsko"@cs ;
+	.
+crimestatistics-code-codelist-hash:310 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Jugoslávie"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "310" ;
+
+	rdfs:label "Jugoslávie"@cs ;
+	.
+crimestatistics-code-codelist-hash:553 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Kajmanské ostrovy"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "553" ;
+
+	rdfs:label "Kajmanské ostrovy"@cs ;
+	.
+crimestatistics-code-codelist-hash:615 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Kambodžské království"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "615" ;
+
+	rdfs:label "Kambodžské království"@cs ;
+	.
+crimestatistics-code-codelist-hash:653 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Kamerunská republika"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "653" ;
+
+	rdfs:label "Kamerunská republika"@cs ;
+	.
+crimestatistics-code-codelist-hash:461 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Kanada"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "461" ;
+
+	rdfs:label "Kanada"@cs ;
+	.
+crimestatistics-code-codelist-hash:554 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Kapverdská republika"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "554" ;
+
+	rdfs:label "Kapverdská republika"@cs ;
+	.
+crimestatistics-code-codelist-hash:555 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Katar"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "555" ;
+
+	rdfs:label "Katar"@cs ;
+	.
+crimestatistics-code-codelist-hash:195 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Kazachstán"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "195" ;
+
+	rdfs:label "Kazachstán"@cs ;
+	.
+crimestatistics-code-codelist-hash:654 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Keňská republika"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "654" ;
+
+	rdfs:label "Keňská republika"@cs ;
+	.
+crimestatistics-code-codelist-hash:556 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Kiribati"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "556" ;
+
+	rdfs:label "Kiribati"@cs ;
+	.
+crimestatistics-code-codelist-hash:557 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Kokosové ostrovy"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "557" ;
+
+	rdfs:label "Kokosové ostrovy"@cs ;
+	.
+crimestatistics-code-codelist-hash:813 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Kolumbijská republika"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "813" ;
+
+	rdfs:label "Kolumbijská republika"@cs ;
+	.
+crimestatistics-code-codelist-hash:558 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Komory"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "558" ;
+
+	rdfs:label "Komory"@cs ;
+	.
+crimestatistics-code-codelist-hash:655 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Kongo"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "655" ;
+
+	rdfs:label "Kongo"@cs ;
+	.
+crimestatistics-code-codelist-hash:656 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Konžská demokratická republika"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "656" ;
+
+	rdfs:label "Konžská demokratická republika"@cs ;
+	.
+crimestatistics-code-codelist-hash:330 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Korejská lidově demokratická republika"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "330" ;
+
+	rdfs:label "Korejská lidově demokratická republika"@cs ;
+	.
+crimestatistics-code-codelist-hash:612 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Korejská republika"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "612" ;
+
+	rdfs:label "Korejská republika"@cs ;
+	.
+crimestatistics-code-codelist-hash:846 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Kosovo"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "846" ;
+
+	rdfs:label "Kosovo"@cs ;
+	.
+crimestatistics-code-codelist-hash:814 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Kostarická republika"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "814" ;
+
+	rdfs:label "Kostarická republika"@cs ;
+	.
+crimestatistics-code-codelist-hash:350 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Kubánská republika"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "350" ;
+
+	rdfs:label "Kubánská republika"@cs ;
+	.
+crimestatistics-code-codelist-hash:616 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Kuvajtský stát"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "616" ;
+
+	rdfs:label "Kuvajtský stát"@cs ;
+	.
+crimestatistics-code-codelist-hash:617 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Kyperská republika"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "617" ;
+
+	rdfs:label "Kyperská republika"@cs ;
+	.
+crimestatistics-code-codelist-hash:196 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Kyrgyzstán"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "196" ;
+
+	rdfs:label "Kyrgyzstán"@cs ;
+	.
+crimestatistics-code-codelist-hash:618 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Laoská lidově demokratická republika"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "618" ;
+
+	rdfs:label "Laoská lidově demokratická republika"@cs ;
+	.
+crimestatistics-code-codelist-hash:560 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Lesothské království"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "560" ;
+
+	rdfs:label "Lesothské království"@cs ;
+	.
+crimestatistics-code-codelist-hash:619 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Libanonská republika"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "619" ;
+
+	rdfs:label "Libanonská republika"@cs ;
+	.
+crimestatistics-code-codelist-hash:657 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Liberijská republika"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "657" ;
+
+	rdfs:label "Liberijská republika"@cs ;
+	.
+crimestatistics-code-codelist-hash:658 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Libyjská arabská lidová socialistická džamáhírije"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "658" ;
+
+	rdfs:label "Libyjská arabská lidová socialistická džamáhírije"@cs ;
+	.
+crimestatistics-code-codelist-hash:561 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Lichtenštejnské knížetství"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "561" ;
+
+	rdfs:label "Lichtenštejnské knížetství"@cs ;
+	.
+crimestatistics-code-codelist-hash:197 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Litevská republika"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "197" ;
+
+	rdfs:label "Litevská republika"@cs ;
+	.
+crimestatistics-code-codelist-hash:198 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Lotyšská republika"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "198" ;
+
+	rdfs:label "Lotyšská republika"@cs ;
+	.
+crimestatistics-code-codelist-hash:419 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Lucemburské velkovévodství"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "419" ;
+
+	rdfs:label "Lucemburské velkovévodství"@cs ;
+	.
+crimestatistics-code-codelist-hash:562 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Macao"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "562" ;
+
+	rdfs:label "Macao"@cs ;
+	.
+crimestatistics-code-codelist-hash:661 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Madagaskarská republika"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "661" ;
+
+	rdfs:label "Madagaskarská republika"@cs ;
+	.
+crimestatistics-code-codelist-hash:130 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Maďarská republika"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "130" ;
+
+	rdfs:label "Maďarská republika"@cs ;
+	.
+crimestatistics-code-codelist-hash:314 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Makedonie"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "314" ;
+
+	rdfs:label "Makedonie"@cs ;
+	.
+crimestatistics-code-codelist-hash:621 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Malajsie"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "621" ;
+
+	rdfs:label "Malajsie"@cs ;
+	.
+crimestatistics-code-codelist-hash:659 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Malawská republika"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "659" ;
+
+	rdfs:label "Malawská republika"@cs ;
+	.
+crimestatistics-code-codelist-hash:622 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Maledivská republika"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "622" ;
+
+	rdfs:label "Maledivská republika"@cs ;
+	.
+crimestatistics-code-codelist-hash:563 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Mali"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "563" ;
+
+	rdfs:label "Mali"@cs ;
+	.
+crimestatistics-code-codelist-hash:842 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Malta"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "842" ;
+
+	rdfs:label "Malta"@cs ;
+	.
+crimestatistics-code-codelist-hash:663 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Marocké království"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "663" ;
+
+	rdfs:label "Marocké království"@cs ;
+	.
+crimestatistics-code-codelist-hash:564 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Marshallovy ostrovy"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "564" ;
+
+	rdfs:label "Marshallovy ostrovy"@cs ;
+	.
+crimestatistics-code-codelist-hash:565 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Martinik"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "565" ;
+
+	rdfs:label "Martinik"@cs ;
+	.
+crimestatistics-code-codelist-hash:566 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Mauricijská republika"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "566" ;
+
+	rdfs:label "Mauricijská republika"@cs ;
+	.
+crimestatistics-code-codelist-hash:664 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Mauritánie"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "664" ;
+
+	rdfs:label "Mauritánie"@cs ;
+	.
+crimestatistics-code-codelist-hash:567 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Mayotte"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "567" ;
+
+	rdfs:label "Mayotte"@cs ;
+	.
+crimestatistics-code-codelist-hash:568 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Menší odlehlé ostrovy USA"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "568" ;
+
+	rdfs:label "Menší odlehlé ostrovy USA"@cs ;
+	.
+crimestatistics-code-codelist-hash:815 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Mexiko"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "815" ;
+
+	rdfs:label "Mexiko"@cs ;
+	.
+crimestatistics-code-codelist-hash:570 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Mikronésie"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "570" ;
+
+	rdfs:label "Mikronésie"@cs ;
+	.
+crimestatistics-code-codelist-hash:199 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Moldavská republika"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "199" ;
+
+	rdfs:label "Moldavská republika"@cs ;
+	.
+crimestatistics-code-codelist-hash:571 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Monacké knížectví"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "571" ;
+
+	rdfs:label "Monacké knížectví"@cs ;
+	.
+crimestatistics-code-codelist-hash:180 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Mongolsko"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "180" ;
+
+	rdfs:label "Mongolsko"@cs ;
+	.
+crimestatistics-code-codelist-hash:572 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Montserrat"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "572" ;
+
+	rdfs:label "Montserrat"@cs ;
+	.
+crimestatistics-code-codelist-hash:573 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Mosambická republika"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "573" ;
+
+	rdfs:label "Mosambická republika"@cs ;
+	.
+crimestatistics-code-codelist-hash:574 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Myanmarský svaz"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "574" ;
+
+	rdfs:label "Myanmarský svaz"@cs ;
+	.
+crimestatistics-code-codelist-hash:575 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Namibijská republika"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "575" ;
+
+	rdfs:label "Namibijská republika"@cs ;
+	.
+crimestatistics-code-codelist-hash:576 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Nauruská republika"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "576" ;
+
+	rdfs:label "Nauruská republika"@cs ;
+	.
+crimestatistics-code-codelist-hash:420 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Německo"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "420" ;
+
+	rdfs:label "Německo"@cs ;
+	.
+crimestatistics-code-codelist-hash:577 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Nepálské království"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "577" ;
+
+	rdfs:label "Nepálské království"@cs ;
+	.
+crimestatistics-code-codelist-hash:998 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Nezjištěno"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "998" ;
+
+	rdfs:label "Nezjištěno"@cs ;
+	.
+crimestatistics-code-codelist-hash:666 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Nigérijská federativní republika"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "666" ;
+
+	rdfs:label "Nigérijská federativní republika"@cs ;
+	.
+crimestatistics-code-codelist-hash:665 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Nigerská republika"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "665" ;
+
+	rdfs:label "Nigerská republika"@cs ;
+	.
+crimestatistics-code-codelist-hash:816 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Nikaragujská republika"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "816" ;
+
+	rdfs:label "Nikaragujská republika"@cs ;
+	.
+crimestatistics-code-codelist-hash:579 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Niue"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "579" ;
+
+	rdfs:label "Niue"@cs ;
+	.
+crimestatistics-code-codelist-hash:580 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Nizozemské Antily"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "580" ;
+
+	rdfs:label "Nizozemské Antily"@cs ;
+	.
+crimestatistics-code-codelist-hash:422 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Nizozemsko"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "422" ;
+
+	rdfs:label "Nizozemsko"@cs ;
+	.
+crimestatistics-code-codelist-hash:581 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Norfolk"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "581" ;
+
+	rdfs:label "Norfolk"@cs ;
+	.
+crimestatistics-code-codelist-hash:423 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Norsko"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "423" ;
+
+	rdfs:label "Norsko"@cs ;
+	.
+crimestatistics-code-codelist-hash:582 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Nová Kaledonie"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "582" ;
+
+	rdfs:label "Nová Kaledonie"@cs ;
+	.
+crimestatistics-code-codelist-hash:472 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Nový Zéland"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "472" ;
+
+	rdfs:label "Nový Zéland"@cs ;
+	.
+crimestatistics-code-codelist-hash:583 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Omán"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "583" ;
+
+	rdfs:label "Omán"@cs ;
+	.
+crimestatistics-code-codelist-hash:997 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Ostatní"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "997" ;
+
+	rdfs:label "Ostatní"@cs ;
+	.
+crimestatistics-code-codelist-hash:847 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Ostrov Man"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "847" ;
+
+	rdfs:label "Ostrov Man"@cs ;
+	.
+crimestatistics-code-codelist-hash:624 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Pákistánská islámská republika"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "624" ;
+
+	rdfs:label "Pákistánská islámská republika"@cs ;
+	.
+crimestatistics-code-codelist-hash:586 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Palauská republika"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "586" ;
+
+	rdfs:label "Palauská republika"@cs ;
+	.
+crimestatistics-code-codelist-hash:587 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Palestina"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "587" ;
+
+	rdfs:label "Palestina"@cs ;
+	.
+crimestatistics-code-codelist-hash:817 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Panamská republika"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "817" ;
+
+	rdfs:label "Panamská republika"@cs ;
+	.
+crimestatistics-code-codelist-hash:589 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Papua Nová Guinea"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "589" ;
+
+	rdfs:label "Papua Nová Guinea"@cs ;
+	.
+crimestatistics-code-codelist-hash:818 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Paraguayská republika"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "818" ;
+
+	rdfs:label "Paraguayská republika"@cs ;
+	.
+crimestatistics-code-codelist-hash:819 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Peruánská republika"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "819" ;
+
+	rdfs:label "Peruánská republika"@cs ;
+	.
+crimestatistics-code-codelist-hash:590 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Pitcairn"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "590" ;
+
+	rdfs:label "Pitcairn"@cs ;
+	.
+crimestatistics-code-codelist-hash:667 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Pobřeží slonoviny"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "667" ;
+
+	rdfs:label "Pobřeží slonoviny"@cs ;
+	.
+crimestatistics-code-codelist-hash:150 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Polská republika"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "150" ;
+
+	rdfs:label "Polská republika"@cs ;
+	.
+crimestatistics-code-codelist-hash:591 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Portoriko"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "591" ;
+
+	rdfs:label "Portoriko"@cs ;
+	.
+crimestatistics-code-codelist-hash:424 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Portugalská republika"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "424" ;
+
+	rdfs:label "Portugalská republika"@cs ;
+	.
+crimestatistics-code-codelist-hash:425 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Rakouská republika"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "425" ;
+
+	rdfs:label "Rakouská republika"@cs ;
+	.
+crimestatistics-code-codelist-hash:592 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Réunion"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "592" ;
+
+	rdfs:label "Réunion"@cs ;
+	.
+crimestatistics-code-codelist-hash:593 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Rovníková Guinea"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "593" ;
+
+	rdfs:label "Rovníková Guinea"@cs ;
+	.
+crimestatistics-code-codelist-hash:160 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Rumunsko"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "160" ;
+
+	rdfs:label "Rumunsko"@cs ;
+	.
+crimestatistics-code-codelist-hash:101 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Rusko"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "101" ;
+
+	rdfs:label "Rusko"@cs ;
+	.
+crimestatistics-code-codelist-hash:669 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Rwandská republika"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "669" ;
+
+	rdfs:label "Rwandská republika"@cs ;
+	.
+crimestatistics-code-codelist-hash:730 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Řád Maltézských rytířů"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "730" ;
+
+	rdfs:label "Řád Maltézských rytířů"@cs ;
+	.
+crimestatistics-code-codelist-hash:426 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Řecká republika"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "426" ;
+
+	rdfs:label "Řecká republika"@cs ;
+	.
+crimestatistics-code-codelist-hash:595 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Saint Pierre a Miguelon"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "595" ;
+
+	rdfs:label "Saint Pierre a Miguelon"@cs ;
+	.
+crimestatistics-code-codelist-hash:821 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Salvadorská republika"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "821" ;
+
+	rdfs:label "Salvadorská republika"@cs ;
+	.
+crimestatistics-code-codelist-hash:596 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Samoa"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "596" ;
+
+	rdfs:label "Samoa"@cs ;
+	.
+crimestatistics-code-codelist-hash:597 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "San Marino"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "597" ;
+
+	rdfs:label "San Marino"@cs ;
+	.
+crimestatistics-code-codelist-hash:625 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Saúdská Arábie"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "625" ;
+
+	rdfs:label "Saúdská Arábie"@cs ;
+	.
+crimestatistics-code-codelist-hash:671 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Senegalská republika"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "671" ;
+
+	rdfs:label "Senegalská republika"@cs ;
+	.
+crimestatistics-code-codelist-hash:598 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Severní Mariany"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "598" ;
+
+	rdfs:label "Severní Mariany"@cs ;
+	.
+crimestatistics-code-codelist-hash:599 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Seychelská republika"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "599" ;
+
+	rdfs:label "Seychelská republika"@cs ;
+	.
+crimestatistics-code-codelist-hash:672 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Sierra Leone"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "672" ;
+
+	rdfs:label "Sierra Leone"@cs ;
+	.
+crimestatistics-code-codelist-hash:626 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Singapurská republika"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "626" ;
+
+	rdfs:label "Singapurská republika"@cs ;
+	.
+crimestatistics-code-codelist-hash:050 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Slovenská republika"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "050" ;
+
+	rdfs:label "Slovenská republika"@cs ;
+	.
+crimestatistics-code-codelist-hash:315 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Slovinská republika"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "315" ;
+
+	rdfs:label "Slovinská republika"@cs ;
+	.
+crimestatistics-code-codelist-hash:674 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Somálská demokratická republika"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "674" ;
+
+	rdfs:label "Somálská demokratická republika"@cs ;
+	.
+crimestatistics-code-codelist-hash:701 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Spojené arabské emiráty"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "701" ;
+
+	rdfs:label "Spojené arabské emiráty"@cs ;
+	.
+crimestatistics-code-codelist-hash:462 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Spojené státy americké - USA"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "462" ;
+
+	rdfs:label "Spojené státy americké - USA"@cs ;
+	.
+crimestatistics-code-codelist-hash:316 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Srbsko"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "316" ;
+
+	rdfs:label "Srbsko"@cs ;
+	.
+crimestatistics-code-codelist-hash:603 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Srílanská demokratická socialistická republika"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "603" ;
+
+	rdfs:label "Srílanská demokratická socialistická republika"@cs ;
+	.
+crimestatistics-code-codelist-hash:675 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Středoafrická republika"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "675" ;
+
+	rdfs:label "Středoafrická republika"@cs ;
+	.
+crimestatistics-code-codelist-hash:704 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Středoevropská dohoda o volném obchodu"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "704" ;
+
+	rdfs:label "Středoevropská dohoda o volném obchodu"@cs ;
+	.
+crimestatistics-code-codelist-hash:676 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Súdánská republika"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "676" ;
+
+	rdfs:label "Súdánská republika"@cs ;
+	.
+crimestatistics-code-codelist-hash:705 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Surinamská republika"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "705" ;
+
+	rdfs:label "Surinamská republika"@cs ;
+	.
+crimestatistics-code-codelist-hash:707 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Svalbarda a ostrov Jan Mayen"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "707" ;
+
+	rdfs:label "Svalbarda a ostrov Jan Mayen"@cs ;
+	.
+crimestatistics-code-codelist-hash:708 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Svatá Helena"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "708" ;
+
+	rdfs:label "Svatá Helena"@cs ;
+	.
+crimestatistics-code-codelist-hash:709 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Svatá Lucie"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "709" ;
+
+	rdfs:label "Svatá Lucie"@cs ;
+	.
+crimestatistics-code-codelist-hash:710 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Svatý Kryštov a Nevis"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "710" ;
+
+	rdfs:label "Svatý Kryštov a Nevis"@cs ;
+	.
+crimestatistics-code-codelist-hash:711 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Vatikán"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "711" ;
+
+	rdfs:label "Vatikán"@cs ;
+	.
+crimestatistics-code-codelist-hash:712 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Svatý Tomáš a Princův ostrov"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "712" ;
+
+	rdfs:label "Svatý Tomáš a Princův ostrov"@cs ;
+	.
+crimestatistics-code-codelist-hash:706 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Svatý Vincenc a Grenadiny"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "706" ;
+
+	rdfs:label "Svatý Vincenc a Grenadiny"@cs ;
+	.
+crimestatistics-code-codelist-hash:713 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Svazijské království"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "713" ;
+
+	rdfs:label "Svazijské království"@cs ;
+	.
+crimestatistics-code-codelist-hash:627 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Sýrie"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "627" ;
+
+	rdfs:label "Sýrie"@cs ;
+	.
+crimestatistics-code-codelist-hash:714 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Šalamounovy ostrovy"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "714" ;
+
+	rdfs:label "Šalamounovy ostrovy"@cs ;
+	.
+crimestatistics-code-codelist-hash:427 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Španělské království"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "427" ;
+
+	rdfs:label "Španělské království"@cs ;
+	.
+crimestatistics-code-codelist-hash:428 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Švédské království"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "428" ;
+
+	rdfs:label "Švédské království"@cs ;
+	.
+crimestatistics-code-codelist-hash:429 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Švýcarská konfederace"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "429" ;
+
+	rdfs:label "Švýcarská konfederace"@cs ;
+	.
+crimestatistics-code-codelist-hash:102 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Tádžikistán"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "102" ;
+
+	rdfs:label "Tádžikistán"@cs ;
+	.
+crimestatistics-code-codelist-hash:677 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Tanzanie"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "677" ;
+
+	rdfs:label "Tanzanie"@cs ;
+	.
+crimestatistics-code-codelist-hash:628 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Thajské království"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "628" ;
+
+	rdfs:label "Thajské království"@cs ;
+	.
+crimestatistics-code-codelist-hash:715 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Tchaj-wan, čínská provincie"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "715" ;
+
+	rdfs:label "Tchaj-wan, čínská provincie"@cs ;
+	.
+crimestatistics-code-codelist-hash:678 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Togo"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "678" ;
+
+	rdfs:label "Togo"@cs ;
+	.
+crimestatistics-code-codelist-hash:717 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Tokelau"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "717" ;
+
+	rdfs:label "Tokelau"@cs ;
+	.
+crimestatistics-code-codelist-hash:718 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Tonga"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "718" ;
+
+	rdfs:label "Tonga"@cs ;
+	.
+crimestatistics-code-codelist-hash:822 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Trinidad a Tobago"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "822" ;
+
+	rdfs:label "Trinidad a Tobago"@cs ;
+	.
+crimestatistics-code-codelist-hash:679 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Tuniská republika"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "679" ;
+
+	rdfs:label "Tuniská republika"@cs ;
+	.
+crimestatistics-code-codelist-hash:629 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Turecká republika"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "629" ;
+
+	rdfs:label "Turecká republika"@cs ;
+	.
+crimestatistics-code-codelist-hash:103 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Turkmenistán"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "103" ;
+
+	rdfs:label "Turkmenistán"@cs ;
+	.
+crimestatistics-code-codelist-hash:719 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Turks a Caicos"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "719" ;
+
+	rdfs:label "Turks a Caicos"@cs ;
+	.
+crimestatistics-code-codelist-hash:720 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Tuvalu"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "720" ;
+
+	rdfs:label "Tuvalu"@cs ;
+	.
+crimestatistics-code-codelist-hash:681 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Ugandská republika"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "681" ;
+
+	rdfs:label "Ugandská republika"@cs ;
+	.
+crimestatistics-code-codelist-hash:104 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Ukrajina"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "104" ;
+
+	rdfs:label "Ukrajina"@cs ;
+	.
+crimestatistics-code-codelist-hash:823 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Uruguayská východní republika"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "823" ;
+
+	rdfs:label "Uruguayská východní republika"@cs ;
+	.
+crimestatistics-code-codelist-hash:105 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Uzbekistán"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "105" ;
+
+	rdfs:label "Uzbekistán"@cs ;
+	.
+crimestatistics-code-codelist-hash:721 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Vánoční ostrov"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "721" ;
+
+	rdfs:label "Vánoční ostrov"@cs ;
+	.
+crimestatistics-code-codelist-hash:722 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Vanuatská republika"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "722" ;
+
+	rdfs:label "Vanuatská republika"@cs ;
+	.
+crimestatistics-code-codelist-hash:431 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Spojené království"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "431" ;
+
+	rdfs:label "Spojené království"@cs ;
+	.
+crimestatistics-code-codelist-hash:824 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Venezuelská republika"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "824" ;
+
+	rdfs:label "Venezuelská republika"@cs ;
+	.
+crimestatistics-code-codelist-hash:340 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Vietnamská socialistická republika"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "340" ;
+
+	rdfs:label "Vietnamská socialistická republika"@cs ;
+	.
+crimestatistics-code-codelist-hash:723 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Východní Timor"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "723" ;
+
+	rdfs:label "Východní Timor"@cs ;
+	.
+crimestatistics-code-codelist-hash:725 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Wallis a Futuna"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "725" ;
+
+	rdfs:label "Wallis a Futuna"@cs ;
+	.
+crimestatistics-code-codelist-hash:682 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Zambijská republika"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "682" ;
+
+	rdfs:label "Zambijská republika"@cs ;
+	.
+crimestatistics-code-codelist-hash:727 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Západní Sahara"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "727" ;
+
+	rdfs:label "Západní Sahara"@cs ;
+	.
+crimestatistics-code-codelist-hash:729 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Zimbabwská republika"@cs ;
+	skos:inScheme crimestatistics-code-slash:stat ;
+	skos:notation "729" ;
+
+	rdfs:label "Zimbabwská republika"@cs ;
+	.

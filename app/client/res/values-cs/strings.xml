@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Monitor zločinu</string>
+    <string name="launcher_label">Monitor zločinu</string>
+    <string name="crime_summary_activity_label">Přehled trestné činnosti</string>
+    <string name="title_activity_display_crime_detail">Crime detail</string>
+    <string name="display_crime_detail_set_interval">Změnit interval</string>
+    <string name="nazvy_obci_label">PŘÍSLUŠNÉ OBCE</string>
+    <string name="crime_summary_index_label">INDEX</string>
+    <string name="crime_summary_trend_label">TREND</string>
+    <string name="crime_summary_objasnenost_label">OBJASNĚNOST</string>
+    <string name="crime_summary_enable_gps_and_wifi_prompt_string">Povolte prosím GPS nebo další zdroj pro určování polohy. Kliknutím na tlačítko OK se dostanete na příslušná nastavení.</string>
+    <string name="crime_action_reload_label">Obnovit</string>
+    <string name="crime_action_select_interval_label">změnit interval</string>
+    <string name="crime_action_utvar_detail_label">detail útvaru</string>
+    <string name="crime_action_list_label">úplný žebříček trestných činů</string>
+    <string name="crime_action_summary_label">přehled trestné činnosti</string>
+    <string name="select_date_interval_startDate_title">Počáteční měsíc a rok. Zobrazeno bude 12 měsíců počínaje tímto měsícem a rokem.</string>
+    <string name="crime_summary_toplist_other_item_label">ostatní</string>
+    <string name="crime_toplist_toplist_button_label">Zobrazit celý žebříček</string>
+    <string name="crime_summary_crime_overview_label">PŘEHLED</string>
+    <string name="crime_summary_toplist_label">ŽEBŘÍČEK</string>
+    <string name="crime_list_no_data_found_text">Žádná data neodpovídají současným vyhledávacím kritériím.</string>
+    <string name="crime_utvar_detail_action_bar_custom_subtitle">detail útvaru</string>
+    <string name="crime_month_histogram_label">MĚSÍČNÍ PŘEHLEDY</string>
+    <string name="title_activity_crimes_list">Žebříček trestných činů</string>
+    <string name="no_department_loaded"><![CDATA[<útvar nedostupný>]]></string>
+    <string name="crime_list_data_loading_error">Došlo k chybě při nahrávání dat.</string>
+    <string name="kod_utvaru_loading_error_text">Došlo k chybě při zjišťování útvaru pro umístění %1$f, %2$f. Příčina: %3$s.</string>
+    <string name="data_loading_error_timeout">překročen timeout připojení k serveru</string>
+    <string name="data_loading_error_other">jiný důvod</string>
+    <string name="data_loading_alert_dialog_error_title">Chyba nahrávání dat</string>
+    <string name="data_loading_cancelled">Nahrávání dat zrušeno uživatelem.</string>
+    <string name="crime_data_loading_cancel_pending">Zastavování nahrávání dat&#8230;</string>
+    <string name="crime_data_loading_error_text">Došlo k chybě při nahrávání dat pro útvar %1$s a období %2$s - %3$s. Příčina: %4$s.</string>
+    <string name="crime_data_loading_error_view_text">Došlo k chybě při nahrávání dat. Příčina: %1$s.</string>
+    <string name="crime_index_nan_text">nelze určit</string>
+    <string name="title_activity_utvar_detail">Detail útvaru</string>
+
+</resources>

@@ -1,0 +1,50 @@
+# Standardni prefixy
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix interval: <http://reference.data.gov.uk/def/intervals/> .
+@prefix sdmx-dimension: <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-concept: <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-measure: <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-attribute: <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+# Preferovany prefix ontologie pro popis zakonu
+@prefix lex: <http://purl.org/lex#> .
+
+# Vlastni prefixy
+@prefix crimestatistics-measure: <http://linked.opendata.cz/ontology/crimestatistics/dataset-definitions/measure#> .
+# Odkazování zákonů
+@prefix crimestatistics-class-zakony: <http://linked.opendata.cz/ontology/crimestatistics/class/zakony#> .
+
+# Pokračující trestná činnost - počet dílčích útoků
+crimestatistics-measure:pocetDilcichUtoku a qb:MeasureProperty, rdf:Property ;
+	rdfs:range xsd:positiveInteger ;
+	.
+
+# Datum zahájení trestního stíhání (vyšetřování)
+crimestatistics-measure:datumZahajeniTrestnihoStihani a qb:MeasureProperty, rdf:Property ;
+	rdfs:range xsd:date ;
+	.
+
+# Úsek zákona k zahájení trestního stíhání (vyšetřování)
+crimestatistics-measure:usekZakonaKZahajeniTrestnihoStihani a qb:MeasureProperty, rdf:Property ;
+	rdfs:range crimestatistics-class-zakony:ProvedeniUkonuVTrestnimRizeni ;
+	.
+
+# Datum sdělení podezření ve ZPŘ
+crimestatistics-measure:datumSdeleniPodezreniVeZPR a qb:MeasureProperty, rdf:Property ;
+	rdfs:range xsd:date ;
+	.
+
+# Úsek zákona ke sdělení podezření ve ZPŘ
+crimestatistics-measure:usekZakonaKeSdeleniPodezreniVeZPR a qb:MeasureProperty, rdf:Property ;
+	rdfs:range crimestatistics-class-zakony:ProvedeniUkonuVTrestnimRizeni ;
+	.
+
+# Datum ukončení nebo převzetí věci
+crimestatistics-measure:datumUkonceniNeboPrevzetiVeci a qb:MeasureProperty, rdf:Property ;
+	rdfs:range xsd:date ;
+	.

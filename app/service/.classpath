@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry exported="true" kind="lib" path="WEB-INF/lib/commons-codec-1.6.jar"/>
+	<classpathentry exported="true" kind="lib" path="WEB-INF/lib/gson-2.2.4.jar"/>
+	<classpathentry exported="true" kind="lib" path="WEB-INF/lib/httpclient-4.2.3.jar"/>
+	<classpathentry exported="true" kind="lib" path="WEB-INF/lib/httpcore-4.2.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="WEB-INF/lib/jcl-over-slf4j-1.6.4.jar"/>
+	<classpathentry exported="true" kind="lib" path="WEB-INF/lib/jena-arq-2.11.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="WEB-INF/lib/jena-core-2.11.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="WEB-INF/lib/jena-iri-1.0.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="WEB-INF/lib/log4j-1.2.16.jar"/>
+	<classpathentry exported="true" kind="lib" path="WEB-INF/lib/slf4j-api-1.6.4.jar"/>
+	<classpathentry exported="true" kind="lib" path="WEB-INF/lib/slf4j-log4j12-1.6.4.jar"/>
+	<classpathentry exported="true" kind="lib" path="WEB-INF/lib/xercesImpl-2.11.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="WEB-INF/lib/xml-apis-1.4.01.jar"/>
+	<classpathentry exported="true" kind="lib" path="WEB-INF/lib/commons-math3-3.3.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/jaxws-api.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/servlet-api.jar"/>
+	<classpathentry exported="true" kind="lib" path="WEB-INF/lib/postgresql-9.3-1101.jdbc41.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/crimemonitorlibrary.jar"/>
+	<classpathentry kind="output" path="WEB-INF/classes"/>
+</classpath>

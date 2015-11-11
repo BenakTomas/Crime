@@ -1,0 +1,64 @@
+SPARQL
+
+prefix crime: <http://linked.opendata.cz/ontology/crime#>
+prefix dct: <http://purl.org/dc/terms/>
+
+WITH <http://linked.opendata.cz/resource/domain/crimestatistics/dataset>
+DELETE { ?trestnyCin crime:utvarZpracovaniZaznamu ?utvar_aktualni . }
+INSERT { ?trestnyCin crime:utvarZpracovaniZaznamu ?utvar.  }
+where
+{
+    ?trestnyCin a <http://linked.opendata.cz/ontology/crime#TrestnyCin> ;
+        dct:isVersionOf ?trestnyCin_master .
+
+    OPTIONAL { ?trestnyCin crime:datumACasSpachani ?datumSpachani . } .
+    OPTIONAL { ?trestnyCin crime:datumACasSpachani_Od ?datumSpachani_Od . } .
+
+    BIND(COALESCE(?datumSpachani, ?datumSpachani_Od) as ?datumSpachani_Point) .
+    
+    OPTIONAL { ?trestnyCin crime:utvarZpracovaniZaznamu ?utvar_aktualni . } .
+
+    ?trestnyCin_master crime:utvarZpracovaniZaznamu ?utvar_master .
+
+    ?utvar_master dct:hasVersion ?utvar .
+
+    ?utvar
+        crime:validFrom ?validFrom_utvar ;
+        crime:validTo ?validTo_utvar .
+
+    FILTER( ?validFrom_utvar <= ?datumSpachani_Point && ?datumSpachani_Point < ?validTo_utvar) .
+};
+
+SPARQL
+
+prefix crime: <http://linked.opendata.cz/ontology/crime#>
+prefix dct: <http://purl.org/dc/terms/>
+
+WITH <http://linked.opendata.cz/resource/domain/crimestatistics/dataset>
+DELETE { ?trestnyCin crime:utvarSpachaniNeboZjisteni ?utvar_aktualni . }
+INSERT { ?trestnyCin crime:utvarSpachaniNeboZjisteni ?utvar.  }
+where
+{
+    ?trestnyCin a <http://linked.opendata.cz/ontology/crime#TrestnyCin> ;
+        dct:isVersionOf ?trestnyCin_master ;
+        crime:validFrom ?validFrom_tc ;
+        crime:validTo ?validTo_tc .
+
+    OPTIONAL { ?trestnyCin crime:datumACasSpachani ?datumSpachani .} .
+    OPTIONAL { ?trestnyCin crime:datumACasSpachani_Od ?datumSpachani_Od .} .
+    
+    BIND(COALESCE(?datumSpachani, ?datumSpachani_Od) as ?datumSpachani_Point) .
+    
+    OPTIONAL { ?trestnyCin crime:utvarSpachaniNeboZjisteni ?utvar_aktualni . } .
+
+    ?trestnyCin_master crime:utvarSpachaniNeboZjisteni ?utvar_master .
+
+    ?utvar_master dct:hasVersion ?utvar .
+
+    ?utvar
+        crime:validFrom ?validFrom_utvar ;
+        crime:validTo ?validTo_utvar .
+
+    FILTER( ?validFrom_utvar <= ?datumSpachani_Point && ?datumSpachani_Point < ?validTo_utvar) .
+};
+

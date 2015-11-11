@@ -1,0 +1,119 @@
+PREFIX crime-measure: <http://linked.opendata.cz/ontology/crimestatistics/dataset-definitions/measure#>
+PREFIX utvar-property: <http://linked.opendata.cz/ontology/crimestatistics/code/utvar/property/>
+PREFIX crime-dimension: <http://linked.opendata.cz/ontology/crimestatistics/dataset-definitions/dimension#>
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX crime-property: <http://linked.opendata.cz/ontology/crimestatistics/property#>
+PREFIX zpusobUkonceni: <http://linked.opendata.cz/ontology/crimestatistics/code/zpusobUkonceniNeboPrevzetiVeci_ZnamyPachatel#>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+
+CONSTRUCT { ?trestnyCin crime-property:objasnenyTrestnyCin "true"^^xsd:boolean .}
+{
+  {
+    ?trestnyCin a qb:Observation ;
+        qb:dataSet <http://linked.opendata.cz/resource/domain/crimestatistics/dataset/trestneCiny> ;
+        crime-property:pachatel ?pachatel .
+    
+    ?pachatel crime-measure:zpusobUkonceniNeboPrevzetiVeci_ZnamyPachatel ?zpusobUkonceni .
+    FILTER(?zpusobUkonceni IN (
+      zpusobUkonceni:13, zpusobUkonceni:14, zpusobUkonceni:21,
+      zpusobUkonceni:50, zpusobUkonceni:60, zpusobUkonceni:61,
+      zpusobUkonceni:62, zpusobUkonceni:70, zpusobUkonceni:71,
+      zpusobUkonceni:72, zpusobUkonceni:73, zpusobUkonceni:80,
+      zpusobUkonceni:81, zpusobUkonceni:82)) .
+  }
+  UNION
+  {
+    ?trestnyCin a qb:Observation ;
+        qb:dataSet <http://linked.opendata.cz/resource/domain/crimestatistics/dataset/trestneCiny> .
+    
+    FILTER(NOT EXISTS {?trestnyCin crime-property:pachatel ?pachatel .} ) .
+    
+    ?trestnyCin crime-measure:zpusobUkonceniNeboPrevzetiVeci_TrestnyCin ?zpusobUkonceni . 
+
+    FILTER(?zpusobUkonceni IN (zpusobUkonceni:1)) .
+  }  
+}
+
+PREFIX crime-measure: <http://linked.opendata.cz/ontology/crimestatistics/dataset-definitions/measure#>
+PREFIX utvar-property: <http://linked.opendata.cz/ontology/crimestatistics/code/utvar/property/>
+PREFIX crime-dimension: <http://linked.opendata.cz/ontology/crimestatistics/dataset-definitions/dimension#>
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX crime-property: <http://linked.opendata.cz/ontology/crimestatistics/property#>
+PREFIX zpusobUkonceni: <http://linked.opendata.cz/ontology/crimestatistics/code/zpusobUkonceniNeboPrevzetiVeci_ZnamyPachatel#>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+
+CONSTRUCT { ?trestnyCin crime-property:objasnenyTrestnyCin "false"^^xsd:boolean .}
+{
+    ?trestnyCin a qb:Observation ;
+        qb:dataSet <http://linked.opendata.cz/resource/domain/crimestatistics/dataset/trestneCiny> ;
+        crime-property:pachatel ?pachatel .
+    
+    ?pachatel crime-measure:zpusobUkonceniNeboPrevzetiVeci_ZnamyPachatel ?zpusobUkonceni .
+    FILTER(?zpusobUkonceni NOT IN (
+      zpusobUkonceni:13, zpusobUkonceni:14, zpusobUkonceni:21,
+      zpusobUkonceni:50, zpusobUkonceni:60, zpusobUkonceni:61,
+      zpusobUkonceni:62, zpusobUkonceni:70, zpusobUkonceni:71,
+      zpusobUkonceni:72, zpusobUkonceni:73, zpusobUkonceni:80,
+      zpusobUkonceni:81, zpusobUkonceni:82)) .
+}
+
+PREFIX crime-measure: <http://linked.opendata.cz/ontology/crimestatistics/dataset-definitions/measure#>
+PREFIX utvar-property: <http://linked.opendata.cz/ontology/crimestatistics/code/utvar/property/>
+PREFIX crime-dimension: <http://linked.opendata.cz/ontology/crimestatistics/dataset-definitions/dimension#>
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX crime-property: <http://linked.opendata.cz/ontology/crimestatistics/property#>
+PREFIX zpusobUkonceni: <http://linked.opendata.cz/ontology/crimestatistics/code/zpusobUkonceniNeboPrevzetiVeci_TrestnyCin#>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+
+CONSTRUCT { ?trestnyCin crime-property:objasnenyTrestnyCin "true"^^xsd:boolean .}
+{
+    ?trestnyCin a qb:Observation ;
+        qb:dataSet <http://linked.opendata.cz/resource/domain/crimestatistics/dataset/trestneCiny> .
+    
+    FILTER(NOT EXISTS {?trestnyCin crime-property:pachatel ?pachatel .} ) .
+    
+    ?trestnyCin crime-measure:zpusobUkonceniNeboPrevzetiVeci_TrestnyCin ?zpusobUkonceni . 
+
+    FILTER(?zpusobUkonceni IN (zpusobUkonceni:1)) .
+}
+
+PREFIX crime-measure: <http://linked.opendata.cz/ontology/crimestatistics/dataset-definitions/measure#>
+PREFIX utvar-property: <http://linked.opendata.cz/ontology/crimestatistics/code/utvar/property/>
+PREFIX crime-dimension: <http://linked.opendata.cz/ontology/crimestatistics/dataset-definitions/dimension#>
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX crime-property: <http://linked.opendata.cz/ontology/crimestatistics/property#>
+PREFIX zpusobUkonceni: <http://linked.opendata.cz/ontology/crimestatistics/code/zpusobUkonceniNeboPrevzetiVeci_TrestnyCin#>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+
+CONSTRUCT { ?trestnyCin crime-property:objasnenyTrestnyCin "false"^^xsd:boolean .}
+{
+    ?trestnyCin a qb:Observation ;
+        qb:dataSet <http://linked.opendata.cz/resource/domain/crimestatistics/dataset/trestneCiny> .
+    
+    FILTER(NOT EXISTS {?trestnyCin crime-property:pachatel ?pachatel .} ) .
+    
+    ?trestnyCin crime-measure:zpusobUkonceniNeboPrevzetiVeci_TrestnyCin ?zpusobUkonceni . 
+
+    FILTER(?zpusobUkonceni NOT IN (zpusobUkonceni:1)) .
+}
+
+PREFIX crime-measure: <http://linked.opendata.cz/ontology/crimestatistics/dataset-definitions/measure#>
+PREFIX utvar-property: <http://linked.opendata.cz/ontology/crimestatistics/code/utvar/property/>
+PREFIX crime-dimension: <http://linked.opendata.cz/ontology/crimestatistics/dataset-definitions/dimension#>
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX crime-property: <http://linked.opendata.cz/ontology/crimestatistics/property#>
+PREFIX zpusobUkonceni: <http://linked.opendata.cz/ontology/crimestatistics/code/zpusobUkonceniNeboPrevzetiVeci_ZnamyPachatel#>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+
+CONSTRUCT { ?trestnyCin crime-property:objasnenyTrestnyCin "false"^^xsd:boolean .}
+{
+    ?trestnyCin a qb:Observation ;
+        qb:dataSet <http://linked.opendata.cz/resource/domain/crimestatistics/dataset/trestneCiny> .
+    
+    FILTER(NOT EXISTS { ?trestnyCin crime-property:objasnenyTrestnyCin ?objasneno . }) .
+}

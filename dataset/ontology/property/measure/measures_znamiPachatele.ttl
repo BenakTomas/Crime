@@ -1,0 +1,199 @@
+# Standardni prefixy
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix interval: <http://reference.data.gov.uk/def/intervals/> .
+@prefix sdmx-dimension: <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-concept: <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-measure: <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-attribute: <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+# Preferovany prefix ontologie pro popis zakonu
+@prefix lex: <http://purl.org/lex#> .
+
+# Vlastni prefixy
+@prefix crimestatistics-measure: <http://linked.opendata.cz/ontology/crimestatistics/dataset-definitions/measure#> .
+# Odkazování zákonů
+@prefix crimestatistics-class-zakony: <http://linked.opendata.cz/ontology/crimestatistics/class/zakony#> .
+
+# Státní příslušnost pachatele
+crimestatistics-measure:statniPrislusnostPachatele a qb:MeasureProperty, qb:CodedProperty, rdf:Property ;
+	rdfs:range <http://linked.opendata.cz/ontology/crimestatistics/code/stat/conceptClass> ;
+	
+	qb:codeList <http://linked.opendata.cz/ontology/crimestatistics/code/stat> ;
+	.
+
+# Taktická klasifikace pachatele - cizince
+crimestatistics-measure:taktickaKlasifikacePachateleCizince a qb:MeasureProperty, qb:CodedProperty, rdf:Property ;
+	rdfs:range <http://linked.opendata.cz/ontology/crimestatistics/code/taktickaKlasifikacePachateleCizince/conceptClass> ;
+	
+	qb:codeList <http://linked.opendata.cz/ontology/crimestatistics/code/taktickaKlasifikacePachateleCizince> ;
+	.
+
+# Rodinný stav pachatele
+crimestatistics-measure:rodinnyStavPachatele a qb:MeasureProperty, qb:CodedProperty, rdf:Property ;
+	rdfs:subPropertyOf sdmx-measure:civilStatus ;
+	rdfs:range <http://linked.opendata.cz/ontology/crimestatistics/code/rodinnyStav/conceptClass> ;
+	
+	qb:codeList <http://linked.opendata.cz/ontology/crimestatistics/code/rodinnyStav> ;
+	.
+
+# Vzdělání pachatele
+crimestatistics-measure:vzdelaniPachatele a qb:MeasureProperty, qb:CodedProperty, rdf:Property ;
+	rdfs:subPropertyOf sdmx-measure:educationLev ;
+	rdfs:range <http://linked.opendata.cz/ontology/crimestatistics/code/vzdelani/conceptClass> ;
+	
+	qb:codeList <http://linked.opendata.cz/ontology/crimestatistics/code/vzdelani> ; 
+	.
+
+# Výchovné prostředí pachatele
+crimestatistics-measure:vychovneProstrediPachatele a qb:MeasureProperty, qb:CodedProperty, rdf:Property ;
+	rdfs:range <http://linked.opendata.cz/ontology/crimestatistics/code/vychovneProstredi/conceptClass> ;
+	
+	qb:codeList <http://linked.opendata.cz/ontology/crimestatistics/code/vychovneProstredi> ;
+	.
+
+# Zaměstnání pachatele
+crimestatistics-measure:zamestnaniPachatele a qb:MeasureProperty, qb:CodedProperty, rdf:Property ;
+	rdfs:subPropertyOf sdmx-measure:occupation ;
+	rdfs:range <http://linked.opendata.cz/ontology/crimestatistics/code/zamestnani/conceptClass> ;
+	
+	qb:codeList <http://linked.opendata.cz/ontology/crimestatistics/code/zamestnani> ;
+	.
+
+# Zaměstnání pachatele - funkční zařazení
+crimestatistics-measure:zamestnaniPachateleFunkcniZarazeni a qb:MeasureProperty, qb:CodedProperty, rdf:Property ;
+	rdfs:subPropertyOf sdmx-measure:occupation ;
+	rdfs:range <http://linked.opendata.cz/ontology/crimestatistics/code/zamestnaniFunkcniZarazeni/conceptClass> ;
+	
+	qb:codeList <http://linked.opendata.cz/ontology/crimestatistics/code/zamestnaniFunkcniZarazeni> ;
+	.
+
+# Stav ztotožnění pachatele
+crimestatistics-measure:stavZtotozneniPachatele a qb:MeasureProperty, qb:CodedProperty, rdf:Property ;
+	rdfs:range <http://linked.opendata.cz/ontology/crimestatistics/code/stavZtotozneni/conceptClass> ;
+	
+	qb:codeList <http://linked.opendata.cz/ontology/crimestatistics/code/stavZtotozneni> ;
+	.
+
+# Počet trestů pachatele - úmyslná trestná činnost
+crimestatistics-measure:pocetTrestuPachatele_umyslnaTrestnaCinnost a qb:MeasureProperty, qb:CodedProperty, rdf:Property ;
+	rdfs:range <http://linked.opendata.cz/ontology/crimestatistics/code/pocetTrestuPachatele_umyslnaTrestnaCinnost/conceptClass> ;
+	qb:codeList <http://linked.opendata.cz/ontology/crimestatistics/code/pocetTrestuPachatele_umyslnaTrestnaCinnost> ;
+	.
+
+# Počet podmínených odsouzení pachatele - úmyslná trestná činnost
+crimestatistics-measure:pocetPodminenychOdsouzeniPachatele_umyslnaTrestnaCinnost a qb:MeasureProperty, qb:CodedProperty, rdf:Property ;
+	rdfs:range <http://linked.opendata.cz/ontology/crimestatistics/code/pocetTrestuPachatele_umyslnaTrestnaCinnost/conceptClass> ;
+	qb:codeList <http://linked.opendata.cz/ontology/crimestatistics/code/pocetTrestuPachatele_umyslnaTrestnaCinnost> ;
+	.
+
+# Počet trestů pachatele - nedbalostní trestná činnost
+crimestatistics-measure:pocetTrestuPachatele_nedbalostniTrestnaCinnost a qb:MeasureProperty, qb:CodedProperty, rdf:Property ;
+	rdfs:range <http://linked.opendata.cz/ontology/crimestatistics/code/pocetTrestuPachatele_nedbalostniTrestnaCinnost/conceptClass> ;
+	qb:codeList <http://linked.opendata.cz/ontology/crimestatistics/code/pocetTrestuPachatele_nedbalostniTrestnaCinnost> ;
+	.
+	
+# Místo narození pachatele - přesnější popis
+crimestatistics-measure:mistoNarozeniPachatele a qb:MeasureProperty, rdf:Property ;
+	rdfs:range xsd:string ;
+	.
+
+# Mladistvý pachatel - počet vyšetřování
+crimestatistics-measure:mladistvyPachatel_pocetVysetrovani a qb:MeasureProperty, rdf:Property ;
+	rdfs:range <http://linked.opendata.cz/ontology/crimestatistics/code/mladistvyPachatel_pocetVysetrovani/conceptClass> ;
+	
+	qb:codeList <http://linked.opendata.cz/ontology/crimestatistics/code/mladistvyPachatel_pocetVysetrovani> ;
+	.
+
+# Mladistvý pachatel - pravidelná docházka do školy
+crimestatistics-measure:mladistvyPachatel_pravidelnaDochazkaDoSkoly a qb:MeasureProperty, rdf:Property ;
+	rdfs:range xsd:boolean ;
+	.
+
+# Mladistvý pachatel - výchovná instituce
+crimestatistics-measure:mladistvyPachatel_vychovnaInstituce a qb:MeasureProperty, qb:CodedProperty, rdf:Property ;
+	rdfs:range <http://linked.opendata.cz/ontology/crimestatistics/code/vychovnaInstituce/conceptClass> ;
+	
+	qb:codeList <http://linked.opendata.cz/ontology/crimestatistics/code/vychovnaInstituce> ; 
+	.
+
+# Mladistvý pachatel - výchovná instituce, odkud utekl
+crimestatistics-measure:mladistvyPachatel_vychovnaInstituceOdkudUtekl a qb:MeasureProperty, qb:CodedProperty, rdf:Property ;
+	rdfs:range <http://linked.opendata.cz/ontology/crimestatistics/code/vychovnaInstituce/conceptClass> ;
+	
+	qb:codeList <http://linked.opendata.cz/ontology/crimestatistics/code/vychovnaInstituce> ; 
+	.
+
+# Mladistvý pachatel - spácháno na útěku
+crimestatistics-measure:mladistvyPachatel_spachanoNaUteku a qb:MeasureProperty, rdf:Property ;
+	rdfs:range xsd:boolean ;
+	.
+
+# Mladistvý pachatel - zaměstnanost rodičů
+crimestatistics-measure:mladistvyPachatel_zamestnanostRodicu a qb:MeasureProperty, qb:CodedProperty, rdf:Property ;
+	rdfs:range <http://linked.opendata.cz/ontology/crimestatistics/code/mladistvyPachatel_zamestnanostRodicu/conceptClass> ;
+	
+	qb:codeList <http://linked.opendata.cz/ontology/crimestatistics/code/mladistvyPachatel_zamestnanostRodicu> ; 
+	.
+
+# Mladistvý pachatel - trestanost rodičů
+crimestatistics-measure:mladistvyPachatel_trestanostRodicu a qb:MeasureProperty, rdf:Property ;
+	rdfs:range xsd:boolean ;
+	.
+
+# Mladistvý pachatel - závislost rodičů
+crimestatistics-measure:mladistvyPachatel_zavislostRodicu a qb:MeasureProperty, qb:CodedProperty, rdf:Property ;
+	rdfs:range <http://linked.opendata.cz/ontology/crimestatistics/code/mladistvyPachatel_zavislostRodicu/conceptClass> ;
+	
+	qb:codeList <http://linked.opendata.cz/ontology/crimestatistics/code/mladistvyPachatel_zavislostRodicu> ;
+	.
+
+# Mladistvý pachatel - trestanost sourozenců
+crimestatistics-measure:mladistvyPachatel_trestanostSourozencu a qb:MeasureProperty, rdf:Property ;
+	rdfs:range xsd:boolean ;
+	.
+
+
+# Mladistvý pachatel - pečovatel
+crimestatistics-measure:mladistvyPachatel_sverenectvi a qb:MeasureProperty, qb:CodedProperty, rdf:Property ;
+	rdfs:range <http://linked.opendata.cz/ontology/crimestatistics/code/mladistvyPachatel_sverenectvi/conceptClass> ;
+	
+	qb:codeList <http://linked.opendata.cz/ontology/crimestatistics/code/mladistvyPachatel_sverenectvi> ; 
+	.
+
+# Mladistvý pachatel - spolupachatelé
+crimestatistics-measure:mladistvyPachatel_spolupachatelstvi a qb:MeasureProperty, qb:CodedProperty, rdf:Property ;
+	rdfs:range <http://linked.opendata.cz/ontology/crimestatistics/code/mladistvyPachatel_spolupachatelstvi/conceptClass> ;
+	
+	qb:codeList <http://linked.opendata.cz/ontology/crimestatistics/code/mladistvyPachatel_spolupachatelstvi> ;
+	.
+
+# Datum rozšíření trestního stíhání
+crimestatistics-measure:datumRozsireniTrestnihoStihani a qb:MeasureProperty, rdf:Property ;
+	rdfs:range xsd:date ;
+	.
+
+# Úsek zákona k rozšíření trestního stíhání
+crimestatistics-measure:usekZakonaKRozsireniTrestnihoStihani a qb:MeasureProperty, rdf:Property ;
+	rdfs:range crimestatistics-class-zakony:ProvedeniUkonuVTrestnimRizeni ;
+	.
+
+# Datum pokračování trestního stíhání
+crimestatistics-measure:datumPokracovaniTrestnihoStihani a qb:MeasureProperty, rdf:Property ;
+	rdfs:range xsd:date ;
+	.
+
+# Úsek zákona k rozšíření trestního stíhání
+crimestatistics-measure:usekZakonaKPokracovaniTrestnihoStihani a qb:MeasureProperty, rdf:Property ;
+	rdfs:range crimestatistics-class-zakony:ProvedeniUkonuVTrestnimRizeni ;
+	.
+
+# Způsob ukončení pachatele
+crimestatistics-measure:zpusobUkonceniNeboPrevzetiVeci_ZnamyPachatel a qb:MeasureProperty, qb:CodedProperty, rdf:Property ;
+	rdfs:range <http://linked.opendata.cz/ontology/crimestatistics/code/zpusobUkonceniNeboPrevzetiVeci_ZnamyPachatel/conceptClass> ;
+	qb:codeList <http://linked.opendata.cz/ontology/crimestatistics/code/zpusobUkonceniNeboPrevzetiVeci_ZnamyPachatel> ;
+	.

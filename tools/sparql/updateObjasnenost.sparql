@@ -1,0 +1,39 @@
+SPARQL
+
+prefix crime: <http://linked.opendata.cz/ontology/crime#>
+prefix dct: <http://purl.org/dc/terms/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+prefix zpusobUkonceni_Pachatel: <http://linked.opendata.cz/resource/domain/crimestatistics/dataset/ZpusobUkonceni_Pachatel#>
+prefix zpusobUkonceni_TrestnyCin: <http://linked.opendata.cz/resource/domain/crimestatistics/dataset/ZpusobUkonceni_TrestnyCin#>
+
+WITH <http://linked.opendata.cz/resource/domain/crimestatistics/dataset>
+DELETE { ?trestnyCin crime:objasneno ?objasneno . }
+INSERT { ?trestnyCin crime:objasneno "true"^^xsd:boolean . }
+WHERE
+{
+  {
+    ?trestnyCin a crime:TrestnyCin ;
+        crime:pachatel ?pachatel .
+    
+    ?pachatel crime:zpusobUkonceniNeboPrevzetiVeci_ZnamyPachatel ?zpusobUkonceni .
+    FILTER(?zpusobUkonceni IN (
+      zpusobUkonceni_Pachatel:13, zpusobUkonceni_Pachatel:14, zpusobUkonceni_Pachatel:21,
+      zpusobUkonceni_Pachatel:50, zpusobUkonceni_Pachatel:60, zpusobUkonceni_Pachatel:61,
+      zpusobUkonceni_Pachatel:62, zpusobUkonceni_Pachatel:70, zpusobUkonceni_Pachatel:71,
+      zpusobUkonceni_Pachatel:72, zpusobUkonceni_Pachatel:73, zpusobUkonceni_Pachatel:80,
+      zpusobUkonceni_Pachatel:81, zpusobUkonceni_Pachatel:82)) .
+  }
+  UNION
+  {
+    ?trestnyCin a crime:TrestnyCin .
+    
+    FILTER(NOT EXISTS {?trestnyCin crime:pachatel ?pachatel .} ) .
+    
+    ?trestnyCin crime:zpusobUkonceniNeboPrevzetiVeci_TrestnyCin ?zpusobUkonceni . 
+
+    FILTER(?zpusobUkonceni IN (zpusobUkonceni_TrestnyCin:1)) .
+  }
+  
+  OPTIONAL { ?trestnyCin crime:objasneno ?objasneno . } .  
+};

@@ -1,0 +1,40 @@
+select
+  ?tskNotation ?crimeName ?crimeNumber
+where
+{
+  {
+    select ?tsk (count(?trestnyCin) as ?crimeNumber)
+    {
+      {
+        ?utvar_master a crime:Utvar ;
+            crime:id ?utvarId .
+            
+        FILTER(?utvarId = ?parIdUtvaru_ValuePlaceholder) .
+        
+        ?utvar_master dct:hasVersion ?utvar .
+        
+        ?trestnyCin a crime:TrestnyCin ;
+          crime:utvarSpachaniNeboZjisteni ?utvar ;
+          crime:validFrom ?validFrom ;
+          crime:validTo ?validTo .
+        
+        FILTER( ?validFrom <= ?parHistoryDate_ValuePlaceholder && ?parHistoryDate_ValuePlaceholder <= ?validTo ) .
+      }
+      
+      OPTIONAL { ?trestnyCin crime:datumACasSpachani ?datumSpachani . } .
+      OPTIONAL { ?trestnyCin crime:datumACasSpachani_Od ?datumSpachani_Od . } .
+
+      BIND(COALESCE(?datumSpachani, ?datumSpachani_Od) as ?datumSpachani_Point) .
+      
+      FILTER(?parStartDate_ValuePlaceholder <= ?datumSpachani_Point && ?datumSpachani_Point <= ?parEndDate_ValuePlaceholder) 
+        
+      ?trestnyCin crime:tsk ?tsk . 
+    }
+    group by ?tsk
+  }
+  
+  ?tsk rdfs:label ?crimeName ;
+    skos:notation ?tskNotation .
+}
+  
+order by desc(?crimeNumber)

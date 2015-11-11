@@ -1,0 +1,221 @@
+# Standardní prefixy
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix interval: <http://reference.data.gov.uk/def/intervals/> .
+@prefix sdmx:    <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+# Vlastní prefixy
+@prefix crimestatistics-code-slash: <http://linked.opendata.cz/ontology/crimestatistics/code/> .
+@prefix crimestatistics-code-codelist-slash: <http://linked.opendata.cz/ontology/crimestatistics/code/objektNapadeniExtremismem/> .
+@prefix crimestatistics-code-codelist-class: <http://linked.opendata.cz/ontology/crimestatistics/code/objektNapadeniExtremismem/class#> .
+@prefix crimestatistics-code-codelist-property: <http://linked.opendata.cz/ontology/crimestatistics/code/objektNapadeniExtremismem/property#> .
+
+@prefix crimestatistics-code-codelist-hash: <http://linked.opendata.cz/ontology/crimestatistics/code/objektNapadeniExtremismem#> .
+
+crimestatistics-code-codelist-hash:651 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "bílá rasa"@cs ;
+	skos:inScheme crimestatistics-code-slash:objektNapadeniExtremismem ;
+	skos:notation "651" ;
+
+	rdfs:label "bílá rasa"@cs ;
+	.
+crimestatistics-code-codelist-hash:652 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "černá rasa"@cs ;
+	skos:inScheme crimestatistics-code-slash:objektNapadeniExtremismem ;
+	skos:notation "652" ;
+
+	rdfs:label "černá rasa"@cs ;
+	.
+crimestatistics-code-codelist-hash:653 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "žlutohnědá rasa"@cs ;
+	skos:inScheme crimestatistics-code-slash:objektNapadeniExtremismem ;
+	skos:notation "653" ;
+
+	rdfs:label "žlutohnědá rasa"@cs ;
+	.
+crimestatistics-code-codelist-hash:660 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "osoby bez vyznání"@cs ;
+	skos:inScheme crimestatistics-code-slash:objektNapadeniExtremismem ;
+	skos:notation "660" ;
+
+	rdfs:label "osoby bez vyznání"@cs ;
+	.
+crimestatistics-code-codelist-hash:661 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "katolíci"@cs ;
+	skos:inScheme crimestatistics-code-slash:objektNapadeniExtremismem ;
+	skos:notation "661" ;
+
+	rdfs:label "katolíci"@cs ;
+	.
+crimestatistics-code-codelist-hash:662 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "protestanti"@cs ;
+	skos:inScheme crimestatistics-code-slash:objektNapadeniExtremismem ;
+	skos:notation "662" ;
+
+	rdfs:label "protestanti"@cs ;
+	.
+crimestatistics-code-codelist-hash:663 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "judaisté"@cs ;
+	skos:inScheme crimestatistics-code-slash:objektNapadeniExtremismem ;
+	skos:notation "663" ;
+
+	rdfs:label "judaisté"@cs ;
+	.
+crimestatistics-code-codelist-hash:664 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "pravoslavní"@cs ;
+	skos:inScheme crimestatistics-code-slash:objektNapadeniExtremismem ;
+	skos:notation "664" ;
+
+	rdfs:label "pravoslavní"@cs ;
+	.
+crimestatistics-code-codelist-hash:665 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "muslimové"@cs ;
+	skos:inScheme crimestatistics-code-slash:objektNapadeniExtremismem ;
+	skos:notation "665" ;
+
+	rdfs:label "muslimové"@cs ;
+	.
+crimestatistics-code-codelist-hash:669 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "nic z uvedeného"@cs ;
+	skos:inScheme crimestatistics-code-slash:objektNapadeniExtremismem ;
+	skos:notation "669" ;
+
+	rdfs:label "nic z uvedeného"@cs ;
+	.
+crimestatistics-code-codelist-hash:671 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Češi"@cs ;
+	skos:inScheme crimestatistics-code-slash:objektNapadeniExtremismem ;
+	skos:notation "671" ;
+
+	rdfs:label "Češi"@cs ;
+	.
+crimestatistics-code-codelist-hash:672 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Moravané a Slezané"@cs ;
+	skos:inScheme crimestatistics-code-slash:objektNapadeniExtremismem ;
+	skos:notation "672" ;
+
+	rdfs:label "Moravané a Slezané"@cs ;
+	.
+crimestatistics-code-codelist-hash:673 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Slováci"@cs ;
+	skos:inScheme crimestatistics-code-slash:objektNapadeniExtremismem ;
+	skos:notation "673" ;
+
+	rdfs:label "Slováci"@cs ;
+	.
+crimestatistics-code-codelist-hash:674 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Poláci"@cs ;
+	skos:inScheme crimestatistics-code-slash:objektNapadeniExtremismem ;
+	skos:notation "674" ;
+
+	rdfs:label "Poláci"@cs ;
+	.
+crimestatistics-code-codelist-hash:675 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Němci"@cs ;
+	skos:inScheme crimestatistics-code-slash:objektNapadeniExtremismem ;
+	skos:notation "675" ;
+
+	rdfs:label "Němci"@cs ;
+	.
+crimestatistics-code-codelist-hash:676 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Ukrajinci"@cs ;
+	skos:inScheme crimestatistics-code-slash:objektNapadeniExtremismem ;
+	skos:notation "676" ;
+
+	rdfs:label "Ukrajinci"@cs ;
+	.
+crimestatistics-code-codelist-hash:677 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Vietnamci"@cs ;
+	skos:inScheme crimestatistics-code-slash:objektNapadeniExtremismem ;
+	skos:notation "677" ;
+
+	rdfs:label "Vietnamci"@cs ;
+	.
+crimestatistics-code-codelist-hash:678 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Maďaři"@cs ;
+	skos:inScheme crimestatistics-code-slash:objektNapadeniExtremismem ;
+	skos:notation "678" ;
+
+	rdfs:label "Maďaři"@cs ;
+	.
+crimestatistics-code-codelist-hash:679 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Rusové a Rusíni"@cs ;
+	skos:inScheme crimestatistics-code-slash:objektNapadeniExtremismem ;
+	skos:notation "679" ;
+
+	rdfs:label "Rusové a Rusíni"@cs ;
+	.
+crimestatistics-code-codelist-hash:680 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Romové"@cs ;
+	skos:inScheme crimestatistics-code-slash:objektNapadeniExtremismem ;
+	skos:notation "680" ;
+
+	rdfs:label "Romové"@cs ;
+	.
+crimestatistics-code-codelist-hash:681 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Židé"@cs ;
+	skos:inScheme crimestatistics-code-slash:objektNapadeniExtremismem ;
+	skos:notation "681" ;
+
+	rdfs:label "Židé"@cs ;
+	.
+crimestatistics-code-codelist-hash:682 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Arabové"@cs ;
+	skos:inScheme crimestatistics-code-slash:objektNapadeniExtremismem ;
+	skos:notation "682" ;
+
+	rdfs:label "Arabové"@cs ;
+	.
+crimestatistics-code-codelist-hash:683 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "Číňani"@cs ;
+	skos:inScheme crimestatistics-code-slash:objektNapadeniExtremismem ;
+	skos:notation "683" ;
+
+	rdfs:label "Číňani"@cs ;
+	.
+crimestatistics-code-codelist-hash:689 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "jiné národnosti"@cs ;
+	skos:inScheme crimestatistics-code-slash:objektNapadeniExtremismem ;
+	skos:notation "689" ;
+
+	rdfs:label "jiné národnosti"@cs ;
+	.
+crimestatistics-code-codelist-hash:691 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "politické hnutí a uskupení"@cs ;
+	skos:inScheme crimestatistics-code-slash:objektNapadeniExtremismem ;
+	skos:notation "691" ;
+
+	rdfs:label "politické hnutí a uskupení"@cs ;
+	.
+crimestatistics-code-codelist-hash:692 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "vyznavačůi různých hudebních směrů a jiných aktivit, kteří jsou proti ostatním občanům"@cs ;
+	skos:inScheme crimestatistics-code-slash:objektNapadeniExtremismem ;
+	skos:notation "692" ;
+
+	rdfs:label "vyznavačůi různých hudebních směrů a jiných aktivit, kteří jsou proti ostatním občanům"@cs ;
+	.
+crimestatistics-code-codelist-hash:693 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "občané, kteří jsou proti vyznavačům různých hudebních směrů a jiných aktivit"@cs ;
+	skos:inScheme crimestatistics-code-slash:objektNapadeniExtremismem ;
+	skos:notation "693" ;
+
+	rdfs:label "občané, kteří jsou proti vyznavačům různých hudebních směrů a jiných aktivit"@cs ;
+	.
+crimestatistics-code-codelist-hash:694 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "fanoušci fotbalových klubů"@cs ;
+	skos:inScheme crimestatistics-code-slash:objektNapadeniExtremismem ;
+	skos:notation "694" ;
+
+	rdfs:label "fanoušci fotbalových klubů"@cs ;
+	.

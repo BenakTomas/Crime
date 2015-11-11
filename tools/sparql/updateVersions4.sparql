@@ -1,0 +1,12 @@
+SPARQL
+
+prefix crime: <http://linked.opendata.cz/ontology/crime#>
+prefix dct: <http://purl.org/dc/terms/>
+
+WITH <http://linked.opendata.cz/resource/domain/crimestatistics/dataset>
+INSERT { ?trestnyCin_orig a <http://linked.opendata.cz/ontology/crime#TrestnyCin> . ?trestnyCin_orig dct:hasVersion ?trestnyCin . }
+where
+{
+    ?trestnyCin a <http://linked.opendata.cz/ontology/crime#TrestnyCin> ;
+        dct:isVersionOf ?trestnyCin_orig .
+};

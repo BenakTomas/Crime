@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/activity_content" >
+
+    <ProgressBar
+        android:id="@+id/crime_progress_bar"
+        style="@style/activity_progress_bar" />
+
+    <!-- no data found view -->
+
+    <TextView
+        android:id="@+id/crime_no_data_found_view"
+        style="@style/no_data_found_view"/>
+
+    <!-- data loading error view -->
+
+    <TextView
+        android:id="@id/crime_data_loading_error_view"
+        style="@style/crime_data_loading_error_view" />
+    
+    <!-- basic crime info -->
+
+    <fragment
+        android:id="@+id/basic_crime_info_fragment"
+        android:name="benak.tomas.crimemonitor.client.ui.fragment.BasicCrimeInfoFragment"
+        style="@style/upper_activity_content_container"/>
+
+    <fragment
+        android:id="@+id/crime_month_histogram_fragment"
+        android:name="benak.tomas.crimemonitor.client.ui.fragment.CrimeMonthHistogramFragment"
+        style="@style/lower_activity_content_container"
+        
+        android:layout_below="@+id/basic_crime_info_fragment"/>
+
+</RelativeLayout>

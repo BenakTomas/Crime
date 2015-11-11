@@ -1,0 +1,68 @@
+1#osoba-nedospělá podnapilá # 
+2#osoba-nedospělá pod jiným vlivem než alkohol# 
+#Osoby mající vztah k cestování#
+11#autostopař# 
+12#řidič osobního nebo dodávkového vozidla# 
+13#motocyklista# 
+14#cyklista# 
+15#řidič nákladního vozidla TIR# 
+16#řidič nákladního vozidla  -  mimo TIR# 
+17#řidič kolejového vozidla# 
+18#řidič ostatních neuvedených vozidel nebo povozu# 
+19#osoba v MHD#tramvaj, autobus, trolejbus, lanovka apod.) - mimo metro
+20#osoba v MHD#metro
+#Osoby se sníženou schopností obrany#
+21#epileptik, obdobná nemoc, invalida# 
+22#duševní nemoc, tělesná vada# 
+23#bezvědomí, nevolnost, nehoda, zranění# 
+24#podnapilý# 
+25#stařec# 
+26#invalidní důchodce# 
+27#pacient v nemocnici, léčebně, apod.# 
+28#osoba pod jiným vlivem než alkohol#dospělá osoba
+29#jiné# 
+30#osoba spící# 
+#Sexuální hledisko osoby#
+31#homosexuál# 
+32#prostitutka, prostitut# 
+33#KSZD#komerční sexuální zneužívání dětí, tj. osoba do 18 let - prostitut
+34#KSZD#komerční sexuální zneužívání dětí, tj. osoba do 18 let - prostitutka
+35#jiné KSZD#než uvedené v kódu 33, 34 a 36
+36#KSZD#komerční sexuální zneužívání dětí, tj. osoba do 18 let - model při výrobě pornografie a pornografických filmů
+39#osoba se sexuální úchylkou# 
+#Osoby při činnosti – mimo cizinců#zpravidla mimo cizinců
+40#osoba v zaměstnání nebo při výkonu povolání# 
+41#osoba ve škole, učilišti, internátě, koleji, apod.# 
+42#osoba na cestě do zaměstnání, školy, apod.# 
+43#osoba na nákupu v obchodním domě, obchodě, tržnici apod.# 
+44#osoba na vycházce, hřišti, parku, při rekreačním sportu, apod.# 
+45#osoba na plovárně, koupališti, v lázních, apod.# 
+46#osoba na výletě, zájezdu, výletní plavbě lodí, apod.# 
+47#osoba na veřejných shromážděních, zábavách, poutích, apod.# 
+48#osoba na sportovních utkáních apod.# 
+49#osoba v restauraci, baru, hospodě, apod.# 
+50#osoba v bytě, rodinném domě, na zahradě, na chatě#(v domácím prostředí)
+#Jiné osoby#
+51#osoba s větším finančním obnosem# (tržby apod.)
+52#osoba s výhrou# (kasino, hrací automaty, dostihy apod.)
+53#osoba v herně #(ne zaměstnanci)
+54#osoba v sázkové kanceláři#ne zaměstnanci
+55#osoba v bance#(ne zaměstnanci)
+61#náhodná osoba# 
+62#bezdomovec# 
+71#cizinec - turista# 
+72#cizinec - žijící na území ČR# 
+73#cizinec - pracující na území ČR# 
+74#cizinec - projíždějící ČR#(např. řidič kamionu)
+75#cizinec - na území ČR bez povolení# 
+81#mrtvola# 
+91#osoba týraná beze svědků# 
+92#osoba týraná před jinou osobou# 
+93#osoba týraná před dítětem/dětmi#kód "před dítětem/dětmi" se použije nejsou-li děti objektem týrání 
+94#osoba týraná beze svědků - v době vykázání z obydlí# 
+95#osoba týraná před jinou osobou - v době vykázání z obydlí# 
+96#osoba týraná před dítětem/dětmi - v době vykázání z obydlí#kód "před dítětem/dětmi" se použije nejsou-li děti objektem týrání 
+97#osoba týraná beze svědků - v době po uplynutí vykázání z obydlí# 
+98#osoba týraná před jinou osobou - v době po uplynutí vykázání z obydlí# 
+99#osoba týraná před dítětem/dětmi - v době po uplynutí vykázání z obydlí#kód "před dítětem/dětmi" se použije nejsou-li děti objektem týrání 
+90#jiná osoba# 

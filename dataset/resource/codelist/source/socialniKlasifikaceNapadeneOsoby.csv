@@ -1,0 +1,67 @@
+1#dělník# 
+2#soukromý zemědělec nebo chovatel# 
+10#technický pracovník# 
+11#profesionální hasič# 
+12#záchranář#(pracovník záchranné služby)
+20#obsluha benzinových čerpadel# 
+21#poštovní doručovatel# 
+22#výběrčí poplatků# 
+23#číšník# 
+24#průvodčí veřejného dopravního prostřetdku# 
+25#řidič veřejné dopravy a ostatních dopravních prostředků# 
+26#taxikář# 
+27#vedoucí prodejny, prodavač# (nebo vedoucí provozovny)
+28#člen závodní stráže, ochrany objektů# 
+29#ostatní provozní a obsluhující personál# 
+30#učitel, vychovatel# 
+31#církevní činitel# 
+32#lékař# 
+33#zdravotní sestra, zdravotník# 
+34#herec, umělec# 
+35#ostatní pracovníci školství, kultury, zdravotnictví a nevýrobní sféry# 
+39#podnikatel, osoba SVČ, živnostník# 
+40#vedoucí hospodářský pracovník#(ředitel, náměstek)
+41#příslušník policie# 
+42#příslušník vězeňské služby, justiční stráže# 
+43#příslušník civilní bezpečnostní služby# 
+44#příslušník vojenské hlídky# 
+45#státní zástupce, soudce# 
+46#poslanec zastupitelských sborů# 
+47#politický pracovník# 
+48#voják z povolání# 
+49#ostatní pracovníci na úseku řízení a správy# 
+50#pracovníci vědy a výzkumu# 
+52#příslušník městské nebo obecní policie# 
+53#občanský zaměstnanec PČR# 
+54#pracovník obecního úřadu# tedy pracovník územní samosprávy, mimo kód 46
+55#pracovník celní služby# 
+60#dítě předškolního věku# 
+61#žák základní školy# 
+62#žák zvláštní školy#žákem zvláštní školy je myšlen v současné době žák speciální školy s poruchami chování, viz. Vyhláška MŠTS č. 73/2005, čl. 5 
+63#chovanec DD nebo DM# 
+64#student střední a odborné školy# 
+65#učeň# 
+66#vysokoškolský student# 
+69#osoby na mateřské dovolené# 
+70#osoby v domácnosti# 
+71#důchodce, invalidní důchodce# 
+72#voják základní služby#(pouze u dodatečně nahlášených TČ)
+73#pracovník banky# 
+74#pracovník spořitelny# 
+75#pracovník pošty# 
+76#pracovník směnárny# 
+77#pracovníci ostatních finančních objektů# 
+78#pracovník finančního orgánu#(fin.úřad, fin.ředitelství, min.financí)
+80#bez pracovního poměru# 
+81#exekutor# 
+82#soudní doručovatel# 
+83#soudní personál# 
+84#pracovník ČOI#(Česká obchodní inspekce)
+85#pracovník NKÚ#(Nejvyšší kontrolní úřed)
+86#pracovník ČIŽP#(Česká inspekce životního prostředí)
+90#nezjištěno# 
+91#nezaměstnaný#(osoba vedená v registru úřadu práce)
+92#osoba ve výkonu trestu odnětí svobody nebo ve vazbě # 
+93#revizor v dopravě# 
+94#úředník# 
+99#cizinec#je-li použit kód *99* v sociálním hledisku, tak NELZE v taktickém hledisku použít kódy *71-74*, a naopak. Je-li použit kód *99* v sociálním hledisku, tak NELZE v taktickém hledisku použít kódy *29, 61, 90*, které jsou neurčité 

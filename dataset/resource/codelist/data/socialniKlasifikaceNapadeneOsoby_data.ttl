@@ -1,0 +1,494 @@
+# Standardní prefixy
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix interval: <http://reference.data.gov.uk/def/intervals/> .
+@prefix sdmx:    <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+# Vlastní prefixy
+@prefix crimestatistics-code-slash: <http://linked.opendata.cz/ontology/crimestatistics/code/> .
+@prefix crimestatistics-code-codelist-slash: <http://linked.opendata.cz/ontology/crimestatistics/code/socialniKlasifikaceNapadeneOsoby/> .
+@prefix crimestatistics-code-codelist-class: <http://linked.opendata.cz/ontology/crimestatistics/code/socialniKlasifikaceNapadeneOsoby/class#> .
+@prefix crimestatistics-code-codelist-property: <http://linked.opendata.cz/ontology/crimestatistics/code/socialniKlasifikaceNapadeneOsoby/property#> .
+
+@prefix crimestatistics-code-codelist-hash: <http://linked.opendata.cz/ontology/crimestatistics/code/socialniKlasifikaceNapadeneOsoby#> .
+
+crimestatistics-code-codelist-hash:1 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "dělník"@cs ;
+	skos:inScheme crimestatistics-code-slash:socialniKlasifikaceNapadeneOsoby ;
+	skos:notation "1" ;
+
+	rdfs:label "dělník"@cs ;
+	.
+crimestatistics-code-codelist-hash:2 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "soukromý zemědělec nebo chovatel"@cs ;
+	skos:inScheme crimestatistics-code-slash:socialniKlasifikaceNapadeneOsoby ;
+	skos:notation "2" ;
+
+	rdfs:label "soukromý zemědělec nebo chovatel"@cs ;
+	.
+crimestatistics-code-codelist-hash:10 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "technický pracovník"@cs ;
+	skos:inScheme crimestatistics-code-slash:socialniKlasifikaceNapadeneOsoby ;
+	skos:notation "10" ;
+
+	rdfs:label "technický pracovník"@cs ;
+	.
+crimestatistics-code-codelist-hash:11 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "profesionální hasič"@cs ;
+	skos:inScheme crimestatistics-code-slash:socialniKlasifikaceNapadeneOsoby ;
+	skos:notation "11" ;
+
+	rdfs:label "profesionální hasič"@cs ;
+	.
+crimestatistics-code-codelist-hash:12 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "záchranář"@cs ;
+	skos:inScheme crimestatistics-code-slash:socialniKlasifikaceNapadeneOsoby ;
+	skos:notation "12" ;
+
+	rdfs:label "záchranář"@cs ;
+	.
+crimestatistics-code-codelist-hash:20 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "obsluha benzinových čerpadel"@cs ;
+	skos:inScheme crimestatistics-code-slash:socialniKlasifikaceNapadeneOsoby ;
+	skos:notation "20" ;
+
+	rdfs:label "obsluha benzinových čerpadel"@cs ;
+	.
+crimestatistics-code-codelist-hash:21 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "poštovní doručovatel"@cs ;
+	skos:inScheme crimestatistics-code-slash:socialniKlasifikaceNapadeneOsoby ;
+	skos:notation "21" ;
+
+	rdfs:label "poštovní doručovatel"@cs ;
+	.
+crimestatistics-code-codelist-hash:22 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "výběrčí poplatků"@cs ;
+	skos:inScheme crimestatistics-code-slash:socialniKlasifikaceNapadeneOsoby ;
+	skos:notation "22" ;
+
+	rdfs:label "výběrčí poplatků"@cs ;
+	.
+crimestatistics-code-codelist-hash:23 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "číšník"@cs ;
+	skos:inScheme crimestatistics-code-slash:socialniKlasifikaceNapadeneOsoby ;
+	skos:notation "23" ;
+
+	rdfs:label "číšník"@cs ;
+	.
+crimestatistics-code-codelist-hash:24 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "průvodčí veřejného dopravního prostřetdku"@cs ;
+	skos:inScheme crimestatistics-code-slash:socialniKlasifikaceNapadeneOsoby ;
+	skos:notation "24" ;
+
+	rdfs:label "průvodčí veřejného dopravního prostřetdku"@cs ;
+	.
+crimestatistics-code-codelist-hash:25 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "řidič veřejné dopravy a ostatních dopravních prostředků"@cs ;
+	skos:inScheme crimestatistics-code-slash:socialniKlasifikaceNapadeneOsoby ;
+	skos:notation "25" ;
+
+	rdfs:label "řidič veřejné dopravy a ostatních dopravních prostředků"@cs ;
+	.
+crimestatistics-code-codelist-hash:26 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "taxikář"@cs ;
+	skos:inScheme crimestatistics-code-slash:socialniKlasifikaceNapadeneOsoby ;
+	skos:notation "26" ;
+
+	rdfs:label "taxikář"@cs ;
+	.
+crimestatistics-code-codelist-hash:27 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "vedoucí prodejny, prodavač"@cs ;
+	skos:inScheme crimestatistics-code-slash:socialniKlasifikaceNapadeneOsoby ;
+	skos:notation "27" ;
+
+	rdfs:label "vedoucí prodejny, prodavač"@cs ;
+	.
+crimestatistics-code-codelist-hash:28 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "člen závodní stráže, ochrany objektů"@cs ;
+	skos:inScheme crimestatistics-code-slash:socialniKlasifikaceNapadeneOsoby ;
+	skos:notation "28" ;
+
+	rdfs:label "člen závodní stráže, ochrany objektů"@cs ;
+	.
+crimestatistics-code-codelist-hash:29 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "ostatní provozní a obsluhující personál"@cs ;
+	skos:inScheme crimestatistics-code-slash:socialniKlasifikaceNapadeneOsoby ;
+	skos:notation "29" ;
+
+	rdfs:label "ostatní provozní a obsluhující personál"@cs ;
+	.
+crimestatistics-code-codelist-hash:30 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "učitel, vychovatel"@cs ;
+	skos:inScheme crimestatistics-code-slash:socialniKlasifikaceNapadeneOsoby ;
+	skos:notation "30" ;
+
+	rdfs:label "učitel, vychovatel"@cs ;
+	.
+crimestatistics-code-codelist-hash:31 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "církevní činitel"@cs ;
+	skos:inScheme crimestatistics-code-slash:socialniKlasifikaceNapadeneOsoby ;
+	skos:notation "31" ;
+
+	rdfs:label "církevní činitel"@cs ;
+	.
+crimestatistics-code-codelist-hash:32 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "lékař"@cs ;
+	skos:inScheme crimestatistics-code-slash:socialniKlasifikaceNapadeneOsoby ;
+	skos:notation "32" ;
+
+	rdfs:label "lékař"@cs ;
+	.
+crimestatistics-code-codelist-hash:33 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "zdravotní sestra, zdravotník"@cs ;
+	skos:inScheme crimestatistics-code-slash:socialniKlasifikaceNapadeneOsoby ;
+	skos:notation "33" ;
+
+	rdfs:label "zdravotní sestra, zdravotník"@cs ;
+	.
+crimestatistics-code-codelist-hash:34 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "herec, umělec"@cs ;
+	skos:inScheme crimestatistics-code-slash:socialniKlasifikaceNapadeneOsoby ;
+	skos:notation "34" ;
+
+	rdfs:label "herec, umělec"@cs ;
+	.
+crimestatistics-code-codelist-hash:35 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "ostatní pracovníci školství, kultury, zdravotnictví a nevýrobní sféry"@cs ;
+	skos:inScheme crimestatistics-code-slash:socialniKlasifikaceNapadeneOsoby ;
+	skos:notation "35" ;
+
+	rdfs:label "ostatní pracovníci školství, kultury, zdravotnictví a nevýrobní sféry"@cs ;
+	.
+crimestatistics-code-codelist-hash:39 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "podnikatel, osoba SVČ, živnostník"@cs ;
+	skos:inScheme crimestatistics-code-slash:socialniKlasifikaceNapadeneOsoby ;
+	skos:notation "39" ;
+
+	rdfs:label "podnikatel, osoba SVČ, živnostník"@cs ;
+	.
+crimestatistics-code-codelist-hash:40 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "vedoucí hospodářský pracovník"@cs ;
+	skos:inScheme crimestatistics-code-slash:socialniKlasifikaceNapadeneOsoby ;
+	skos:notation "40" ;
+
+	rdfs:label "vedoucí hospodářský pracovník"@cs ;
+	.
+crimestatistics-code-codelist-hash:41 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "příslušník policie"@cs ;
+	skos:inScheme crimestatistics-code-slash:socialniKlasifikaceNapadeneOsoby ;
+	skos:notation "41" ;
+
+	rdfs:label "příslušník policie"@cs ;
+	.
+crimestatistics-code-codelist-hash:42 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "příslušník vězeňské služby, justiční stráže"@cs ;
+	skos:inScheme crimestatistics-code-slash:socialniKlasifikaceNapadeneOsoby ;
+	skos:notation "42" ;
+
+	rdfs:label "příslušník vězeňské služby, justiční stráže"@cs ;
+	.
+crimestatistics-code-codelist-hash:43 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "příslušník civilní bezpečnostní služby"@cs ;
+	skos:inScheme crimestatistics-code-slash:socialniKlasifikaceNapadeneOsoby ;
+	skos:notation "43" ;
+
+	rdfs:label "příslušník civilní bezpečnostní služby"@cs ;
+	.
+crimestatistics-code-codelist-hash:44 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "příslušník vojenské hlídky"@cs ;
+	skos:inScheme crimestatistics-code-slash:socialniKlasifikaceNapadeneOsoby ;
+	skos:notation "44" ;
+
+	rdfs:label "příslušník vojenské hlídky"@cs ;
+	.
+crimestatistics-code-codelist-hash:45 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "státní zástupce, soudce"@cs ;
+	skos:inScheme crimestatistics-code-slash:socialniKlasifikaceNapadeneOsoby ;
+	skos:notation "45" ;
+
+	rdfs:label "státní zástupce, soudce"@cs ;
+	.
+crimestatistics-code-codelist-hash:46 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "poslanec zastupitelských sborů"@cs ;
+	skos:inScheme crimestatistics-code-slash:socialniKlasifikaceNapadeneOsoby ;
+	skos:notation "46" ;
+
+	rdfs:label "poslanec zastupitelských sborů"@cs ;
+	.
+crimestatistics-code-codelist-hash:47 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "politický pracovník"@cs ;
+	skos:inScheme crimestatistics-code-slash:socialniKlasifikaceNapadeneOsoby ;
+	skos:notation "47" ;
+
+	rdfs:label "politický pracovník"@cs ;
+	.
+crimestatistics-code-codelist-hash:48 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "voják z povolání"@cs ;
+	skos:inScheme crimestatistics-code-slash:socialniKlasifikaceNapadeneOsoby ;
+	skos:notation "48" ;
+
+	rdfs:label "voják z povolání"@cs ;
+	.
+crimestatistics-code-codelist-hash:49 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "ostatní pracovníci na úseku řízení a správy"@cs ;
+	skos:inScheme crimestatistics-code-slash:socialniKlasifikaceNapadeneOsoby ;
+	skos:notation "49" ;
+
+	rdfs:label "ostatní pracovníci na úseku řízení a správy"@cs ;
+	.
+crimestatistics-code-codelist-hash:50 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "pracovníci vědy a výzkumu"@cs ;
+	skos:inScheme crimestatistics-code-slash:socialniKlasifikaceNapadeneOsoby ;
+	skos:notation "50" ;
+
+	rdfs:label "pracovníci vědy a výzkumu"@cs ;
+	.
+crimestatistics-code-codelist-hash:52 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "příslušník městské nebo obecní policie"@cs ;
+	skos:inScheme crimestatistics-code-slash:socialniKlasifikaceNapadeneOsoby ;
+	skos:notation "52" ;
+
+	rdfs:label "příslušník městské nebo obecní policie"@cs ;
+	.
+crimestatistics-code-codelist-hash:53 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "občanský zaměstnanec PČR"@cs ;
+	skos:inScheme crimestatistics-code-slash:socialniKlasifikaceNapadeneOsoby ;
+	skos:notation "53" ;
+
+	rdfs:label "občanský zaměstnanec PČR"@cs ;
+	.
+crimestatistics-code-codelist-hash:54 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "pracovník obecního úřadu"@cs ;
+	skos:inScheme crimestatistics-code-slash:socialniKlasifikaceNapadeneOsoby ;
+	skos:notation "54" ;
+
+	rdfs:label "pracovník obecního úřadu"@cs ;
+	.
+crimestatistics-code-codelist-hash:55 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "pracovník celní služby"@cs ;
+	skos:inScheme crimestatistics-code-slash:socialniKlasifikaceNapadeneOsoby ;
+	skos:notation "55" ;
+
+	rdfs:label "pracovník celní služby"@cs ;
+	.
+crimestatistics-code-codelist-hash:60 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "dítě předškolního věku"@cs ;
+	skos:inScheme crimestatistics-code-slash:socialniKlasifikaceNapadeneOsoby ;
+	skos:notation "60" ;
+
+	rdfs:label "dítě předškolního věku"@cs ;
+	.
+crimestatistics-code-codelist-hash:61 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "žák základní školy"@cs ;
+	skos:inScheme crimestatistics-code-slash:socialniKlasifikaceNapadeneOsoby ;
+	skos:notation "61" ;
+
+	rdfs:label "žák základní školy"@cs ;
+	.
+crimestatistics-code-codelist-hash:62 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "žák zvláštní školy"@cs ;
+	skos:inScheme crimestatistics-code-slash:socialniKlasifikaceNapadeneOsoby ;
+	skos:notation "62" ;
+
+	rdfs:label "žák zvláštní školy"@cs ;
+	.
+crimestatistics-code-codelist-hash:63 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "chovanec DD nebo DM"@cs ;
+	skos:inScheme crimestatistics-code-slash:socialniKlasifikaceNapadeneOsoby ;
+	skos:notation "63" ;
+
+	rdfs:label "chovanec DD nebo DM"@cs ;
+	.
+crimestatistics-code-codelist-hash:64 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "student střední a odborné školy"@cs ;
+	skos:inScheme crimestatistics-code-slash:socialniKlasifikaceNapadeneOsoby ;
+	skos:notation "64" ;
+
+	rdfs:label "student střední a odborné školy"@cs ;
+	.
+crimestatistics-code-codelist-hash:65 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "učeň"@cs ;
+	skos:inScheme crimestatistics-code-slash:socialniKlasifikaceNapadeneOsoby ;
+	skos:notation "65" ;
+
+	rdfs:label "učeň"@cs ;
+	.
+crimestatistics-code-codelist-hash:66 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "vysokoškolský student"@cs ;
+	skos:inScheme crimestatistics-code-slash:socialniKlasifikaceNapadeneOsoby ;
+	skos:notation "66" ;
+
+	rdfs:label "vysokoškolský student"@cs ;
+	.
+crimestatistics-code-codelist-hash:69 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "osoby na mateřské dovolené"@cs ;
+	skos:inScheme crimestatistics-code-slash:socialniKlasifikaceNapadeneOsoby ;
+	skos:notation "69" ;
+
+	rdfs:label "osoby na mateřské dovolené"@cs ;
+	.
+crimestatistics-code-codelist-hash:70 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "osoby v domácnosti"@cs ;
+	skos:inScheme crimestatistics-code-slash:socialniKlasifikaceNapadeneOsoby ;
+	skos:notation "70" ;
+
+	rdfs:label "osoby v domácnosti"@cs ;
+	.
+crimestatistics-code-codelist-hash:71 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "důchodce, invalidní důchodce"@cs ;
+	skos:inScheme crimestatistics-code-slash:socialniKlasifikaceNapadeneOsoby ;
+	skos:notation "71" ;
+
+	rdfs:label "důchodce, invalidní důchodce"@cs ;
+	.
+crimestatistics-code-codelist-hash:72 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "voják základní služby"@cs ;
+	skos:inScheme crimestatistics-code-slash:socialniKlasifikaceNapadeneOsoby ;
+	skos:notation "72" ;
+
+	rdfs:label "voják základní služby"@cs ;
+	.
+crimestatistics-code-codelist-hash:73 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "pracovník banky"@cs ;
+	skos:inScheme crimestatistics-code-slash:socialniKlasifikaceNapadeneOsoby ;
+	skos:notation "73" ;
+
+	rdfs:label "pracovník banky"@cs ;
+	.
+crimestatistics-code-codelist-hash:74 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "pracovník spořitelny"@cs ;
+	skos:inScheme crimestatistics-code-slash:socialniKlasifikaceNapadeneOsoby ;
+	skos:notation "74" ;
+
+	rdfs:label "pracovník spořitelny"@cs ;
+	.
+crimestatistics-code-codelist-hash:75 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "pracovník pošty"@cs ;
+	skos:inScheme crimestatistics-code-slash:socialniKlasifikaceNapadeneOsoby ;
+	skos:notation "75" ;
+
+	rdfs:label "pracovník pošty"@cs ;
+	.
+crimestatistics-code-codelist-hash:76 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "pracovník směnárny"@cs ;
+	skos:inScheme crimestatistics-code-slash:socialniKlasifikaceNapadeneOsoby ;
+	skos:notation "76" ;
+
+	rdfs:label "pracovník směnárny"@cs ;
+	.
+crimestatistics-code-codelist-hash:77 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "pracovníci ostatních finančních objektů"@cs ;
+	skos:inScheme crimestatistics-code-slash:socialniKlasifikaceNapadeneOsoby ;
+	skos:notation "77" ;
+
+	rdfs:label "pracovníci ostatních finančních objektů"@cs ;
+	.
+crimestatistics-code-codelist-hash:78 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "pracovník finančního orgánu"@cs ;
+	skos:inScheme crimestatistics-code-slash:socialniKlasifikaceNapadeneOsoby ;
+	skos:notation "78" ;
+
+	rdfs:label "pracovník finančního orgánu"@cs ;
+	.
+crimestatistics-code-codelist-hash:80 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "bez pracovního poměru"@cs ;
+	skos:inScheme crimestatistics-code-slash:socialniKlasifikaceNapadeneOsoby ;
+	skos:notation "80" ;
+
+	rdfs:label "bez pracovního poměru"@cs ;
+	.
+crimestatistics-code-codelist-hash:81 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "exekutor"@cs ;
+	skos:inScheme crimestatistics-code-slash:socialniKlasifikaceNapadeneOsoby ;
+	skos:notation "81" ;
+
+	rdfs:label "exekutor"@cs ;
+	.
+crimestatistics-code-codelist-hash:82 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "soudní doručovatel"@cs ;
+	skos:inScheme crimestatistics-code-slash:socialniKlasifikaceNapadeneOsoby ;
+	skos:notation "82" ;
+
+	rdfs:label "soudní doručovatel"@cs ;
+	.
+crimestatistics-code-codelist-hash:83 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "soudní personál"@cs ;
+	skos:inScheme crimestatistics-code-slash:socialniKlasifikaceNapadeneOsoby ;
+	skos:notation "83" ;
+
+	rdfs:label "soudní personál"@cs ;
+	.
+crimestatistics-code-codelist-hash:84 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "pracovník ČOI"@cs ;
+	skos:inScheme crimestatistics-code-slash:socialniKlasifikaceNapadeneOsoby ;
+	skos:notation "84" ;
+
+	rdfs:label "pracovník ČOI"@cs ;
+	.
+crimestatistics-code-codelist-hash:85 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "pracovník NKÚ"@cs ;
+	skos:inScheme crimestatistics-code-slash:socialniKlasifikaceNapadeneOsoby ;
+	skos:notation "85" ;
+
+	rdfs:label "pracovník NKÚ"@cs ;
+	.
+crimestatistics-code-codelist-hash:86 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "pracovník ČIŽP"@cs ;
+	skos:inScheme crimestatistics-code-slash:socialniKlasifikaceNapadeneOsoby ;
+	skos:notation "86" ;
+
+	rdfs:label "pracovník ČIŽP"@cs ;
+	.
+crimestatistics-code-codelist-hash:90 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "nezjištěno"@cs ;
+	skos:inScheme crimestatistics-code-slash:socialniKlasifikaceNapadeneOsoby ;
+	skos:notation "90" ;
+
+	rdfs:label "nezjištěno"@cs ;
+	.
+crimestatistics-code-codelist-hash:91 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "nezaměstnaný"@cs ;
+	skos:inScheme crimestatistics-code-slash:socialniKlasifikaceNapadeneOsoby ;
+	skos:notation "91" ;
+
+	rdfs:label "nezaměstnaný"@cs ;
+	.
+crimestatistics-code-codelist-hash:92 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "osoba ve výkonu trestu odnětí svobody nebo ve vazbě "@cs ;
+	skos:inScheme crimestatistics-code-slash:socialniKlasifikaceNapadeneOsoby ;
+	skos:notation "92" ;
+
+	rdfs:label "osoba ve výkonu trestu odnětí svobody nebo ve vazbě "@cs ;
+	.
+crimestatistics-code-codelist-hash:93 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "revizor v dopravě"@cs ;
+	skos:inScheme crimestatistics-code-slash:socialniKlasifikaceNapadeneOsoby ;
+	skos:notation "93" ;
+
+	rdfs:label "revizor v dopravě"@cs ;
+	.
+crimestatistics-code-codelist-hash:94 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "úředník"@cs ;
+	skos:inScheme crimestatistics-code-slash:socialniKlasifikaceNapadeneOsoby ;
+	skos:notation "94" ;
+
+	rdfs:label "úředník"@cs ;
+	.
+crimestatistics-code-codelist-hash:99 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "cizinec"@cs ;
+	skos:inScheme crimestatistics-code-slash:socialniKlasifikaceNapadeneOsoby ;
+	skos:notation "99" ;
+
+	rdfs:label "cizinec"@cs ;
+	.

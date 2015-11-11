@@ -1,0 +1,125 @@
+# Standardni prefixy
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix interval: <http://reference.data.gov.uk/def/intervals/> .
+@prefix sdmx-dimension: <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-concept: <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-measure: <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-attribute: <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+# Vlastní prefixy
+@prefix crime: <http://linked.opendata.cz/ontology/crime#> .
+
+crime:ZaznamTrestneCinnosti a rdfs:Class ;
+  rdfs:label "záznam o trestné èinnosti"@cs ;
+  rdfs:comment '''Tøída crime:ZaznamTrestneCinnosti reprezentuje záznam o trestné èinnosti, poøízený Policií
+  Èeské republiky. Záznamy se vedou o trestných èinech (crime:TrestnyCin) a o jejich známých pachatelích (crime:ZnamyPachatel).
+  Záznam o trestné èinnosti obsahuje informaci o útvaru, který záznam zpracoval, roku, kdy byl záznam poøízen, èísle vyšetøovacího
+  spisu, do kterého záznam pøísluší, a také podrobnosti o tom, jak byla vìc, kterou záznam popisuje (napø. jednotlivý trestný èin),
+  ukonèena, t.j. vyøízena z pohledu Policie.'''@cs ;
+  rdfs:isDefinedBy "http://www.ms.mff.cuni.cz/~benat7am/crimemonitor/thesis.pdf" ;
+  .
+  
+crime:TrestnyCin a rdf:Class ;
+  rdfs:label "trestný èin"@cs ;
+  rdfs:comment '''Tøída crime:TrestnyCin reprezentuje záznam FTÈ o zjištìném trestném èinu.'''@cs ;
+  rdfs:subClassOf crime:ZaznamKriminality ;
+  rdfs:isDefinedBy "http://www.ms.mff.cuni.cz/~benat7am/crimemonitor/thesis.pdf" ;
+  .
+
+crime:ZnamyPachatel a rdf:Class ;
+  rdfs:label "známý pachatel"@cs ;
+  rdfs:comment '''Tøída crime:ZnamyPachatel reprezentuje záznam FZP o známém pachateli trestného èinu.'''@cs ;
+  rdfs:subClassOf crime:ZaznamKriminality ;
+  rdfs:isDefinedBy "http://www.ms.mff.cuni.cz/~benat7am/crimemonitor/thesis.pdf" ;
+  .
+
+crime:ProkazaniTrestnehoCinuPachateli a rdf:Class ;
+  rdfs:label "prokázání trestného èinu pachateli"@cs ;
+  rdfs:comment '''Tøída crime:ProkazaniTrestnehoCinuPachateli reprezentuje záznam o prokázané trestné èinnosti známého pachatele. Tento
+  záznam je souèástí FZP a propojuje záznam FZP se záznamy FTÈ tìch trestných èinù, jichž se známý pachatel nìjak úèastnil.'''@cs ;
+  rdfs:isDefinedBy "http://www.ms.mff.cuni.cz/~benat7am/crimemonitor/thesis.pdf" ;
+  .
+
+
+crime:NapadeniObjektu a rdf:Class ;
+  rdfs:label "napadení objektu"@cs;
+  rdfs:definition "http://www.ms.mff.cuni.cz/~benat7am/crimemonitor/thesis.pdf";
+  .
+
+crime:NapadeniOsoby a rdf:Class ;
+  rdfs:label "napadení osoby"@cs;
+  rdfs:definition "http://www.ms.mff.cuni.cz/~benat7am/crimemonitor/thesis.pdf";
+  rdfs:subClassOf crime:NapadeniObjektu ;
+  .
+
+crime:NapadeniSkupinyOsob a rdf:Class ;
+  rdfs:label "napadení skupiny osob"@cs;
+  rdfs:definition "http://www.ms.mff.cuni.cz/~benat7am/crimemonitor/thesis.pdf";
+  rdfs:subClassOf crime:NapadeniObjektu ;
+  .
+
+crime:NapadeniObecnouKriminalitou a rdf:Class ;
+  rdfs:label "napadení obecnou kriminalitou"@cs;
+  rdfs:definition "http://www.ms.mff.cuni.cz/~benat7am/crimemonitor/thesis.pdf";
+  rdfs:subClassOf crime:NapadeniObjektu ;
+  .
+
+crime:NapadeniHospodarskouKriminalitou a rdf:Class ;
+  rdfs:label "napadení hospodáøskou kriminalitou"@cs;
+  rdfs:definition "http://www.ms.mff.cuni.cz/~benat7am/crimemonitor/thesis.pdf";
+  rdfs:subClassOf crime:NapadeniObjektu ;
+  .
+
+crime:NapadeniSoukromehoObjektu a rdf:Class ;
+  rdfs:label "napadení soukromého objektu"@cs;
+  rdfs:definition "http://www.ms.mff.cuni.cz/~benat7am/crimemonitor/thesis.pdf";
+  rdfs:subClassOf crime:NapadeniObjektu ;
+  .
+
+crime:NapadeniVerejnehoZajmu a rdf:Class ;
+  rdfs:label "napadení veøejného zájmu"@cs;
+  rdfs:definition "http://www.ms.mff.cuni.cz/~benat7am/crimemonitor/thesis.pdf";
+  rdfs:subClassOf crime:NapadeniObjektu ;
+  .
+
+crime:ZpusobUkonceniNeboPrevzetiVeci a rdf:Class ;
+  rdfs:label ""@cs;
+  rdfs:definition "http://www.ms.mff.cuni.cz/~benat7am/crimemonitor/thesis.pdf";
+  rdfs:subClassOf crime:UkonVTrestnimRizeni ;
+  .
+  
+crime:ZpusobUkonceniNeboPrevzetiVeci_TrestnyCin a rdf:Class ;
+  rdfs:label ""@cs;
+  rdfs:definition "http://www.ms.mff.cuni.cz/~benat7am/crimemonitor/thesis.pdf";
+  rdfs:subClassOf crime:ZpusobUkonceniNeboPrevzetiVeci ;
+  .
+
+crime:ZpusobUkonceniNeboPrevzetiVeci_ZnamyPachatel a rdf:Class ;
+  rdfs:label ""@cs;
+  rdfs:definition "http://www.ms.mff.cuni.cz/~benat7am/crimemonitor/thesis.pdf";
+  rdfs:subClassOf crime:ZpusobUkonceniNeboPrevzetiVeci ;
+  .
+
+crime:UkonceniNeboPrevzetiVeci a rdf:Class ;
+  rdfs:label ""@cs;
+  rdfs:definition "http://www.ms.mff.cuni.cz/~benat7am/crimemonitor/thesis.pdf";
+  rdfs:subClassOf crime:ProvedeniUkonuVTrestnimRizeni ;
+  .
+
+crime:UkonceniNeboPrevzetiVeci_TrestnyCin a rdf:Class ;
+  rdfs:label ""@cs;
+  rdfs:definition "http://www.ms.mff.cuni.cz/~benat7am/crimemonitor/thesis.pdf";
+  rdfs:subClassOf crime:UkonceniNeboPrevzetiVeci ;
+  .
+
+crime:UkonceniNeboPrevzetiVeci_ZnamyPachatel a rdf:Class ;
+  rdfs:label ""@cs;
+  rdfs:definition "http://www.ms.mff.cuni.cz/~benat7am/crimemonitor/thesis.pdf";
+  rdfs:subClassOf crime:UkonceniNeboPrevzetiVeci ;
+  .
+

@@ -1,0 +1,328 @@
+31#prodej nebo šíření cizích programů a databází bez oprávnění# 
+32#prodej nebo šíření cizích programů a databází na základě neplatného oprávnění# 
+33#prodej nebo šíření cizích programů a databází nad rozsah vydaného oprávnění# 
+34#prodej nebo šíření cizích programů a databází po zrušení oprávnění# 
+35#prodej nebo šíření cizích programů a databází bez potřebné licence# 
+36#prodej nebo šíření cizích programů a databází se zneužitím jména jiného podnikatele# 
+41#obchodní činnost bez oprávnění# 
+42#obchodní činnost na základě neplatného oprávnění# 
+43#obchodní činnost nad rozsah vydaného oprávnění# 
+44#obchodní činnost po zrušení oprávnění# 
+45#obchodní činnost bez potřebné licence# 
+46#obchodní činnost se zneužitím jména jiného podnikatele# 
+51#poskytování služeb bez oprávnění# 
+52#poskytování služeb na základě neplatného oprávnění# 
+53#poskytování služeb nad rozsah vydaného oprávnění# 
+54#poskytování služeb po zrušení oprávnění# 
+55#poskytování služeb bez potřebné licence# 
+56#poskytování služeb se zneužitím jména jiného podnikatele# 
+61#výrobní činnost bez oprávnění# 
+62#výrobní činnost na základě neplatného oprávnění# 
+63#výrobní činnost nad rozsah vydaného oprávnění# 
+64#výrobní činnost po zrušení oprávnění# 
+65#výrobní činnost bez potřebné licence# 
+66#výrobní činnost se zneužitím jména jiného podnikatele.# 
+71#jiné výdělečné podnikání bez oprávnění# 
+72#jiné výdělečné podnikání na základě neplatného oprávnění# 
+73#jiné výdělečné podnikání nad rozsah vydaného oprávnění# 
+74#jiné výdělečné podnikání po zrušení oprávnění# 
+75#jiné výdělečné podnikání bez potřebné licence# 
+76#jiné výdělečné podnikání se zneužitím jména jiného podnikatele# 
+##
+#k § 121 - poškozování spotřebitele#TSK 806
+92#poškozování spotřebitele šizením na jakosti# 
+93#poškozování spotřebitele šizením na množství nebo hmotnosti# 
+94#poškozování spotřebitele zatajením vad# 
+##
+#k § 124 - porušování předpisů o oběhu zboží ve styku s cizinou (pašování)#TSK 807
+111#pašování - dovoz pro osobní potřebu v úkrytu# 
+112#pašování - dovoz pro osobní potřebu s falešnými doklady# 
+113#pašování - dovoz pro osobní potřebu v mrtvé schránce# 
+114#pašování - dovoz pro osobní potřebu mimo hraniční přechod# 
+121#pašování - dovoz pro podnikání v úkrytu# 
+122#pašování - dovoz pro podnikání s falešnými doklady# 
+123#pašování - dovoz pro podnikání v mrtvé schránce# 
+124#pašování - dovoz pro podnikání mimo hraniční přechod# 
+131#pašování - dovoz k obchodování v úkrytu# 
+132#pašování - dovoz k obchodování s falešnými doklady# 
+133#pašování - dovoz k obchodování v mrtvé schránce# 
+134#pašování - dovoz k obchodování mimo hraniční přechod# 
+211#pašování - vývoz pro osobní potřebu v úkrytu# 
+212#pašování - vývoz pro osobní potřebu s falešnými doklady# 
+213#pašování - vývoz pro osobní potřebu v mrtvé schránce# 
+214#pašování - vývoz pro osobní potřebu mimo hraniční přechod# 
+221#pašování - vývoz pro podnikání v úkrytu# 
+222#pašování - vývoz pro podnikání s falešnými doklady# 
+223#pašování - vývoz pro podnikání v mrtvé schránce# 
+224#pašování - vývoz pro podnikání mimo hraniční přechod# 
+231#pašování - vývoz k obchodování v úkrytu# 
+232#pašování - vývoz k obchodování s falešnými doklady# 
+233#pašování - vývoz k obchodování v mrtvé schránce# 
+234#pašování - vývoz k obchodování mimo hraniční přechod# 
+311#pašování - průvoz pro osobní potřebu v úkrytu# 
+312#pašování - průvoz pro osobní potřebu s falešnými doklad# 
+313#pašování - průvoz pro osobní potřebu v mrtvé schránce# 
+314#pašování - průvoz pro osobní potřebu mimo hraniční přechod# 
+321#pašování - průvoz pro podnikání v úkrytu# 
+322#pašování - průvoz pro podnikání s falešnými doklad# 
+323#pašování - průvoz pro podnikání v mrtvé schránce# 
+324#pašování - průvoz pro podnikání mimo hraniční přechod# 
+331#pašování - průvoz k obchodování v úkrytu# 
+332#pašování - průvoz k obchodování s falešnými doklad# 
+333#pašování - průvoz k obchodování v mrtvé schránce# 
+334#pašování - průvoz k obchodování mimo hraniční přechod# 
+##
+#k §§ 124a, 124b, 124c - porušování předpisů o nakládání s kontrolovaným zbožím a technologiemi#TSK 832
+#k §§ 124d, 124e, 124f - porušování předpisů o zahraničním obchodu s vojenským materiálem#TSK 839
+411#kontrolované zboží - vývoz takového zboží bez povolení# 
+412#kontrolované zboží - porušení zákazu nebo omezení při nakládání s takovým zbožím# 
+413#kontrolované zboží - porušování povinností při vydávání vývozních nebo dovozních licencí# 
+414#kontrolované zboží - neoprávněné vylákání dokladů potřebných pro orgány kontrolující takové zboží# 
+415#kontrolované zboží - nevedení, zatajení, zničení či poškození evidencí takového zboží# 
+416#neoprávněný zásah do programového vybavení počítače, v němž se vede příslušná evidence# 
+417#neoprávněný zásah do technického vybavení počítače, v němž se vede příslušná evidence# 
+418#neoprávněný zásah do údajů příslušné evidence vedené na počítači# 
+##
+#k § 125 - zkreslování údajů hospodářské a obchodní evidence #TSK 808
+421#uvádění nepravdivých nebo hrubě zkreslených údajů ve výkazech, hlášeních, vstupních údajích vkládaných do počítače nebo v jiných dokladech# 
+422#neoprávněné zásahy do technického nebo programového vybavení počítače# 
+423#poškození, zničení, zatajení nebo nevedení podkladů sloužících ke kontrole hospodaření# 
+424#uvádění nepravdivých údajů v podkladech pro zápis do obchodního rejstříku# 
+425#neoprávněný zásah do programového vybavení počítače, v němž se vede příslušná evidence# 
+426#neoprávněný zásah do technického vybavení počítače, v němž se vede příslušná evidence# 
+427#neoprávněný zásah do údajů příslušné evidence vedené na počítači# 
+##
+#k § 149 - nekalá soutěž#TSK 801
+#k § 127 - porušování závazných pravidel hospodářského styku#TSK 809
+431#při smluvních vztazích mezi podnikatelskými subjekty# 
+432#v souvislosti s restitucemi a transformací majetku# 
+433#neoprávněné nakládání se subvencemi a dotacemi# 
+434#porušování cenové regulace# 
+435#zneužití postavení na trhu# 
+436#získání obchodního tajemství od pracovníka jiné organizace nebo firmy z nosiče informací# 
+437#poskytování úvěru nebo jiného plnění za poskytnutí úplatku# 
+##
+#k § 128 - zneužívání informací v obchodním styku#TSK 833
+441#získaných z titulu pracovníka burzy# 
+442#získaných z titulu pracovníka peněžního ústavu# 
+443#získaných z titulu pracovníka státního orgánu nebo orgánu místní samosprávy vykonávajícího řízení nebo dohled# 
+444#získaných z titulu zaměstnání u jiné právnické nebo fyzické osoby# 
+445#průnikem do informačního systému vedeného na výpočetní technice# 
+##
+#k §§ 128a, 128b, 128c - pletichy při veřejné soutěži a veřejné dražbě#TSK 831
+451#při veřejné soutěži na státní nebo jiné zakázky s využitím násilí nebo lsti# 
+452#při veřejné soutěži na státní nebo jiné zakázky s podplácením# 
+453#při veřejné soutěži na státní nebo jiné zakázky - ostatní# 
+461#v souvislosti s převodem vlastnictví státu (družstev) na jiné osoby (malá a velká privatizace) s využitím násilí nebo lsti# 
+462#v souvislosti s převodem vlastnictví státu (družstev) na jiné osoby (malá a velká privatizace) s podplácením# 
+463#v souvislosti s převodem vlastnictví státu (družstev) na jiné osoby (malá a velká privatizace) - ostatní# 
+##
+#k §§ 140, 145 - padělání a pozměňování peněz, padělání a pozměňování známek #TSK 816, TSK 817
+471#padělání - tisk# 
+472#padělání - foto# 
+473#padělání - kreslení# 
+474#padělání - ražba# 
+475#padělání - lití# 
+476#padělání - galvanické zpracování# 
+477#padělání - reprotechnika# 
+478#padělání - jinak# 
+479#padělání - pomoci prostředků výpočetní techniky# 
+481#pozměňování - tisk# 
+482#pozměňování - foto# 
+483#pozměňování - kreslení# 
+484#pozměňování - ražba# 
+485#pozměňování - lití# 
+486#pozměňování - galvanické zpracování# 
+487#pozměňování - reprotechnika# 
+488#pozměňování - jinak# 
+489#pozměňování - pomoci prostředků výpočetní techniky# 
+##
+#k § 142 - výroba a držení padělatelského náčiní#TSK 816
+491#výroba# 
+492#opatření# 
+493#přechovávání náčiní# 
+494#výroba a přechovávání prostředků na zhotovení padělku platební karty# 
+##
+#k § 146 - porušení zákazu v době nouzového stavu v devizovém hospodářství#TSK 890
+501#nesplnění nabídkové povinnosti u valut a deviz# 
+502#nesplnění nabídkové povinnosti u zlata# 
+503#nesplnění transferové povinnosti# 
+504#vývoz a dovoz tuzemské měny# 
+505#vývoz valut a deviz# 
+506#ostatní k § 146 TZ# 
+##
+#k § 147 - neodvedení daně a cla #TSK 886
+#k § 148 - zkrácení daně a cla #TSK 819
+515#neodvedení/zkrácení daně silniční - neoprávněné daňové výhody (osvobození od daně, slevy na dani, prominutí daně)# 
+516#neodvedení/zkrácení daně z příjmu právnických osob - účetní machinace a jiné, směřující ke snížení základu pro výpočet daně# 
+517#neodvedení/zkrácení daně z příjmu fyzických osob - účetní machinace a jiné, směřující ke snížení základu pro výpočet daně# 
+518#neodvedení/zkrácení daně z příjmu - neoprávněné získání daňového zvýhodnění# 
+526#neodvedení/zkrácení spotřební daně - v souvislosti s vývozem nebo dovozem komodit# 
+527#neodvedení/zkrácení spotřební daně - machinace v oblasti daně z uhlovodíkových paliv a maziv# 
+528#neodvedení/zkrácení spotřební daně - machinace v oblasti daně z tabákových výrobků# 
+529#neodvedení/zkrácení spotřební daně - machinace v oblasti daně z lihu# 
+532#neodvedení/zkrácení DPH - v souvislosti s vývozem nebo dovozem zboží a služeb# 
+535#neodvedení/zkrácení DPH - v souvislosti s vývozem nebo dovozem zboží  # 
+536#neodvedení/zkrácení DPH - jednorázové vylákání výhody na základě fiktivních faktur  # 
+537#neodvedení/zkrácení DPH - vylákání výhody v souvislosti s fiktivními plátci - daňové řetězce # 
+541#neodvedení/zkrácení daně z příjmu - v souvislosti s placením pojistného na zdravotní pojištění, sociální zabezpečení a státní politiku zaměstnanosti# 
+542#neodvedení/zkrácení DPH - v souvislosti s placením pojistného na zdravotní pojištění, sociální zabezpečení a státní politiku zaměstnanosti# 
+543#neodvedení/zkrácení spotřební daně - v souvislosti s placením pojistného na zdravotní pojištění, sociální zabezpečení a státní politiku zaměstnanosti# 
+544#neodvedení/zkrácení daně z mezd - v souvislosti s placením pojistného na zdravotní pojištění, sociální zabezpečení a státní politiku zaměstnanosti# 
+550#neodvedení/zkrácení cla - zatajení prováženého zboží (zcela nebo zčásti)# 
+551#neodvedení/zkrácení cla - machinace směřující ke snížení základu pro vyměření cla nebo k neoprávněnému osvobození od cla# 
+552#neodvedení/zkrácení cla - nepravdivá deklarace průvozu zboží# 
+553#neodvedení/zkrácení cla - ostatní# 
+##
+#k § 149 - nekalá soutěž#TSK 801
+580#klamavá reklama# 
+581#klamavé označení zboží a služeb# 
+582#vyvolání nebezpečí záměny# 
+583#parazitování na pověsti podniku, výrobků a služeb jiného soutěžitele# 
+584#podplácení, zlehčování# 
+585#porušování obchodního tajemství# 
+586#využití obchodního tajemství organizace nebo firmy bývalým pracovníkem pro vlastní podnikání nebo ve spojení s jinou osobou z nosiče informace# 
+##
+#k §§ 150, 151, 152 - porušování práv k ochranné známce, obchodnímu jménu a chráněnému označení původu, průmyslových práv, autorského práva a práv souvisejících s právem autorským a práv k databázi#TSK 861 TSK 862 TSK 863
+591#neoprávněné označení zboží ochrannou známkou# 
+592#neoprávněné užívání obchodního jména# 
+593#neoprávněné označování původu zboží# 
+594#neoprávněné zasahování do práv k chráněnému vynálezu, průmyslovému či užitému vzoru# 
+595#neoprávněné rozšiřování nebo užívání díla, které je předmětem autorského práva (kopie, rozmnoženiny)# 
+596#neoprávněné zásahy do díla, které je předmětem autorského práva a práv souvisejících nebo jiných práv autora# 
+597#neoprávněné kopírování počítačového programu a databáze# 
+598#neoprávněné úpravy, šíření, užití počítačového programu a databáze# 
+599#odstranění nebo obejití ochranných prvků počítačového programu a databáze# 
+##
+#k §§ 158, 159, 160, 161, 162 - zneužívání pravomoci veřejného činitele, přijímání úplatku, podplácení, nepřímé úplatkářství#TSK 820, TSK 821, TSK 845, TSK 846, TSK 847
+601#při hospodaření s bytovým fondem# 
+602#při povolování podnikatelské nebo jiné samostatné výdělečné činnosti# 
+603#při zadávání veřejných zakázek# 
+604#při poskytování výjimek nebo úlev v souvislosti s odvody do státního rozpočtu nebo rozpočtu obcí# 
+605#při rozhodovací činnost soudů, prokuratury, policie či jiných orgánů státní správy nebo správy obcí# 
+606#neoprávněný zásah do obsahu informačního systému# 
+##
+#k § 209 - poškozování cizích práv#TSK 890
+607#vydávání se za oprávněného uživatele počítačové sítě# 
+##
+#k § 239 - porušování tajemství dopravovaných zpráv#TSK 828
+608#při provozu veřejné datové sítě nebo obdobné komunikační sítě# 
+##
+#k § 249 - neoprávněné užívání cizí věci#TSK 813
+609#používání počítače zaměstnavatele k soukromým účelům bez svolení# 
+610#průnik do cizího počítače nebo počítačové sítě pomoci komunikačních prostředků# 
+##
+#k § 255 - porušování povinnosti při správě cizího majetku#TSK 811
+615#při likvidaci obchodní společnosti nebo jiné právnické či fyzické osoby# 
+616#při správě konkursní podstaty# 
+617#při zastupování ve věcech obchodních# 
+618#při činnosti správních, dozorčích rad a při výkonu prokury# 
+619#zneužití postavení v podniku ve prospěch vlastního podniku# 
+##
+#k §§ 256, 256a, 256b - poškozování věřitele, zvýhodňování věřitele, pletichy při řízení konkursním a vyrovnávacím#TSK 822, TSK 848, TSK 849
+621#při obchodním styku# 
+622#při likvidaci obchodní společnosti nebo při řízení konkurzním a vyrovnávacím# 
+623#ostatní k §§ 256, 256a, 256b TZ# 
+##
+#k § 257 - poškozování cizí věci #TSK 814
+624#poškození nebo zničení nosiče informací nepoužitého, prázdného nebo technického prostředku# 
+625#při obchodním styku z konkurenčních důvodů# 
+626#v souvislosti se zaměstnáním u právnické nebo fyzické osoby# 
+627#ostatní k § 257 TZ# 
+##
+#k §§ 247, 248, 250 - krádež, zpronevěra, podvod #TSK 812, TSK 829, TSK 830, 840-844
+#machinace (podvody) v obchodním styku#
+631#vylákání zboží s úmyslem jej nezaplatit# 
+632#vylákání zboží s úmyslem jej nezaplatit za použití falešných dokladů o odběrateli# 
+633#vylákání finančních prostředků s úmyslem byť částečného nedodání zboží, služby nebo práce za něž byly poskytnuty# 
+635#machinace směřující k vylákání dotací nebo subvencí# 
+636#uzavírání podvodných obchodních smluv# 
+##
+#majetkové machinace (krádeže, zpronevěry, podvody) v souvislosti s výkonem zaměstnání nebo jiné obdobné prac. činnosti v obchodní společnosti, státním podniku nebo u jiné právnické nebo fyzické osoby#
+637#machinace s finančními prostředky (penězi, tržbami, poplatky, vklady na účtech, finančními fondy)# 
+638#machinace v souvislosti s poskytováním věcných náhrad (odlučné, stravné, náhrady jízdních výdajů apod.)# 
+639#vylákání mezd a odměn vykazováním neprovedených prácí# 
+640#vytváření neevidovaných přebytků a jejich zcizování (např. při likvidaci škod, při inventurách, neoprávněné čerpání normativních ztrát)# 
+641#majetkové machinace ve prospěch třetích právnických nebo fyzických osob (např. poskytování cenových výhod apod.)# 
+642#krádeže a zpronevěry materiálů, zařízení a zboží# 
+643#majetkové machinace v souvislosti se zneužitím výpočetní techniky (počítačové podvody)# 
+644#machinace v souvislosti s přeceňováním výrobků, zboží a služeb# 
+646#neoprávněné čerpání mezd a prémií, zkreslování ukazatelů rozhodných pro jejich výplatu# 
+647#ostatní majetkové machinace# 
+##
+#krádeže přepravovaných zásilek veřejnou dopravou nebo ve specializovaných obchodních společnostech#
+648#krádeže během přepravy bez násilí# 
+649#krádeže násilným vloupáním do železničních vagónů, skladů nebo jiných dopravních prostředků během přepravy# 
+650#machinace ve skladištích a překladištích dopravců (předstírání škod, falšování dokladů), jiné majetkové machinace# 
+652#vylákání neoprávněných dávek sociálního, nemocenského pojištění (důchody, nemocenské, přídavky na děti, stipendia, státní vyrovnávací příspěvek apod.)# 
+653#krádeže, zpronevěry a podvody zakrývané fingovaným vloupáním nebo živelnou pohromou# 
+654#machinace s platebními kartami na odběr pohonných hmot# 
+655#machinace s losy a sázenkami# 
+656#machinace pomocí receptů a zdravotnické dokumentace# 
+658#zneužití šeků zahraničních peněžních ústavů# 
+659#založení účtu v bance (nebo obd. instituci) na padělané nebo zcizené osobní doklady# 
+690#krádeže prostým způsobem# 
+##
+#k § 176 - padělání a pozměňování veřejné listiny #TSK 823
+701#padělání nebo užití padělaného podnikatelského oprávnění# 
+702#ostatní k § 176 TZ# 
+703#vytvoření nebo padělání veřejné listiny pomoci výpočetní techniky# 
+##
+#k § 178 - neoprávněné nakládání s osobními údaji#TSK 836
+#k § 257a - poškození a zneužití záznamu na nosiči informací#TSK 865
+721#neoprávněné užití informací# 
+722#neoprávněné kopírování informací na jiný nosič# 
+723#zničení, poškození nebo učinění informace neupotřebitelnou# 
+724#úmyslné zavlečení počítačového viru do počítače, počítačové sítě nebo šíření zavirovaných programů# 
+725#úmyslné vyřazení antivirových ochran# 
+726#úmyslné vynechání nebo obcházení antivirových kontrol# 
+727#zásah do technického vybavení počítače# 
+728#zásah do programového vybavení počítače# 
+##
+#k §§ 118a, 250c - neoprávněné provozování loterie, nepoctivé hry a sázky#TSK 834 TSK 866
+731#provozování her nebo sázek na výpočetní technice, machinace s pořadím# 
+##
+#k § 249b - neoprávněné držení platební karty#TSK 838
+741#padělání platební karty (event. vytvoření neoprávněné kopie)# 
+742#zneužití platební karty (výběr nebo platby neoprávněnou osobou)# 
+743#zneužití osobních dokladů (zcizení, padělání apod.)# 
+744#zneužití svěřené firemní platební karty# 
+745#platební karta pouze v držení, nedošlo ke zneužití# 
+746#krádež platební karty (krádež není TČ dle § 247 TZ, ale § 50/1c zák. o přestupcích) )# 
+747#uvedení nepravdivých údajů v žádosti o vydání kreditní karty apod.# 
+##
+#k §§ 181a, 181c, 181f, 181h#TSK 850 TSK 851
+751#využití osoby v pozici "bílého koně"# 
+752#poškození stojícího lesního porostu zářezy do stromů# 
+753#poškození stojícího lesního porostu jiným způsobem než zářezy do stromů# 
+754#různými způsoby poškození stojících dřevin (mimo lesních porostů)# 
+755#formální nepřesnosti v kupních smlouvách (rodné číslo, jiné osobní údaje apod.)# 
+756#vykácení lesního porostu v období mezi uzavřením kupní smlouvy a zaregistrování vkladu vlastnického práva na katastrálním úřadu# 
+757#přiřazení nově vzniklé holiny k dříve vytvořené holině# 
+##
+#k § 178a - pytláctví#TSK 890
+761#individuální lov s použitím střelné zbraně# 
+762#individuální lov jinými způsoby# 
+763#organizovaná skupina - lov bez použití střelné zbrahě# 
+764#organizovaná skupina - lov s použitím střelné zbrahě# 
+##
+#k § 250a - pojišťovací podvod#TSK 880
+771#uvedení v omyl nebo využití omylu u důchodového pojištění# 
+772#uvedení v omyl nebo využití omylu u úrazového pojištění# 
+773#uvedení v omyl nebo využití omylu u pojištění léčebných výloh# 
+774#uvedení v omyl nebo využití omylu u pojištění příjmů v době pracovní neschopnosti# 
+775#uvedení v omyl nebo využití omylu u pojištění vážných chorob# 
+776#uvedení v omyl nebo využití omylu u pojištění domácnosti, včetně rekreačních zařízení# 
+777#uvedení v omyl nebo využití omylu u pojištění staveb# 
+778#uvedení v omyl nebo využití omylu u cestovního pojištění# 
+779#uvedení v omyl nebo využití omylu u havarijního pojištění motorových vozidel - údajná krádež vozidla# 
+780#uvedení v omyl nebo využití omylu u havarijního pojištění motorových vozidel - údajné poškození vozidla při dopravní nehodě nebo živelných událostech# 
+781#uvedení v omyl nebo využití omylu u pojištění odpovědnosti za škodu způsobenou provozem motorových vozidel# 
+782#uvedení v omyl nebo využití omylu u pojištění odpovědnosti za škodu způsobenou při výkonu povolání# 
+783#uvedení v omyl nebo využití omylu u pojištění odpovědnosti za škodu jinou než uvedenou v kódu 781, 782# 
+784#uvedení v omyl nebo využití omylu u pojištění podnikatelů a průmyslu# 
+##
+#k § 250b - úvěrový podvod#TSK 881
+791#předložení padělaných osobních dokladů# 
+792#uvedení zkreslených nebo nepravdivých údajů o výši příjmu, zaměstnání apod.# 
+793#použití úvěru, subvence nebo dotace na jiný než určený účel# 

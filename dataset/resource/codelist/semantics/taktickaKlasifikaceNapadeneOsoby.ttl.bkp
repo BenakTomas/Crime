@@ -1,0 +1,588 @@
+# Standardní prefixy
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix interval: <http://reference.data.gov.uk/def/intervals/> .
+@prefix sdmx:    <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+# Vlastní prefixy
+@prefix crimestatistics-code-slash: <http://linked.opendata.cz/ontology/crimestatistics/code/> .
+@prefix crimestatistics-code-codelist-slash: <http://linked.opendata.cz/ontology/crimestatistics/code/taktickaKlasifikaceNapadeneOsoby/> .
+@prefix crimestatistics-code-codelist-class: <http://linked.opendata.cz/ontology/crimestatistics/code/taktickaKlasifikaceNapadeneOsoby/class#> .
+@prefix crimestatistics-code-codelist-property: <http://linked.opendata.cz/ontology/crimestatistics/code/taktickaKlasifikaceNapadeneOsoby/property#> .
+
+@prefix crimestatistics-code-codelist-hash: <http://linked.opendata.cz/ontology/crimestatistics/code/taktickaKlasifikaceNapadeneOsoby#> .
+
+# Definice schematu konceptů
+<http://linked.opendata.cz/ontology/crimestatistics/code/taktickaKlasifikaceNapadeneOsoby> a skos:ConceptScheme ;
+	skos:prefLabel
+		"Taktická klasifikace napadené osoby - schéma"@cs,
+		"Tactical classification of the victims of crime - schema"@en ;
+	skos:note
+		"Definuje taktickou klasifikaci napadené osoby, tedy klasifikaci složenou z mnoha různých hledisek zajímavých pro PČR."@cs,
+		"Defines the tactical classification of a person who became a victim of a crime."@en ;
+	
+	rdfs:label
+		"Taktická klasifikace napadené osoby - schéma"@cs,
+		"Tactical classification of the victims of crime - schema"@en ;
+	rdfs:comment
+		"Definuje taktickou klasifikaci napadené osoby, tedy klasifikaci složenou z mnoha různých hledisek zajímavých pro PČR."@cs,
+		"Defines the tactical classification of a person who became a victim of a crime."@en ;
+	rdfs:seeAlso <http://linked.opendata.cz/ontology/crimestatistics/code/taktickaKlasifikaceNapadeneOsoby/conceptClass> ;
+	.
+
+# Definice zapouzdřující třídy
+<http://linked.opendata.cz/ontology/crimestatistics/code/taktickaKlasifikaceNapadeneOsoby/conceptClass> a rdf:Class ;
+	rdfs:label
+		"Taktická klasifikace napadené osoby - zapouzdřující třída"@cs ;
+		"Tactical classification of the victims of crime - encapsulating class"@en ;
+	rdfs:comment
+		"Definuje taktickou klasifikaci napadené osoby, tedy klasifikaci složenou z mnoha různých hledisek zajímavých pro PČR."@cs,
+		"Defines the tactical classification of a person who became a victim of a crime."@en ;
+	rdfs:subClassOf skos:Concept ;
+	rdfs:seeAlso <http://linked.opendata.cz/ontology/crimestatistics/code/taktickaKlasifikaceNapadeneOsoby> ;
+	.
+
+# Definice sémantiky
+####################################
+crimestatistics-code-codelist-hash:nedospeleOsoby a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		"nedospělé osoby"@cs,
+		"juveniles"@en ;
+	skos:inScheme crimestatistics-code-slash:taktickaKlasifikaceNapadeneOsoby ;
+	skos:notation "" ;
+	skos:scopeNote
+		"Nedospělé osoby - osoby do 18 let."@cs,
+		"Represents the victims of crime who are not adults yet."@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:osobaMajiciVztahKCestovani a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:taktickaKlasifikaceNapadeneOsoby ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:osobaSeSnizenouSchopnostiObrany a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:taktickaKlasifikaceNapadeneOsoby ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:osobaZajimavaZeSexualnihoHlediska a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:taktickaKlasifikaceNapadeneOsoby ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:osobaVykonavajiciPriNapadeniCinnost a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:taktickaKlasifikaceNapadeneOsoby ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:jinaOsoby a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:taktickaKlasifikaceNapadeneOsoby ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:osobaPodVlivem a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:taktickaKlasifikaceNapadeneOsoby ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:osobaPodVlivemAlkoholu a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:taktickaKlasifikaceNapadeneOsoby ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:osobaPodJinymVlivemNezAlkohol a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:taktickaKlasifikaceNapadeneOsoby ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:ridic a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:taktickaKlasifikaceNapadeneOsoby ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:ridicNakladnihoVozidla a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:taktickaKlasifikaceNapadeneOsoby ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:osobaVMHD a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:taktickaKlasifikaceNapadeneOsoby ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:prostituujiciSeOsoba a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:taktickaKlasifikaceNapadeneOsoby ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:prostitut a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:taktickaKlasifikaceNapadeneOsoby ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:prostitutka a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:taktickaKlasifikaceNapadeneOsoby ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:komercneSexualneZneuzivaneDite a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:taktickaKlasifikaceNapadeneOsoby ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+
+
+####################################
+crimestatistics-code-codelist-hash:komercneSexualneZneuzivaneDiteKProstituci a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:taktickaKlasifikaceNapadeneOsoby ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:rekreujiciSeOsoba a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:taktickaKlasifikaceNapadeneOsoby ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:osobaNaShromazdeniViceLidi a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:taktickaKlasifikaceNapadeneOsoby ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:osobaSVyznamnymFinancnimObnosem a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:taktickaKlasifikaceNapadeneOsoby ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:cizinec a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:taktickaKlasifikaceNapadeneOsoby ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:cizinecPobyvajiciVCR a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:taktickaKlasifikaceNapadeneOsoby ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:cizinecLegalnePobyvajiciVCR a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:taktickaKlasifikaceNapadeneOsoby ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:cizinecNelegalnePobyvajiciVCR a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:taktickaKlasifikaceNapadeneOsoby ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+
+
+####################################
+crimestatistics-code-codelist-hash:cizinecDlouhodobePobyvajiciVCR a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:taktickaKlasifikaceNapadeneOsoby ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:cizinecKratkodobePobyvajiciVCR a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:taktickaKlasifikaceNapadeneOsoby ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:tyranaOsoba a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:taktickaKlasifikaceNapadeneOsoby ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:osobaTyranaBezeSvedku a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:taktickaKlasifikaceNapadeneOsoby ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:osobaTyranaPredSvedky a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:taktickaKlasifikaceNapadeneOsoby ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:osobaTyranaPredDitetem a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:taktickaKlasifikaceNapadeneOsoby ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:osobaTyranaPredJinouOsobou a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:taktickaKlasifikaceNapadeneOsoby ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:osobaTyranaVDobeVykazaniZObydli a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:taktickaKlasifikaceNapadeneOsoby ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+####################################
+crimestatistics-code-codelist-hash:osobaTyranaVDobePoUplynutiVykazaniZObydli a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:taktickaKlasifikaceNapadeneOsoby ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+

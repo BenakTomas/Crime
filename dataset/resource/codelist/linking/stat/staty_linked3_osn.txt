@@ -1,0 +1,9 @@
+545|http://dbpedia.org/resource/Guernsey
+549|http://dbpedia.org/resource/Hong_Kong
+562|http://dbpedia.org/resource/Macau
+567|http://dbpedia.org/resource/Mayotte
+572|http://dbpedia.org/resource/Montserrat
+587|http://dbpedia.org/resource/State_of_Palestine
+707|http://dbpedia.org/resource/Svalbard
+711|http://dbpedia.org/resource/Vatican_City
+847|http://dbpedia.org/resource/Isle_of_Man

@@ -1,0 +1,8 @@
+UNION { ?kraj rdf:type cm:Region . ?kraj geonames:officialName ?name . FILTER(REGEX(STR(?name),"Praha")) BIND(crimestatistics-code-codelist-hash:0000 as ?kod) }
+UNION { ?kraj rdf:type cm:Region . ?kraj geonames:officialName ?name . FILTER(REGEX(STR(?name),"Středočeský")) BIND(crimestatistics-code-codelist-hash:0100 as ?kod) }
+UNION { ?kraj rdf:type cm:Region . ?kraj geonames:officialName ?name . FILTER(REGEX(STR(?name),"Jihočeský")) BIND(crimestatistics-code-codelist-hash:0200 as ?kod) }
+UNION { ?kraj rdf:type cm:Region . ?kraj geonames:officialName ?name . FILTER(REGEX(STR(?name),"Západočeský")) BIND(crimestatistics-code-codelist-hash:0300 as ?kod) }
+UNION { ?kraj rdf:type cm:Region . ?kraj geonames:officialName ?name . FILTER(REGEX(STR(?name),"Severočeský")) BIND(crimestatistics-code-codelist-hash:0400 as ?kod) }
+UNION { ?kraj rdf:type cm:Region . ?kraj geonames:officialName ?name . FILTER(REGEX(STR(?name),"Východočeský")) BIND(crimestatistics-code-codelist-hash:0500 as ?kod) }
+UNION { ?kraj rdf:type cm:Region . ?kraj geonames:officialName ?name . FILTER(REGEX(STR(?name),"Jihomoravský")) BIND(crimestatistics-code-codelist-hash:0600 as ?kod) }
+UNION { ?kraj rdf:type cm:Region . ?kraj geonames:officialName ?name . FILTER(REGEX(STR(?name),"Severomoravský")) BIND(crimestatistics-code-codelist-hash:0700 as ?kod) }

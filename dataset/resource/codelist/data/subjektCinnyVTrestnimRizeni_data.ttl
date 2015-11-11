@@ -1,0 +1,326 @@
+# Standardní prefixy
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix interval: <http://reference.data.gov.uk/def/intervals/> .
+@prefix sdmx:    <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+# Vlastní prefixy
+@prefix crimestatistics-code-slash: <http://linked.opendata.cz/ontology/crimestatistics/code/> .
+@prefix crimestatistics-code-codelist-slash: <http://linked.opendata.cz/ontology/crimestatistics/code/subjektCinnyVTrestnimRizeni/> .
+@prefix crimestatistics-code-codelist-class: <http://linked.opendata.cz/ontology/crimestatistics/code/subjektCinnyVTrestnimRizeni/class#> .
+@prefix crimestatistics-code-codelist-property: <http://linked.opendata.cz/ontology/crimestatistics/code/subjektCinnyVTrestnimRizeni/property#> .
+
+@prefix crimestatistics-code-codelist-hash: <http://linked.opendata.cz/ontology/crimestatistics/code/subjektCinnyVTrestnimRizeni#> .
+
+crimestatistics-code-codelist-hash:11 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "operativní orgán OK"@cs ;
+	skos:inScheme crimestatistics-code-slash:subjektCinnyVTrestnimRizeni ;
+	skos:notation "11" ;
+
+	rdfs:label "operativní orgán OK"@cs ;
+	.
+crimestatistics-code-codelist-hash:12 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "operativní orgán HK"@cs ;
+	skos:inScheme crimestatistics-code-slash:subjektCinnyVTrestnimRizeni ;
+	skos:notation "12" ;
+
+	rdfs:label "operativní orgán HK"@cs ;
+	.
+crimestatistics-code-codelist-hash:13 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "operativní prostředky OK"@cs ;
+	skos:inScheme crimestatistics-code-slash:subjektCinnyVTrestnimRizeni ;
+	skos:notation "13" ;
+
+	rdfs:label "operativní prostředky OK"@cs ;
+	.
+crimestatistics-code-codelist-hash:14 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "operativní prostředky HK"@cs ;
+	skos:inScheme crimestatistics-code-slash:subjektCinnyVTrestnimRizeni ;
+	skos:notation "14" ;
+
+	rdfs:label "operativní prostředky HK"@cs ;
+	.
+crimestatistics-code-codelist-hash:15 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "pult centralizované ochrany"@cs ;
+	skos:inScheme crimestatistics-code-slash:subjektCinnyVTrestnimRizeni ;
+	skos:notation "15" ;
+
+	rdfs:label "pult centralizované ochrany"@cs ;
+	.
+crimestatistics-code-codelist-hash:16 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "prostředky nástrahové techniky"@cs ;
+	skos:inScheme crimestatistics-code-slash:subjektCinnyVTrestnimRizeni ;
+	skos:notation "16" ;
+
+	rdfs:label "prostředky nástrahové techniky"@cs ;
+	.
+crimestatistics-code-codelist-hash:17 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "inspekce Policie ČR"@cs ;
+	skos:inScheme crimestatistics-code-slash:subjektCinnyVTrestnimRizeni ;
+	skos:notation "17" ;
+
+	rdfs:label "inspekce Policie ČR"@cs ;
+	.
+crimestatistics-code-codelist-hash:20 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "služba liniové ochrany železnic"@cs ;
+	skos:inScheme crimestatistics-code-slash:subjektCinnyVTrestnimRizeni ;
+	skos:notation "20" ;
+
+	rdfs:label "služba liniové ochrany železnic"@cs ;
+	.
+crimestatistics-code-codelist-hash:21 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "pořádková služba"@cs ;
+	skos:inScheme crimestatistics-code-slash:subjektCinnyVTrestnimRizeni ;
+	skos:notation "21" ;
+
+	rdfs:label "pořádková služba"@cs ;
+	.
+crimestatistics-code-codelist-hash:22 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "dopravní služba"@cs ;
+	skos:inScheme crimestatistics-code-slash:subjektCinnyVTrestnimRizeni ;
+	skos:notation "22" ;
+
+	rdfs:label "dopravní služba"@cs ;
+	.
+crimestatistics-code-codelist-hash:23 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "obecní policie"@cs ;
+	skos:inScheme crimestatistics-code-slash:subjektCinnyVTrestnimRizeni ;
+	skos:notation "23" ;
+
+	rdfs:label "obecní policie"@cs ;
+	.
+crimestatistics-code-codelist-hash:24 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "inspektorát cizinecké policie"@cs ;
+	skos:inScheme crimestatistics-code-slash:subjektCinnyVTrestnimRizeni ;
+	skos:notation "24" ;
+
+	rdfs:label "inspektorát cizinecké policie"@cs ;
+	.
+crimestatistics-code-codelist-hash:25 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "odbor cizinecké policie KŘP"@cs ;
+	skos:inScheme crimestatistics-code-slash:subjektCinnyVTrestnimRizeni ;
+	skos:notation "25" ;
+
+	rdfs:label "odbor cizinecké policie KŘP"@cs ;
+	.
+crimestatistics-code-codelist-hash:26 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "železniční policie"@cs ;
+	skos:inScheme crimestatistics-code-slash:subjektCinnyVTrestnimRizeni ;
+	skos:notation "26" ;
+
+	rdfs:label "železniční policie"@cs ;
+	.
+crimestatistics-code-codelist-hash:27 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "orgán oddělení doprovodu vlaku"@cs ;
+	skos:inScheme crimestatistics-code-slash:subjektCinnyVTrestnimRizeni ;
+	skos:notation "27" ;
+
+	rdfs:label "orgán oddělení doprovodu vlaku"@cs ;
+	.
+crimestatistics-code-codelist-hash:28 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "orgán letecké policie"@cs ;
+	skos:inScheme crimestatistics-code-slash:subjektCinnyVTrestnimRizeni ;
+	skos:notation "28" ;
+
+	rdfs:label "orgán letecké policie"@cs ;
+	.
+crimestatistics-code-codelist-hash:29 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "orgán ochranné služby"@cs ;
+	skos:inScheme crimestatistics-code-slash:subjektCinnyVTrestnimRizeni ;
+	skos:notation "29" ;
+
+	rdfs:label "orgán ochranné služby"@cs ;
+	.
+crimestatistics-code-codelist-hash:30 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "soukromá bezpečnostní služba"@cs ;
+	skos:inScheme crimestatistics-code-slash:subjektCinnyVTrestnimRizeni ;
+	skos:notation "30" ;
+
+	rdfs:label "soukromá bezpečnostní služba"@cs ;
+	.
+crimestatistics-code-codelist-hash:31 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "ostatní služby policie"@cs ;
+	skos:inScheme crimestatistics-code-slash:subjektCinnyVTrestnimRizeni ;
+	skos:notation "31" ;
+
+	rdfs:label "ostatní služby policie"@cs ;
+	.
+crimestatistics-code-codelist-hash:32 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "odbor stížnosti a kontroly Policie ČR"@cs ;
+	skos:inScheme crimestatistics-code-slash:subjektCinnyVTrestnimRizeni ;
+	skos:notation "32" ;
+
+	rdfs:label "odbor stížnosti a kontroly Policie ČR"@cs ;
+	.
+crimestatistics-code-codelist-hash:33 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "útvar odhalování korupce a finanční kriminality SKPV PČR"@cs ;
+	skos:inScheme crimestatistics-code-slash:subjektCinnyVTrestnimRizeni ;
+	skos:notation "33" ;
+
+	rdfs:label "útvar odhalování korupce a finanční kriminality SKPV PČR"@cs ;
+	.
+crimestatistics-code-codelist-hash:34 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "orgán OSČ"@cs ;
+	skos:inScheme crimestatistics-code-slash:subjektCinnyVTrestnimRizeni ;
+	skos:notation "34" ;
+
+	rdfs:label "orgán OSČ"@cs ;
+	.
+crimestatistics-code-codelist-hash:35 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "vojenská policie"@cs ;
+	skos:inScheme crimestatistics-code-slash:subjektCinnyVTrestnimRizeni ;
+	skos:notation "35" ;
+
+	rdfs:label "vojenská policie"@cs ;
+	.
+crimestatistics-code-codelist-hash:36 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "supervize"@cs ;
+	skos:inScheme crimestatistics-code-slash:subjektCinnyVTrestnimRizeni ;
+	skos:notation "36" ;
+
+	rdfs:label "supervize"@cs ;
+	.
+crimestatistics-code-codelist-hash:37 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "státní zástupitelství"@cs ;
+	skos:inScheme crimestatistics-code-slash:subjektCinnyVTrestnimRizeni ;
+	skos:notation "37" ;
+
+	rdfs:label "státní zástupitelství"@cs ;
+	.
+crimestatistics-code-codelist-hash:38 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "soudy"@cs ;
+	skos:inScheme crimestatistics-code-slash:subjektCinnyVTrestnimRizeni ;
+	skos:notation "38" ;
+
+	rdfs:label "soudy"@cs ;
+	.
+crimestatistics-code-codelist-hash:39 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "orgán FIPO"@cs ;
+	skos:inScheme crimestatistics-code-slash:subjektCinnyVTrestnimRizeni ;
+	skos:notation "39" ;
+
+	rdfs:label "orgán FIPO"@cs ;
+	.
+crimestatistics-code-codelist-hash:41 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "vězeňská služba"@cs ;
+	skos:inScheme crimestatistics-code-slash:subjektCinnyVTrestnimRizeni ;
+	skos:notation "41" ;
+
+	rdfs:label "vězeňská služba"@cs ;
+	.
+crimestatistics-code-codelist-hash:43 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "SCP"@cs ;
+	skos:inScheme crimestatistics-code-slash:subjektCinnyVTrestnimRizeni ;
+	skos:notation "43" ;
+
+	rdfs:label "SCP"@cs ;
+	.
+crimestatistics-code-codelist-hash:44 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "oddělení dokumentace OCP KŘP"@cs ;
+	skos:inScheme crimestatistics-code-slash:subjektCinnyVTrestnimRizeni ;
+	skos:notation "44" ;
+
+	rdfs:label "oddělení dokumentace OCP KŘP"@cs ;
+	.
+crimestatistics-code-codelist-hash:45 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "operativní orgán ÚOOZ"@cs ;
+	skos:inScheme crimestatistics-code-slash:subjektCinnyVTrestnimRizeni ;
+	skos:notation "45" ;
+
+	rdfs:label "operativní orgán ÚOOZ"@cs ;
+	.
+crimestatistics-code-codelist-hash:46 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "operativní prostředky ÚOOZ"@cs ;
+	skos:inScheme crimestatistics-code-slash:subjektCinnyVTrestnimRizeni ;
+	skos:notation "46" ;
+
+	rdfs:label "operativní prostředky ÚOOZ"@cs ;
+	.
+crimestatistics-code-codelist-hash:47 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "operativní orgán NPC"@cs ;
+	skos:inScheme crimestatistics-code-slash:subjektCinnyVTrestnimRizeni ;
+	skos:notation "47" ;
+
+	rdfs:label "operativní orgán NPC"@cs ;
+	.
+crimestatistics-code-codelist-hash:51 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "organizace a jiné právnické osoby"@cs ;
+	skos:inScheme crimestatistics-code-slash:subjektCinnyVTrestnimRizeni ;
+	skos:notation "51" ;
+
+	rdfs:label "organizace a jiné právnické osoby"@cs ;
+	.
+crimestatistics-code-codelist-hash:55 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "lékař, zdravotní zařízení"@cs ;
+	skos:inScheme crimestatistics-code-slash:subjektCinnyVTrestnimRizeni ;
+	skos:notation "55" ;
+
+	rdfs:label "lékař, zdravotní zařízení"@cs ;
+	.
+crimestatistics-code-codelist-hash:61 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "kontrolní orgány"@cs ;
+	skos:inScheme crimestatistics-code-slash:subjektCinnyVTrestnimRizeni ;
+	skos:notation "61" ;
+
+	rdfs:label "kontrolní orgány"@cs ;
+	.
+crimestatistics-code-codelist-hash:62 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "finanční orgány"@cs ;
+	skos:inScheme crimestatistics-code-slash:subjektCinnyVTrestnimRizeni ;
+	skos:notation "62" ;
+
+	rdfs:label "finanční orgány"@cs ;
+	.
+crimestatistics-code-codelist-hash:63 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "živnostenské orgány"@cs ;
+	skos:inScheme crimestatistics-code-slash:subjektCinnyVTrestnimRizeni ;
+	skos:notation "63" ;
+
+	rdfs:label "živnostenské orgány"@cs ;
+	.
+crimestatistics-code-codelist-hash:64 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "celní orgány"@cs ;
+	skos:inScheme crimestatistics-code-slash:subjektCinnyVTrestnimRizeni ;
+	skos:notation "64" ;
+
+	rdfs:label "celní orgány"@cs ;
+	.
+crimestatistics-code-codelist-hash:65 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "jiné orgány státní správy"@cs ;
+	skos:inScheme crimestatistics-code-slash:subjektCinnyVTrestnimRizeni ;
+	skos:notation "65" ;
+
+	rdfs:label "jiné orgány státní správy"@cs ;
+	.
+crimestatistics-code-codelist-hash:66 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "FAÚ"@cs ;
+	skos:inScheme crimestatistics-code-slash:subjektCinnyVTrestnimRizeni ;
+	skos:notation "66" ;
+
+	rdfs:label "FAÚ"@cs ;
+	.
+crimestatistics-code-codelist-hash:71 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "oznámení občany"@cs ;
+	skos:inScheme crimestatistics-code-slash:subjektCinnyVTrestnimRizeni ;
+	skos:notation "71" ;
+
+	rdfs:label "oznámení občany"@cs ;
+	.
+crimestatistics-code-codelist-hash:81 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "jiný podnět"@cs ;
+	skos:inScheme crimestatistics-code-slash:subjektCinnyVTrestnimRizeni ;
+	skos:notation "81" ;
+
+	rdfs:label "jiný podnět"@cs ;
+	.

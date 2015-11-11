@@ -1,0 +1,14 @@
+UNION { ?okres rdf:type cm:County . ?okres geonames:officialName ?name . FILTER(REGEX(?name, "Severočeský - neznámý 0490")) BIND("crimestatistics-code-codelist-hash:0490" as ?kod) }
+UNION { ?okres rdf:type cm:County . ?okres geonames:officialName ?name . FILTER(REGEX(?name, "Východočeský - neznámý 0540")) BIND("crimestatistics-code-codelist-hash:0540" as ?kod) }
+UNION { ?okres rdf:type cm:County . ?okres geonames:officialName ?name . FILTER(REGEX(?name, "Východočeský - neznámý 0550")) BIND("crimestatistics-code-codelist-hash:0550" as ?kod) }
+UNION { ?okres rdf:type cm:County . ?okres geonames:officialName ?name . FILTER(REGEX(?name, "Východočeský - neznámý 0590")) BIND("crimestatistics-code-codelist-hash:0590" as ?kod) }
+UNION { ?okres rdf:type cm:County . ?okres geonames:officialName ?name . FILTER(REGEX(?name, "Jihomoravský - neznámý 0640")) BIND("crimestatistics-code-codelist-hash:0640" as ?kod) }
+UNION { ?okres rdf:type cm:County . ?okres geonames:officialName ?name . FILTER(REGEX(?name, "Jihomoravský - neznámý 0690")) BIND("crimestatistics-code-codelist-hash:0690" as ?kod) }
+UNION { ?okres rdf:type cm:County . ?okres geonames:officialName ?name . FILTER(REGEX(?name, "Severomoravský - neznámý 0740")) BIND("crimestatistics-code-codelist-hash:0740" as ?kod) }
+UNION { ?okres rdf:type cm:County . ?okres geonames:officialName ?name . FILTER(REGEX(?name, "Severomoravský - neznámý 0745")) BIND("crimestatistics-code-codelist-hash:0745" as ?kod) }
+UNION { ?okres rdf:type cm:County . ?okres geonames:officialName ?name . FILTER(REGEX(?name, "Severomoravský - neznámý 0747")) BIND("crimestatistics-code-codelist-hash:0747" as ?kod) }
+UNION { ?okres rdf:type cm:County . ?okres geonames:officialName ?name . FILTER(REGEX(?name, "Severomoravský - neznámý 0748")) BIND("crimestatistics-code-codelist-hash:0748" as ?kod) }
+UNION { ?okres rdf:type cm:County . ?okres geonames:officialName ?name . FILTER(REGEX(?name, "Severomoravský - neznámý 0755")) BIND("crimestatistics-code-codelist-hash:0755" as ?kod) }
+UNION { ?okres rdf:type cm:County . ?okres geonames:officialName ?name . FILTER(REGEX(?name, "Severomoravský - neznámý 0790")) BIND("crimestatistics-code-codelist-hash:0790" as ?kod) }
+UNION { ?okres rdf:type cm:County . ?okres geonames:officialName ?name . FILTER(REGEX(?name, "Praha - neznámý 0057")) BIND("crimestatistics-code-codelist-hash:0057" as ?kod) }
+UNION { ?okres rdf:type cm:County . ?okres geonames:officialName ?name . FILTER(REGEX(?name, "Severomoravský - neznámý 0751")) BIND("crimestatistics-code-codelist-hash:0751" as ?kod) }

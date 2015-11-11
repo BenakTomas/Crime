@@ -1,0 +1,254 @@
+﻿601 Afghanistan
+501 Åland Islands
+110 Republic of Albania
+641 People's Democratic Republic of Algeria
+502 American Samoa
+503 U.S. Virgin Islands
+504 Principality of Andorra
+505 Republic of Angola
+506 Anguilla
+507 Antarctica
+508 Antigua and Barbuda
+801 Argentine Republic
+190 Republic of Armenia
+509 Aruba
+471 Australia
+191 Republic of Azerbaijan
+510 Bahamas
+511 Bahraini state
+512 People's Republic of Bangladesh
+513 Barbados
+411 Belgium
+514 Belize
+192 The Republic of Belarus
+515 Republic of Benin
+516 Bermuda
+517 Kingdom of Bhutan
+802 Republic of Bolivia
+311 Bosnia and Herzegovina
+518 Bostwanská Republic
+519 Bouvet Island
+803 Federative Republic of Brazil
+844 British dependent territories
+521 British Indian Ocean Territory
+522 British Virgin Islands
+845 British overseas territory
+523 Brunei Darussalam
+120 The Republic of Bulgaria
+524 Burkina Faso
+643 Republic of Burundi
+526 Cook Islands
+644 Republic of Chad
+312 Montenegro
+010 Czech Republic
+320 People's Republic of
+412 Denmark
+528 Dominika
+805 Dominican Republic
+529 Republic of Djibouti
+673 Arab Republic of Egypt
+806 Republic of Ecuador
+530 Eritrea
+193 Republic of Estonia
+646 Federal Democratic Republic of Ethiopia
+532 European Union
+531 European Free Trade Association (EFTA )
+533 Faroe Islands
+534 Falkland Islands (Malvinas )
+535 Fiji
+604 Republic of the Philippines
+413 Republic of Finland
+537 French Guyana
+539 French Polynesia
+414 The French Republic
+538 Fransouzská Southern Territories
+647 Republic of Gabon
+648 Republic of The Gambia
+649 Republic of Ghana
+841 Gibraltar
+541 Grenada
+542 Greenland
+194 Georgia
+543 Guadeloupe
+544 Guam
+807 Republic of Guatemala
+545 Guernsey (United Kingdom - UK)
+546 Guinea - Bissau
+651 Republic of Guinea
+547 The Republic of Guyana
+808 Republic of Haiti
+548 Heard Island and McDonald Islands
+809 Republic of Honduras
+549 Hong Kong
+811 The Republic of Chile
+313 The Republic of Croatia
+605 Republic of India
+606 Republic of Indonesia
+607 Iraq
+608 Iran
+416 Ireland
+417 The Republic of Iceland
+418 Italian Republic
+609 State of Israel
+812 Jamaica
+441 Japan
+611 Republic of Yemen
+551 Jersey (United Kingdom - UK)
+451 South Africa ( South Africa )
+550 South Georgia and the South Sandwich Islands
+614 Jordan
+310 Yugoslavia
+553 Cayman Islands
+615 Kingdom of Cambodia
+653 Republic of Cameroon
+461 Canada
+554 Cape Verde
+555 Qatar
+195 Kazakhstan
+654 Republic of Kenya
+556 Kiribati
+557 Cocos Islands
+813 Republic of Colombia
+558 Chamber
+655 Congo
+656 Democratic Republic of Congo
+330 Democratic People's Republic of Korea ( DPRK )
+612 Republic of Korea
+846 Kosovo
+814 Republic of Costa Rica
+350 The Republic of Cuba
+616 State of Kuwait
+617 The Republic of Cyprus
+196 Kyrgyzstan
+618 Lao People's Democratic Republic
+560 Kingdom of Lesotho
+619 Lebanese Republic
+657 Republic of Liberia
+658 Socialist People's Libyan Arab Jamahiriya
+561 principality of Liechtenstein
+197 The Republic of Lithuania
+198 Republic of Latvia
+419 Grand Duchy of Luxembourg
+562 Macao
+661 Republic of Madagascar
+130 The Republic of Hungary
+314 Macedonia
+621 Malaysia
+659 Republic of Malawi
+622 The Republic of Maldives
+563 Mali
+842 Malta
+663 The Kingdom of Morocco
+564 Marshall Islands
+565 Martinique
+566 The Republic of Mauritius
+664 Mauritania
+567 Mayotte
+568 U.S. Minor Outlying Islands
+815 Mexico
+570 Micronesia
+199 Republic of Moldova
+571 The Principality of Monaco
+180 Mongolia
+572 Montserrat
+573 Republic of Mozambique
+574 Union of Myanmar
+575 Republic of Namibia
+576 Nauruská Republic
+420 Germany
+577 Kingdom of Nepal
+998 identified
+666 Federal Republic of Nigeria
+665 Republic of Niger
+816 Republic of Nicaragua
+579 Niue
+580 Netherlands Antilles
+422 The Netherlands
+581 Norfolk
+423 Norway
+582 New Caledonia
+472 New Zealand
+583 Oman
+997 Other
+847 Isle of Man
+624 Islamic Republic of Pakistan
+586 Palau
+587 Palestine
+817 Republic of Panama
+589 Papua New Guinea
+818 The Republic of Paraguay
+819 Republic of Peru
+590 Pitcairn
+667 Ivory Coast
+150 Republic of Poland
+591 Puerto Rico
+424 The Portuguese Republic
+425 The Republic of Austria
+592 Reunion
+593 Equatorial Guinea
+160 Romania
+101 Russia
+669 Republic of Rwanda
+730 Order of the Knights of Malta
+426 The Hellenic Republic
+595 Saint Pierre and Miguelon
+821 Republic of El Salvador
+596 Samoa
+597 San Marino
+625 Saudi Arabia
+671 Republic of Senegal
+598 Northern Mariana Islands
+599 Republic of Seychelles
+672 Sierra Leone
+626 Republic of Singapore
+050 Slovak Republic
+315 Republic of Slovenia
+674 Somali Democratic Republic
+701 United Arab Emirates
+462 United States of America - USA
+316 Serbia
+603 Democratic Socialist Republic
+675 Central African Republic
+704 Central European Free Trade Agreement
+676 Republic of Sudan
+705 Republic of Suriname
+707 Svalbard and Jan Mayen
+708 St. Helena
+709 St. Lucie
+710 Saint Kryštov and Nevis
+711 Holy See (Vatican City State)
+712 São Tomé and Príncipe
+706 Saint Vincent and the Grenadines
+713 Kingdom of Swaziland
+627 Syria
+714 Solomon Islands
+427 The Kingdom of Spain
+428 The Kingdom of Sweden
+429 Swiss Confederation
+102 Tajikistan
+677 Tanzania
+628 The Kingdom of Thailand
+715 Taiwan , Province of China
+678 Togo
+717 Tokelau
+718 Tonga
+822 Trinidad and Tobago
+679 Republic of Tunisia
+629 Republic of Turkey
+103 Turkmenistan
+719 Turks and Caicos
+720 Tuvalu
+681 Republic of Uganda
+104 Ukraine
+823 Eastern Republic of Uruguay
+105 Uzbekistan
+721 Christmas Island
+722 Republic of Vanuatu
+431 United Kingdom
+824 Republic of Venezuela
+340 Socialist Republic of Vietnam
+723 East Timor
+725 Wallis and Futuna
+682 Republic of Zambia
+727 Western Sahara
+729 Republic of Zimbabwe

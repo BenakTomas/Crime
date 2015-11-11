@@ -1,0 +1,30 @@
+select
+  distinct ?nazevObce
+where
+{
+  ?crimeDataset a void:Dataset ;
+    dct:subject <http://dbpedia.org/resource/Crime> ;
+    void:sparqlEndpoint ?crimeSparqlEndpoint .
+    
+  SERVICE ?crimeSparqlEndpoint {
+    GRAPH ?crimeDataset {
+    ?utvar a crime:Utvar ;
+      crime:id ?utvarId;
+      crime:validFrom ?validFrom ;
+      crime:validTo ?validTo .
+    FILTER(?utvarId = ?parIdUtvaru_ValuePlaceholder && ?validFrom <= "2008-01-01"^^xsd:dateTime && "2008-01-01"^^xsd:dateTime <= ?validTo) .
+  
+    ?utvar  crime:pokrytaObec ?obec .}
+  }
+  
+  ?ruianDs a void:Dataset ;
+    dct:subject <http://dbpedia.org/resource/Ruian> ;
+    void:sparqlEndpoint ?ruianSparqlEndpoint .
+    
+  SERVICE ?ruianSparqlEndpoint {
+    GRAPH ?ruianDs {
+      ?obec a ruian:Obec ;
+        s:name ?nazevObce .
+    }
+  }
+}                                     

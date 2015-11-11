@@ -1,0 +1,206 @@
+benak.tomas.crimemonitor.R$attr: int solved_color
+benak.tomas.crimemonitor.R$attr: int trend_color
+benak.tomas.crimemonitor.R$attr: int unsolved_color
+benak.tomas.crimemonitor.R$color: int app_background_color
+benak.tomas.crimemonitor.R$color: int crime_summary_toplist_row_selected_background_color
+benak.tomas.crimemonitor.R$color: int crime_utvar_detail_obce_list_row_even_row_background_color
+benak.tomas.crimemonitor.R$color: int special_color
+benak.tomas.crimemonitor.R$dimen: int basic_crime_info_group_margin
+benak.tomas.crimemonitor.R$dimen: int basic_crime_info_measure_view_min_height
+benak.tomas.crimemonitor.R$dimen: int basic_crime_info_measure_view_min_width
+benak.tomas.crimemonitor.R$dimen: int content_text_size
+benak.tomas.crimemonitor.R$dimen: int covered_municipalities_label_text_size
+benak.tomas.crimemonitor.R$dimen: int crime_measure_caption_margin_bottom
+benak.tomas.crimemonitor.R$dimen: int crime_measure_caption_text_size
+benak.tomas.crimemonitor.R$dimen: int crime_overview_toplist_margin_bottom
+benak.tomas.crimemonitor.R$dimen: int crime_overview_toplist_margin_left
+benak.tomas.crimemonitor.R$dimen: int crime_piechart_margin_bottom
+benak.tomas.crimemonitor.R$dimen: int crime_piechart_margin_right
+benak.tomas.crimemonitor.R$dimen: int crime_piechart_min_height
+benak.tomas.crimemonitor.R$dimen: int crime_piechart_min_width
+benak.tomas.crimemonitor.R$dimen: int index_line_width
+benak.tomas.crimemonitor.R$dimen: int left_activity_content_container_margin_left_right
+benak.tomas.crimemonitor.R$dimen: int left_activity_content_container_margin_top_bottom
+benak.tomas.crimemonitor.R$dimen: int lower_activity_content_container_margin_left_right
+benak.tomas.crimemonitor.R$dimen: int lower_activity_content_container_margin_top_bottom
+benak.tomas.crimemonitor.R$dimen: int right_activity_content_container_margin_left_right
+benak.tomas.crimemonitor.R$dimen: int right_activity_content_container_margin_top_bottom
+benak.tomas.crimemonitor.R$dimen: int trend_line_width
+benak.tomas.crimemonitor.R$dimen: int upper_activity_content_container_margin_left_right
+benak.tomas.crimemonitor.R$dimen: int upper_activity_content_container_margin_top_bottom
+benak.tomas.crimemonitor.R$drawable: int crime_toplist_button_color_state_list
+benak.tomas.crimemonitor.R$drawable: int ic_action_refresh
+benak.tomas.crimemonitor.R$drawable: int ic_launcher
+benak.tomas.crimemonitor.R$id: int basic_crime_info_fragment
+benak.tomas.crimemonitor.R$id: int crime_action_detail
+benak.tomas.crimemonitor.R$id: int crime_action_list
+benak.tomas.crimemonitor.R$id: int crime_action_refresh
+benak.tomas.crimemonitor.R$id: int crime_action_select_interval
+benak.tomas.crimemonitor.R$id: int crime_action_summary
+benak.tomas.crimemonitor.R$id: int crime_action_utvar_detail
+benak.tomas.crimemonitor.R$id: int crime_data_loading_error_view
+benak.tomas.crimemonitor.R$id: int crime_list_listview
+benak.tomas.crimemonitor.R$id: int crime_list_row_crime_name
+benak.tomas.crimemonitor.R$id: int crime_list_row_crime_number
+benak.tomas.crimemonitor.R$id: int crime_list_row_crime_rank
+benak.tomas.crimemonitor.R$id: int crime_month_histogram_bar_chart
+benak.tomas.crimemonitor.R$id: int crime_month_histogram_fragment
+benak.tomas.crimemonitor.R$id: int crime_month_histogram_label
+benak.tomas.crimemonitor.R$id: int crime_no_data_found_view
+benak.tomas.crimemonitor.R$id: int crime_overview_fragment
+benak.tomas.crimemonitor.R$id: int crime_overview_piechart
+benak.tomas.crimemonitor.R$id: int crime_overview_piechart_label
+benak.tomas.crimemonitor.R$id: int crime_overview_show_crime_list_button
+benak.tomas.crimemonitor.R$id: int crime_overview_toplist
+benak.tomas.crimemonitor.R$id: int crime_overview_toplist_label
+benak.tomas.crimemonitor.R$id: int crime_progress_bar
+benak.tomas.crimemonitor.R$id: int crime_summary_main_layout
+benak.tomas.crimemonitor.R$id: int crime_summary_toplist_row_color
+benak.tomas.crimemonitor.R$id: int crime_summary_toplist_row_crime_name
+benak.tomas.crimemonitor.R$id: int crime_summary_toplist_row_crime_number
+benak.tomas.crimemonitor.R$id: int crime_utvar_detail_list_row_nazev_obce
+benak.tomas.crimemonitor.R$id: int crime_utvar_detail_nazvy_obci
+benak.tomas.crimemonitor.R$id: int crime_utvar_detail_nazvy_obci_label
+benak.tomas.crimemonitor.R$id: int index
+benak.tomas.crimemonitor.R$id: int index_group
+benak.tomas.crimemonitor.R$id: int index_label
+benak.tomas.crimemonitor.R$id: int objasnenost
+benak.tomas.crimemonitor.R$id: int objasnenost_group
+benak.tomas.crimemonitor.R$id: int objasnenost_label
+benak.tomas.crimemonitor.R$id: int select_date_interval_startDate
+benak.tomas.crimemonitor.R$id: int select_date_interval_startDate_title
+benak.tomas.crimemonitor.R$id: int trend
+benak.tomas.crimemonitor.R$id: int trend_group
+benak.tomas.crimemonitor.R$id: int trend_label
+benak.tomas.crimemonitor.R$layout: int activity_crime_detail
+benak.tomas.crimemonitor.R$layout: int activity_crime_summary_final
+benak.tomas.crimemonitor.R$layout: int activity_crimes_list
+benak.tomas.crimemonitor.R$layout: int activity_utvar_detail
+benak.tomas.crimemonitor.R$layout: int basic_crime_info_fragment_layout
+benak.tomas.crimemonitor.R$layout: int crime_list_row
+benak.tomas.crimemonitor.R$layout: int crime_month_histogram_fragment
+benak.tomas.crimemonitor.R$layout: int crime_overview_fragment
+benak.tomas.crimemonitor.R$layout: int crime_summary_toplist_row
+benak.tomas.crimemonitor.R$layout: int crime_utvar_detail_obce_list_row
+benak.tomas.crimemonitor.R$layout: int select_date_interval_dialog
+benak.tomas.crimemonitor.R$menu: int crime_detail_actionbar_actions
+benak.tomas.crimemonitor.R$menu: int crime_list_actionbar_actions
+benak.tomas.crimemonitor.R$menu: int crime_summary_actionbar_actions
+benak.tomas.crimemonitor.R$menu: int crime_utvar_detail_action_bar_actions
+benak.tomas.crimemonitor.R$string: int app_name
+benak.tomas.crimemonitor.R$string: int crime_action_list_label
+benak.tomas.crimemonitor.R$string: int crime_action_reload_label
+benak.tomas.crimemonitor.R$string: int crime_action_select_interval_label
+benak.tomas.crimemonitor.R$string: int crime_action_summary_label
+benak.tomas.crimemonitor.R$string: int crime_action_utvar_detail_label
+benak.tomas.crimemonitor.R$string: int crime_data_loading_cancel_pending
+benak.tomas.crimemonitor.R$string: int crime_data_loading_cancelled
+benak.tomas.crimemonitor.R$string: int crime_data_loading_error_text
+benak.tomas.crimemonitor.R$string: int crime_data_loading_error_view_text
+benak.tomas.crimemonitor.R$string: int crime_index_nan_text
+benak.tomas.crimemonitor.R$string: int crime_list_data_loading_error
+benak.tomas.crimemonitor.R$string: int crime_list_no_data_found_text
+benak.tomas.crimemonitor.R$string: int crime_month_histogram_label
+benak.tomas.crimemonitor.R$string: int crime_summary_activity_label
+benak.tomas.crimemonitor.R$string: int crime_summary_crime_overview_label
+benak.tomas.crimemonitor.R$string: int crime_summary_enable_gps_and_wifi_prompt_string
+benak.tomas.crimemonitor.R$string: int crime_summary_index_label
+benak.tomas.crimemonitor.R$string: int crime_summary_objasnenost_label
+benak.tomas.crimemonitor.R$string: int crime_summary_toplist_label
+benak.tomas.crimemonitor.R$string: int crime_summary_toplist_other_item_label
+benak.tomas.crimemonitor.R$string: int crime_summary_trend_label
+benak.tomas.crimemonitor.R$string: int crime_toplist_toplist_button_label
+benak.tomas.crimemonitor.R$string: int crime_utvar_detail_action_bar_custom_subtitle
+benak.tomas.crimemonitor.R$string: int data_loading_alert_dialog_error_title
+benak.tomas.crimemonitor.R$string: int data_loading_error_other
+benak.tomas.crimemonitor.R$string: int data_loading_error_timeout
+benak.tomas.crimemonitor.R$string: int display_crime_detail_set_interval
+benak.tomas.crimemonitor.R$string: int kod_utvaru_loading_cancelled_text
+benak.tomas.crimemonitor.R$string: int kod_utvaru_loading_error_text
+benak.tomas.crimemonitor.R$string: int launcher_label
+benak.tomas.crimemonitor.R$string: int nazvy_obci_label
+benak.tomas.crimemonitor.R$string: int no_department_loaded
+benak.tomas.crimemonitor.R$string: int select_date_interval_startDate_title
+benak.tomas.crimemonitor.R$string: int title_activity_crimes_list
+benak.tomas.crimemonitor.R$string: int title_activity_display_crime_detail
+benak.tomas.crimemonitor.R$string: int title_activity_utvar_detail
+benak.tomas.crimemonitor.R$style: int AppBaseTheme
+benak.tomas.crimemonitor.R$style: int AppTheme
+benak.tomas.crimemonitor.R$style: int activity_content
+benak.tomas.crimemonitor.R$style: int activity_nonstandard_content_placeholder_view
+benak.tomas.crimemonitor.R$style: int activity_progress_bar
+benak.tomas.crimemonitor.R$style: int basic_crime_info_measure_view
+benak.tomas.crimemonitor.R$style: int contentText
+benak.tomas.crimemonitor.R$style: int covered_municipalities_label
+benak.tomas.crimemonitor.R$style: int crime_data_loading_error_view
+benak.tomas.crimemonitor.R$style: int crime_index_caption
+benak.tomas.crimemonitor.R$style: int crime_measure_caption
+benak.tomas.crimemonitor.R$style: int crime_month_histogram_caption
+benak.tomas.crimemonitor.R$style: int crime_objasnenost_caption
+benak.tomas.crimemonitor.R$style: int crime_piechart
+benak.tomas.crimemonitor.R$style: int crime_piechart_caption
+benak.tomas.crimemonitor.R$style: int crime_toplist_caption
+benak.tomas.crimemonitor.R$style: int crime_trend_caption
+benak.tomas.crimemonitor.R$style: int left_activity_content_container
+benak.tomas.crimemonitor.R$style: int lower_activity_content_container
+benak.tomas.crimemonitor.R$style: int no_data_found_view
+benak.tomas.crimemonitor.R$style: int objasnenost_style
+benak.tomas.crimemonitor.R$style: int right_activity_content_container
+benak.tomas.crimemonitor.R$style: int upper_activity_content_container
+benak.tomas.crimemonitor.R$styleable: int[] CrimeIndexCompactView
+benak.tomas.crimemonitor.R$styleable: int CrimeIndexCompactView_android_textSize
+benak.tomas.crimemonitor.R$styleable: int[] ObjasnenostView
+benak.tomas.crimemonitor.R$styleable: int ObjasnenostView_android_textSize
+benak.tomas.crimemonitor.R$styleable: int ObjasnenostView_solved_color
+benak.tomas.crimemonitor.R$styleable: int ObjasnenostView_unsolved_color
+benak.tomas.crimemonitor.R$styleable: int[] TrendView
+benak.tomas.crimemonitor.R$styleable: int TrendView_trend_color
+benak.tomas.crimemonitor.client.fragment.ui.BasicCrimeInfoFragment
+benak.tomas.crimemonitor.client.fragment.ui.BasicCrimeInfoFragment: BasicCrimeInfoFragment()
+benak.tomas.crimemonitor.client.activity.CrimeActivityBase
+benak.tomas.crimemonitor.client.activity.CrimeActivityBase: CrimeActivityBase()
+benak.tomas.crimemonitor.client.activity.CrimeDetailActivity
+benak.tomas.crimemonitor.client.activity.CrimeDetailActivity: CrimeDetailActivity()
+benak.tomas.crimemonitor.client.fragment.ui.CrimeMonthHistogramFragment
+benak.tomas.crimemonitor.client.fragment.ui.CrimeMonthHistogramFragment: CrimeMonthHistogramFragment()
+benak.tomas.crimemonitor.client.fragment.ui.CrimeOverviewFragment
+benak.tomas.crimemonitor.client.fragment.ui.CrimeOverviewFragment: CrimeOverviewFragment()
+benak.tomas.crimemonitor.client.activity.CrimeSummaryActivity
+benak.tomas.crimemonitor.client.activity.CrimeSummaryActivity: CrimeSummaryActivity()
+benak.tomas.crimemonitor.client.activity.CrimesListActivity
+benak.tomas.crimemonitor.client.activity.CrimesListActivity: CrimesListActivity()
+benak.tomas.crimemonitor.client.activity.UtvarDetailActivity
+benak.tomas.crimemonitor.client.activity.UtvarDetailActivity: UtvarDetailActivity()
+benak.tomas.crimemonitor.client.view.CrimeIndexCompactView
+benak.tomas.crimemonitor.client.view.CrimeIndexCompactView: CrimeIndexCompactView(android.content.Context,android.util.AttributeSet)
+benak.tomas.crimemonitor.client.view.CrimeIndexCompactView: double getBeta()
+benak.tomas.crimemonitor.client.view.CrimeIndexCompactView: double getTanBeta()
+benak.tomas.crimemonitor.client.view.CrimeIndexCompactView: float getIndex()
+benak.tomas.crimemonitor.client.view.CrimeIndexCompactView: void setIndex(float)
+benak.tomas.crimemonitor.client.view.CrimeIndexCompactView: int getMinimumWidth()
+benak.tomas.crimemonitor.client.view.CrimeIndexCompactView: int getMinimumHeight()
+benak.tomas.crimemonitor.client.view.CrimeIndexCompactView: float getMinimumOuterDiameter()
+benak.tomas.crimemonitor.client.view.CrimeIndexCompactView$DisplayMode: benak.tomas.crimemonitor.client.view.CrimeIndexCompactView$DisplayMode[] values()
+benak.tomas.crimemonitor.client.view.CrimeIndexCompactView$DisplayMode: benak.tomas.crimemonitor.client.view.CrimeIndexCompactView$DisplayMode valueOf(java.lang.String)
+benak.tomas.crimemonitor.client.view.CrimeMonthHistogramObservationView: int getMinimumWidth()
+benak.tomas.crimemonitor.client.view.CrimeMonthHistogramObservationView: int getMinimumHeight()
+benak.tomas.crimemonitor.client.view.CrimesOverviewPieChart
+benak.tomas.crimemonitor.client.view.CrimesOverviewPieChart: CrimesOverviewPieChart(android.content.Context,android.util.AttributeSet)
+benak.tomas.crimemonitor.client.view.CrimesOverviewPieChart: void setCrimeItems(benak.tomas.crimemonitor.client.activity.CrimeToplistItem[])
+benak.tomas.crimemonitor.client.view.ObjasnenostView
+benak.tomas.crimemonitor.client.view.ObjasnenostView: ObjasnenostView(android.content.Context,android.util.AttributeSet)
+benak.tomas.crimemonitor.client.view.ObjasnenostView: void setObjasneno(float)
+benak.tomas.crimemonitor.client.view.ObjasnenostView: float getMinimumInnerDiameter()
+benak.tomas.crimemonitor.client.view.ObjasnenostView: int getMinimumWidth()
+benak.tomas.crimemonitor.client.view.ObjasnenostView: int getMinimumHeight()
+benak.tomas.crimemonitor.client.view.TrendView
+benak.tomas.crimemonitor.client.view.TrendView: TrendView(android.content.Context,android.util.AttributeSet)
+benak.tomas.crimemonitor.client.view.TrendView: void setTrend(benak.tomas.crimemonitor.library.CrimeMeasureTrend)
+benak.tomas.crimemonitor.library.CrimeMeasureTrend: benak.tomas.crimemonitor.library.CrimeMeasureTrend[] values()
+benak.tomas.crimemonitor.library.CrimeMeasureTrend: benak.tomas.crimemonitor.library.CrimeMeasureTrend valueOf(java.lang.String)
+com.google.gson.FieldNamingPolicy: com.google.gson.FieldNamingPolicy[] values()
+com.google.gson.FieldNamingPolicy: com.google.gson.FieldNamingPolicy valueOf(java.lang.String)
+com.google.gson.LongSerializationPolicy: com.google.gson.LongSerializationPolicy[] values()
+com.google.gson.LongSerializationPolicy: com.google.gson.LongSerializationPolicy valueOf(java.lang.String)
+com.google.gson.stream.JsonToken: com.google.gson.stream.JsonToken[] values()
+com.google.gson.stream.JsonToken: com.google.gson.stream.JsonToken valueOf(java.lang.String)

@@ -1,0 +1,22 @@
+1#střelná zbraň krátká# 
+2#střelná zbraň dlouhá# 
+3#střelná zbraň zakázaná#zákeřná, samočinná, vojenská apod.
+4#výbušnina#trhavina, třaskavina, střelný prach, nástražný výbušný systém apod.
+5#chladná zbraň#bodná, sečná, úderná
+6#jiná zbraň#el.paralyzér, plyn, tekutina
+7#zbraň způsobilá pouze k zastrašení, vyhrůžce# 
+8#jako zbraň použit jiný předmět#dopravní prostředek, nůž, sekera, baseballová pálka apod.
+X#střelná zbraň neurčená#
+A#střelná zbraň kategorie  A  nelegálně držená# 
+B#střelná zbraň kategorie  B  nelegálně držená# 
+C#střelná zbraň kategorie  C  nelegálně držená# 
+H#střelná zbraň kategorie  D  nelegálně držená# 
+J#střelná zbraň kategorie  A  legálně držená# 
+K#střelná zbraň kategorie  B  legálně držená# 
+L#střelná zbraň kategorie  C  legálně držená# 
+S#střelná zbraň kategorie  D  legálně držená# 
+X#střelná zbraň neurčena# 
+D#výbušnina nelegálně držená# 
+M#výbušnina legálně držená# 
+W#výbušnina neurčena#
+9#skutek byl již vykázán v předcházejících obdobích#pouze u FZP

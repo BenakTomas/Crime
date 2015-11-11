@@ -1,0 +1,224 @@
+601#výzkumné a vývojové ústavy a pracoviště# 
+602#projekční ústavy a střediska# 
+603#výpočetní a mechanizační střediska# 
+604#vydavatelství a nakladatelství# 
+605#výstavy a veletrhy# 
+606#pokladny prodeje jízdenek, vstupenek a přepravného# 
+607#sběrny sázkových kanceláří# 
+608#inkaso plateb# 
+##
+#Výroba stavebních hmot#
+620#ostatní výrobny stavebních hmot# 
+621#kamenolomy# 
+622#pískovny a štěrkovny# 
+623#cementárny# 
+624#vápenky# 
+625#cihelny# 
+626#panelárny# 
+627#výrobny tvárnic# 
+628#výrobny stavební keramiky# 
+629#azbesto-cementová výroba# 
+##
+#Služby obyvatelstvu#
+640#ostatní služby obyvatelstvu# 
+641#autoopravny# 
+642#opravny elektrospotřebičů# 
+643#zámečnické provozovny# 
+644#truhlářské provozovny# 
+645#čalounické provozovny# 
+646#kamenosochařské provozovny# 
+647#krejčovské provozovny# 
+648#holičské a kadeřnické provozovny# 
+649#čistírny a barvírny# 
+650#prádelny# 
+651#lázně kryté i otevřené# 
+652#fotoslužby# 
+653#pohřební služby# 
+654#zahradnictví a prodej květin# 
+655#taxislužby# 
+656#prodejny a půjčovny videoprogramů# 
+657#provozovny s reprotechnikou# 
+658#půjčovny motorových vozidel#nový kód
+##
+#Výroba potravin#
+661#porážka a zpracování ryb# 
+662#porážka a zpracování králíků a zvěřiny#(pernaté a srstnaté)
+670#ostatní výroba potravin# 
+671#masokombináty# 
+672#jatky normální#(skot, prasata, ovce, kozy, koně)
+673#jatky sanitní# 
+674#bourárny masa# 
+675#výrobny sekaného masného zboží# 
+676#výrobny speciálního masného zboží# 
+677#sklepy masného průmyslu# 
+678#mlýny# 
+679#pekárny pečiva# 
+680#pekárny chleba# 
+681#mlékárny konzumní# 
+682#mlékárny výrobní# 
+683#mlékárny smíšené# 
+684#chov drůbeže# 
+685#porážky drůbeže# 
+686#výroba surového cukru# 
+687#rafinerie cukru# 
+688#odbyt melasy# 
+689#výroba lihu# 
+690#konzervárny# 
+691#stáčírny sudového piva# 
+692#stáčírny láhvového piva# 
+693#sladovny# 
+694#výroba nealkoholických nápojů# 
+695#výroba kosmetických přípravků# 
+696#výroba jedlých tuků# 
+697#výroba mražených krémů# 
+698#výroba mražených potravin# 
+##
+#Zemědělská a lesní výroba#
+710#ostatní zemědělská výroba a objekty# 
+711#rostlinná produkce# 
+712#živočišná produkce# 
+713#výrobny krmiv# 
+714#mísírny krmiv# 
+715#čistící stanice# 
+716#sušárny# 
+717#opravny zemědělských strojů# 
+718#obory a bažantnice# 
+719#vodní toky, rybníky a sádky# 
+721#katastr lesního hospodářství#(i jednotlivé stromy)
+722#katastr obecního hospodářství#(více stromů)
+723#katastr obecního hospodářství#(keře a jednotlivé stromy)
+##
+#Prodejny a provozovny#(státního a družstevního obchodu, podniků, organizací a soukromých osob)
+730#ostatní prodejny a provozovny# 
+731#cestovní kanceláře# 
+732#výrobny lahůdek a polotovarů# 
+733#závody veřejného stravování s obsluhou# 
+734#závody veřejného stravování se samoobsluhou# 
+735#automaty, bufety a podniky veřejného stravování# 
+736#občerstvení v potravinářských a jiných prodejnách# 
+737#pohostinské provozovny# 
+738#kavárny a vinárny# 
+739#veřejné ubytovací podniky hotelové# 
+740#motely, botely# 
+741#autokempinky# 
+742#prodejny - maso a uzeniny# 
+743#prodejny - ryby, drůbež# 
+744#prodejny - lahůdky# 
+745#prodejny - polotovary# 
+746#prodejny - mléko# 
+747#prodejny - pečivo# 
+748#prodejny - cukrárny# 
+749#prodejny - smíšené# 
+750#prodejny - samoobslužné# 
+751#prodejny v objektech podniků#(kantýny, army apod.)
+752#potravinářské prodejny ostatní# 
+753#dozrávárny obchodu ovocem a zeleninou# 
+754#balírny obchodu ovocem a zeleninou# 
+755#prodejny obchodu ovocem a zeleninou# 
+756#ostatní prodejny a provozovny obchodu ovocem a zeleninou# 
+757#prodejny textilu#(metrové zboží)
+758#prodejny oděvů#(konfekce)
+759#ostatní prodejny textilního zboží# 
+760#prodejny obuvi# 
+761#prodejny kožené galanterie# 
+762#prodejny domácích potřeb#(kuchyňské nádobí, železářství apod.)
+763#prodejny drogerie#(barvy, laky, parfumerie apod.)
+764#prodejny drobného zboží#(papír, hračky, sportovní potřeby, zbraně apod.)
+765#ostatní prodejny průmyslového zboží# 
+766#prodejny starožitností# 
+767#prodejny partiového zboží# 
+768#prodejny komisního zboží# 
+769#prodejní střediska obchodních domů# 
+770#tržnice a trhy# 
+771#prodejny zemědělských přebytků# 
+772#prodejny stavebnin# 
+773#prodejny nových motorových vozidel# 
+774#prodejny ojetých motorových vozidel# 
+775#prodejny náhradních dílů na motorová vozidla# 
+776#prodejny s výpočetní technikou# 
+777#prodejny s reprotechnikou# 
+778#prodejny se spojovací technikou#(telefony, faxy, mobily apod.)
+779#herny a herna-bary# 
+780#čerpací stanice pohonných hmot#nový kód
+781#internetové obchody#nový kód
+##
+#Místní průmyslové a drobné provozovny#
+790#ostatní výroba v místním průmyslu# 
+791#stavební výroba a údržba# 
+792#výroba koženého zboží a obuvi# 
+793#výroba gumového zboží a oprava pneumatik# 
+794#strojírenská výroba# 
+795#textilní výroba# 
+##
+#Bytové hospodářství místního hospodářství#
+810#ostatní činnost v bytovém hospodářství# 
+811#správa budov# 
+812#údržbářská střediska PBH a dalších firem zabývajících se touto činností# 
+813#nájemné byty# 
+##
+#Sběrné suroviny#
+820#ostatní činnost v oblasti sběrných surovin# 
+821#sběrné suroviny - sběrači# 
+822#sběrné suroviny - sběrny# 
+823#zpracování surovin# 
+##
+#Zdravotnictví#
+830#ostatní objekty zdravotnictví# 
+831#lékárny obvodní# 
+832#lékárny ústavní# 
+833#zdravotní střediska# 
+834#zdravotní střediska závodní# 
+835#zubní střediska obvodní# 
+836#zubní střediska závodní# 
+837#jesle místní# 
+838#jesle závodní# 
+##
+#Školské objekty#
+850#ostatní školské objekty# 
+851#školní družiny# 
+852#školní statky# 
+##
+#Kultura#
+860#ostatní v oblasti kultury# 
+861#správa nemovitých památek# 
+862#správa movitých památek a starožitností# 
+863#zprostředkování kulturních a uměleckých pořadů# 
+864#prodej a distribuce knih# 
+##
+#Státní správa#
+880#ostatní objekty státní správy# 
+881#obecní úřady# 
+882#okresní úřady# 
+883#proviantní činnost armády# 
+884#intendanční činnost armády# 
+885#technická činnost armády# 
+886#ostatní činnost armády# 
+887#krajské úřady#nový kód
+##
+#Finance#
+900#ostatní objekty v oblasti financí# 
+901#jednatelství spořitelen podniků a organizací# 
+902#jednatelství spořitelen místních# 
+903#jednatelství bank# 
+904#jednatelství pojišťoven# 
+905#likvidace škod v pojišťovnách# 
+906#leasingové společnosti#(Multiservis, GE-Capital leasing apod.)
+##
+#Politické, společenské, zájmové organizace, sdružení a hnutí#
+920#ostatní pol., spol., a zájm. organizace# 
+921#organizace místní# 
+922#organizace závodní# 
+923#organizace okresní# 
+924#organizace krajské# 
+925#organizace ústřední# 
+##
+#Přepravované zásilky#
+941#nákladní přeprava vozová# 
+942#nákladní přeprava kusová# 
+943#nákladní přeprava kontejnerová# 
+944#individuální drobné zásilky# 
+##
+#Fyzické osoby#
+980#fyzická osoba# 
+##
+990#nesledované objekty právnických osob# 

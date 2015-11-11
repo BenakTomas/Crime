@@ -1,0 +1,97 @@
+# Standardni prefixy
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix interval: <http://reference.data.gov.uk/def/intervals/> .
+@prefix sdmx-dimension: <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-concept: <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-measure: <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-attribute: <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+# Preferovany prefix ontologie pro popis zakonu
+@prefix lex: <http://purl.org/lex#> .
+
+# Vlastní prefixy
+@prefix crimestatistics-class: <http://linked.opendata.cz/ontology/crimestatistics/class#> .
+@prefix crimestatistics-property: <http://linked.opendata.cz/ontology/crimestatistics/property#> .
+
+crimestatistics-property:pohlaviNapadeneOsoby a rdf:Property ;
+	rdfs:subPropertyOf sdmx-measure:sex ;
+  rdfs:domain crimestatistics-class:NapadeniOsoby ;
+  rdfs:label "pohlaví napadené osoby"@cs;
+  rdfs:comment "Tato property se používá k záznamu pohlaví osoby napadené trestným èinem."@cs;
+	.
+
+# Odkaz na známého pachatele
+crimestatistics-property:znamyPachatel a rdf:Property ;
+	rdfs:range qb:Observation ;
+	.
+
+# Odkaz na trestný èin
+crimestatistics-property:trestnyCin a rdf:Property ;
+	rdfs:range qb:Observation ;
+	.
+
+
+
+# Odkaz na TSK
+crimestatistics-property:tsk a rdf:Property ;
+	rdfs:label "klasifikace podle TSK"@cs ;
+	rdfs:comment "Odkazována je hodnota èíselníku TSK, která klasifikuje odkazující subjekt."@cs ;
+	rdfs:range <http://linked.opendata.cz/ontology/crimestatistics/class#Tsk> ;
+	rdfs:seeAlso <http://linked.opendata.cz/ontology/crimestatistics/code/tsk> ;
+	.
+
+crimestatistics-property:obec a rdf:Property ;
+  rdfs:label "obec" ;
+  rdfs:comment "Používá se k záznamu odkazu na obec datasetu RUIAN." ;
+  rdfs:range <http://ruian.linked.opendata.cz/ontology/Obec> ;
+  .
+
+crimestatistics-property:pokrytaObec a rdf:Property ;
+  rdfs:label "pokrytá obec" ;
+  rdfs:comment "Používá se k záznamu odkazu na obec datasetu RUIAN, kterou útvar PÈR alespoò zèásti pokrývá svým územím." ;
+  rdfs:subPropertyOf crimestatistics-property:obec ;
+  rdfs:domain <http://linked.opendata.cz/ontology/crimestatistics/class#Utvar> ;
+  .
+
+crimestatistics-property:klasifikujiciTSKFormyHospodarskeTrestneCinnosti a rdf:Property ;
+	rdfs:subPropertyOf crimestatistics-property:tsk ;
+  rdfs:domain <http://linked.opendata.cz/ontology/crimestatistics/class#FormaHospodarskeTrestneCinnosti> ;
+  .
+
+crimestatistics-property:ukonceniNeboPrevzetiVeci a rdf:Property ;
+  rdfs:label ""@cs ;
+  rdfs:subPropertyOf crimestatistics-property:ukonVTrestnimRizeni ;
+  rdfs:domain crimestatistics-class:UkonceniNeboPrevzetiVeci ;
+  rdfs:range crimestatistics-class:ZpusobUkonceniNeboPrevzetiVeci ;
+  .
+
+crimestatistics-property:ukonceniNeboPrevzetiVeci_TrestnyCin a rdf:Property ;
+  rdfs:label ""@cs ;
+  rdfs:subPropertyOf crimestatistics-property:ukonceniNeboPrevzetiVeci ;
+  rdfs:domain crimestatistics-class:UkonceniNeboPrevzetiVeci_TrestnyCin ;
+  rdfs:range crimestatistics-class:ZpusobUkonceniNeboPrevzetiVeci_TrestnyCin ;
+  .
+
+crimestatistics-property:ukonceniNeboPrevzetiVeci_ZnamyPachatel a rdf:Property ;
+  rdfs:label ""@cs ;
+  rdfs:subPropertyOf crimestatistics-property:ukonceniNeboPrevzetiVeci ;
+  rdfs:domain crimestatistics-class:UkonceniNeboPrevzetiVeci_ZnamyPachatel ;
+  rdfs:range crimestatistics-class:ZpusobUkonceniNeboPrevzetiVeci_ZnamyPachatel ;
+  .
+
+crimestatistics-property:datumUkonuVTrestnimRizeni a rdf:Property ;
+  rdfs:label ""@cs ;
+  rdfs:domain crimestatistics-class:ProvedeniUkonuVTrestnimRizeni ;
+  rdfs:range xsd:dateTime ;
+  .
+
+crimestatistics-property:ukonVTrestnimRizeni a rdf:Property ;
+  rdfs:label ""@cs ;
+  rdfs:domain crimestatistics-class:ProvedeniUkonuVTrestnimRizeni ;
+  rdfs:range crimestatistics-class:UkonVTrestnimRizeni ;
+  .  

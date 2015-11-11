@@ -1,0 +1,459 @@
+Kód#Heslo#Poznámka
+##
+#Osobní doklady a předtisky#
+11#občanské průkazy# 
+12#cestovní pasy# 
+13#osobní průkazy a pasy zahraniční# 
+14#formuláře (OP, pasy, různé jiné osobní průkazy)# 
+15#vývozní a dovozní papíry vč.formulářů nevyplněných # 
+16#řidičské průkazy# 
+17#školní vysvědčení včetně vysokoškolských diplomů# 
+18#razítka# 
+19#ostatní - osobní doklady a předtisky# 
+##
+#Platidla#
+20#platební karty# 
+21#peníze# 
+22#vkladní knížky# 
+23#šekové knížky, jednotlivé šeky vč.cestovních# 
+24#valuty a devizy - bankovky# 
+25#valuty a devizy - mince# 
+26#vkladové listy# 
+27#poštovní známky a jiné ceniny (např. kolky)# 
+28#poukázky na pohonné hmoty# 
+29#ostatní - platidla# 
+30#open card, permanentky, ISIC karty apod.# 
+##
+#Cennosti#
+31#zlato nezpracované, slitky, zlomky# 
+32#zlato zpracované a klenoty, šperky# 
+33#ušlechtilé drahé kovy ostatní a výrobky z nich klenoty, drahokamy# 
+34#mince zlaté# 
+35#mince ostatní jednotlivé (numismaticky cenné)# 
+36#vzácné nerosty (přírodní, syntetické kameny)# 
+37#hodinky kapesní, náramkové aj., stolní, nástěnné  (s vyj. starožit. ad. 051)# 
+39#ostatní - cennosti# 
+##
+#Poštovní známky, sbírky všeho druhu, cenné knihy, speciální literatura#
+41#sbírky poštovních známek, nálepek apod.# 
+42#sbírky numismatické# 
+43#cenné knihy, včetně hist. rukopisů# 
+44#speciální literatura (odborná) mimo běžné literatury a knih (kód 171)# 
+49#ostatní - poštovní známky, sbírky všeho druhu, cenné knihy, spec. literatura# 
+##
+#Starožitnosti, umělecké předměty#
+51#starožitnosti, (nábytek apod.)# 
+52#historické zbraně# 
+53#umělecká díla uvnitř (obrazy, sochy, rytiny, plastiky)# 
+54#gobelíny, koberce (s uměleckou a historickou hodnotou)# 
+55#bohoslužebné náčiní a roucha# 
+56#umělecká díla na volném prostranství (obrazy, sochy, rytiny, plastiky)# 
+57#náhrobky a pomníky# 
+58#mosazné a bronzové příslušenství hrobů včetně uren# 
+59#ostatní - starožitnosti, umělecké předměty# 
+##
+#Optika a foto-kino#
+61#fotografické přístroje# 
+62#snímací a promítací kinopřístroje# 
+63#stat. projektory, zvětšovací přístroje, leštičky, sušičky# 
+64#objektivy# 
+65#dalekohledy# 
+66#foto-kino materiál (filmy, papíry, vývojka apod.)# 
+67#expozimetry apod.# 
+68#brýle (dioptrické, sluneční)# 
+69#ostatní (nivelační přístroje)# 
+##
+#Rádio, televize, zvukotechnika#
+70#mobilní telefony# 
+71#rozhlasové přijímače včetně autorádií# 
+72#televizní přijímače# 
+73#gramofony a magnetofony# 
+74#zesilovače, reproduktory, mikrof., sluchátka# 
+75#rádiové a televizní součástky# 
+76#telefon. a radiokom. přístroje, telefaxy# 
+77#videotechnika# 
+78#satelitní antény# 
+79#ostatní - zvukotechnika# 
+##
+#Přístroje do domácnosti a příslušenství#
+81#elektrické spotřebiče lehké (žehličky, mixéry, vysoušeče vlasů, vysavače aj.)# 
+82#elektrické spotřebiče těžké (pračky, odstředivky, chladničky, mrazničky)# 
+83#topná zařízení (kamna, sporáky, vařiče neelektrické)# 
+84#šicí a pletací stroje# 
+85#svítidla, žárovky, výbojky, zářivky# 
+86#kosmetické přístroje (včetně holících strojků)# 
+87#propojovací kabely, nabíječky, dálkové ovladače, apod.# 
+88#kuchyňské přístroje včetně nádobí a příborů# 
+89#ostatní - přístroje do domácnosti a příslušenství# 
+##
+#Kancelářské stroje a potřeby#
+91#psací stroje# 
+92#rozmnožovací a reprod. stroje a přístroje# 
+93#kalkulační počítače, fakturovací stroje# 
+94#příslušenství ke kancelářským strojům# 
+95#zařízení na zpracování informací a příslušenství k nim mimo výpočetní techniku# 
+96#kancelářské potřeby# 
+97#razítka, pečetidla# 
+99#ostatní - kancelářské stroje a potřeby# 
+##
+#Stroje, přístroje a nástroje#
+101#strojové výrobní prostředky v průmyslu a příslušenství# 
+102#zemědělské stroje a příslušenství# 
+103#invalidní vozíky, zdravotnické přístroje, lékařské nástroje a pomůcky# 
+104#měřící přístroje, nářadí a pomůcky# 
+105#nástroje a nářadí (včetně brousicích prostředků)# 
+106#motory a pohonné agregáty ostatní# 
+107#strojní součásti obecného použití (hřídele,ložiska aj.)  # 
+109#ostatní - stroje, přístroje a nástroje# 
+##
+#Zbraně a výbušniny (mimo historických)#
+111#krátké zbraně# 
+112#dlouhé zbraně (kulové i brokové)# 
+113#střelivo# 
+114#výbušniny a pyrotech. výrobky# 
+115#zbraně krátké startovací# 
+116#jateční pistole apod.# 
+119#ostatní - zbraně (mimo historických)# 
+##
+#Motorová vozidla dvoustopá#
+120#automobil převážející finanční hotovost# 
+121#osobní automobily# 
+122#nákladní automobily a autobusy# 
+123#traktory# 
+124#součástky a náhradní díly k dvoustopým mot. vozidlům# 
+125#tažné a stavební stroje spec. vozidla účelová# 
+126#pneumatiky# 
+127#přívěsy a závěsy za vozidla# 
+128#karavany# 
+129#ostatní - motorová vozidla dvoustopá# 
+130#kolejová vozidla (lokomotivy, vagóny, metro, tramvaje)# 
+##
+#Motorová vozidla jednostopá#
+131#motocykly, skútry# 
+132#mopedy# 
+133#tříkolky, čtyřkolky a motocykly s přívěs. vozíkem# 
+134#součástky a náhradní díly, podsestavy k jednostopým mot.vozidlům# 
+135#pneumatiky# 
+139#ostatní - motorová vozidla jednostopá# 
+##
+#Jízdní kola a jejich příslušenství#
+140#jízdní kola a jejich příslušenství# 
+141#ochranné přilby# 
+##
+#Klíče#
+145#klíče od domu, bytu# 
+146#klíče od motorových vozidel# 
+##
+#Další dopravní prostředky#
+148#lodě# 
+##
+#Textil a textilní výrobky#
+151#tkaniny (metráž) včetně tkanin ze syntetických vláken# 
+152#svrchní oblečení (včetně oděvů a pleteného zboží)# 
+153#spodní oblečení a prádlo# 
+154#oděvní doplňky textilní (kravaty, klobouky apod.)# 
+155#lůžkoviny# 
+156#deštníky v zahradních restauracích, zahradní deštníky, stříšky, markýzy# 
+159#ostatní (včetně výrobků provaznických) - textil a textilní výrobky# 
+##
+#Kožedělné výrobky a galanterie#
+161#kožené kabáty a kožené oděvní součástky ostatní# 
+162#kufry, aktovky, kabelky, peněženky, pásky# 
+163#obuv a obuvnický materiál z kůže, plast. hmot, pryže, textilu apod.# 
+164#techn. sedlářské a galanterní výrobky z usní a jiných hmot (řemeny, rukavice, aktovky aj.)# 
+165#kožešnické výrobky# 
+166#koželužské výrobky (usně, odpady)# 
+167#surové kožky a kožešiny (s vyjímkou předmětů s kódem 553)# 
+169#ostatní - kožedělné výrobky a galanterie# 
+##
+#Výrobky kulturní spotřeby#
+171#polygrafické výrobky (knihy, publikace, časopisy, reprodukce, noty aj. )# 
+172#hudební nástroje# 
+173#sportovní potřeby (včetně potřeb pro vodní sporty)# 
+174#gram.desky,nahrané mag.pásky# 
+175#videokazety, DVD a CD# 
+179#ostatní (kopie filmů, hračky, společen.hry, propagační a ozdobný mater. apod.)# 
+##
+#Potraviny a lihoviny#
+181#potraviny# 
+182#mléko a mléčné výrobky (vč. másla)# 
+183#jateční a výsekové maso, masné výrobky, sádlo, slanina a ost. masné výrobky# 
+184#masné konzervy a hotová jídla v konzervách# 
+185#cukrovinářské výrobky, včetně kakaa a čokolády# 
+186#lihoviny,líh rafinovaný (čistý), vína, medoviny # 
+187#pivo# 
+189#ostatní - potraviny a lihoviny# 
+##
+#Tabákové výrobky#
+191#tabákové výrobky# 
+192#tabák# 
+193#kuřácké potřeby (dýmky, špičky, cigaretové papírky)# 
+199#ostatní - tabákové výrobky# 
+##
+#Zvířectvo#
+200#malé domácí zvířectvo (kočky, psi, apod.)# 
+201#velké domácí zvířectvo (hov.dobytek, koně, prasata aj.)# 
+202#drůbež, králíci, holubi# 
+203#kozy a ovce# 
+204#zvířectvo polní a lesní a jejich vývojová stadia (kromě dravců, sov a zvěře spárkaté)# 
+205#ryby a rybí násady# 
+206#exotické zvířectvo (cizokrajné) a jejich vývojová stadia# 
+207#zvířata kožešinová chovná (nutrie, norci, lišky)# 
+208#zvěr spárkatá (tuzemská)# 
+210#dravci a sovy (tuzemské druhy) a jejich vývojová stadia# 
+209#ostatní - zvířectvo včetně včelstva# 
+##
+#Farmaceutické a omamné prostředky#
+#(drogy a prekurzory viz. kódy 360-399, těkavé látky viz. kód 274)#
+211#léky běžné tuzemské# 
+212#léky běžné zahraniční# 
+213#léky návykové (barbituráty,rohypnol, kodein, diazepam apod.)# 
+214#farmaceuticky zpracované omamné prostředky# 
+215#drogy a omamné prostředky dovážené pro farm. zpracování# 
+216#jedy# 
+217#drogy a omamné prostř. dovezené, vyvezené nebo vyrobené bez povolení# 
+218#antibiotika a hormonální biostimulátory určená do krmiv a krmných směsí pro hospodářská zvířata# 
+219#ostatní - farmaceutické a omamné prostředky# 
+##
+#Zásilky a přepravované věci#
+221#zásilky poštovní  peněžní# 
+222#zásilky poštovní  listovní# 
+223#zásilky poštovní  balíkové# 
+224#zásilky vlakové, silniční, letecké a lodní - vozové# 
+225#zásilky vlakové, silniční, letecké a lodní-  kusové# 
+226#zásilky vlakové, silniční, letecké a lodní-  v přepravních skříních (kontejnery)# 
+227#přepravované věci ve vlaku nebo v autobusu (cestovní zavazadla)# 
+228#přepravované věci v letadle, lodi (cestovní zavazadla)# 
+229#ostatní - zásilky a přepravované věci# 
+##
+#Stavební a instalační materiály a dřevařské výrobky#
+230#cihlářské pálené výrobky(cihly, tašky, trubky, apod.), betonové výrobky, nepálené# 
+ #zdící materiály a stavební dílce (tvárnice, překlady aj.), osinkocementové výrobky (krytiny, desky, trubky aj.)# 
+231#cementy, vápno, sádry ostatní maltová pojidla# 
+232#štěrkopísky, kámen, kamenic.výrobky# 
+233#kabely, vodiče, elektroinst. materiál# 
+234#instalační materiál ostatní# 
+235#pilařské výrobky (prkna, hranoly, fošny) včetně dřevotřískových apod. desek# 
+236#stavební truhlářské výrobky (okna, zárubně, dveře,  parkety aj.)# 
+237#nábytek (včetně kovového)# 
+238#podlahové krytiny a izolační materiál (lepenky asfaltové aj.)# 
+239#ostatní - stavební a instalační materiály a dřevařské výrobky# 
+##
+#Sklo, porcelán, keramika#
+241#obalové, osvětlovací a užitkové sklo (láhve, skl. nádobí, vázy apod.)# 
+242#technické, optické a laboratorní sklo# 
+243#užitková keramika, porcelán, hrnčířské výrobky včetně keramických výrobků jako umyvadla aj.# 
+244#výkladní skříně - sklo# 
+245#bižuterie# 
+249#ostatní - sklo, porcelán, keramika# 
+##
+#Paliva, maziva, energie#
+251#paliva tuhá, kapalná a plynná (mimo dřeva)# 
+252#pohonné hmoty# 
+253#mazací tuky, oleje, vazelíny# 
+254#energie tepelná, elektrická aj.# 
+259#ostatní - paliva, maziva, energie# 
+##
+#Hutní materiál#
+261#železný, litinový, ocelový odpad - šrot# 
+262#plechy# 
+263#trubky# 
+264#barevné kovy, výrobky a odpad z nich# 
+265#železné, litinové a ocelové výrobky# 
+266#reklamní tabule - poutače# 
+269#ostatní - hutní materiál# 
+##
+#Chemické výrobky#
+271#nátěrové hmoty, latexy, klihy, lepidla, barviva, glazury, mat. pro povrchovou úpravu# 
+272#umělá hnojiva a přípravky na ochranu rostlin# 
+273#mydlářské, saponátové a kosmetické výrobky# 
+274#chemicky prchavé látky zneužívané jako návykové látky# 
+279#ostatní - chemické výrobky# 
+##
+#Zemědělské výrobky a výrobky těžby dřeva#
+281#obilí a luštěniny# 
+282#okopaniny# 
+283#osivo a sadba# 
+284#ovoce a zelenina# 
+285#výrobky těžby dřeva jen na pile (surové dřevo, výřezy, palivové dřevo)# 
+286#dřevní hmota (lesní porosty)# 
+287#dřevní hmota (ostatní porosty)# 
+288#květiny a okrasné rostliny# 
+289#ostatní - zemědělské výrobky a výrobky těžby dřeva# 
+##
+#Výrobky z plastů, hračkářské výrobky, papírenské výrobky a sběr#
+291#výrobky z plastů# 
+292#hračky# 
+293#dětské kočárky, dětské autosedačky, příruční vozíky# 
+294#papírenské výrobky# 
+295#papírový odpad a sběr# 
+296#ostatní sběrné suroviny nekovové# 
+297#mobilní WC# 
+298#popelnice, odpadní nádoby# 
+##
+#Nemovitosti#
+301#domy činžovní# 
+302#domy rodinné# 
+303#byty# 
+304#chaty# 
+305#garáže# 
+306#ostatní nemovitosti# 
+307#zastávky hromadné dopravy# 
+308#staveniště# 
+309#stavební buňky a maringotky# 
+##
+#Hrací, prodejní a další automaty#
+310#hrací automaty# 
+311#prodejní automaty# 
+312#bankomaty# 
+313#telefonní automaty# 
+##
+#Požární technika#
+315#hasící přístroje# 
+316#hadice a hydranty# 
+##
+#Doklady#
+320#zneužití zcizeného občanského průkazu# 
+321#zneužití zcizeného jiného dokladu (pas, rodný list, řidičský průkaz apod.)# 
+322#pozměňování občanského průkazu k páchání TČ# 
+323#pozměňování jiného dokladu k páchání TČ# 
+##
+#Pornografie#
+330#přechovává pornografii zobrazující děti# 
+331#vyrábí pornografický materiál – fotografuje, filmuje (pracuje s modely z řad dětí do 18 let)# 
+332#vyrábí a šíří  Internetem pornografický materiál – fotografuje, filmuje (pracuje s modely z řad dětí do 18 let)# 
+333#vyrábí a šíří  poštou nebo jinak pornografický materiál – fotografuje, filmuje (pracuje s modely z řad dětí do 18 let)# 
+334#vyrábí  CD, DVD, videokazety s pornografickým  materiálem  např. stahováním z Internetu, kopírováním videokazet a fotografií (pornografie zobrazující děti do 18 let) # 
+335#vyrábí a šíří  Internetem CD, DVD, videokazety s pornografickým  materiálem  např. stahováním z Internetu, kopírováním videokazet a fotografií (pornografie zobrazující děti do 18 let)# 
+336#nevyrábí, ale nabízí a šíří  prostřednictvím Internetu CD, DVD, videokazety s pornografickým materiálem (pornografie zobrazující děti do 18 let)# 
+337#nevyrábí, ale nabízí a šíří poštou nebo jinak CD, DVD, videokazety s pornografickým materiálem (pornografie zobrazující děti do 18 let)# 
+338#organizuje fotografování a filmování pornografie, zajišťuje modely z řad dětí do 18 let # 
+339#materiálně a finančně zajišťuje výrobu pornografického materiálů (pornografie zobrazující děti do 18 let)# 
+##
+#INTERNET, elektronická pošta, SMS atd. a jeho zneužití#
+341#útoky na server(y) např. zahlcení, útok na data serveru, změna funkce, viry apod.# 
+342#útoky na webové stránky (pozměňování, přesměrování apod.)# 
+343#útoky na virtuální obchody (např. zneužití platební karty prostřednictvím# 
+ #INTERNETu apod.)# 
+344#útoky na platební karty (zjišťování čísel, pinů apod.)# 
+345#útoky na osobní údaje (zjišťování, eventuálně šíření apod.)# 
+346#INTERNET - neoprávněné šíření (vyvěšování) v souvislosti s kódy 521-528 (autorský zákon)# 
+347#vyvěšování nebo zasílání souboru, v jehož obsahu lze spatřovat skutkovou podstatu TČ dle § trestního zákona v položce 19 FTČ# 
+##
+#Drogy a prekurzory#
+ #Syntetické drogy:# 
+360#metamfetamin (pervitin)# 
+361#braun# 
+362#amfetamin# 
+363#methadon# 
+364#GHB# 
+365#LSD# 
+366#extáze (MDMA, MDA, PMA, DOB, MDE, MDEA, MBDA atd.)# 
+369#syntetické drogy - ostatní# 
+ #Polosyntetické drogy:# 
+370#opium# 
+371#morfin# 
+372#kokainová pasta# 
+373#kokain# 
+374#heroin# 
+379#polosyntetické drogy - ostatní# 
+ #Přírodní drogy:# 
+380#rostliny konopí# 
+381#maková sláma# 
+382#konopí (marihuana)# 
+383#pryskyřice z konopí (hašiš)# 
+384#hašišový olej# 
+389#přírodní drogy - ostatní# 
+ #Prekursory:# 
+390#efedrin# 
+391#pseudoefedrin# 
+392#kyselina lysergová# 
+393#PMK# 
+394#BMK# 
+399#ostatní prekursory# 
+#Léky návykové viz kód 213#
+##
+#Prostředky výpočetní a komunikační techniky#
+400#počítače sálové (řídící v rámci sítě)# 
+401#počítače (PC a obdobné) samostatné# 
+402#počítače (PC a obdobné) zapojené v síti# 
+403#počítače pro řízení procesorů (zařízení)# 
+404#počítače přenosné (notebook, laptop apod.)# 
+405#počítače ostatní# 
+406#play stationy a jiné herní konzole# 
+407#i-phony, tablety a jiné (chytré) mobilní telefony# 
+408#elektronické čtečky knih# 
+409#elektronické diáře# 
+##
+#Části a příslušenství počítačů#
+410#základní jednotky stolních počítačů s HD včetně zabud. mechanik pro diskety# 
+411#připojitelné pevné disky (externí)# 
+412#připojitelné mechaniky pro diskety# 
+413#připojitelné mechaniky pro CD-ROM nebo DVD# 
+414#připojitelné mechaniky pro magnetopáskové kazety# 
+415#připojitelné mechaniky pro kotoučové mag.pásky# 
+416#připojitelné mechaniky pro disky (výměnné)# 
+417#servery# 
+418#disková pole# 
+419#ostatní mechaniky pro paměťová media# 
+420#zobrazovací zařízení (terminál, monitor)# 
+421#klávesnice, myš apod.# 
+422#tiskárny# 
+423#kreslící zařízení (plotter)# 
+424#zařízení pro snímání obrazu (scanner)# 
+425#zařízení pro čtení plastikových paměťových karet# 
+426#zařízení pro vypalování CD-ROM# 
+429#hardwarové komunikační prostředky# 
+430#modem, fax-modem, síťové karty# 
+431#náplně do tiskáren všeho druhu# 
+435#UPS-nepřerušitelné zdroje el.energie# 
+##
+#Paměťová média výměnná - nosiče informací#
+440#diskety (3,5", 5,25")# 
+441#CD-ROM disky nebo DVD# 
+442#magneto-optické, optické disky# 
+443#magnetické pásky v kazetách (streamerové kazety)# 
+444#magnetické pásky kotoučové (12,7 mm šíře)# 
+445#paměťové karty (PCMCIA)# 
+446#paměťové karty ostatní# 
+447#výměnné disky pro sálové počítače# 
+448#jiná media paměťová# 
+449#flash disky# 
+##
+#Obsah paměťového média#
+450#paměťové medium s programy (bez dat)# 
+451#paměťové medium s programy a daty# 
+452#paměťové medium s daty (bez programů)# 
+453#paměťové medium s databázi# 
+454#softwarový balík (media s programem, dokumentace, příručka, licenční smlouva a další)# 
+455#paměťové medium-multimédium (CD-ROM/DVD-obraz, zvuk, data programy)# 
+456#kazety pro herní konzole (Play Station)# 
+##
+#Údaje v informačních souborech#
+460#získání (kopírování) informace (údaje, soubory)# 
+461#dočasné pozměnění původní informace# 
+462#trvale změněná původní informace# 
+463#dočasné vložení nové informace# 
+464#trvalé vložení nové informace# 
+##
+#Speciální elektronika#
+470#zařízení GPS nebo obdobné zařízení pro určení polohy# 
+471#antiradary# 
+472#fotovoltaické panely (články) včetně nabíjecí elektroniky# 
+473#elektronické cigarety#
+##
+#Platidla - finanční instrumenty#
+480#akcie# 
+481#dluhopisy# 
+482#směnky# 
+483#podílové listy# 
+484#zatímní listy# 
+485#investiční kupóny# 
+486#kupóny (§ 12 ZoCP)# 
+487#náložné listy# 
+488#skladištní listy# 
+489#dokumentární akreditiv# 
+490#dokumentární inkaso# 
+491#hladké platby# 
+492#úvěr# 
+493#pohledávky# 

@@ -1,0 +1,96 @@
+# Standardní prefixy
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix interval: <http://reference.data.gov.uk/def/intervals/> .
+@prefix sdmx:    <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+# Vlastní prefixy
+@prefix crimestatistics-code-slash: <http://linked.opendata.cz/ontology/crimestatistics/code/> .
+@prefix crimestatistics-code-codelist-slash: <http://linked.opendata.cz/ontology/crimestatistics/code/utvar/> .
+@prefix crimestatistics-code-codelist-class: <http://linked.opendata.cz/ontology/crimestatistics/code/utvar/class#> .
+@prefix crimestatistics-code-codelist-property: <http://linked.opendata.cz/ontology/crimestatistics/code/utvar/property#> .
+
+@prefix crimestatistics-code-codelist-hash: <http://linked.opendata.cz/ontology/crimestatistics/code/utvar/2011#> .
+
+# Cizí prefixy
+@prefix cm:        <http://purl.org/czech-municipalities/geography#> .
+@prefix nuts: <http://ec.europa.eu/eurostat/ramon/rdfdata/nuts2008/> .
+
+# Linkování krajských ředitelství na kraje
+# Hlavní město Praha
+crimestatistics-code-codelist-hash:0000
+	crimestatistics-code-codelist-property:prislusnostKeKraji nuts:CZ01 .
+
+# Středočeský kraj
+crimestatistics-code-codelist-hash:0100
+	crimestatistics-code-codelist-property:prislusnostKeKraji nuts:CZ020 .
+
+# Jihočeský kraj
+crimestatistics-code-codelist-hash:0200
+	crimestatistics-code-codelist-property:prislusnostKeKraji nuts:CZ031 .
+
+# Plzeňský
+crimestatistics-code-codelist-hash:0300
+	crimestatistics-code-codelist-property:prislusnostKeKraji nuts:CZ032 ;
+	.
+
+# Ústecký kraj
+crimestatistics-code-codelist-hash:0400
+	crimestatistics-code-codelist-property:prislusnostKeKraji nuts:CZ042 ;
+	.
+
+# Královéhradecký kraj
+crimestatistics-code-codelist-hash:0500
+	crimestatistics-code-codelist-property:prislusnostKeKraji nuts:CZ052 ;
+	.
+
+# Jihomoravský kraj
+crimestatistics-code-codelist-hash:0600
+	crimestatistics-code-codelist-property:prislusnostKeKraji nuts:CZ064 ;
+	.
+
+# Moravskoslezský kraj
+crimestatistics-code-codelist-hash:0700
+	crimestatistics-code-codelist-property:prislusnostKeKraji nuts:CZ080 ;
+	.
+
+# Olomoucký kraj
+crimestatistics-code-codelist-hash:1400
+	crimestatistics-code-codelist-property:prislusnostKeKraji nuts:CZ071 ;
+	.
+
+# Zlínský kraj
+crimestatistics-code-codelist-hash:1500
+	crimestatistics-code-codelist-property:prislusnostKeKraji nuts:CZ072 ;
+	.
+
+# Kraj Vysočina
+crimestatistics-code-codelist-hash:1600
+	crimestatistics-code-codelist-property:prislusnostKeKraji nuts:CZ063 ;
+	.
+
+# Pardubický kraj
+crimestatistics-code-codelist-hash:1700
+	crimestatistics-code-codelist-property:prislusnostKeKraji nuts:CZ053 ;
+	.
+
+# Liberecký kraj
+crimestatistics-code-codelist-hash:1800
+	crimestatistics-code-codelist-property:prislusnostKeKraji nuts:CZ051 ;
+	.
+
+# Karlovarský kraj
+crimestatistics-code-codelist-hash:1900
+	crimestatistics-code-codelist-property:prislusnostKeKraji nuts:CZ041 ;
+	.

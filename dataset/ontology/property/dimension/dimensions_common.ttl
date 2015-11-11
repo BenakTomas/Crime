@@ -1,0 +1,48 @@
+# Standardni prefixy
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix interval: <http://reference.data.gov.uk/def/intervals/> .
+@prefix sdmx-dimension: <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-concept: <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-measure: <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-attribute: <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+# Preferevany prefix ontologie pro popis zakonu
+@prefix lex: <http://purl.org/lex#> .
+
+# Vlastni prefixy
+@prefix crimestatistics-dimension: <http://linked.opendata.cz/ontology/crimestatistics/dataset-definitions/dimension#> .
+
+# Tato dimenzní property slouží k záznamu hodnoty nějaké dimenze pro dané pozorování.
+# Je určena doména takové hodnoty a tato hodnota může být dále kvalifikována dodatečnými metadaty,
+# které rozšiřují informační rozsah této hodnoty (např. specifikací jednotky, charakteru hodnoty atd.).
+
+# Útvar zpracování záznamu
+crimestatistics-dimension:utvarZpracovaniZaznamu a qb:DimensionProperty, qb:CodedProperty, rdf:Property ;
+	rdfs:subPropertyOf sdmx-dimension:refArea ;
+	rdfs:range <http://linked.opendata.cz/ontology/crimestatistics/code/utvar/conceptClass> ;
+	
+	qb:codeList <http://linked.opendata.cz/ontology/crimestatistics/code/utvar> ;
+  
+  rdfs:label "útvar PČR, který zpracoval zdrojový formulář"@cs;
+  rdfs:comment "použito k záznamu odkazu na útvar, který zpracoval zdrojový formulář FTČ nebo FZP"@cs;
+	.
+
+# Rok zpracování záznamu
+crimestatistics-dimension:cisloJednaci a qb:DimensionProperty, rdf:Property ;
+	rdfs:range xsd:string ;
+  rdfs:label "číslo spisu zdrojového formuláře"@cs;
+  rdfs:comment "použito k záznamu čísla spisu, do kterého patří příslušný formulář FTČ nebo FZP"@cs;
+	.
+
+# Rok zpracování záznamu
+crimestatistics-dimension:rokZpracovaniZaznamu a qb:DimensionProperty, rdf:Property ;
+	rdfs:subPropertyOf sdmx-dimension:refPeriod ;
+	rdfs:range xsd:gYear ;
+  rdfs:label "rok záznamu zdrojového formuláře"@cs;
+  rdfs:comment "použito k záznamu čísla roku, kdy byl záznam FTČ nebo FZP pořízen"@cs;
+	.

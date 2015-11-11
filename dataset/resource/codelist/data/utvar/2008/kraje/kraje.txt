@@ -1,0 +1,8 @@
+00#Krajské ředitelství policie hlavního města Prahy
+01#Krajské ředitelství policie Středočeského kraje
+02#Krajské ředitelství policie Jihočeského kraje
+03#Krajské ředitelství policie Západočeského kraje
+04#Krajské ředitelství policie Severočeského kraje
+05#Krajské ředitelství policie Východočeského kraje
+06#Krajské ředitelství policie Jihomoravského kraje
+07#Krajské ředitelství policie Severomoravského kraje

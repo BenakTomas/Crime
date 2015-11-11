@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- <attr name="textSize" format="dimension" /> -->
+    
+    <declare-styleable name="ObjasnenostView">
+       <attr name="android:textSize" />
+       <attr name="solved_color" format="color" />
+       <attr name="unsolved_color" format="color" />
+   </declare-styleable>
+   
+    <declare-styleable name="CrimeIndexCompactView">
+       <attr name="android:textSize" />
+   </declare-styleable>
+   
+    <declare-styleable name="TrendView">
+       <attr name="trend_color" format="color" />
+   </declare-styleable>
+</resources>

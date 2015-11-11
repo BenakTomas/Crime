@@ -1,0 +1,46 @@
+# Standardní prefixy
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix interval: <http://reference.data.gov.uk/def/intervals/> .
+@prefix sdmx:    <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+# Vlastní prefixy
+@prefix crimestatistics-code-slash: <http://linked.opendata.cz/ontology/crimestatistics/code/> .
+@prefix crimestatistics-code-codelist-slash: <http://linked.opendata.cz/ontology/crimestatistics/code/druhExtremistickehoTrestnehoCinu/> .
+@prefix crimestatistics-code-codelist-hash: <http://linked.opendata.cz/ontology/crimestatistics/code/druhExtremistickehoTrestnehoCinu#> .
+@prefix crimestatistics-code-codelist-class: <http://linked.opendata.cz/ontology/crimestatistics/code/druhExtremistickehoTrestnehoCinu/class#> .
+@prefix crimestatistics-code-codelist-property: <http://linked.opendata.cz/ontology/crimestatistics/code/druhExtremistickehoTrestnehoCinu/property#> .
+@prefix crimestatistics-code-codelist-collection: <http://linked.opendata.cz/ontology/crimestatistics/code/druhExtremistickehoTrestnehoCinu/collection#> .
+
+# top-level koncepty
+crimestatistics-code-slash:druhExtremistickehoTrestnehoCinu
+	skos:hasTopConcept
+		crimestatistics-code-codelist-hash:1,
+		crimestatistics-code-codelist-hash:2,
+		crimestatistics-code-codelist-hash:3,
+		crimestatistics-code-codelist-hash:4,
+		crimestatistics-code-codelist-hash:5,
+		crimestatistics-code-codelist-hash:6 ;
+	.
+
+# kolekce konceptů - pomocné tabulky
+crimestatistics-code-codelist-collection:druhyExtremistickychTrestnychCinuPodleDruhuNesnasenlivosti a skos:Collection ;
+	skos:prefLabel "extremistický trestný čin - podle druhu nesnášenlivosti"@cs ;
+	skos:notation "crimestatistics.codelist.druhExtremistickehoTrestnehoCinu.druhyExtremistickychTrestnychCinuPodleDruhuNesnasenlivosti" ;
+	skos:member
+		crimestatistics-code-codelist-hash:1,
+		crimestatistics-code-codelist-hash:2,
+		crimestatistics-code-codelist-hash:3,
+		crimestatistics-code-codelist-hash:6 ;
+	.

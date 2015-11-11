@@ -1,0 +1,14 @@
+00#Krajské øeditelství policie hlavního mìsta Prahy
+01#Krajské øeditelství policie Støedoèeského kraje
+02#Krajské øeditelství policie Jihoèeského kraje
+03#Krajské øeditelství policie Plzeòského kraje
+04#Krajské øeditelství policie Ústeckého kraje
+05#Krajské øeditelství policie Královehradeckého kraje
+06#Krajské øeditelství policie Jihomoravského kraje
+07#Krajské øeditelství policie Moravskoslezského kraje
+14#Krajské øeditelství policie Olomouckého kraje
+15#Krajské øeditelství policie Zlínského kraje
+16#Krajské øeditelství policie kraje Vysoèina
+17#Krajské øeditelství policie Pardubického kraje
+18#Krajské øeditelství policie Libereckého kraje
+19#Krajské øeditelství policie Karlovarského kraje

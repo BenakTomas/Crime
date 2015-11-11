@@ -1,0 +1,5 @@
+BIND(if(( ?validFrom_utvar >= ?parStartDate_ValuePlaceholder ), ?validFrom_utvar, ?parStartDate_ValuePlaceholder) AS ?utvar_min)
+BIND(if(( ?validTo_utvar <= ?parEndDate_ValuePlaceholder ), ?validTo_utvar, ?parEndDate_ValuePlaceholder) AS ?utvar_max)
+BIND(( ?utvar_max - ?utvar_min ) AS ?utvar_intervalLength)
+BIND(( ?parEndDate_ValuePlaceholder - ?parStartDate_ValuePlaceholder ) AS ?intervalLength)
+BIND(( xsd:float(?utvar_intervalLength) / xsd:float(?intervalLength) ) AS ?utvarIntervalRatio)

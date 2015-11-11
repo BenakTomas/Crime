@@ -1,0 +1,1845 @@
+# Standardní prefixy
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix interval: <http://reference.data.gov.uk/def/intervals/> .
+@prefix sdmx:    <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+# Vlastní prefixy
+@prefix crimestatistics-code-slash: <http://linked.opendata.cz/ontology/crimestatistics/code/> .
+@prefix crimestatistics-code-codelist-slash: <http://linked.opendata.cz/ontology/crimestatistics/code/hospodarskaKriminalita_Forma/> .
+@prefix crimestatistics-code-codelist-class: <http://linked.opendata.cz/ontology/crimestatistics/code/hospodarskaKriminalita_Forma/class#> .
+@prefix crimestatistics-code-codelist-property: <http://linked.opendata.cz/ontology/crimestatistics/code/hospodarskaKriminalita_Forma/property#> .
+
+@prefix crimestatistics-code-codelist-hash: <http://linked.opendata.cz/ontology/crimestatistics/code/hospodarskaKriminalita_Forma#> .
+
+crimestatistics-code-codelist-hash:32 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "prodej nebo šíření cizích programů a databází na základě neplatného oprávnění"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "32" ;
+
+	rdfs:label "prodej nebo šíření cizích programů a databází na základě neplatného oprávnění"@cs ;
+	.
+crimestatistics-code-codelist-hash:33 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "prodej nebo šíření cizích programů a databází nad rozsah vydaného oprávnění"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "33" ;
+
+	rdfs:label "prodej nebo šíření cizích programů a databází nad rozsah vydaného oprávnění"@cs ;
+	.
+crimestatistics-code-codelist-hash:34 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "prodej nebo šíření cizích programů a databází po zrušení oprávnění"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "34" ;
+
+	rdfs:label "prodej nebo šíření cizích programů a databází po zrušení oprávnění"@cs ;
+	.
+crimestatistics-code-codelist-hash:35 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "prodej nebo šíření cizích programů a databází bez potřebné licence"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "35" ;
+
+	rdfs:label "prodej nebo šíření cizích programů a databází bez potřebné licence"@cs ;
+	.
+crimestatistics-code-codelist-hash:36 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "prodej nebo šíření cizích programů a databází se zneužitím jména jiného podnikatele"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "36" ;
+
+	rdfs:label "prodej nebo šíření cizích programů a databází se zneužitím jména jiného podnikatele"@cs ;
+	.
+crimestatistics-code-codelist-hash:41 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "obchodní činnost bez oprávnění"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "41" ;
+
+	rdfs:label "obchodní činnost bez oprávnění"@cs ;
+	.
+crimestatistics-code-codelist-hash:42 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "obchodní činnost na základě neplatného oprávnění"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "42" ;
+
+	rdfs:label "obchodní činnost na základě neplatného oprávnění"@cs ;
+	.
+crimestatistics-code-codelist-hash:43 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "obchodní činnost nad rozsah vydaného oprávnění"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "43" ;
+
+	rdfs:label "obchodní činnost nad rozsah vydaného oprávnění"@cs ;
+	.
+crimestatistics-code-codelist-hash:44 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "obchodní činnost po zrušení oprávnění"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "44" ;
+
+	rdfs:label "obchodní činnost po zrušení oprávnění"@cs ;
+	.
+crimestatistics-code-codelist-hash:45 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "obchodní činnost bez potřebné licence"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "45" ;
+
+	rdfs:label "obchodní činnost bez potřebné licence"@cs ;
+	.
+crimestatistics-code-codelist-hash:46 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "obchodní činnost se zneužitím jména jiného podnikatele"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "46" ;
+
+	rdfs:label "obchodní činnost se zneužitím jména jiného podnikatele"@cs ;
+	.
+crimestatistics-code-codelist-hash:51 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "poskytování služeb bez oprávnění"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "51" ;
+
+	rdfs:label "poskytování služeb bez oprávnění"@cs ;
+	.
+crimestatistics-code-codelist-hash:52 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "poskytování služeb na základě neplatného oprávnění"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "52" ;
+
+	rdfs:label "poskytování služeb na základě neplatného oprávnění"@cs ;
+	.
+crimestatistics-code-codelist-hash:53 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "poskytování služeb nad rozsah vydaného oprávnění"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "53" ;
+
+	rdfs:label "poskytování služeb nad rozsah vydaného oprávnění"@cs ;
+	.
+crimestatistics-code-codelist-hash:54 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "poskytování služeb po zrušení oprávnění"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "54" ;
+
+	rdfs:label "poskytování služeb po zrušení oprávnění"@cs ;
+	.
+crimestatistics-code-codelist-hash:55 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "poskytování služeb bez potřebné licence"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "55" ;
+
+	rdfs:label "poskytování služeb bez potřebné licence"@cs ;
+	.
+crimestatistics-code-codelist-hash:56 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "poskytování služeb se zneužitím jména jiného podnikatele"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "56" ;
+
+	rdfs:label "poskytování služeb se zneužitím jména jiného podnikatele"@cs ;
+	.
+crimestatistics-code-codelist-hash:61 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "výrobní činnost bez oprávnění"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "61" ;
+
+	rdfs:label "výrobní činnost bez oprávnění"@cs ;
+	.
+crimestatistics-code-codelist-hash:62 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "výrobní činnost na základě neplatného oprávnění"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "62" ;
+
+	rdfs:label "výrobní činnost na základě neplatného oprávnění"@cs ;
+	.
+crimestatistics-code-codelist-hash:63 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "výrobní činnost nad rozsah vydaného oprávnění"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "63" ;
+
+	rdfs:label "výrobní činnost nad rozsah vydaného oprávnění"@cs ;
+	.
+crimestatistics-code-codelist-hash:64 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "výrobní činnost po zrušení oprávnění"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "64" ;
+
+	rdfs:label "výrobní činnost po zrušení oprávnění"@cs ;
+	.
+crimestatistics-code-codelist-hash:65 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "výrobní činnost bez potřebné licence"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "65" ;
+
+	rdfs:label "výrobní činnost bez potřebné licence"@cs ;
+	.
+crimestatistics-code-codelist-hash:66 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "výrobní činnost se zneužitím jména jiného podnikatele."@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "66" ;
+
+	rdfs:label "výrobní činnost se zneužitím jména jiného podnikatele."@cs ;
+	.
+crimestatistics-code-codelist-hash:71 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "jiné výdělečné podnikání bez oprávnění"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "71" ;
+
+	rdfs:label "jiné výdělečné podnikání bez oprávnění"@cs ;
+	.
+crimestatistics-code-codelist-hash:72 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "jiné výdělečné podnikání na základě neplatného oprávnění"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "72" ;
+
+	rdfs:label "jiné výdělečné podnikání na základě neplatného oprávnění"@cs ;
+	.
+crimestatistics-code-codelist-hash:73 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "jiné výdělečné podnikání nad rozsah vydaného oprávnění"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "73" ;
+
+	rdfs:label "jiné výdělečné podnikání nad rozsah vydaného oprávnění"@cs ;
+	.
+crimestatistics-code-codelist-hash:74 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "jiné výdělečné podnikání po zrušení oprávnění"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "74" ;
+
+	rdfs:label "jiné výdělečné podnikání po zrušení oprávnění"@cs ;
+	.
+crimestatistics-code-codelist-hash:75 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "jiné výdělečné podnikání bez potřebné licence"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "75" ;
+
+	rdfs:label "jiné výdělečné podnikání bez potřebné licence"@cs ;
+	.
+crimestatistics-code-codelist-hash:76 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "jiné výdělečné podnikání se zneužitím jména jiného podnikatele"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "76" ;
+
+	rdfs:label "jiné výdělečné podnikání se zneužitím jména jiného podnikatele"@cs ;
+	.
+crimestatistics-code-codelist-hash:92 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "poškozování spotřebitele šizením na jakosti"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "92" ;
+
+	rdfs:label "poškozování spotřebitele šizením na jakosti"@cs ;
+	.
+crimestatistics-code-codelist-hash:93 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "poškozování spotřebitele šizením na množství nebo hmotnosti"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "93" ;
+
+	rdfs:label "poškozování spotřebitele šizením na množství nebo hmotnosti"@cs ;
+	.
+crimestatistics-code-codelist-hash:94 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "poškozování spotřebitele zatajením vad"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "94" ;
+
+	rdfs:label "poškozování spotřebitele zatajením vad"@cs ;
+	.
+crimestatistics-code-codelist-hash:111 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "pašování - dovoz pro osobní potřebu v úkrytu"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "111" ;
+
+	rdfs:label "pašování - dovoz pro osobní potřebu v úkrytu"@cs ;
+	.
+crimestatistics-code-codelist-hash:112 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "pašování - dovoz pro osobní potřebu s falešnými doklady"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "112" ;
+
+	rdfs:label "pašování - dovoz pro osobní potřebu s falešnými doklady"@cs ;
+	.
+crimestatistics-code-codelist-hash:113 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "pašování - dovoz pro osobní potřebu v mrtvé schránce"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "113" ;
+
+	rdfs:label "pašování - dovoz pro osobní potřebu v mrtvé schránce"@cs ;
+	.
+crimestatistics-code-codelist-hash:114 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "pašování - dovoz pro osobní potřebu mimo hraniční přechod"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "114" ;
+
+	rdfs:label "pašování - dovoz pro osobní potřebu mimo hraniční přechod"@cs ;
+	.
+crimestatistics-code-codelist-hash:121 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "pašování - dovoz pro podnikání v úkrytu"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "121" ;
+
+	rdfs:label "pašování - dovoz pro podnikání v úkrytu"@cs ;
+	.
+crimestatistics-code-codelist-hash:122 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "pašování - dovoz pro podnikání s falešnými doklady"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "122" ;
+
+	rdfs:label "pašování - dovoz pro podnikání s falešnými doklady"@cs ;
+	.
+crimestatistics-code-codelist-hash:123 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "pašování - dovoz pro podnikání v mrtvé schránce"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "123" ;
+
+	rdfs:label "pašování - dovoz pro podnikání v mrtvé schránce"@cs ;
+	.
+crimestatistics-code-codelist-hash:124 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "pašování - dovoz pro podnikání mimo hraniční přechod"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "124" ;
+
+	rdfs:label "pašování - dovoz pro podnikání mimo hraniční přechod"@cs ;
+	.
+crimestatistics-code-codelist-hash:131 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "pašování - dovoz k obchodování v úkrytu"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "131" ;
+
+	rdfs:label "pašování - dovoz k obchodování v úkrytu"@cs ;
+	.
+crimestatistics-code-codelist-hash:132 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "pašování - dovoz k obchodování s falešnými doklady"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "132" ;
+
+	rdfs:label "pašování - dovoz k obchodování s falešnými doklady"@cs ;
+	.
+crimestatistics-code-codelist-hash:133 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "pašování - dovoz k obchodování v mrtvé schránce"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "133" ;
+
+	rdfs:label "pašování - dovoz k obchodování v mrtvé schránce"@cs ;
+	.
+crimestatistics-code-codelist-hash:134 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "pašování - dovoz k obchodování mimo hraniční přechod"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "134" ;
+
+	rdfs:label "pašování - dovoz k obchodování mimo hraniční přechod"@cs ;
+	.
+crimestatistics-code-codelist-hash:211 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "pašování - vývoz pro osobní potřebu v úkrytu"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "211" ;
+
+	rdfs:label "pašování - vývoz pro osobní potřebu v úkrytu"@cs ;
+	.
+crimestatistics-code-codelist-hash:212 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "pašování - vývoz pro osobní potřebu s falešnými doklady"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "212" ;
+
+	rdfs:label "pašování - vývoz pro osobní potřebu s falešnými doklady"@cs ;
+	.
+crimestatistics-code-codelist-hash:213 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "pašování - vývoz pro osobní potřebu v mrtvé schránce"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "213" ;
+
+	rdfs:label "pašování - vývoz pro osobní potřebu v mrtvé schránce"@cs ;
+	.
+crimestatistics-code-codelist-hash:214 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "pašování - vývoz pro osobní potřebu mimo hraniční přechod"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "214" ;
+
+	rdfs:label "pašování - vývoz pro osobní potřebu mimo hraniční přechod"@cs ;
+	.
+crimestatistics-code-codelist-hash:221 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "pašování - vývoz pro podnikání v úkrytu"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "221" ;
+
+	rdfs:label "pašování - vývoz pro podnikání v úkrytu"@cs ;
+	.
+crimestatistics-code-codelist-hash:222 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "pašování - vývoz pro podnikání s falešnými doklady"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "222" ;
+
+	rdfs:label "pašování - vývoz pro podnikání s falešnými doklady"@cs ;
+	.
+crimestatistics-code-codelist-hash:223 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "pašování - vývoz pro podnikání v mrtvé schránce"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "223" ;
+
+	rdfs:label "pašování - vývoz pro podnikání v mrtvé schránce"@cs ;
+	.
+crimestatistics-code-codelist-hash:224 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "pašování - vývoz pro podnikání mimo hraniční přechod"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "224" ;
+
+	rdfs:label "pašování - vývoz pro podnikání mimo hraniční přechod"@cs ;
+	.
+crimestatistics-code-codelist-hash:231 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "pašování - vývoz k obchodování v úkrytu"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "231" ;
+
+	rdfs:label "pašování - vývoz k obchodování v úkrytu"@cs ;
+	.
+crimestatistics-code-codelist-hash:232 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "pašování - vývoz k obchodování s falešnými doklady"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "232" ;
+
+	rdfs:label "pašování - vývoz k obchodování s falešnými doklady"@cs ;
+	.
+crimestatistics-code-codelist-hash:233 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "pašování - vývoz k obchodování v mrtvé schránce"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "233" ;
+
+	rdfs:label "pašování - vývoz k obchodování v mrtvé schránce"@cs ;
+	.
+crimestatistics-code-codelist-hash:234 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "pašování - vývoz k obchodování mimo hraniční přechod"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "234" ;
+
+	rdfs:label "pašování - vývoz k obchodování mimo hraniční přechod"@cs ;
+	.
+crimestatistics-code-codelist-hash:311 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "pašování - průvoz pro osobní potřebu v úkrytu"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "311" ;
+
+	rdfs:label "pašování - průvoz pro osobní potřebu v úkrytu"@cs ;
+	.
+crimestatistics-code-codelist-hash:312 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "pašování - průvoz pro osobní potřebu s falešnými doklad"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "312" ;
+
+	rdfs:label "pašování - průvoz pro osobní potřebu s falešnými doklad"@cs ;
+	.
+crimestatistics-code-codelist-hash:313 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "pašování - průvoz pro osobní potřebu v mrtvé schránce"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "313" ;
+
+	rdfs:label "pašování - průvoz pro osobní potřebu v mrtvé schránce"@cs ;
+	.
+crimestatistics-code-codelist-hash:314 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "pašování - průvoz pro osobní potřebu mimo hraniční přechod"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "314" ;
+
+	rdfs:label "pašování - průvoz pro osobní potřebu mimo hraniční přechod"@cs ;
+	.
+crimestatistics-code-codelist-hash:321 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "pašování - průvoz pro podnikání v úkrytu"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "321" ;
+
+	rdfs:label "pašování - průvoz pro podnikání v úkrytu"@cs ;
+	.
+crimestatistics-code-codelist-hash:322 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "pašování - průvoz pro podnikání s falešnými doklad"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "322" ;
+
+	rdfs:label "pašování - průvoz pro podnikání s falešnými doklad"@cs ;
+	.
+crimestatistics-code-codelist-hash:323 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "pašování - průvoz pro podnikání v mrtvé schránce"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "323" ;
+
+	rdfs:label "pašování - průvoz pro podnikání v mrtvé schránce"@cs ;
+	.
+crimestatistics-code-codelist-hash:324 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "pašování - průvoz pro podnikání mimo hraniční přechod"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "324" ;
+
+	rdfs:label "pašování - průvoz pro podnikání mimo hraniční přechod"@cs ;
+	.
+crimestatistics-code-codelist-hash:331 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "pašování - průvoz k obchodování v úkrytu"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "331" ;
+
+	rdfs:label "pašování - průvoz k obchodování v úkrytu"@cs ;
+	.
+crimestatistics-code-codelist-hash:332 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "pašování - průvoz k obchodování s falešnými doklad"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "332" ;
+
+	rdfs:label "pašování - průvoz k obchodování s falešnými doklad"@cs ;
+	.
+crimestatistics-code-codelist-hash:333 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "pašování - průvoz k obchodování v mrtvé schránce"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "333" ;
+
+	rdfs:label "pašování - průvoz k obchodování v mrtvé schránce"@cs ;
+	.
+crimestatistics-code-codelist-hash:334 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "pašování - průvoz k obchodování mimo hraniční přechod"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "334" ;
+
+	rdfs:label "pašování - průvoz k obchodování mimo hraniční přechod"@cs ;
+	.
+crimestatistics-code-codelist-hash:411 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "kontrolované zboží - vývoz takového zboží bez povolení"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "411" ;
+
+	rdfs:label "kontrolované zboží - vývoz takového zboží bez povolení"@cs ;
+	.
+crimestatistics-code-codelist-hash:412 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "kontrolované zboží - porušení zákazu nebo omezení při nakládání s takovým zbožím"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "412" ;
+
+	rdfs:label "kontrolované zboží - porušení zákazu nebo omezení při nakládání s takovým zbožím"@cs ;
+	.
+crimestatistics-code-codelist-hash:413 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "kontrolované zboží - porušování povinností při vydávání vývozních nebo dovozních licencí"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "413" ;
+
+	rdfs:label "kontrolované zboží - porušování povinností při vydávání vývozních nebo dovozních licencí"@cs ;
+	.
+crimestatistics-code-codelist-hash:414 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "kontrolované zboží - neoprávněné vylákání dokladů potřebných pro orgány kontrolující takové zboží"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "414" ;
+
+	rdfs:label "kontrolované zboží - neoprávněné vylákání dokladů potřebných pro orgány kontrolující takové zboží"@cs ;
+	.
+crimestatistics-code-codelist-hash:415 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "kontrolované zboží - nevedení, zatajení, zničení či poškození evidencí takového zboží"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "415" ;
+
+	rdfs:label "kontrolované zboží - nevedení, zatajení, zničení či poškození evidencí takového zboží"@cs ;
+	.
+crimestatistics-code-codelist-hash:416 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "neoprávněný zásah do programového vybavení počítače, v němž se vede příslušná evidence"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "416" ;
+
+	rdfs:label "neoprávněný zásah do programového vybavení počítače, v němž se vede příslušná evidence"@cs ;
+	.
+crimestatistics-code-codelist-hash:417 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "neoprávněný zásah do technického vybavení počítače, v němž se vede příslušná evidence"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "417" ;
+
+	rdfs:label "neoprávněný zásah do technického vybavení počítače, v němž se vede příslušná evidence"@cs ;
+	.
+crimestatistics-code-codelist-hash:418 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "neoprávněný zásah do údajů příslušné evidence vedené na počítači"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "418" ;
+
+	rdfs:label "neoprávněný zásah do údajů příslušné evidence vedené na počítači"@cs ;
+	.
+crimestatistics-code-codelist-hash:421 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "uvádění nepravdivých nebo hrubě zkreslených údajů ve výkazech, hlášeních, vstupních údajích vkládaných do počítače nebo v jiných dokladech"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "421" ;
+
+	rdfs:label "uvádění nepravdivých nebo hrubě zkreslených údajů ve výkazech, hlášeních, vstupních údajích vkládaných do počítače nebo v jiných dokladech"@cs ;
+	.
+crimestatistics-code-codelist-hash:422 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "neoprávněné zásahy do technického nebo programového vybavení počítače"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "422" ;
+
+	rdfs:label "neoprávněné zásahy do technického nebo programového vybavení počítače"@cs ;
+	.
+crimestatistics-code-codelist-hash:423 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "poškození, zničení, zatajení nebo nevedení podkladů sloužících ke kontrole hospodaření"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "423" ;
+
+	rdfs:label "poškození, zničení, zatajení nebo nevedení podkladů sloužících ke kontrole hospodaření"@cs ;
+	.
+crimestatistics-code-codelist-hash:424 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "uvádění nepravdivých údajů v podkladech pro zápis do obchodního rejstříku"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "424" ;
+
+	rdfs:label "uvádění nepravdivých údajů v podkladech pro zápis do obchodního rejstříku"@cs ;
+	.
+crimestatistics-code-codelist-hash:425 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "neoprávněný zásah do programového vybavení počítače, v němž se vede příslušná evidence"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "425" ;
+
+	rdfs:label "neoprávněný zásah do programového vybavení počítače, v němž se vede příslušná evidence"@cs ;
+	.
+crimestatistics-code-codelist-hash:426 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "neoprávněný zásah do technického vybavení počítače, v němž se vede příslušná evidence"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "426" ;
+
+	rdfs:label "neoprávněný zásah do technického vybavení počítače, v němž se vede příslušná evidence"@cs ;
+	.
+crimestatistics-code-codelist-hash:427 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "neoprávněný zásah do údajů příslušné evidence vedené na počítači"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "427" ;
+
+	rdfs:label "neoprávněný zásah do údajů příslušné evidence vedené na počítači"@cs ;
+	.
+crimestatistics-code-codelist-hash:431 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "při smluvních vztazích mezi podnikatelskými subjekty"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "431" ;
+
+	rdfs:label "při smluvních vztazích mezi podnikatelskými subjekty"@cs ;
+	.
+crimestatistics-code-codelist-hash:432 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "v souvislosti s restitucemi a transformací majetku"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "432" ;
+
+	rdfs:label "v souvislosti s restitucemi a transformací majetku"@cs ;
+	.
+crimestatistics-code-codelist-hash:433 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "neoprávněné nakládání se subvencemi a dotacemi"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "433" ;
+
+	rdfs:label "neoprávněné nakládání se subvencemi a dotacemi"@cs ;
+	.
+crimestatistics-code-codelist-hash:434 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "porušování cenové regulace"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "434" ;
+
+	rdfs:label "porušování cenové regulace"@cs ;
+	.
+crimestatistics-code-codelist-hash:435 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "zneužití postavení na trhu"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "435" ;
+
+	rdfs:label "zneužití postavení na trhu"@cs ;
+	.
+crimestatistics-code-codelist-hash:436 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "získání obchodního tajemství od pracovníka jiné organizace nebo firmy z nosiče informací"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "436" ;
+
+	rdfs:label "získání obchodního tajemství od pracovníka jiné organizace nebo firmy z nosiče informací"@cs ;
+	.
+crimestatistics-code-codelist-hash:437 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "poskytování úvěru nebo jiného plnění za poskytnutí úplatku"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "437" ;
+
+	rdfs:label "poskytování úvěru nebo jiného plnění za poskytnutí úplatku"@cs ;
+	.
+crimestatistics-code-codelist-hash:441 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "získaných z titulu pracovníka burzy"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "441" ;
+
+	rdfs:label "získaných z titulu pracovníka burzy"@cs ;
+	.
+crimestatistics-code-codelist-hash:442 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "získaných z titulu pracovníka peněžního ústavu"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "442" ;
+
+	rdfs:label "získaných z titulu pracovníka peněžního ústavu"@cs ;
+	.
+crimestatistics-code-codelist-hash:443 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "získaných z titulu pracovníka státního orgánu nebo orgánu místní samosprávy vykonávajícího řízení nebo dohled"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "443" ;
+
+	rdfs:label "získaných z titulu pracovníka státního orgánu nebo orgánu místní samosprávy vykonávajícího řízení nebo dohled"@cs ;
+	.
+crimestatistics-code-codelist-hash:444 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "získaných z titulu zaměstnání u jiné právnické nebo fyzické osoby"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "444" ;
+
+	rdfs:label "získaných z titulu zaměstnání u jiné právnické nebo fyzické osoby"@cs ;
+	.
+crimestatistics-code-codelist-hash:445 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "průnikem do informačního systému vedeného na výpočetní technice"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "445" ;
+
+	rdfs:label "průnikem do informačního systému vedeného na výpočetní technice"@cs ;
+	.
+crimestatistics-code-codelist-hash:451 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "při veřejné soutěži na státní nebo jiné zakázky s využitím násilí nebo lsti"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "451" ;
+
+	rdfs:label "při veřejné soutěži na státní nebo jiné zakázky s využitím násilí nebo lsti"@cs ;
+	.
+crimestatistics-code-codelist-hash:452 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "při veřejné soutěži na státní nebo jiné zakázky s podplácením"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "452" ;
+
+	rdfs:label "při veřejné soutěži na státní nebo jiné zakázky s podplácením"@cs ;
+	.
+crimestatistics-code-codelist-hash:453 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "při veřejné soutěži na státní nebo jiné zakázky - ostatní"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "453" ;
+
+	rdfs:label "při veřejné soutěži na státní nebo jiné zakázky - ostatní"@cs ;
+	.
+crimestatistics-code-codelist-hash:461 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "v souvislosti s převodem vlastnictví státu na jiné osoby s využitím násilí nebo lsti"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "461" ;
+
+	rdfs:label "v souvislosti s převodem vlastnictví státu na jiné osoby s využitím násilí nebo lsti"@cs ;
+	.
+crimestatistics-code-codelist-hash:462 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "v souvislosti s převodem vlastnictví státu na jiné osoby s podplácením"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "462" ;
+
+	rdfs:label "v souvislosti s převodem vlastnictví státu na jiné osoby s podplácením"@cs ;
+	.
+crimestatistics-code-codelist-hash:463 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "v souvislosti s převodem vlastnictví státu na jiné osoby - ostatní"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "463" ;
+
+	rdfs:label "v souvislosti s převodem vlastnictví státu na jiné osoby - ostatní"@cs ;
+	.
+crimestatistics-code-codelist-hash:471 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "padělání - tisk"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "471" ;
+
+	rdfs:label "padělání - tisk"@cs ;
+	.
+crimestatistics-code-codelist-hash:472 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "padělání - foto"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "472" ;
+
+	rdfs:label "padělání - foto"@cs ;
+	.
+crimestatistics-code-codelist-hash:473 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "padělání - kreslení"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "473" ;
+
+	rdfs:label "padělání - kreslení"@cs ;
+	.
+crimestatistics-code-codelist-hash:474 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "padělání - ražba"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "474" ;
+
+	rdfs:label "padělání - ražba"@cs ;
+	.
+crimestatistics-code-codelist-hash:475 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "padělání - lití"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "475" ;
+
+	rdfs:label "padělání - lití"@cs ;
+	.
+crimestatistics-code-codelist-hash:476 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "padělání - galvanické zpracování"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "476" ;
+
+	rdfs:label "padělání - galvanické zpracování"@cs ;
+	.
+crimestatistics-code-codelist-hash:477 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "padělání - reprotechnika"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "477" ;
+
+	rdfs:label "padělání - reprotechnika"@cs ;
+	.
+crimestatistics-code-codelist-hash:478 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "padělání - jinak"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "478" ;
+
+	rdfs:label "padělání - jinak"@cs ;
+	.
+crimestatistics-code-codelist-hash:479 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "padělání - pomoci prostředků výpočetní techniky"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "479" ;
+
+	rdfs:label "padělání - pomoci prostředků výpočetní techniky"@cs ;
+	.
+crimestatistics-code-codelist-hash:481 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "pozměňování - tisk"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "481" ;
+
+	rdfs:label "pozměňování - tisk"@cs ;
+	.
+crimestatistics-code-codelist-hash:482 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "pozměňování - foto"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "482" ;
+
+	rdfs:label "pozměňování - foto"@cs ;
+	.
+crimestatistics-code-codelist-hash:483 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "pozměňování - kreslení"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "483" ;
+
+	rdfs:label "pozměňování - kreslení"@cs ;
+	.
+crimestatistics-code-codelist-hash:484 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "pozměňování - ražba"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "484" ;
+
+	rdfs:label "pozměňování - ražba"@cs ;
+	.
+crimestatistics-code-codelist-hash:485 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "pozměňování - lití"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "485" ;
+
+	rdfs:label "pozměňování - lití"@cs ;
+	.
+crimestatistics-code-codelist-hash:486 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "pozměňování - galvanické zpracování"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "486" ;
+
+	rdfs:label "pozměňování - galvanické zpracování"@cs ;
+	.
+crimestatistics-code-codelist-hash:487 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "pozměňování - reprotechnika"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "487" ;
+
+	rdfs:label "pozměňování - reprotechnika"@cs ;
+	.
+crimestatistics-code-codelist-hash:488 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "pozměňování - jinak"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "488" ;
+
+	rdfs:label "pozměňování - jinak"@cs ;
+	.
+crimestatistics-code-codelist-hash:489 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "pozměňování - pomoci prostředků výpočetní techniky"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "489" ;
+
+	rdfs:label "pozměňování - pomoci prostředků výpočetní techniky"@cs ;
+	.
+crimestatistics-code-codelist-hash:491 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "výroba"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "491" ;
+
+	rdfs:label "výroba"@cs ;
+	.
+crimestatistics-code-codelist-hash:492 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "opatření"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "492" ;
+
+	rdfs:label "opatření"@cs ;
+	.
+crimestatistics-code-codelist-hash:493 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "přechovávání náčiní"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "493" ;
+
+	rdfs:label "přechovávání náčiní"@cs ;
+	.
+crimestatistics-code-codelist-hash:494 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "výroba a přechovávání prostředků na zhotovení padělku platební karty"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "494" ;
+
+	rdfs:label "výroba a přechovávání prostředků na zhotovení padělku platební karty"@cs ;
+	.
+crimestatistics-code-codelist-hash:501 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "nesplnění nabídkové povinnosti u valut a deviz"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "501" ;
+
+	rdfs:label "nesplnění nabídkové povinnosti u valut a deviz"@cs ;
+	.
+crimestatistics-code-codelist-hash:502 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "nesplnění nabídkové povinnosti u zlata"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "502" ;
+
+	rdfs:label "nesplnění nabídkové povinnosti u zlata"@cs ;
+	.
+crimestatistics-code-codelist-hash:503 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "nesplnění transferové povinnosti"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "503" ;
+
+	rdfs:label "nesplnění transferové povinnosti"@cs ;
+	.
+crimestatistics-code-codelist-hash:504 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "vývoz a dovoz tuzemské měny"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "504" ;
+
+	rdfs:label "vývoz a dovoz tuzemské měny"@cs ;
+	.
+crimestatistics-code-codelist-hash:505 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "vývoz valut a deviz"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "505" ;
+
+	rdfs:label "vývoz valut a deviz"@cs ;
+	.
+crimestatistics-code-codelist-hash:506 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "ostatní k § 146 TZ"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "506" ;
+
+	rdfs:label "ostatní k § 146 TZ"@cs ;
+	.
+crimestatistics-code-codelist-hash:515 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "neodvedení/zkrácení daně silniční - neoprávněné daňové výhody"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "515" ;
+
+	rdfs:label "neodvedení/zkrácení daně silniční - neoprávněné daňové výhody"@cs ;
+	.
+crimestatistics-code-codelist-hash:516 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "neodvedení/zkrácení daně z příjmu právnických osob - účetní machinace a jiné, směřující ke snížení základu pro výpočet daně"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "516" ;
+
+	rdfs:label "neodvedení/zkrácení daně z příjmu právnických osob - účetní machinace a jiné, směřující ke snížení základu pro výpočet daně"@cs ;
+	.
+crimestatistics-code-codelist-hash:517 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "neodvedení/zkrácení daně z příjmu fyzických osob - účetní machinace a jiné, směřující ke snížení základu pro výpočet daně"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "517" ;
+
+	rdfs:label "neodvedení/zkrácení daně z příjmu fyzických osob - účetní machinace a jiné, směřující ke snížení základu pro výpočet daně"@cs ;
+	.
+crimestatistics-code-codelist-hash:518 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "neodvedení/zkrácení daně z příjmu - neoprávněné získání daňového zvýhodnění"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "518" ;
+
+	rdfs:label "neodvedení/zkrácení daně z příjmu - neoprávněné získání daňového zvýhodnění"@cs ;
+	.
+crimestatistics-code-codelist-hash:526 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "neodvedení/zkrácení spotřební daně - v souvislosti s vývozem nebo dovozem komodit"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "526" ;
+
+	rdfs:label "neodvedení/zkrácení spotřební daně - v souvislosti s vývozem nebo dovozem komodit"@cs ;
+	.
+crimestatistics-code-codelist-hash:527 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "neodvedení/zkrácení spotřební daně - machinace v oblasti daně z uhlovodíkových paliv a maziv"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "527" ;
+
+	rdfs:label "neodvedení/zkrácení spotřební daně - machinace v oblasti daně z uhlovodíkových paliv a maziv"@cs ;
+	.
+crimestatistics-code-codelist-hash:528 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "neodvedení/zkrácení spotřební daně - machinace v oblasti daně z tabákových výrobků"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "528" ;
+
+	rdfs:label "neodvedení/zkrácení spotřební daně - machinace v oblasti daně z tabákových výrobků"@cs ;
+	.
+crimestatistics-code-codelist-hash:529 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "neodvedení/zkrácení spotřební daně - machinace v oblasti daně z lihu"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "529" ;
+
+	rdfs:label "neodvedení/zkrácení spotřební daně - machinace v oblasti daně z lihu"@cs ;
+	.
+crimestatistics-code-codelist-hash:532 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "neodvedení/zkrácení DPH - v souvislosti s vývozem nebo dovozem zboží a služeb"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "532" ;
+
+	rdfs:label "neodvedení/zkrácení DPH - v souvislosti s vývozem nebo dovozem zboží a služeb"@cs ;
+	.
+crimestatistics-code-codelist-hash:535 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "neodvedení/zkrácení DPH - v souvislosti s vývozem nebo dovozem zboží  "@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "535" ;
+
+	rdfs:label "neodvedení/zkrácení DPH - v souvislosti s vývozem nebo dovozem zboží  "@cs ;
+	.
+crimestatistics-code-codelist-hash:536 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "neodvedení/zkrácení DPH - jednorázové vylákání výhody na základě fiktivních faktur  "@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "536" ;
+
+	rdfs:label "neodvedení/zkrácení DPH - jednorázové vylákání výhody na základě fiktivních faktur  "@cs ;
+	.
+crimestatistics-code-codelist-hash:537 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "neodvedení/zkrácení DPH - vylákání výhody v souvislosti s fiktivními plátci - daňové řetězce "@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "537" ;
+
+	rdfs:label "neodvedení/zkrácení DPH - vylákání výhody v souvislosti s fiktivními plátci - daňové řetězce "@cs ;
+	.
+crimestatistics-code-codelist-hash:541 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "neodvedení/zkrácení daně z příjmu - v souvislosti s placením pojistného na zdravotní pojištění, sociální zabezpečení a státní politiku zaměstnanosti"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "541" ;
+
+	rdfs:label "neodvedení/zkrácení daně z příjmu - v souvislosti s placením pojistného na zdravotní pojištění, sociální zabezpečení a státní politiku zaměstnanosti"@cs ;
+	.
+crimestatistics-code-codelist-hash:542 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "neodvedení/zkrácení DPH - v souvislosti s placením pojistného na zdravotní pojištění, sociální zabezpečení a státní politiku zaměstnanosti"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "542" ;
+
+	rdfs:label "neodvedení/zkrácení DPH - v souvislosti s placením pojistného na zdravotní pojištění, sociální zabezpečení a státní politiku zaměstnanosti"@cs ;
+	.
+crimestatistics-code-codelist-hash:543 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "neodvedení/zkrácení spotřební daně - v souvislosti s placením pojistného na zdravotní pojištění, sociální zabezpečení a státní politiku zaměstnanosti"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "543" ;
+
+	rdfs:label "neodvedení/zkrácení spotřební daně - v souvislosti s placením pojistného na zdravotní pojištění, sociální zabezpečení a státní politiku zaměstnanosti"@cs ;
+	.
+crimestatistics-code-codelist-hash:544 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "neodvedení/zkrácení daně z mezd - v souvislosti s placením pojistného na zdravotní pojištění, sociální zabezpečení a státní politiku zaměstnanosti"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "544" ;
+
+	rdfs:label "neodvedení/zkrácení daně z mezd - v souvislosti s placením pojistného na zdravotní pojištění, sociální zabezpečení a státní politiku zaměstnanosti"@cs ;
+	.
+crimestatistics-code-codelist-hash:550 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "neodvedení/zkrácení cla - zatajení prováženého zboží"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "550" ;
+
+	rdfs:label "neodvedení/zkrácení cla - zatajení prováženého zboží"@cs ;
+	.
+crimestatistics-code-codelist-hash:551 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "neodvedení/zkrácení cla - machinace směřující ke snížení základu pro vyměření cla nebo k neoprávněnému osvobození od cla"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "551" ;
+
+	rdfs:label "neodvedení/zkrácení cla - machinace směřující ke snížení základu pro vyměření cla nebo k neoprávněnému osvobození od cla"@cs ;
+	.
+crimestatistics-code-codelist-hash:552 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "neodvedení/zkrácení cla - nepravdivá deklarace průvozu zboží"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "552" ;
+
+	rdfs:label "neodvedení/zkrácení cla - nepravdivá deklarace průvozu zboží"@cs ;
+	.
+crimestatistics-code-codelist-hash:553 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "neodvedení/zkrácení cla - ostatní"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "553" ;
+
+	rdfs:label "neodvedení/zkrácení cla - ostatní"@cs ;
+	.
+crimestatistics-code-codelist-hash:580 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "klamavá reklama"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "580" ;
+
+	rdfs:label "klamavá reklama"@cs ;
+	.
+crimestatistics-code-codelist-hash:581 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "klamavé označení zboží a služeb"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "581" ;
+
+	rdfs:label "klamavé označení zboží a služeb"@cs ;
+	.
+crimestatistics-code-codelist-hash:582 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "vyvolání nebezpečí záměny"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "582" ;
+
+	rdfs:label "vyvolání nebezpečí záměny"@cs ;
+	.
+crimestatistics-code-codelist-hash:583 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "parazitování na pověsti podniku, výrobků a služeb jiného soutěžitele"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "583" ;
+
+	rdfs:label "parazitování na pověsti podniku, výrobků a služeb jiného soutěžitele"@cs ;
+	.
+crimestatistics-code-codelist-hash:584 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "podplácení, zlehčování"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "584" ;
+
+	rdfs:label "podplácení, zlehčování"@cs ;
+	.
+crimestatistics-code-codelist-hash:585 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "porušování obchodního tajemství"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "585" ;
+
+	rdfs:label "porušování obchodního tajemství"@cs ;
+	.
+crimestatistics-code-codelist-hash:586 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "využití obchodního tajemství organizace nebo firmy bývalým pracovníkem pro vlastní podnikání nebo ve spojení s jinou osobou z nosiče informace"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "586" ;
+
+	rdfs:label "využití obchodního tajemství organizace nebo firmy bývalým pracovníkem pro vlastní podnikání nebo ve spojení s jinou osobou z nosiče informace"@cs ;
+	.
+crimestatistics-code-codelist-hash:591 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "neoprávněné označení zboží ochrannou známkou"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "591" ;
+
+	rdfs:label "neoprávněné označení zboží ochrannou známkou"@cs ;
+	.
+crimestatistics-code-codelist-hash:592 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "neoprávněné užívání obchodního jména"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "592" ;
+
+	rdfs:label "neoprávněné užívání obchodního jména"@cs ;
+	.
+crimestatistics-code-codelist-hash:593 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "neoprávněné označování původu zboží"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "593" ;
+
+	rdfs:label "neoprávněné označování původu zboží"@cs ;
+	.
+crimestatistics-code-codelist-hash:594 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "neoprávněné zasahování do práv k chráněnému vynálezu, průmyslovému či užitému vzoru"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "594" ;
+
+	rdfs:label "neoprávněné zasahování do práv k chráněnému vynálezu, průmyslovému či užitému vzoru"@cs ;
+	.
+crimestatistics-code-codelist-hash:595 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "neoprávněné rozšiřování nebo užívání díla, které je předmětem autorského práva"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "595" ;
+
+	rdfs:label "neoprávněné rozšiřování nebo užívání díla, které je předmětem autorského práva"@cs ;
+	.
+crimestatistics-code-codelist-hash:596 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "neoprávněné zásahy do díla, které je předmětem autorského práva a práv souvisejících nebo jiných práv autora"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "596" ;
+
+	rdfs:label "neoprávněné zásahy do díla, které je předmětem autorského práva a práv souvisejících nebo jiných práv autora"@cs ;
+	.
+crimestatistics-code-codelist-hash:597 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "neoprávněné kopírování počítačového programu a databáze"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "597" ;
+
+	rdfs:label "neoprávněné kopírování počítačového programu a databáze"@cs ;
+	.
+crimestatistics-code-codelist-hash:598 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "neoprávněné úpravy, šíření, užití počítačového programu a databáze"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "598" ;
+
+	rdfs:label "neoprávněné úpravy, šíření, užití počítačového programu a databáze"@cs ;
+	.
+crimestatistics-code-codelist-hash:599 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "odstranění nebo obejití ochranných prvků počítačového programu a databáze"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "599" ;
+
+	rdfs:label "odstranění nebo obejití ochranných prvků počítačového programu a databáze"@cs ;
+	.
+crimestatistics-code-codelist-hash:601 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "při hospodaření s bytovým fondem"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "601" ;
+
+	rdfs:label "při hospodaření s bytovým fondem"@cs ;
+	.
+crimestatistics-code-codelist-hash:602 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "při povolování podnikatelské nebo jiné samostatné výdělečné činnosti"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "602" ;
+
+	rdfs:label "při povolování podnikatelské nebo jiné samostatné výdělečné činnosti"@cs ;
+	.
+crimestatistics-code-codelist-hash:603 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "při zadávání veřejných zakázek"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "603" ;
+
+	rdfs:label "při zadávání veřejných zakázek"@cs ;
+	.
+crimestatistics-code-codelist-hash:604 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "při poskytování výjimek nebo úlev v souvislosti s odvody do státního rozpočtu nebo rozpočtu obcí"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "604" ;
+
+	rdfs:label "při poskytování výjimek nebo úlev v souvislosti s odvody do státního rozpočtu nebo rozpočtu obcí"@cs ;
+	.
+crimestatistics-code-codelist-hash:605 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "při rozhodovací činnost soudů, prokuratury, policie či jiných orgánů státní správy nebo správy obcí"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "605" ;
+
+	rdfs:label "při rozhodovací činnost soudů, prokuratury, policie či jiných orgánů státní správy nebo správy obcí"@cs ;
+	.
+crimestatistics-code-codelist-hash:606 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "neoprávněný zásah do obsahu informačního systému"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "606" ;
+
+	rdfs:label "neoprávněný zásah do obsahu informačního systému"@cs ;
+	.
+crimestatistics-code-codelist-hash:607 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "vydávání se za oprávněného uživatele počítačové sítě"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "607" ;
+
+	rdfs:label "vydávání se za oprávněného uživatele počítačové sítě"@cs ;
+	.
+crimestatistics-code-codelist-hash:608 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "při provozu veřejné datové sítě nebo obdobné komunikační sítě"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "608" ;
+
+	rdfs:label "při provozu veřejné datové sítě nebo obdobné komunikační sítě"@cs ;
+	.
+crimestatistics-code-codelist-hash:609 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "používání počítače zaměstnavatele k soukromým účelům bez svolení"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "609" ;
+
+	rdfs:label "používání počítače zaměstnavatele k soukromým účelům bez svolení"@cs ;
+	.
+crimestatistics-code-codelist-hash:610 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "průnik do cizího počítače nebo počítačové sítě pomoci komunikačních prostředků"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "610" ;
+
+	rdfs:label "průnik do cizího počítače nebo počítačové sítě pomoci komunikačních prostředků"@cs ;
+	.
+crimestatistics-code-codelist-hash:615 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "při likvidaci obchodní společnosti nebo jiné právnické či fyzické osoby"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "615" ;
+
+	rdfs:label "při likvidaci obchodní společnosti nebo jiné právnické či fyzické osoby"@cs ;
+	.
+crimestatistics-code-codelist-hash:616 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "při správě konkursní podstaty"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "616" ;
+
+	rdfs:label "při správě konkursní podstaty"@cs ;
+	.
+crimestatistics-code-codelist-hash:617 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "při zastupování ve věcech obchodních"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "617" ;
+
+	rdfs:label "při zastupování ve věcech obchodních"@cs ;
+	.
+crimestatistics-code-codelist-hash:618 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "při činnosti správních, dozorčích rad a při výkonu prokury"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "618" ;
+
+	rdfs:label "při činnosti správních, dozorčích rad a při výkonu prokury"@cs ;
+	.
+crimestatistics-code-codelist-hash:619 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "zneužití postavení v podniku ve prospěch vlastního podniku"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "619" ;
+
+	rdfs:label "zneužití postavení v podniku ve prospěch vlastního podniku"@cs ;
+	.
+crimestatistics-code-codelist-hash:621 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "při obchodním styku"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "621" ;
+
+	rdfs:label "při obchodním styku"@cs ;
+	.
+crimestatistics-code-codelist-hash:622 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "při likvidaci obchodní společnosti nebo při řízení konkurzním a vyrovnávacím"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "622" ;
+
+	rdfs:label "při likvidaci obchodní společnosti nebo při řízení konkurzním a vyrovnávacím"@cs ;
+	.
+crimestatistics-code-codelist-hash:623 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "ostatní k §§ 256, 256a, 256b TZ"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "623" ;
+
+	rdfs:label "ostatní k §§ 256, 256a, 256b TZ"@cs ;
+	.
+crimestatistics-code-codelist-hash:624 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "poškození nebo zničení nosiče informací nepoužitého, prázdného nebo technického prostředku"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "624" ;
+
+	rdfs:label "poškození nebo zničení nosiče informací nepoužitého, prázdného nebo technického prostředku"@cs ;
+	.
+crimestatistics-code-codelist-hash:625 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "při obchodním styku z konkurenčních důvodů"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "625" ;
+
+	rdfs:label "při obchodním styku z konkurenčních důvodů"@cs ;
+	.
+crimestatistics-code-codelist-hash:626 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "v souvislosti se zaměstnáním u právnické nebo fyzické osoby"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "626" ;
+
+	rdfs:label "v souvislosti se zaměstnáním u právnické nebo fyzické osoby"@cs ;
+	.
+crimestatistics-code-codelist-hash:627 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "ostatní k § 257 TZ"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "627" ;
+
+	rdfs:label "ostatní k § 257 TZ"@cs ;
+	.
+crimestatistics-code-codelist-hash:631 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "vylákání zboží s úmyslem jej nezaplatit"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "631" ;
+
+	rdfs:label "vylákání zboží s úmyslem jej nezaplatit"@cs ;
+	.
+crimestatistics-code-codelist-hash:632 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "vylákání zboží s úmyslem jej nezaplatit za použití falešných dokladů o odběrateli"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "632" ;
+
+	rdfs:label "vylákání zboží s úmyslem jej nezaplatit za použití falešných dokladů o odběrateli"@cs ;
+	.
+crimestatistics-code-codelist-hash:633 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "vylákání finančních prostředků s úmyslem byť částečného nedodání zboží, služby nebo práce za něž byly poskytnuty"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "633" ;
+
+	rdfs:label "vylákání finančních prostředků s úmyslem byť částečného nedodání zboží, služby nebo práce za něž byly poskytnuty"@cs ;
+	.
+crimestatistics-code-codelist-hash:635 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "machinace směřující k vylákání dotací nebo subvencí"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "635" ;
+
+	rdfs:label "machinace směřující k vylákání dotací nebo subvencí"@cs ;
+	.
+crimestatistics-code-codelist-hash:636 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "uzavírání podvodných obchodních smluv"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "636" ;
+
+	rdfs:label "uzavírání podvodných obchodních smluv"@cs ;
+	.
+crimestatistics-code-codelist-hash:637 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "machinace s finančními prostředky"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "637" ;
+
+	rdfs:label "machinace s finančními prostředky"@cs ;
+	.
+crimestatistics-code-codelist-hash:638 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "machinace v souvislosti s poskytováním věcných náhrad"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "638" ;
+
+	rdfs:label "machinace v souvislosti s poskytováním věcných náhrad"@cs ;
+	.
+crimestatistics-code-codelist-hash:639 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "vylákání mezd a odměn vykazováním neprovedených prácí"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "639" ;
+
+	rdfs:label "vylákání mezd a odměn vykazováním neprovedených prácí"@cs ;
+	.
+crimestatistics-code-codelist-hash:640 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "vytváření neevidovaných přebytků a jejich zcizování"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "640" ;
+
+	rdfs:label "vytváření neevidovaných přebytků a jejich zcizování"@cs ;
+	.
+crimestatistics-code-codelist-hash:641 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "majetkové machinace ve prospěch třetích právnických nebo fyzických osob"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "641" ;
+
+	rdfs:label "majetkové machinace ve prospěch třetích právnických nebo fyzických osob"@cs ;
+	.
+crimestatistics-code-codelist-hash:642 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "krádeže a zpronevěry materiálů, zařízení a zboží"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "642" ;
+
+	rdfs:label "krádeže a zpronevěry materiálů, zařízení a zboží"@cs ;
+	.
+crimestatistics-code-codelist-hash:643 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "majetkové machinace v souvislosti se zneužitím výpočetní techniky"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "643" ;
+
+	rdfs:label "majetkové machinace v souvislosti se zneužitím výpočetní techniky"@cs ;
+	.
+crimestatistics-code-codelist-hash:644 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "machinace v souvislosti s přeceňováním výrobků, zboží a služeb"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "644" ;
+
+	rdfs:label "machinace v souvislosti s přeceňováním výrobků, zboží a služeb"@cs ;
+	.
+crimestatistics-code-codelist-hash:646 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "neoprávněné čerpání mezd a prémií, zkreslování ukazatelů rozhodných pro jejich výplatu"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "646" ;
+
+	rdfs:label "neoprávněné čerpání mezd a prémií, zkreslování ukazatelů rozhodných pro jejich výplatu"@cs ;
+	.
+crimestatistics-code-codelist-hash:647 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "ostatní majetkové machinace"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "647" ;
+
+	rdfs:label "ostatní majetkové machinace"@cs ;
+	.
+crimestatistics-code-codelist-hash:648 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "krádeže během přepravy bez násilí"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "648" ;
+
+	rdfs:label "krádeže během přepravy bez násilí"@cs ;
+	.
+crimestatistics-code-codelist-hash:649 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "krádeže násilným vloupáním do železničních vagónů, skladů nebo jiných dopravních prostředků během přepravy"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "649" ;
+
+	rdfs:label "krádeže násilným vloupáním do železničních vagónů, skladů nebo jiných dopravních prostředků během přepravy"@cs ;
+	.
+crimestatistics-code-codelist-hash:650 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "machinace ve skladištích a překladištích dopravců, jiné majetkové machinace"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "650" ;
+
+	rdfs:label "machinace ve skladištích a překladištích dopravců, jiné majetkové machinace"@cs ;
+	.
+crimestatistics-code-codelist-hash:652 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "vylákání neoprávněných dávek sociálního, nemocenského pojištění"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "652" ;
+
+	rdfs:label "vylákání neoprávněných dávek sociálního, nemocenského pojištění"@cs ;
+	.
+crimestatistics-code-codelist-hash:653 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "krádeže, zpronevěry a podvody zakrývané fingovaným vloupáním nebo živelnou pohromou"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "653" ;
+
+	rdfs:label "krádeže, zpronevěry a podvody zakrývané fingovaným vloupáním nebo živelnou pohromou"@cs ;
+	.
+crimestatistics-code-codelist-hash:654 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "machinace s platebními kartami na odběr pohonných hmot"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "654" ;
+
+	rdfs:label "machinace s platebními kartami na odběr pohonných hmot"@cs ;
+	.
+crimestatistics-code-codelist-hash:655 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "machinace s losy a sázenkami"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "655" ;
+
+	rdfs:label "machinace s losy a sázenkami"@cs ;
+	.
+crimestatistics-code-codelist-hash:656 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "machinace pomocí receptů a zdravotnické dokumentace"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "656" ;
+
+	rdfs:label "machinace pomocí receptů a zdravotnické dokumentace"@cs ;
+	.
+crimestatistics-code-codelist-hash:658 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "zneužití šeků zahraničních peněžních ústavů"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "658" ;
+
+	rdfs:label "zneužití šeků zahraničních peněžních ústavů"@cs ;
+	.
+crimestatistics-code-codelist-hash:659 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "založení účtu v bance na padělané nebo zcizené osobní doklady"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "659" ;
+
+	rdfs:label "založení účtu v bance na padělané nebo zcizené osobní doklady"@cs ;
+	.
+crimestatistics-code-codelist-hash:690 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "krádeže prostým způsobem"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "690" ;
+
+	rdfs:label "krádeže prostým způsobem"@cs ;
+	.
+crimestatistics-code-codelist-hash:701 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "padělání nebo užití padělaného podnikatelského oprávnění"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "701" ;
+
+	rdfs:label "padělání nebo užití padělaného podnikatelského oprávnění"@cs ;
+	.
+crimestatistics-code-codelist-hash:702 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "ostatní k § 176 TZ"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "702" ;
+
+	rdfs:label "ostatní k § 176 TZ"@cs ;
+	.
+crimestatistics-code-codelist-hash:703 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "vytvoření nebo padělání veřejné listiny pomoci výpočetní techniky"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "703" ;
+
+	rdfs:label "vytvoření nebo padělání veřejné listiny pomoci výpočetní techniky"@cs ;
+	.
+crimestatistics-code-codelist-hash:721 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "neoprávněné užití informací"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "721" ;
+
+	rdfs:label "neoprávněné užití informací"@cs ;
+	.
+crimestatistics-code-codelist-hash:722 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "neoprávněné kopírování informací na jiný nosič"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "722" ;
+
+	rdfs:label "neoprávněné kopírování informací na jiný nosič"@cs ;
+	.
+crimestatistics-code-codelist-hash:723 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "zničení, poškození nebo učinění informace neupotřebitelnou"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "723" ;
+
+	rdfs:label "zničení, poškození nebo učinění informace neupotřebitelnou"@cs ;
+	.
+crimestatistics-code-codelist-hash:724 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "úmyslné zavlečení počítačového viru do počítače, počítačové sítě nebo šíření zavirovaných programů"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "724" ;
+
+	rdfs:label "úmyslné zavlečení počítačového viru do počítače, počítačové sítě nebo šíření zavirovaných programů"@cs ;
+	.
+crimestatistics-code-codelist-hash:725 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "úmyslné vyřazení antivirových ochran"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "725" ;
+
+	rdfs:label "úmyslné vyřazení antivirových ochran"@cs ;
+	.
+crimestatistics-code-codelist-hash:726 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "úmyslné vynechání nebo obcházení antivirových kontrol"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "726" ;
+
+	rdfs:label "úmyslné vynechání nebo obcházení antivirových kontrol"@cs ;
+	.
+crimestatistics-code-codelist-hash:727 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "zásah do technického vybavení počítače"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "727" ;
+
+	rdfs:label "zásah do technického vybavení počítače"@cs ;
+	.
+crimestatistics-code-codelist-hash:728 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "zásah do programového vybavení počítače"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "728" ;
+
+	rdfs:label "zásah do programového vybavení počítače"@cs ;
+	.
+crimestatistics-code-codelist-hash:731 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "provozování her nebo sázek na výpočetní technice, machinace s pořadím"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "731" ;
+
+	rdfs:label "provozování her nebo sázek na výpočetní technice, machinace s pořadím"@cs ;
+	.
+crimestatistics-code-codelist-hash:741 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "padělání platební karty"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "741" ;
+
+	rdfs:label "padělání platební karty"@cs ;
+	.
+crimestatistics-code-codelist-hash:742 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "zneužití platební karty"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "742" ;
+
+	rdfs:label "zneužití platební karty"@cs ;
+	.
+crimestatistics-code-codelist-hash:743 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "zneužití osobních dokladů"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "743" ;
+
+	rdfs:label "zneužití osobních dokladů"@cs ;
+	.
+crimestatistics-code-codelist-hash:744 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "zneužití svěřené firemní platební karty"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "744" ;
+
+	rdfs:label "zneužití svěřené firemní platební karty"@cs ;
+	.
+crimestatistics-code-codelist-hash:745 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "platební karta pouze v držení, nedošlo ke zneužití"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "745" ;
+
+	rdfs:label "platební karta pouze v držení, nedošlo ke zneužití"@cs ;
+	.
+crimestatistics-code-codelist-hash:746 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "krádež platební karty"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "746" ;
+
+	rdfs:label "krádež platební karty"@cs ;
+	.
+crimestatistics-code-codelist-hash:747 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "uvedení nepravdivých údajů v žádosti o vydání kreditní karty apod."@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "747" ;
+
+	rdfs:label "uvedení nepravdivých údajů v žádosti o vydání kreditní karty apod."@cs ;
+	.
+crimestatistics-code-codelist-hash:751 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "využití osoby v pozici tzv. bílého koně"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "751" ;
+
+	rdfs:label "využití osoby v pozici tzv. bílého koně"@cs ;
+	.
+crimestatistics-code-codelist-hash:752 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "poškození stojícího lesního porostu zářezy do stromů"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "752" ;
+
+	rdfs:label "poškození stojícího lesního porostu zářezy do stromů"@cs ;
+	.
+crimestatistics-code-codelist-hash:753 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "poškození stojícího lesního porostu jiným způsobem než zářezy do stromů"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "753" ;
+
+	rdfs:label "poškození stojícího lesního porostu jiným způsobem než zářezy do stromů"@cs ;
+	.
+crimestatistics-code-codelist-hash:754 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "různými způsoby poškození stojících dřevin"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "754" ;
+
+	rdfs:label "různými způsoby poškození stojících dřevin"@cs ;
+	.
+crimestatistics-code-codelist-hash:755 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "formální nepřesnosti v kupních smlouvách"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "755" ;
+
+	rdfs:label "formální nepřesnosti v kupních smlouvách"@cs ;
+	.
+crimestatistics-code-codelist-hash:756 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "vykácení lesního porostu v období mezi uzavřením kupní smlouvy a zaregistrování vkladu vlastnického práva na katastrálním úřadu"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "756" ;
+
+	rdfs:label "vykácení lesního porostu v období mezi uzavřením kupní smlouvy a zaregistrování vkladu vlastnického práva na katastrálním úřadu"@cs ;
+	.
+crimestatistics-code-codelist-hash:757 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "přiřazení nově vzniklé holiny k dříve vytvořené holině"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "757" ;
+
+	rdfs:label "přiřazení nově vzniklé holiny k dříve vytvořené holině"@cs ;
+	.
+crimestatistics-code-codelist-hash:761 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "individuální lov s použitím střelné zbraně"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "761" ;
+
+	rdfs:label "individuální lov s použitím střelné zbraně"@cs ;
+	.
+crimestatistics-code-codelist-hash:762 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "individuální lov jinými způsoby"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "762" ;
+
+	rdfs:label "individuální lov jinými způsoby"@cs ;
+	.
+crimestatistics-code-codelist-hash:763 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "organizovaná skupina - lov bez použití střelné zbrahě"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "763" ;
+
+	rdfs:label "organizovaná skupina - lov bez použití střelné zbrahě"@cs ;
+	.
+crimestatistics-code-codelist-hash:764 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "organizovaná skupina - lov s použitím střelné zbrahě"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "764" ;
+
+	rdfs:label "organizovaná skupina - lov s použitím střelné zbrahě"@cs ;
+	.
+crimestatistics-code-codelist-hash:771 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "uvedení v omyl nebo využití omylu u důchodového pojištění"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "771" ;
+
+	rdfs:label "uvedení v omyl nebo využití omylu u důchodového pojištění"@cs ;
+	.
+crimestatistics-code-codelist-hash:772 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "uvedení v omyl nebo využití omylu u úrazového pojištění"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "772" ;
+
+	rdfs:label "uvedení v omyl nebo využití omylu u úrazového pojištění"@cs ;
+	.
+crimestatistics-code-codelist-hash:773 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "uvedení v omyl nebo využití omylu u pojištění léčebných výloh"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "773" ;
+
+	rdfs:label "uvedení v omyl nebo využití omylu u pojištění léčebných výloh"@cs ;
+	.
+crimestatistics-code-codelist-hash:774 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "uvedení v omyl nebo využití omylu u pojištění příjmů v době pracovní neschopnosti"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "774" ;
+
+	rdfs:label "uvedení v omyl nebo využití omylu u pojištění příjmů v době pracovní neschopnosti"@cs ;
+	.
+crimestatistics-code-codelist-hash:775 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "uvedení v omyl nebo využití omylu u pojištění vážných chorob"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "775" ;
+
+	rdfs:label "uvedení v omyl nebo využití omylu u pojištění vážných chorob"@cs ;
+	.
+crimestatistics-code-codelist-hash:776 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "uvedení v omyl nebo využití omylu u pojištění domácnosti, včetně rekreačních zařízení"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "776" ;
+
+	rdfs:label "uvedení v omyl nebo využití omylu u pojištění domácnosti, včetně rekreačních zařízení"@cs ;
+	.
+crimestatistics-code-codelist-hash:777 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "uvedení v omyl nebo využití omylu u pojištění staveb"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "777" ;
+
+	rdfs:label "uvedení v omyl nebo využití omylu u pojištění staveb"@cs ;
+	.
+crimestatistics-code-codelist-hash:778 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "uvedení v omyl nebo využití omylu u cestovního pojištění"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "778" ;
+
+	rdfs:label "uvedení v omyl nebo využití omylu u cestovního pojištění"@cs ;
+	.
+crimestatistics-code-codelist-hash:779 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "uvedení v omyl nebo využití omylu u havarijního pojištění motorových vozidel - údajná krádež vozidla"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "779" ;
+
+	rdfs:label "uvedení v omyl nebo využití omylu u havarijního pojištění motorových vozidel - údajná krádež vozidla"@cs ;
+	.
+crimestatistics-code-codelist-hash:780 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "uvedení v omyl nebo využití omylu u havarijního pojištění motorových vozidel - údajné poškození vozidla při dopravní nehodě nebo živelných událostech"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "780" ;
+
+	rdfs:label "uvedení v omyl nebo využití omylu u havarijního pojištění motorových vozidel - údajné poškození vozidla při dopravní nehodě nebo živelných událostech"@cs ;
+	.
+crimestatistics-code-codelist-hash:781 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "uvedení v omyl nebo využití omylu u pojištění odpovědnosti za škodu způsobenou provozem motorových vozidel"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "781" ;
+
+	rdfs:label "uvedení v omyl nebo využití omylu u pojištění odpovědnosti za škodu způsobenou provozem motorových vozidel"@cs ;
+	.
+crimestatistics-code-codelist-hash:782 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "uvedení v omyl nebo využití omylu u pojištění odpovědnosti za škodu způsobenou při výkonu povolání"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "782" ;
+
+	rdfs:label "uvedení v omyl nebo využití omylu u pojištění odpovědnosti za škodu způsobenou při výkonu povolání"@cs ;
+	.
+crimestatistics-code-codelist-hash:783 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "uvedení v omyl nebo využití omylu u pojištění odpovědnosti za škodu jinou než uvedenou v kódu 781, 782"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "783" ;
+
+	rdfs:label "uvedení v omyl nebo využití omylu u pojištění odpovědnosti za škodu jinou než uvedenou v kódu 781, 782"@cs ;
+	.
+crimestatistics-code-codelist-hash:784 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "uvedení v omyl nebo využití omylu u pojištění podnikatelů a průmyslu"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "784" ;
+
+	rdfs:label "uvedení v omyl nebo využití omylu u pojištění podnikatelů a průmyslu"@cs ;
+	.
+crimestatistics-code-codelist-hash:791 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "předložení padělaných osobních dokladů"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "791" ;
+
+	rdfs:label "předložení padělaných osobních dokladů"@cs ;
+	.
+crimestatistics-code-codelist-hash:792 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "uvedení zkreslených nebo nepravdivých údajů o výši příjmu, zaměstnání apod."@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "792" ;
+
+	rdfs:label "uvedení zkreslených nebo nepravdivých údajů o výši příjmu, zaměstnání apod."@cs ;
+	.
+crimestatistics-code-codelist-hash:793 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "použití úvěru, subvence nebo dotace na jiný než určený účel"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_Forma ;
+	skos:notation "793" ;
+
+	rdfs:label "použití úvěru, subvence nebo dotace na jiný než určený účel"@cs ;
+	.

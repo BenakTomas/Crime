@@ -1,0 +1,144 @@
+# Standardní prefixy
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix interval: <http://reference.data.gov.uk/def/intervals/> .
+@prefix sdmx:    <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+# Vlastní prefixy
+@prefix crimestatistics-code-slash: <http://linked.opendata.cz/ontology/crimestatistics/code/> .
+@prefix crimestatistics-code-codelist-slash: <http://linked.opendata.cz/ontology/crimestatistics/code/hospodarskaKriminalita_OkolnostiVedouciKeKriminalite/> .
+@prefix crimestatistics-code-codelist-class: <http://linked.opendata.cz/ontology/crimestatistics/code/hospodarskaKriminalita_OkolnostiVedouciKeKriminalite/class#> .
+@prefix crimestatistics-code-codelist-property: <http://linked.opendata.cz/ontology/crimestatistics/code/hospodarskaKriminalita_OkolnostiVedouciKeKriminalite/property#> .
+
+@prefix crimestatistics-code-codelist-hash: <http://linked.opendata.cz/ontology/crimestatistics/code/hospodarskaKriminalita_OkolnostiVedouciKeKriminalite#> .
+
+crimestatistics-code-codelist-hash:1 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "nedostatečná vnitropodniková kontrola a kontrola nadřízených složek"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_OkolnostiVedouciKeKriminalite ;
+	skos:notation "1" ;
+
+	rdfs:label "nedostatečná vnitropodniková kontrola a kontrola nadřízených složek"@cs ;
+	.
+crimestatistics-code-codelist-hash:2 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "nepořádek, chaos v dokladech nebo evidencích"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_OkolnostiVedouciKeKriminalite ;
+	skos:notation "2" ;
+
+	rdfs:label "nepořádek, chaos v dokladech nebo evidencích"@cs ;
+	.
+crimestatistics-code-codelist-hash:3 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "nedostatečné předpisy a normy"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_OkolnostiVedouciKeKriminalite ;
+	skos:notation "3" ;
+
+	rdfs:label "nedostatečné předpisy a normy"@cs ;
+	.
+crimestatistics-code-codelist-hash:4 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "nedostatečná ostraha a zabezpečení objektů"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_OkolnostiVedouciKeKriminalite ;
+	skos:notation "4" ;
+
+	rdfs:label "nedostatečná ostraha a zabezpečení objektů"@cs ;
+	.
+crimestatistics-code-codelist-hash:5 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "nedostatečná přejímka dodávek, tržeb"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_OkolnostiVedouciKeKriminalite ;
+	skos:notation "5" ;
+
+	rdfs:label "nedostatečná přejímka dodávek, tržeb"@cs ;
+	.
+crimestatistics-code-codelist-hash:6 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "spojení pachatelů uvnitř objektů"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_OkolnostiVedouciKeKriminalite ;
+	skos:notation "6" ;
+
+	rdfs:label "spojení pachatelů uvnitř objektů"@cs ;
+	.
+crimestatistics-code-codelist-hash:7 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "spojení pachatelů s dodavateli nebo odběrateli"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_OkolnostiVedouciKeKriminalite ;
+	skos:notation "7" ;
+
+	rdfs:label "spojení pachatelů s dodavateli nebo odběrateli"@cs ;
+	.
+crimestatistics-code-codelist-hash:8 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "účast revizních a kontrolních pracovníků"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_OkolnostiVedouciKeKriminalite ;
+	skos:notation "8" ;
+
+	rdfs:label "účast revizních a kontrolních pracovníků"@cs ;
+	.
+crimestatistics-code-codelist-hash:9 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "účast inventurních pracovníků na tr. činnosti"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_OkolnostiVedouciKeKriminalite ;
+	skos:notation "9" ;
+
+	rdfs:label "účast inventurních pracovníků na tr. činnosti"@cs ;
+	.
+crimestatistics-code-codelist-hash:10 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "účast vedoucích pracovníků na tr. činnosti"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_OkolnostiVedouciKeKriminalite ;
+	skos:notation "10" ;
+
+	rdfs:label "účast vedoucích pracovníků na tr. činnosti"@cs ;
+	.
+crimestatistics-code-codelist-hash:11 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "slučování funkcí"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_OkolnostiVedouciKeKriminalite ;
+	skos:notation "11" ;
+
+	rdfs:label "slučování funkcí"@cs ;
+	.
+crimestatistics-code-codelist-hash:12 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "obsazování hmotně odpovědných funkcí osobami již dříve trestanými pro úmyslnou trestnou činnost obecné nebo hospodářské povahy"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_OkolnostiVedouciKeKriminalite ;
+	skos:notation "12" ;
+
+	rdfs:label "obsazování hmotně odpovědných funkcí osobami již dříve trestanými pro úmyslnou trestnou činnost obecné nebo hospodářské povahy"@cs ;
+	.
+crimestatistics-code-codelist-hash:13 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "drobné rozkrádání zaměstnanci v širším měřítku bez postihu, nedůsledné řešení drobných poklesků vedením podniku a odbor. složkami"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_OkolnostiVedouciKeKriminalite ;
+	skos:notation "13" ;
+
+	rdfs:label "drobné rozkrádání zaměstnanci v širším měřítku bez postihu, nedůsledné řešení drobných poklesků vedením podniku a odbor. složkami"@cs ;
+	.
+crimestatistics-code-codelist-hash:14 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "uplácení nebo kompromitování vedoucích pracovníků"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_OkolnostiVedouciKeKriminalite ;
+	skos:notation "14" ;
+
+	rdfs:label "uplácení nebo kompromitování vedoucích pracovníků"@cs ;
+	.
+crimestatistics-code-codelist-hash:15 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "uplácení nebo kompromitování kontrolních a revizních pracovníků vnitropodnikových nebo nadřízených složek"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_OkolnostiVedouciKeKriminalite ;
+	skos:notation "15" ;
+
+	rdfs:label "uplácení nebo kompromitování kontrolních a revizních pracovníků vnitropodnikových nebo nadřízených složek"@cs ;
+	.
+crimestatistics-code-codelist-hash:16 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "nedodržení podmínek vyplývající z obchodní činnosti"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_OkolnostiVedouciKeKriminalite ;
+	skos:notation "16" ;
+
+	rdfs:label "nedodržení podmínek vyplývající z obchodní činnosti"@cs ;
+	.
+crimestatistics-code-codelist-hash:17 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "ostatní okolnosti"@cs ;
+	skos:inScheme crimestatistics-code-slash:hospodarskaKriminalita_OkolnostiVedouciKeKriminalite ;
+	skos:notation "17" ;
+
+	rdfs:label "ostatní okolnosti"@cs ;
+	.

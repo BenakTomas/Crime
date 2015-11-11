@@ -1,0 +1,513 @@
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#101> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/140> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#102> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/140> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#103> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/140> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#104> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/140> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#105> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/142> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#106> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/140> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#111> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/161>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/162> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#112> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/160> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#113> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/159> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#115> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/141> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#116> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/143> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#121> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/195> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#122> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/200> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#131> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/173> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#132> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/173> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#141> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/323>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/324>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/325>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/326> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#142> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/323>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/324>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/325>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/326> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#143> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/323>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/324>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/325>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/326> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#151> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/145>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/146>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/146a> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#161> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/158> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#171> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/352> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#172> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/174> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#173> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/353> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#174> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/354> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#181> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/175> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#182> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/169>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/170>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/171> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#183> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/178> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#184> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/208> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#185> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/198> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#186> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/199> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#187> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/176> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#188> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/177> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#189> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/179> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#190> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/144>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/172> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#201> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/185> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#202> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/186> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#211> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/187/2> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#212> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/187/1>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/187/3>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/187/4> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#213> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/187/2> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#214> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/187/1>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/187/3>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/187/4> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#231> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/358> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#241> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/191> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#251> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/155> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#252> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/145>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/146>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/152> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#253> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/143>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/147>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/148>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/153> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#271> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/189> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#280> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/188> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#281> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/168> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#290> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/190>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/192>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/193>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/194> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#311> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/205> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#312> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/205> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#321> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/205> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#322> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/205> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#323> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/205> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#324> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/205> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#331> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/205> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#332> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/205> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#341> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/205> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#350> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/205> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#351> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/205> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#371> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/178>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/205> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#372> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/178>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/205> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#373> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/178>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/205> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#390> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/178>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/205> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#411> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/205> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#412> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/205> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#413> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/205> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#421> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/205> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#431> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/205>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/207> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#432> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/205>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/207> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#433> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/205> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#434> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/205> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#435> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/205>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/207> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#441> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/205> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#451> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/205> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#461> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/205> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#462> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/205> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#471> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/205> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#480> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/205> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#490> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/205> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#511> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/209> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#521> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/206> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#530> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/207> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#588> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/219> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#589> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/228> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#590> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/304> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#611> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/358>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/359> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#612> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/358> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#613> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/228/2> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#614> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/358> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#631> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/201>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/202> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#632> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/204> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#633> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/169> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#634> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/339>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/340>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/341>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/343> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#635> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/283> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#636> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/287> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#637> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/329> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#639> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/180> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#640> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/330> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#641> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/284> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#642> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/286> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#643> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/285> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#644> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/288> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#651> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/228>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/272>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/273> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#652> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/228>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/272>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/273> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#662> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/279> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#663> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/337> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#664> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/214>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/215> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#690> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/338>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/342> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#721> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/366> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#730> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/145>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/146>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/228>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/272>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/274>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/360>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/402> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#731> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/143>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/147>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/148>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/273>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/274>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/277>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/360> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#732> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/143>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/147>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/148>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/273>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/274>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/277>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/360> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#733> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/143>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/147>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/148>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/273>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/274>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/277>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/360> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#741> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/143>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/147>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/148>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/273>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/274>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/277>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/360> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#742> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/143>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/147>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/148>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/273>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/274>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/277>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/360> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#750> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/143>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/147>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/148>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/274>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/360> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#751> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/143>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/147>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/148>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/274>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/360> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#762> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/222> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#763> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/223> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#771> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/274>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/360> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#772> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/196> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#781> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/290> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#782> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/291> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#783> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/292> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#784> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/302>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/303> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#785> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/357> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#786> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/361> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#787> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/355> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#788> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/356> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#789> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/403>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/404>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/405> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#790> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/149>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/150>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/151>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/164>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/165>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/166>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/167>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/181>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/182>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/183>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/184>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/218>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/220>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/221>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/272>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/273>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/275>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/276>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/277>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/278>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/280>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/328>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/335>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/336>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/344>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/345>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/346>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/347>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/350>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/351>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/364>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/365>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/367>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/368>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/400>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/401>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/411>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/412>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/413>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/414>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/415> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#801> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/248> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#803> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/251> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#806> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/253> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#807> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/261> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#808> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/254> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#810> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/225> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#811> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/220>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/221> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#812> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/205> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#813> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/207> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#814> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/228> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#815> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/209> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#816> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/233> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#817> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/245>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/246> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#819> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/240> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#820> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/329> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#821> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/331> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#822> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/222> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#823> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/348> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#824> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/349> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#825> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/156>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/157> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#826> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/259>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/260> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#827> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/207> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#828> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/182> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#829> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/206> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#830> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/209> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#831> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/256>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/257>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/258> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#832> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/262>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/263>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/264> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#833> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/255> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#834> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/252> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#835> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/244> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#836> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/180> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#837> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/235>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/236>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/237>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/239> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#838> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/234> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#839> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/265>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/266>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/267> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#840> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/205>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/206>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/209> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#841> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/205>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/206>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/209> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#842> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/205>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/206>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/209> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#843> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/205>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/206>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/209> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#844> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/205>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/206>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/209> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#845> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/330> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#846> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/332> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#847> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/333> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#848> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/223> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#849> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/226> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#850> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/293>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/294a>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/295>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/297>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/298>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/298a>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/299>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/301> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#851> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/294>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/294a>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/295>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/297>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/298>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/300>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/301> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#852> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/224> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#853> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/249> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#854> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/250> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#855> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/281>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/282> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#860> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/214>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/215> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#861> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/268> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#862> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/269> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#863> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/270>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/271> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#864> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/216>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/217> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#865> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/230>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/231>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/232> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#866> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/213> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#870> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/273>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/274>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/277>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/294>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/294a>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/301>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/360> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#871> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/228>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/272>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/274>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/276>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/278>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/293>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/294a>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/295>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/298>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/298a>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/299>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/301>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/360> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#880> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/210> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#881> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/211> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#882> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/212> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#885> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/243> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#886> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/241> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#890> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/181>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/183>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/218>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/227>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/229>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/247>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/280>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/305>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/306>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/307>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/337>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/410> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#901> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/369>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/370>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/371>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/372>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/373>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/374>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/375>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/376>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/377>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/378>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/379>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/380>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/381>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/382>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/383>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/384>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/385>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/386>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/387>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/388>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/389>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/390>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/391>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/392>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/393>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/394>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/395>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/396>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/397>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/398>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/417> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#902> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/309>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/310>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/311>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/312>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/314>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/315>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/316>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/317>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/318>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/319>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/320>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/321>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/322> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#903> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/406>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/407>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/409>,
+<http://linked.opendata.cz/resource/legislation/cz/act/2009/40/section/416> .

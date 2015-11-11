@@ -1,0 +1,228 @@
+# Standardní prefixy
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix interval: <http://reference.data.gov.uk/def/intervals/> .
+@prefix sdmx:    <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+# Vlastní prefixy
+@prefix crimestatistics-code-slash: <http://linked.opendata.cz/ontology/crimestatistics/code/> .
+@prefix crimestatistics-code-codelist-slash: <http://linked.opendata.cz/ontology/crimestatistics/code/uziteOmamneLatky/> .
+@prefix crimestatistics-code-codelist-class: <http://linked.opendata.cz/ontology/crimestatistics/code/uziteOmamneLatky/class#> .
+@prefix crimestatistics-code-codelist-property: <http://linked.opendata.cz/ontology/crimestatistics/code/uziteOmamneLatky/property#> .
+
+@prefix crimestatistics-code-codelist-hash: <http://linked.opendata.cz/ontology/crimestatistics/code/uziteOmamneLatky#> .
+
+crimestatistics-code-codelist-hash:1 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "alkohol"@cs ;
+	skos:inScheme crimestatistics-code-slash:uziteOmamneLatky ;
+	skos:notation "1" ;
+
+	rdfs:label "alkohol"@cs ;
+	.
+crimestatistics-code-codelist-hash:A a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "metamfetamin"@cs ;
+	skos:inScheme crimestatistics-code-slash:uziteOmamneLatky ;
+	skos:notation "A" ;
+
+	rdfs:label "metamfetamin"@cs ;
+	.
+crimestatistics-code-codelist-hash:B a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "braun"@cs ;
+	skos:inScheme crimestatistics-code-slash:uziteOmamneLatky ;
+	skos:notation "B" ;
+
+	rdfs:label "braun"@cs ;
+	.
+crimestatistics-code-codelist-hash:C a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "amfetamin"@cs ;
+	skos:inScheme crimestatistics-code-slash:uziteOmamneLatky ;
+	skos:notation "C" ;
+
+	rdfs:label "amfetamin"@cs ;
+	.
+crimestatistics-code-codelist-hash:D a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "methadon"@cs ;
+	skos:inScheme crimestatistics-code-slash:uziteOmamneLatky ;
+	skos:notation "D" ;
+
+	rdfs:label "methadon"@cs ;
+	.
+crimestatistics-code-codelist-hash:E a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "GHB"@cs ;
+	skos:inScheme crimestatistics-code-slash:uziteOmamneLatky ;
+	skos:notation "E" ;
+
+	rdfs:label "GHB"@cs ;
+	.
+crimestatistics-code-codelist-hash:K a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "LSD"@cs ;
+	skos:inScheme crimestatistics-code-slash:uziteOmamneLatky ;
+	skos:notation "K" ;
+
+	rdfs:label "LSD"@cs ;
+	.
+crimestatistics-code-codelist-hash:L a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "extáze"@cs ;
+	skos:inScheme crimestatistics-code-slash:uziteOmamneLatky ;
+	skos:notation "L" ;
+
+	rdfs:label "extáze"@cs ;
+	.
+crimestatistics-code-codelist-hash:2 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "syntetické drogy - ostatní"@cs ;
+	skos:inScheme crimestatistics-code-slash:uziteOmamneLatky ;
+	skos:notation "2" ;
+
+	rdfs:label "syntetické drogy - ostatní"@cs ;
+	.
+crimestatistics-code-codelist-hash:F a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "opium"@cs ;
+	skos:inScheme crimestatistics-code-slash:uziteOmamneLatky ;
+	skos:notation "F" ;
+
+	rdfs:label "opium"@cs ;
+	.
+crimestatistics-code-codelist-hash:G a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "morfin"@cs ;
+	skos:inScheme crimestatistics-code-slash:uziteOmamneLatky ;
+	skos:notation "G" ;
+
+	rdfs:label "morfin"@cs ;
+	.
+crimestatistics-code-codelist-hash:H a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "kokainová pasta"@cs ;
+	skos:inScheme crimestatistics-code-slash:uziteOmamneLatky ;
+	skos:notation "H" ;
+
+	rdfs:label "kokainová pasta"@cs ;
+	.
+crimestatistics-code-codelist-hash:I a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "kokain"@cs ;
+	skos:inScheme crimestatistics-code-slash:uziteOmamneLatky ;
+	skos:notation "I" ;
+
+	rdfs:label "kokain"@cs ;
+	.
+crimestatistics-code-codelist-hash:J a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "heroin"@cs ;
+	skos:inScheme crimestatistics-code-slash:uziteOmamneLatky ;
+	skos:notation "J" ;
+
+	rdfs:label "heroin"@cs ;
+	.
+crimestatistics-code-codelist-hash:3 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "polosyntetické drogy - ostatní"@cs ;
+	skos:inScheme crimestatistics-code-slash:uziteOmamneLatky ;
+	skos:notation "3" ;
+
+	rdfs:label "polosyntetické drogy - ostatní"@cs ;
+	.
+crimestatistics-code-codelist-hash:S a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "konopí"@cs ;
+	skos:inScheme crimestatistics-code-slash:uziteOmamneLatky ;
+	skos:notation "S" ;
+
+	rdfs:label "konopí"@cs ;
+	.
+crimestatistics-code-codelist-hash:T a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "pryskyřice z konopí"@cs ;
+	skos:inScheme crimestatistics-code-slash:uziteOmamneLatky ;
+	skos:notation "T" ;
+
+	rdfs:label "pryskyřice z konopí"@cs ;
+	.
+crimestatistics-code-codelist-hash:U a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "hašišový olej"@cs ;
+	skos:inScheme crimestatistics-code-slash:uziteOmamneLatky ;
+	skos:notation "U" ;
+
+	rdfs:label "hašišový olej"@cs ;
+	.
+crimestatistics-code-codelist-hash:4 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "přírodní drogy - ostatní"@cs ;
+	skos:inScheme crimestatistics-code-slash:uziteOmamneLatky ;
+	skos:notation "4" ;
+
+	rdfs:label "přírodní drogy - ostatní"@cs ;
+	.
+crimestatistics-code-codelist-hash:M a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "barbituráty"@cs ;
+	skos:inScheme crimestatistics-code-slash:uziteOmamneLatky ;
+	skos:notation "M" ;
+
+	rdfs:label "barbituráty"@cs ;
+	.
+crimestatistics-code-codelist-hash:N a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "rohypnol"@cs ;
+	skos:inScheme crimestatistics-code-slash:uziteOmamneLatky ;
+	skos:notation "N" ;
+
+	rdfs:label "rohypnol"@cs ;
+	.
+crimestatistics-code-codelist-hash:O a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "kodein"@cs ;
+	skos:inScheme crimestatistics-code-slash:uziteOmamneLatky ;
+	skos:notation "O" ;
+
+	rdfs:label "kodein"@cs ;
+	.
+crimestatistics-code-codelist-hash:P a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "diazepam"@cs ;
+	skos:inScheme crimestatistics-code-slash:uziteOmamneLatky ;
+	skos:notation "P" ;
+
+	rdfs:label "diazepam"@cs ;
+	.
+crimestatistics-code-codelist-hash:6 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "ostatní léky"@cs ;
+	skos:inScheme crimestatistics-code-slash:uziteOmamneLatky ;
+	skos:notation "6" ;
+
+	rdfs:label "ostatní léky"@cs ;
+	.
+crimestatistics-code-codelist-hash:5 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "těkavé látky"@cs ;
+	skos:inScheme crimestatistics-code-slash:uziteOmamneLatky ;
+	skos:notation "5" ;
+
+	rdfs:label "těkavé látky"@cs ;
+	.
+crimestatistics-code-codelist-hash:7 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "kombinace alkoholu s drogou"@cs ;
+	skos:inScheme crimestatistics-code-slash:uziteOmamneLatky ;
+	skos:notation "7" ;
+
+	rdfs:label "kombinace alkoholu s drogou"@cs ;
+	.
+crimestatistics-code-codelist-hash:8 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "kombinace ostatních látek"@cs ;
+	skos:inScheme crimestatistics-code-slash:uziteOmamneLatky ;
+	skos:notation "8" ;
+
+	rdfs:label "kombinace ostatních látek"@cs ;
+	.
+crimestatistics-code-codelist-hash:9 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "nezjištěno"@cs ;
+	skos:inScheme crimestatistics-code-slash:uziteOmamneLatky ;
+	skos:notation "9" ;
+
+	rdfs:label "nezjištěno"@cs ;
+	.
+crimestatistics-code-codelist-hash:0 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "nebyl zjištěn vliv žádné z uvedených látek"@cs ;
+	skos:inScheme crimestatistics-code-slash:uziteOmamneLatky ;
+	skos:notation "0" ;
+
+	rdfs:label "nebyl zjištěn vliv žádné z uvedených látek"@cs ;
+	.

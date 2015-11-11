@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="javadoc">
+    <target name="javadoc">
+        <javadoc access="private" author="true" classpath="../CrimeMonitorLibrary/bin;libs/gson-2.2.4.jar;libs/crimemonitorlibrary.jar" destdir="C:\Documents and Settings\Tom\Dokumenty\javadoc" doctitle="Crime Monitor Client Mobile App Documentation" nodeprecated="true" nodeprecatedlist="true" noindex="false" nonavbar="false" notree="false" packagenames="benak.tomas.crimemonitor.client.chartview,benak.tomas.crimemonitor.client.utils,benak.tomas.crimemonitor.client,benak.tomas.crimemonitor.client.view,benak.tomas.crimemonitor.client.exception" source="1.6" sourcefiles="gen/benak/tomas/crimemonitor/R.java,gen/benak/tomas/crimemonitor/BuildConfig.java" sourcepath="src;gen" splitindex="true" use="true" version="true">
+            <link href="file:/C:/Documents%20and%20Settings/Tom/Dokumenty/javadoc/"/>
+        </javadoc>
+    </target>
+</project>

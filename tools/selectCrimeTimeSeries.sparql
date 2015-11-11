@@ -1,0 +1,22 @@
+select ?intervalNumber (count(?trestnyCin) as ?crimeNumber)
+{
+  ?utvar a <http://linked.opendata.cz/ontology/crimestatistics/code/utvar/class/conceptClass> ;
+     utvar-property:id ?utvarId .
+  
+  FILTER(?utvarId = "001110") .
+
+  ?trestnyCin a qb:Observation ;
+ qb:dataSet <http://linked.opendata.cz/resource/domain/crimestatistics/dataset/trestneCiny>;
+    crime-dimension:datumACasSpachani ?datumSpachani ;
+    crime-dimension:utvarSpachaniNeboZjisteni ?utvar .
+
+    BIND(xsd:dateTime("2008-01-01") as ?startDate) .
+    BIND(xsd:dateTime("2012-01-01") as ?endDate) .
+
+    FILTER(?startDate <= ?datumSpachani && ?datumSpachani <= ?endDate) .
+    
+    BIND(((?endDate - ?startDate) / 20) as ?intervalLength) .
+    BIND(((?datumSpachani - ?startDate) / ?intervalLength) as ?intervalNumber) .
+}
+group by ?intervalNumber
+order by ?intervalNumber

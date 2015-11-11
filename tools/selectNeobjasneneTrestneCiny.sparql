@@ -1,0 +1,16 @@
+PREFIX crime-measure: <http://linked.opendata.cz/ontology/crimestatistics/dataset-definitions/measure#>
+PREFIX utvar-property: <http://linked.opendata.cz/ontology/crimestatistics/code/utvar/property/>
+PREFIX crime-dimension: <http://linked.opendata.cz/ontology/crimestatistics/dataset-definitions/dimension#>
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX crime-property: <http://linked.opendata.cz/ontology/crimestatistics/property#>
+PREFIX zpusobUkonceni: <http://linked.opendata.cz/ontology/crimestatistics/code/zpusobUkonceniNeboPrevzetiVeci_ZnamyPachatel#>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+
+CONSTRUCT { ?trestnyCin crime-property:objasnenyTrestnyCin "false"^^xsd:boolean .}
+{
+    ?trestnyCin a qb:Observation ;
+        qb:dataSet <http://linked.opendata.cz/resource/domain/crimestatistics/dataset/trestneCiny> .
+    
+    FILTER(NOT EXISTS { ?trestnyCin crime-property:objasnenyTrestnyCin ?objasneno . }) .
+}

@@ -1,0 +1,13 @@
+SPARQL
+
+prefix crime: <http://linked.opendata.cz/ontology/crime#>
+prefix dct: <http://purl.org/dc/terms/>
+
+WITH <http://linked.opendata.cz/resource/domain/crimestatistics/dataset>
+INSERT { ?trestnyCin crime:validTo "9999-12-31 23:59:59"^^xsd:dateTime . }
+where
+{
+    ?trestnyCin a <http://linked.opendata.cz/ontology/crime#TrestnyCin> ;
+      dct:isVersionOf ?trestnyCin_prev_master .
+    FILTER(NOT EXISTS { ?trestnyCin crime:validTo ?validTo . }) .
+};

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="crime_month_histogram_caption"
+        parent="@style/crime_measure_caption">
+        <item name="android:text">@string/crime_month_histogram_label</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+</resources>

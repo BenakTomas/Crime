@@ -1,0 +1,95 @@
+# Standardní prefixy
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix interval: <http://reference.data.gov.uk/def/intervals/> .
+@prefix sdmx:    <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+# Vlastní prefixy
+@prefix crimestatistics-code-slash: <http://linked.opendata.cz/ontology/crimestatistics/code/> .
+@prefix crimestatistics-code-codelist-slash: <http://linked.opendata.cz/ontology/crimestatistics/code/taktickaKlasifikaceSkupinyNapadenychOsob2/> .
+@prefix crimestatistics-code-codelist-class: <http://linked.opendata.cz/ontology/crimestatistics/code/taktickaKlasifikaceSkupinyNapadenychOsob2/class#> .
+@prefix crimestatistics-code-codelist-property: <http://linked.opendata.cz/ontology/crimestatistics/code/taktickaKlasifikaceSkupinyNapadenychOsob2/property#> .
+
+@prefix crimestatistics-code-codelist-hash: <http://linked.opendata.cz/ontology/crimestatistics/code/taktickaKlasifikaceSkupinyNapadenychOsob2#> .
+
+crimestatistics-code-codelist-hash:1 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "rodina"@cs ;
+	skos:inScheme crimestatistics-code-slash:taktickaKlasifikaceSkupinyNapadenychOsob2 ;
+	skos:notation "1" ;
+
+	rdfs:label "rodina"@cs ;
+	.
+crimestatistics-code-codelist-hash:2 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "manželský pár"@cs ;
+	skos:inScheme crimestatistics-code-slash:taktickaKlasifikaceSkupinyNapadenychOsob2 ;
+	skos:notation "2" ;
+
+	rdfs:label "manželský pár"@cs ;
+	.
+crimestatistics-code-codelist-hash:3 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "milenecký pár"@cs ;
+	skos:inScheme crimestatistics-code-slash:taktickaKlasifikaceSkupinyNapadenychOsob2 ;
+	skos:notation "3" ;
+
+	rdfs:label "milenecký pár"@cs ;
+	.
+crimestatistics-code-codelist-hash:4 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "spoluzaměstnanci"@cs ;
+	skos:inScheme crimestatistics-code-slash:taktickaKlasifikaceSkupinyNapadenychOsob2 ;
+	skos:notation "4" ;
+
+	rdfs:label "spoluzaměstnanci"@cs ;
+	.
+crimestatistics-code-codelist-hash:5 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "spolužáci"@cs ;
+	skos:inScheme crimestatistics-code-slash:taktickaKlasifikaceSkupinyNapadenychOsob2 ;
+	skos:notation "5" ;
+
+	rdfs:label "spolužáci"@cs ;
+	.
+crimestatistics-code-codelist-hash:6 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "důchodci"@cs ;
+	skos:inScheme crimestatistics-code-slash:taktickaKlasifikaceSkupinyNapadenychOsob2 ;
+	skos:notation "6" ;
+
+	rdfs:label "důchodci"@cs ;
+	.
+crimestatistics-code-codelist-hash:7 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "svěřenci"@cs ;
+	skos:inScheme crimestatistics-code-slash:taktickaKlasifikaceSkupinyNapadenychOsob2 ;
+	skos:notation "7" ;
+
+	rdfs:label "svěřenci"@cs ;
+	.
+crimestatistics-code-codelist-hash:10 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "spolubydlící"@cs ;
+	skos:inScheme crimestatistics-code-slash:taktickaKlasifikaceSkupinyNapadenychOsob2 ;
+	skos:notation "10" ;
+
+	rdfs:label "spolubydlící"@cs ;
+	.
+crimestatistics-code-codelist-hash:8 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "ostatní složení skupiny"@cs ;
+	skos:inScheme crimestatistics-code-slash:taktickaKlasifikaceSkupinyNapadenychOsob2 ;
+	skos:notation "8" ;
+
+	rdfs:label "ostatní složení skupiny"@cs ;
+	.
+crimestatistics-code-codelist-hash:9 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "nepřichází v úvahu"@cs ;
+	skos:inScheme crimestatistics-code-slash:taktickaKlasifikaceSkupinyNapadenychOsob2 ;
+	skos:notation "9" ;
+
+	rdfs:label "nepřichází v úvahu"@cs ;
+	.

@@ -1,0 +1,968 @@
+# Standardní prefixy
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix interval: <http://reference.data.gov.uk/def/intervals/> .
+@prefix sdmx:    <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+# Vlastní prefixy
+@prefix crimestatistics-code-slash: <http://linked.opendata.cz/ontology/crimestatistics/code/> .
+@prefix crimestatistics-code-codelist-slash: <http://linked.opendata.cz/ontology/crimestatistics/code/tsk/> .
+@prefix crimestatistics-code-codelist-class: <http://linked.opendata.cz/ontology/crimestatistics/code/tsk/class#> .
+@prefix crimestatistics-code-codelist-property: <http://linked.opendata.cz/ontology/crimestatistics/code/tsk/property#> .
+
+@prefix crimestatistics-code-codelist-hash: <http://linked.opendata.cz/ontology/crimestatistics/code/tsk#> .
+
+# Definice schematu konceptů
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk> a skos:ConceptScheme ;
+	skos:prefLabel "Číselník takticko-statistické klasifikace trestných činů (TSK) - schéma"@cs ;
+	skos:note "Definuje takticko-statistickou klasifikaci trestných činů"@cs ;
+	
+	rdfs:label "Číselník takticko-statistické klasifikace trestných činů (TSK) - schéma"@cs ;
+	rdfs:comment "Definuje takticko-statistickou klasifikaci trestných činů."@cs ;
+	rdfs:seeAlso <http://linked.opendata.cz/ontology/crimestatistics/code/tsk/conceptClass> ;
+	.
+
+# Definice zapouzdřující třídy
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/conceptClass> a rdf:Class ;
+	rdfs:label "Číselník takticko-statistické klasifikace trestných činů (TSK) - zapouzdřující třída"@cs ;
+	rdfs:comment "Definuje takticko-statistickou klasifikaci trestných činů."@cs ;
+	rdfs:subClassOf skos:Concept ;
+	rdfs:seeAlso <http://linked.opendata.cz/ontology/crimestatistics/code/tsk> ;
+	.
+
+# Definice členských konceptů
+crimestatistics-code-codelist-hash:umyslnyTrestneCin a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		"úmyslný trestný čin"@cs,
+		"intentional crime"@en ;
+	skos:inScheme crimestatistics-code-slash:tsk ;
+	skos:notation "" ;
+	.
+
+#TODO: Úmyslné trestné činy - explicitně vypsat, nebo implicitně pomocí nedbalostních trestných činů?
+
+# Neúmyslné trestné činy
+crimestatistics-code-codelist-hash:nedbalostniTrestneCin a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		"nedbalostní trestný čin"@cs,
+		"unintentional crime"@en ;
+	skos:inScheme crimestatistics-code-slash:tsk ;
+	skos:notation "" ;
+	.
+
+crimestatistics-code-codelist-hash:nedbalostniTrestneCin skos:narrower
+	crimestatistics-code-codelist-hash:116,
+	crimestatistics-code-codelist-hash:253,
+	crimestatistics-code-codelist-hash:640,
+	crimestatistics-code-codelist-hash:731,
+	crimestatistics-code-codelist-hash:732,
+	crimestatistics-code-codelist-hash:733,
+	crimestatistics-code-codelist-hash:741,
+	crimestatistics-code-codelist-hash:742,
+	crimestatistics-code-codelist-hash:750,
+	crimestatistics-code-codelist-hash:751,
+	crimestatistics-code-codelist-hash:845,
+	crimestatistics-code-codelist-hash:851,
+	crimestatistics-code-codelist-hash:870 ;
+	.
+
+
+crimestatistics-code-codelist-hash:loupeznyTrestnyCin a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		"loupežný trestný činy"@cs,
+		"robbery-related crime"@en ;
+	skos:inScheme crimestatistics-code-slash:tsk ;
+	skos:notation "" ;
+	skos:scopeNote
+		"Zahrnuje trestné činy, při kterých došlo k loupeži."@cs,
+		"Involves crimes where robbery played a role."@en ;
+	.
+
+crimestatistics-code-codelist-hash:loupeznyTrestnyCin skos:narrower
+	crimestatistics-code-codelist-hash:101,
+	crimestatistics-code-codelist-hash:131,
+	crimestatistics-code-codelist-hash:132 ;
+	.
+
+crimestatistics-code-codelist-hash:trestnyCinNasiliProtiUredniOsobeAOrganuVerejneMoci a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		"trestný čin násilí proti úřední osobě a orgánu veřejné moci"@cs,
+		"crime against an official"@en ;
+	skos:inScheme crimestatistics-code-slash:tsk ;
+	skos:notation "" ;
+	skos:scopeNote
+		"Zahrnuje trestné činy, kdy bylo použito násilí proti úřední osobě a orgánu veřejné moci."@cs,
+		"Involves crimes against some kind of a state official."@en ;
+	.
+
+# Trestné činy násilí proti úřední osobě a orgánu veřejné moci
+crimestatistics-code-codelist-hash:trestnyCinNasiliProtiUredniOsobeAOrganuVerejneMoci skos:narrower
+	crimestatistics-code-codelist-hash:141,
+	crimestatistics-code-codelist-hash:trestnyCinNasiliProtiPolicistovi ;
+	.
+
+crimestatistics-code-codelist-hash:trestnyCinNasiliProtiPolicistovi a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		"trestný čin násilí proti policistovi"@cs,
+		"crime of violence against a policeman"@en ;
+	skos:inScheme crimestatistics-code-slash:tsk ;
+	skos:notation "" ;
+	skos:scopeNote
+		"Jedná se o speciální případ násilí proti úřední osobě a orgánu veřejné moci, kdy napaden je příslušník PČR nebo obecní policie."@cs,
+		"This is a special case of commiting a violence against an official, a policeman in this case."@en ;
+	.
+
+# Trestné činy násilí proti příslušníkovi PČR nebo obecní policie
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:142,
+	crimestatistics-code-codelist-hash:143 ;
+	.
+
+crimestatistics-code-codelist-hash:vrazda a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		"vraždy"@cs,
+		"murder"@en ;
+	skos:inScheme crimestatistics-code-slash:tsk ;
+	skos:notation "" ;
+	.
+
+crimestatistics-code-codelist-hash:vrazda skos:narrower
+	crimestatistics-code-codelist-hash:101,
+	crimestatistics-code-codelist-hash:102,
+	crimestatistics-code-codelist-hash:103,
+	crimestatistics-code-codelist-hash:104,
+	crimestatistics-code-codelist-hash:105,
+	crimestatistics-code-codelist-hash:106,
+	crimestatistics-code-codelist-hash:111,
+	crimestatistics-code-codelist-hash:112,
+	crimestatistics-code-codelist-hash:113 ;
+	.
+
+crimestatistics-code-codelist-hash:ublizeniNaZdravi a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		"ublížení na zdraví"@cs,
+		"causing bodily harm "@en ;
+	skos:inScheme crimestatistics-code-slash:tsk ;
+	skos:notation "" ;
+	skos:scopeNote
+		"Zahrnuje trestné činy, kdy došlo k ublížení na zdraví, ať již úmyslně nebo neúmyslně."@cs,
+		"Involves crimes where bodily harm was caused."@en ;
+	.
+
+#TODO
+crimestatistics-code-codelist-hash:ublizeniNaZdravi skos:narrower
+	crimestatistics-code-codelist-hash:ublizeniNaZdraviPrenosnouNemoci,
+	crimestatistics-code-codelist-hash:ublizeniNaZdraviUmyslne,
+	crimestatistics-code-codelist-hash:ublizeniNaZdraviZNedbalosti ;
+	.
+
+crimestatistics-code-codelist-hash:ublizeniNaZdraviUmyslne a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		"ublížení na zdraví úmyslné"@cs,
+		"causing bodily harm intentionally"@en ;
+	skos:inScheme crimestatistics-code-slash:tsk ;
+	skos:notation "" ;
+	skos:scopeNote
+		"Zahrnuje trestné činy úmyslného ublížení na zdraví."@cs,
+		"Involves crimes of causing bodily harm with intent."@en ;
+	.
+
+# Úmyslné ublížení na zdraví
+crimestatistics-code-codelist-hash:ublizeniNaZdraviUmyslne skos:narrower
+	crimestatistics-code-codelist-hash:151,
+	crimestatistics-code-codelist-hash:252 ;	
+	.
+
+crimestatistics-code-codelist-hash:ublizeniNaZdraviZNedbalosti a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		"ublížení na zdraví z nedbalosti"@cs ;
+		"causing bodily harm unintentionally"@en ;
+	skos:inScheme crimestatistics-code-slash:tsk ;
+	skos:notation "" ;
+	skos:scopeNote
+		"Zahrnuje trestné činy ublížení na zdraví z nedbalosti."@cs ;
+		"Involves crimes of causing bodily harm without intent to doing so."@en ;
+	.
+
+# Ublížení na zdraví z nedbalosti
+crimestatistics-code-codelist-hash:ublizeniNaZdraviZNedbalosti skos:narrower
+	crimestatistics-code-codelist-hash:253,
+	crimestatistics-code-codelist-hash:750,
+	crimestatistics-code-codelist-hash:751 ;
+	.
+
+crimestatistics-code-codelist-hash:sexualniZneuzivani a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		"trestný čin sexuálního zneužívání"@cs,
+		"sexual abuse crime"@en ;
+	skos:inScheme crimestatistics-code-slash:tsk ;
+	skos:notation "" ;
+	skos:scopeNote
+		"Zahrnuje trestné činy, kdy je oběť sexuálně zneužívána, t.j. jak nucení k prostituci, tak pohlavní zneužívání nezletilých."@cs,
+		"Involves commercial sexual abuse (e.g. prostitution) and also molesting."@en ;
+	.
+
+crimestatistics-code-codelist-hash:pohlavniZneuzivani a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		"trestný čin pohlavního zneužívání"@cs,
+		"molesting"@en ;
+	skos:inScheme crimestatistics-code-slash:tsk ;
+	skos:notation "" ;
+	skos:scopeNote
+		"Speciální případ sexuálního zneužívání, kdy je sexuálně zneužívána nezletilá osoba."@cs,
+		"Special case of sexual abuse involving minors."@en ;
+	.
+
+crimestatistics-code-codelist-hash:komercniSexualniZneuzivani a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		"sexuální zneužívání komerční"@cs,
+		"commercial sexual abuse"@en ;
+	skos:inScheme crimestatistics-code-slash:tsk ;
+	skos:notation "" ;
+	skos:scopeNote
+		"Zahrnuje trestné činy sexuálního zneužívání, kdy je osoba nucena k provozování sexuálních aktivit za účelem dosažení zisku jiné osoby."@cs,
+		"Involves crimes of sexual abuse where a person is forced to engage in sexual activities for the sake of interest of other person or persons."@en ;
+	.
+
+crimestatistics-code-codelist-hash:sexualniZneuzivaniOsobyZavisle a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		"sexuální zneužívání osoby závislé"@cs,
+		"sexual abuse of a dependent person"@en ;
+	skos:inScheme crimestatistics-code-slash:tsk ;
+	skos:notation "" ;
+	skos:scopeNote
+		"Zahrnuje trestné činy sexuálního zneužívání osoby závislé, t.j. např. svěřené do péče."@cs,
+		"Involves sexual abuse crimes against a dependent person, for example a person in custody."@en ;
+	.
+
+crimestatistics-code-codelist-hash:sexualniZneuzivani skos:narrower
+	crimestatistics-code-codelist-hash:pohlavniZneuzivani,
+	crimestatistics-code-codelist-hash:komercniSexualniZneuzivani,
+	crimestatistics-code-codelist-hash:sexualniZneuzivaniOsobyZavisle ;
+	.
+
+crimestatistics-code-codelist-hash:pohlavniZneuzivani skos:narrower
+	crimestatistics-code-codelist-hash:211,
+	crimestatistics-code-codelist-hash:212 ;
+	.
+
+crimestatistics-code-codelist-hash:komercniSexualniZneuzivani skos:narrower
+	crimestatistics-code-codelist-hash:213,
+	crimestatistics-code-codelist-hash:214 ;
+	.
+
+crimestatistics-code-codelist-hash:sexualniZneuzivaniOsobyZavisle skos:narrower
+	crimestatistics-code-codelist-hash:211,
+	crimestatistics-code-codelist-hash:213 ;
+	.
+
+crimestatistics-code-codelist-hash:ohrozovaniPrenosnouNemoci a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		"ohrožování pohlavně přenosnou nemocí"@cs,
+		"sexually transmitted diseases endangering"@en ;
+	skos:inScheme crimestatistics-code-slash:tsk ;
+	skos:notation "" ;
+	skos:scopeNote
+		"Zahrnuje trestné činy, kdy pachatel ohrožuje ostatní možností infekce pohlavně přenosnou nemocí."@cs,
+		"A person endangeres the health of other people by not taking actions to prevent infecting others with a sexually transmitted disease he or she has."@en ;
+	.
+
+crimestatistics-code-codelist-hash:ohrozovaniPrenosnouNemoci skos:narrower
+	crimestatistics-code-codelist-hash:ublizeniNaZdraviPrenosnouNemoci,
+	crimestatistics-code-codelist-hash:251 ;
+	.
+
+crimestatistics-code-codelist-hash:ublizeniNaZdraviPrenosnouNemoci a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		"ublížení na zdraví přenosnou nemocí"@cs,
+		"causing infection with transmittable disease"@en ;
+	skos:inScheme crimestatistics-code-slash:tsk ;
+	skos:notation "" ;
+	skos:scopeNote
+		"Zahrnuje případy ublížení na zdraví přenosnou nemocí, a to jak úmyslné tak neúmyslné."@cs,
+		"Involves the cases when a person gets infected by a disease, both intentionally and unintentionally."@en ;
+	.
+
+crimestatistics-code-codelist-hash:ublizeniNaZdraviPrenosnouNemoci skos:narrower
+	crimestatistics-code-codelist-hash:252,
+	crimestatistics-code-codelist-hash:253 ;
+	.
+
+crimestatistics-code-codelist-hash:mravnostniTrestnyCin a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		"mravnostní trestný čin"@cs,
+		"vice crime"@en ;
+	skos:inScheme crimestatistics-code-slash:tsk ;
+	skos:notation "" ;
+	skos:scopeNote
+		"Zahrnuje různé druhy mravnostních trestných činů jako znásilnění, sexuální zneužívání, obchodování s lidmi atd."@cs,
+		"Involves various crimes like rape, trafficking, sexual abuse etc."@en ;
+	.
+
+# Mravnostní trestné činy
+crimestatistics-code-codelist-hash:mravnostniTrestnyCin skos:narrower
+	crimestatistics-code-codelist-hash:201,
+	crimestatistics-code-codelist-hash:202,
+	crimestatistics-code-codelist-hash:sexualniZneuzivani,
+	crimestatistics-code-codelist-hash:ohrozovaniPrenosnouNemoci,
+	crimestatistics-code-codelist-hash:271,
+	crimestatistics-code-codelist-hash:280,
+	crimestatistics-code-codelist-hash:281,
+	crimestatistics-code-codelist-hash:290 ;
+	.
+
+crimestatistics-code-codelist-hash:obchodSLidmi a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		"obchod s lidmi"@cs,
+		"trafficking"@en ;
+	skos:inScheme crimestatistics-code-slash:tsk ;
+	skos:notation "" ;
+	skos:scopeNote
+		"Obchodování s lidmi znamená „najímání, přepravu, převoz, přechovávání nebo přijetí osob za účelem zneužívání  za pomoci hrozby, použití síly nebo jiných forem donucení, za pomoci únosu, podvodu, uvedení v omyl nebo zneužití moci či stavu bezbrannosti nebo pomocí předání nebo přijetí plateb či výhod, a to za účelem získání souhlasu osoby mající kontrolu nad jinou osobou."@cs,
+		"Trafficking - see definitions in see-also section."@en ;
+	.
+
+# Obchodování s lidmi
+crimestatistics-code-codelist-hash:obchodSLidmi skos:narrower
+	crimestatistics-code-codelist-hash:271,
+	crimestatistics-code-codelist-hash:281,
+	crimestatistics-code-codelist-hash:633 ;
+	.
+
+crimestatistics-code-codelist-hash:trestnyCinNamirenyProtiObcanskymPravumASvobodam a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		"trestný čin namířený proti občanským právům a svobodám nebo tyto práva a svobody přímo porušující"@cs,
+		"crime of violation of civil liberties or merely targeted against them"@en ;
+	skos:inScheme crimestatistics-code-slash:tsk ;
+	skos:notation "" ;
+	skos:scopeNote
+		"Zahrnuje případy trestných činů nějakým způsobem zaměřených proti občanským právům a svobodám, ať již jsou tato přímo potlačována nebo ne."@cs,
+		"Involves the crimes where either civil liberties were violated or the crime was merely targeted against them."@en ;
+	.
+
+# Trestné činy namířené proti občanským právům a svobodám jednotlivce nebo skupiny obyvatel
+crimestatistics-code-codelist-hash:trestnyCinNamirenyProtiObcanskymPravumASvobodam skos:narrower
+	crimestatistics-code-codelist-hash:zasahDoObcanskychPravASvobod,
+	crimestatistics-code-codelist-hash:789 ;
+	.
+
+crimestatistics-code-codelist-hash:zasahDoObcanskychPravASvobodJednotlivce a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		"trestný čin zasahující do individuálních občanských práv a svobod"@cs,
+		"crime of violation of civil liberties of an individual or merely targeted against them"@en ;
+	skos:inScheme crimestatistics-code-slash:tsk ;
+	skos:notation "" ;
+	skos:scopeNote
+		"Zahrnuje případy zásahu do různých občanských práv a svobod jednotlivce, např. domovní svobody, svobody vyznání."@cs,
+		"Involves the cases of violation of civil liberties of an individual."@en ;
+	.
+
+# Zásah do občanských práv a svobod jednotlivce
+crimestatistics-code-codelist-hash:zasahDoObcanskychPravASvobodJednotlivce skos:narrower
+	crimestatistics-code-codelist-hash:182,
+	crimestatistics-code-codelist-hash:183,
+	crimestatistics-code-codelist-hash:184,
+	crimestatistics-code-codelist-hash:187 ;
+	.
+
+crimestatistics-code-codelist-hash:zasahDoObcanskychPravASvobodSkupinyObyvatel a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		"trestný čin zasahující do občanských práv a svobod skupiny obyvatel"@cs,
+		"crime of violation of civil liberties of a group of citizens or merely targeted against them"@en ;
+	skos:inScheme crimestatistics-code-slash:tsk ;
+	skos:notation "" ;
+	skos:scopeNote
+		"Zahrnuje případy zásahu do různých občanských práv a svobod skupiny obyvatel, např. svobody shromažďování."@cs,
+		"Involves the cases of violation of civil liberties of a group of citizens."@en ;
+	.
+
+# Zásah do občanských práv a svobod skupiny obyvatel
+crimestatistics-code-codelist-hash:zasahDoObcanskychPravASvobodSkupinyObyvatel skos:narrower
+	crimestatistics-code-codelist-hash:189 ;
+	.
+
+crimestatistics-code-codelist-hash:zasahDoObcanskychPravASvobod a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		"trestný čin zasahující do občanských práv a svobod jednotlice nebo skupiny obyvatel"@cs,
+		"crime violating the civil liberties of an individual or of a group of citizencs"@en ;
+	skos:inScheme crimestatistics-code-slash:tsk ;
+	skos:notation "" ;
+	skos:scopeNote
+		"Zahrnuje případy zásahu do různých občanských práv a svobod jednotlivce nebo skupiny obyvatel, např. domovní svobody, svobody vyznání, svobody shromažďování atd."@cs,
+		"Involves the cases of violation of civil liberties if an individual or of a group of citizencs."@en ;
+	.
+
+# Zásah do občanských práv a svobod jednotlivce nebo skupiny obyvatel
+crimestatistics-code-codelist-hash:zasahDoObcanskychPravASvobod skos:narrower
+	crimestatistics-code-codelist-hash:zasahDoIndividualnichObcanskychPravASvobod,
+	crimestatistics-code-codelist-hash:zasahDoObcanskychPravASvobodJednotlivce ;
+	.
+
+crimestatistics-code-codelist-hash:trestnyCinProtiDetemAMladistvym a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		"trestný čin proti dětem a mladistvým"@cs,
+		"crime against children or minors"@en ;
+	skos:inScheme crimestatistics-code-slash:tsk ;
+	skos:notation "" ;
+	skos:scopeNote
+		"Zahrnuje trestné činy, kdy obětmi byly děti nebo mladiství."@cs,
+		"Involves crimes against children or minors."@en ;
+	.
+
+# Trestné činy proti dětem a mladistvým
+crimestatistics-code-codelist-hash:trestnyCinProtiDetemAMladistvym skos:narrower
+	crimestatistics-code-codelist-hash:trestnyCinProtiDetem,
+	crimestatistics-code-codelist-hash:trestnyCinProtiMladistvym ;
+	.
+
+crimestatistics-code-codelist-hash:trestnyCinProtiDetem a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		"trestný čin proti dětem"@cs,
+		"crime against children"@en ;
+	skos:inScheme crimestatistics-code-slash:tsk ;
+	skos:notation "" ;
+	skos:scopeNote
+		"Zahrnuje trestné činy, kdy obětmi byly děti."@cs,
+		"Involves crimes against children."@en ;
+	.
+
+# Trestné činy proti dětem
+crimestatistics-code-codelist-hash:trestnyCinProtiDetem skos:narrower
+	crimestatistics-code-codelist-hash:105,
+	crimestatistics-code-codelist-hash:111,
+	crimestatistics-code-codelist-hash:112,
+	crimestatistics-code-codelist-hash:113,
+	crimestatistics-code-codelist-hash:121,
+	crimestatistics-code-codelist-hash:633 ;
+	.
+
+crimestatistics-code-codelist-hash:trestnyCinProtiMladistvym a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		"trestný čin proti mladistvým"@cs,
+		"crime against minors"@en ;
+	skos:inScheme crimestatistics-code-slash:tsk ;
+	skos:notation "" ;
+	skos:scopeNote
+		"Zahrnuje trestné činy, kdy obětí byli mladiství."@cs,
+		"Involves crimes against minors."@en ;
+	.
+
+# Trestné činy proti mladistvým
+crimestatistics-code-codelist-hash:trestnyCinProtiMladistvym skos:narrower
+	crimestatistics-code-codelist-hash:631,
+	crimestatistics-code-codelist-hash:632 ;
+	.
+
+crimestatistics-code-codelist-hash:tyrani a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		"týrání"@cs,
+		"abuse"@en ;
+	skos:inScheme crimestatistics-code-slash:tsk ;
+	skos:notation "" ;
+	skos:scopeNote
+		"Zahrnuje různé případy týrání, např. svěřené osoby, zvířat, osob ve společném obydlí."@cs,
+		"Involves the cases of abusing a person in custody, animal cruelty etc."@en ;
+	.
+
+# Týrání
+crimestatistics-code-codelist-hash:tyrani skos:narrower
+	crimestatistics-code-codelist-hash:185,
+	crimestatistics-code-codelist-hash:186,
+	crimestatistics-code-codelist-hash:784 ;
+	.
+
+crimestatistics-code-codelist-hash:kradez a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		"krádež"@cs,
+		"theft"@en ;
+	skos:inScheme crimestatistics-code-slash:tsk ;
+	skos:notation "" ;
+	.
+
+# Krádež
+crimestatistics-code-codelist-hash:kradez skos:narrower
+	crimestatistics-code-codelist-hash:kradezVloupanim,
+	crimestatistics-code-codelist-hash:kradezDopravnihoProstredku,
+	crimestatistics-code-codelist-hash:kradezSouvisejiciSMotorovymiVozidly,
+	crimestatistics-code-codelist-hash:kradezVByteNeboRodinnemDome,
+	crimestatistics-code-codelist-hash:kradezVObjektuSeStarozitnostmiAUmeleckymiPredmety,
+	crimestatistics-code-codelist-hash:411,
+	crimestatistics-code-codelist-hash:412,
+	crimestatistics-code-codelist-hash:413,
+	crimestatistics-code-codelist-hash:421,
+	crimestatistics-code-codelist-hash:441,
+	crimestatistics-code-codelist-hash:461,
+	crimestatistics-code-codelist-hash:462,
+	crimestatistics-code-codelist-hash:480,
+	crimestatistics-code-codelist-hash:490 ;
+	.
+
+crimestatistics-code-codelist-hash:kradezVloupanim a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		"krádež vloupáním"@cs,
+		"burglary"@en ;
+	skos:inScheme crimestatistics-code-slash:tsk ;
+	skos:notation "" ;
+	.
+
+# Krádeže vloupáním
+crimestatistics-code-codelist-hash:kradezVloupanim skos:narrower
+	crimestatistics-code-codelist-hash:311,
+	crimestatistics-code-codelist-hash:312,
+	crimestatistics-code-codelist-hash:321,
+	crimestatistics-code-codelist-hash:322,
+	crimestatistics-code-codelist-hash:323,
+	crimestatistics-code-codelist-hash:324,
+	crimestatistics-code-codelist-hash:331,
+	crimestatistics-code-codelist-hash:332,
+	crimestatistics-code-codelist-hash:341,
+	crimestatistics-code-codelist-hash:350,
+	crimestatistics-code-codelist-hash:351,
+	crimestatistics-code-codelist-hash:371,
+	crimestatistics-code-codelist-hash:372,
+	crimestatistics-code-codelist-hash:373,
+	crimestatistics-code-codelist-hash:390,
+	crimestatistics-code-codelist-hash:433 ;
+	.
+
+crimestatistics-code-codelist-hash:kradezDopravnihoProstredku a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		"krádež dopravního prostředku"@cs,
+		"a means of transport theft"@en ;
+	skos:inScheme crimestatistics-code-slash:tsk ;
+	skos:notation "" ;
+	skos:scopeNote
+		"Odcizen byl dopravní prostředek."@cs,
+		"Involves the cases where a means of transport has been stolen."@en ;
+	.
+
+# Krádež dopravního prostředku
+crimestatistics-code-codelist-hash:kradezDopravnihoProstredku skos:narrower
+	crimestatistics-code-codelist-hash:kradezMotorovehoVozidla,
+	crimestatistics-code-codelist-hash:435 ;
+	.
+
+crimestatistics-code-codelist-hash:kradezSouvisejiciSMotorovymiVozidly a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		"krádež související s motorovými vozidly"@cs,
+		"motor vehicle related theft"@en ;
+	skos:inScheme crimestatistics-code-slash:tsk ;
+	skos:notation "" ;
+	skos:scopeNote
+		"Jedná se o případy, kdy krádeží bylo zasaženo motorové vozidlo, ať už bylo přímo ukradeno nebo bylo něco ukradeno z něj."@cs,
+		"Involves the cases where a motor vehicle was involved, for example it has been stolen or something has been stolen from it."@en ;
+	.
+
+# Krádež související s motorovým vozidlem
+crimestatistics-code-codelist-hash:kradezSouvisejiciSMotorovymiVozidly skos:narrower
+	crimestatistics-code-codelist-hash:kradezMotorovehoVozidla,
+	crimestatistics-code-codelist-hash:kradezVeciZMotorovehoVozidla ;
+	.
+
+crimestatistics-code-codelist-hash:kradezMotorovehoVozidla a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		"krádež motorového vozidla"@cs,
+		"motor vehicle theft"@en ;
+	skos:inScheme crimestatistics-code-slash:tsk ;
+	skos:notation "" ;
+	skos:scopeNote
+		"Odcizeno bylo celé motorové vozidlo."@cs,
+		"A motor vehicle has been stolen."@en ;
+	.
+
+# Krádež motorového vozidla
+crimestatistics-code-codelist-hash:kradezMotorovehoVozidla skos:narrower
+	crimestatistics-code-codelist-hash:431,
+	crimestatistics-code-codelist-hash:432 ;
+	.
+
+crimestatistics-code-codelist-hash:kradezVeciZMotorovehoVozidla a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		"krádež věci z motorového vozidla"@cs,
+		"stealing things from the inside or outside of a motor vehicle"@en ;
+	skos:inScheme crimestatistics-code-slash:tsk ;
+	skos:notation "" ;
+	skos:scopeNote
+		"Odcizeno bylo něco z motorového vozidla."@cs,
+		"Involves the cases of stealing things from the inside or outside of a motor vehicle."@en ;
+	.
+
+# Krádež věcí z motorového vozidla
+crimestatistics-code-codelist-hash:kradezVeciZMotorovehoVozidla skos:narrower
+	crimestatistics-code-codelist-hash:433,
+	crimestatistics-code-codelist-hash:434 ;
+	.
+
+crimestatistics-code-codelist-hash:kradezVByteNeboRodinnemDome a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		"krádež v bytě nebo rodinném domě"@cs,
+		"theft in a flat or a house"@en ;
+	skos:inScheme crimestatistics-code-slash:tsk ;
+	skos:notation "" ;
+	.
+
+# Krádeže v bytech a rodinných domech
+crimestatistics-code-codelist-hash:kradezVByteNeboRodinnemDome skos:narrower
+	crimestatistics-code-codelist-hash:371,
+	crimestatistics-code-codelist-hash:373,
+	crimestatistics-code-codelist-hash:451 ;
+	.
+
+crimestatistics-code-codelist-hash:kradezVObjektuSeStarozitnostmiAUmeleckymiPredmety a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		"krádež v objektu, kde se nacházejí starožitnosti a umělecké předměty"@cs,
+		"theft in a building with antiquites and works of art"@en ;
+	skos:inScheme crimestatistics-code-slash:tsk ;
+	skos:notation "" ;
+	.
+
+# Krádeže v objektech, kde se nacházejí starožitnosti a umělecké předměty
+crimestatistics-code-codelist-hash:kradezVObjektuSeStarozitnostmiAUmeleckymiPredmety skos:narrower
+	crimestatistics-code-codelist-hash:331,
+	crimestatistics-code-codelist-hash:471 ;
+	.
+
+crimestatistics-code-codelist-hash:kradezZasilky a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		"krádež zásilky"@cs,
+		"theft of shipments"@en ;
+	skos:inScheme crimestatistics-code-slash:tsk ;
+	skos:notation "" ;
+	skos:scopeNote
+		"Jedná se o případy krádeže různých druhů zásilek, např. poštovních, leteckých, lodních."@cs,
+		"Involves the cases of theft of mails, rail shipments etc."@en ;
+	.
+
+# Krádeže zásilek
+crimestatistics-code-codelist-hash:kradezZasilky skos:narrower
+	crimestatistics-code-codelist-hash:840,
+	crimestatistics-code-codelist-hash:841,
+	crimestatistics-code-codelist-hash:842,
+	crimestatistics-code-codelist-hash:843,
+	crimestatistics-code-codelist-hash:844 ;
+	.
+
+crimestatistics-code-codelist-hash:vytrznictvi a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		"výtržnictví"@cs,
+		"disorderly conduct"@en ;
+	skos:inScheme crimestatistics-code-slash:tsk ;
+	skos:notation "" ;
+	skos:scopeNote
+		"Zahrnuje různé případy výžtržnictví jako např. útoky na záchranáře nebo výtržnictví na sportovních nebo veřejných akcích."@cs,
+		"Involves the cases of hooliganism at the sport events or the cases of assaulting a paramedic."@en ;
+	.
+
+# Výtržnictví
+crimestatistics-code-codelist-hash:vytrznictvi skos:narrower
+	crimestatistics-code-codelist-hash:611,
+	crimestatistics-code-codelist-hash:612,
+	crimestatistics-code-codelist-hash:614 ;
+	.
+
+crimestatistics-code-codelist-hash:poskozovaniCiziVeci a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		"poškozování cizí věci"@cs,
+		"damage to property"@en ;
+	skos:inScheme crimestatistics-code-slash:tsk ;
+	skos:notation "" ;
+	.
+
+# Poškozování cizí věci
+crimestatistics-code-codelist-hash:poskozovaniCiziVeci skos:narrower
+	crimestatistics-code-codelist-hash:589,
+	crimestatistics-code-codelist-hash:613,
+	crimestatistics-code-codelist-hash:814 ;
+	.
+
+crimestatistics-code-codelist-hash:spojitostSOmamnymiLatkami a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		"trestné činy mající spojitost s omamnými látkami"@cs,
+		"crimes having connection to drugs"@en ;
+	skos:inScheme crimestatistics-code-slash:tsk ;
+	skos:notation "" ;
+	skos:scopeNote
+		"Zahrnuje různé trestné činy, které mají nějakou spojitost s omamnými látkami, jejich zneužíváním, držení, výrobou, přechováváním atd."@cs,
+		"Includes various types of crimes having some sort of connection to drugs, for example consuming drugs, selling drugs, drug production etc."@en ;
+	.
+
+# Trestné činy mající spojitost s omamnými látkami
+crimestatistics-code-codelist-hash:spojitostSOmamnymiLatkami skos:narrower
+	crimestatistics-code-codelist-hash:632,
+	crimestatistics-code-codelist-hash:
+	.
+
+crimestatistics-code-codelist-hash:nedovoleneNakladaniSOmamnymiNeboPsychotropnimiLatkami a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		"nedovolené nakládání s omamnými nebo psychotropními látkami nebo jedy"@cs,
+		"illegal use of drugs or related chemicals"@en ;
+	skos:inScheme crimestatistics-code-slash:tsk ;
+	skos:notation "" ;
+	skos:scopeNote
+		"Zahrnuje případy nedovoleného držení, výroby či přechovávání omamných či psychotropních látek a jedů."@cs,
+		"Involves the cases of illegal use or production of drugs or related chemicals."@en ;
+	.
+
+# Trestné činx nedovoleného nakládání s omamnými nebo psychotropními látkami a jedy
+crimestatistics-code-codelist-hash:nedovoleneNakladaniSOmamnymiNeboPsychotropnimiLatkami skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+crimestatistics-code-codelist-hash:nedovolenaVyrobaADrzeniPsychotropnichLatekAJedu a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		"nedovolené výroba psychotropních látek a jedů"@cs,
+		"illegal drug production and use"@en ;
+	skos:inScheme crimestatistics-code-slash:tsk ;
+	skos:notation "" ;
+	skos:scopeNote
+		"Zarhnuje případy nedovolené výroby nebo držení různých psychotropních látek a jedů nebo předmětů sloužících k jejich výrobě, ať už pro vlastní nebo cizí potřebu."@cs,
+		"Involves the cases of illegal drug use and production both for one's own need or for others."@en ;
+	.
+
+# Nedovolená výroba a držení psychotropních látek a jedů
+crimestatistics-code-codelist-hash:nedovolenaVyrobaADrzeniPsychotropnichLatekAJedu skos:narrower
+	crimestatistics-code-codelist-hash:635,
+	crimestatistics-code-codelist-hash:641,
+	crimestatistics-code-codelist-hash:642 ;
+	.
+
+crimestatistics-code-codelist-hash:nedovolenaVyrobaADrzeniCiNakladaniSLatkamiPusobicimiNaNervovouNeboHormonalniSoustavu a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		"nedovolená výroba a držení látek působících na nervovou nebo hormonální soustavu"@cs,
+		"illegal use and production of products which affect nervous or hormonal system"@en ;
+	skos:inScheme crimestatistics-code-slash:tsk ;
+	skos:notation "" ;
+	skos:scopeNote
+		"Zahrnuje případy nedovoleného užití, výroby nebo nakládání s látkami působícími na nervovou nebo hormonální soustavu."@cs,
+		"Involves the cases of products which affect nervous or hormonal system."@en ;
+	.
+
+crimestatistics-code-codelist-hash:nedovolenaVyrobaADrzeniCiNakladaniSLatkamiPusobicimiNaNervovouNeboHormonalniSoustavu skos:narrower
+	crimestatistics-code-codelist-hash:nedovolenaVyrobaADrzeniPsychotropnichLatekAJedu,
+	crimestatistics-code-codelist-hash:644 ;
+	.
+
+crimestatistics-code-codelist-hash:nedovolenaVyrobaADrzeniCiNakladaniSLatkami a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		"nedovolená výroba a držení látek"@cs,
+		"illegal use and production of products"@en ;
+	skos:inScheme crimestatistics-code-slash:tsk ;
+	skos:notation "" ;
+	skos:scopeNote
+		"Zahrnuje případy nedovoleného užití, výroby nebo nakládání s látkami, např. drogami, látkami s hormonálním účinkem nebo jaderným a radioaktivním materiálem."@cs,
+		"Involves the cases of illegal use and production of various products including drugs, hormonally active substances and radioactive material."@en ;
+	.
+
+
+crimestatistics-code-codelist-hash:obecneOhrozeni a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		"trestný čin obecného ohrožení"@cs,
+		"endangering public"@en ;
+	skos:inScheme crimestatistics-code-slash:tsk ;
+	skos:notation "" ;
+	skos:scopeNote
+		"Zahrnuje trestné činy obecného ohrožení."@cs,
+		"Involves the cases of endangering public."@en ;
+	.
+
+# Obecné ohrožení
+crimestatistics-code-codelist-hash:obecneOhrozeni skos:narrower
+	crimestatistics-code-codelist-hash:651,
+	crimestatistics-code-codelist-hash:652,
+	crimestatistics-code-codelist-hash:730,
+	crimestatistics-code-codelist-hash:790,
+	crimestatistics-code-codelist-hash:871 ;
+	.
+
+crimestatistics-code-codelist-hash:nehoda a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		"nehoda"@cs,
+		"accident"@en ;
+	skos:inScheme crimestatistics-code-slash:tsk ;
+	skos:notation "" ;
+	skos:scopeNote
+		"Zahrnuje případy různých nehod, dopravních, železničních, kombinovaných, havárií, provozních poruch atd."@cs,
+		"Involves the cases of various accidents including traffic and other accidents, malfunctions etc."@en ;
+	.
+
+crimestatistics-code-codelist-hash:nehoda skos:narrower ;
+	.
+
+crimestatistics-code-codelist-hash:nehodaUmyslna a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		"nehoda úmyslná"@cs,
+		"intentional accident"@en ;
+	skos:inScheme crimestatistics-code-slash:tsk ;
+	skos:notation "" ;
+	skos:scopeNote
+		"Zahrnuje veškeré úmyslné nehody."@cs,
+		"Involves various accidents done on purpose."@en ;
+	.
+
+# Úmyslné nehody
+crimestatistics-code-codelist-hash:nehodaUmyslna skos:narrower
+	crimestatistics-code-codelist-hash:730 ;
+	.
+
+crimestatistics-code-codelist-hash:nehodaZNedbalosti a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		"nehoda z nedbalosti"@cs,
+		"accident caused by negligence"@en ;
+	skos:inScheme crimestatistics-code-slash:tsk ;
+	skos:notation "" ;
+	skos:scopeNote
+		"Zahrnuje nehody z nedbalosti."@cs,
+		"Involves accidents caused by negligence."@en ;
+	.
+
+crimestatistics-code-codelist-hash:nehodaZNedbalosti skos:narrower
+	crimestatistics-code-codelist-hash:731,
+	crimestatistics-code-codelist-hash:732,
+	crimestatistics-code-codelist-hash:733,
+	crimestatistics-code-codelist-hash:741,
+	crimestatistics-code-codelist-hash:742
+	.
+
+
+crimestatistics-code-codelist-hash:uplatkarstvi a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		"úplatkářství"@cs,
+		"bribery"@en ;
+	skos:inScheme crimestatistics-code-slash:tsk ;
+	skos:notation "" ;
+	skos:scopeNote
+		"Zarhnuje trestné činy spojené s úplatkářstvím, tedy přijímání úplatku i podplácení."@cs,
+		"Involves the cases of both bribing and accepting a bribe."@en ;
+	.
+
+# Úplatkářství
+crimestatistics-code-codelist-hash:uplatkarstvi skos:narrower
+	crimestatistics-code-codelist-hash:poskytnutiUplatku ;
+	crimestatistics-code-codelist-hash:prijetiUplatku ;
+	.
+
+crimestatistics-code-codelist-hash:poskytnutiUplatku a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		"poskytnutí úplatku"@cs,
+		"bribing"@en ;
+	skos:inScheme crimestatistics-code-slash:tsk ;
+	skos:notation "" ;
+	skos:scopeNote
+		"Zahrnnuje případy poskytnutí úplatku."@cs,
+		"Involves the cases of bribing someone."@en ;
+	.
+
+# Poskytnutí úplatku
+crimestatistics-code-codelist-hash:poskytnutiUplatku skos:narrower
+	crimestatistics-code-codelist-hash:846,
+	crimestatistics-code-codelist-hash:847 ;
+	.
+
+crimestatistics-code-codelist-hash:prijetiUplatku a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		"přijetí úplatku"@cs,
+		"accepting a bribe"@en ;
+	skos:inScheme crimestatistics-code-slash:tsk ;
+	skos:notation "" ;
+	skos:scopeNote
+		"Zahrnnuje případy přijetí úplatku."@cs,
+		"Involves the cases of accepting a bribe."@en ;
+	.
+
+# Přijetí úplatku
+crimestatistics-code-codelist-hash:prijetiUplatku skos:narrower
+	crimestatistics-code-codelist-hash:821 ;
+	.
+
+crimestatistics-code-codelist-hash:podvod a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		"podvod"@cs,
+		"fraud"@en ;
+	skos:inScheme crimestatistics-code-slash:tsk ;
+	skos:notation "" ;
+	skos:scopeNote
+		"Různé druhy podvodů."@cs,
+		"Various kinds of fraud."@en ;
+	.
+
+# Druhy podvodu
+crimestatistics-code-codelist-hash:podvod skos:narrower
+	crimestatistics-code-codelist-hash:511,
+	crimestatistics-code-codelist-hash:815,
+	crimestatistics-code-codelist-hash:830,
+	crimestatistics-code-codelist-hash:880,
+	crimestatistics-code-codelist-hash:881,
+	crimestatistics-code-codelist-hash:882 ;
+	.
+
+crimestatistics-code-codelist-hash:ohrozeniNeboPoskozeniZivotnihoProstredi a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		"ohrožení nebo poškození životního prostředí"@cs,
+		"causing damage to environment"@en ;
+	skos:inScheme crimestatistics-code-slash:tsk ;
+	skos:notation "" ;
+	skos:scopeNote
+		"Zahrnuje různé případy ohrožení nebo poškození životního prostředí, jak úmyslné tak z nedbalosti."@cs,
+		"Involves the cases of causing damage to environment, both intentionally and unintentionally."@en ;
+	.
+
+# Ohrožení nebo poškození životního prostředí
+crimestatistics-code-codelist-hash:ohrozeniNeboPoskozeniZivotnihoProstredi skos:narrower
+	crimestatistics-code-codelist-hash:umyslneOhrozeniNeboPoskozeniZivotnihoProstredi,
+	crimestatistics-code-codelist-hash:ohrozeniNeboPoskozeniZivotnihoProstrediZNedbalosti ;
+	.
+
+crimestatistics-code-codelist-hash:umyslneOhrozeniNeboPoskozeniZivotnihoProstredi a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		"úmyslné ohrožení nebo poškození životního prostředí"@cs,
+		"causing damage to environment intentionally"@en ;
+	skos:inScheme crimestatistics-code-slash:tsk ;
+	skos:notation "" ;
+	skos:scopeNote
+		"Zahrnuje případy úmyslného ohrožení nebo poškození životního prostředí."@cs,
+		"Involves the cases of causing damage to environment intentionally."@en ;
+	.
+
+# Úmyslné ohrožení nebo poškození životního prostředí
+crimestatistics-code-codelist-hash:umyslneOhrozeniNeboPoskozeniZivotnihoProstredi skos:narrower
+	crimestatistics-code-codelist-hash:850 ;
+	.
+
+
+crimestatistics-code-codelist-hash:ohrozeniNeboPoskozeniZivotnihoProstrediZNedbalosti a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		"ohrožení nebo poškození životního prostředí z nedbalosti"@cs,
+		"causing damage to environment unintentionally"@en ;
+	skos:inScheme crimestatistics-code-slash:tsk ;
+	skos:notation "" ;
+	skos:scopeNote
+		"Zahrnuje případy ohrožení nebo poškození životního prostředí z nedbalosti."@cs,
+		"Involves the cases of causing damage to environment unintentionally."@en ;
+	.
+
+# Ohrožení nebo poškození životního prostředí z nedbalosti
+crimestatistics-code-codelist-hash:ohrozeniNeboPoskozeniZivotnihoProstrediZNedbalosti skos:narrower
+	crimestatistics-code-codelist-hash:851 ;
+	.
+
+crimestatistics-code-codelist-hash: a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:tsk ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.

@@ -1,0 +1,57 @@
+# Standardní prefixy
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix interval: <http://reference.data.gov.uk/def/intervals/> .
+@prefix sdmx:    <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+# Vlastní prefixy
+@prefix crimestatistics-code-slash: <http://linked.opendata.cz/ontology/crimestatistics/code/> .
+@prefix crimestatistics-code-codelist-slash: <http://linked.opendata.cz/ontology/crimestatistics/code/zpusobUkonceniNeboPrevzetiVeci_TrestnyCin/> .
+@prefix crimestatistics-code-codelist-hash: <http://linked.opendata.cz/ontology/crimestatistics/code/zpusobUkonceniNeboPrevzetiVeci_TrestnyCin#> .
+
+# Zastavení trestního stíhání
+crimestatistics-code-codelist-hash:2
+	crimestatistics-property-zakony:alternativniZpusobyProvedeniUkonuVTrestnimRizeni
+		[
+			crimestatistics-class-zakony-ProvedeniUkonuVTrestnimRizeniCollection-property:member
+			[
+				crimestatistics-class-zakony-ProvedeniUkonuVTrestnimRizeni-property:provedenoPodle
+					<http://linked.opendata.cz/resource/legislation/cz/act/1961/141/section/172/1/a> ;
+					
+				crimestatistics-class-zakony-ProvedeniUkonuVTrestnimRizeni-property:rozhodneOkolnostiUvedeneV
+					<http://linked.opendata.cz/resource/legislation/cz/act/1961/141/section/172/1/a> ;
+			] ;
+			
+			crimestatistics-class-zakony-ProvedeniUkonuVTrestnimRizeniCollection-property:member
+			[
+				crimestatistics-class-zakony-ProvedeniUkonuVTrestnimRizeni-property:provedenoPodle
+					<http://linked.opendata.cz/resource/legislation/cz/act/1961/141/section/172/1/b> ;
+					
+				crimestatistics-class-zakony-ProvedeniUkonuVTrestnimRizeni-property:rozhodneOkolnostiUvedeneV
+					<http://linked.opendata.cz/resource/legislation/cz/act/1961/141/section/172/1/b> ;
+			] ;
+		] ;
+		.
+
+# Odložení trestního stíhání
+crimestatistics-code-codelist-hash:5
+	crimestatistics-property-zakony:zpusobProvedeniUkonuVTrestnimRizeni
+		[
+			crimestatistics-class-zakony-ProvedeniUkonuVTrestnimRizeni-property:provedenoPodle
+				<http://linked.opendata.cz/resource/legislation/cz/act/1961/141/section/159a/5> ;
+				
+			crimestatistics-class-zakony-ProvedeniUkonuVTrestnimRizeni-property:rozhodneOkolnostiUvedeneV
+				<http://linked.opendata.cz/resource/legislation/cz/act/1961/141/section/160/1> ;
+		] ;
+		.	

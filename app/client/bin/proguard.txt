@@ -1,0 +1,46 @@
+# view AndroidManifest.xml #generated:37
+-keep class benak.tomas.crimemonitor.client.activity.CrimeDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:23
+-keep class benak.tomas.crimemonitor.client.activity.CrimeSummaryActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:52
+-keep class benak.tomas.crimemonitor.client.activity.CrimesListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:67
+-keep class benak.tomas.crimemonitor.client.activity.UtvarDetailActivity { <init>(...); }
+
+# view land\res/layout-land/activity_crime_detail.xml #generated:24
+# view land\res/layout-land/activity_crime_summary_final.xml #generated:27
+# view res/layout/activity_crime_detail.xml #generated:24
+# view res/layout/activity_crime_summary_final.xml #generated:28
+# view sw500dp-land\res/layout-sw500dp-land/activity_crime_summary_final.xml #generated:25
+# view sw500dp\res/layout-sw500dp/activity_crime_summary_final.xml #generated:25
+-keep class benak.tomas.crimemonitor.client.ui.fragment.BasicCrimeInfoFragment { <init>(...); }
+
+# view land\res/layout-land/activity_crime_detail.xml #generated:31
+# view res/layout/activity_crime_detail.xml #generated:29
+-keep class benak.tomas.crimemonitor.client.ui.fragment.CrimeMonthHistogramFragment { <init>(...); }
+
+# view land\res/layout-land/activity_crime_summary_final.xml #generated:33
+# view res/layout/activity_crime_summary_final.xml #generated:33
+# view sw500dp-land\res/layout-sw500dp-land/activity_crime_summary_final.xml #generated:31
+# view sw500dp\res/layout-sw500dp/activity_crime_summary_final.xml #generated:30
+-keep class benak.tomas.crimemonitor.client.ui.fragment.CrimeOverviewFragment { <init>(...); }
+
+# view land\res/layout-land/basic_crime_info_fragment_layout.xml #generated:73
+# view res/layout/basic_crime_info_fragment_layout.xml #generated:74
+-keep class benak.tomas.crimemonitor.client.ui.view.CrimeIndexCompactView { <init>(...); }
+
+# view land\res/layout-land/crime_overview_fragment.xml #generated:17
+# view res/layout/crime_overview_fragment.xml #generated:9
+-keep class benak.tomas.crimemonitor.client.ui.view.CrimesOverviewPieChart { <init>(...); }
+
+# view land\res/layout-land/basic_crime_info_fragment_layout.xml #generated:51
+# view res/layout/basic_crime_info_fragment_layout.xml #generated:51
+-keep class benak.tomas.crimemonitor.client.ui.view.ObjasnenostView { <init>(...); }
+
+# view land\res/layout-land/basic_crime_info_fragment_layout.xml #generated:28
+# view res/layout/basic_crime_info_fragment_layout.xml #generated:28
+-keep class benak.tomas.crimemonitor.client.ui.view.TrendView { <init>(...); }
+

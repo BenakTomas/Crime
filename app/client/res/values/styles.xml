@@ -1,0 +1,167 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Holo.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="android:textSize">@dimen/content_text_size</item>
+        
+    </style>
+
+   <style name="activity_content">
+       <item name="android:background">@color/app_background_color</item>
+   </style>
+
+    <style name="objasnenost_style">
+        <item name="solved_color">@color/special_color</item>
+    </style>
+    
+    <!-- Style for activity progress bar -->
+    <style name="activity_progress_bar"
+        parent="@android:style/Widget.Holo.ProgressBar.Horizontal">
+        <item name="android:indeterminate">true</item>
+        <!-- layout width and height -->
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <!-- layout position -->   
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+    
+    <!-- No data found view -->
+    <style name="activity_nonstandard_content_placeholder_view"
+        parent="@style/contentText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_below">@+id/crime_progress_bar</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        
+    </style>
+    
+   <style name="no_data_found_view"
+       parent="@style/activity_nonstandard_content_placeholder_view">
+       <item name="android:text">@string/crime_list_no_data_found_text</item>
+   </style>
+    
+    <!-- Crime data loading error view -->
+    <style name="crime_data_loading_error_view"
+        parent="@style/activity_nonstandard_content_placeholder_view">
+        <item name="android:text">@string/crime_list_data_loading_error</item>
+    </style>
+    
+    <style name="contentText">
+        <item name="android:textSize">@dimen/content_text_size</item>
+    </style>
+    
+    <style name="crime_measure_caption">
+        <item name="android:textSize">@dimen/crime_measure_caption_text_size</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_marginBottom">@dimen/crime_measure_caption_margin_bottom</item>
+    </style>
+    
+    <style name="crime_trend_caption" parent="@style/crime_measure_caption">
+        <item name="android:text">@string/crime_summary_trend_label</item>
+    </style>
+    
+    <style name="crime_objasnenost_caption" parent="@style/crime_measure_caption">
+        <item name="android:text">@string/crime_summary_objasnenost_label</item>
+    </style>
+    
+    <style name="crime_index_caption" parent="@style/crime_measure_caption">
+        <item name="android:text">@string/crime_summary_index_label</item>
+    </style>
+    
+    <style name="crime_piechart_caption"
+        parent="@style/crime_measure_caption">
+        <item name="android:text">@string/crime_summary_crime_overview_label</item>
+    </style>
+    
+    <style name="crime_toplist_caption"
+        parent="@style/crime_measure_caption">
+        <item name="android:text">@string/crime_summary_toplist_label</item>
+    </style>
+    
+    <style name="crime_month_histogram_caption"
+        parent="@style/crime_measure_caption">
+        <item name="android:text">@string/crime_month_histogram_label</item>
+        <item name="android:layout_gravity">left</item>
+    </style>
+    
+    <style name="basic_crime_info_measure_view">
+        <!-- dimensions -->
+        <item name="android:minWidth">@dimen/basic_crime_info_measure_view_min_width</item>
+        <item name="android:minHeight">@dimen/basic_crime_info_measure_view_min_height</item>
+        <!-- layout -->
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+    
+    <style name="left_activity_content_container">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_below">@+id/crime_progress_bar</item>
+        <item name="android:layout_marginTop">@dimen/left_activity_content_container_margin_top_bottom</item>
+        <item name="android:layout_marginBottom">@dimen/left_activity_content_container_margin_top_bottom</item>
+        <item name="android:layout_marginLeft">@dimen/left_activity_content_container_margin_left_right</item>
+        <item name="android:layout_marginRight">@dimen/left_activity_content_container_margin_left_right</item>
+    </style>
+    
+    <style name="right_activity_content_container">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_below">@+id/crime_progress_bar</item>
+        <item name="android:layout_marginTop">@dimen/right_activity_content_container_margin_top_bottom</item>
+        <item name="android:layout_marginBottom">@dimen/right_activity_content_container_margin_top_bottom</item>
+        <item name="android:layout_marginLeft">@dimen/right_activity_content_container_margin_left_right</item>
+        <item name="android:layout_marginRight">@dimen/right_activity_content_container_margin_left_right</item>
+    </style>
+    
+    <style name="upper_activity_content_container">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_below">@+id/crime_progress_bar</item>
+        <item name="android:layout_marginTop">@dimen/upper_activity_content_container_margin_top_bottom</item>
+        <item name="android:layout_marginBottom">@dimen/upper_activity_content_container_margin_top_bottom</item>
+        <item name="android:layout_marginLeft">@dimen/upper_activity_content_container_margin_left_right</item>
+        <item name="android:layout_marginRight">@dimen/upper_activity_content_container_margin_left_right</item>
+    </style>
+    
+    <style name="lower_activity_content_container">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginTop">@dimen/lower_activity_content_container_margin_top_bottom</item>
+        <item name="android:layout_marginBottom">@dimen/lower_activity_content_container_margin_top_bottom</item>
+        <item name="android:layout_marginLeft">@dimen/lower_activity_content_container_margin_left_right</item>
+        <item name="android:layout_marginRight">@dimen/lower_activity_content_container_margin_left_right</item>
+    </style>
+    
+    <style name="crime_piechart">
+        <item name="android:minWidth">@dimen/crime_piechart_min_width</item>
+        <item name="android:minHeight">@dimen/crime_piechart_min_height</item>
+        <item name="android:layout_marginBottom">@dimen/crime_piechart_margin_bottom</item>
+    </style>
+    
+    <style name="covered_municipalities_label">
+        <item name="android:textSize">@dimen/covered_municipalities_label_text_size</item>
+    </style>
+    
+</resources>

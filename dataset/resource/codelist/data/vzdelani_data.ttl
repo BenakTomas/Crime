@@ -1,0 +1,88 @@
+# Standardní prefixy
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix interval: <http://reference.data.gov.uk/def/intervals/> .
+@prefix sdmx:    <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+# Vlastní prefixy
+@prefix crimestatistics-code-slash: <http://linked.opendata.cz/ontology/crimestatistics/code/> .
+@prefix crimestatistics-code-codelist-slash: <http://linked.opendata.cz/ontology/crimestatistics/code/vzdelani/> .
+@prefix crimestatistics-code-codelist-class: <http://linked.opendata.cz/ontology/crimestatistics/code/vzdelani/class#> .
+@prefix crimestatistics-code-codelist-property: <http://linked.opendata.cz/ontology/crimestatistics/code/vzdelani/property#> .
+
+@prefix crimestatistics-code-codelist-hash: <http://linked.opendata.cz/ontology/crimestatistics/code/vzdelani#> .
+
+crimestatistics-code-codelist-hash:1 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "základní škola – vyučen"@cs ;
+	skos:inScheme crimestatistics-code-slash:vzdelani ;
+	skos:notation "1" ;
+
+	rdfs:label "základní škola – vyučen"@cs ;
+	.
+crimestatistics-code-codelist-hash:2 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "základní škola – bez kvalifikace"@cs ;
+	skos:inScheme crimestatistics-code-slash:vzdelani ;
+	skos:notation "2" ;
+
+	rdfs:label "základní škola – bez kvalifikace"@cs ;
+	.
+crimestatistics-code-codelist-hash:3 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "střední škola"@cs ;
+	skos:inScheme crimestatistics-code-slash:vzdelani ;
+	skos:notation "3" ;
+
+	rdfs:label "střední škola"@cs ;
+	.
+crimestatistics-code-codelist-hash:4 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "vysoká škola"@cs ;
+	skos:inScheme crimestatistics-code-slash:vzdelani ;
+	skos:notation "4" ;
+
+	rdfs:label "vysoká škola"@cs ;
+	.
+crimestatistics-code-codelist-hash:5 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "zvláštní škola – vyučen"@cs ;
+	skos:inScheme crimestatistics-code-slash:vzdelani ;
+	skos:notation "5" ;
+
+	rdfs:label "zvláštní škola – vyučen"@cs ;
+	.
+crimestatistics-code-codelist-hash:6 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "zvláštní škola – bez kvalifikace"@cs ;
+	skos:inScheme crimestatistics-code-slash:vzdelani ;
+	skos:notation "6" ;
+
+	rdfs:label "zvláštní škola – bez kvalifikace"@cs ;
+	.
+crimestatistics-code-codelist-hash:7 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "neukončené základní vzdělání – vyučen"@cs ;
+	skos:inScheme crimestatistics-code-slash:vzdelani ;
+	skos:notation "7" ;
+
+	rdfs:label "neukončené základní vzdělání – vyučen"@cs ;
+	.
+crimestatistics-code-codelist-hash:8 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "neukončené základní vzdělání – bez kvalifikace"@cs ;
+	skos:inScheme crimestatistics-code-slash:vzdelani ;
+	skos:notation "8" ;
+
+	rdfs:label "neukončené základní vzdělání – bez kvalifikace"@cs ;
+	.
+crimestatistics-code-codelist-hash:0 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "cizinec, dítě nebo nezjištěno"@cs ;
+	skos:inScheme crimestatistics-code-slash:vzdelani ;
+	skos:notation "0" ;
+
+	rdfs:label "cizinec, dítě nebo nezjištěno"@cs ;
+	.

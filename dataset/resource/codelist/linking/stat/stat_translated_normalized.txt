@@ -1,0 +1,244 @@
+601#Afghanistan
+501#Åland 
+110#  Albania
+641#   Algeria
+502#American Samoa
+503#U.S. Virgin 
+504#  Andorra
+505#  Angola
+506#Anguilla
+507#Antarctica
+508#Antigua Barbuda
+801#Argentine 
+190#  Armenia
+509#Aruba
+471#Australia
+191#  Azerbaijan
+510#Bahamas
+511#Bahraini 
+512#  Bangladesh
+513#Barbados
+411#Belgium
+514#Belize
+192#   Belarus
+515#  Benin
+516#Bermuda
+517#  Bhutan
+802#  Bolivia
+311#Bosnia Herzegovina
+518#Bostwana
+519#Bouvet 
+803#   Brazil
+522#British Virgin 
+523#Brunei Darussalam
+120#   Bulgaria
+524#Burkina Faso
+643#  Burundi
+526#Cook 
+644#  Chad
+312#Montenegro
+10#Czech 
+320#China
+412#Denmark
+528#Dominika
+805#Dominican 
+529#  Djibouti
+673#  Egypt
+806#  Ecuador
+530#Eritrea
+193#  Estonia
+646#    Ethiopia
+533#Faroe 
+534#Falkland  Malvinas
+535#Fiji
+604#   Philippines
+413#  Finland
+537#French Guyana
+539#French Polynesia
+414# French 
+647#  Gabon
+648#   Gambia
+649#  Ghana
+841#Gibraltar
+541#Grenada
+542#Greenland
+194#Georgia
+543#Guadeloupe
+544#Guam
+807#  Guatemala
+545#Guernsey
+546#Guinea - Bissau
+651#  Guinea
+547#   Guyana
+808#  Haiti
+548#Heard  McDonald 
+809#  Honduras
+549#Hong Kong
+811#   Chile
+313#   Croatia
+605#  India
+606#  Indonesia
+607#Iraq
+608#Iran
+416#Ireland
+417#   Iceland
+418#Italy
+609#  Israel
+812#Jamaica
+441#Japan
+611#  Yemen
+551#Jersey
+451#South Africa
+550#South Georgia  South Sandwich 
+614#Jordan
+310#Yugoslavia
+553#Cayman 
+615#  Cambodia
+653#  Cameroon
+461#Canada
+554#Cape Verde
+555#Qatar
+195#Kazakhstan
+654#  Kenya
+556#Kiribati
+557#Cocos 
+813#  Colombia
+558#Comoros 
+655#Congo
+656#   Congo
+330#North Korea
+612#  Korea
+846#Kosovo
+814#  Costa Rica
+350#   Cuba
+616#  Kuwait
+617#   Cyprus
+196#Kyrgyzstan
+618#Laos
+560#  Lesotho
+619#Lebanese 
+657#  Liberia
+658#Libya
+561#Liechtenstein
+197#   Lithuania
+198#  Latvia
+419#Luxembourg
+562#Macao
+661#  Madagascar
+130#   Hungary
+314#Macedonia
+621#Malaysia
+659#  Malawi
+622#   Maldives
+563#Mali
+842#Malta
+663#   Morocco
+564#Marshall 
+565#Martinique
+566#   Mauritius
+664#Mauritania
+567#Mayotte
+815#Mexico
+570#Micronesia
+199#  Moldova
+571#   Monaco
+180#Mongolia
+572#Montserrat
+573#  Mozambique
+574#Myanmar
+575#  Namibia
+576#Nauru
+420#Germany
+577#  Nepal
+666#   Nigeria
+665#  Niger
+816#  Nicaragua
+579#Niue
+580#Netherlands Antilles
+422# Netherlands
+581#Norfolk
+423#Norway
+582#New Caledonia
+472#New Zealand
+583#Oman
+847#Isle  Man
+624#   Pakistan
+586#Palau
+587#Palestine
+817#  Panama
+589#Papua New Guinea
+818#   Paraguay
+819#  Peru
+590#Pitcairn
+667#Ivory Coast
+150#  Poland
+591#Puerto Rico
+424# Portuguese 
+425#   Austria
+592#Reunion
+593#Equatorial Guinea
+160#Romania
+101#Russia
+669#  Rwanda
+730#Malta
+426#Greece
+595#Saint Pierre Miguelon
+821#  El Salvador
+596#Samoa
+597#San Marino
+625#Saudi Arabia
+671#  Senegal
+598#Northern Mariana 
+599#  Seychelles
+672#Sierra Leone
+626#  Singapore
+50#Slovak 
+315#  Slovenia
+674#Somali  
+701#United Arab Emirates
+462#United States USA
+316#Serbia
+603#Sri Lanka
+675#Central African
+676#  Sudan
+705#  Suriname
+707#Svalbard Jan Mayen
+708#Saint Helena
+709#Saint Lucia
+710#Saint Kitts Nevis
+711#Vatican
+712#São Tomé Príncipe
+706#Saint Vincent  Grenadines
+713#  Swaziland
+627#Syria
+714#Solomon 
+427#   Spain
+428#   Sweden
+429#Switzerland
+102#Tajikistan
+677#Tanzania
+628#   Thailand
+715#Taiwan
+678#Togo
+717#Tokelau
+718#Tonga
+822#Trinidad Tobago
+679#  Tunisia
+629#  Turkey
+103#Turkmenistan
+719#Turks Caicos
+720#Tuvalu
+681#  Uganda
+104#Ukraine
+823#Eastern   Uruguay
+105#Uzbekistan
+721#Christmas 
+722#  Vanuatu
+431#United 
+824#  Venezuela
+340#Vietnam
+723#East Timor
+725#Wallis Futuna
+682#  Zambia
+727#Western Sahara
+729#  Zimbabwe

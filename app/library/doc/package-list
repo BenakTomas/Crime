@@ -1,0 +1,11 @@
+benak.tomas.crimemonitor
+benak.tomas.crimemonitor.client
+benak.tomas.crimemonitor.client.chartview
+benak.tomas.crimemonitor.client.exception
+benak.tomas.crimemonitor.client.utils
+benak.tomas.crimemonitor.client.view
+benak.tomas.crimemonitor.library
+benak.tomas.crimemonitor.library.utils
+benak.tomas.crimemonitor.service
+benak.tomas.crimemonitor.service.exception
+benak.tomas.crimemonitor.service.utils

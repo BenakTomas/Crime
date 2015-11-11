@@ -1,0 +1,221 @@
+# Standardní prefixy
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix interval: <http://reference.data.gov.uk/def/intervals/> .
+@prefix sdmx:    <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+# Vlastní prefixy
+@prefix crimestatistics-code-slash: <http://linked.opendata.cz/ontology/crimestatistics/code/> .
+@prefix crimestatistics-code-codelist-slash: <http://linked.opendata.cz/ontology/crimestatistics/code/strukturaSkupinyNapadenychOsob/> .
+@prefix crimestatistics-code-codelist-class: <http://linked.opendata.cz/ontology/crimestatistics/code/strukturaSkupinyNapadenychOsob/class#> .
+@prefix crimestatistics-code-codelist-property: <http://linked.opendata.cz/ontology/crimestatistics/code/strukturaSkupinyNapadenychOsob/property#> .
+
+@prefix crimestatistics-code-codelist-hash: <http://linked.opendata.cz/ontology/crimestatistics/code/strukturaSkupinyNapadenychOsob#> .
+
+crimestatistics-code-codelist-hash:1 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "muž a žena"@cs ;
+	skos:inScheme crimestatistics-code-slash:strukturaSkupinyNapadenychOsob ;
+	skos:notation "1" ;
+
+	rdfs:label "muž a žena"@cs ;
+	.
+crimestatistics-code-codelist-hash:2 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "dva muži"@cs ;
+	skos:inScheme crimestatistics-code-slash:strukturaSkupinyNapadenychOsob ;
+	skos:notation "2" ;
+
+	rdfs:label "dva muži"@cs ;
+	.
+crimestatistics-code-codelist-hash:3 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "dvě ženy"@cs ;
+	skos:inScheme crimestatistics-code-slash:strukturaSkupinyNapadenychOsob ;
+	skos:notation "3" ;
+
+	rdfs:label "dvě ženy"@cs ;
+	.
+crimestatistics-code-codelist-hash:4 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "více mužů než šest"@cs ;
+	skos:inScheme crimestatistics-code-slash:strukturaSkupinyNapadenychOsob ;
+	skos:notation "4" ;
+
+	rdfs:label "více mužů než šest"@cs ;
+	.
+crimestatistics-code-codelist-hash:5 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "více žen než šest"@cs ;
+	skos:inScheme crimestatistics-code-slash:strukturaSkupinyNapadenychOsob ;
+	skos:notation "5" ;
+
+	rdfs:label "více žen než šest"@cs ;
+	.
+crimestatistics-code-codelist-hash:6 a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "jiné složení skupiny"@cs ;
+	skos:inScheme crimestatistics-code-slash:strukturaSkupinyNapadenychOsob ;
+	skos:notation "6" ;
+
+	rdfs:label "jiné složení skupiny"@cs ;
+	.
+crimestatistics-code-codelist-hash:A a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "jeden muž dvě ženy"@cs ;
+	skos:inScheme crimestatistics-code-slash:strukturaSkupinyNapadenychOsob ;
+	skos:notation "A" ;
+
+	rdfs:label "jeden muž dvě ženy"@cs ;
+	.
+crimestatistics-code-codelist-hash:B a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "jeden muž tři ženy"@cs ;
+	skos:inScheme crimestatistics-code-slash:strukturaSkupinyNapadenychOsob ;
+	skos:notation "B" ;
+
+	rdfs:label "jeden muž tři ženy"@cs ;
+	.
+crimestatistics-code-codelist-hash:C a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "dva muži jedna žena"@cs ;
+	skos:inScheme crimestatistics-code-slash:strukturaSkupinyNapadenychOsob ;
+	skos:notation "C" ;
+
+	rdfs:label "dva muži jedna žena"@cs ;
+	.
+crimestatistics-code-codelist-hash:D a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "dva muži dvě ženy"@cs ;
+	skos:inScheme crimestatistics-code-slash:strukturaSkupinyNapadenychOsob ;
+	skos:notation "D" ;
+
+	rdfs:label "dva muži dvě ženy"@cs ;
+	.
+crimestatistics-code-codelist-hash:E a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "dva muži tři ženy"@cs ;
+	skos:inScheme crimestatistics-code-slash:strukturaSkupinyNapadenychOsob ;
+	skos:notation "E" ;
+
+	rdfs:label "dva muži tři ženy"@cs ;
+	.
+crimestatistics-code-codelist-hash:H a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "tři muži jedna žena"@cs ;
+	skos:inScheme crimestatistics-code-slash:strukturaSkupinyNapadenychOsob ;
+	skos:notation "H" ;
+
+	rdfs:label "tři muži jedna žena"@cs ;
+	.
+crimestatistics-code-codelist-hash:I a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "tři muži dvě ženy"@cs ;
+	skos:inScheme crimestatistics-code-slash:strukturaSkupinyNapadenychOsob ;
+	skos:notation "I" ;
+
+	rdfs:label "tři muži dvě ženy"@cs ;
+	.
+crimestatistics-code-codelist-hash:J a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "tři muži tři ženy"@cs ;
+	skos:inScheme crimestatistics-code-slash:strukturaSkupinyNapadenychOsob ;
+	skos:notation "J" ;
+
+	rdfs:label "tři muži tři ženy"@cs ;
+	.
+crimestatistics-code-codelist-hash:K a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "tři muži"@cs ;
+	skos:inScheme crimestatistics-code-slash:strukturaSkupinyNapadenychOsob ;
+	skos:notation "K" ;
+
+	rdfs:label "tři muži"@cs ;
+	.
+crimestatistics-code-codelist-hash:L a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "čtyři muži"@cs ;
+	skos:inScheme crimestatistics-code-slash:strukturaSkupinyNapadenychOsob ;
+	skos:notation "L" ;
+
+	rdfs:label "čtyři muži"@cs ;
+	.
+crimestatistics-code-codelist-hash:M a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "pět mužů"@cs ;
+	skos:inScheme crimestatistics-code-slash:strukturaSkupinyNapadenychOsob ;
+	skos:notation "M" ;
+
+	rdfs:label "pět mužů"@cs ;
+	.
+crimestatistics-code-codelist-hash:N a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "šest mužů"@cs ;
+	skos:inScheme crimestatistics-code-slash:strukturaSkupinyNapadenychOsob ;
+	skos:notation "N" ;
+
+	rdfs:label "šest mužů"@cs ;
+	.
+crimestatistics-code-codelist-hash:O a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "tři ženy"@cs ;
+	skos:inScheme crimestatistics-code-slash:strukturaSkupinyNapadenychOsob ;
+	skos:notation "O" ;
+
+	rdfs:label "tři ženy"@cs ;
+	.
+crimestatistics-code-codelist-hash:P a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "čtyři ženy"@cs ;
+	skos:inScheme crimestatistics-code-slash:strukturaSkupinyNapadenychOsob ;
+	skos:notation "P" ;
+
+	rdfs:label "čtyři ženy"@cs ;
+	.
+crimestatistics-code-codelist-hash:R a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "pět žen"@cs ;
+	skos:inScheme crimestatistics-code-slash:strukturaSkupinyNapadenychOsob ;
+	skos:notation "R" ;
+
+	rdfs:label "pět žen"@cs ;
+	.
+crimestatistics-code-codelist-hash:S a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "šest žen"@cs ;
+	skos:inScheme crimestatistics-code-slash:strukturaSkupinyNapadenychOsob ;
+	skos:notation "S" ;
+
+	rdfs:label "šest žen"@cs ;
+	.
+crimestatistics-code-codelist-hash:T a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "čtyři muži jedna žena"@cs ;
+	skos:inScheme crimestatistics-code-slash:strukturaSkupinyNapadenychOsob ;
+	skos:notation "T" ;
+
+	rdfs:label "čtyři muži jedna žena"@cs ;
+	.
+crimestatistics-code-codelist-hash:U a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "čtyři muži dvě ženy"@cs ;
+	skos:inScheme crimestatistics-code-slash:strukturaSkupinyNapadenychOsob ;
+	skos:notation "U" ;
+
+	rdfs:label "čtyři muži dvě ženy"@cs ;
+	.
+crimestatistics-code-codelist-hash:V a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "pět mužů jedna žena"@cs ;
+	skos:inScheme crimestatistics-code-slash:strukturaSkupinyNapadenychOsob ;
+	skos:notation "V" ;
+
+	rdfs:label "pět mužů jedna žena"@cs ;
+	.
+crimestatistics-code-codelist-hash:W a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "jeden muž čtyři ženy"@cs ;
+	skos:inScheme crimestatistics-code-slash:strukturaSkupinyNapadenychOsob ;
+	skos:notation "W" ;
+
+	rdfs:label "jeden muž čtyři ženy"@cs ;
+	.
+crimestatistics-code-codelist-hash:X a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "dva muži čtyři ženy"@cs ;
+	skos:inScheme crimestatistics-code-slash:strukturaSkupinyNapadenychOsob ;
+	skos:notation "X" ;
+
+	rdfs:label "dva muži čtyři ženy"@cs ;
+	.
+crimestatistics-code-codelist-hash:Z a skos:Concept, crimestatistics-code-codelist-slash:conceptClass ;
+	skos:prefLabel "jeden muž pět žen"@cs ;
+	skos:inScheme crimestatistics-code-slash:strukturaSkupinyNapadenychOsob ;
+	skos:notation "Z" ;
+
+	rdfs:label "jeden muž pět žen"@cs ;
+	.

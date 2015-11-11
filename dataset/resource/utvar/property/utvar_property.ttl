@@ -1,0 +1,72 @@
+# Standardní prefixy
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix interval: <http://reference.data.gov.uk/def/intervals/> .
+@prefix sdmx:    <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+# Vlastní prefixy
+@prefix crimestatistics-code-slash: <http://linked.opendata.cz/ontology/crimestatistics/code/> .
+@prefix crimestatistics-code-codelist-slash: <http://linked.opendata.cz/ontology/crimestatistics/code/utvar/> .
+@prefix crimestatistics-code-codelist-class: <http://linked.opendata.cz/ontology/crimestatistics/code/utvar/class/> .
+@prefix crimestatistics-code-codelist-property: <http://linked.opendata.cz/ontology/crimestatistics/code/utvar/property/> .
+
+# Cizí prefixy
+@prefix cm:        <http://purl.org/czech-municipalities/geography#> .
+
+# Property pro spojeni krajskeho reditelstvi s predchudcem daneho kraje.
+crimestatistics-code-codelist-property:prislusnostKPredchudciKraje a rdf:Property ;
+	rdfs:label
+		"příslušnost k předchůdci kraje"@cs,
+		"affiliation to a predecessor of a region"@en ;
+	rdfs:comment
+		"Tato property o daném útvaru říká, že odkazovaný kraj měl v čase předchůdce, ke kterému tento útvar kdysi příslušel. Použití této property je zpravidla dáno nemožností spojit daný útvar přímo s oním předchůdcem, protože neexistuje entita, který by tohoto předchůdce reprezentovala."@cs,
+		"This property says that a given regional police department is affiliated to a predecessor of a given region, but an entity representing a predecessor does not exist."@en ;
+	rdfs:range cm:Region ;
+	rdfs:domain crimestatistics-code-codelist-class:KrajskeReditelstvi ;
+	.
+
+# Property pro prirazeni krajskeho reditelstvi k prislusnemu kraji
+crimestatistics-code-codelist-property:prislusnostKeKraji a rdf:Property ;
+	rdfs:label
+		"příslušnost ke kraji"@cs,
+		"affiliation to a region"@en ;
+	rdfs:comment
+		"Tato property spojuje útvar na úrovni kraje, tedy krajské ředitelství, s příslušným krajem."@cs,
+		"This property links a police department on the regional level to a related region."@en ;
+	rdfs:range cm:Region ;
+	rdfs:domain crimestatistics-code-codelist-class:KrajskeReditelstvi ;
+	.
+
+# Property pro prirazeni okresniho reditelstvi k prislusnemu okresu
+crimestatistics-code-codelist-property:prislusnostKOkresu a rdf:Property ;
+	rdfs:label
+		"příslušnost k okresu"@cs,
+		"affiliation to a county"@en ;
+	rdfs:comment
+		"Tato property spojuje útvar na úrovni okresu, tedy okresní ředitelství nebo územní odbor, s příslušným okresem."@cs,
+		"This property links a police department on the regional or county level to a related county."@en ;
+	rdfs:range cm:County ;
+	rdfs:domain crimestatistics-code-codelist-class:OkresniReditelstvi ;
+	.
+
+crimestatistics-code-codelist-property:id a rdf:Property ;
+	rdfs:label
+		"identifikátor útvaru"@cs,
+		"police department identifier"@en ;
+	rdfs:comment
+		"Tato property zaznamenává identifikátor základního útvaru."@cs,
+		"This property holds the value of an identifier of a police department."@en ;
+	rdfs:range xsd:string ;
+	rdfs:domain crimestatistics-code-codelist-class:conceptClass ;
+	.

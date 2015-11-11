@@ -1,0 +1,202 @@
+101#vraždy - loupežné (§ 140)# 
+102#vraždy - sexuální (§ 140)# 
+103#vraždy - motivované osobními vztahy (§ 140)# 
+104#vraždy - na objednávku (§ 140)# 
+105#vraždy - novorozence matkou (§ 142)# 
+106#vraždy - ostatní (§ 140)# 
+111#usmrcení lidského plodu - pomoc a svádění ženy (§ 161, 162), # 
+112#usmrcení lidského plodu - se souhlasem ženy (§ 160)# 
+113#usmrcení lidského plodu - bez souhlasu ženy (§ 159)# 
+115#zabití (§ 141)# 
+116#usmrcení z nedbalosti (§ 143)# 
+121#opuštění dítěte (§ 195)# 
+122#únos (§ 200)# 
+131#loupež (§ 173)# 
+132#loupeže na finančních institucích (§ 173)# 
+141#násilí proti úřední osobě a orgánu veřejné moci - mimo příslušníka policie a obecní policie (§  323, 324, 325, 326)# 
+142#násilí proti úřední osobě a orgánu veřejné moci - na příslušníkovi Policie ČR (§ 323, 324, 325, 326)# 
+143#násilí proti úřední osobě a orgánu veřejné moci - na příslušníkovi obecní policie (§ 323, 324, 325, 326)# 
+151#úmyslné ublížení na zdraví (§ 145, 146, 146a)# 
+161#rvačky (§ 158)# 
+171#násilí a vyhrožování proti skupině obyvatel a jednotlivci  (§ 352)# 
+172#braní rukojmí (§ 174)# 
+173#nebezpečné vyhrožování (§ 353)# 
+174#nebezpečné pronásledování  (§ 354)# 
+181#vydírání (§ 175)# 
+182#omezování a zbavení osobní svobody (§ 169, 170, 171)# 
+183#porušování domovní svobody (§ 178)# 
+184#neoprávněný zásah do práva k domu, bytu nebo nebytovému prostoru (§ 208)# 
+185#týrání svěřené osoby (§ 198)# 
+186#týrání osoby žijící ve společném obydlí (§ 199)# 
+187#omezování svobody vyznání (§ 176)# 
+188#útisk (§ 177)# 
+189#porušování svobody sdružování a shromažďování (§ 179)# 
+190#ostatní násilné trestné činy (§ 144, 172)# 
+201#znásilnění (§ 185)# 
+202#sexuální nátlak (§ 186)# 
+211#pohlavní zneužívání v závislosti (§ 187/2)# 
+212#pohlavní zneužívání ostatní (§ 187/1,3,4)# 
+213#komerční forma sexuálního zneužívání v závislosti (§ 187/2)# 
+214#komerční forma sexuálního zneužívání ostatní (§ 187/1,3,4)# 
+231#ostatní pohlavní úchylky (§ 358)# 
+241#ohrožování mravnosti (§ 191)# 
+251#ohrožování pohlavní nemocí (§ 155)     # 
+252#úmyslné ublížení na zdraví nakažlivou lidskou nemocí (§ 145,146, 152)# 
+253#ublížení nakažlivou lidskou nemocí z nedbalosti (§ 143, 147,148, 153)# 
+271#kuplířství (§ 189)# 
+280#soulož mezi příbuznými (§ 188)# 
+281#obchodování s lidmi (§ 168)# 
+290#ostatní mravnostní trestné činy (§ 190, 192, 193,194)# 
+311#krádeže vloupáním do obchodů (§ 205)# 
+312#krádeže vloupáním do výkladních skříní (§ 205)# 
+321#krádeže vloupáním do restaurací a hostinců (§ 205)# 
+322#krádeže vloupáním do ubytovacích objektů (§ 205)# 
+323#krádeže vloupáním do kiosků (§ 205)# 
+324#krádeže vloupáním do jídelen, závodních kuchyní a stravovacích zařízení (§ 205)# 
+331#krádeže vloupáním do objektů, kde se nacházejí starožitnosti a umělecké předměty - mimo obchodů (§ 205)# 
+332#krádeže vloupáním do kulturních objektů, mimo uvedené v 331 ( § 205)# 
+341#krádeže vloupáním do pokladen a pancéřových skříní ( § 205)# 
+350#krádeže vloupáním do výpočetních středisek nebo počítačových pracovišť (§ 205)# 
+351#krádeže vloupáním do škol (§ 205)# 
+371#krádeže vloupáním do bytů (§ 178, 205)# 
+372#krádeže vloupáním do víkendových chat soukromých osob (§ 178, 205)# 
+373#krádeže vloupáním do rodinných domků (§ 178, 205)# 
+390#krádeže vloupáním do ostatních objektů (§ 178, 205)# 
+411#krádeže prosté - kapesní (§ 205)# 
+412#krádeže prosté - při pohlavním styku (§ 205)# 
+413#krádeže prosté - jiné na osobách (§ 205)# 
+421#krádeže prosté - mezi zaměstnanci na pracovišti (§ 205)# 
+431#krádeže prosté - motorových vozidel dvoustopých (§ 205, 207)# 
+432#krádeže prosté - motorových vozidel jednostopých (§ 205, 207)# 
+433#krádeže prosté - věcí z aut - včetně vloupání do kabiny a zav. prostoru (§ 205)  # 
+434#krádeže prosté - součástek motorových vozidel (§ 205)# 
+435#krádeže prosté - jízdních kol (§ 205, 207)# 
+441#krádeže prosté - domácího zvířectva (§ 205)# 
+451#krádeže prosté - v bytech a rodinných domech (§ 205)# 
+461#krádeže prosté - věcí v prostorách nádraží - mimo zásilek (§ 205)# 
+462#krádeže prosté - věcí během jízdy v dopravním prostředku - mimo zásilek (§ 205)# 
+471#krádeže prosté v objektech, včetně exterieru i na volném prostranství se starožitnostmi a uměleckými předměty (§ 205)# 
+480#krádeže prosté v jiných objektech (§ 205)# 
+490#krádeže prosté ostatní (§ 205)# 
+511#podvod (§ 209)# 
+521#zpronevěra (§ 206)# 
+530#neoprávněné užívání cizí věci (§ 207 )# 
+588#zatajení věci (§ 219)# 
+589#poškozování cizí věci (§ 228)# 
+590#pytláctví a ostatní majetkové trestné činy (§  304)# 
+611#výtržnictví (§ 358, 359)# 
+612#výtržnictví na sportovních a veřejných akcích (§ 358)# 
+613#sprejerství (§ 228/2)# 
+614#výtržnictví - útoky na záchranáře (§ 358)# 
+630#z r u š e n o# 
+631#ohrožování výchovy mládeže (§ 201, 202)# 
+632#podávání alkoholických nápojů mládeži (§ 204)# 
+633#obchodování s dětmi (§ 169)# 
+634#nedovolené překročení státní hranice (§ 339, 340, 341, 343)# 
+635#nedovolená výroba a držení psychotropních látek a jedů pro jiného (§ 283)# 
+636#šíření toxikomanie (§ 287)# 
+637#zneužívání pravomoci úřední osoby (§ 329)# 
+639#neoprávněné nakládání s osobními údaji (§ 180)# 
+640#maření úkolů úřední osoby z nedbalosti (§ 330)# 
+641#nedovolená výroba a držení psychotropních látek a jedů pro sebe (§ 284)# 
+642#nedovolená výroba a držení psychotropních látek a jedů - předmět k nedovolené výrobě (§ 286)# 
+643#nedovolené pěstování rostlin obsahující omamnou látku (§ 285)# 
+644#výroba a nakládání s látkami s hormonálním účinkem (§ 288)# 
+651#požáry (§ 228, 272, 273)# 
+652#výbuchy (§ 228, 272, 273)# 
+662#nedovolené ozbrojování (§ 279)# 
+663#maření výkonu úředního rozhodnutí (§ 337)# 
+664#překupnictví a přechovávači - podílnictví (§ 214, 215)# 
+690#ostatní kriminální trestné činy (§ 338, 342)# 
+721#nadržování (§ 366)# 
+730#veškeré nehody (silniční, letecké, vodní, železniční a kombinované) - úmyslné (§  145, 146, 228, 272, 274, 360, 402)# 
+731#dopravní nehody silniční z nedbalosti (§ 143, 147, 148, 273, 274, 277, 360)# 
+732#dopravní nehody letecké z nedbalosti (§ 143, 147, 148, 273, 274, 277, 360)# 
+733#dopravní nehody vodní z nedbalosti (§ 143, 147, 148, 273, 274, 277, 360)# 
+741#železniční nehody z nedbalosti (§ 143, 147, 148, 273, 274, 277, 360)# 
+742#nehody kombinované, železniční - silniční z nedbalosti (§ 143, 147,148, 273, 274, 277, 360)# 
+750#ublížení na zdraví z nedbalosti - pracovní úrazy (§ 143, 147, 148, 274, 360)# 
+751#ublížení na zdraví z nedbalosti - ostatní (§ 143,147, 148, 274, 360)# 
+762#poškozování věřitele (§ 222)# 
+763#zvýhodňování věřitele (§ 223)# 
+771#ohrožení pod vlivem návykové látky, opilství (§ 274, 360)# 
+772#zanedbání povinné výživy (§ 196)# 
+781#získání kontroly nad vzdušným dopravním prostředkem plavidlem a pevnou plošinou (§ 290)# 
+782#sdělení nepravdivé informace, která může ohrozit bezpečnost nebo provoz vzdušného dopravního prostředku za letu a civilního plavidla (§ 291)# 
+783#zavlečení vzdušného dopravního prostředku do ciziny (§ 292)# 
+784#týraní zvířat (§ 302, 303)# 
+785#šíření poplašné zprávy (§ 357)# 
+786#účast na organizované zločinecké skupině (§ 361)# 
+787#hanobení národa, rasy, etnické nebo jiné skupiny (§ 355)# 
+788#podněcování k národnostní a rasové nenávisti (§ 356)# 
+789#podpora a propagace hnutí směřujícího k potlačení práv a svobod občanů (§ 403, 404, 405)# 
+790#ostatní trestná činnost (§ 149, 150, 151, 164, 165, 166, 167, 181, 182, 183, 184, 218, 220, 221, 272, 273, 275, 276, 277, 278, 280, 328, 335, 336, 344, 345, 346, 347, 350, 351, 364, 365, 367, 368, 400, 401, 411, 412, 413, 414, 415)#
+801#trestné činy proti předpisům o nekalé soutěži (§ 248)# 
+803#neoprávněné podnikaní (§ 251)# 
+806#poškozování spotřebitele (§ 253)# 
+807#porušování předpisů o oběhu zboží ve styku s cizinou (pašování) (§ 261)# 
+808#zkreslování údajů o stavu hospodaření a jmění (§ 254)# 
+809#z r u š e n # 
+810#porušení povinnosti v insolvenčním řízení (§ 225)# 
+811#porušování povinnosti při správě cizího majetku (§ 220, 221)# 
+812#krádež (§ 205)# 
+813#neoprávněné užívání cizí věci mimo motorová vozidla (§ 207)# 
+814#poškozování cizí věci (§ 228)# 
+815#podvody proti sociálnímu zabezpečení a nemocenskému pojištěni (§ 209)# 
+816#padělání a pozměňování peněz (§ 233)# 
+817#padělání a pozměňování známek, kolků a nálepek (§ 245, 246)# 
+819#krácení daně (§ 240)# 
+820#zneužívaní pravomoci úřední osoby (§ 329)# 
+821#úplatkářství - přijímání úplatku (§ 331)# 
+822#poškozování věřitele (§ 222)# 
+823#padělání a pozměňování veřejné listiny (§ 348)# 
+824#nedovolená výroba a držení státní pečeti a úředního razítka (§ 349)# 
+825#ohrožování zdraví závadnými potravinami a jinými potřebami (§ 156, 157)# 
+826#vystavení nepravdivého potvrzení (§ 259, 260)# 
+827#neoprávněné užívání motorového vozidla (§ 207)# 
+828#porušování tajemství dopravovaných zpráv (§ 182)# 
+829#zpronevěra (§ 206)# 
+830#podvod (§ 209)# 
+831#pletichy při veřejné soutěži a dražbě (§ 256, 257, 258)# 
+832#porušování předpisů o nakládání s kontrolovaným zbožím a technologiemi (§ 262, 263, 264)# 
+833#zneužívání informací v obchodním styku (§ 255)# 
+834#neoprávněné provozování loterie a podobné sázkové hry (§ 252)# 
+835#porušování předpisů o nálepkách k označení zboží (§ 244)# 
+836#neoprávněné nakládání s osobními údaji (§ 180)# 
+837#ostatní trestné činy proti měně (§ 235, 236, 237, 239)# 
+838#neoprávněné držení platebního prostředku (§ 234)# 
+839#porušování předpisů o zahraničním obchodu s vojenským materiálem (§ 265, 266, 267)# 
+840#krádeže železničních zásilek (§ 205, 206, 209)# 
+841#krádeže poštovních zásilek (§ 205, 206, 209)# 
+842#krádeže silničních zásilek (§ 205, 206, 209)# 
+843#krádeže leteckých zásilek (§ 205, 206, 209)# 
+844#krádeže lodních zásilek (§ 205, 206, 209)# 
+845#maření úkolu úřední osoby z nedbalosti (§ 330)# 
+846#úplatkářství - podplácení (§ 332)# 
+847#úplatkářství - nepřímé úplatkářství (§ 333)# 
+848#zvýhodňování věřitele (§ 223)# 
+849#pletichy v insolvenčním řízení (§ 226)# 
+850#ohrožení nebo poškození životního prostředí - úmyslné (§ 293, 294a, 295, 297, 298, 298a, 299, 301)# 
+851#ohrožení nebo poškození životního prostředí - nedbalostní (§ 294, 294a, 295, 297, 298, 300, 301 )# 
+852#způsobení úpadku (§ 224)# 
+853#neoprávněné vydání cenného papíru (§ 249)# 
+854#manipulace s kurzem investičních nástrojů (§ 250)# 
+855#nedovolená výroba a držení radioaktivního a jaderného materiálu (§ 281, 282)# 
+860#podílnictví (§ 214, 215)# 
+861#porušování práv k ochranné známce, obchodnímu jménu a chráněnému označení původu (§ 268)# 
+862#porušování průmyslových práv (§ 269)# 
+863#porušování autorského práva, práv k databázi, práv souvisejících a padělání díla (§ 270, 271)# 
+864#zastření původu věcí, tzv. praní špinavých peněz (§ 216, 217)# 
+865#poškozování a zneužití záznamu na nosiči informací (§ 230, 231, 232)# 
+866#provozování nepoctivých her a sázek (§ 213)# 
+870#havárie a provozní poruchy - mimo dopravních nehod silničních, železničních, leteckých a vodních - z nedbalosti (§ 273, 274, 277, 294, 294a, 301, 360) # 
+871#havárie a provozní poruchy - mimo dopravních nehod silničních, železničních, leteckých a vodních - úmyslné (§ 228, 272, 274, 276, 278, 293, 294a, 295, 298, 298a, 299, 301, 360)# 
+880#pojistný podvod (§ 210)# 
+881#úvěrový podvod (§ 211)# 
+882#dotační podvod (§ 212)# 
+885#nesplnění oznamovací povinnosti v daňovém řízení (§ 243)# 
+886#neodvedení daně, pojistného na sociální zabezpečení, zdravotní pojištění a příspěvku na státní politiku zaměstnanosti (§ 241)# 
+890#ostatní hospodářské trestné činy (§ 181, 183, 218, 227, 229, 247, 280, 305, 306, 307, 337, 410)# 
+901#vojenské trestné činy (§ 369, 370, 371, 372, 373, 374, 375, 376, 377, 378, 379, 380, 381, 382, 383, 384, 385, 386, 387, 388, 389, 390, 391, 392, 393, 394, 395, 396, 397, 398, 417)# 
+902#trestné činy proti ústavnímu zřízení (§ 309, 310, 311, 312, 314, 315, 316, 317, 318, 319, 320, 321, 322)# 
+903#trestné činy válečné a proti míru (§ 406, 407, 409, 416) # 

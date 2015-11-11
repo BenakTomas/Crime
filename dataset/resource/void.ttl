@@ -1,0 +1,370 @@
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix waiver: <http://vocab.org/waive/terms/> .
+
+# Vlastní prefixy
+@prefix crime: <http://linked.opendata.cz/ontology/crime#> .
+@prefix : <#> .
+
+# TODO popis SPARQL endpointu, ktery obsahuje popis Crime Dataset
+# v ramci nektereho z named graphs?
+
+# TODO: umisteni VOID file (void.ttl v rootu serveru?; dostupne take jako
+#./HOST/.well-known/void?)
+<> a void:DatasetDescription;
+    dcterms:title "VOID popis datasetu trestné činnosti"@cs;
+    dcterms:creator <http://purl.org/benak#me> ;
+    foaf:primaryTopic <http://linked.opendata.cz/resource/domain/crimestatistics/dataset> ;
+    .
+
+# Definice proxy pro odkazovane datasety
+# TODO:
+#   a) jak propojit na URI skutecnych datasetu?
+#   b) deklarovat tyto datasety jako subsety? (typicky class partitions) puvodnich datasetu
+       #(napr. :RUIANDataset jako subset opravdoveho datasetu RUIAN s tim, ze bude
+       # class partition omezenou na typ ruian:Obec)
+#   c) uvadet nejake example resources pro tyto proxy datasety?
+#   d) uvadet uriRegexPattern pro tyto proxy datasety?
+#   e) uvadet nejake statistiky pro tyto proxy datasety?
+#   f) pro dataset, kde vydavatel neposkytl jeho URI, vymyslet vlastni a pridat
+       #odkaz na homepage datasetu.  
+
+# Definice proxy pro dataset DBpedia
+:DBpedia a void:Dataset ;
+  foaf:homepage <http://dbpedia.org/>;
+  void:sparqlEndpoint <http://dbpedia.org/sparql> ;
+  .
+
+# Definice proxy pro dataset RUIAN
+<http://ruian.linked.opendata.cz/resource/dataset> a void:Dataset ;
+  void:sparqlEndpoint <http://ruian.linked.opendata.cz/sparql> ;
+  dcterms:subject <http://dbpedia.org/resource/Ruian> ;
+  .
+
+:DatasetZakonu a void:Dataset ;
+  void:sparqlEndpoint <http://linked.opendata.cz/sparql> ;
+  # TODO foaf:homepage
+  #foaf:homepage <http://ruian.linked.opendata.cz/resource/dataset> ;
+  .
+
+# Definice datasetu trestne cinnosti
+# TODO URI datasetu mozna zavisle na URI teto void file (/HOST/void.ttl#CrimeDataset)
+<http://linked.opendata.cz/resource/domain/crimestatistics/dataset> a void:Dataset ;
+  dcterms:title
+    "Trestná činnost v České republice"@cs,
+    "Crime in the Czech republic"@en ;
+  dcterms:description
+    "Detailní přehled spáchaných trestných činů a jejich pachatelů, zaznamenaný Policií České republiky v letech 2008 až 2012."@cs,
+    "A detailed overview of crimes and their perpetrators recorded by the Police over the years 2008 to 2012, for the Czech republic."@en ;
+  dcterms:creator <http://purl.org/benak#me> ;
+  dcterms:publisher
+    <http://purl.org/benak#me>,
+    <http://Opendata.cz> ;
+  dcterms:contributor <http://purl.org/benak#me> ;
+  dcterms:source
+    <http://www.policie.cz/>,
+    <http://vdp.cuzk.cz/>,
+    <http://www.otevrenaspolecnost.cz/> ;     
+  
+  dcterms:subject <http://dbpedia.org/resource/Crime> ;
+  
+  dcterms:date "2015-05-18"^^xsd:date ;
+  dcterms:created "2015-05-18"^^xsd:date ;
+  dcterms:issued "2015-05-18"^^xsd:date ;
+  dcterms:modified "2015-05-18"^^xsd:date ;
+ 
+  dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    
+  foaf:homepage <http://www.ms.mff.cuni.cz/~benat7am/crimemonitor/> ;
+  foaf:page <http://linked.opendata.cz/dataset/crimestatistics> ;
+  
+  waiver:norms <http://www.opendatacommons.org/norms/odc-by-sa/> ;
+  
+  void:sparqlEndpoint <http://beny.kolej.mff.cuni.cz:8890/sparql> ;
+  
+  void:exampleResource
+    <http://linked.opendata.cz/resource/domain/crimestatistics/dataset/trestneCiny/2012/00/00/00/000001232/10/01>,
+    <http://linked.opendata.cz/resource/domain/crimestatistics/dataset/znamiPachatele/2012/00/00/00/000001232/10/01/01>,
+    <http://linked.opendata.cz/resource/domain/crimestatistics/dataset/prokazaniTrestnehoCinu/2012/00/00/00/000001232/10/01/00/00/00/000001232/10/01/01> ;
+  
+  void:vocabulary
+    <http://www.w3.org/2004/02/skos/core> ;
+    
+  void:classPartition
+    <http://linked.opendata.cz/resource/domain/crimestatistics/dataset/trestneCiny>,
+    <http://linked.opendata.cz/resource/domain/crimestatistics/dataset/znamiPachatele>,
+    <http://linked.opendata.cz/resource/domain/crimestatistics/dataset/prokazaniTrestnehoCinu>,
+    <http://linked.opendata.cz/resource/domain/crimestatistics/dataset/utvary> ;
+  
+  void:subset
+    <http://linked.opendata.cz/resource/domain/crimestatistics/dataset/CrimeDataset_DBpedia>,
+    
+    <http://linked.opendata.cz/resource/domain/crimestatistics/dataset/CrimeDataset_DatasetZakonu_UkonVTrestnimRizeni_ProvedenoPodle>,
+    <http://linked.opendata.cz/resource/domain/crimestatistics/dataset/CrimeDataset_DatasetZakonu_UkonVTrestnimRizeni_RozhodneOkolnostiUvedenyV>,
+    
+    <http://linked.opendata.cz/resource/domain/crimestatistics/dataset/CrimeDataset_DatasetZakonu_TaktickaKlasifikacePachateleCizince_ZakonyUpravujiciPobyt>,
+    <http://linked.opendata.cz/resource/domain/crimestatistics/dataset/CrimeDataset_DatasetZakonu_TaktickaKlasifikacePachateleCizince_VyhlaskyUpravujiciPobyt>,
+    
+    <http://linked.opendata.cz/resource/domain/crimestatistics/dataset/CrimeDataset_DatasetZakonu_FormaHospodarskeTrestneCinnosti_Kvalifikace_Paragraf>,
+    <http://linked.opendata.cz/resource/domain/crimestatistics/dataset/CrimeDataset_DatasetZakonu_FormaHospodarskeTrestneCinnosti_Kvalifikace_Odstavec>,
+    <http://linked.opendata.cz/resource/domain/crimestatistics/dataset/CrimeDataset_DatasetZakonu_FormaHospodarskeTrestneCinnosti_Kvalifikace_Pismeno>,
+    
+    <http://linked.opendata.cz/resource/domain/crimestatistics/dataset/CrimeDataset_DatasetZakonu_Tsk_Kvalifikace_Paragraf>,
+    <http://linked.opendata.cz/resource/domain/crimestatistics/dataset/CrimeDataset_DatasetZakonu_Tsk_Kvalifikace_Odstavec>,
+    <http://linked.opendata.cz/resource/domain/crimestatistics/dataset/CrimeDataset_DatasetZakonu_Tsk_Kvalifikace_Pismeno> ;
+  .
+
+# Subsets
+# Subset trestných činů
+<http://linked.opendata.cz/resource/domain/crimestatistics/dataset/trestneCiny> a void:Dataset ;
+  void:class crime:TrestnyCin ;
+  void:exampleResource <http://linked.opendata.cz/resource/domain/crimestatistics/dataset/trestneCiny/2012/00/00/00/000001232/10/01> ;
+  
+  void:subset
+    <http://linked.opendata.cz/resource/domain/crimestatistics/dataset/CrimeDataset_DatasetZakonu_HlavniKvalifikace_Paragraf>,
+    <http://linked.opendata.cz/resource/domain/crimestatistics/dataset/CrimeDataset_DatasetZakonu_HlavniKvalifikace_Odstavec>,
+    <http://linked.opendata.cz/resource/domain/crimestatistics/dataset/CrimeDataset_DatasetZakonu_HlavniKvalifikace_Pismeno>,
+    
+    <http://linked.opendata.cz/resource/domain/crimestatistics/dataset/CrimeDataset_DatasetZakonu_Soubeh_Paragraf>,
+    <http://linked.opendata.cz/resource/domain/crimestatistics/dataset/CrimeDataset_DatasetZakonu_Soubeh_Odstavec>,
+    <http://linked.opendata.cz/resource/domain/crimestatistics/dataset/CrimeDataset_DatasetZakonu_Soubeh_Pismeno> ;     
+  .
+# Subset známých pachatelů
+<http://linked.opendata.cz/resource/domain/crimestatistics/dataset/znamiPachatele> a void:Dataset ;
+  void:class crime:ZnamyPachatel ;
+  void:exampleResource <http://linked.opendata.cz/resource/domain/crimestatistics/dataset/znamiPachatele/2012/00/00/00/000001232/10/01/01> ;     
+  .
+# Subset prokázání trestných činů
+<http://linked.opendata.cz/resource/domain/crimestatistics/dataset/prokazaniTrestnehoCinu> a void:Dataset ;
+  void:class crime:ZnamyPachatel ;
+  void:exampleResource <http://linked.opendata.cz/resource/domain/crimestatistics/dataset/prokazaniTrestnehoCinu/2012/00/00/00/000001232/10/01/00/00/00/000001232/10/01/01> ;     
+  .
+
+# Subset utvaru
+<http://linked.opendata.cz/resource/domain/crimestatistics/dataset/utvary> a void:Dataset ;
+  void:class crime:Utvar ;
+  void:propertyPartition
+    <http://linked.opendata.cz/resource/domain/crimestatistics/dataset/CrimeDataset_Utvary_PokryteObce> ;
+  
+  void:exampleResource <http://linked.opendata.cz/ontology/crimestatistics/code/utvar#010118>     
+  .
+
+<http://linked.opendata.cz/resource/domain/crimestatistics/dataset/CrimeDataset_Utvary_PokryteObce> a void:Dataset ;
+  void:property crime:pokrytaObec ;
+  void:subset <http://linked.opendata.cz/resource/domain/crimestatistics/dataset/CrimeDataset_PokryteObce_RUIANDataset> ;
+  
+  void:exampleResource <http://linked.opendata.cz/ontology/crimestatistics/code/utvar#010118>  
+  .
+   
+# Linksets
+
+# TODO:
+#   a) linksety jsou zatim subsety nebo property partitions datasetu: mohlo by
+       #to jit tak, ze linkset bude subsetem nejake property partition, a ta samotna
+       #bude subsetem bud primo datasetu nebo nejakeho subsetu datasetu
+   # b) vydelit subsety pro: trestne ciny, pachatele, prokazani trestnych cinu,
+   #    tsk, utvary, takticke klasifikace pachatele-cizince, ukony v trestnim rizeni,
+   #    formy hospodarske trestne cinnosti
+
+# Vazba mezi datasetem CrimeDataset a DBpedia: propojeni konceptu reprezentujicich staty s entitami statu v DBpedia
+<http://linked.opendata.cz/resource/domain/crimestatistics/dataset/CrimeDataset_DBpedia> a void:Linkset ;
+  void:target <http://linked.opendata.cz/resource/domain/crimestatistics/dataset> ;
+  void:target :DBpedia ;
+  void:linkPredicate owl:sameAs ;
+  
+  void:triples 250 ; # pocet trojic                      
+  void:distinctSubjects 250 ;
+  void:distinctObjects 250 ;
+  
+  void:exampleResource <http://linked.opendata.cz/ontology/crimestatistics/code/stat#562> ;
+  .
+
+# Vazba mezi utvary a obcemi z datasetu RUIAN
+<http://linked.opendata.cz/resource/domain/crimestatistics/dataset/CrimeDataset_PokryteObce_RUIANDataset> a void:Linkset ;
+  void:subjectsTarget <http://linked.opendata.cz/resource/domain/crimestatistics/dataset/utvary>;
+  void:objectsTarget <http://ruian.linked.opendata.cz/resource/dataset> ;
+  void:linkPredicate crime:pokrytaObec ;
+  
+  void:exampleResource <http://linked.opendata.cz/ontology/crimestatistics/code/utvar#010118> ;
+  .
+
+# Vazby právní kvalifikace trestného činu
+
+# 1) Vazby "Hlavní kvalifikace"
+
+#  a) vazba na paragraf
+<http://linked.opendata.cz/resource/domain/crimestatistics/dataset/CrimeDataset_DatasetZakonu_HlavniKvalifikace_Paragraf> a void:Linkset ;
+  void:subjectsTarget <http://linked.opendata.cz/resource/domain/crimestatistics/dataset> ;
+  void:objectsTarget :DatasetZakonu ;
+  void:linkPredicate crime:pravniKvalifikaceTrestnehoCinu_Hlavni_Paragraf ;
+
+  void:exampleResource <http://linked.opendata.cz/resource/domain/crimestatistics/dataset/trestneCiny/2012/00/00/00/000001232/10/01> ;
+  .
+#  b) vazba na odstavec
+<http://linked.opendata.cz/resource/domain/crimestatistics/dataset/CrimeDataset_DatasetZakonu_HlavniKvalifikace_Odstavec> a void:Linkset ;
+  void:subjectsTarget <http://linked.opendata.cz/resource/domain/crimestatistics/dataset> ;
+  void:objectsTarget :DatasetZakonu ;
+  void:linkPredicate crime:pravniKvalifikaceTrestnehoCinu_Hlavni_Odstavec ;
+
+  void:exampleResource <http://linked.opendata.cz/resource/domain/crimestatistics/dataset/trestneCiny/2012/00/00/00/000001232/10/01> ;
+  .
+#  c) vazba na pismeno
+<http://linked.opendata.cz/resource/domain/crimestatistics/dataset/CrimeDataset_DatasetZakonu_HlavniKvalifikace_Pismeno> a void:Linkset ;
+  void:subjectsTarget <http://linked.opendata.cz/resource/domain/crimestatistics/dataset> ;
+  void:objectsTarget :DatasetZakonu ;
+  void:linkPredicate crime:pravniKvalifikaceTrestnehoCinu_Hlavni_Pismeno ;
+
+  void:exampleResource <http://linked.opendata.cz/resource/domain/crimestatistics/dataset/trestneCiny/2012/00/00/00/000001232/10/01> ;
+  .
+
+# 2) Vazby "Kvalifikace souběhu"
+
+#  a) vazba na paragraf
+<http://linked.opendata.cz/resource/domain/crimestatistics/dataset/CrimeDataset_DatasetZakonu_Soubeh_Paragraf> a void:Linkset ;
+  void:subjectsTarget <http://linked.opendata.cz/resource/domain/crimestatistics/dataset> ;
+  void:objectsTarget :DatasetZakonu ;
+  void:linkPredicate crime:pravniKvalifikaceTrestnehoCinu_Soubeh_Paragraf ;
+
+  void:exampleResource <http://linked.opendata.cz/resource/domain/crimestatistics/dataset/trestneCiny/2012/00/00/00/000001232/10/01> ;
+  .
+#  b) vazba na odstavec
+<http://linked.opendata.cz/resource/domain/crimestatistics/dataset/CrimeDataset_DatasetZakonu_Soubeh_Odstavec> a void:Linkset ;
+  void:subjectsTarget <http://linked.opendata.cz/resource/domain/crimestatistics/dataset> ;
+  void:objectsTarget :DatasetZakonu ;
+  void:linkPredicate crime:pravniKvalifikaceTrestnehoCinu_Soubeh_Odstavec ;
+
+  void:exampleResource <http://linked.opendata.cz/resource/domain/crimestatistics/dataset/trestneCiny/2012/00/00/00/000001232/10/01> ;
+  .
+#  c) vazba na pismeno
+<http://linked.opendata.cz/resource/domain/crimestatistics/dataset/CrimeDataset_DatasetZakonu_Soubeh_Pismeno> a void:Linkset ;
+  void:subjectsTarget <http://linked.opendata.cz/resource/domain/crimestatistics/dataset> ;
+  void:objectsTarget :DatasetZakonu ;
+  void:linkPredicate crime:pravniKvalifikaceTrestnehoCinu_Soubeh_Pismeno ;
+ 
+  void:exampleResource <http://linked.opendata.cz/resource/domain/crimestatistics/dataset/trestneCiny/2012/00/00/00/000001232/10/01> ;
+  .
+
+# Vazby úkonů v trestním řízení na ustanovení Trestního zákona
+# a) crime:provedenoPodle
+<http://linked.opendata.cz/resource/domain/crimestatistics/dataset/CrimeDataset_DatasetZakonu_UkonVTrestnimRizeni_ProvedenoPodle> a void:Linkset ;
+  void:subjectsTarget <http://linked.opendata.cz/resource/domain/crimestatistics/dataset> ;
+  void:objectsTarget :DatasetZakonu ;
+  void:linkPredicate crime:provedenoPodle ;
+
+  # TODO odkaz na instanci ukonu v trestnim rizeni
+  #void:exampleResource <http://linked.opendata.cz/resource/domain/crimestatistics/dataset/trestneCiny/2012/00/00/00/000001232/10/01> ;
+  .
+
+# b) crime:rozhodneOkolnostiUvedeneV
+<http://linked.opendata.cz/resource/domain/crimestatistics/dataset/CrimeDataset_DatasetZakonu_UkonVTrestnimRizeni_RozhodneOkolnostiUvedenyV> a void:Linkset ;
+  void:subjectsTarget <http://linked.opendata.cz/resource/domain/crimestatistics/dataset> ;
+  void:objectsTarget :DatasetZakonu ;
+  void:linkPredicate crime:rozhodneOkolnostiUvedeneV ;
+
+  # TODO odkaz na instanci ukonu v trestnim rizeni
+  #void:exampleResource <http://linked.opendata.cz/resource/domain/crimestatistics/dataset/trestneCiny/2012/00/00/00/000001232/10/01> ;
+  .
+
+# Vazby taktické klasifikace pachatele
+#   a) crime:pobytNaUzemiCRPodleZakona
+<http://linked.opendata.cz/resource/domain/crimestatistics/dataset/CrimeDataset_DatasetZakonu_TaktickaKlasifikacePachateleCizince_ZakonyUpravujiciPobyt> a void:Linkset ;
+  void:subjectsTarget <http://linked.opendata.cz/resource/domain/crimestatistics/dataset> ;
+  void:objectsTarget :DatasetZakonu ;
+  void:linkPredicate crime:pobytNaUzemiCRPodleZakona ;
+ 
+  void:exampleResource <http://linked.opendata.cz/ontology/crimestatistics/code/taktickaKlasifikacePachateleCizince#B> ;
+  .
+#   b) crime:pobytNaUzemiCRPodleVyhlasky
+<http://linked.opendata.cz/resource/domain/crimestatistics/dataset/CrimeDataset_DatasetZakonu_TaktickaKlasifikacePachateleCizince_VyhlaskyUpravujiciPobyt> a void:Linkset ;
+  void:subjectsTarget <http://linked.opendata.cz/resource/domain/crimestatistics/dataset> ;
+  void:objectsTarget :DatasetZakonu ;
+  void:linkPredicate crime:pobytNaUzemiCRPodleVyhlasky ;
+
+  void:property crime:pobytNaUzemiCRPodleVyhlasky ;
+  
+  void:exampleResource <http://linked.opendata.cz/ontology/crimestatistics/code/taktickaKlasifikacePachateleCizince#L> ;
+  . 
+
+# Vazby forem hospodářské trestné činnosti na kvalifikující ustanovení Trestního zákona
+#  a) vazba na paragraf
+<http://linked.opendata.cz/resource/domain/crimestatistics/dataset/CrimeDataset_DatasetZakonu_FormaHospodarskeTrestneCinnosti_Kvalifikace_Paragraf> a void:Linkset ;
+  void:subjectsTarget <http://linked.opendata.cz/resource/domain/crimestatistics/dataset> ;
+  void:objectsTarget :DatasetZakonu ;
+  void:linkPredicate crime:pravniKvalifikaceFormyHospodarskeTrestneCinnosti_Paragraf ;
+
+  void:exampleResource <http://linked.opendata.cz/ontology/crimestatistics/code/hospodarskaKriminalita_Forma/2009/40#411> ;
+  .
+#  b) vazba na odstavec
+<http://linked.opendata.cz/resource/domain/crimestatistics/dataset/CrimeDataset_DatasetZakonu_FormaHospodarskeTrestneCinnosti_Kvalifikace_Odstavec> a void:Linkset ;
+  void:subjectsTarget <http://linked.opendata.cz/resource/domain/crimestatistics/dataset> ;
+  void:objectsTarget :DatasetZakonu ;
+  void:linkPredicate crime:pravniKvalifikaceFormyHospodarskeTrestneCinnosti_Odstavec ;
+
+  void:exampleResource <http://linked.opendata.cz/ontology/crimestatistics/code/hospodarskaKriminalita_Forma/2009/40#414> ;
+  .
+#  c) vazba na pismeno
+<http://linked.opendata.cz/resource/domain/crimestatistics/dataset/CrimeDataset_DatasetZakonu_FormaHospodarskeTrestneCinnosti_Kvalifikace_Pismeno> a void:Linkset ;
+  void:subjectsTarget <http://linked.opendata.cz/resource/domain/crimestatistics/dataset> ;
+  void:objectsTarget :DatasetZakonu ;
+  void:linkPredicate crime:pravniKvalifikaceFormyHospodarskeTrestneCinnosti_Pismeno ;
+
+  void:exampleResource <http://linked.opendata.cz/ontology/crimestatistics/code/hospodarskaKriminalita_Forma/2009/40#723> ;
+  .
+
+# Vazby takticko – statistické klasifikace na kvalifikující ustanovení Trestního zákona
+#  a) vazba na paragraf
+<http://linked.opendata.cz/resource/domain/crimestatistics/dataset/CrimeDataset_DatasetZakonu_Tsk_Kvalifikace_Paragraf> a void:Linkset ;
+  void:subjectsTarget <http://linked.opendata.cz/resource/domain/crimestatistics/dataset> ;
+  void:objectsTarget :DatasetZakonu ;
+  void:linkPredicate crime:pravniKvalifikaceTsk_Paragraf ;
+
+  void:exampleResource <http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#101> ;
+  .
+#  b) vazba na odstavec
+<http://linked.opendata.cz/resource/domain/crimestatistics/dataset/CrimeDataset_DatasetZakonu_Tsk_Kvalifikace_Odstavec> a void:Linkset ;
+  void:subjectsTarget <http://linked.opendata.cz/resource/domain/crimestatistics/dataset> ;
+  void:objectsTarget :DatasetZakonu ;
+  void:linkPredicate crime:pravniKvalifikaceTsk_Odstavec ;
+
+  void:exampleResource <http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#211> ;
+  .
+#  c) vazba na pismeno
+<http://linked.opendata.cz/resource/domain/crimestatistics/dataset/CrimeDataset_DatasetZakonu_Tsk_Kvalifikace_Pismeno> a void:Linkset ;
+  void:subjectsTarget <http://linked.opendata.cz/resource/domain/crimestatistics/dataset> ;
+  void:objectsTarget :DatasetZakonu ;
+  void:linkPredicate crime:pravniKvalifikaceTsk_Pismeno ;
+
+  # Neexistuje zadny priklad TSK, ktera by odkazovala primo kvalifikujici pismeno odstavce paragrafu Trestniho zakona.
+  #void:exampleResource <http://linked.opendata.cz/ontology/crimestatistics/code/tsk/2009/40#211> ;
+  .
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Definice pomocnych entit (organizace a osoby poskytujici data, autori datasetu atd.)
+<http://purl.org/benak#me> a foaf:Person ;
+  rdfs:label "Tomáš Beňák" ;
+  foaf:mbox <mailto:benak.tomas+crimestatistics@gmail.com> ;
+  .
+
+<http://Opendata.cz> a foaf:Organization ;
+  rdfs:label "Opendata.cz" ;
+  foaf:mbox <mailto:datasets@opendata.cz> ;
+  .
+

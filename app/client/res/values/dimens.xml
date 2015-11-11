@@ -1,0 +1,35 @@
+<resources>
+
+    <dimen name="content_text_size">14dp</dimen>
+    <dimen name="covered_municipalities_label_text_size">20dp</dimen>
+    <dimen name="trend_line_width">10dp</dimen>
+    <dimen name="index_line_width">5dp</dimen>
+    
+    <dimen name="basic_crime_info_measure_view_min_width">50dp</dimen>
+    <dimen name="basic_crime_info_measure_view_min_height">50dp</dimen>
+    <dimen name="basic_crime_info_group_margin">5dp</dimen>
+     
+    <dimen name="crime_measure_caption_text_size">15dp</dimen>
+    <dimen name="crime_measure_caption_margin_bottom">5dp</dimen>
+     
+    <dimen name="crime_piechart_min_width">150dp</dimen>
+    <dimen name="crime_piechart_min_height">150dp</dimen>
+    <dimen name="crime_piechart_margin_bottom">30dp</dimen>
+    <dimen name="crime_piechart_margin_right">5dp</dimen>
+    
+    <dimen name="crime_overview_toplist_margin_bottom">10dp</dimen>
+    <dimen name="crime_overview_toplist_margin_left">5dp</dimen>
+    
+    <dimen name="upper_activity_content_container_margin_top_bottom">10dp</dimen>
+    <dimen name="upper_activity_content_container_margin_left_right">5dp</dimen>
+    
+    <dimen name="lower_activity_content_container_margin_top_bottom">10dp</dimen>
+    <dimen name="lower_activity_content_container_margin_left_right">5dp</dimen>
+    
+    <dimen name="left_activity_content_container_margin_top_bottom">5dp</dimen>
+    <dimen name="left_activity_content_container_margin_left_right">10dp</dimen>
+    
+    <dimen name="right_activity_content_container_margin_top_bottom">5dp</dimen>
+    <dimen name="right_activity_content_container_margin_left_right">10dp</dimen>
+    
+</resources>

@@ -1,0 +1,236 @@
+# Standardní prefixy
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix interval: <http://reference.data.gov.uk/def/intervals/> .
+@prefix sdmx:    <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+# Vlastní prefixy
+@prefix crimestatistics-code-slash: <http://linked.opendata.cz/ontology/crimestatistics/code/> .
+@prefix crimestatistics-code-codelist-slash: <http://linked.opendata.cz/ontology/crimestatistics/code/taktickaKlasifikaceObjektuNapadenehoObecnouKriminalitou/> .
+@prefix crimestatistics-code-codelist-class: <http://linked.opendata.cz/ontology/crimestatistics/code/taktickaKlasifikaceObjektuNapadenehoObecnouKriminalitou/class#> .
+@prefix crimestatistics-code-codelist-property: <http://linked.opendata.cz/ontology/crimestatistics/code/taktickaKlasifikaceObjektuNapadenehoObecnouKriminalitou/property#> .
+
+@prefix crimestatistics-code-codelist-hash: <http://linked.opendata.cz/ontology/crimestatistics/code/taktickaKlasifikaceObjektuNapadenehoObecnouKriminalitou#> .
+
+# Definice schematu konceptů
+<http://linked.opendata.cz/ontology/crimestatistics/code/taktickaKlasifikaceObjektuNapadenehoObecnouKriminalitou> a skos:ConceptScheme ;
+	skos:prefLabel
+		"Taktická klasifikace objektu napadeného obecnou kriminalitou. - schéma"@cs,
+		"Tactical classification of objects that have been the target of general crime. - schema"@en ;
+	skos:note
+		"Definuje taktickou klasifikaci objektů napadených obecnou kriminalitou. Tato klasifikace se nepoužívá pro případy napadení kriminalitou hospodářskou. Jedná se o případy napadení majetku právnických osob zvenčí, jinou osobou než zaměstnancem nebo jemu na roveň postavenou osobou a o případy, kdy v objektu dojde k poškození nebo odcizení věci ke škodě majetku v osobním vlastnictví."@cs,
+		"Defines the tactical classification of objects that have been the target of general crime. This classification is not used with the objects that have been the target of economic crime."@en ;
+	
+	rdfs:label
+		"Taktická klasifikace objektu napadeného obecnou kriminalitou. - schéma"@cs,
+		"Tactical classification of objects that have been the target of general crime. - schema"@en ;
+	rdfs:comment
+		"Definuje taktickou klasifikaci objektů napadených obecnou kriminalitou. Tato klasifikace se nepoužívá pro případy napadení kriminalitou hospodářskou. Jedná se o případy napadení majetku právnických osob zvenčí, jinou osobou než zaměstnancem nebo jemu na roveň postavenou osobou a o případy, kdy v objektu dojde k poškození nebo odcizení věci ke škodě majetku v osobním vlastnictví."@cs,
+		"Defines the tactical classification of objects that have been the target of general crime. This classification is not used with the objects that have been the target of economic crime."@en ;
+	rdfs:seeAlso <http://linked.opendata.cz/ontology/crimestatistics/code/taktickaKlasifikaceObjektuNapadenehoObecnouKriminalitou/conceptClass> ;
+	.
+
+# Definice zapouzdřující třídy
+<http://linked.opendata.cz/ontology/crimestatistics/code/taktickaKlasifikaceObjektuNapadenehoObecnouKriminalitou/conceptClass> a rdf:Class ;
+	rdfs:label
+		"Taktická klasifikace objektu napadeného obecnou kriminalitou. - zapouzdřující třída"@cs,
+		"Tactical classification of objects that have been the target of general crime. - encapsulating class"@en ;
+	rdfs:comment
+		"Definuje taktickou klasifikaci objektů napadených obecnou kriminalitou. Tato klasifikace se nepoužívá pro případy napadení kriminalitou hospodářskou. Jedná se o případy napadení majetku právnických osob zvenčí, jinou osobou než zaměstnancem nebo jemu na roveň postavenou osobou a o případy, kdy v objektu dojde k poškození nebo odcizení věci ke škodě majetku v osobním vlastnictví."@cs,
+		"Defines the tactical classification of objects that have been the target of general crime. This classification is not used with the objects that have been the target of economic crime."@en ;
+	rdfs:subClassOf skos:Concept ;
+	rdfs:seeAlso <http://linked.opendata.cz/ontology/crimestatistics/code/taktickaKlasifikaceObjektuNapadenehoObecnouKriminalitou> ;
+	.
+
+####################################
+crimestatistics-code-codelist-hash:pokladny crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:taktickaKlasifikaceObjektuNapadenehoObecnouKriminalitou ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+crimestatistics-code-codelist-hash:mistaVymenyPenez crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:taktickaKlasifikaceObjektuNapadenehoObecnouKriminalitou ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+crimestatistics-code-codelist-hash:mistaUschovavajiciPenizeNeboCennosti crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:taktickaKlasifikaceObjektuNapadenehoObecnouKriminalitou ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+crimestatistics-code-codelist-hash:stravovaciZarizeni crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:taktickaKlasifikaceObjektuNapadenehoObecnouKriminalitou ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+crimestatistics-code-codelist-hash:prostredkyHromadneDopravy crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:taktickaKlasifikaceObjektuNapadenehoObecnouKriminalitou ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+crimestatistics-code-codelist-hash:vagony crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:taktickaKlasifikaceObjektuNapadenehoObecnouKriminalitou ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+crimestatistics-code-codelist-hash:vagonyZeleznicni crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:taktickaKlasifikaceObjektuNapadenehoObecnouKriminalitou ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+crimestatistics-code-codelist-hash:dopravniProstredky crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:taktickaKlasifikaceObjektuNapadenehoObecnouKriminalitou ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+crimestatistics-code-codelist-hash:ubytovaciZarizeni crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:taktickaKlasifikaceObjektuNapadenehoObecnouKriminalitou ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+crimestatistics-code-codelist-hash:motorovaVozidla crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:taktickaKlasifikaceObjektuNapadenehoObecnouKriminalitou ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+crimestatistics-code-codelist-hash:prostoryProChovZviratAZivocichu crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:taktickaKlasifikaceObjektuNapadenehoObecnouKriminalitou ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+
+crimestatistics-code-codelist-hash:prostoryProVykonPrace crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel
+		""@cs,
+		""@en ;
+	skos:inScheme crimestatistics-code-slash:taktickaKlasifikaceObjektuNapadenehoObecnouKriminalitou ;
+	skos:notation "" ;
+	skos:scopeNote
+		""@cs,
+		""@en ;
+	.
+	
+crimestatistics-code-codelist-hash: skos:narrower
+	crimestatistics-code-codelist-hash:
+	.
+

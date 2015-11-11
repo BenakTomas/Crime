@@ -1,0 +1,5 @@
+?utvar crime:validFrom ?validFrom_utvar .
+?utvar crime:validTo ?validTo_utvar .
+?utvar crime:pocetObyvatel ?pocetObyvatel .
+?utvar crime:id ?crimeId .
+FILTER ( ?pocetObyvatel > 0 )

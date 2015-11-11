@@ -1,0 +1,206 @@
+# Standardní prefixy
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix interval: <http://reference.data.gov.uk/def/intervals/> .
+@prefix sdmx:    <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+# Vlastní prefixy
+@prefix crimestatistics-code-slash: <http://linked.opendata.cz/ontology/crimestatistics/code/> .
+@prefix crimestatistics-code-codelist-slash: <http://linked.opendata.cz/ontology/crimestatistics/code/druhPouziteZbrane/> .
+@prefix crimestatistics-code-codelist-hash: <http://linked.opendata.cz/ontology/crimestatistics/code/druhPouziteZbrane#> .
+@prefix crimestatistics-code-codelist-class: <http://linked.opendata.cz/ontology/crimestatistics/code/druhPouziteZbrane/class#> .
+@prefix crimestatistics-code-codelist-property: <http://linked.opendata.cz/ontology/crimestatistics/code/druhPouziteZbrane/property#> .
+@prefix crimestatistics-code-codelist-collection: <http://linked.opendata.cz/ontology/crimestatistics/code/druhPouziteZbrane/collection#> .
+
+# top-level koncepty
+crimestatistics-code-slash:druhPouziteZbrane
+	skos:hasTopConcept
+		crimestatistics-code-codelist-hash:strelnaZbran,
+		crimestatistics-code-codelist-hash:vybusnina,
+		crimestatistics-code-codelist-hash:5,
+		crimestatistics-code-codelist-hash:6,
+		crimestatistics-code-codelist-hash:7,
+		crimestatistics-code-codelist-hash:8 ;
+	.
+
+# kolekce konceptu
+crimestatistics-code-codelist-collection:zbranUNeobjasneneTrestneCinnosti a skos:Collection ;
+	skos:prefLabel "použitá zbraň - neobjasněná trestná činnost"@cs ;
+	skos:member
+		crimestatistics-code-codelist-collection:strelnaZbranUNeobjasneneTC,
+		crimestatistics-code-codelist-hash:4,
+		crimestatistics-code-codelist-hash:5,
+		crimestatistics-code-codelist-hash:6,
+		crimestatistics-code-codelist-hash:7,
+		crimestatistics-code-codelist-hash:8 ;
+	.
+
+crimestatistics-code-codelist-collection:strelnaZbranUNeobjasneneTC a skos:Collection ;
+	skos:prefLabel "střelná zbraň - neobjasněná trestná činnost"@cs ;
+	skos:member
+		crimestatistics-code-codelist-hash:1,
+		crimestatistics-code-codelist-hash:2,
+		crimestatistics-code-codelist-hash:3,
+		crimestatistics-code-codelist-hash:X ;
+	.
+
+crimestatistics-code-codelist-collection:zbranUObjasneneTrestneCinnosti a skos:Collection ;
+	skos:prefLabel "použitá zbraň - objasněná trestná činnost"@cs ;
+	skos:member
+		crimestatistics-code-codelist-collection:strelnaZbranUObjasneneTC,
+		crimestatistics-code-codelist-collection:vybusninaUObjasneneTC,
+		crimestatistics-code-codelist-hash:5,
+		crimestatistics-code-codelist-hash:6,
+		crimestatistics-code-codelist-hash:7,
+		crimestatistics-code-codelist-hash:8 ;
+	.
+
+crimestatistics-code-codelist-collection:strelnaZbranUObjasneneTC a skos:Collection ;
+	skos:prefLabel "střelná zbraň - objasněná trestná činnost"@cs ;
+	skos:member
+		crimestatistics-code-codelist-collection:strelnaZbranUObjasneneTC_DleKategorie,
+		crimestatistics-code-codelist-collection:strelnaZbranUObjasneneTC_LegalnostDrzeni,
+		crimestatistics-code-codelist-hash:X ;
+	.
+
+crimestatistics-code-codelist-collection:strelnaZbranUObjasneneTC_DleKategorie a skos:Collection ;
+	skos:prefLabel "střelná zbraň - kategorie"@cs ;
+	skos:member
+		crimestatistics-code-codelist-hash:strelnaZbranKategorieA,
+		crimestatistics-code-codelist-hash:strelnaZbranKategorieB,
+		crimestatistics-code-codelist-hash:strelnaZbranKategorieC,
+		crimestatistics-code-codelist-hash:strelnaZbranKategorieD ;
+	.
+
+crimestatistics-code-codelist-collection:strelnaZbranUObjasneneTC_LegalnostDrzeni a skos:Collection ;
+	skos:prefLabel "střelná zbraň - legálnost držení"@cs ;
+	skos:member
+		crimestatistics-code-codelist-hash:strelnaZbranNelegalneDrzena,
+		crimestatistics-code-codelist-hash:strelnaZbranLegalneDrzena ;
+	.
+
+crimestatistics-code-codelist-collection:vybusninaUObjasneneTC a skos:Collection ;
+	skos:prefLabel "výbušnina - objasněná trestná činnost"@cs ;
+	skos:member
+		crimestatistics-code-codelist-hash:D,
+		crimestatistics-code-codelist-hash:M,
+		crimestatistics-code-codelist-hash:W  ;
+	.
+
+# definice hierarchie
+crimestatistics-code-codelist-hash:strelnaZbran a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel "střelná zbraň - objasněná trestná činnost"@cs ;
+	skos:notation "crimestatistics.codelist.druhPouziteZbrane.strelnaZbran" ;
+	skos:inScheme crimestatistics-code-slash:druhPouziteZbrane ;
+	skos:narrower
+		crimestatistics-code-codelist-hash:1,
+		crimestatistics-code-codelist-hash:2,
+		crimestatistics-code-codelist-hash:3,
+		crimestatistics-code-codelist-hash:X,
+		
+		crimestatistics-code-codelist-hash:strelnaZbranNelegalneDrzena,
+		crimestatistics-code-codelist-hash:strelnaZbranLegalneDrzena,
+		
+		crimestatistics-code-codelist-hash:strelnaZbranKategorieA,
+		crimestatistics-code-codelist-hash:strelnaZbranKategorieB,
+		crimestatistics-code-codelist-hash:strelnaZbranKategorieC,
+		crimestatistics-code-codelist-hash:strelnaZbranKategorieD ;
+	.
+
+crimestatistics-code-codelist-hash:vybusnina a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel "výbušnina - objasněná trestná činnost"@cs ;
+	skos:notation "crimestatistics.codelist.druhPouziteZbrane.vybusnina" ;
+	skos:inScheme crimestatistics-code-slash:druhPouziteZbrane ;
+	skos:narrower
+		crimestatistics-code-codelist-hash:4,
+		crimestatistics-code-codelist-hash:D,
+		crimestatistics-code-codelist-hash:M,
+		crimestatistics-code-codelist-hash:W ;
+	.
+
+crimestatistics-code-codelist-hash:zbranNelegalneDrzena a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel "nelegálně držená zbraň"@cs ;
+	skos:notation "crimestatistics.codelist.druhPouziteZbrane.zbranNelegalneDrzena" ;
+	skos:inScheme crimestatistics-code-slash:druhPouziteZbrane ;
+	skos:narrower
+		crimestatistics-code-codelist-hash:strelnaZbranNelegalneDrzena,
+		crimestatistics-code-codelist-hash:D ;
+	.
+
+crimestatistics-code-codelist-hash:zbranLegalneDrzena a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel "legálně držená zbraň"@cs ;
+	skos:notation "crimestatistics.codelist.druhPouziteZbrane.zbranLegalneDrzena" ;
+	skos:inScheme crimestatistics-code-slash:druhPouziteZbrane ;
+	skos:narrower
+		crimestatistics-code-codelist-hash:strelnaZbranLegalneDrzena,
+		crimestatistics-code-codelist-hash:M ;
+	.
+
+crimestatistics-code-codelist-hash:strelnaZbranNelegalneDrzena a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel "nelegálně držená střelná zbraň"@cs ;
+	skos:notation "crimestatistics.codelist.druhPouziteZbrane.strelnaZbranNelegalneDrzena" ;
+	skos:inScheme crimestatistics-code-slash:druhPouziteZbrane ;
+	skos:narrower
+		crimestatistics-code-codelist-hash:A,
+		crimestatistics-code-codelist-hash:B,
+		crimestatistics-code-codelist-hash:C,
+		crimestatistics-code-codelist-hash:H ;
+	.
+
+crimestatistics-code-codelist-hash:strelnaZbranLegalneDrzena a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel "legálně držená střelná zbraň"@cs ;
+	skos:notation "crimestatistics.codelist.druhPouziteZbrane.strelnaZbranLegalneDrzena" ;
+	skos:inScheme crimestatistics-code-slash:druhPouziteZbrane ;
+	skos:narrower
+		crimestatistics-code-codelist-hash:J,
+		crimestatistics-code-codelist-hash:K,
+		crimestatistics-code-codelist-hash:L,
+		crimestatistics-code-codelist-hash:S ;
+	.
+
+crimestatistics-code-codelist-hash:strelnaZbranKategorieA a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel "střelná zbraň kategorie A"@cs ;
+	skos:notation "crimestatistics.codelist.druhPouziteZbrane.strelnaZbranKategorieA" ;
+	skos:inScheme crimestatistics-code-slash:druhPouziteZbrane ;
+	skos:narrower
+		crimestatistics-code-codelist-hash:A,
+		crimestatistics-code-codelist-hash:J ;
+	.
+
+crimestatistics-code-codelist-hash:strelnaZbranKategorieB a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel "střelná zbraň kategorie B"@cs ;
+	skos:notation "crimestatistics.codelist.druhPouziteZbrane.strelnaZbranKategorieB" ;
+	skos:inScheme crimestatistics-code-slash:druhPouziteZbrane ;
+	skos:narrower
+		crimestatistics-code-codelist-hash:B,
+		crimestatistics-code-codelist-hash:K ;
+	.
+
+crimestatistics-code-codelist-hash:strelnaZbranKategorieC a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel "střelná zbraň kategorie C"@cs ;
+	skos:notation "crimestatistics.codelist.druhPouziteZbrane.strelnaZbranKategorieC" ;
+	skos:inScheme crimestatistics-code-slash:druhPouziteZbrane ;
+	skos:narrower
+		crimestatistics-code-codelist-hash:C,
+		crimestatistics-code-codelist-hash:L ;
+	.
+
+crimestatistics-code-codelist-hash:strelnaZbranKategorieD a crimestatistics-code-codelist-slash:conceptClass, skos:Concept ;
+	skos:prefLabel "střelná zbraň kategorie D"@cs ;
+	skos:notation "crimestatistics.codelist.druhPouziteZbrane.strelnaZbranKategorieD" ;
+	skos:inScheme crimestatistics-code-slash:druhPouziteZbrane ;
+	skos:narrower
+		crimestatistics-code-codelist-hash:H,
+		crimestatistics-code-codelist-hash:S ;
+	.

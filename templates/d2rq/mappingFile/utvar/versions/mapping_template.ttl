@@ -1,0 +1,133 @@
+# Namespace of the mapping file
+@prefix map: <file:///C:/d2r/d2rq-0.8.1/mapping.ttl#> .
+                                                                              
+# Other namespaces
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix ruian: <http://ruian.linked.opendata.cz/ontology/> .
+
+# D2RQ namespace - mapping RDB to RDF
+@prefix d2rq: <http://www.wiwiss.fu-berlin.de/suhl/bizer/D2RQ/0.1#> .
+# JDBC namespace - specify JDBC connection properties for driver used to connect to a database
+@prefix jdbc: <http://d2rq.org/terms/jdbc/> .
+
+# D2R namespace - server configuration
+@prefix d2r: <http://sites.wiwiss.fu-berlin.de/suhl/bizer/d2r-server/config.rdf#> .
+@prefix meta: <http://www4.wiwiss.fu-berlin.de/bizer/d2r-server/metadata#> .
+
+# Preferovany prefix ontologie pro popis zakonu
+@prefix lex: <http://purl.org/lex#> .
+@prefix lexcz: <http://purl.org/lex/cz#> .
+
+# Vlastní prefix
+@prefix crime: <http://linked.opendata.cz/ontology/crime#> .
+
+# Popis databaze: ona samotna je v namespace tohoto mapping file
+map:gisdb a d2rq:Database;
+	d2rq:jdbcDriver "org.postgresql.Driver";
+	d2rq:jdbcDSN "jdbc:postgresql://localhost:5432/gisdb";
+	d2rq:username "postgres" ;
+	d2rq:password "Benak.Tomas.Postgres" ;
+	.
+
+# Konfigurace D2RQ
+map:configuration a d2rq:Configuration ;
+	# Použít automaticky odvozené a uživatelem poskytnuté RDFS nebo OWL schéma?
+	d2rq:serveVocabulary "false"^^xsd:boolean ;
+	d2rq:useAllOptimizations "false"^^xsd:boolean ;
+	.
+
+map:Utvar a d2rq:ClassMap;
+  d2rq:dataStorage map:gisdb ;
+  d2rq:class crime:Utvar ;
+  d2rq:uriSqlExpression """
+    'http://linked.opendata.cz/resource/domain/crime/dataset/utvar/' ||
+    utvar_geom.ut ||
+    '/version/' ||
+    to_char(utvar_geom.valid_from, 'YYYYMMDD"T"HH24MISS')""";
+  .
+
+map:Utvar-id a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:Utvar ;
+	d2rq:property crime:id ;
+	d2rq:column "utvar_geom.ut" ;
+  d2rq:datatype xsd:string ;
+	.
+
+map:Utvar-label a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:Utvar ;
+	d2rq:property rdfs:label ;
+  d2rq:lang "cs" ;
+	d2rq:column "utvar_geom.nazev_utvaru" ;
+	.
+
+map:Utvar-versionOf a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:Utvar ;
+  d2rq:property dct:isVersionOf ;
+  d2rq:uriPattern "http://linked.opendata.cz/resource/domain/crime/dataset/utvar/@@utvar_geom.ut@@" ;
+  .
+   
+map:Utvar-validFrom a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:Utvar ;
+	d2rq:property crime:validFrom ;
+	d2rq:sqlExpression """to_char(utvar_geom.valid_from, 'YYYY-MM-DD"T"HH24:MI:SS')""" ;
+  d2rq:datatype xsd:dateTime ;
+	.
+
+map:Utvar-validTo a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:Utvar ;
+	d2rq:property crime:validTo ;
+	d2rq:sqlExpression """to_char(utvar_geom.valid_to, 'YYYY-MM-DD"T"HH24:MI:SS')""" ;
+  d2rq:datatype xsd:dateTime ;
+	.
+
+# TSK - pro trestní zákon 1961/140
+map:Utvar-pocetObyvatel a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:Utvar ;
+	d2rq:property crime:pocetObyvatel ;
+	d2rq:column "utvar_geom.pocet_obyvatel" ;
+  d2rq:datatype xsd:nonNegativeInteger ;
+	.
+
+map:Utvar-pocetObyvatel_trvalyPobyt a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:Utvar ;
+	d2rq:property crime:pocetObyvatelSTrvalymPobytem ;
+	d2rq:column "utvar_geom.pocet_obyvatel_trvaly_pobyt" ;
+  d2rq:datatype xsd:nonNegativeInteger ;
+	.
+
+map:Utvar-rozloha a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:Utvar ;
+	d2rq:property crime:rozloha ;
+	d2rq:column "utvar_geom.rozloha" ;
+  d2rq:datatype xsd:double ;
+	.
+
+map:Utvar-obec a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:Utvar ;
+  d2rq:property crime:pokrytaObec ;
+  d2rq:uriPattern "http://ruian.linked.opendata.cz/resource/obce/@@obec_ruian.kod@@" ;
+  d2rq:condition "false" ;
+  d2rq:condition "utvar_geom.valid_from < obec_ruian.valid_to and obec_ruian.valid_from < utvar_geom.valid_to and ST_Intersects(utvar_geom.hranice, obec_ruian.hranice_linear)" ;
+  .
+
+map:Utvar-previousVersion a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:Utvar ;
+  d2rq:property crime:previousVersion ;
+  d2rq:refersToClassMap map:Utvar ;
+  d2rq:join "utvar_geom.previous_version => u_prev.id";
+  d2rq:alias "utvar_geom AS u_prev";
+  d2rq:condition "utvar_geom.previous_version is not null" ;
+  .
+
+map:Utvar-nextVersion a d2rq:PropertyBridge ;
+	d2rq:belongsToClassMap map:Utvar ;
+  d2rq:property crime:nextVersion ;
+  d2rq:refersToClassMap map:Utvar ;
+  d2rq:join "utvar_geom.next_version => u_next.id";
+  d2rq:alias "utvar_geom AS u_next";
+  d2rq:condition "utvar_geom.next_version is not null" ;
+  .

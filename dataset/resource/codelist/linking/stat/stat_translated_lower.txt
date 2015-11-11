@@ -1,0 +1,234 @@
+601#afghanistan
+501#Åland 
+110#albania
+641#algeria
+503#united states virgin 
+504#andorra
+505#angola
+506#anguilla
+507#antarctica
+508#antigua barbuda
+801#argentina
+190#armenia
+509#aruba
+471#australia
+191#azerbaijan
+510#bahamas
+511#bahrain
+512#bangladesh
+513#barbados
+411#belgium
+514#belize
+192#belarus
+515#benin
+516#bermuda
+517#bhutan
+802#bolivia
+311#bosnia herzegovina
+518#botswana
+519#bouvet 
+803#brazil
+522#british virgin 
+523#brunei
+120#bulgaria
+524#burkina faso
+643#burundi
+526#cook 
+644#chad
+312#montenegro
+010#czech 
+320#china
+412#denmark
+528#dominica
+805#dominican 
+529#djibouti
+673#egypt
+806#ecuador
+530#eritrea
+193#estonia
+646#ethiopia
+533#faroe 
+534#falkland malvinas
+535#fiji
+604#philippines
+413#finland
+539#french polynesia
+414#france
+647#gabon
+648#gambia
+649#ghana
+841#gibraltar
+541#grenada
+542#greenland
+543#guadeloupe
+544#guam
+807#guatemala
+545#guernsey
+546#guinea bissau
+651#guinea republic
+808#haiti
+548#heard mcdonald 
+809#honduras
+549#hong kong
+811#chile
+313#croatia
+605#india
+606#indonesia
+607#iraq
+608#iran
+416#ireland
+417#iceland
+418#italy
+609#israel
+812#jamaica
+441#japan
+611#yemen
+551#jersey
+451#south africa 
+614#jordan
+310#yugoslavia
+553#cayman 
+615#cambodia
+653#cameroon
+461#canada
+554#cape verde
+555#qatar
+195#kazakhstan
+654#kenya
+556#kiribati
+557#cocos 
+813#colombia
+558#comoros 
+330#north korea
+612#south korea
+846#kosovo
+814#costa rica
+350#cuba
+616#kuwait
+617#cyprus
+196#kyrgyzstan
+618#laos
+560#lesotho
+619#lebanon 
+657#liberia
+658#libya
+561#liechtenstein
+197#lithuania
+198#latvia
+419#luxembourg
+562#macau
+661#madagascar
+130#hungary
+314#macedonia
+621#malaysia
+659#malawi
+622#maldives
+563#mali
+663#morocco
+564#marshall 
+565#martinique
+566#mauritius
+664#mauritania
+567#mayotte
+815#mexico
+570#micronesia
+199#moldova
+571#monaco
+180#mongolia
+572#montserrat
+573#mozambique
+574#burma
+575#namibia
+576#nauru
+420#germany
+577#nepal
+666#nigeria
+665#niger
+816#nicaragua
+579#niue
+580#netherlands antilles
+422#netherlands republic
+581#norfolk
+423#norway
+582#new caledonia
+472#new zealand
+583#oman
+847#isle man
+624#pakistan
+586#palau
+587#palestine
+817#panama
+589#papua new guinea
+818#paraguay
+819#peru
+590#pitcairn
+667#ivory coast
+150#poland
+591#puerto rico
+424#portugal 
+425#austria
+592#reunion
+593#equatorial guinea
+160#romania
+101#russia
+669#rwanda
+426#greece
+595#saint pierre miguelon
+821#el salvador
+597#san marino
+625#saudi arabia
+671#senegal
+598#northern mariana 
+599#seychelles
+672#sierra leone
+626#singapore
+050#slovakia 
+315#slovenia
+674#somalia 
+701#united arab emirates
+462#united states
+316#serbia
+603#sri lanka
+675#central african 
+676#sudan
+705#suriname
+707#svalbard
+708#saint helena
+709#saint lucia
+710#saint kitts nevis
+711#vatican
+712#são tomé príncipe
+706#saint vincent grenadines
+713#swaziland
+627#syria
+714#solomon 
+427#spain
+428#sweden
+429#switzerland
+102#tajikistan
+677#tanzania
+628#thailand
+715#taiwan
+678#togo
+717#tokelau
+718#tonga
+822#trinidad tobago
+679#tunisia
+629#turkey
+103#turkmenistan
+719#turks caicos
+720#tuvalu
+681#uganda
+104#ukraine
+823#uruguay
+105#uzbekistan
+721#christmas 
+722#vanuatu
+431#united kingdom
+824#venezuela
+340#vietnam
+723#east timor
+725#wallis futuna
+682#zambia
+727#western sahara
+729#zimbabwe

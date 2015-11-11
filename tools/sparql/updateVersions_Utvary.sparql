@@ -1,0 +1,12 @@
+SPARQL
+
+prefix crime: <http://linked.opendata.cz/ontology/crime#>
+prefix dct: <http://purl.org/dc/terms/>
+
+WITH <http://linked.opendata.cz/resource/domain/crimestatistics/dataset>
+INSERT { ?utvar_orig a <http://linked.opendata.cz/ontology/crime#Utvar> . ?utvar_orig dct:hasVersion ?utvar . }
+where
+{
+    ?utvar a <http://linked.opendata.cz/ontology/crime#Utvar> ;
+        dct:isVersionOf ?utvar_orig .
+};

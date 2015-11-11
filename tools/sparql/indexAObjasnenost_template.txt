@@ -1,0 +1,65 @@
+PREFIX  rdfs:   <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  crime:  <http://linked.opendata.cz/ontology/crime#>
+PREFIX  dct:    <http://purl.org/dc/terms/>
+PREFIX  xsd:    <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos:   <http://www.w3.org/2004/02/skos/core#>
+
+SELECT  (( ?hustotaCinu / ?maxHustotaCinu ) AS ?index) ?objasnenost
+WHERE
+  {
+    {
+      SELECT  (SUM(( xsd:float(?utvarIntervalRatio) * ( xsd:float(?pocetTrestnychCinu) / xsd:float(?pocetObyvatel) ) )) AS ?hustotaCinu) (( xsd:float(SUM(?pocetObjasnenychTrestnychCinu)) / xsd:float(SUM(?pocetTrestnychCinu)) ) AS ?objasnenost)
+      WHERE
+        {
+          {
+            SELECT  ?utvar (COUNT(DISTINCT ?trestnyCin) AS ?pocetTrestnychCinu) (SUM(if(( bound(?objasneno) && ( ?objasneno = 1 ) ), 1, 0)) AS ?pocetObjasnenychTrestnychCinu)
+            WHERE
+              {
+                {
+                  $validCrimes_Clause
+                }
+                
+                $utvarFilter_Clause
+                  
+                $tskFilter_Clause
+                
+                OPTIONAL
+                  { ?trestnyCin crime:objasneno ?objasneno}
+              }
+            GROUP BY ?utvar
+          }
+          {
+            $utvarIntervalForIndex_Clause
+          }
+          $utvarIntervalRatio_Clause
+        }
+      GROUP BY ?crimeId
+    }
+    { SELECT  (MAX(?sum) AS ?maxHustotaCinu)
+      WHERE
+        { SELECT  (SUM(( xsd:float(?utvarIntervalRatio) * ( xsd:float(?pocetTrestnychCinu) / xsd:float(?pocetObyvatel) ) )) AS ?sum)
+          WHERE
+            {
+              { SELECT  ?utvar (COUNT(DISTINCT ?trestnyCin) AS ?pocetTrestnychCinu)
+                WHERE
+                  {
+                    {
+                      {
+                        $validCrimes_Clause
+                      }
+                      
+                      $tskFilter_Clause
+                    }
+                    ?trestnyCin crime:utvarSpachaniNeboZjisteni ?utvar
+                  }
+                GROUP BY ?utvar
+              }
+              {
+                $utvarIntervalForIndex_Clause
+              }
+              $utvarIntervalRatio_Clause
+            }
+          GROUP BY ?crimeId
+        }
+    }
+  }

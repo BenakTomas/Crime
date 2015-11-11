@@ -1,0 +1,460 @@
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#101> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/219> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#102> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/219> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#103> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/219> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#104> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/219> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#105> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/220> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#106> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/219> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#111> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/227> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#112> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/228> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#121> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/212> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#122> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/216> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#131> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/234> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#132> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/234> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#141> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/153>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/154/1>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/155>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/156/1>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/156/2> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#142> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/153>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/154/1>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/155>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/156/1>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/156/2> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#143> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/153>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/154/1>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/155>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/156/1>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/156/2> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#151> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/221>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/222> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#161> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/225> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#171> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/196> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#172> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/234a> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#173> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/197a> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#181> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/235> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#182> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/231>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/232> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#183> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/238> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#184> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/249a> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#185> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/215> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#186> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/215a> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#187> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/236> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#188> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/237> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#189> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/238a> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#190> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/230>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/233> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#201> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/241> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#211> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/242/2>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/243> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#212> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/242> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#213> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/242/2>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/243> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#214> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/242/1>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/242/3>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/242/4> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#231> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/202> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#241> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/205> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#251> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/226> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#252> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/221>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/222> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#253> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/223>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/224> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#271> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/204> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#280> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/245> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#281> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/232a> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#290> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/205a>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/205b>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/210> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#311> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/247> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#312> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/247> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#321> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/247> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#322> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/247> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#323> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/247> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#324> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/247> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#331> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/247> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#332> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/247> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#341> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/247> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#350> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/247> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#351> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/247> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#371> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/238>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/247> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#372> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/238>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/247> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#373> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/238>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/247> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#390> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/238>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/247> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#411> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/247> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#412> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/247> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#413> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/247> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#421> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/247> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#431> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/247>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/249> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#432> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/247>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/249> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#433> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/247> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#434> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/247> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#435> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/247>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/249> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#441> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/247> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#451> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/247> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#461> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/247> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#462> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/247> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#471> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/247> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#480> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/247> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#490> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/247> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#511> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/250> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#521> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/248> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#530> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/249> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#588> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/254> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#589> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/257> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#611> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/202>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/202a> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#612> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/202> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#613> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/257b> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#630> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/218a> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#631> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/217>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/217a>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/217b> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#632> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/218> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#633> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/216a> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#634> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/171a>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/171b>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/171c>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/171d> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#635> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/187> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#636> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/188a> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#637> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/158> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#639> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/178> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#640> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/159> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#641> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/187a> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#642> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/188> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#651> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/179>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/180>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/257> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#652> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/179>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/180>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/257> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#662> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/185> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#663> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/171>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/171e> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#664> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/251>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/252> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#721> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/166> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#730> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/179>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/180d>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/201>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/201a>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/257> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#731> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/180>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/180d>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/184>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/201>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/201a>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/223>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/224> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#732> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/180>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/184>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/201>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/201a>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/223>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/224> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#733> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/180>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/184>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/201>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/201a>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/223>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/224> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#741> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/180>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/184>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/201>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/201a>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/223>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/224> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#742> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/180>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/180d>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/184>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/201>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/201a>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/223>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/224> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#750> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/223>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/224>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/201>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/201a> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#751> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/223>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/224>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/201>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/201a> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#762> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/256> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#763> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/256a> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#771> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/201>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/201a> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#772> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/213> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#781> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/180a> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#782> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/180b> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#783> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/180c> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#784> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/203> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#785> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/199> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#786> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/163a/1>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/163b>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/163c> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#787> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/198> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#788> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/198a> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#789> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/260>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/261>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/261a> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#790> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/154/2>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/164>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/165>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/167>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/168>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/169a>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/169b>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/172>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/174>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/175>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/175a>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/175b>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/177>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/179>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/180>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/180d>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/181>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/182>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/183>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/184>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/185a>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/189>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/190>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/200>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/206>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/207>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/208>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/209b>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/239/1>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/240/1>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/253>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/255>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/255a>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/259>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/259a>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/262>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/263>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/264>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/265> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#801> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/149> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#803> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/118> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#806> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/121> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#807> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/124> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#808> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/125> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#809> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/127> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#810> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/126> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#811> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/255>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/255a> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#812> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/247> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#813> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/249> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#814> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/257> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#815> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/250> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#816> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/140> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#817> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/145>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/145a> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#819> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/148> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#820> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/158> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#821> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/160> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#822> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/256> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#823> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/176> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#824> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/176a> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#825> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/193>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/194> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#826> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/129>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/129a> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#827> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/249> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#828> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/239/2>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/240/2> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#829> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/248> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#830> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/250> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#831> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/128a>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/128b>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/128c> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#832> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/124a>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/124b>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/124c> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#833> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/128> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#834> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/118a> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#835> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/148a> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#836> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/178> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#837> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/141>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/142>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/144> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#838> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/249b> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#839> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/124d>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/124e>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/124f> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#840> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/247>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/248>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/250> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#841> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/247>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/248>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/250> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#842> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/247>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/248>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/250> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#843> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/247>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/248>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/250> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#844> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/247>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/248>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/250> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#845> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/159> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#846> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/161> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#847> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/162> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#848> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/256a> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#849> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/256b> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#850> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/181a>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/181c>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/181e>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/181f>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/181h> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#851> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/181b>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/181c>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/181e>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/181g>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/181h> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#852> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/256c> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#855> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/186> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#860> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/251>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/252> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#861> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/150> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#862> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/151> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#863> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/152> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#864> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/252a> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#865> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/257a> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#866> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/250c> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#870> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/180>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/181b>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/184>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/201>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/201a> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#871> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/179>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/181a>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/182>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/201>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/201a>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/257> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#880> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/250a> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#881> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/250b> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#885> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/148b> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#886> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> <http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/147> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#890> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/146>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/171>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/171e>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/178a>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/191>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/192>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/194a>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/209>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/253>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/258> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#901> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/266>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/267>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/268>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/269>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/270>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/271>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/272>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/273>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/274>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/275>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/276>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/277>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/278>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/279>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/280>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/281>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/282>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/283>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/284>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/285>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/286>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/287>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/288>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/289>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/290>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/291>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/292>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/293>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/294>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/295> .
+<http://linked.opendata.cz/ontology/crimestatistics/code/tsk/1961/140#902> <http://linked.opendata.cz/ontology/crimestatistics/property/pravniKvalifikaceTsk> 
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/91>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/92>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/93>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/95>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/96>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/97>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/105>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/106>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/107>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/113>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/114>,
+<http://linked.opendata.cz/resource/legislation/cz/act/1961/140/section/115> .

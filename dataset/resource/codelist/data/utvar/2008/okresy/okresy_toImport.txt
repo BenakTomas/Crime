@@ -1,0 +1,93 @@
+01#01#Benešov
+01#02#Beroun
+06#01#Blansko
+06#02#Brno-město
+06#03#Brno-venkov
+07#01#Bruntál
+06#04#Břeclav
+04#01#Česká Lípa
+02#01#České Budějovice
+02#02#Český Krumlov
+04#02#Děčín
+03#01#Domažlice
+07#02#Frýdek-Místek
+05#01#Havlíčkův Brod
+06#06#Hodonín
+05#02#Hradec Králové
+03#02#Cheb
+04#03#Chomutov
+05#03#Chrudim
+04#04#Jablonec nad Nisou
+07#11#Jeseník
+05#04#Jičín
+06#07#Jihlava
+02#03#Jindřichův Hradec
+03#03#Karlovy Vary
+07#03#Karviná
+01#03#Kladno
+03#04#Klatovy
+01#04#Kolín
+06#08#Kroměříž
+01#05#Kutná Hora
+04#05#Liberec
+04#06#Litoměřice
+04#07#Louny
+01#06#Mělník
+01#07#Mladá Boleslav
+04#08#Most
+05#05#Náchod
+07#04#Nový Jičín
+01#08#Nymburk
+07#05#Olomouc
+07#06#Opava
+07#07#Ostrava
+05#06#Pardubice
+02#04#Pelhřimov
+02#05#Písek
+03#05#Plzeň-město
+03#06#Plzeň-jih
+03#07#Plzeň-sever
+01#09#Praha-východ
+01#10#Praha-západ
+00#01#Hlavní město Praha
+00#10#Hlavní město Praha
+00#02#Hlavní město Praha
+00#03#Hlavní město Praha
+00#04#Hlavní město Praha
+00#05#Hlavní město Praha
+00#06#Hlavní město Praha
+00#07#Hlavní město Praha
+00#08#Hlavní město Praha
+00#09#Hlavní město Praha
+00#11#Hlavní město Praha
+00#12#Hlavní město Praha
+00#13#Hlavní město Praha
+00#14#Hlavní město Praha
+02#06#Prachatice
+07#12#Prostějov
+07#08#Přerov
+01#11#Příbram
+01#12#Rakovník
+03#08#Rokycany
+05#07#Rychnov nad Kněžnou
+05#08#Semily
+03#09#Sokolov
+02#07#Strakonice
+05#09#Svitavy
+07#09#Šumperk
+02#08#Tábor
+03#10#Tachov
+04#09#Teplice
+05#10#Trutnov
+06#10#Třebíč
+06#11#Uherské Hradiště
+04#10#Ústí nad Labem
+05#11#Ústí nad Orlicí
+06#15#Vsetín
+06#12#Vyškov
+06#05#Zlín
+06#13#Znojmo
+06#14#Žďár nad Sázavou
+00#41#Letiště Ruzyně
+07#41#Letiště Mošnov
+06#41#Letiště Tuřany

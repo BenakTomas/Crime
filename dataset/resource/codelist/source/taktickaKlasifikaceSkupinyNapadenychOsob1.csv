@@ -1,0 +1,39 @@
+1#osoby na vycházce, na ulici, hřišti, v parku# 
+2#osoby při nákupu v obchodě, obchodních domech, tržnicích# 
+3#osoby při veřejných shromážděních, zábavách# 
+4#osoby na výletě, zájezdu - mimo cizinců# 
+5#cizinci# 
+6#osoby ve škole, internátě, ubytovně apod. zařízení# 
+7#osoby na plovárně, koupališti, v lázních# 
+8#osoby tělesně nebo duševně postižené# 
+9#osoby podnapilé# 
+10#osoby zraněné# 
+11#osoby jdoucí do nebo ze zaměstnání, školy apod.# 
+12#náhodní chodci# 
+13#hlídka vojenská# 
+14#hlídka policie# 
+15#hlídka civilně bezpečnostní služby# 
+16#vojenská policie# 
+17#KSZD#(komerční sexuální zneužívání dětí, tj. osoba do 18 let) - prostituující se osoby (složení skupiny viz. položky "Struktura skupiny" a "Věkové složení skupiny")
+ ## 
+18#jiné KSZD#jiné než uvedené v kódu 17 včetně modelů
+20#osoby bezpečnostní agentury převážející finanční hotovost# 
+21#osoby převážející finanční hotovost# 
+22#osoby v zaměstnání nebo při výkonu povolání# 
+23#osoby na sportovních utkáních apod.# 
+24#osoby v bytě, rodinném domě, na zahradě, na chatě#(v domácím prostředí)
+25#pacienti v nemocnici, léčebně, apod.# 
+26#osoby pod jiným vlivem než alkohol# 
+27#bezdomovci# 
+28#záchranáři# 
+31#osoby týrané# 
+32#osoby týrané před dítětem/dětmi#kód "před dítětem/dětmi" se použije nejsou-li děti objektem týrání 
+33#osoby týrané - v době vykázání z obydlí# 
+34#osoby týrané před dítětem/dětmi - v době vykázání z obydlí#kód "před dítětem/dětmi" se použije nejsou-li děti objektem týrání 
+35#osoby týrané - v době po uplynutí vykázání z obydlí# 
+36#osoby týrané před dítětem/dětmi - v době po uplynutí vykázání z obydlí#kód "před dítětem/dětmi" se použije nejsou-li děti objektem týrání 
+37#osoby v baru#(ne zaměstnanci)
+38#osoby v herně#(ne zaměstnanci)
+39#osoby v sázkové kanceláři#(ne zaměstnanci)
+40#osoby v bance#(ne zaměstnanci)
+19#jiná hlediska# 

@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- progress bar -->
+
+    <ProgressBar
+        android:id="@+id/crime_progress_bar"
+        style="@style/activity_progress_bar" />
+
+    <!-- no data found view -->
+
+    <TextView
+        android:id="@+id/crime_no_data_found_view"
+        style="@style/no_data_found_view" />
+
+    <!-- data loading error view -->
+
+    <TextView
+        android:id="@id/crime_data_loading_error_view"
+        style="@style/crime_data_loading_error_view" />
+
+    <ListView
+        android:id="@+id/crime_list_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/crime_progress_bar"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:choiceMode="singleChoice" />
+
+</RelativeLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:baselineAligned="false"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginRight="@dimen/crime_piechart_margin_right" >
+
+        <TextView
+            android:id="@+id/crime_overview_piechart_label"
+            style="@style/crime_piechart_caption"  />
+
+        <benak.tomas.crimemonitor.client.ui.view.CrimesOverviewPieChart
+            android:id="@+id/crime_overview_piechart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            style="@style/crime_piechart" />
+    </LinearLayout>
+    <!-- TODO: nepouzivat listview jen tak v scrollview kvuli onTouchEvent intercepting -->
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/crime_overview_toplist_margin_left"  >
+
+        <TextView
+            android:id="@+id/crime_overview_toplist_label"
+            style="@style/crime_toplist_caption" />
+
+        <!--
+             <ListView
+            android:id="@+id/crime_overview_toplist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="5dp"
+            android:choiceMode="singleChoice" />
+        -->
+
+        <LinearLayout
+            android:id="@+id/crime_overview_toplist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/crime_overview_toplist_margin_bottom"
+            android:orientation="vertical" />
+
+        <Button
+            android:id="@+id/crime_overview_show_crime_list_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="@string/crime_toplist_toplist_button_label"
+            android:background="@drawable/crime_toplist_button_color_state_list"  />
+    </LinearLayout>
+
+</LinearLayout>
