@@ -1,0 +1,58 @@
+\chapter{Requirements and Goals}
+The Crime statistics dataset would become a new member of the \textit{linked.opendata.cz} datasets family.
+It is intended to be served on a \textit{linked.opendata.cz} server and thus residing in the \textit{linked.opendata.cz} URL namespace.
+
+\section{Requirements}
+Several requirements have been proposed:\\
+\begin{itemize}
+	\item[information detail and completeness]
+	The published dataset is intended to be the most detailed and complete source of public crime statistics data there is.
+	Of course some data cannot be made available for public, typically personal data.
+	
+	\item[ability to stay up-to-date]
+	There should be an easy-to-use mechanism to perform the dataset update when new data becomes available.
+	
+	\item[public]
+	The dataset should be made publicly available through standard Linked Data technologies. This means it should be discoverable and its data should be made accessible for querying.
+	
+	\item[linking to other datasets]
+	The dataset would be connected to other datasets where such links emerge naturally. These connections enable the Crime dataset to become a part of the global data-space, the Web of Data.
+	
+	\item[extensibility]
+	The Crime Ontology (vocabulary) developed to describe the Crime dataset structure should be easily extensible when the source data structure changes.
+	
+	\item[usefulness]
+	The dataset should prove itself useful.
+	
+\end{itemize}
+
+
+\section{Goals}
+Building upon the requirements we set the goals of this thesis:
+
+\begin{itemize}
+	\item[the data source] Gather the most complete and detailed crime statistics data.
+	Exclude the personal data.
+	
+	\item Publish the gathered data as an RDF dataset in an RDF store and make its data available at a SPARQL endpoint.
+	
+	\item Develop an ontology or a vocabulary to describe and maintain the structure and semantics of the published data. The ontology will be built reusing the existing well-known vocabularies to make it easier to comprehend, use and extend.
+	
+	\item[update mechanism] An update mechanism will be developed to make it easy for the dataset maintainer to perform the dataset update in case new data is available.
+	
+	\item The dataset will be linked with resources in other datasets, for example DBPedia and linked.opendata.cz datasets.
+	
+	\item[usefulness] An Android demo-application will be created to demostrate the usability and usefulness of the dataset. The application will provide crime statistics based on the user's current location.
+\end{itemize}
+
+
+\section{Potential Users}
+There are three groups of potential users of both the dataset and the demo-application.
+\begin{itemize}
+	\item[application developers] The primary target audience of the Crime dataset. The developers can issue interesting queries on the data, mashing them up with related data using the geography location as the key.
+	
+	\item[dataset and ontology creators]
+	The other datasets creators may want to reuse a part of the Crime vocabulary when talking about crime.
+	
+	\item[Android users] Every user of a device powered by a supported version of Android is a potential user of the demo-application. The main value for such user would probably be entertainment.
+\end{itemize}

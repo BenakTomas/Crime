@@ -1,0 +1,230 @@
+\chapter{The Crime Statistics Dataset}
+
+\paragraph{}
+TODO Notes about different versions of the Czech Criminal Law.
+
+\section{Source forms}
+
+\begin{tabular}[c]{|p{2cm}|l|p{3cm}|p{3cm}|}
+\hline
+\textbf{Field number} & \textbf{Field name} & \textbf{Description} & \textbf{Value}\\
+\hline
+*01 & identification number & Identifies the filled FTČ form. & structured field with several subfields described in a helper table \ref{table:identification_number_subfields} \\
+\hline
+*02 & stage of crime & Classifies the stage reached when committing a crime. & Codelist \ref{table:codelist_stage_of_crime} \\
+\hline
+*03 & type of offense & Classifies the crime according to its relation to extremism. & Codelist document \ref{sec:crime_category} \\
+\hline
+*04 & tactical-statistical classification & Classifies the crime using various internal criteria of the ESSK. & Codelist document \ref{sec:tsk} \\
+\hline
+*05 & crime committed department & The code of the base department on the territory of which the crime has been committed. & Codelist document \ref{sec:departments} \\
+\hline
+*06a & committed on the street & Determines if the crime had been committed on the street. & yes / no (1 / 2) \\
+\hline
+*06b & monitored site & Records if a crime had been committed on the monitored site. & yes / no (1 / 0) \\
+\hline
+*06c & crime scene location type & Classifies the type of location where the crime had been committed. & Codelist \ref{table:codelist_crime_location} \\
+\hline
+*07a & weapon use & Records information about whether a crime offender had used a weapon and how and classifies the consequences if any. & Codelist document \ref{sec:crime_weapon_use} \\
+\hline
+\end{tabular}
+
+\subsection{Codelists}
+\subsubsection{Stage of Crime}
+This codelist classifies a crime according to in which phase it has been detected.
+
+\begin{table}[!hbtp]
+\begin{tabular}{|c|c|}
+\hline
+\textbf{Value}&\textbf{Description} \\
+\hline
+1 & preparation \\
+\hline
+2 & attempt \\
+\hline
+3 & completed \\
+\hline
+\end{tabular}
+\caption{Stage of crime}
+\label{table:codelist_stage_of_crime}
+\end{table}
+
+\subsubsection{Crime Category}\label{sec:crime_category}
+\paragraph{}
+This codelist document defines a classification of crimes and a classification of crime offenders.
+\paragraph{Extremist crimes classification} The crime classification classifies a crime according to its relation to extremism.
+It is used in FTČ field *1 and in FZP field 28 for each individual crime of an offender.
+\subparagraph{}Several extremist crime categories are recognized, based on the target of crime like crimes against religion groups, members of a nation or race. There are some other "non-targetting", more general crime categories, like terrorism or spectator violence. [TODO grammar]
+\subparagraph{}There is an additional crime categorization applied atop of the described classification. It puts crimes into categories based on their severity.
+According to the new Czech Criminal Law there are less serious crimes ("přečiny") and more serious crimes ("zločiny"). In addition to this distinction there is a third group of crimes. It applies to crimes that have been committed prior to 31. 12. 2009 and as such have been qualified using the old version of the Czech Criminal Law and are neither "přečiny" nor "zločiny".
+
+\paragraph{Crime offenders classification} The second classification defined by this codelist document is the classification of crime offenders. It is not used by the current version of the FZP form, but have formerly been used in the field 12 of the FZP form.
+\subparagraph{}
+It classifies a crime perpetrator according to his or her relation to extremism. If there is such a relation, several extremism categories are distinguished like right or left wing political extremism or religious extremism.
+
+\paragraph{} The location of the original HTML document is provided in the References section.
+
+\subsubsection{Tactical-statistical crimes classification}\label{sec:tsk}
+\paragraph{}
+This codelist document defines the so-called tactical-statistical crimes classification (TSK). 
+\paragraph{}
+Using various internal criteria considering different aspects of a crime such as its legal qualification, the crime target and other circumstances, a crime is assigned a TSK classification value. Each TSK classification value is explicitly linked to qualifying laws using a list of references to the sections of the Czech Criminal Law.
+\paragraph{}
+The TSK classification is hierarchical. Each category represents the generalization of the contained TSK classification values or whole other crime categories.
+There is for example a crime category group called Property crimes containing various crime categories dealing with various kinds of theft such as Thefts - general or Thefts - burglary. Thefts-burglary crime category then contains a direct listing of individual TSK classification values associated with differents subtypes of burglary.
+
+\paragraph{}
+There are two versions of this document.
+The first version is used to classify the crimes qualified using the old version of the Czech Criminal Law.
+The second version classifies the crimes qualified by the current version of the Czech Criminal Law.
+
+\paragraph{} The location of the original HTML document is provided in the References section.
+
+\subsubsection{Police departments classification}\label{sec:departments}
+\paragraph{}
+This document contains the descriptions of individual departments of the Police of the Czech republic and their hierarchy.
+\paragraph{}
+For every police department there is a
+\begin{itemize}
+	\item code
+	\item name
+	\item flag whether the department has a territory
+	\item flag whether the department's territory is under surveillence
+	\item description of a change that occured on this department (new department, department cancelled, department moved, department's name has changed)
+	\item a contextual note on the department's change, if any (previous name, the department that takes over the cancelled department's agenda etc.)
+\end{itemize}
+
+\paragraph{}
+Organization of the departments of the Police of the Czech republic is hierarchical.
+The structure of the hierarchy is build upon the existing hierarchy of the territorial and administrative units in the Czech republic.
+
+At the top level there are fourteen (previously eight) regional headquarters and various departments that operate outside the boundaries of the regional headquarters.
+
+Regional headquarters operate on the territory of a whole region.
+An example would be KŘP STŘEDOČESKÉHO KRAJE, the regional headquarters of the Středočeský region.
+Some of the departments that belong to regional headquarters are organizationally directly under the headquarters. These departments don't have the territory assigned.
+An example of such department is ETŘ KŘPS.
+
+However most of the departments are further organized into smaller organizational units, police districts.
+Each police district has its own headquarters and the territory of a police district is usually the one of the corresponding district of the Czech republic.
+An example of a police district is ÚO Benešov corresponding to the Benešov district.
+
+The territory of a police district is divided between the local departments of the district. Usually such a local department operates on the territory of one or more municipalities or town districts.
+Conversely there can be several local police departments for a single municipality.
+This means that generally if a crime is committed on the territory of a local department, one cannot link the crime to a municipality because that information is not provided.
+
+Some local departments don't have the territory assigned.
+Only a department with the territory can be used to fill in the field *5 of the FTČ source form to provide a code of the department on the territory of which a crime has been committed.
+An example of a police district local department with the territory would be OOP Benešov.
+An example of a police district local department without the territory would be OOK ÚO SKPV BENEŠOV.
+
+There is another group of departments that operate outside of the context of the regional headquarters.
+Those departments are generally the departments with special agenda like fighting organized crime, police inspection, human trafficking and other.
+These departments are organized into organizational units according to the type of agenda they perform, not according to the territorial nor administrative division.
+An example of such specialized police department would be ÚOOZ ODB. TERORISMU A EXTR., which specializes in fighting terrorism and extremism. This department is located in the PČR ÚOOZ SKPV organizational unit.
+
+\subparagraph{Codes of departments}
+The codes of the police departments are structured in a way that follows the hierarchy of the departments.
+The regional headquarters has a four digit code. The first two digits are the logical code itself, other two digits are zeros intended as padding to a four character length.
+KŘP STŘEDOČESKÉHO KRAJE has the code 0100.
+
+The code of a police district consists of four digits as well. The first two digits correspond to the two-digit prefix of the code of the parent regional headquarters. The other two digits are the code of the police district within the region.
+ÚO Benešov has the code 0101.
+
+A police department (local, directly under regional headquarters, central etc.) has a six-digit code.
+The first four digits correspond to the code of the parent organizational unit such as the district or the region. These four digits are then followed by the two-digit local code of the department within the parent organizational unit.
+ETŘ KŘPS has the code 010000.
+OOP Benešov has the code 010110.
+ÚOOZ ODB. TERORISMU A EXTR. has the code 200407 and the parent PČR ÚOOZ SKPV organizational unit has the code 2004.
+
+\subparagraph{Changes of departments}
+Number of changes can occur during the time that affect the codelist of police departments.
+Generally once a department is assigned a code, no other department can be assigned the same code in the future.
+A department's name can change. In this case we are provided with both the new and the previous name.
+An existing department ceases to exist. Usually another department takes over the cancelled department's agenda. We are provided with the codes of both departments in question.
+A department migrates across police districts or even regions. It is assigned a new code within its new parent district.
+A new department may be introduced.
+
+There have been some major organizational changes in the past being the result of changes in administrative and territorial division of the Czech republic. Previously there have been eight regions, each with its own regional headquarters. Now there is a total of fourteen regions, each with its own regional headquarters.
+The underlying police districts remained the same, they only moved across the newly established regional headquarters.
+
+\paragraph{} The location of the original HTML document is provided in the References section.
+
+\subsubsection{Crime location}
+\paragraph{}
+This codelist classifies the location where the crime has either been committed or reported.
+There are several location categories recognized by the ESSK listed in the table bellow.
+
+\begin{table}[!hbtp]
+	\begin{tabular}{|c|c|}
+		\hline
+		\textbf{Value}&\textbf{Description} \\
+		\hline
+		1 & railways \\
+		\hline
+		2 & highway \\
+		\hline
+		3 & subway \\
+		\hline
+		4 & remote area \\
+		\hline
+		5 & park \\
+		\hline
+		6 & populated area \\
+		\hline
+		7 & cottage colony \\
+		\hline
+		8 & abroad \\
+		\hline
+		9 & urban settlement \\
+		\hline
+		A & Internet \\
+		\hline
+		B & other computer network \\
+		\hline
+		0 & other \\
+		\hline
+	\end{tabular}
+	\caption{Crime location}
+	\label{table:codelist_crime_location}
+\end{table}
+
+\subsubsection{Weapon use}
+\paragraph{}
+This document aims at providing the classification of crimes
+
+\subsection{Helper tables}
+\begin{table}[!hbtp]
+\begin{tabular}{|l|p{4cm}|p{4cm}|}
+\hline
+\textbf{Subfield name} & \textbf{Description} & \textbf{Value} \\
+\hline
+kraj & The region code. & two characters (digits) \\
+\hline
+okres & The county code. & two characters (digits) \\
+\hline
+útvar & The code of a base department in the context of its parent county department. & two characters (digits) \\
+\hline
+Č.J. & The reference number. & 9-character string composed of digits \\
+\hline
+rok & The year when the FTČ form has been filled. & two-digit year representation \\
+\hline
+poř.č. & The ordinal number of the FTČ form. & two digits \\
+\hline
+\end{tabular}
+\caption{Identification number - subfields}
+\label{table:identification_number_subfields}
+\end{table}
+
+\begin{table}[!hbtp]
+\begin{tabular}{|c|c|}
+\hline
+\textbf{Codelist value}&\textbf{Description} \\
+\hline
+& \\
+\hline
+\hline
+\end{tabular}
+\caption{}
+\label{a}
+\end{table}
