@@ -1,12 +1,42 @@
+% !TeX spellcheck = cs_CZ
 \chapter*{Úvod}
 \addcontentsline{toc}{chapter}{Úvod}
+Veřejný sektor v České republice vyprodukuje každoročně ohromné množství dat. Jedná se o nejrůznější statistiky, analýzy, smlouvy, strategické dokumenty, zákony nebo informace o hospodaření. Část těchto dat slouží pouze interním potřebám institucí, část naopak zveřejňovat nelze, protože třeba podléhá utajení. Existuje však nezanedbatelná masa informací, které lze s trochou úsilí zpřístupnit veřejnosti. Takto zveřejněná data lze za vhodně nastavených podmínek užití dále zhodnocovat, ať už v komerční či akademické sféře, jak jednotlivci, tak i společnostmi. Data pak slouží jako surovina pro vytváření hodnotných informačních produktů, jakými jsou například různé počítačové a mobilní aplikace, přinášející ekonomický zisk pro firmy nebo zkvalitnění služeb pro veřejnost.
 
-% [Data o trestné činnosti a jejich využití]
-Trestná činnost vždy byla, je a patrně stále bude populárním tématem jak pro laickou, tak i pro odbornou veřejnost. Zprávy černé kroniky patří k těm nejpopulárnějším, snad pro jistou morbidní zvědavost, která je lidem tak vlastní. Kromě tohoto, řekněmě populárního využití dat o trestné činnosti, existují i na první pohled nudnější, o to však důlěžitější a smysluplnější způsoby využití, a to sice ve formě kriminálních statistik.
+V posledních deseti letech získala takto zpřístupňovaná data na popularitě a společné úsilí různých neziskových informací a iniciativ, akademické sféry i státní správy a samosprávy těmto datům daly vznik konceptu tzv. otevřených dat (open data). Koncept otevřených dat definuje obecně například Open definition. \footnote{http://opendefinition.org/od/2.1/en/} Vedle toho mají otevřená data mnoho dalších, specializovanějších definic, které vycházejí z těch obecných a často se soustřeďují na ty aspekty, které jsou relevantní pro cílovou doménu (např. právě veřejný sektor). Pro potřeby této práce si tedy i my definici otevřených dat přizpůsobíme. Otevřenými daty rozumíme taková data, která
+\begin{itemize}
+	\item může kdokoli používat, upravovat a dále šířit
+	\item jsou dostupná a (snadno) dohledatelná na Internetu
+	\item jsou ve formátu, jehož specifikace je volně přístupná
+	\item jsou strukturovaná a je možné je strojově zpracovávat
+\end{itemize}
 
-% [Kriminální statistiky]
-Kriminální statistiky, nebo také statistiky zločinnosti, jsou důležitým zdrojem informací o společnosti. Zrcadlí se v nich její neduhy a zprostředkovaně odrážejí sociální a ekonomickou situaci. Statistickou analýzou těchto dat je možné sledovat trendy, odhadovat vlivy různých okolností na páchání trestné činnosti, objevovat dosud nepopsané korelace. Výstupem takové činnosti pak mohou být opatření směřující k lepší (efektivnější, přesnější, cílenější) práce bezpečnostních orgánů státu, zejména policie. Ostatní státní instituce, jako například Ministerstvo práce a sociálních věcí, pak mohou v problematických oblastech řešit svou agendu intenzivněji.
+První bod definice je asi tím nejdůležitějším, protože umožňuje bezproblémové a volné užívání dat. Časo bývá nicméně vhodné nějak způsob nakládání s daty upravit, např. zavést povinnost uvádět autora dat. K tomu lze užít některé ze sady specializovaných licencí, např. Creative Commons 3.0\footnote{https://creativecommons.org/licenses/by/3.0/cz/} nebo Public domain zero\footnote{https://creativecommons.org/publicdomain/zero/1.0/}.
 
-Zdrojem dat pro tyto statistiky je Policie České republiky (PČR). V rámci své činnosti (TODO ze zákona?) PČR shromažďuje velké množství dat o zjištěné trestné činnosti a pachatelích. Tato data PČR upotřebí jednak pro vlastní taktické a strategické účely, druhak také na jejich základě připravuje statistické sestavy, které ze zákona publikuje\footnote{http://www.policie.cz/statistiky-kriminalita.aspx}. Data jsou poskytována ve formě excelových souborů, které jsou volně ke stažení. Plusem je jejich přehlednost pro čtenáře a také stálost vnitřní struktury těchto souborů, která se již po léta nemění. Nevýhodou je, že ekvivalentní data v neexistují v některém ze standardních formátů používaných pro výměnu a strojové zpracování dat, jako např. XML. Zatímco excel (alespoň ve verzi používané ve statistických sestavách) je formátem proprietárním a pro výměnu dat standardně nepoužívaným, XML je v tomto ohledu formátem dobře zavedeným a respektovaným. Již léta spolu aplikace komunikují v řeči různých typů XML dokumentů. Možnost definovat formálně strukturu XML dokumentu pomocí šablony umožňuje strojovou kontrolu správné struktury dat a také pokročilé možnosti manipulace, které umožňuje strukturovanost dat.
+Požadavek na formát s volně přístupnou specifikací vyplývá ze snahy vyhnout se závislosti na software, za jehož užití by musel konzument otevřených dat platit. Příklady otevřeného formátu jsou CSV, XML nebo RDF, se kterými je možné pracovat s volně (zadarmo) dostupnými nástroji. Naproti tomu použití formátů XLS nebo DOC od firmy Microsoft[TODO uveď taky něco jiné než produkty MS] vyžaduje nutnost zakoupit programy sady Microsoft Office.
 
-- jak je to v UK, zdroje
+Vnitřní struktura dat hraje roli pro možnost data strojově zpracovávat. Ačkoliv tak člověk například v prostém textu je schopen pohledem různým částem dokumentu (nadpis, poznámka pod čarou, výčet) přiřadit význam a odpovídajícím způsobem je interpretovat, stroj (software) toho schopen není (Výjimkou je software zpracovávající přiřozený jazyk v prostém textu. Tento software je ale mimo kontext této práce.). Vyžadovány jsou v tomto případě explicitní instrukce, které pro stroj části dokumentu nějakým způsobem vyznačí a odpovídající význam mu tím přiřadí. Například formát XML toto řeší pomocí tzv. tagů, které ohraničují část textu a dávají mu tak význam. Tedy z původní, pro stroj nečitelné věty \uv{Jmenuji se Tomáš Beňák.} lze pomocí XML vyrobit větu \uv{Jmenuji se <Jmeno>Tomáš</Jmeno><Prijmeni>Beňák</Prijmeni>}, ve které už stroj, který v textu výskyt tagů <Jmeno> a <Prijmeni> (někde) očekává, může extrahovat jméno a příjmení.
+
+[Proč jsou pro společnost (občany, firmy) důležitá data (napsat něco nebanálního) - např. data státní správy a veřejného sektoru (informovaný občan, kontrola státu)]
+
+[Příklady poskytovaných datových sad, nedostatky publikovaných dat - rozsah, strojová zpracovatelnost, licence]
+
+[Nastínění možné cesty - otevřená data]
+
+[Co jsou otevřená data (definice, stupně otevřenosti) a proč je dobré mít některá data otevřená.]
+
+[Obecné přínosy a rizika otevření dat, možnosti využití otevřených dat - vizualizace, statistická analýza, aplikace]
+
+[Konkrétní příklady využití otevřených dat ve světě i v ČR (v dalším textu se zaměřit na ČR): datové sady a aplikace, ekonomické dopady a analýzy]
+
+[Otevřená data v ČR - instituce, komunita, zdroje informací (Jak otevírat data), poskytovatelé otevřených dat: veřejný sektor (ministerstva, samosprávné celky, vládní orgány, nevládky a neziskovky), soukromý sektor]
+Zmínit konkrétní instituce: Fond Otakara Motejla a Fórum otevřených dat, MV ČR, NKOD, portal.gov.cz, opendata.cz
+
+[Publikace a katalogizace otevřených dat v ČR - pro veřejný sektor viz příslušné dokumenty se standardy (a koncepční a metodické dokumenty), datové zdroje na otevrenadata.cz, NKOD, opendata.cz...]
+
+[Nový dataset o trestné činnosti - nastínění cílů (shromáždění a výběr zdrojů dat, ontologie, prolinkování, publikace)
+
+[Linked data - publikační paradigma pro otevřená propojená data]
+
+[Přehled struktury práce - co řeší která kapitola]
+
