@@ -1,21 +1,16 @@
 % !TeX spellcheck = cs_CZ
 \chapter*{Úvod}
 \addcontentsline{toc}{chapter}{Úvod}
-Veřejný sektor v České republice vyprodukuje každoročně ohromné množství dat. Jedná se o nejrůznější statistiky, analýzy, smlouvy, strategické dokumenty, zákony nebo informace o hospodaření. Část těchto dat slouží pouze interním potřebám institucí, část naopak zveřejňovat nelze, protože třeba podléhá utajení. Existuje však nezanedbatelná masa informací, které lze s trochou úsilí zpřístupnit veřejnosti. Takto zveřejněná data lze za vhodně nastavených podmínek užití dále zhodnocovat, ať už v komerční či akademické sféře, jak jednotlivci, tak i společnostmi. Data pak slouží jako surovina pro vytváření hodnotných informačních produktů, jakými jsou například různé počítačové a mobilní aplikace, přinášející ekonomický zisk pro firmy nebo zkvalitnění služeb pro veřejnost.
+Veřejný sektor v České republice vyprodukuje každoročně ohromné množství dat. Jedná se o nejrůznější statistiky, analýzy, smlouvy, strategické dokumenty, zákony nebo informace o hospodaření. Část těchto dat slouží pouze interním potřebám institucí, část naopak zveřejňovat nelze, protože třeba podléhá utajení. Existuje však nezanedbatelná masa informací, které lze s trochou úsilí zpřístupnit veřejnosti.
 
-V posledních deseti letech získala takto zpřístupňovaná data na popularitě a společné úsilí různých neziskových informací a iniciativ, akademické sféry i státní správy a samosprávy těmto datům daly vznik konceptu tzv. otevřených dat (open data). Koncept otevřených dat definuje obecně například Open definition. \footnote{http://opendefinition.org/od/2.1/en/} Vedle toho mají otevřená data mnoho dalších, specializovanějších definic, které vycházejí z těch obecných a často se soustřeďují na ty aspekty, které jsou relevantní pro cílovou doménu (např. právě veřejný sektor). Pro potřeby této práce si tedy i my definici otevřených dat přizpůsobíme. Otevřenými daty rozumíme taková data, která
-\begin{itemize}
-	\item může kdokoli používat, upravovat a dále šířit
-	\item jsou dostupná a (snadno) dohledatelná na Internetu
-	\item jsou ve formátu, jehož specifikace je volně přístupná
-	\item jsou strukturovaná a je možné je strojově zpracovávat
-\end{itemize}
+V posledních deseti letech získala takto zpřístupňovaná data na popularitě a společné úsilí různých neziskových informací a iniciativ, akademické sféry i státní správy a samosprávy těmto datům daly vznik konceptu tzv. otevřených dat (open data). Otevřená data lze za vhodně nastavených podmínek užití dále zhodnocovat, ať už v komerční či akademické sféře, jak jednotlivci, tak i společnostmi. Tato data pak slouží jako surovina pro vytváření hodnotných informačních produktů, jakými jsou například různé počítačové a mobilní aplikace, přinášející ekonomický zisk pro firmy nebo zkvalitnění služeb pro veřejnost.
 
-První bod definice je asi tím nejdůležitějším, protože umožňuje bezproblémové a volné užívání dat. Časo bývá nicméně vhodné nějak způsob nakládání s daty upravit, např. zavést povinnost uvádět autora dat. K tomu lze užít některé ze sady specializovaných licencí, např. Creative Commons 3.0\footnote{https://creativecommons.org/licenses/by/3.0/cz/} nebo Public domain zero\footnote{https://creativecommons.org/publicdomain/zero/1.0/}.
+Ve světe existuje nyní celá řada poskytovatelů otevřených dat. Klíčovým faktorem pro úspěch otevřených dat je zapojení a podpora státních institucí. Státní instituce jednak slouží jako poskytovatel (surových) dat, ale často také poskytuje pro otevřená data platformu pro publikaci a katalogizaci dat na celostátní úrovni. Příkladem takového (úspěšného) úsilí mohou být projekty vlád USA (https://www.data.gov/) nebo Velké Británie (https://data.gov.uk/). V České republice takovou platformu poskytuje Ministerstvo vnitra v rámci projektu opendata.gov.cz\footnote{http://opendata.gov.cz}. Platforma je zaměřena primárně pro orgány veřejné správy, data jsou katalogizována v Národním katalogu otevřených dat (NKOD).
 
-Požadavek na formát s volně přístupnou specifikací vyplývá ze snahy vyhnout se závislosti na software, za jehož užití by musel konzument otevřených dat platit. Příklady otevřeného formátu jsou CSV, XML nebo RDF, se kterými je možné pracovat s volně (zadarmo) dostupnými nástroji. Naproti tomu použití formátů XLS nebo DOC od firmy Microsoft[TODO uveď taky něco jiné než produkty MS] vyžaduje nutnost zakoupit programy sady Microsoft Office.
+Kromě státních institucí otevřená data produkují také jiné subjekty, jako jsou různé nevládní a neziskové, ale i komerční organizace. V České republice je jednou z takovýchto organizací Opendata.cz, která na svých stránkách\footnote{http://linked.opendata.cz/en} poskytuje přístup k vlastním datasetům.
 
-Vnitřní struktura dat hraje roli pro možnost data strojově zpracovávat. Ačkoliv tak člověk například v prostém textu je schopen pohledem různým částem dokumentu (nadpis, poznámka pod čarou, výčet) přiřadit význam a odpovídajícím způsobem je interpretovat, stroj (software) toho schopen není (Výjimkou je software zpracovávající přiřozený jazyk v prostém textu. Tento software je ale mimo kontext této práce.). Vyžadovány jsou v tomto případě explicitní instrukce, které pro stroj části dokumentu nějakým způsobem vyznačí a odpovídající význam mu tím přiřadí. Například formát XML toto řeší pomocí tzv. tagů, které ohraničují část textu a dávají mu tak význam. Tedy z původní, pro stroj nečitelné věty \uv{Jmenuji se Tomáš Beňák.} lze pomocí XML vyrobit větu \uv{Jmenuji se <Jmeno>Tomáš</Jmeno><Prijmeni>Beňák</Prijmeni>}, ve které už stroj, který v textu výskyt tagů <Jmeno> a <Prijmeni> (někde) očekává, může extrahovat jméno a příjmení.
+Nad otevřenými daty dosud vzniklo mnoho zajímavých a užitečných aplikací jak ve světě, tak i v ČR. Z těch zahraničních jmenujme například TheyWorkForYou\footnote{http://www.TheyWorkForYou.com}, zaznamenávající hlasování členů britského parlamentu, WhereDoesMyMoneyGo \footnote{http://www.wheredoesmymoneygo.org/}, poskytující přehled o využití daní britských daňových poplatníků, nebo celé sady aplikací od MySociety\footnote{https://www.mysociety.org/projects/} a od Sunlight Foundation\footnote{http://sunlightfoundation.com/tools/}. V České republice máme 
+
 
 [Proč jsou pro společnost (občany, firmy) důležitá data (napsat něco nebanálního) - např. data státní správy a veřejného sektoru (informovaný občan, kontrola státu)]
 
@@ -40,3 +35,19 @@ Zmínit konkrétní instituce: Fond Otakara Motejla a Fórum otevřených dat, M
 
 [Přehled struktury práce - co řeší která kapitola]
 
+\chapter{Otevřená data}
+Pro koncept otevřených dat existuje několik obecných definicí, například od Open definition\footnote{http://opendefinition.org/od/2.1/en/}, Open Knowledge Foundation, 5stardata.info od Time Bernerse-Lee (TODO viz zdroje v Jak otevirat data). Vedle toho mají otevřená data mnoho dalších, specializovanějších definic, které vycházejí z těch obecných a často se soustřeďují na ty aspekty, které jsou relevantní pro cílovou doménu (např. právě veřejný sektor). Pro potřeby této práce si tedy i my definici otevřených dat přizpůsobíme. Otevřenými daty rozumíme taková data, která
+\begin{itemize}
+	\item může kdokoli používat, upravovat a dále šířit
+	\item jsou dostupná a (snadno) dohledatelná na Internetu
+	\item jsou ve formátu, jehož specifikace je volně přístupná
+	\item jsou strukturovaná způsobem, který umožňuje je strojově zpracovávat
+\end{itemize}
+
+První bod definice je asi tím nejdůležitějším, protože umožňuje bezproblémové a volné užívání dat. Časo bývá nicméně vhodné nějak způsob nakládání s daty upravit, např. zavést povinnost při každém použití dat uvést autora dat. K tomu lze užít některé ze sady specializovaných licencí, např. licence ze sady Creative Commons jako Creative Commons 3.0\footnote{https://creativecommons.org/licenses/by/3.0/cz/} nebo Public domain zero\footnote{https://creativecommons.org/publicdomain/zero/1.0/}.
+
+Požadavek na formát s volně přístupnou specifikací vyplývá ze snahy vyhnout se závislosti na software, za jehož užití by musel konzument otevřených dat platit. Příklady otevřeného formátu jsou CSV, XML nebo RDF, se kterými je možné pracovat s volně (zadarmo) dostupnými nástroji. Naproti tomu použití formátů XLS nebo DOC od firmy Microsoft[TODO uveď taky něco jiné než produkty MS] vyžaduje nutnost zakoupit příslušné programy sady Microsoft Office.
+
+Vnitřní struktura dat hraje roli pro možnost data strojově zpracovávat. Ačkoliv tak člověk například v prostém textu je schopen pohledem různým částem dokumentu (nadpis, poznámka pod čarou, seznam) přiřadit význam a odpovídajícím způsobem je interpretovat, stroj (software) toho schopen není (Výjimkou je software zpracovávající přiřozený jazyk v prostém textu. Tento software je ale mimo kontext této práce.). Vyžadovány jsou v tomto případě explicitní instrukce, které pro stroj části dokumentu nějakým způsobem vyznačí a odpovídající význam mu tím přiřadí. Například formát XML toto řeší pomocí tzv. tagů, neboli značek, které ohraničují část textu a dávají mu tak význam. Takto pak z původní, pro stroj nečitelné věty \uv{Jmenuji se Tomáš Beňák.}, lze pomocí XML vyrobit větu \uv{Jmenuji se <Jmeno>Tomáš</Jmeno><Prijmeni>Beňák</Prijmeni>}, ve které už stroj, který v textu výskyt tagů <Jmeno> a <Prijmeni> očekává, může extrahovat jméno a příjmení.
+
+Otevřená data existují v
