@@ -1,224 +1,39 @@
-%%% Fiktivní kapitola s ukázkami sazby
+\chapter{Otevřená data}
+\section{Co jsou otevřená data?}
+Otevřená data jsou poměrně širokým pojmem, pro který existuje celá řada obecných i specializovaných definic. Z těch obecných zmiňmě hojně používanou definici Open definition\footnote{http://opendefinition.org/od/2.1/en/} a definici Tima Bernerse-Lee, která je konkrétnější a definuje stupně otevřenosti dat.\footnote{5stardata.info} Specializované definice otevřených dat z těch obecných vycházejí, uvádějí ale konkrétnější požadavky a soustřeďují se na ty aspekty, které jsou relevantní pro cílovou doménu, kde mají být data použita (např. právě veřejný sektor). Pro potřeby této práce si i my definici otevřených dat přizpůsobíme. Otevřenými daty budeme rozumět data, která
+\begin{itemize}
+	\item může kdokoli používat, upravovat a dále šířit
+	\item jsou dostupná a (snadno) dohledatelná na Internetu
+	\item jsou dostupná ve formátu, jehož specifikace je volně přístupná
+	\item jsou strukturovaná způsobem, který umožňuje je strojově zpracovávat
+\end{itemize}
 
-\chapter{Nápověda k~sazbě}
+% Trochu více detailu o vhodných licencích.
+První bod definice je jádrem Open definition a je asi tím nejdůležitějším, protože umožňuje bezproblémové a volné užívání a šíření dat. Občas se může vyskytnout potřeba nějak způsob nakládání s daty upravit, například zavést povinnost při každém jejich použití uvést autora. Pro tyto účely lze užít některé ze sady specializovaných licencí, např. licence z populární sady Creative Commons, jako Creative Commons 3.0\footnote{https://creativecommons.org/licenses/by/3.0/cz/} nebo Public domain zero\footnote{https://creativecommons.org/publicdomain/zero/1.0/}.
 
-\section{Úprava práce}
+Požadavek na formát s volně přístupnou specifikací vyplývá ze snahy vyhnout se závislosti na software, za jehož užití pro práci s otevřenými daty by musel uživatel platit. Z tohoto pohledu nejsou formáty jako XLS nebo DOC firmy Microsoft otevřené, protože jejich použití je vázáno na nutnost zakoupit příslušné programy sady Microsoft Office. Naproti tomu s formáty jako CSV, XML, RDF, nebo otevřenými verzemi Microsoftích formátů DOCX a XLSX je možné pracovat pomocí volně (zadarmo) dostupných nástrojů.
 
-Vlastní text bakalářské práce je uspořádaný hierarchicky do kapitol a podkapitol,
-každá kapitola začíná na nové straně. Text je zarovnán do bloku. Nový odstavec
-se obvykle odděluje malou vertikální mezerou a odsazením prvního řádku. Grafická
-úprava má být v~celém textu jednotná.
+Vnitřní struktura dat hraje roli pro možnost data strojově zpracovávat. Ačkoliv člověk je v textu schopen pohledem různým částem dokumentu (nadpis, poznámka pod čarou, seznam) přiřadit význam a odpovídajícím způsobem je interpretovat, stroj (software) toho schopen není (\footnote{Výjimkou je software zpracovávající přirozený jazyk (např. pomocí metod strojového učení), který je ale mimo kontext této práce a jehož rozpoznávací schopnosti nejsou stoprocentní.} Tento problém se řeší zavedením určitého vnitřního řádu, který diktuje vnitřní strukturu dat. Taková struktura může být poměrně volná, jako u formátu CSV, kde jsou data umístěna v řádcích a jednotlivá pole v řádku jsou oddělená čárkou. Naopak různé binární formáty\footnote{https://en.wikipedia.org/wiki/Binary\_file} vyžadují strukturu pevnou, kdy jsou data pevně zarovnávána do bloků začínajících na pevně daných adresách v paměti, což umožňuje zpracovávajícímu software spolehnout se, že data s určitým významem jsou v paměti počítače uložena na předem definovaném místě. Možností strukturování dat, která je někde napůl cesty mezi prvními dvěma popsanými způsoby, je značkování. Například formát XML používá tzv. tagy, neboli textové značky, které ohraničují část textu a dávají mu tak význam, který umí aplikace interpretovat. Takto například  z původní, pro program nečitelné věty \textit{\uv{Jmenuji se Tomáš Beňák.}}, lze pomocí XML vyrobit větu \textit{\uv{Jmenuji se <Jmeno>Tomáš</Jmeno><Prijmeni>Beňák</Prijmeni>.}}, ze které už program, který v textu výskyt tagů \textsf{<Jmeno>} a \textsf{<Prijmeni>} očekává, může extrahovat jméno a příjmení.
 
-Práce se tiskne na bílý papír formátu A4. Okraje musí ponechat dost místa na vazbu:
-doporučen je horní, dolní a pravý okraj $25\,\rm mm$, levý okraj $40\,\rm mm$.
-Číslují se všechny strany kromě obálky a informačních stran na začátku práce;
-první číslovaná strana bývá obvykle ta s~obsahem.
+\section{Zdroje otevřených dat}
 
-Písmo se doporučuje dvanáctibodové ($12\,\rm pt$) se standardní vzdáleností mezi řádky
-(pokud píšete ve Wordu nebo podobném programu, odpovídá tomu řádkování $1,5$; v~\TeX{}u
-není potřeba nic přepínat). Pro běžný text používejte vzpřímené patkové písmo.
-Text matematických vět se obvykle tiskne pro zdůraznění skloněným (slanted) písmem,
-není-li k~dispozici, může být zastoupeno kurzívou.
+Přirozeným zdrojem otevřených dat jsou instituce veřejné správy a samosprávy, jako například vláda, ministerstva, obce a úřady, obecně pak veřejný sektor, zahrnující různé další nevládní a neziskové organizace. Na řadu z informací poskytovaných orgány veřejné moci existuje zákonný nárok, například v České republice vyplývající ze zákona 106/1999 Sb. o svobodném přístupu k informacím, a zákona 123/1998 Sb. o právu na informace o životním prostředí. Kromě toho jsou členské státy Evropské unie vázány směrnicí PSI\footnote{Směrnice Evropského parlamentu a Rady č. 2003/98/ES} o opakovaném použití informací veřejného sektoru, která ukládá členským zemím povinnost poskytovat veřejná data jako otevřená.
 
-Primárně je doporučován jednostranný tisk (příliš tenkou práci lze obtížně svázat).
-Delší práce je lepší tisknout oboustranně a přizpůsobit tomu velikosti okrajů:
-$40\,\rm mm$ má vždy \emph{vnitřní} okraj. Rub titulního listu zůstává nepotištěný.
+Data poskytovaná veřejnou správou a samosprávou typicky zahrnují např. informace o výdajích státu, veřejných rozpočtech, výběrových řízeních na veřejné zakázky, výsledky voleb, přehled legislativy nebo základní statistické ukazatele pro danou krajinu. Open knowledge foundation zveřejnila v rámci projektu Open Data Index\footnote{http://index.okfn.org} seznam datových sad veřejného sektoru doporučených ke zveřejnění.
 
-Zkratky použité v textu musí být vysvětleny vždy u prvního výskytu zkratky (v~závorce nebo
-v poznámce pod čarou, jde-li o složitější vysvětlení pojmu či zkratky). Pokud je zkratek
-více, připojuje se seznam použitých zkratek, včetně jejich vysvětlení a/nebo odkazů
-na definici.
+Zveřejňování dat veřejné správy bývá zastřešeno na úrovni státu portály pro otevřená data, které poskytují katalogy otevřených datových sad, poskytovaných institucemi veřejné správy dané země. V takových katalozích vydavatelé dat registrují poskytovaná data a uživatelé katalogů v nich pak otevřené datové sady na základě různých kritérií vyhledávají. V zahraničí jsou ukázkovými příklady takových projektů portály otevřených dat USA a Velké Británie{https://www.data.gov resp. https://data.gov.uk}. Otevřené datové sady veřejných institucí v České republice jsou katalogizovány v Národním katalogu otevřených dat (NKOD)\footnote{http://portal.gov.cz/portal/obcan/rejstriky/data/97898} v rámci portálu veřejné správy\footnote{http://portal.gov.cz}. Výhodou centralizovaného řešení je zajištění jednotných standardů pro publikaci a katalogizaci dat, a také nutná metodická podpora vydavatelům dat.
 
-Delší převzatý text jiného autora je nutné vymezit uvozovkami nebo jinak vyznačit a řádně
-citovat.
+Kromě státních institucí otevřená data zveřejňují i různé nestátní, soukromé, mezinárodní, nevládní, akademické a jiné neziskové nebo obecně prospěšné organizace, zpravidla na vlastních webech a ve vlastních katalozích. Příkladem takové organizací v České republice jsou Opendata.cz, v zahraničí otevřená data zveřejňuje britský deník Guardian\footnote{http://www.theguardian.com/data}, nebo mezinárodní organizace jako OSN\footnote{http://data.un.org} nebo OECD\footnote{http://stats.oecd.org}.
 
-\section{Jednoduché příklady}
+\section{Existující datové sady}
 
-Čísla v~českém textu obvykle sázíme v~matematickém režimu s~desetinnou čárkou:
-%%% Bez \usepackage{icomma}:
-% $\pi \doteq 3{,}141\,592\,653\,589$.
-%%% S \usepackage{icomma}:
-$\pi \doteq 3,141\,592\,653\,589$.
-V~matematických textech se považuje za přípustné používat desetinnou tečku
-(pro lepší odlišení od čárky v~roli oddělovače). Numerické výsledky se uvádějí
-s~přiměřeným počtem desetinných míst.
+V současnosti již existuje celá řada otevřených datových sad. Klíčovým faktorem pro úspěch otevřených dat je zapojení a podpora státních institucí. Státní instituce jednak slouží jako poskytovatel (surových) dat, ale často také poskytují pro otevřená data platformu pro jejich publikaci a katalogizaci na celostátní úrovni. Příkladem takového (úspěšného) úsilí jsou portály pro otevřená data vlád USA nebo Velké Británie\footnote{https://www.data.gov, https://data.gov.uk}. V České republice takovou platformu poskytuje Ministerstvo vnitra v rámci projektu opendata.gov.cz\footnote{http://opendata.gov.cz} na portálu veřejné správy\footnote{http://portal.gov.cz}. Tato platforma je zaměřena primárně na orgány veřejné správy, data jsou katalogizována v Národním katalogu otevřených dat (NKOD).
 
-Mezi číslo a jednotku patří úzká mezera: šířka stránky A4 činí $210\,\rm mm$, což si
-pamatuje pouze $5\,\%$ autorů. Pokud ale údaj slouží jako přívlastek, mezeru vynecháváme:
-$25\rm mm$ okraj, $95\%$ interval spolehlivosti.
+Kromě státních institucí otevřená data produkují také jiné subjekty, jako jsou různé nevládní a neziskové, ale i komerční organizace. V České republice je jednou z takovýchto nezisková organizace Opendata.cz, která na svých stránkách\footnote{http://linked.opendata.cz/en} poskytuje přístup k vlastním datasetům.
 
-Rozlišujeme různé druhy pomlček:
-červeno-černý (krátká pomlčka),
-strana 16--22 (střední),
-$45-44$ (matematické minus),
-a~toto je --- jak se asi dalo čekat --- vložená věta ohraničená dlouhými pomlčkami.
+Nad otevřenými daty dosud vzniklo mnoho zajímavých a užitečných aplikací jak ve světě, tak i v ČR. Z těch zahraničních jmenujme například TheyWorkForYou\footnote{http://www.TheyWorkForYou.com}, zaznamenávající hlasování členů britského parlamentu, WhereDoesMyMoneyGo \footnote{http://www.wheredoesmymoneygo.org/}, poskytující přehled o využití daní britských daňových poplatníků, nebo celé sady aplikací od MySociety\footnote{https://www.mysociety.org/projects/} a od Sunlight Foundation\footnote{http://sunlightfoundation.com/tools/}. V České republice máme
 
-V~českém textu se používají \uv{české} uvozovky, nikoliv ``anglické''.
+[Přínosy a rizika]
 
-% V tomto odstavci se vlnka zviditelňuje
-{
-\def~{{\tt\char126}}
-Na některých místech je potřeba zabránit lámání řádku (v~\TeX{}u značíme vlnovkou):
-u~předložek (neslabičnych, nebo obecně jednopísmenných), vrchol~$v$, před $k$~kroky,
-a~proto, \dots{} obecně kdekoliv, kde by při rozlomení čtenář \uv{škobrtnul}.
-}
-
-\section{Matematické vzorce a výrazy}
-
-Proměnné sázíme kurzívou (to \TeX{} v~matematickém módu dělá sám, ale
-nezapomínejte na to v~okolním textu a také si matematický mód zapněte).
-Názvy funkcí sázíme vzpřímeně. Tedy například:
-$\var(X) = \E X^2 - \bigl(\E X \bigr)^2$.
-
-Zlomky uvnitř odstavce (třeba $\frac{5}{7}$ nebo $\frac{x+y}{2}$) mohou
-být příliš stísněné, takže je lepší sázet jednoduché zlomky s~lomítkem:
-$5/7$, $(x+y)/2$.
-
-Nechť
-\[   % LaTeXová náhrada klasického TeXového $$
-\mathbb{X} = \begin{pmatrix}
-      \T{\bm x_1} \\
-      \vdots \\
-      \T{\bm x_n}
-      \end{pmatrix}.
-\]
-Povšimněme si tečky za~maticí. Byť je matematický text vysázen
-ve~specifickém prostředí, stále je gramaticky součástí věty a~tudíž je
-zapotřebí neopomenout patřičná interpunkční znaménka. Výrazy, na které
-chceme později odkazovat, je vhodné očíslovat:
-\begin{equation}\label{eq01:Xmat}
-\mathbb{X} = \begin{pmatrix}
-      \T{\bm x_1} \\
-      \vdots \\
-      \T{\bm x_n}
-      \end{pmatrix}.
-\end{equation}
-Výraz \eqref{eq01:Xmat} definuje matici $\mathbb{X}$. Pro lepší čitelnost
-a~přehlednost textu je vhodné číslovat pouze ty výrazy, na které se
-autor někde v~další části textu odkazuje. To jest, nečíslujte
-automaticky všechny výrazy vysázené některým z~matematických
-prostředí.
-
-Zarovnání vzorců do několika sloupečků:
-\begin{alignat*}{3}
-S(t) &= \pr(T > t),    &\qquad t&>0       &\qquad&\text{ (zprava spojitá),}\\
-F(t) &= \pr(T \leq t), &\qquad t&>0       &\qquad&\text{ (zprava spojitá).}
-\end{alignat*}
-
-Dva vzorce se spojovníkem:
-\begin{equation}\label{eq01:FS}
-\left.
-\begin{aligned}
-S(t) &= \pr(T > t) \\[1ex]
-F(t) &= \pr(T \leq t)
-\end{aligned}
-\;	% zde pomůže ručně vynechat trochu místa
-\right\}
-\quad t>0 \qquad \text{(zprava spojité).}
-\end{equation}
-
-Dva centrované nečíslované vzorce:
-\begin{gather*}
-\bm Y = \mathbb{X}\bm\beta + \bm\varepsilon, \\[1ex]
-\mathbb{X} = \begin{pmatrix} 1 & \T{\bm x_1} \\ \vdots & \vdots \\ 1 &
-  \T{\bm x_n} \end{pmatrix}.
-\end{gather*}
-Dva centrované číslované vzorce:
-\begin{gather}
-\bm Y = \mathbb{X}\bm\beta + \bm\varepsilon, \label{eq02:Y}\\[1ex]
-\mathbb{X} = \begin{pmatrix} 1 & \T{\bm x_1} \label{eq03:X}\\ \vdots & \vdots \\ 1 &
-  \T{\bm x_n} \end{pmatrix}.
-\end{gather}
-
-Definice rozdělená na dva případy:
-\[
-P_{r-j}=
-\begin{cases}
-0, & \text{je-li $r-j$ liché},\\
-r!\,(-1)^{(r-j)/2}, & \text{je-li $r-j$ sudé}.
-\end{cases}
-\]
-Všimněte si použití interpunkce v této konstrukci. Čárky a tečky se
-dávají na místa, kam podle jazykových pravidel patří.
-
-\begin{align}
-x& = y_1-y_2+y_3-y_5+y_8-\dots = && \text{z \eqref{eq02:Y}} \nonumber\\
-& = y'\circ y^* = && \text{podle \eqref{eq03:X}} \nonumber\\
-& = y(0) y' && \text {z Axiomu 1.}
-\end{align}
-
-
-Dva zarovnané vzorce nečíslované:
-\begin{align*}
-L(\bm\theta) &= \prod_{i=1}^n f_i(y_i;\,\bm\theta), \\
-\ell(\bm\theta) &= \log\bigl\{L(\bm\theta)\bigr\} =
-\sum_{i=1}^n \log\bigl\{f_i(y_i;\,\bm\theta)\bigr\}.
-\end{align*}
-Dva zarovnané vzorce, první číslovaný:
-\begin{align}
-L(\bm\theta) &= \prod_{i=1}^n f_i(y_i;\,\bm\theta), \label{eq01:L} \\
-\ell(\bm\theta) &= \log\bigl\{L(\bm\theta)\bigr\} =
-\sum_{i=1}^n \log\bigl\{f_i(y_i;\,\bm\theta)\bigr\}. \nonumber
-\end{align}
-
-Vzorec na dva řádky, první řádek zarovnaný vlevo, druhý vpravo, nečíslovaný:
-\begin{multline*}
-\ell(\mu,\,\sigma^2) = \log\bigl\{L(\mu,\,\sigma^2)\bigr\} =
-\sum_{i=1}^n \log\bigl\{f_i(y_i;\,\mu,\,\sigma^2)\bigr\}= \\
-  = -\,\frac{n}{2}\,\log(2\pi\sigma^2) \,-\,
-\frac{1}{2\sigma^2}\sum_{i=1}^n\,(y_i - \mu)^2.
-\end{multline*}
-
-Vzorec na dva řádky, zarovnaný na $=$, číslovaný uprostřed:
-\begin{equation}\label{eq01:ell}
-\begin{split}
-\ell(\mu,\,\sigma^2) &= \log\bigl\{L(\mu,\,\sigma^2)\bigr\} =
-\sum_{i=1}^n \log\bigl\{f(y_i;\,\mu,\,\sigma^2)\bigr\}= \\
-& = -\,\frac{n}{2}\,\log(2\pi\sigma^2) \,-\,
-\frac{1}{2\sigma^2}\sum_{i=1}^n\,(y_i - \mu)^2.
-\end{split}
-\end{equation}
-
-\section{Definice, věty, důkazy, \dots}
-
-Konstrukce typu definice, věta, důkaz, příklad, \dots je vhodné
-odlišit od okolního textu a~případně též číslovat s~možností použití
-křížových odkazů. Pro každý typ těchto konstrukcí je vhodné mít
-v~souboru s~makry (\texttt{makra.tex}) nadefinované jedno prostředí,
-které zajistí jak vizuální odlišení od okolního textu, tak
-automatické číslování s~možností křížově odkazovat.
-
-\begin{definice}\label{def01:1}
-  Nechť náhodné veličiny $X_1,\dots,X_n$ jsou definovány na témž
-  prav\-dě\-po\-dob\-nost\-ním prostoru $(\Omega,\,\mathcal{A},\,\pr)$. Pak
-  vektor $\bm X = \T{(X_1,\dots,X_n)}$ nazveme \emph{náhodným
-    vektorem}.
-\end{definice}
-
-\begin{definice}[náhodný vektor]\label{def01:2}
-  Nechť náhodné veličiny $X_1,\dots,X_n$ jsou definovány na témž
-  pravděpodobnostním prostoru $(\Omega,\,\mathcal{A},\,\pr)$. Pak
-  vektor $\bm X = \T{(X_1,\dots,X_n)}$ nazveme \emph{náhodným
-    vektorem}.
-\end{definice}
-Definice~\ref{def01:1} ukazuje použití prostředí pro sazbu definice
-bez titulku, definice~\ref{def01:2} ukazuje použití prostředí pro
-sazbu definice s~titulkem.
-
-\begin{veta}\label{veta01:1}
-  Náhodný vektor $\bm X$ je měřitelné zobrazení prostoru
-  $(\Omega,\,\mathcal{A},\,\pr)$ do $(\R_n,\,\mathcal{B}_n)$.
-\end{veta}
-
-\begin{lemma}[\citealp{Andel07}, str. 29]\label{veta01:2}
-  Náhodný vektor $\bm X$ je měřitelné zobrazení prostoru
-  $(\Omega,\,\mathcal{A},\,\pr)$ do $(\R_n,\,\mathcal{B}_n)$.
-\end{lemma}
-\begin{dukaz}
-  Jednotlivé kroky důkazu jsou podrobně popsány v~práci \citet[str.
-  29]{Andel07}.
-\end{dukaz}
-Věta~\ref{veta01:1} ukazuje použití prostředí pro sazbu matematické
-věty bez titulku, lemma~\ref{veta01:2} ukazuje použití prostředí pro
-sazbu matematické věty s~titulkem. Lemmata byla zavedena v~hlavním
-souboru tak, že sdílejí číslování s~větami.
+[Otevřená data v ČR - instituce, komunita, zdroje informací (Jak otevírat data), poskytovatelé otevřených dat: veřejný sektor (ministerstva, samosprávné celky, vládní orgány, nevládky a neziskovky), soukromý sektor.
+Zmínit konkrétní instituce: Fond Otakara Motejla a Fórum otevřených dat, MV ČR, NKOD, portal.gov.cz, opendata.cz]
