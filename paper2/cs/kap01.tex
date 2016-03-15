@@ -29,12 +29,12 @@ Kromě samotného publikování dat je důležité a přínosné i úsilí věno
 
 \section{Otevřené datové sady a aplikace}
 
-V současnosti, přesto, že se jedná o pouhou špičku ledovce, existuje již poměrně mnoho otevřených datových sad, nabízejících informace z nejrůznějších odvětví lidské činnosti. Data jsou publikována v různých otevřených formátech, přičemž publikace pomocí RDF jako Linked data je stále poměrně málo častá. Nejběžnějšími formáty jsou CSV a XML.
+V současnosti existuje již poměrně mnoho otevřených datových sad, nabízejících informace z nejrůznějších odvětví lidské činnosti. Data jsou publikována v různých otevřených formátech, přičemž publikace pomocí RDF jako Linked data je stále poměrně málo častá. Nejběžnějšími formáty jsou CSV a XML.
 
 Veřejné instituce po celém světě zpravidla zveřejňují informace o svém hospodaření.
 
 Obecně jsou velice populární data vázaná geograficky, místně. Nad takovými sadami rostou například mobilní aplikace, které nabízejí uživateli informace relevantní pro jeho aktuální polohu. Příkladem takové aplikace je např. AirNOW, která uživatele informuje o aktuální kvalitě ovzduší v daném místě. Další takovou aplikací je Alternative Fueling Station Locator, který uživateli našeptává polohu nejbližších benzínek. Takovýchto aplikací je velká spousta, některé jsou poměrně jednoduchými aplikacemi geolokalizace informací na mapovém či jiném podkladě, jiné jsou i značně sofistikované, například Climate FieldView, aplikace, která farmářům umožňuje na základě monitorování a předpovědí lokálního počasí optimalizovat rozhodnutí o hospodaření.
-Zajímavým odvětvím aplikací jsou různé hlásiče pro nespokojence. Občas USA může pomocí aplikace Civic Request Tracker reportovat místním autoritám problém, na který narazil a který by měly tyto autority řešit. Obdobná aplikace funguje i ve Velké Británii, kde lidé mohou hlásit díry a nerovnosti v silnicích a chodnících.
+Zajímavým odvětvím aplikací jsou různé hlásiče pro nespokojence. Občan USA může pomocí aplikace Civic Request Tracker reportovat místním autoritám problém, na který narazil a který by měly tyto autority řešit. Obdobná aplikace funguje i ve Velké Británii, kde lidé mohou hlásit díry a nerovnosti v silnicích a chodnících.
 Aplikace nad otevřenými daty mohou podporovat informované rozhodování občanů v různých oblastech. College Affordability and Transparency Center budoucím studentům a jejich rodičům umožňuje poskytovat informace zejména o nákladech spojených se vzděláváním na vysokých školách a univerzitách.
 Jiné aplikace mohou býz zdrojem různých demografických přehledů, srovnání i pouhých zajímavostí. City Data zastřešuje velké množství datových sad popisujících nejrůznější fakta o městech USA, které srovnává v řadě zajímavých žebříčků.
 
@@ -42,8 +42,25 @@ V České republice je dobrým rozcestníkem aplikací web Fondu Otakara Motejla
 
 Nad otevřenými daty dosud vzniklo mnoho zajímavých a užitečných aplikací jak ve světě, tak i v ČR. Z těch zahraničních jmenujme například TheyWorkForYou\footnote{http://www.TheyWorkForYou.com}, zaznamenávající hlasování členů britského parlamentu, WhereDoesMyMoneyGo \footnote{http://www.wheredoesmymoneygo.org/}, poskytující přehled o využití daní britských daňových poplatníků, nebo celé sady aplikací od MySociety\footnote{https://www.mysociety.org/projects/} a od Sunlight Foundation\footnote{http://sunlightfoundation.com/tools/}.
 
+\subsection{Otevřená data o kriminalitě a jejich využití}
 
-\section{Přínosy a rizika otevřených dat}
 
-Otevřená data v ČR - instituce, komunita, zdroje informací (Jak otevírat data), poskytovatelé otevřených dat: veřejný sektor (ministerstva, samosprávné celky, vládní orgány, nevládky a neziskovky), soukromý sektor.
-Zmínit konkrétní instituce: Fond Otakara Motejla a Fórum otevřených dat, MV ČR, NKOD, portal.gov.cz, opendata.cz.
+
+\section{Rizika publikování otevřených dat}
+
+Publikování dat v otevřené podobě přináší řadu výhod, popsaných 
+\begin{itemize}
+	\item data lze snadno dohledat na internetu, s minimem nákladů (v drtivé většině případů bezplatně) si je stáhnout, volně s nimi nakládat a dále je s minimem omezení (třeba s uvedením autora) šířit
+	\item s daty lze pracovat pomocí volně dostupných nástrojů => šetří peníze, které už jsme jednou (u veřejných dat) vydali
+	\item centralizovaná řešení s národními katalogy umožňují snadno nelézt data na jednom místě
+	\item strojová zpracovatelnost usnadňuje manipulaci dat programy a tak umožňuje s daty snadno zacházet jako se surovinou, tedy je analyzovat, vizualizovat, nebo nad nimi stavět aplikace
+	\item nad daty vzniká spousta užitečných aplikací (viz výše)
+	\item pravidelná publikace dat může veřejné správě ušetřit práci s obsluhou požadavků na poskytnutí informací dle zákona o svobodném přístupu k informacím, udělat si pořádek ve vlastních datech a procesech, které je vytvářejí.
+\end{itemize}
+
+Kromě těchto pozitivních efektů obnáší publikace dat v otevřené formě (zejména dat veřejné správy) jistá rizika, která je nutné analyzovat a řídit:
+\begin{itemize}
+	\item[citlivé údaje] nelze v otevřené podobě zveřejňovat osobní a jiné citlivé (např. podléhající utajení) údaje. Tento problém lze obecně řešit agregací\footnote{https://en.wikipedia.org/wiki/Aggregate\_data} nebo anonymizací\footnote{https://en.wikipedia.org/wiki/Data\_anonymization} dat
+	\item[interpretace údajů] publikovaná data je nutné dobře popsat, aby nemohlo dojít k jejich mylné interpretaci, která by mohla poškodit poskytovatele dat
+	\item[režie] s vydáváním dat v otevřené podobě je spojená urřitá režie, jednak počáteční náklady spojené s vytvořením publikačního plánu...
+\end{itemize}
